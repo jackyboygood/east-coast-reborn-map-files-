@@ -1,0 +1,17 @@
+﻿division_template = {
+	name = "Children Motorized"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 2 y = 0 }
+	}
+}
+units = {
+	division {
+		name = "Children Motorized"
+		location = 1108
+		division_template = "Children Motorized"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+}

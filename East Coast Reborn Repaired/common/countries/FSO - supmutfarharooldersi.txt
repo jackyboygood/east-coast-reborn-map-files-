@@ -1,0 +1,5 @@
+graphical_culture = supermutant_gfx
+graphical_culture_2d = supermutant_2d
+
+color = rgb { 0 45 106 }
+color_ui = rgb { 0 45 106 }

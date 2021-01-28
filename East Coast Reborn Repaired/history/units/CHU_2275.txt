@@ -1,0 +1,18 @@
+﻿division_template = {
+	name = "Alien"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+
+
+	}
+}
+
+units = {
+	division {
+		name = "Alien"
+		location = 8653
+		division_template = "Alien"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

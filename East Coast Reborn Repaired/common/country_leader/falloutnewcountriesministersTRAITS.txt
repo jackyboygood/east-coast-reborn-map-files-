@@ -1,0 +1,567 @@
+leader_traits = {
+    jeremy_engineer = {
+		random = no
+		production_speed_arms_factory_factor = 0.15
+		production_speed_dockyard_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Tony_technician = {
+		random = no
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_infrastructure_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	din_folcret = {
+		random = no
+		MONTHLY_POPULATION = 0.15
+		conscription_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	peaceful_lee = {
+		random = no
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_start_efficiency_factor = 0.15
+		conscription = -0.05
+		justify_war_goal_time = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	inst_security = {
+		sprite = 14
+		experience_gain_army = 0.15
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	instesoteric_engineer = {
+		random = no
+		equipment_bonus = {
+			laser_equipment = {
+				instant = yes
+				soft_attack = 0.075
+				hard_attack = 0.075
+				ap_attack = 0.075
+			}
+			power_armor_equipment = {
+				instant = yes
+				breakthrough = 0.075
+				hardness = 0.075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vault101_leadersecurity = {
+		sprite = 14
+		experience_gain_army = 0.12
+		conscription = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	vault101_security = {
+		random = no
+		equipment_bonus = {
+			laser_equipment = {
+				instant = yes
+				soft_attack = 0.075
+				hard_attack = 0.075
+				ap_attack = 0.075
+			}
+			power_armor_equipment = {
+				instant = yes
+				breakthrough = 0.075
+				hardness = 0.075
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	decorated_vault101 = {
+		random = no
+		stability_factor = -0.08
+		war_support_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	butch_bandit = {
+		random = no
+		recon_factor = 0.05
+		decryption_factor = 0.05
+		army_speed_factor = 0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gloria_scienties = {
+		random = no
+		consumer_goods_factor = -0.05
+		research_speed_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shaman_merfi = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fort_independens = {
+		sprite = 14
+		experience_gain_army = 0.20
+		conscription = 0.10
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	Sanders_polkovnik = {
+		sprite = 14
+		experience_gain_army = 0.08
+		war_support_factor = 0.03
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	agitator = {
+		random = no
+		enemy_partisan_effect = -0.25
+		partisan_effect = 0.25
+		political_power_gain = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	consul_newyork = {
+		random = no
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		conscription_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	administration_president = { 
+		sprite = 5
+		local_resources_factor = 0.15
+		production_factory_max_efficiency_factor = 0.10
+		stability_factor = -0.05
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	General_mar = {
+		sprite = 14
+		experience_gain_army = 0.10
+		supply_consumption_factor = -0.05
+		land_reinforce_rate = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	General_keyt = {
+		sprite = 14
+		experience_gain_army = 0.07
+		conscription = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	Soldier_federation = {
+		random = no
+		training_time_factor = -0.1
+		experience_gain_army_factor = -0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	marines_federation = {
+		random = no
+		special_forces_attack_factor = 0.1
+		special_forces_defence_factor = 0.1
+		special_forces_cap = 0.025
+		training_time_factor = 0.12
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spy_newyork = {
+		random = no
+		recon_factor = 0.05
+		decryption_factor = 0.05
+		army_speed_factor = 0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	newyork_port = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.25 armor_value = -0.15 naval_range = 0.25
+			}
+			capital_ship = {
+				naval_range = 0.25
+			}
+			screen_ship = {
+				naval_range = 0.25
+			}
+			submarine = {
+				naval_range = 0.25
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	president_air_chief = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+		}
+		experience_gain_air = 0.03
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	weapon_company = {
+		random = no
+		equipment_bonus = {
+			laser_equipment = {
+				instant = yes
+				soft_attack = 0.07
+				hard_attack = 0.07
+				ap_attack = 0.07
+			}
+			power_armor_equipment = {
+				instant = yes
+				breakthrough = 0.05
+				hardness = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	besposh_trait = {
+		sprite = 14
+		experience_gain_army = 0.05
+		war_support_factor = 0.05
+		stability_factor = -0.05
+		training_time_factor = -0.1
+		justify_war_goal_time = -0.25
+	}
+	
+	universal_sinth = {
+		random = no
+		training_time_factor = -0.06
+		justify_war_goal_time = -0.3
+		equipment_bonus = {
+			laser_equipment = {
+				instant = yes
+				soft_attack = 0.1
+				hard_attack = 0.1
+				ap_attack = 0.1
+			}
+			power_armor_equipment = {
+				instant = yes
+				breakthrough = 0.05
+				hardness = 0.12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	paper_reporter = { # Decreases training time for ground units
+		sprite = 5
+		justify_war_goal_time = -0.1
+		attrition = -0.02
+		non_core_manpower = 0.1
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	usaprezidenteastcoastenclave = { # Decreases training time for ground units
+		sprite = 5
+		justify_war_goal_time = -0.8
+		attrition = -0.02
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	detskiy_vrach = {
+		random = no
+		MONTHLY_POPULATION = 0.05
+		conscription_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	torgash_edi_litl = {
+		random = no
+		consumer_goods_factor = -0.1
+		local_resources_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	princeskfa = {
+		random = no
+		training_time_factor = -0.1
+		experience_gain_army_factor = -0.0075
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	littl_police = {
+		random = no
+		war_support_factor = -0.05
+		stability_factor = 0.05
+		army_core_defence_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	littl_sturmoviki = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_range = 0.1
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.1
+				reliability = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+			}
+		}
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	uchitel = {
+		random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	lasermagnat = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	besumniy_strelok = {
+		random = no
+		army_attack_factor = 0.08
+		army_defence_factor = -0.02
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hackerlitl = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zashitniklitlelamplayt = {
+		random = no
+		army_attack_factor = -0.08
+		army_defence_factor = 0.15
+		stability_factor = 0.15
+		war_support_factor = -0.2
+		ai_focus_defense_factor = 0.7
+		dig_in_speed_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	usakoroleva = { # Decreases training time for ground units
+		sprite = 5
+		justify_war_goal_time = -0.65
+		attrition = -0.02
+		war_support_factor = 0.1
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	nadejniy_sousnik_det = {
+		random = no
+		training_time_factor = -0.06
+		army_defence_factor = 0.1
+		stability_factor = 0.15
+		equipment_bonus = {
+			power_armor_equipment = {
+				instant = yes
+				breakthrough = 0.05
+				hardness = 0.12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	znahar_mestniy = {
+		random = no
+		MONTHLY_POPULATION = 0.1
+		conscription_factor = 0.065
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	torgovec_yadra = {
+		random = no
+		consumer_goods_factor = -0.1
+		local_resources_factor = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	buntakraatoma = {
+		random = no
+		justify_war_goal_time = -0.30
+		stability_factor = -0.05
+		army_defence_factor = -0.08
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	obertsister = {
+		random = no
+		ai_focus_attack_factor = 0.205
+		army_defence_factor = 0.02
+		production_speed_bunker_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	torgovec_yadra1 = {
+		random = no
+		consumer_goods_factor = 0.15
+		local_resources_factor = 0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	brat_devin1 = {
+		random = no
+		consumer_goods_factor = -0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zilot_teyfarhar = {
+		random = no
+		special_forces_attack_factor = 0.12
+		special_forces_defence_factor = 0.1
+		special_forces_cap = 0.03
+		training_time_factor = 0.06
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	uer_farhar = {
+		sprite = 14
+		experience_gain_army = 0.09
+		conscription_factor = -0.01
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	General_rihter_zilot = {
+		sprite = 14
+		army_attack_factor = 0.1
+		army_defence_factor = -0.05
+		supply_consumption_factor = -0.05
+		land_reinforce_rate = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}

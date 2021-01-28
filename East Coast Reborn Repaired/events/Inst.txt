@@ -1,0 +1,148 @@
+﻿add_namespace = inst
+
+country_event = {
+	id = inst.1
+	title = inst.1.t
+	desc = inst.1.d
+	picture = GFX_event_institute
+
+	is_triggered_only = yes
+
+	option = {
+		name = inst.1.a
+		add_manpower = 1200
+		920 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = inst.1.b
+		add_manpower = 750
+		920 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = inst.1.c
+
+		add_manpower = 400
+		920 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = inst.2
+	title = inst.2.t
+	desc = inst.2.d
+	picture = GFX_event_institute1
+
+	is_triggered_only = yes
+
+	option = {
+		name = inst.2.a
+		DOB = { 
+			create_wargoal = {
+				type = annex_everything
+				target = DAY
+			}
+
+		}
+	}
+}
+
+country_event = {
+	id = inst.3
+	title = inst.3.t
+	desc = inst.3.d
+	picture = GFX_event_institute2
+
+	is_triggered_only = yes
+
+	option = {
+		name = inst.3.a
+		    add_manpower = -250	
+			set_autonomy = { target = DAY autonomy_state = autonomy_puppet }
+			DAY = { 
+			      add_manpower = 250
+		          set_politics = {
+			          parties = {
+				          ruler = { popularity = 10 }
+				          elites = { popularity = 10 }
+				          people = { popularity = 30 }
+				          intellectuals = { popularity = 50 }
+			      }
+			       ruling_party = intellectuals
+			       elections_allowed = no
+		    }
+			hidden_effect = {
+				country_event = { days = 1 id = newsfallout.21 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = inst.4
+	title = inst.4.t
+	desc = inst.4.d
+	picture = GFX_event_minitman8
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = usa_influence_fired
+	}
+
+	option = {
+		name = inst.4.a		
+		931 = {
+			if = {
+				limit = { is_owned_by = BSM }
+				add_core_of = INS
+			}
+		}
+		BSM = {
+			every_unit_leader = {
+				set_nationality = INS
+			}
+		}
+		annex_country = { target = BSM transfer_troops = yes }
+		add_political_power = 45
+		add_manpower = 30
+		set_country_flag = BSM_annexed
+		add_war_support = 0.03
+		add_stability = 0.05		
+	}
+	option = {
+		name = inst.4.b
+		    set_autonomy = { target = BSM autonomy_state = autonomy_puppet }	
+		    add_manpower = 350
+	        BSM = { 
+			      add_manpower = 2400
+		          set_politics = {
+			          parties = {
+				          ruler = { popularity = 10 }
+				          elites = { popularity = 10 }
+				          people = { popularity = 30 }
+				          intellectuals = { popularity = 50 }
+			      }
+			       ruling_party = intellectuals
+			       elections_allowed = no
+		    }
+		}
+	}
+}

@@ -1,0 +1,113 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	daymondcitygoodforinstitut = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 100
+	}
+	
+	supermutantinstitut = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 100
+	}
+	
+	institutandminitman = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -100
+	}
+	
+	uspandpointlookout = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 45
+	}
+	
+	spivanievictorii = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 50
+	}
+	
+	Communismincanada = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -100
+	}
+	
+	enclavevsnewyork = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -100
+	}
+	
+	torgovieoperacii = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 42
+	}
+	
+	lubiteliprirodi = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 50
+	}
+	
+	annexcanadaaa = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -40
+	}
+	
+	torgovayasvazcan = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 40
+	}
+	
+	poder = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 10
+	}
+	
+	poder1 = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 10
+	}
+	
+	vrag = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -40
+	}
+	
+	rexprinaldogovor = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 35
+	}
+	
+	rexneprinaldogovor = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -75
+	}
+	
+	kornidetskie = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 40
+	}
+	
+	kornidetskieeeef = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -70
+	}
+	
+	potepotnosh = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 32
+	}
+	
+	layonsanddetki = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 100
+	}
+	
+	tumanmir = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 70
+	}
+	
+	deyv-nevouet = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 70
+	}
+	
+	deyv-otec = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 55
+	}
+	
+	deyv-otkazsbs = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -200
+	}
+	
+	Rosidipmission = { #special used for civil wars that are on hold and blocks faction stuff
+		value = 120
+	}
+	
+}

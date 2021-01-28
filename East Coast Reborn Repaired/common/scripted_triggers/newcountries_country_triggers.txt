@@ -1,0 +1,249 @@
+# For Determining Nation Categories in Script
+# EX: National focuses, technologies etc.
+is_tribal_nation = {
+	OR = {
+		original_tag = ANT
+		original_tag = BPT
+		original_tag = CLI
+		original_tag = CRZ
+		original_tag = CYC
+		original_tag = DAM
+		original_tag = DEA
+		original_tag = HAI
+		original_tag = HAN
+		original_tag = ISN
+		original_tag = LON
+		original_tag = MDT
+		original_tag = MLT
+		original_tag = NAV
+		original_tag = PAL
+		original_tag = PNT
+		original_tag = RAP
+		original_tag = RBT
+		original_tag = RED
+		original_tag = SHO
+		original_tag = SOR
+		original_tag = TAR
+		original_tag = TOB
+		original_tag = TON
+		original_tag = TWI
+		original_tag = UIN
+		original_tag = YAK
+		original_tag = YMP
+		original_tag = ATE
+		original_tag = CIR
+		original_tag = HUA
+		original_tag = TSI
+		original_tag = WAP
+		original_tag = MES
+		original_tag = BSU
+		original_tag = JIC
+		original_tag = TLO
+		original_tag = POI
+		original_tag = DIK
+		original_tag = DEE
+		original_tag = MIN
+		original_tag = SLP
+		original_tag = REC
+		original_tag = IRO
+		original_tag = RSD
+		original_tag = DRU
+		original_tag = GUR
+		original_tag = AAQ
+		original_tag = AAX
+		original_tag = BAC
+		original_tag = BAB
+		original_tag = AAZ
+		has_country_flag = is_tribal_nation
+	}
+	NOT = { has_country_flag = not_a_tribal_nation }
+}
+
+is_raider_nation = {
+	OR = {
+		original_tag = BLP
+		original_tag = BAS
+		original_tag = BDT
+		original_tag = BVC
+		original_tag = CHE
+		original_tag = COW
+		original_tag = DAM
+		original_tag = EHT
+		original_tag = FIE
+		original_tag = FRI
+		original_tag = GRA
+		original_tag = IRN
+		original_tag = JAC
+		original_tag = KHA
+		original_tag = MRA
+		original_tag = NBM
+		original_tag = PMR
+		original_tag = RIP
+		original_tag = SCO
+		original_tag = SCR
+		original_tag = SKY
+		original_tag = THO
+		original_tag = VIP
+		original_tag = YKZ
+		original_tag = KAM
+		original_tag = SIN
+		original_tag = WHD
+		original_tag = BLK
+		original_tag = RAB
+		original_tag = UBS
+		original_tag = SEV
+		original_tag = SHE
+		original_tag = RIJ
+		original_tag = DJA
+		original_tag = KOV
+		original_tag = GUA
+		original_tag = DET
+		original_tag = BUF
+		original_tag = AAB
+		original_tag = AAF
+		original_tag = BAD
+		original_tag = BAE
+		original_tag = BIB
+		original_tag = AUB
+		original_tag = FTA
+		original_tag = FTM
+		has_country_flag = is_raider_nation
+	}
+	NOT = { has_country_flag = not_a_raider_nation }
+}
+
+is_settler_nation = {
+	OR = {
+		original_tag = ARR
+		original_tag = ASH
+		original_tag = RBD
+		original_tag = BEL
+		original_tag = BJS
+		original_tag = DEL
+		original_tag = DRE
+		original_tag = EAS
+		original_tag = FOR
+		original_tag = GDH
+		original_tag = HAM
+		original_tag = HGH
+		original_tag = HOP
+		original_tag = IRE
+		original_tag = KLA
+		original_tag = LGS
+		original_tag = MUR
+		original_tag = NBM
+		original_tag = VIC
+		original_tag = PEC
+		original_tag = PHA
+		original_tag = RUB
+		original_tag = TCA
+		original_tag = TTM
+		original_tag = TWO
+		original_tag = SHI
+		original_tag = TOC
+		original_tag = ARM
+		original_tag = BLO
+		original_tag = RRG
+		original_tag = FFI
+		original_tag = COL
+		original_tag = NMS
+		original_tag = ARZ
+		original_tag = FLA
+		original_tag = PHR
+		original_tag = RSR
+		original_tag = SUF
+		original_tag = WHI
+		original_tag = TEN
+		original_tag = RIV
+		original_tag = DEV
+		original_tag = RAR
+		original_tag = PBU
+		original_tag = IST
+		original_tag = KEN
+		original_tag = STR
+		original_tag = DOB
+		original_tag = DAY
+		original_tag = ENY
+		original_tag = KLI
+		original_tag = KEY
+		original_tag = SAY
+		original_tag = AAA
+		original_tag = AAD
+		original_tag = RON
+		original_tag = AAI
+		original_tag = AAE
+		original_tag = AAG
+		original_tag = USD
+		original_tag = BAA
+		original_tag = BAG
+		original_tag = CAA
+		original_tag = MEN
+		original_tag = CCC
+		original_tag = DAD
+		original_tag = DAT
+		original_tag = AUA
+		original_tag = FSL
+		original_tag = FVL
+		original_tag = FAR
+		original_tag = FPP
+		original_tag = FMM
+		original_tag = FMR
+		original_tag = ESC
+		
+	has_country_flag = is_settler_nation
+	}
+	NOT = { has_country_flag = not_a_settler_nation }
+}
+
+is_mormon = {
+	OR = {
+		original_tag = NCN
+		has_country_flag = is_mormon
+}
+	NOT = { has_country_flag = not_a_mormon_nation }
+}
+
+is_super_mutant = {
+	OR = {
+		original_tag = TRL
+		original_tag = VSU
+		original_tag = SPP
+		original_tag = BSM
+		has_country_flag = is_super_mutant
+	}
+		NOT = { has_country_flag = not_a_super_mutant_nation }
+	}
+}
+
+is_nuclearworld_raired = {
+	OR = {
+		original_tag = OPE
+		original_tag = ADE
+		original_tag = STY
+	}
+}
+
+is_ghoul_nation = {
+	OR = {
+		original_tag = TOC
+		original_tag = ROY
+		original_tag = MAM
+		has_country_flag = is_ghoul_nation
+	}
+	NOT = { has_country_flag = not_a_ghoul_nation }
+}
+is_brotherhood_nation = {
+	OR = {
+		original_tag = BOS
+		original_tag = MOJ
+		original_tag = WBH
+		original_tag = IBS
+		original_tag = AAJ
+		original_tag = NBS
+		original_tag = BSS
+		original_tag = SBS
+		original_tag = DAA
+		has_country_flag = is_brotherhood_nation
+	}
+	NOT = { has_country_flag = not_a_brotherhood_nation }
+}

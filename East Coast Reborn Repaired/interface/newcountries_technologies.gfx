@@ -1,0 +1,437 @@
+spriteTypes = {
+
+#----------------------------- Robotics
+	spriteType = {
+		name = "GFX_INS_commercial_protectron_medium"
+		texturefile = "gfx/interface/technologies/INS_commercial_protectron_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_security_protectron_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_security_protectron_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_mr_handy_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_mr_handy_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_mr_gutsy_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_mr_gutsy_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_robo_brain_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_robo_brain_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_sentry_bot_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_sentry_bot_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_standard_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_basic_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_basic_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NUE_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/NUE_standard_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_leather_armour_medium"
+		texturefile = "gfx/interface/technologies/INS_leather_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_metal_armour_medium"
+		texturefile = "gfx/interface/technologies/INS_metal_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_combat_armour_medium"
+		texturefile = "gfx/interface/technologies/INS_combat_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_power_armour_t51b_medium"
+		texturefile = "gfx/interface/technologies/INS_power_armour_t51b_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NUE_improved_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/NUE_ballistic_equipment_2_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NUE_leather_armour_medium"
+		texturefile = "gfx/interface/technologies/NUE_leather_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NUE_metal_armour_medium"
+		texturefile = "gfx/interface/technologies/NUE_metal_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NUE_combat_armour_medium"
+		texturefile = "gfx/interface/technologies/NUE_combat_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NUE_advanced_combat_armour_medium"
+		texturefile = "gfx/interface/technologies/NUE_advanced_combat_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_standard_weaponry_tech_medium"
+		texturefile = "gfx/interface/technologies/crsk_sov_svt40.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/ak_47sovet.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_power_armour_medium"
+		texturefile = "gfx/interface/technologies/sovetpowerarm.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_improved_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/tkb_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_leather_armour_medium"
+		texturefile = "gfx/interface/technologies/SOV_leather_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_metal_armour_medium"
+		texturefile = "gfx/interface/technologies/SOV_metal_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_combat_armour_medium"
+		texturefile = "gfx/interface/technologies/SOV_combat_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_advanced_combat_armour_medium"
+		texturefile = "gfx/interface/technologies/SOV_advanced_combat_armour_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_power_armour_t51b_medium"
+		texturefile = "gfx/interface/technologies/SOV_power_armour_t51b_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_scrap_fighter_medium"
+		texturefile = "gfx/interface/technologies/SOV_scrap_plane_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_apc_tech_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_apc_1_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_apc_tech_3_medium"
+		texturefile = "gfx/interface/technologies/SOV_apc_3_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_tank_tech_3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tank_3_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_robo_brain_tech_medium"
+		texturefile = "gfx/interface/technologies/SOV_robo_brain_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_sentry_bot_tech_medium"
+		texturefile = "gfx/interface/technologies/SOV_sentry_bot_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_commercial_protectron_medium"
+		texturefile = "gfx/interface/technologies/SOV_commercial_protectron_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_securitron_tech_medium"
+		texturefile = "gfx/interface/technologies/SOV_securitron_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_SOV_securitron_2_tech_medium"
+		texturefile = "gfx/interface/technologies/SOV_securitron_2_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_power_armour_medium"
+		texturefile = "gfx/interface/technologies/INS_powerarm.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_PIT_power_armour_medium"
+		texturefile = "gfx/interface/technologies/Pit_powerarm.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_salvaged_transport_medium"
+		texturefile = "gfx/interface/technologies/SOV_salvaged_transport_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_salvaged_fighter_medium"
+		texturefile = "gfx/interface/technologies/SOV_salvaged_fighter_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_mr_gutsy_tech_medium"
+		texturefile = "gfx/interface/technologies/AAZ_mr_gutsy_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/AAZ_standard_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_standard_weaponry_tech_medium"
+		texturefile = "gfx/interface/technologies/AAZ_revolver.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_improved_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/AAZ_ballistic_equipment_2_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_basic_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/laserpistol.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_improved_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/AAZ_basic_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_power_armour_medium"
+		texturefile = "gfx/interface/technologies/AAZ_powerarm.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_blunt_weaponry_medium"
+		texturefile = "gfx/interface/technologies/AAZ_blunt_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_slashing_weaponry_medium"
+		texturefile = "gfx/interface/technologies/AAZ_slashing_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_scrap_fighter_medium"
+		texturefile = "gfx/interface/technologies/AAZ_scrap_plane_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_AAZ_apc_tech_1_medium"
+		texturefile = "gfx/interface/technologies/AAZ_apc_1_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_MEN_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/vintovka.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_USP_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/10mmpistol.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_USP_improved_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/vintovka.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_USP_advanced_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/USP_advanced_ballistic_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_USP_power_armour_medium"
+		texturefile = "gfx/interface/technologies/USP_powerarm.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_improved_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/auto-carab.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_improved_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_improved_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_INS_advanced_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_advanced_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_USP_advanced_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/USP_advanced_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_LIT_standard_weaponry_tech_medium"
+		texturefile = "gfx/interface/technologies/LIT_basic_ballistic_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_commercial_protectron_medium"
+		texturefile = "gfx/interface/technologies/INS_commercial_protectron_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_security_protectron_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_security_protectron_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_mr_handy_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_mr_handy_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_mr_gutsy_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_mr_gutsy_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_robo_brain_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_robo_brain_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_sentry_bot_tech_medium"
+		texturefile = "gfx/interface/technologies/INS_sentry_bot_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_basic_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_standard_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_basic_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_basic_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_improved_ballistic_weaponry_medium"
+		texturefile = "gfx/interface/technologies/auto-carab.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_improved_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_improved_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_FIN_advanced_laser_weaponry_medium"
+		texturefile = "gfx/interface/technologies/INS_advanced_laser_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+	
+	
+}

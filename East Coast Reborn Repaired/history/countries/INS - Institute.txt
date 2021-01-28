@@ -1,0 +1,87 @@
+﻿capital = 920
+
+oob = "INS_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	ballistic_weaponry_tech_1 = 1
+	robot_automation_tech = 1
+	robot_makeshift_automatons_tech = 1
+	robot_protectron_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	basic_industry_tech = 1
+	tool_engineering = 1
+	maketool_engineering_1 = 1
+	pre_construction_industry_tech = 1
+	construction_industry_tech_1 = 1
+	construction_industry_tech_2 = 1
+	extraction_industry_tech_1 = 1
+	habitation_industry_tech_1 = 1
+	extraction_industry_tech_2 = 1
+	habitation_industry_tech_2 = 1
+	resource_generator_tech = 1
+	resource_generator_water_tech_1 = 1
+	resource_generator_power_tech_1 = 1
+	resource_generator_metal_tech_1 = 1
+	automated_warfare = 1
+	robot_protectron_tech_1 = 1
+	support_weaponry = 1
+	logistics_company_tech_1 = 1
+}
+
+set_stability = 0.5
+set_war_support = 0.3
+set_rule = { can_join_factions = no }
+
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 80
+	ruler = 20
+}
+set_rule = { can_send_volunteers = no }
+add_ideas = {
+	bunkerblues
+	add_ideas = closed_economy
+	sinth_command_from_afar
+}
+
+add_opinion_modifier = { target = STR modifier = torgovieoperacii }
+add_opinion_modifier = { target = RIJ modifier = torgovieoperacii }
+add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
+add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
+
+set_research_slots = 4
+
+create_country_leader = {
+	name = "Father"
+	desc = ""
+	picture = "gfx/leaders/INS/Father.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {
+		stout_defender
+	}
+
+}
+
+create_corps_commander = {
+	name = "Synth Commander 3rd Generation"
+	portrait_path = "gfx/leaders/INS/Armorsint.dds"
+	skill = 3
+	traits = {
+	}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+

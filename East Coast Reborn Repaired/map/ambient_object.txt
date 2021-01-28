@@ -1,0 +1,1391 @@
+type={
+	type="ambient_wind_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="ambient_wind"
+		position={
+			0.000 0.000 0.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="owb_waste_particle_entity"
+	use_animation=yes
+	scale=4.000000
+	always_visible=yes
+	object={
+		name="waste_particle_1"
+		position={
+			1903.380 10.500 1010.100
+		}
+		rotation={
+			0.000 -7.000 0.000
+		}
+	}
+}
+
+type={
+	type="owb_map_logo_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="owb_map_logo_entity"
+		position={
+			3000.000 35.000 2390.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="owb_map_border_top_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="frame_border_entity_top"
+		position={
+			0.000 0.000 2496.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="owb_map_border_bottom_entity"
+	use_animation=no
+	scale=100.000000
+	always_visible=yes
+	object={
+		name="owb_map_border_bottom_entity"
+		position={
+			0.000 0.000 -136.800
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="hoover_dam_entity"
+	use_animation=no
+	scale=2.000000
+	always_visible=yes
+	object={
+		name="hoover_dam_entity"
+		position={
+			2071.500 9.400 1113.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="chichen_itza_entity"
+	use_animation=no
+	scale=5.500000
+	always_visible=yes
+	object={
+		name="chichen_itza_entity"
+		position={
+			3323.06 9.00 287.28
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="helios1_building_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="helios1_building_entity"
+		position={
+			2064.500 12.000 1099.000
+		}
+		rotation={
+			40.000 30.000 40.000
+		}
+	}
+}
+type={
+	type="lost_hills_bunker_entity"
+	use_animation=no
+	scale=0.700000
+	always_visible=yes
+	object={
+		name="lost_hills_bunker_entity"
+		position={
+			1851.000 11.000 1100.500
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="vault_city_entity"
+	use_animation=no
+	scale=0.650000
+	always_visible=yes
+	object={
+		name="vault_city_entity"
+		position={
+			1906.000 15.700 1403.500
+		}
+		rotation={
+			0.000 25.000 0.000
+		}
+	}
+}
+type={
+	type="black_mountain_entity"
+	use_animation=no
+	scale=0.600000
+	always_visible=yes
+	object={
+		name="black_mountain_entity"
+		position={
+			2056.000 14.700 1103.300
+		}
+		rotation={
+			0.000 -7.000 0.000
+		}
+	}
+}
+type={
+	type="lucky_38_entity"
+	use_animation=no
+	scale=1.600000
+	always_visible=yes
+	object={
+		name="lucky_38_entity"
+		position={
+			2063.000 13.000 1126.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="eagle"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="eagle"
+		position={
+			2011.000 12.400 1670.000
+		}
+		rotation={
+			0.000 90.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			1744.000 12.400 1569.000
+		}
+		rotation={
+			0.000 180.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			1855.000 12.400 1580.000
+		}
+		rotation={
+			0.000 225.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			2108.000 12.400 1615.000
+		}
+		rotation={
+			0.000 270.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			1682.000 15.350 2063.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			1879.000 15.350 1899.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			1775.000 12.400 1780.000
+		}
+		rotation={
+			0.000 135.000 0.000
+		}
+	}
+	object={
+		name="eagle"
+		position={
+			1709.000 12.400 1918.000
+		}
+		rotation={
+			0.000 315.000 0.000
+		}
+	}
+}
+type={
+	type="seagulls"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="seagulls"
+		position={
+			2324.000 11.000 398.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2500.000 11.000 368.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2911.000 11.000 368.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1864.000 12.000 981.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1966.000 11.000 874.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2048.000 11.000 696.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2111.000 11.000 833.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2276.000 11.000 661.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3012.000 11.000 716.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3316.000 11.000 769.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3862.000 11.000 583.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3808.000 11.000 966.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4747.000 11.000 1055.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1636.000 11.000 1719.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1587.000 11.000 1500.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1618.400 11.000 1329.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1685.000 11.000 1219.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2700.000 11.000 1498.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3920.000 11.000 1209.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3348.000 11.000 1460.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			3955.000 11.000 1180.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4055.000 10.900 1376.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4486.000 11.000 1232.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			5012.000 11.000 1519.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4825.000 11.000 1470.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4445.000 10.800 1643.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1242.000 11.000 2202.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1474.000 11.000 2117.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1452.000 11.000 1994.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1664.000 11.000 1853.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1587.000 11.000 1971.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			1696.000 11.000 1810.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			2760.000 11.000 1765.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4413.000 11.000 1935.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="seagulls"
+		position={
+			4740.000 11.000 1785.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+}
+type={
+	type="black_bear"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="black_bear"
+		position={
+			1722.000 0.100 1970.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="black_bear"
+		position={
+			2064.000 0.100 1870.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+}
+type={
+	type="polar_bear"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="polar_bear"
+		position={
+			1828.000 0.100 2280.000
+		}
+		rotation={
+			0.000 30.000 0.000
+		}
+	}
+	object={
+		name="polar_bear"
+		position={
+			1721.000 0.100 2232.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+}
+type={
+	type="brown_bear"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="brown_bear"
+		position={
+			1911.000 0.250 1168.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			1342.000 0.250 2278.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			1513.000 0.250 2148.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			1808.000 0.250 2073.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			1876.000 0.250 1981.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			1841.000 0.100 1894.000
+		}
+		rotation={
+			0.000 60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			2014.000 0.100 1857.000
+		}
+		rotation={
+			0.000 40.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			1740.000 0.100 1755.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="brown_bear"
+		position={
+			2136.000 0.250 1778.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+}
+type={
+	type="whale"
+	use_animation=yes
+	scale=0.800000
+	time_duration=300.000000
+	object={
+		name="whale"
+		position={
+			2002.000 0.100 614.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			1428.000 0.100 1649.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			1600.000 0.100 1180.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			4104.000 0.100 1268.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			4430.000 0.100 1426.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			1117.000 0.100 2156.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			1365.000 0.100 1819.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			2703.000 0.100 2186.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			4640.000 0.100 1820.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="whale"
+		position={
+			5232.000 0.100 2116.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+}
+type={
+	type="vulture"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="vulture"
+		position={
+			2679.000 9.550 564.000
+		}
+		rotation={
+			0.000 30.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2772.000 4.300 492.000
+		}
+		rotation={
+			0.000 90.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2691.000 8.850 383.000
+		}
+		rotation={
+			0.000 5.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2187.000 4.050 819.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2110.000 0.100 890.000
+		}
+		rotation={
+			0.000 120.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2516.000 9.600 772.000
+		}
+		rotation={
+			0.000 55.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2473.000 10.400 827.000
+		}
+		rotation={
+			0.000 90.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2636.000 8.800 805.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2611.000 8.100 694.000
+		}
+		rotation={
+			0.000 80.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2373.000 9.000 901.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2252.000 10.400 934.000
+		}
+		rotation={
+			0.000 100.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2064.000 9.850 1041.000
+		}
+		rotation={
+			0.000 25.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2201.000 5.600 1072.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2548.000 2.350 989.000
+		}
+		rotation={
+			0.000 120.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2120.000 5.000 1361.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2639.000 9.700 1358.000
+		}
+		rotation={
+			0.000 75.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			1895.000 5.050 1469.000
+		}
+		rotation={
+			0.000 35.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2289.000 5.150 1261.000
+		}
+		rotation={
+			0.000 125.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2036.000 2.350 1182.000
+		}
+		rotation={
+			0.000 55.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			1938.000 2.350 1232.000
+		}
+		rotation={
+			0.000 90.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			2368.000 2.350 1156.000
+		}
+		rotation={
+			0.000 90.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			3339.000 8.750 1277.000
+		}
+		rotation={
+			0.000 65.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			3201.000 5.400 1156.000
+		}
+		rotation={
+			0.000 60.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			3804.000 6.550 1426.000
+		}
+		rotation={
+			0.000 15.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			3693.000 10.100 1600.000
+		}
+		rotation={
+			0.000 180.000 0.000
+		}
+	}
+	object={
+		name="vulture"
+		position={
+			4248.000 3.650 1724.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+}
+type={
+	type="bison"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="bison"
+		position={
+			2353.000 0.100 1445.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+	object={
+		name="bison"
+		position={
+			2260.000 0.100 1695.000
+		}
+		rotation={
+			0.000 -30.000 0.000
+		}
+	}
+	object={
+		name="bison"
+		position={
+			2011.000 0.150 1705.000
+		}
+		rotation={
+			0.000 -60.000 0.000
+		}
+	}
+	object={
+		name="bison"
+		position={
+			1990.000 0.550 1802.000
+		}
+		rotation={
+			0.000 45.000 0.000
+		}
+	}
+}
+type={
+	type="moose"
+	use_animation=yes
+	scale=0.280000
+	time_duration=300.000000
+	object={
+		name="moose"
+		position={
+			2325.000 0.100 1661.000
+		}
+		rotation={
+			0.000 70.000 0.000
+		}
+	}
+	object={
+		name="moose"
+		position={
+			1776.000 0.100 2132.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="moose"
+		position={
+			1644.000 0.100 2211.000
+		}
+		rotation={
+			0.000 125.000 0.000
+		}
+	}
+	object={
+		name="moose"
+		position={
+			1535.000 0.100 2222.000
+		}
+		rotation={
+			0.000 64.000 0.000
+		}
+	}
+}
+type={
+	type="desert_skeleton_mesh"
+	use_animation=no
+	scale=0.400000
+	time_duration=300.000000
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1969.000 0.100 1098.000
+		}
+		rotation={
+			0.000 40.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1992.000 0.100 1120.000
+		}
+		rotation={
+			0.000 10.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2138.000 0.100 975.000
+		}
+		rotation={
+			0.000 0.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2193.000 0.100 901.000
+		}
+		rotation={
+			0.000 60.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2337.000 0.100 1085.000
+		}
+		rotation={
+			0.000 70.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2032.000 0.100 1029.000
+		}
+		rotation={
+			0.000 140.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2455.000 0.100 855.000
+		}
+		rotation={
+			0.000 150.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2504.000 0.100 1066.000
+		}
+		rotation={
+			0.000 160.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2375.000 0.100 1142.000
+		}
+		rotation={
+			0.000 170.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2065.000 0.100 1057.000
+		}
+		rotation={
+			0.000 220.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2528.000 0.100 907.000
+		}
+		rotation={
+			0.000 240.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2136.000 0.100 652.000
+		}
+		rotation={
+			0.000 250.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2112.000 0.100 892.000
+		}
+		rotation={
+			0.000 260.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1805.000 0.100 1514.000
+		}
+		rotation={
+			0.000 50.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2135.000 0.100 1336.000
+		}
+		rotation={
+			0.000 30.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2052.000 0.100 1162.000
+		}
+		rotation={
+			0.000 20.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1916.000 0.100 1201.000
+		}
+		rotation={
+			0.000 80.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2036.000 0.100 1209.000
+		}
+		rotation={
+			0.000 90.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2034.000 0.100 1529.000
+		}
+		rotation={
+			0.000 100.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1907.000 0.100 1556.000
+		}
+		rotation={
+			0.000 110.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1696.000 0.100 1588.000
+		}
+		rotation={
+			0.000 120.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1764.000 0.100 1554.000
+		}
+		rotation={
+			0.000 130.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2294.000 0.100 1265.000
+		}
+		rotation={
+			0.000 180.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1956.000 0.100 1331.000
+		}
+		rotation={
+			0.000 190.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			1902.000 0.100 1460.000
+		}
+		rotation={
+			0.000 200.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2008.000 0.100 1215.000
+		}
+		rotation={
+			0.000 210.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2327.000 0.100 1178.000
+		}
+		rotation={
+			0.000 230.000 0.000
+		}
+	}
+	object={
+		name="desert_skeleton_mesh"
+		position={
+			2021.000 0.100 1353.000
+		}
+		rotation={
+			0.000 270.000 0.000
+		}
+	}
+}

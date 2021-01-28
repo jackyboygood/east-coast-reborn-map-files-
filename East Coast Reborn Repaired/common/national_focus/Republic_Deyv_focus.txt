@@ -1,0 +1,1740 @@
+focus_tree = {
+	id = Deyv_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = DEV
+		}
+	}
+	
+	focus = {
+		id = Deyv_1 
+		icon = GFX_goal_enc_radio
+		ai_will_do = { factor = 1 }
+		x = 17
+		y = 0 
+		cost = 1.0
+		completion_reward = {
+			add_ideas = SBS_radio
+			add_political_power = 100
+		}
+		
+    }
+	
+	focus = {
+		id = Deyv_2
+		icon = GFX_goal_Newyorkbroth1
+		cost = 5.00
+		relative_position_id = Deyv_1 
+		prerequisite = {
+			focus = Deyv_1 
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.1
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_3
+		icon = GFX_goal_Newyorkbroth1
+		cost = 5.00
+		relative_position_id = Deyv_2 
+		prerequisite = {
+			focus = Deyv_2 
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.2
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_4
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		relative_position_id = Deyv_3 
+		prerequisite = {
+			focus = Deyv_3
+		}
+		x = -7
+		y = 1
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_community entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_community exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_5
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_4
+		}
+		relative_position_id = Deyv_4 
+		x = -2
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_schools entered"
+			}
+			add_ideas =	new_schools
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_schools exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_6
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_5
+		}
+		relative_position_id = Deyv_5
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_schools entered"
+			}
+			add_ideas =	deyvi4idea
+			set_rule = { can_send_volunteers = yes }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_schools exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_7
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_4
+		}
+		relative_position_id = Deyv_4
+		x = 2
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_garage entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_garage exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_8
+		icon = GFX_goal_generic_supplies_focus
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_7
+		}
+		relative_position_id = Deyv_7
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_teams entered"
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = caps_system_toggle
+						option = ENABLED
+					}
+				}
+				set_temp_variable = { caps_to_add = 200 }
+				hidden_effect = {
+					add_caps = yes
+				}
+				custom_effect_tooltip = add_caps_simple_tt
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = metal
+					amount = 8
+				}
+				add_resource = {
+					type = water
+					amount = 4
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_teams exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_9
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_6
+		}
+		relative_position_id = Deyv_6
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_schools entered"
+			}
+			add_ideas =	deyvi5idea
+			add_research_slot = 1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_schools exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_10
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_8
+		}
+		relative_position_id = Deyv_8
+		x = 0
+		y = 1
+		completion_reward = {
+			874 = {
+				add_building_construction = { type = bunker province = 1140 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 1152 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 1137 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 1167 level = 2 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_11
+		icon = GFX_goal_militarifederacia1
+		relative_position_id = Deyv_3
+		prerequisite = {
+			focus = Deyv_3
+		}
+		cost = 8.6
+		available = {
+			
+		}
+		ai_will_do = { factor = 100 }
+		x = 0
+		y = 1
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = Deyv_12
+		icon = GFX_goal_deyvgeneralss
+		relative_position_id = Deyv_11
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_11
+		}
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = Deyv_13
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			add_ideas = deyvi6idea
+		}
+	}
+	
+	focus = {
+		id = Deyv_13
+		icon = GFX_goal_bobgeneralss
+		relative_position_id = Deyv_11
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_11
+		}
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = Deyv_12
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			add_ideas = deyvi7idea
+		}
+	}
+	
+	focus = {
+		id = Deyv_14
+		icon = GFX_goal_NCR_Blast_from_the_Past
+		relative_position_id = Deyv_12
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_12
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = explosive_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_ideas = blastfromthepast
+		}
+	}
+	
+	focus = {
+		id = Deyv_15
+		icon = GFX_goal_NCR_Army_of_Mobility
+		relative_position_id = Deyv_14
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_14
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			add_ideas = mobilearmy
+		}
+	}
+	
+	focus = {
+		id = Deyv_16
+		icon = GFX_goal_NCR_The_Tip_of_the_Spear
+		relative_position_id = Deyv_15
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_15
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = speartip
+		}
+	}
+	
+	focus = {
+		id = Deyv_17
+		icon = GFX_goal_NCR_Infantry_Drills
+		relative_position_id = Deyv_13
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_13
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = deyvi9idea
+			hidden_effect = {
+				set_technology = { ncr_jim_drills = 1 }
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_18
+		icon = GFX_goal_canadaaa9
+		relative_position_id = Deyv_17
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_17
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = ncrmarch
+		}
+	}
+	
+	focus = {
+		id = Deyv_19
+		icon = GFX_goal_NCR_Big_Jim_Draft
+		relative_position_id = Deyv_18
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_18
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = deyvi8idea
+		}
+	}
+	
+	focus = {
+		id = Deyv_20
+		icon = GFX_goal_bos_wasteland_conscription
+		prerequisite = {focus = Deyv_19 focus = Deyv_16}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = Deyv_19
+		x = -2
+		y = 1
+		cost = 10.6
+		completion_reward = {
+			add_manpower = 2000
+		}
+	}
+	
+	focus = {
+		id = Deyv_21
+		icon = GFX_goal_NCR_Mechanized_Core
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_11
+		}
+		relative_position_id = Deyv_11
+		x = 4
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = motorbike_equipment_1 amount = 200 producer = DEV }
+			add_ideas = mechcore
+		}
+	}
+	
+	focus = {
+		id = Deyv_22
+		icon = GFX_goal_NCR_Shock_Companies
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_21
+		}
+		relative_position_id = Deyv_21
+		x = 0
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = apc_equipment_1 amount = 50 producer = DEV }
+			add_ideas = shockcomp
+		}
+	}
+	
+	focus = {
+		id = Deyv_23
+		icon = GFX_goal_NCR_Rapid_Advance
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_22
+		}
+		relative_position_id = Deyv_22
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = rapidadvance
+		}
+	}
+	
+	focus = {
+		id = Deyv_24
+		icon = GFX_goal_NCR_The_Boneyard
+		prerequisite = {
+			focus = Deyv_3
+		}
+		relative_position_id = Deyv_3
+		cost = 8.6
+		x = 7
+		y = 1
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_25
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = Deyv_24 }
+		relative_position_id = Deyv_24
+		available = {
+			date > 2276.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = detlieffectfabric
+		}
+	}
+	
+	focus = {
+		id = Deyv_26
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.60
+		prerequisite = {
+			focus = Deyv_25
+		}
+		relative_position_id = Deyv_25
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_27
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = Deyv_26 }
+		relative_position_id = Deyv_26
+		available = {
+			date > 2277.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = detlieffectfabric1
+				remove_idea = detlieffectfabric
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_28
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.60
+		prerequisite = {
+			focus = Deyv_27
+		}
+		relative_position_id = Deyv_27
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_29
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = Deyv_28 }
+		relative_position_id = Deyv_28
+		available = {
+			date > 2278.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = detlieffectfabric2
+				remove_idea = detlieffectfabric1
+			}
+		}
+	}
+	
+	focus = {#S
+		id = Deyv_30
+		icon =GFX_goal_generic_walls_focus
+		prerequisite = { focus = Deyv_3 }
+		ai_will_do = { factor = 1 } 
+		relative_position_id = Deyv_3
+		x = 13
+		y = 1
+		cost = 6.0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = Deyv_31
+		icon = GFX_goal_dave
+		ai_will_do = { factor = 80 }
+		available = {
+			date > 2276.1.1
+			has_country_flag = Deyv
+		}
+		mutually_exclusive = {
+			focus = Deyv_39
+		}
+		mutually_exclusive = {
+			focus = Deyv_40
+		}
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_30
+		}
+		relative_position_id = Deyv_30 
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas =	deyvi10idea
+		}
+	}
+	
+	focus = {
+		id = Deyv_32
+		icon = GFX_goal_dave1
+		ai_will_do = { factor = 80 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_31
+		}
+		relative_position_id = Deyv_31 
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas =	deyvi11idea
+		}
+	}
+	
+	focus = {
+		id = Deyv_33
+		icon = GFX_goal_generic_advanced_technology_focus
+		ai_will_do = { factor = 80 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_32
+		}
+		relative_position_id = Deyv_32 
+		x = 0
+		y = 1
+		completion_reward = {
+			add_opinion_modifier = { target = DIK modifier = deyv-nevouet }
+			add_opinion_modifier = { target = RAR modifier = deyv-nevouet }
+			add_opinion_modifier = { target = SBS modifier = deyv-nevouet }
+			add_opinion_modifier = { target = USP modifier = deyv-nevouet }
+			add_opinion_modifier = { target = GUA modifier = deyv-nevouet }
+			DIK = { 
+		          add_opinion_modifier = { target = DEV modifier = deyv-nevouet }
+			}
+			RAR = { 
+		          add_opinion_modifier = { target = DEV modifier = deyv-nevouet }
+			}
+			SBS = { 
+		          add_opinion_modifier = { target = DEV modifier = deyv-nevouet }
+			}
+			USP = { 
+		          add_opinion_modifier = { target = DEV modifier = deyv-nevouet }
+			}
+			GUA = { 
+		          add_opinion_modifier = { target = DEV modifier = deyv-nevouet }
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_34
+		icon = GFX_goal_dave2
+		ai_will_do = { factor = 80 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_33
+		}
+		relative_position_id = Deyv_33 
+		x = 0
+		y = 1
+		completion_reward = {
+			add_opinion_modifier = { target = ESC modifier = deyv-otec }
+			ESC = { 
+		          add_opinion_modifier = { target = DEV modifier = deyv-otec }
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_35
+		icon = GFX_goal_megatonna17
+		ai_will_do = { factor = 25 }
+		cost = 8.6
+		available = {
+			date > 2277.6.1
+		}
+		prerequisite = {
+			focus = Deyv_34
+		}
+		mutually_exclusive = {
+			focus = Deyv_36
+		}
+		relative_position_id = Deyv_34
+		x = -1
+		y = 1
+		completion_reward = {
+			USP = { 
+		          add_to_faction = DEV
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_36
+		icon = GFX_goal_dave2
+		ai_will_do = { factor = 25 }
+		cost = 8.6
+		available = {
+			date > 2277.6.1
+		}
+		prerequisite = {
+			focus = Deyv_34
+		}
+		mutually_exclusive = {
+			focus = Deyv_35
+		}
+		relative_position_id = Deyv_34
+		x = 1
+		y = 1
+		completion_reward = {
+		    create_faction = Family_aliyans
+			DEV = { 
+		          add_to_faction = ESC
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_37
+		icon = GFX_goal_generic_advanced_technology_focus
+		ai_will_do = { factor = 25 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_36
+			focus = Deyv_35
+		}
+		relative_position_id = Deyv_36
+		x = -1
+		y = 1
+		completion_reward = {
+		    903 = { add_core_of = DEV }
+			create_wargoal = {
+				type = annex_everything
+				target = DEE
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = DEV
+						tag = DEE
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = DEV
+							tag = DEE
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_38
+		icon = GFX_goal_megatonna17
+		ai_will_do = { factor = 1000 } 
+		relative_position_id = Deyv_35
+		prerequisite = {
+			focus = Deyv_35
+		}
+		available = {
+           ESP = { exists = no }
+   
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = cleanoperation
+		}
+		cost = 5.0	
+ }
+ 
+ focus = {
+		id = Deyv_39
+		icon = GFX_goal_bobgeneralss
+		cost = 5.00
+		relative_position_id = Deyv_30 
+		prerequisite = {
+			focus = Deyv_30 
+		}
+		mutually_exclusive = {
+			focus = Deyv_40
+		}
+		mutually_exclusive = {
+			focus = Deyv_31
+		}
+		x = -3
+		y = 1
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			date > 2276.1.1
+			has_country_flag = Bob
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.3
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_40
+		icon = GFX_goal_dave3
+		ai_will_do = { factor = 1000 } 
+		relative_position_id = Deyv_30
+		prerequisite = {
+			focus = Deyv_30
+		}
+		mutually_exclusive = {
+			focus = Deyv_39
+		}
+		mutually_exclusive = {
+			focus = Deyv_31
+		}
+		available = {
+			date > 2276.1.1
+			has_country_flag = Rose
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			add_ideas = deyvi12idea
+		}
+		cost = 5.0	
+ }
+ 
+ focus = {
+		id = Deyv_41
+		icon = GFX_goal_generic_advanced_technology_focus
+		ai_will_do = { factor = 1 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_39
+		}
+		available = {
+		has_completed_focus = Deyv_6
+		}
+		relative_position_id = Deyv_39 
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = deyvi16idea 
+				remove_idea = deyvi4idea
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_42
+		icon = GFX_goal_dave4
+		ai_will_do = { factor = 1 }
+		cost = 2.0
+		prerequisite = {
+			focus = Deyv_41
+		}
+		available = {
+		
+		}
+		relative_position_id = Deyv_41 
+		x = 0
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ESC
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ESC
+						tag = DEV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESC
+							tag = DEV
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_43
+		icon = GFX_goal_dave5
+		ai_will_do = { factor = 1 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_42
+		}
+		available = {
+		 date > 2277.1.1
+		}
+		relative_position_id = Deyv_42
+		x = 0
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BAS
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = BAS
+						tag = DEV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = BAS
+							tag = DEV
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_44
+		icon = GFX_goal_Enclave18
+		ai_will_do = { factor = 1 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_43
+		}
+		available = {
+		 date > 2277.5.1
+		}
+		relative_position_id = Deyv_43
+		x = 0
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BAS
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = BAS
+						tag = DEV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = BAS
+							tag = DEV
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_45
+		icon = GFX_goal_blackminitman
+		ai_will_do = { factor = 1 }
+		cost = 8.6
+		prerequisite = {
+			focus = Deyv_44
+		}
+		available = {
+		 date > 2278.1.1
+		}
+		relative_position_id = Deyv_44
+		x = 0
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = DEE
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = DEE
+						tag = DEV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = DEE
+							tag = DEV
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_46
+		icon = GFX_goal_generic_supplies_focus
+		ai_will_do = { factor = 25 }
+		cost = 8.6
+		available = {
+			date > 2276.1.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_3
+		}
+		relative_position_id = Deyv_3
+		x = -12
+		y = 1
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 1000 producer = NUE }
+		}
+	}
+	
+	focus = {
+		id = Deyv_47
+		icon = GFX_goal_generic_supplies_focus
+		ai_will_do = { factor = 25 }
+		cost = 5.0
+		available = {
+			date > 2276.1.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_46
+		}
+		relative_position_id = Deyv_46
+		x = 1
+		y = 1
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = melee_equipment_2 amount = 550 producer = ESP }
+		}
+	}
+	
+	focus = {
+		id = Deyv_48
+		icon = GFX_goal_generic_supplies_focus
+		ai_will_do = { factor = 25 }
+		cost = 5.0
+		available = {
+			date > 2276.5.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_47
+		}
+		relative_position_id = Deyv_47
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_manpower = 1000
+		}
+	}
+	
+	focus = {
+		id = Deyv_49
+		icon = GFX_goal_generic_slums_focus
+		ai_will_do = { factor = 25 }
+		cost = 5.0
+		available = {
+			date > 2276.1.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_46
+		}
+		relative_position_id = Deyv_46
+		x = -2
+		y = 1
+		completion_reward = {
+		    940 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_50
+		icon = GFX_goal_generic_slums_focus
+		ai_will_do = { factor = 25 }
+		cost = 5.0
+		available = {
+			date > 2276.1.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_49
+		}
+		relative_position_id = Deyv_49
+		x = 0
+		y = 1
+		completion_reward = {
+		    940 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_51
+		icon = GFX_goal_generic_slums_focus
+		ai_will_do = { factor = 25 }
+		cost = 5.0
+		available = {
+			date > 2276.5.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_50
+		}
+		relative_position_id = Deyv_50
+		x = 0
+		y = 1
+		completion_reward = {
+		 940 = {
+				set_state_name = "Factories"
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_52
+		icon = GFX_goal_generic_supplies_focus
+		ai_will_do = { factor = 25 }
+		cost = 10.0
+		available = {
+			date > 2276.5.1
+			940 = { is_controlled_by = DEV }
+		}
+		prerequisite = {
+			focus = Deyv_51
+		}
+		prerequisite = {
+			focus = Deyv_48
+		}
+		relative_position_id = Deyv_51
+		x = 2
+		y = 1
+		completion_reward = {
+		    add_manpower = 5000
+		}
+	}
+	
+	focus = {
+		id = Deyv_53
+		icon = GFX_goal_enc_verti
+		ai_will_do = { factor = 25 }
+		cost = 8.0
+		available = {
+			date > 2276.1.1
+		}
+		prerequisite = {
+			focus = Deyv_40
+		}
+		relative_position_id = Deyv_40
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_opinion_modifier = { target = GUA modifier = Rosidipmission }
+			add_opinion_modifier = { target = BAS modifier = Rosidipmission }
+			add_opinion_modifier = { target = ESC modifier = Rosidipmission }
+			create_faction = Family_aliyans
+			ESC = { 
+		          add_opinion_modifier = { target = DEV modifier = Rosidipmission }
+				  add_opinion_modifier = { target = BAS modifier = Rosidipmission }
+				  add_opinion_modifier = { target = GUA modifier = Rosidipmission }
+			}
+			BAS = { 
+		          add_opinion_modifier = { target = DEV modifier = Rosidipmission }
+				  add_opinion_modifier = { target = ESC modifier = Rosidipmission }
+				  add_opinion_modifier = { target = GUA modifier = Rosidipmission }
+			}
+			GUA = { 
+		          add_opinion_modifier = { target = DEV modifier = Rosidipmission }
+				  add_opinion_modifier = { target = BAS modifier = Rosidipmission }
+				  add_opinion_modifier = { target = ESC modifier = Rosidipmission }
+			}
+		}
+	}
+	
+	focus = {
+		id = Deyv_54
+		icon = GFX_goal_Newyorkbroth1
+		cost = 4.00
+		relative_position_id = Deyv_53
+		prerequisite = {
+			focus = Deyv_53 
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.5
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_55
+		icon = GFX_goal_Newyorkbroth1
+		cost = 4.00
+		relative_position_id = Deyv_53
+		prerequisite = {
+			focus = Deyv_53 
+		}
+		x = 2
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.7
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_56
+		icon = GFX_goal_Newyorkbroth1
+		cost = 4.00
+		relative_position_id = Deyv_53
+		prerequisite = {
+			focus = Deyv_53 
+		}
+		x = 4
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.9
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_57
+		icon = GFX_goal_enc_scientists
+		cost = 4.00
+		relative_position_id = Deyv_55
+		prerequisite = {
+			focus = Deyv_54
+		}
+		prerequisite = {
+			focus = Deyv_55 
+		}
+		prerequisite = {
+			focus = Deyv_56 
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = Deyv_58
+		icon = GFX_goal_megatonna11
+		ai_will_do = { factor = 25 }
+		cost = 2.6
+		prerequisite = {
+			focus = Deyv_57
+		}
+		available = {
+			date > 2277.8.1
+			SBS = { exists = no }
+			USP = { exists = no }
+		}
+		relative_position_id = Deyv_57
+		x = -1
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ESP
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = DEV
+						tag = ESP
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = DEV
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_59
+		icon = GFX_goal_Enclave12
+		cost = 4.00
+		relative_position_id = Deyv_57
+		prerequisite = {
+			focus = Deyv_57
+		}
+		x = 1
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = devievent.10
+		    }
+		}
+	}
+	
+	focus = {
+		id = Deyv_60
+		icon = GFX_goal_Enclave21
+		ai_will_do = { factor = 25 }
+		cost = 2.6
+		prerequisite = {
+			focus = Deyv_54
+		}
+		prerequisite = {
+			focus = Deyv_55 
+		}
+		prerequisite = {
+			focus = Deyv_56 
+		}
+		available = {
+
+		}
+		relative_position_id = Deyv_56
+		x = 0
+		y = 1
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = DEE
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = DEV
+						tag = DEE
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = DEV
+							tag = DEE
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	

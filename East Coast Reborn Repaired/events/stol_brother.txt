@@ -1,0 +1,142 @@
+﻿add_namespace = stolbr
+
+country_event = {
+	id = stolbr.1
+	title = stolbr.1.t
+	desc = stolbr.1.d
+	picture = GFX_event_newyorkbrothe
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.1.a
+		release = NBS
+		NBS = { 
+		    transfer_state = 909
+			add_political_power = -50
+		    add_manpower = -80
+			hidden_effect = {
+			    load_oob = NBS_2265
+				country_event = { days = 2 id = newsfallout.15 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.2
+	title = stolbr.2.t
+	desc = stolbr.2.d
+	picture = GFX_event_newyorkbrothe1
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.2.a
+		NBS = { 
+		    transfer_state = 908
+			add_political_power = 50
+		    add_manpower = 500
+			hidden_effect = {
+				country_event = { days = 2 id = newsfallout.16 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.3
+	title = stolbr.3.t
+	desc = stolbr.3.d
+	picture = GFX_event_newyorkbrothe3
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.3.a
+		NBS = { 
+			create_wargoal = {
+				type = annex_everything
+				target = ENY
+			}
+			hidden_effect = {
+				country_event = { days = 1 id = newsfallout.17 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.4
+	title = stolbr.4.t
+	desc = stolbr.4.d
+	picture = GFX_event_newyorkbrothe1
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.4.a
+		DEV = { 
+		    country_event = {
+				id = stolbr.5
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.5
+	title = stolbr.5.t
+	desc = stolbr.5.d
+	picture = GFX_event_newyorkbrothe1
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.5.a
+		SBS = { 
+		    country_event = {
+				id = stolbr.6
+		    }
+		}
+	}
+	option = {
+		name = stolbr.5.b
+		SBS = { 
+		    country_event = {
+				id = stolbr.7
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.6
+	title = stolbr.6.t
+	desc = stolbr.6.d
+	picture = GFX_event_newyorkbrothe1
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.6.a
+		annex_country = { target = DEV transfer_troops = yes }
+	}
+}
+
+country_event = {
+	id = stolbr.7
+	title = stolbr.7.t
+	desc = stolbr.7.d
+	picture = GFX_event_newyorkbrothe1
+
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.7.a
+		add_opinion_modifier = { target = DEV modifier = deyv-otkazsbs }
+		DEV = { 
+		          add_opinion_modifier = { target = SBS modifier = deyv-otkazsbs }
+		}
+	}
+}

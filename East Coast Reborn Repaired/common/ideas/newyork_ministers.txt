@@ -1,0 +1,252 @@
+ideas = {
+political_advisor = {
+
+        diplomatman = {
+			picture = advisor_newyork
+            cost = 180
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { consul_newyork }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		mechanik_newyork = {
+			picture = advisor_newyork11
+            cost = 150
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { Tony_technician }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		engineer_nueyork = {
+			picture = advisor_newyork12
+            cost = 150
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { jeremy_engineer }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		administ = {
+			picture = advisor_newyork1
+            cost = 250
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { administration_president }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		alice_mclafferty = {
+
+				picture = alice_mclafferty_advisor
+
+				allowed = {
+					original_tag = NUE
+				}
+
+				traits = { ruthless_capitalist }
+
+				ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	
+army_chief = {
+        marmontgenera = {
+			picture = advisor_newyork2
+            cost = 300
+			available = { has_completed_focus = newyork_12 }
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { General_mar }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		keyt_uolker = {
+			picture = advisor_newyork3
+            cost = 250
+			available = { has_completed_focus = newyork_13 }
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { General_keyt }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+high_command = {
+        soldier1 = {
+			picture = advisor_newyork4
+            cost = 180
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { Soldier_federation }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		soldier2 = {
+			picture = advisor_newyork5
+            cost = 250
+			available = { has_completed_focus = newyork_21 }
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { marines_federation }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		spyonnewyork = {
+			picture = advisor_newyork6
+            cost = 250
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { spy_newyork }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+naval_manufacturer = {
+        designer = yes
+
+		naval_manufacturer_newyork = {
+
+			picture = advisor_newyork7
+
+			allowed = {
+				original_tag = NUE
+			}
+			cost = 250
+			removal_cost = 10
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { newyork_port }
+		}
+	}
+industrial_concern = {
+        red_reyser1 = {
+			 
+			picture = advisor_newyork8
+
+			allowed = {
+				original_tag = NUE
+			}
+			
+			cost = 230
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {  }
+		}
+    }
+tank_manufacturer = {
+        designer = yes
+		
+		newyork_razrab = {
+
+			picture = advisor_newyork9
+			
+			allowed = {
+				original_tag = NUE
+			}
+			
+			cost = 210
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.13
+			}
+			
+			traits = {  }
+		}
+	}
+air_chief = {
+
+		president_air = {
+			
+			picture = advisor_newyork10
+			
+			allowed = {
+				original_tag = NUE
+			}
+
+			traits = { president_air_chief }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+theorist = {
+        polkovnik_Bishop = {
+		    cost = 230
+			picture = advisor_newyork13
+			allowed = {
+				original_tag = NUE
+			}
+			traits = { Sanders_polkovnik }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}	
+materiel_manufacturer = {
+        general_atommik = {
+			
+			picture = advisor_newyork14
+
+			allowed = {
+				original_tag = NUE
+			}
+			
+			cost = 260
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.07
+				artillery = 0.06
+			}
+			
+			traits = { weapon_company  }
+		}
+	}

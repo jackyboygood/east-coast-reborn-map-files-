@@ -1,0 +1,77 @@
+﻿capital = 874
+oob = "DEV_2275"
+
+set_technology = {
+	grand_army = 1
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	basic_ballistic_weaponry = 1
+	support_weaponry = 1
+	anti_personnel_tech = 1
+	recon_tech = 1
+	bike_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	destroyer_tech = 1
+	cruiser_tech = 1
+	battleship_tech = 1
+	heavy_cruiser_tech = 1
+	truck_tech_1 = 1
+	anti_tank_tech = 1
+	special_forces = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_convoys = 60
+
+
+set_politics = {
+	ruling_party = people
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 100
+	elites = 0
+	intellectuals = 0
+	ruler = 0
+}
+
+add_ideas = {}
+
+create_country_leader  = {
+	name = "President Dave"
+	desc = ""
+	picture = "gfx/leaders/DEV/Dave.dds"
+	expire = "3000.1.1"
+	ideology = town_hall_democracy
+	traits = {
+		well_liked_leader
+	}
+}
+
+create_corps_commander = {
+	name = "Commander Bob"
+	portrait_path = "gfx/leaders/DEV/Bob.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+    
+}
+
+create_corps_commander = {
+	name = "First Lady Rose"
+	portrait_path = "gfx/leaders/DEV/Rosie.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+    }
+}

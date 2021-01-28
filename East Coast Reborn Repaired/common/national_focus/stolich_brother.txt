@@ -1,0 +1,1410 @@
+focus_tree = {
+	id = stolich_brother
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = SBS
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_1
+		icon = GFX_goal_enc_radio
+		ai_will_do = { factor = 1 }
+		x = 10
+		y = 0 
+		cost = 7.8
+		completion_reward = {
+			add_ideas = SBS_radio
+			867 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = ENC_radio_broadcasts__tt
+		}
+		
+    }
+
+    focus = {
+		id = Stolibrother_2
+		icon = GFX_goal_bos_wasteland_conscription
+		prerequisite = { focus = Stolibrother_1 }
+		relative_position_id = Stolibrother_1
+		x = 0
+		y = 1
+
+		cost = 5.8
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 60
+			add_manpower = 1070
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_28
+		icon = GFX_goal_bos_generic
+		cost = 8.6
+		available = {
+			has_completed_focus =  Stolibrother_3
+		}
+		relative_position_id = Stolibrother_20
+		x = 1
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_28 entered"
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_28 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_29
+		icon = GFX_goal_bos_generic_research
+		cost = 8.6
+		relative_position_id = Stolibrother_28
+		prerequisite = {
+			focus = Stolibrother_28
+		}
+		x = -2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_29 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_29 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_30
+		icon = GFX_goal_bos_generic_research
+		cost = 8.6
+		relative_position_id = Stolibrother_29
+		prerequisite = {
+			focus = Stolibrother_29
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_30 entered"
+			}
+			add_ideas = genericbosscriberesearch
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_30 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_31
+		icon = GFX_goal_bos_repconn_hq
+		cost = 8.6
+		relative_position_id = Stolibrother_30
+		prerequisite = {
+			focus = Stolibrother_30
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_31 entered"
+			}
+			capital_scope = {
+				add_resource = { type = advanced_technology amount = 8 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_31 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_32
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		relative_position_id = Stolibrother_31
+		prerequisite = {
+			focus = Stolibrother_31
+		}
+		prerequisite = {
+			focus = Stolibrother_35
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_32 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = robotics_tech }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_32 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_33
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 8.6
+		relative_position_id = Stolibrother_28
+		prerequisite = {
+			focus = Stolibrother_28
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_33 entered"
+			}
+			add_ideas = genericbosbunkerthought
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_33 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_34
+		icon = GFX_goal_generic_BOS_focus_surface_outposts
+		cost = 8.6
+		relative_position_id = Stolibrother_33
+		prerequisite = {
+			focus = Stolibrother_33
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_34 entered"
+			}
+			swap_ideas = {
+				add_idea = genericbossurfaceoutposts
+				remove_idea = genericbosbunkerthought
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_34 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_35
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		relative_position_id = Stolibrother_34
+		prerequisite = {
+			focus = Stolibrother_34
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_35 entered"
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_35 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_3
+		icon = GFX_goal_bos_generic
+		prerequisite = { focus = Stolibrother_2 }
+		relative_position_id = Stolibrother_2
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = SEV
+
+		cost = 5.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = SEV
+			}
+			SEV = { exists = yes }
+		}
+
+		bypass = {
+			SEV = { exists = no }
+			SEV = { is_subject_of = SBS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    870 = { add_core_of = SBS }
+			869 = { add_core_of = SBS }
+			768 = { add_core_of = SBS }
+			create_wargoal = {
+				type = annex_everything
+				target = SEV
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_4
+		icon = GFX_goal_bos_generic_industrial
+		relative_position_id = Stolibrother_3
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_3
+		}
+		x = -3
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_4 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_4 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_5
+		icon = GFX_goal_generic_metal_focus
+		relative_position_id = Stolibrother_4
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_4
+		}
+		x = -2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_5 entered"
+			}
+			capital_scope = {
+				add_resource = { type = metal amount = 10 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_5 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_6
+		icon = GFX_goal_generic_electricity_focus
+		relative_position_id = Stolibrother_4
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_4
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_6 entered"
+			}
+			capital_scope = {
+				add_resource = { type = electricity amount = 10 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_6 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_7
+		icon = GFX_goal_generic_electronics_focus
+		relative_position_id = Stolibrother_4
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_4
+		}
+		x = 2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_7 entered"
+			}
+			capital_scope = {
+				add_resource = { type = electronics amount = 10 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_7 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_8
+		icon = GFX_goal_generic_advanced_technology_focus
+		relative_position_id = Stolibrother_5
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_5
+		}
+		prerequisite = {
+			focus = Stolibrother_6
+		}
+		prerequisite = {
+			focus = Stolibrother_7
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_8 entered"
+			}
+			capital_scope = {
+				add_resource = { type = advanced_technology amount = 6 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_8 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_9
+		icon = GFX_goal_generic_fuel_focus
+		relative_position_id = Stolibrother_7
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_5
+		}
+		prerequisite = {
+			focus = Stolibrother_6
+		}
+		prerequisite = {
+			focus = Stolibrother_7
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_9 entered"
+			}
+			capital_scope = {
+				add_resource = { type = fuel amount = 8 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_9 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_10
+		icon = GFX_goal_bos_generic_infantry
+		relative_position_id = Stolibrother_3
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_3
+		}
+		x = 3
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
+			}
+			add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_11
+		icon = GFX_goal_bos_victory_or_death
+		relative_position_id = Stolibrother_10
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_10
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_11 entered"
+			}
+			add_ideas = genericbossteellegions
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_11 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_12
+		icon = GFX_goal_bos_wasteland_conscription
+		relative_position_id = Stolibrother_10
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_10
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_12 entered"
+			}
+			add_manpower = 500
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_12 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_13
+		icon = GFX_goal_generic_BoS_diplomatic_focus
+		relative_position_id = Stolibrother_11
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_11
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_13 entered"
+			}
+			add_manpower = 210
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_13 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_14
+		icon = GFX_goal_bos_outsider_recruitment
+		relative_position_id = Stolibrother_12
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_12
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_14 entered"
+			}
+			add_ideas = genericbosfleshbeforesteel
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_14 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_15
+		icon = GFX_goal_generic_BOS_focus_t45d_production
+		relative_position_id = Stolibrother_13
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_13
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_15 entered"
+			}
+			
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment_2
+				amount = 250
+				producer = WBH
+			}
+			
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_15 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_16
+		icon = GFX_goal_generic_common_firearms_focus
+		relative_position_id = Stolibrother_14
+		cost = 8.6
+		prerequisite = {
+			focus = Stolibrother_14
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_16 entered"
+			}
+			add_equipment_to_stockpile = {
+				type = energy_equipment_2
+				amount = 200
+				producer = SBS
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_16 exited"
+			}
+		}
+	}
+	
+    focus = {
+		id = Stolibrother_17
+		icon = GFX_goal_support_layons
+		prerequisite = { focus = Stolibrother_3 }
+		relative_position_id = Stolibrother_3
+		x = 7
+		y = 1
+
+		cost = 17.8
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 60
+			add_ideas = SBS_support
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_18
+		icon = GFX_goal_sbs_scientist
+		prerequisite = {focus = Stolibrother_8}
+		prerequisite = {focus = Stolibrother_9}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = Stolibrother_8
+		x = 2
+		y = 1
+		cost = 8.6
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_19
+		icon = GFX_goal_attackon_supermutant
+		prerequisite = { focus = Stolibrother_17 }
+		relative_position_id = Stolibrother_17
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = VSU
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = VSU
+			}
+			VSU = { exists = yes }
+		}
+
+		bypass = {
+			VSU = { exists = no }
+			VSU = { is_subject_of = SBS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    871 = { add_core_of = SBS }
+			create_wargoal = {
+				type = annex_everything
+				target = VSU
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_20
+		icon = GFX_goal_moj_help_the_needy
+		relative_position_id = Stolibrother_19
+		cost = 10.6
+		prerequisite = {
+			focus = Stolibrother_19
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_20 entered"
+			}
+			add_ideas = mojave_help
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_20 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_21
+		icon = GFX_goal_moj_know_our_name
+		relative_position_id = Stolibrother_19
+		cost = 6.3
+		prerequisite = {
+			focus = Stolibrother_19
+		}
+		x = 2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_21 entered"
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_21 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_22
+		icon = GFX_goal_Newyorkbroth1
+		cost = 5.00
+		relative_position_id = Enclavesp_20
+		x = -4
+		y = 3
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		has_completed_focus = Stolibrother_17
+		}
+
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = stolbr.1
+		    }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_23
+		icon = GFX_goal_Newyorkbroth
+		relative_position_id = Stolibrother_22
+		cost = 5.0
+		prerequisite = {
+			focus = Stolibrother_22
+		}
+		available = {
+		909 = { is_controlled_by = NBS } #do we actually own it right now?
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		x = -2
+		y = 1
+
+		completion_reward = {
+			NBS = {
+			add_manpower = 1400
+			add_political_power = 50
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_24
+		icon = GFX_goal_Newyorkbroth2
+		relative_position_id = Stolibrother_22
+		cost = 5.0
+		prerequisite = {
+			focus = Stolibrother_22
+		}
+		available = {
+		909 = { is_controlled_by = NBS } #do we actually own it right now?
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			NBS = {
+			         add_equipment_to_stockpile = { type = power_armor_equipment_1 amount = 1000 producer = SBS }
+			         add_equipment_to_stockpile = { type = energy_equipment_1 amount = 2000 producer = SBS }
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_25
+		icon = GFX_goal_Newyorkbroth3
+		relative_position_id = Stolibrother_22
+		cost = 5.0
+		prerequisite = {
+			focus = Stolibrother_22
+		}
+		available = {
+		909 = { is_controlled_by = NBS } #do we actually own it right now?
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		x = 2
+		y = 1
+
+		completion_reward = {
+			NBS = {
+			      add_research_slot = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_26
+		icon = GFX_goal_Newyorkbroth4
+		cost = 5.00
+		prerequisite = {
+			focus = Stolibrother_23
+		}
+		prerequisite = {
+			focus = Stolibrother_24
+		}
+		prerequisite = {
+			focus = Stolibrother_25
+		}
+		relative_position_id = Stolibrother_24
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		   911 = { is_controlled_by = ENY } #do we actually own it right now?
+		   909 = { is_controlled_by = NBS } #do we actually own it right now?
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = stolbr.2
+		    }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_27
+		icon = GFX_goal_Newyorkbroth5
+		cost = 5.00
+		prerequisite = {
+			focus = Stolibrother_26
+		}
+		relative_position_id = Stolibrother_26
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		   912 = { is_controlled_by = ENY } #do we actually own it right now?
+		   908 = { is_controlled_by = NBS } #do we actually own it right now?
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = stolbr.3
+		    }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_36
+		icon = GFX_goal_megatonna29
+		relative_position_id = Stolibrother_17
+		available = {
+		   880 = { is_controlled_by = ESP } #do we actually own it right now?
+		   ESP = { exists = yes }
+		}
+		bypass = {
+			ESP = { exists = no }
+			ESP = { is_subject_of = SBS}
+		}
+		cost = 10.0
+		ai_will_do = {
+			factor = 500
+		}
+		x = 2
+		y = 0
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] veg_firstbatch entered"
+			}
+			hidden_effect = { load_oob = SBS_Liberty_praym }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] veg_firstbatch exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_37
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = Stolibrother_36
+		x = 0
+		y = 1
+
+		cost = 6.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+		ESP = { exists = no }
+		USP = { exists = no }
+		LIT = { exists = no }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "stolichaliens"
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_38
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_4
+		prerequisite = {
+			focus = Stolibrother_4
+		}
+		x = -4
+		y = 1
+		
+		will_lead_to_war_with = SPP
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			ESP = { exists = no }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 716 # Carson City
+				}
+				SBS = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_39
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_38
+		prerequisite = {
+			focus = Stolibrother_38
+		}
+		x = 0
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			ESP = { exists = no }
+			has_full_control_of_state = 716
+			has_full_control_of_state = 852
+		}
+
+		bypass = {
+            has_full_control_of_state = 783
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 783 # Carson City
+				}
+				SBS = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_40
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_39
+		x = 0
+		y = 3
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			ESP = { exists = no }
+		}
+
+		bypass = {
+            has_full_control_of_state = 844
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			annex_country = { target = RIV transfer_troops = yes }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_41
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_40
+		prerequisite = {
+			focus = Stolibrother_40
+		}
+		x = -1
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			ESP = { exists = no }
+		}
+
+		bypass = {
+            has_full_control_of_state = 763
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			annex_country = { target = DIK transfer_troops = yes }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_42
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_40
+		prerequisite = {
+			focus = Stolibrother_40
+		}
+		x = 1
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			ESP = { exists = no }
+		}
+
+		bypass = {
+            has_full_control_of_state = 757
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = stolbr.4
+		    }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_43
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_41
+		prerequisite = {
+			focus = Stolibrother_41
+		}
+		prerequisite = {
+			focus = Stolibrother_42
+		}
+		x = 1
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			ESP = { exists = no }
+		}
+
+		bypass = {
+            has_full_control_of_state = 769
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			annex_country = { target = IBS transfer_troops = yes }
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_44
+		icon = GFX_goal_bos_generic
+		relative_position_id = Stolibrother_43
+		prerequisite = {
+			focus = Stolibrother_43
+		}
+		x = 0
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+            has_full_control_of_state = 820
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 820 # Carson City
+				}
+				SBS = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_45
+		icon = GFX_goal_megatonna17
+		ai_will_do = { factor = 1000 } 
+		relative_position_id = Stolibrother_20
+		prerequisite = {
+			focus = Stolibrother_20
+			focus = Stolibrother_21
+		}
+		available = {
+           ESP = { exists = no }
+   
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = cleanoperation
+			RIV = {
+						add_ideas = cleanoperation
+				}
+		}
+		cost = 5.0	
+ }
+	
+	
+	
+	

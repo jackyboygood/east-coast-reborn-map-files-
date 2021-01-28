@@ -1,0 +1,758 @@
+form_stolichusa_category = {
+	
+	form_USAINSTOLICH = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = ESP
+				original_tag = ENY
+				original_tag = AAE
+				original_tag = NUE
+				original_tag = MEN
+				original_tag = DAY
+				original_tag = IST
+				original_tag = DEV
+				original_tag = RAR
+				original_tag = KLI
+				original_tag = SLP
+				original_tag = NCR
+			}
+
+		}
+
+		available = {
+			is_subject = no
+				controls_state = 878
+				controls_state = 876
+				controls_state = 887
+				controls_state = 888
+				controls_state = 867
+				controls_state = 874
+				controls_state = 716
+		}
+
+		visible = {
+			OR = {
+				original_tag = ESP
+				original_tag = ENY
+				original_tag = AAE
+				original_tag = NUE
+				original_tag = MEN
+				original_tag = DAY
+				original_tag = IST
+				original_tag = DEV
+				original_tag = RAR
+				original_tag = KLI
+				original_tag = SLP
+				original_tag = NCR
+			}
+			NOT = { has_global_flag = form_scandinavia_flag1 }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ESP_USA
+			# Denmark / European Mainland
+			hidden_effect = {
+				750 = { add_core_of = ROOT }
+				755 = { add_core_of = ROOT }
+				827 = { add_core_of = ROOT }
+				826 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				825 = { add_core_of = ROOT }
+				777 = { add_core_of = ROOT }
+				776 = { add_core_of = ROOT }
+				778 = { add_core_of = ROOT }
+				771 = { add_core_of = ROOT }
+				770 = { add_core_of = ROOT }
+				769 = { add_core_of = ROOT }
+				768 = { add_core_of = ROOT }
+				780 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = form_scandinavia_flag1
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_canadian_category = {
+	
+	form_canadobiedinenie = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = AAI
+				original_tag = AAF
+				original_tag = AAD
+				original_tag = AAG
+				original_tag = RON
+				original_tag = AAA
+				original_tag = AAB
+				original_tag = AAZ
+				original_tag = BAA
+			}
+
+		}
+
+		available = {
+			is_subject = no
+				controls_state = 905
+				controls_state = 895
+				controls_state = 900
+				controls_state = 894
+				controls_state = 909
+				controls_state = 907
+				controls_state = 910
+		}
+
+		visible = {
+			OR = {
+				original_tag = AAI
+				original_tag = AAF
+				original_tag = AAD
+				original_tag = AAG
+				original_tag = RON
+				original_tag = AAA
+				original_tag = AAB
+				original_tag = AAZ
+				original_tag = BAA
+			}
+			NOT = { has_global_flag = form_scandinavia_flag2 }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = Canada
+			# Denmark / European Mainland
+			hidden_effect = {
+				837 = { add_core_of = ROOT }
+				874 = { add_core_of = ROOT }
+				898 = { add_core_of = ROOT }
+				908 = { add_core_of = ROOT }
+				922 = { add_core_of = ROOT }
+				915 = { add_core_of = ROOT }
+				903 = { add_core_of = ROOT }
+				921 = { add_core_of = ROOT }
+				923 = { add_core_of = ROOT }
+				913 = { add_core_of = ROOT }
+				904 = { add_core_of = ROOT }
+				924 = { add_core_of = ROOT }
+				914 = { add_core_of = ROOT }
+				916 = { add_core_of = ROOT }
+				925 = { add_core_of = ROOT }
+				926 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = form_scandinavia_flag2
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+form_sovet_category
+
+    form_Sovetin = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = SOV
+			}
+
+		}
+
+		available = {
+			is_subject = no
+				controls_state = 878
+				controls_state = 876
+				controls_state = 887
+				controls_state = 888
+				controls_state = 867
+				controls_state = 874
+				controls_state = 716
+		}
+
+		visible = {
+			OR = {
+				original_tag = SOV
+			}
+			NOT = { has_global_flag = form_scandinavia_flag3 }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SOV_USA
+			# Denmark / European Mainland
+			hidden_effect = {
+				878 = { add_core_of = ROOT }
+				876 = { add_core_of = ROOT }
+				887 = { add_core_of = ROOT }
+				888 = { add_core_of = ROOT }
+				867 = { add_core_of = ROOT }
+				874 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = form_scandinavia_flag3
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+ESP_cloning = {
+	cloning_project = {
+		icon = decision_enc_cloning
+		cost = 50
+		
+		visible = {
+			has_country_flag = enc_cloning_available_flag
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_flag
+				}
+				set_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+		
+		available = {
+			any_owned_state = {
+				has_state_flag = has_cloning_facility_flag
+				NOT = { has_state_flag = has_cloning_facility_occupied_flag }
+			}
+		}
+		
+		days_remove = 100
+		remove_effect = {
+			add_manpower = amount_cloned
+			
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_occupied_flag
+				}
+				clr_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+	}
+	cloning_experiment = {
+		icon = decision_enc_cloning
+		cost = 50
+		
+		visible = {
+			NOT = { has_country_flag = enc_cloning_available_flag }
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_flag
+				}
+				set_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+		
+		available = {
+			any_owned_state = {
+				has_state_flag = has_cloning_facility_flag
+				NOT = { has_state_flag = has_cloning_facility_occupied_flag }
+			}
+		}
+		
+		days_remove = 100
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 6 }
+				}
+				random_list = { 
+					0 = { country_event = { id = enc.27 } } 
+					100 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 5 }
+				}
+				random_list = { 
+					10 = { country_event = { id = enc.27 } } 
+					90 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 4 }
+				}
+				random_list = { 
+					20 = { country_event = { id = enc.27 } } 
+					80 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 3 }
+				}
+				random_list = { 
+					30 = { country_event = { id = enc.27 } } 
+					70 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 2 }
+				}
+				random_list = { 
+					40 = { country_event = { id = enc.27 } } 
+					60 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 1 }
+				}
+				random_list = { 
+					50 = { country_event = { id = enc.27 } } 
+					50 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 0 }
+				}
+				random_list = { 
+					60 = { country_event = { id = enc.27 } } 
+					40 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else = {
+				random_list = { 
+					70 = { country_event = { id = enc.27 } } 
+					30 = { country_event = { id = enc.26 } } 
+				}
+			}		
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_occupied_flag
+				}
+				clr_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+	}	
+	build_cloning_facility = {
+		icon = generic_construction
+		cost = 200
+		
+		available = {
+			num_of_available_civilian_factories > 5
+			any_owned_state = {
+				has_resources_amount = { 
+					resource = electricity
+					amount > 29 
+				}
+				NOT = { has_state_flag = has_cloning_facility_flag } 
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		days_remove = 100
+		complete_effect = {
+			# add building
+			add_to_variable = { var = num_cloning_facilities value = 1 }
+			add_to_variable = { var = amount_cloned value = 500 }
+			random_owned_state = {
+				limit = {
+					has_resources_amount = { 
+						resource = electricity
+						amount > 29
+					}
+				}
+				set_state_flag = has_cloning_facility_flag
+			}
+		}
+	}
+}
+
+AAE_cloning = {
+	cloning_project = {
+		icon = decision_enc_cloning
+		cost = 50
+		
+		visible = {
+			has_country_flag = enc_cloning_available_flag
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_flag
+				}
+				set_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+		
+		available = {
+			any_owned_state = {
+				has_state_flag = has_cloning_facility_flag
+				NOT = { has_state_flag = has_cloning_facility_occupied_flag }
+			}
+		}
+		
+		days_remove = 100
+		remove_effect = {
+			add_manpower = amount_cloned
+			
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_occupied_flag
+				}
+				clr_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+	}
+	cloning_experiment = {
+		icon = decision_enc_cloning
+		cost = 50
+		
+		visible = {
+			NOT = { has_country_flag = enc_cloning_available_flag }
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_flag
+				}
+				set_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+		
+		available = {
+			any_owned_state = {
+				has_state_flag = has_cloning_facility_flag
+				NOT = { has_state_flag = has_cloning_facility_occupied_flag }
+			}
+		}
+		
+		days_remove = 100
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 6 }
+				}
+				random_list = { 
+					0 = { country_event = { id = enc.27 } } 
+					100 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 5 }
+				}
+				random_list = { 
+					10 = { country_event = { id = enc.27 } } 
+					90 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 4 }
+				}
+				random_list = { 
+					20 = { country_event = { id = enc.27 } } 
+					80 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 3 }
+				}
+				random_list = { 
+					30 = { country_event = { id = enc.27 } } 
+					70 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 2 }
+				}
+				random_list = { 
+					40 = { country_event = { id = enc.27 } } 
+					60 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 1 }
+				}
+				random_list = { 
+					50 = { country_event = { id = enc.27 } } 
+					50 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 0 }
+				}
+				random_list = { 
+					60 = { country_event = { id = enc.27 } } 
+					40 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else = {
+				random_list = { 
+					70 = { country_event = { id = enc.27 } } 
+					30 = { country_event = { id = enc.26 } } 
+				}
+			}		
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_occupied_flag
+				}
+				clr_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+	}	
+	build_cloning_facility = {
+		icon = generic_construction
+		cost = 200
+		
+		available = {
+			num_of_available_civilian_factories > 5
+			any_owned_state = {
+				has_resources_amount = { 
+					resource = electricity
+					amount > 29 
+				}
+				NOT = { has_state_flag = has_cloning_facility_flag } 
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		days_remove = 100
+		complete_effect = {
+			# add building
+			add_to_variable = { var = num_cloning_facilities value = 1 }
+			add_to_variable = { var = amount_cloned value = 500 }
+			random_owned_state = {
+				limit = {
+					has_resources_amount = { 
+						resource = electricity
+						amount > 29
+					}
+				}
+				set_state_flag = has_cloning_facility_flag
+			}
+		}
+	}
+}
+
+AAZ_cloning = {
+	cloning_project = {
+		icon = decision_enc_cloning
+		cost = 50
+		
+		visible = {
+			has_country_flag = enc_cloning_available_flag
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_flag
+				}
+				set_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+		
+		available = {
+			any_owned_state = {
+				has_state_flag = has_cloning_facility_flag
+				NOT = { has_state_flag = has_cloning_facility_occupied_flag }
+			}
+		}
+		
+		days_remove = 100
+		remove_effect = {
+			add_manpower = amount_cloned
+			
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_occupied_flag
+				}
+				clr_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+	}
+	cloning_experiment = {
+		icon = decision_enc_cloning
+		cost = 50
+		
+		visible = {
+			NOT = { has_country_flag = enc_cloning_available_flag }
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_flag
+				}
+				set_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+		
+		available = {
+			any_owned_state = {
+				has_state_flag = has_cloning_facility_flag
+				NOT = { has_state_flag = has_cloning_facility_occupied_flag }
+			}
+		}
+		
+		days_remove = 100
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 6 }
+				}
+				random_list = { 
+					0 = { country_event = { id = enc.27 } } 
+					100 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 5 }
+				}
+				random_list = { 
+					10 = { country_event = { id = enc.27 } } 
+					90 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 4 }
+				}
+				random_list = { 
+					20 = { country_event = { id = enc.27 } } 
+					80 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 3 }
+				}
+				random_list = { 
+					30 = { country_event = { id = enc.27 } } 
+					70 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 2 }
+				}
+				random_list = { 
+					40 = { country_event = { id = enc.27 } } 
+					60 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 1 }
+				}
+				random_list = { 
+					50 = { country_event = { id = enc.27 } } 
+					50 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { enc_cloning_chance > 0 }
+				}
+				random_list = { 
+					60 = { country_event = { id = enc.27 } } 
+					40 = { country_event = { id = enc.26 } } 
+				}
+			}
+			else = {
+				random_list = { 
+					70 = { country_event = { id = enc.27 } } 
+					30 = { country_event = { id = enc.26 } } 
+				}
+			}		
+			random_owned_state = {
+				limit = {
+					has_state_flag = has_cloning_facility_occupied_flag
+				}
+				clr_state_flag = has_cloning_facility_occupied_flag
+			}			
+		}
+	}	
+	build_cloning_facility = {
+		icon = generic_construction
+		cost = 200
+		
+		available = {
+			num_of_available_civilian_factories > 5
+			any_owned_state = {
+				has_resources_amount = { 
+					resource = electricity
+					amount > 29 
+				}
+				NOT = { has_state_flag = has_cloning_facility_flag } 
+			}
+		}
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		days_remove = 100
+		complete_effect = {
+			# add building
+			add_to_variable = { var = num_cloning_facilities value = 1 }
+			add_to_variable = { var = amount_cloned value = 500 }
+			random_owned_state = {
+				limit = {
+					has_resources_amount = { 
+						resource = electricity
+						amount > 29
+					}
+				}
+				set_state_flag = has_cloning_facility_flag
+			}
+		}
+	}
+}

@@ -1,0 +1,1977 @@
+focus_tree = {
+	id = institut
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = INS
+		}
+	}
+	default = no
+	
+	focus = {
+		id = institut_1
+		icon = GFX_goal_institut
+		ai_will_do = { factor = 1 } 
+		cost = 1.0
+		x = 16
+		y = 0
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
+			}
+			country_event = { id = inst.1 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_2
+		icon = GFX_goal_institut1
+		relative_position_id = institut_1
+		prerequisite = {
+			focus = institut_1
+		}
+		cost = 1.0
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		ai_will_do = { factor = 1 } 
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_2 entered"
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_2 exited"
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = institut_3
+		icon = GFX_goal_NEW_the_old_world
+		prerequisite = {focus = institut_2}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_2
+		x = 0
+		y = 1
+		cost = 2.0
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = institut_4
+		icon = GFX_goal_institut2
+		prerequisite = {focus = institut_3}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_3
+		x = 0
+		y = 2
+		cost = 10.0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = institut_5
+		icon = GFX_goal_institut3
+		ai_will_do = { factor = 10 } 
+		relative_position_id = institut_3
+		cost = 8.6
+		prerequisite = {
+			focus = institut_3
+		}
+		x = -6
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_5 entered"
+			}
+			add_tech_bonus = { bonus = 0.2 uses = 2 category = robotics_tech }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_5 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_6
+		icon = GFX_goal_institut4
+		relative_position_id = institut_3
+		cost = 8.6
+		ai_will_do = { factor = 15 } 
+		prerequisite = {
+			focus = institut_3
+		}
+		x = 6
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_6 entered"
+			}
+			army_experience = 10
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_6 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_7
+		icon = GFX_goal_institut5
+		ai_will_do = { factor = 15 } 
+		relative_position_id = institut_6
+		cost = 8.0
+		prerequisite = {
+			focus = institut_6
+		}
+		x = -2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_7 entered"
+			}
+			add_political_power = 50
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_7 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_8
+		icon = GFX_goal_institut6
+		relative_position_id = institut_7
+		ai_will_do = { factor = 15 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_7
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_8 entered"
+			}
+			add_ideas = pohishenieludeyinstitute
+			add_manpower = 400
+			MEN = { 
+		    add_manpower = -100	
+			}
+			DAY = { 
+		    add_manpower = -100	
+			}
+			STR = { 
+		    add_manpower = -100	
+			}
+			KOV = { 
+		    add_manpower = -100	
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_8 exited"
+			}
+			hidden_effect = {
+				country_event = { days = 1 id = newsfallout.20 }	
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_9
+		icon = GFX_goal_institut7
+		relative_position_id = institut_8
+		ai_will_do = { factor = 15 } 
+		cost = 11.0
+		available = {
+			has_completed_focus = institut_25
+			930 = { is_owned_and_controlled_by = DAY }
+		}
+		prerequisite = {
+			focus = institut_8
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Captain Security Daymond-City"
+				gfx = "GFX_portrait_diamond-city-swat"
+				skill = 4
+				attack_skill = 1
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Danny Sullivan"
+				gfx = "GFX_portrait_Danny_Sullivan"
+				skill = 4
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_10
+		icon = GFX_goal_institut8
+		relative_position_id = institut_9
+		ai_will_do = { factor = 15 } 
+		cost = 11.0
+		available = {
+           930 = { is_owned_and_controlled_by = DAY }
+		}
+		prerequisite = {
+			focus = institut_9
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			DAY = { 
+		          add_opinion_modifier = { target = INS modifier = daymondcitygoodforinstitut }
+			}
+			add_political_power = 30
+			add_opinion_modifier = { target = DAY modifier = daymondcitygoodforinstitut }
+		}
+	}
+	
+	focus = {
+		id = institut_11
+		icon = GFX_goal_institut9
+		ai_will_do = { factor = 15 } 
+		cost = 11.00
+		relative_position_id = institut_10
+		prerequisite = {
+			focus = institut_10
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+           930 = { is_owned_and_controlled_by = DAY }
+		}
+
+		bypass = {
+			DOB = { exists = no }
+			DOB = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = inst.2
+		    }
+		}
+	}
+
+    focus = {
+		id = institut_12
+		icon = GFX_goal_institut10
+		relative_position_id = institut_11
+		cost = 8.0
+		ai_will_do = { factor = 15 } 
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		prerequisite = {
+			focus = institut_11
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_political_power = 30
+			INS = { 
+		          transfer_state = 924
+			}
+			DAY = { 
+		          add_political_power = -100
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_13
+		icon = GFX_goal_institut11
+		cost = 11.00
+		relative_position_id = institut_12
+		prerequisite = {
+			focus = institut_12
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = { factor = 30 } 
+
+		available = {
+           930 = { is_owned_and_controlled_by = DAY }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = inst.3
+		    }
+		}
+	}
+	
+	focus = {
+		id = institut_14
+		icon = GFX_goal_institut5
+		relative_position_id = institut_6
+		ai_will_do = { factor = 9 } 
+		cost = 8.0
+		prerequisite = {
+			focus = institut_6
+		}
+		x = 2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_14 entered"
+			}
+			add_political_power = 50
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_14 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_15
+		icon = GFX_goal_institut12
+		relative_position_id = institut_14
+		ai_will_do = { factor = 9 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_14
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_15 entered"
+			}
+			add_ideas = pohisheniemutantovinstitute
+			add_manpower = 400
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_15 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_16
+		icon =  GFX_goal_institut13
+		relative_position_id = institut_15
+		cost = 11.0
+		ai_will_do = { factor = 9 } 
+		prerequisite = {
+			focus = institut_15
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+		    if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_16 entered"
+			}
+		    add_ideas = newsupermutantv
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_16 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_17
+		icon = GFX_goal_institut14
+		relative_position_id = institut_16
+		ai_will_do = { factor = 9 } 
+		available = {
+			has_completed_focus = institut_25
+		}
+		cost = 11.0
+		prerequisite = {
+			focus = institut_16
+		}
+		bypass = {
+
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Marmont"
+				gfx = "GFX_portrait_marmont"
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			create_corps_commander = {
+				name = "Kyle"
+				gfx = "GFX_portrait_kyle"
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_18
+		icon = GFX_goal_institut15
+		relative_position_id = institut_17
+		ai_will_do = { factor = 9 } 
+		cost = 11.0
+		available = {
+			931 = { is_owned_and_controlled_by = BSM }
+		}
+		prerequisite = {
+			focus = institut_17
+		}
+		bypass = {
+			BSM = { exists = no }
+			BSM = { is_subject_of = INS}
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			BSM = { 
+		          add_opinion_modifier = { target = INS modifier = supermutantinstitut }
+			}
+			add_political_power = 30
+			add_opinion_modifier = { target = BSM modifier = supermutantinstitut }
+		}
+	}
+	
+	focus = {
+		id = institut_19
+		icon = GFX_goal_institut16
+		relative_position_id = institut_18
+		cost = 11.0
+		prerequisite = {
+			focus = institut_18
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = institut_20
+		icon = GFX_goal_institut17
+		cost = 11.00
+		relative_position_id = institut_19
+		prerequisite = {
+			focus = institut_19
+		}
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			931 = { is_owned_and_controlled_by = BSM }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = inst.4
+		    }
+		}
+	}
+	
+	focus = {
+		id = institut_21
+		icon = GFX_goal_institut18
+		ai_will_do = { factor = 25 } 
+		cost = 8.6
+		relative_position_id = institut_5
+		prerequisite = {
+			focus = institut_5
+		}
+		x = 0
+		y = 2
+		available = {
+		}
+		completion_reward = {
+			add_ideas = sinth1generic
+		}
+	}
+	
+	focus = {
+		id = institut_22
+		icon = GFX_goal_institut19
+		relative_position_id = institut_21
+		ai_will_do = { factor = 25 } 
+		cost = 8.6
+		prerequisite = {
+			focus = institut_21
+		}
+		x = -2
+		y = 1
+		available = {
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_22 entered"
+			}
+			920 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_22 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_23
+		icon = GFX_goal_institut20
+		ai_will_do = { factor = 25 } 
+		relative_position_id = institut_21
+		cost = 8.6
+		prerequisite = {
+			focus = institut_21
+		}
+		x = 2
+		y = 1
+		available = {
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_22 entered"
+			}
+			920 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_22 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_24
+		icon = GFX_goal_institut21
+		relative_position_id = institut_23
+		ai_will_do = { factor = 25 } 
+		cost = 8.6
+		prerequisite = {
+			focus = institut_22
+		}
+		prerequisite = {
+			focus = institut_23
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] veg_firstbatch entered"
+			}
+			add_manpower = 250
+			custom_effect_tooltip = load_inst1pokolen
+			hidden_effect = { load_oob = inst1pokolen }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] veg_firstbatch exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_25
+		icon = GFX_goal_institut22
+		relative_position_id = institut_24
+		ai_will_do = { factor = 25 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_24
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_25 entered"
+			}
+			add_ideas = sinth2generic
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_25 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_26
+		icon = GFX_goal_institut23
+		cost = 13.0
+		relative_position_id = institut_25
+		prerequisite = {
+			focus = institut_25
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_26 entered"
+			}
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = INS_idea_backhand_support_idea
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_26 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_27
+		icon = GFX_goal_institut24
+		relative_position_id = institut_25
+		cost = 13.0
+		prerequisite = {
+			focus = institut_25
+		}
+		x = 2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_27 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_27 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_28
+		icon = GFX_goal_institut25
+		available = {
+		}
+		ai_will_do = { factor = 1 }
+		relative_position_id = institut_25
+		x = -2
+		y = 1
+		prerequisite = { focus = institut_25 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = light_robot_equipment_1 amount = 1500 producer = INS }
+			add_equipment_to_stockpile = { type = light_robot_equipment_2 amount = 600 producer = INS }
+		}
+		cost = 13.0
+	}
+	
+	focus = {
+		id = institut_29
+		icon = GFX_goal_doroga
+		prerequisite = { focus = institut_4 }
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_4
+		x = -1
+		y = 1
+		cost = 7.8
+		completion_reward = {
+			add_political_power = 50
+			920 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_30
+		icon = GFX_goal_generic_building_focus
+		relative_position_id = institut_4
+		cost = 8.6
+		prerequisite = {
+			focus = institut_4
+		}
+		x = 1
+		y = 1
+		available = {
+			controls_state = 920
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_30 entered"
+			}
+			920 = {
+				add_resource = {
+					type = circuitry
+					amount = 10
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_30 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_31
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = institut_29
+		cost = 8.6
+		prerequisite = {
+			focus = institut_29
+		}
+		prerequisite = {
+			focus = institut_30
+		}
+		x = 0
+		y = 1
+		available = {
+			924 = { is_owned_and_controlled_by = INS }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_31 entered"
+			}
+			924 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_31 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_32
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = institut_31
+		cost = 8.6
+		prerequisite = {
+			focus = institut_31
+		}
+		x = 0
+		y = 1
+		available = {
+			924 = { is_owned_and_controlled_by = INS }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_32 entered"
+			}
+			924 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_32 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_33
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = institut_30
+		cost = 8.6
+		prerequisite = {
+			focus = institut_29
+		}
+		prerequisite = {
+			focus = institut_30
+		}
+		x = 0
+		y = 1
+		available = {
+			931 = { is_owned_and_controlled_by = INS }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_33 entered"
+			}
+			931 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_33 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_34
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = institut_33
+		cost = 8.6
+		prerequisite = {
+			focus = institut_33
+		}
+		x = 0
+		y = 1
+		available = {
+			931 = { is_owned_and_controlled_by = INS }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_34 entered"
+			}
+			931 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_34 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_35
+		icon = GFX_goal_bos_scourge_focus
+		relative_position_id = institut_3
+		cost = 8.6
+		prerequisite = {
+			focus = institut_3
+		}
+		x = -10
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_35 entered"
+			}
+			air_experience = 25
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_35 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_36
+		icon = GFX_goal_bos_scourge_focus
+		cost = 8.6
+		relative_position_id = institut_35
+		prerequisite = {
+			focus = institut_35
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_36 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_36 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_37
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = institut_35
+		cost = 8.6
+		prerequisite = {
+			focus = institut_35
+		}
+		x = 1
+		y = 1
+		available = {
+			920 = { is_owned_and_controlled_by = INS }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_37 entered"
+			}
+			920 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_37 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_38
+		icon = GFX_goal_generic_air_doctrines_focus
+		cost = 8.6
+		relative_position_id = institut_37
+		prerequisite = {
+			focus = institut_37
+		}
+		prerequisite = {
+			focus = institut_36
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_38 entered"
+			}
+			add_ideas = genericbosaerialsupermacy
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_38 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_39
+		icon = GFX_goal_institut5
+		relative_position_id = institut_6
+		cost = 8.0
+		prerequisite = {
+			focus = institut_6
+		}
+		available = {
+			918 = { is_owned_and_controlled_by = MEN }
+		}
+		bypass = {
+			MEN = { exists = no }
+			MEN = { is_subject_of = INS}
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_39 entered"
+			}
+			add_political_power = 50
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_39 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_40
+		icon = GFX_goal_institut15
+		relative_position_id = institut_39
+		cost = 15.0
+		available = {
+			918 = { is_owned_and_controlled_by = MEN }
+		}
+		prerequisite = {
+			focus = institut_39
+		}
+		bypass = {
+			MEN = { exists = no }
+			MEN = { is_subject_of = INS}
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			MEN = { 
+		          add_opinion_modifier = { target = INS modifier = institutandminitman }
+			}
+			add_political_power = 30
+			add_opinion_modifier = { target = MEN modifier = institutandminitman }
+		}
+	}
+	
+	focus = {
+		id = institut_41
+		icon = GFX_goal_institut26
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_26
+		x = 0
+		y = 1
+		prerequisite = { focus = institut_26 }
+		available = {
+			920 = { is_owned_and_controlled_by = INS }
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = sinth_command_from_afar1 
+				remove_idea = sinth_command_from_afar
+			}
+		}
+		cost = 20.0
+	}
+	
+	focus = {
+		id = institut_42
+		icon = GFX_goal_institut7
+		relative_position_id = institut_40
+		cost = 11.0
+		available = {
+         MEN = { exists = yes }
+		}
+		prerequisite = {
+			focus = institut_40
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Sergeant Bolton"
+				gfx = "GFX_portrait_synth_general"
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Sergeant Liana"
+				gfx = "GFX_portrait_synth_general1"
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_43
+		icon = GFX_goal_generic_supplies_focus
+		available = {
+			917 = { is_owned_and_controlled_by = MEN }
+		}
+		ai_will_do = { factor = 1 }
+		relative_position_id = institut_42
+		x = 0
+		y = 1
+		prerequisite = { focus = institut_42 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = power_armor_equipment_1 amount = 250 producer = MEN }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 1000 producer = MEN }
+		}
+		cost = 5.8
+	}
+	
+	focus = {
+		id = institut_44
+		icon = GFX_goal_institut27
+		relative_position_id = institut_43
+		prerequisite = { focus = institut_43 }
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = MEN
+
+		cost = 5.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = MEN
+			}
+			MEN = { exists = yes }
+			917 = { is_owned_and_controlled_by = MEN }
+			918 = { is_owned_and_controlled_by = MEN }
+		}
+
+		bypass = {
+			MEN = { exists = no }
+			MEN = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MEN
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_45
+		icon = GFX_goal_institut11
+		relative_position_id = institut_32
+		x = 0
+		y = 2
+		
+		will_lead_to_war_with = STR
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = STR
+			}
+			STR = { exists = yes }
+			has_completed_focus = institut_41
+			has_completed_focus = institut_8
+			has_completed_focus = institut_16
+			date > 2278.2.1
+		}
+		
+		bypass = {
+			MEN = { exists = no }
+			MEN = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = STR
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_46
+		icon = GFX_goal_institut11
+		relative_position_id = institut_34
+		x = 0
+		y = 2
+		
+		will_lead_to_war_with = BSS
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = BSS
+			}
+			BSS = { exists = yes }
+			has_completed_focus = institut_41
+			has_completed_focus = institut_8
+			has_completed_focus = institut_16
+			date > 2278.2.1
+		}
+
+		bypass = {
+			BSS = { exists = no }
+			BSS = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    925 = { add_core_of = INS }
+			create_wargoal = {
+				type = annex_everything
+				target = BSS
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_47
+		icon = GFX_goal_institut11
+		relative_position_id = institut_45
+		prerequisite = { focus = institut_45 }
+		x = 0
+		y = 2
+		
+		will_lead_to_war_with = RIJ
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = RIJ
+			}
+			RIJ = { exists = yes }
+			has_completed_focus = institut_41
+			has_completed_focus = institut_8
+			has_completed_focus = institut_16
+		}
+
+		bypass = {
+			RIJ = { exists = no }
+			RIJ = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    923 = { add_core_of = INS }
+			create_wargoal = {
+				type = annex_everything
+				target = RIJ
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_48
+		icon = GFX_goal_institut11
+		relative_position_id = institut_46
+		prerequisite = { focus = institut_46 }
+		x = 0
+		y = 2
+		
+		will_lead_to_war_with = KOV
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = KOV
+			}
+			KOV = { exists = yes }
+			has_completed_focus = institut_41
+			has_completed_focus = institut_8
+			has_completed_focus = institut_16
+		}
+
+		bypass = {
+			KOV = { exists = no }
+			KOV = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    927 = { add_core_of = INS }
+			929 = { add_core_of = INS }
+			create_wargoal = {
+				type = annex_everything
+				target = KOV
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_49
+		icon = GFX_goal_Enclave11
+		relative_position_id = institut_48
+		prerequisite = { focus = institut_48 }
+		prerequisite = { focus = institut_47 }
+		x = -1
+		y = 1
+		
+		will_lead_to_war_with = NUE
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = NUE
+			}
+			NUE = { exists = yes }
+			923 = { is_controlled_by = INS } # NAVARRO
+			925 = { is_controlled_by = INS } # NAVARRO
+			919 = { is_controlled_by = INS } # NAVARRO
+		}
+
+		bypass = {
+			NUE = { exists = no }
+			NUE = { is_subject_of = INS}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NUE
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_50
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = institut_44
+		x = 0
+		y = 1
+
+		cost = 6.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		date > 2280.1.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	
+	focus = {
+		id = institut_51
+		icon = GFX_goal_institut29
+		relative_position_id = institut_64
+		prerequisite = { focus = institut_64 }
+		x = -2
+		y = 1
+
+		cost = 15.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		controls_state = 729
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = { Tree_mutant_civilization = 1 }
+		}
+	}
+	
+	focus = {
+		id = institut_52
+		icon = GFX_goal_NEW_the_old_world
+		prerequisite = {focus = institut_3}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_35
+		x = -5
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		    set_technology = {
+			stripped_pa_tech = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_53
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = {focus = institut_52}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_52
+		x = -2
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		   add_tech_bonus = { bonus = 0.3 uses = 2 category = naval_doctrine }
+		}
+	}
+	
+	focus = {
+		id = institut_54
+		icon = GFX_goal_generic_BOS_focus_flight_academy
+		prerequisite = {focus = institut_52}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_52
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		   add_tech_bonus = { bonus = 0.3 uses = 2 category = air_doctrine }
+		}
+	}
+	
+	focus = {
+		id = institut_55
+		icon = GFX_goal_generic_electricity_focus
+		prerequisite = {focus = institut_52}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_52
+		x = 2
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		   add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+		}
+	}
+	
+	focus = {
+		id = institut_56
+		icon = GFX_goal_institut18
+		prerequisite = {focus = institut_54}
+		prerequisite = {focus = institut_53}
+		prerequisite = {focus = institut_55}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_54
+		x = -1
+		y = 1
+		cost = 15.0
+		completion_reward = {
+		  add_tech_bonus = { bonus = 0.4 uses = 2 category = robotics_tech }
+		}
+	}
+	
+	focus = {
+		id = institut_57
+		icon = GFX_goal_generic_land_doctrines_focus
+		prerequisite = {focus = institut_54}
+		prerequisite = {focus = institut_53}
+		prerequisite = {focus = institut_55}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_54
+		x = 1
+		y = 1
+		cost = 15.0
+		completion_reward = {
+		  add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = institut_58
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = {focus = institut_56}
+		prerequisite = {focus = institut_57}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = institut_56
+		x = 1
+		y = 1
+		cost = 20.0
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = light_robot_equipment_1 amount = 1500 producer = INS }
+			add_equipment_to_stockpile = { type = light_robot_equipment_2 amount = 600 producer = INS }
+			add_equipment_to_stockpile = { type = power_armor_equipment amount = 600 producer = INS }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 600 producer = INS }
+		}
+	}
+	
+	focus = {
+		id = institut_59
+		icon = GFX_goal_institut7
+		ai_will_do = { factor = 100 } 
+		relative_position_id = institut_58
+		available = {
+			928 = { is_controlled_by = INS } # NAVARRO
+			927 = { is_controlled_by = INS } # NAVARRO
+			919 = { is_controlled_by = INS } # NAVARRO
+			921 = { is_controlled_by = INS } # NAVARRO
+			922 = { is_controlled_by = INS } # NAVARRO
+		}
+		x = 0
+		y = 2
+		cost = 20.0
+		completion_reward = {
+		   430 = { add_core_of = BAG }
+		   209 = { add_core_of = BAG }
+		   release = BAG
+		   create_faction = institualien
+		   add_to_faction = BAG
+		   set_autonomy = { target = BAG autonomy_state = autonomy_puppet }	
+		   BAG = { 
+		       transfer_state = 430
+			   transfer_state = 209
+			   add_political_power = 1400
+		       add_manpower = 15000
+			   hidden_effect = {
+			    load_oob = BAG_2275
+			   }
+		    }
+		}
+	}
+	
+	focus = {
+		id = institut_60
+		icon = GFX_goal_institut6
+		relative_position_id = institut_59
+		ai_will_do = { factor = 15 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_59
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_manpower = -5500
+			BAG = { 
+		    add_manpower = 5500	
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_61
+		icon = GFX_goal_institut6
+		relative_position_id = institut_59
+		ai_will_do = { factor = 15 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_59
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = light_robot_equipment_1 amount = -1500 producer = INS }
+			add_equipment_to_stockpile = { type = light_robot_equipment_2 amount = -600 producer = INS }
+			add_equipment_to_stockpile = { type = power_armor_equipment_1 amount = -1500 producer = MEN }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = -6000 producer = MEN }
+			BAG = { 
+		    add_equipment_to_stockpile = { type = light_robot_equipment_1 amount = 1500 producer = INS }
+			add_equipment_to_stockpile = { type = light_robot_equipment_2 amount = 600 producer = INS }	
+			add_equipment_to_stockpile = { type = power_armor_equipment_1 amount = 1500 producer = MEN }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 6000 producer = MEN }
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_62
+		icon = GFX_goal_institut6
+		relative_position_id = institut_60
+		ai_will_do = { factor = 15 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_60
+		}
+		prerequisite = {
+			focus = institut_61
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			BAG = { 
+		    add_ideas = pohishenieludeyinstitute
+			add_ideas = sinth1generic
+			add_ideas = newsupermutantv
+			add_ideas = sinth2generic
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_63
+		icon = GFX_goal_institut11
+		ai_will_do = { factor = 1 }
+		available = { has_war_support > 0.20 }
+		prerequisite = { focus = institut_62 }
+		bypass = {
+			has_full_control_of_state = 374
+			has_full_control_of_state = 209
+		}	
+		relative_position_id = institut_62
+		x = 0
+		y = 1
+		cost = 4.0
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 374 # Carson City
+				}
+				BAG = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+				INS = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_64
+		icon = GFX_goal_institut30
+		relative_position_id = institut_50
+		x = 0
+		y = 1
+
+		cost = 15.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		controls_state = 917
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = { Bolotniks_mutant_civilization = 1 }
+		}
+	}
+	
+	focus = {
+		id = institut_65
+		icon = GFX_goal_institut28
+		relative_position_id = institut_64
+		prerequisite = { focus = institut_64 }
+		x = 0
+		y = 1
+
+		cost = 30.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		controls_state = 886
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = { super_mutant_behemoth = 1 }
+		}
+	}
+	
+	focus = {
+		id = institut_66
+		icon = GFX_goal_institut31
+		relative_position_id = institut_64
+		prerequisite = { focus = institut_64 }
+		x = 2
+		y = 1
+
+		cost = 15.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		controls_state = 887
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = { detivoini_civilization = 1 }
+		}
+	}
+	
+	focus = {
+		id = institut_67
+		icon = GFX_goal_institut26
+		relative_position_id = institut_41
+		ai_will_do = { factor = 9 } 
+		cost = 11.0
+		prerequisite = {
+			focus = institut_41
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_67 entered"
+			}
+			add_manpower = 3000
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] institut_67 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = institut_68
+		icon = GFX_goal_attack_legion
+		relative_position_id = institut_63
+		available = {
+			is_neighbor_of = CES
+		}
+		ai_will_do = { factor = 9 } 
+		cost = 10.0
+		prerequisite = {
+			focus = institut_63
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CES
+		    }
+		}
+	}
+	
+	focus = {
+		id = institut_69
+		icon = GFX_goal_enc_anti_ncr
+		relative_position_id = institut_63
+		ai_will_do = { factor = 9 }
+        available = {
+			is_neighbor_of = NCR
+		}		
+		cost = 10.0
+		prerequisite = {
+			focus = institut_63
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NCR
+		    }
+		}
+	}
+	
+	

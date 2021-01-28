@@ -1,0 +1,56 @@
+﻿capital = 871
+oob = "VSU_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	super_mutant_civilization = 1
+	mutant_access = 1
+	super_mutant_behemoth = 1
+	super_mutant_melee_weapons = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.35
+set_war_support = 0.60
+
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_opinion_modifier = { target = BOS modifier = mutantshatebos }
+add_opinion_modifier = { target = WBH modifier = mutantshatebos }
+
+create_country_leader  = {
+	name = "White Fang"
+	desc = ""
+	picture = "gfx/leaders/Portrait_Beliyklick.dds"
+	expire = "3000.1.1"
+	ideology = warlordship
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "White Fang"
+	portrait_path = "gfx/leaders/Portrait_Beliyklick.dds"
+	skill = 3
+	traits = {
+	fortress_buster
+	}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+

@@ -1,0 +1,52 @@
+﻿capital = 941
+oob = "BAS_2275"
+set_research_slots = 3
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.7
+set_war_support = 0.4
+
+set_convoys = 35
+set_politics = {
+	ruling_party = elites
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 100
+	intellectuals = 0
+	ruler = 0
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader  = {
+	name = "Smileing Bill"
+	desc = ""
+	picture = "gfx/leaders/BAS/Bill.dds"
+	expire = "3000.1.1"
+	ideology = militarist_oligarchy
+	traits = {
+		dislikes_legion
+	}
+}
+
+create_country_leader  = {
+	name = "Governor Bill"
+	desc = ""
+	picture = "gfx/leaders/BAS/Bill.dds"
+	expire = "3000.1.1"
+	ideology = town_hall_democracy
+	traits = {
+		dislikes_legion
+	}
+}

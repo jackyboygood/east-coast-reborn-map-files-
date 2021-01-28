@@ -1,0 +1,342 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_advisor_insitut"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut1"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut2"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut3"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_101vault"
+		texturefile = "gfx/interface/ideas/ministers/advisor_101vault.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_101vault1"
+		texturefile = "gfx/interface/ideas/ministers/advisor_101vault1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_101vault2"
+		texturefile = "gfx/interface/ideas/ministers/advisor_101vault2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_101vault3"
+		texturefile = "gfx/interface/ideas/ministers/advisor_101vault3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_101vault4"
+		texturefile = "gfx/interface/ideas/ministers/advisor_101vault4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_101vault5"
+		texturefile = "gfx/interface/ideas/ministers/advisor_101vault5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman1"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman2"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman3"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman4"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman5"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork1"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork2"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork3"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork4"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork5"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork6"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork7"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork8"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork9"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork10"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork11"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork12"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork13"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut4"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut5"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut6"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_newyork14"
+		texturefile = "gfx/interface/ideas/ministers/advisor_newyork14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut7"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut8"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut9"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut10"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave1"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave2"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave3"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave4"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave5"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave6"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave7"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_enclave8"
+		texturefile = "gfx/interface/ideas/ministers/advisor_enclave8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_insitut11"
+		texturefile = "gfx/interface/ideas/ministers/advisor_insitut11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman6"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisor_minitman7"
+		texturefile = "gfx/interface/ideas/ministers/advisor_minitman7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki"
+		texturefile = "gfx/interface/ideas/ministers/detki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki1"
+		texturefile = "gfx/interface/ideas/ministers/detki1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki2"
+		texturefile = "gfx/interface/ideas/ministers/detki2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki3"
+		texturefile = "gfx/interface/ideas/ministers/detki3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki4"
+		texturefile = "gfx/interface/ideas/ministers/detki4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki5"
+		texturefile = "gfx/interface/ideas/ministers/detki5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki6"
+		texturefile = "gfx/interface/ideas/ministers/detki6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki7"
+		texturefile = "gfx/interface/ideas/ministers/detki7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_detki8"
+		texturefile = "gfx/interface/ideas/ministers/detki8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_greatzilotrihter"
+		texturefile = "gfx/interface/ideas/ministers/greatzilotrihter.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_zilot_uer_farhar"
+		texturefile = "gfx/interface/ideas/ministers/zilot_uer_farhar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_brat_devin"
+		texturefile = "gfx/interface/ideas/ministers/brat_devin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sisterobert_yader"
+		texturefile = "gfx/interface/ideas/ministers/sisterobert_yader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_zilot_teyl_farhar"
+		texturefile = "gfx/interface/ideas/ministers/zilot_teyl_farhar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sistergvinet_buntar"
+		texturefile = "gfx/interface/ideas/ministers/sistergvinet_buntar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_brat_keyn"
+		texturefile = "gfx/interface/ideas/ministers/brat_keyn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sistermay_torgovec"
+		texturefile = "gfx/interface/ideas/ministers/sistermay_torgovec.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_arhimic_doctor"
+		texturefile = "gfx/interface/ideas/ministers/arhimic_doctor.dds"
+	}
+}

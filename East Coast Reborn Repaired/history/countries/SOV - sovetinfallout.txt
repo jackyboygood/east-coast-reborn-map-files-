@@ -1,0 +1,55 @@
+﻿capital = 944
+oob = "SOV_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	raider_reckless_aggression = 1
+	scrap_fighter = 1
+	settled_civilization = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.5
+set_war_support = 0.3
+set_rule = { can_join_factions = yes }
+set_convoys = 20
+
+
+set_research_slots = 3
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 2
+	elites = 0
+	intellectuals = 48
+	ruler = 50
+}
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Mikhail Alexandrovich"
+	desc = "POLITICS_CITIZEN_DESC"
+	id = 5808
+	picture = "gfx/leaders/SOV/comunism_leader.dds"
+	expire = "3000.1.1"
+	ideology = ideocracy
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aleksey Frolov"
+	desc = ""
+	picture = "gfx/leaders/SOV/Aleksey_Frolov.dds"
+	expire = "3000.1.1"
+	ideology = oligarchy
+	traits = {
+	}
+}

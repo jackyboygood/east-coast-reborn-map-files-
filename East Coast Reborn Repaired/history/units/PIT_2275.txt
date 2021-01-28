@@ -1,0 +1,87 @@
+﻿division_template = {
+	name = "Ashur's Raiders"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "Pittsburgh Slaves"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	division {
+		name = "Ashur's Boys"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Bridge Trolls"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Hell's Skullfuckers"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Shafters"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+    division {
+		name = "Pittsburgh's Nightmare"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Shafters"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+    division {
+		name = "Pittsburgh's Nightmare"
+		location = 11676
+		division_template = "Ashur's Raiders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PIT"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

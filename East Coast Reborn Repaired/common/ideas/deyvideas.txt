@@ -1,0 +1,344 @@
+ideas = {
+	country = {
+		# ag
+		
+        deyvi1idea = {
+
+			picture = deyvidea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.05
+				send_volunteer_size = 2
+			}
+		}
+		
+		deyvi2idea = {
+
+			picture = deyvidea1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+
+		deyvi3idea = {
+
+			picture = SOV_scientist_defect
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.25
+				enemy_justify_war_goal_time = 0.15
+			}
+		}
+		
+		deyvi4idea = {
+
+			picture = deyvidea2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+				political_power_gain = 0.01
+                send_volunteer_size = 2
+			}
+		}
+		
+		deyvi5idea = {
+
+			picture = deyvidea3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.06
+				conscription = -0.01
+				army_morale_factor = 0.05
+				research_speed_factor =0.06
+			}
+		}
+		
+		deyvi6idea = {
+		
+			picture = deyvidea4
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_factor = 0.07
+			}
+			research_bonus = {
+				land_equipment = 0.1
+			}
+		}
+		
+		deyvi7idea = {
+			picture = deyvidea5 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+				
+			modifier = {
+				heat_attrition_factor = -0.15
+			}
+			research_bonus = {
+				land_equipment = 0.04
+			}
+		}
+		
+		deyvi8idea = {
+			
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		deyvi9idea = {
+			
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = -0.01
+			}
+		}
+		
+		deyvi10idea = {
+			
+			picture = deyvidea7
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				MONTHLY_POPULATION = 0.02
+				non_core_manpower = 0.05
+			}
+		}
+		
+		deyvi11idea = {
+			
+			picture = deyvidea6
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor = -0.08
+				local_resources_factor = 0.05
+				industry_free_repair_factor = 0.05
+			}
+		}
+		
+		deyvi12idea = {
+			
+			picture = deyvidea8
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.02
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		
+		deyvi13idea = {
+			
+			picture = deyvidea4
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = -0.05
+				political_power_gain = -0.8
+				MONTHLY_POPULATION = -0.06
+				non_core_manpower = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		
+		deyvi14idea = {
+			
+			picture = deyvidea4
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = -0.05
+				political_power_gain = -0.8
+				MONTHLY_POPULATION = -0.06
+				non_core_manpower = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		
+		deyvi15idea = {
+			
+			picture = deyvidea4
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.02
+				army_defence_factor = 0.05
+				political_power_gain = -0.3
+				MONTHLY_POPULATION = -0.03
+				war_support_factor = 0.05
+			}
+		}
+		
+		deyvi16idea = {
+
+			picture = deyvidea2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.01
+				political_power_gain = 0.01
+                send_volunteer_size = 4
+			}
+		}

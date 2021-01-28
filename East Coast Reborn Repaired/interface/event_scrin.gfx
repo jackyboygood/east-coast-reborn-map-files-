@@ -1,0 +1,744 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_Metro_washington"
+		texturefile = "gfx/interface/Metro_washington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_Metro_washington1"
+		texturefile = "gfx/interface/Metro_washington1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_megtona"
+		texturefile = "gfx/interface/megtona.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_megtona1"
+		texturefile = "gfx/interface/megtona1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_washington"
+		texturefile = "gfx/interface/washington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_washington1"
+		texturefile = "gfx/interface/washington1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_washington2"
+		texturefile = "gfx/interface/washington2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_washington3"
+		texturefile = "gfx/interface/washington3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_washington4"
+		texturefile = "gfx/interface/washington4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_Rive_city"
+		texturefile = "gfx/interface/Rive_city.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_Rive_city1"
+		texturefile = "gfx/interface/Rive_city1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112"
+		texturefile = "gfx/interface/vault112.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112a"
+		texturefile = "gfx/interface/vault112a.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112b"
+		texturefile = "gfx/interface/vault112b.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112v"
+		texturefile = "gfx/interface/vault112v.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112d"
+		texturefile = "gfx/interface/vault112d.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112f"
+		texturefile = "gfx/interface/vault112f.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112e"
+		texturefile = "gfx/interface/vault112e.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112t"
+		texturefile = "gfx/interface/vault112t.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112s"
+		texturefile = "gfx/interface/vault112s.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112x"
+		texturefile = "gfx/interface/vault112x.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112c"
+		texturefile = "gfx/interface/vault112c.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault112y"
+		texturefile = "gfx/interface/vault112y.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_memrialwashington"
+		texturefile = "gfx/interface/memrialwashington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_memrialwashington1"
+		texturefile = "gfx/interface/memrialwashington1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_memrialwashington2"
+		texturefile = "gfx/interface/memrialwashington2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_memrialwashington3"
+		texturefile = "gfx/interface/memrialwashington3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_memrialwashington4"
+		texturefile = "gfx/interface/memrialwashington4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_memrialwashington5"
+		texturefile = "gfx/interface/memrialwashington5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_citadel"
+		texturefile = "gfx/interface/citadel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_citadel1"
+		texturefile = "gfx/interface/citadel1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vaultescepe"
+		texturefile = "gfx/interface/vaultescepe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vaultescepe1"
+		texturefile = "gfx/interface/vaultescepe1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork"
+		texturefile = "gfx/interface/newnewyork.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork1"
+		texturefile = "gfx/interface/newnewyork1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork2"
+		texturefile = "gfx/interface/newnewyork2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman"
+		texturefile = "gfx/interface/minitman.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman1"
+		texturefile = "gfx/interface/minitman1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman2"
+		texturefile = "gfx/interface/minitman2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman3"
+		texturefile = "gfx/interface/minitman3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman4"
+		texturefile = "gfx/interface/minitman4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman5"
+		texturefile = "gfx/interface/minitman5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman6"
+		texturefile = "gfx/interface/minitman6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman7"
+		texturefile = "gfx/interface/minitman7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman8"
+		texturefile = "gfx/interface/minitman8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman9"
+		texturefile = "gfx/interface/minitman9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_litl_lamplayt"
+		texturefile = "gfx/interface/litl_lamplayt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_litl_lamplayt1"
+		texturefile = "gfx/interface/litl_lamplayt1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_litl_lamplayt2"
+		texturefile = "gfx/interface/litl_lamplayt2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault87"
+		texturefile = "gfx/interface/vault87.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_1vault87"
+		texturefile = "gfx/interface/1vault87.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault871"
+		texturefile = "gfx/interface/vault871.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault872"
+		texturefile = "gfx/interface/vault872.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault873"
+		texturefile = "gfx/interface/vault873.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault874"
+		texturefile = "gfx/interface/vault874.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_vault875"
+		texturefile = "gfx/interface/vault875.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc"
+		texturefile = "gfx/interface/enc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newfallnewcount"
+		texturefile = "gfx/interface/newfallnewcount.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newyork"
+		texturefile = "gfx/interface/newyork.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_marie"
+		texturefile = "gfx/interface/Marie.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_ashur"
+		texturefile = "gfx/interface/ashur.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_Ashur_speech"
+		texturefile = "gfx/interface/Ashur_speech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_pitt"
+		texturefile = "gfx/interface/pitt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_pitsbur"
+		texturefile = "gfx/interface/pitsbur.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minet"
+		texturefile = "gfx/interface/minet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman10"
+		texturefile = "gfx/interface/minitman10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_rayvenrock"
+		texturefile = "gfx/interface/rayvenrock.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_rayvenrock1"
+		texturefile = "gfx/interface/rayvenrock1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_rayvenrock2"
+		texturefile = "gfx/interface/rayvenrock2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_rayvenrock3"
+		texturefile = "gfx/interface/rayvenrock3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_rayvenrock4"
+		texturefile = "gfx/interface/rayvenrock4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_rayvenrock5"
+		texturefile = "gfx/interface/rayvenrock5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc1"
+		texturefile = "gfx/interface/enc1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc2"
+		texturefile = "gfx/interface/enc2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc3"
+		texturefile = "gfx/interface/enc3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc4"
+		texturefile = "gfx/interface/enc4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc5"
+		texturefile = "gfx/interface/enc5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc6"
+		texturefile = "gfx/interface/enc6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc7"
+		texturefile = "gfx/interface/enc7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc8"
+		texturefile = "gfx/interface/enc8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newyorkbrothe"
+		texturefile = "gfx/interface/newyorkbrothe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newyorkbrothe1"
+		texturefile = "gfx/interface/newyorkbrothe1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newyorkbrothe2"
+		texturefile = "gfx/interface/newyorkbrothe2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_enc9"
+		texturefile = "gfx/interface/enc9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newyorkbrothe3"
+		texturefile = "gfx/interface/newyorkbrothe3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork3"
+		texturefile = "gfx/interface/newnewyork3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork4"
+		texturefile = "gfx/interface/newnewyork4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork5"
+		texturefile = "gfx/interface/newnewyork5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_institute"
+		texturefile = "gfx/interface/institute.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_institute1"
+		texturefile = "gfx/interface/institute1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_institute2"
+		texturefile = "gfx/interface/institute2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_newnewyork6"
+		texturefile = "gfx/interface/newnewyork6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_institute3"
+		texturefile = "gfx/interface/institute3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_institute4"
+		texturefile = "gfx/interface/institute4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_1vault101"
+		texturefile = "gfx/interface/1vault101.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_2vault101"
+		texturefile = "gfx/interface/2vault101.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events"
+		texturefile = "gfx/interface/sovet_events.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events1"
+		texturefile = "gfx/interface/sovet_events1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events2"
+		texturefile = "gfx/interface/sovet_events2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events3"
+		texturefile = "gfx/interface/sovet_events3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events4"
+		texturefile = "gfx/interface/sovet_events4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events5"
+		texturefile = "gfx/interface/sovet_events5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman11"
+		texturefile = "gfx/interface/minitman11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman12"
+		texturefile = "gfx/interface/minitman12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_minitman13"
+		texturefile = "gfx/interface/minitman13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events6"
+		texturefile = "gfx/interface/sovet_events6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events7"
+		texturefile = "gfx/interface/sovet_events7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events8"
+		texturefile = "gfx/interface/sovet_events8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events9"
+		texturefile = "gfx/interface/sovet_events9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events10"
+		texturefile = "gfx/interface/sovet_events10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events11"
+		texturefile = "gfx/interface/sovet_events11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_sovet_events12"
+		texturefile = "gfx/interface/sovet_events12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda"
+		texturefile = "gfx/interface/canadda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda1"
+		texturefile = "gfx/interface/canadda1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda2"
+		texturefile = "gfx/interface/canadda2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda3"
+		texturefile = "gfx/interface/canadda3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda4"
+		texturefile = "gfx/interface/canadda4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda5"
+		texturefile = "gfx/interface/canadda5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda6"
+		texturefile = "gfx/interface/canadda6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda7"
+		texturefile = "gfx/interface/canadda7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda8"
+		texturefile = "gfx/interface/canadda8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda9"
+		texturefile = "gfx/interface/canadda9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda10"
+		texturefile = "gfx/interface/canadda10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda11"
+		texturefile = "gfx/interface/canadda11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda12"
+		texturefile = "gfx/interface/canadda12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda13"
+		texturefile = "gfx/interface/canadda13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_canadda14"
+		texturefile = "gfx/interface/canadda14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event"
+		texturefile = "gfx/interface/nuclear_town_pic_event.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event1"
+		texturefile = "gfx/interface/nuclear_town_pic_event1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event2"
+		texturefile = "gfx/interface/nuclear_town_pic_event2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event3"
+		texturefile = "gfx/interface/nuclear_town_pic_event3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event4"
+		texturefile = "gfx/interface/nuclear_town_pic_event4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event5"
+		texturefile = "gfx/interface/nuclear_town_pic_event5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event6"
+		texturefile = "gfx/interface/nuclear_town_pic_event6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event7"
+		texturefile = "gfx/interface/nuclear_town_pic_event7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event8"
+		texturefile = "gfx/interface/nuclear_town_pic_event8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event9"
+		texturefile = "gfx/interface/nuclear_town_pic_event9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event10"
+		texturefile = "gfx/interface/nuclear_town_pic_event10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event11"
+		texturefile = "gfx/interface/nuclear_town_pic_event11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_nuclear_town_pic_event12"
+		texturefile = "gfx/interface/nuclear_town_pic_event12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_detkievent"
+		texturefile = "gfx/interface/detkievent.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_detkievent1"
+		texturefile = "gfx/interface/detkievent1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_farevenscreen"
+		texturefile = "gfx/interface/farevenscreen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_farevenscreen1"
+		texturefile = "gfx/interface/farevenscreen1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_farevenscreen2"
+		texturefile = "gfx/interface/farevenscreen2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_farevenscreen3"
+		texturefile = "gfx/interface/farevenscreen3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_farevenscreen4"
+		texturefile = "gfx/interface/farevenscreen4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_farevenscreen5"
+		texturefile = "gfx/interface/farevenscreen5.dds"
+	}
+	
+	
+}

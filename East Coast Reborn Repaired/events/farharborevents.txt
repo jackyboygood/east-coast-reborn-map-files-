@@ -1,0 +1,523 @@
+﻿add_namespace = farhar
+
+country_event = { #What our Forefathers Found#
+	id = farhar.1
+	title = farhar.1.t
+	desc = farhar.1.d
+	picture = GFX_event_farevenscreen
+
+	is_triggered_only = yes
+
+	option = {
+		name = farhar.1.a #Clean Water#
+
+		add_ideas = settlercleanwater1
+	}
+
+	option = {
+		name = farhar.1.b #Ruined Military Factories#
+
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	option = {
+		name = farhar.1.c #Ruined Civilian Factories#
+
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = farhar.2
+	title = farhar.2.t
+	desc = farhar.2.d
+	picture = GFX_event_farevenscreen
+
+	is_triggered_only = yes
+
+	option = {
+		name = farhar.2.a
+        add_equipment_to_stockpile = {
+			type = ballistic_equipment_1
+			amount = 161
+			producer = USP
+	    }
+	}
+
+	option = {
+		name = farhar.2.b #With Old World Science#
+		random_owned_controlled_state = {
+			add_resource = {
+				type = metal
+				amount = 2
+			}
+			add_resource = {
+				type = electronics
+				amount = 2
+			}
+				add_resource = {
+				type = water
+				amount = 2
+			}
+			add_resource = {
+				type = fuel
+				amount = 2
+			}
+		}
+	}
+
+	option = {
+		name = farhar.2.c #With Mercenaries#
+
+		add_political_power = 150
+	}
+}
+
+country_event = { #What will we become#
+	id = farhar.3
+	title = farhar.3.t
+	desc = farhar.3.d
+	picture = GFX_event_farevenscreen
+
+	is_triggered_only = yes
+
+	option = {
+		name = farhar.3.a #Powerful#
+
+		add_ideas = settlerpowerful1
+	}
+
+	option = {
+		name = farhar.3.b #Advanced#
+
+		add_ideas = settleradvanced1
+	}
+
+	option = {
+		name = farhar.3.c #Wealthy#
+
+		add_ideas = settlerwealthy1
+	}
+}
+
+country_event = {
+	id = farhar.4
+	title = farhar.4.t
+	desc = farhar.4.d
+	picture = GFX_event_farevenscreen1
+	
+    fire_only_once = yes
+
+	trigger = {
+		tag = FAR
+		date > 2275.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = farhar.4.a
+        add_political_power = 5
+		set_country_flag = farharpolit
+	}
+}
+
+country_event = {
+	id = farhar.5
+	title = farhar.5.t
+	desc = farhar.5.d
+	picture = GFX_event_farevenscreen3
+	
+    fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		date > 2275.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = farhar.5.a
+        add_political_power = 5
+		set_country_flag = farharpolitakadia
+	}
+}
+
+country_event = {
+	id = farhar.6
+	title = farhar.6.t
+	desc = farhar.6.d
+	picture = GFX_event_farevenscreen2
+	
+    is_triggered_only = yes
+
+
+	option = {
+		name = farhar.6.a
+		984 = { add_core_of = FIN }
+        every_country = {
+				limit = {
+					OR = {
+						tag = FIN
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FUM
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+	}
+}
+
+country_event = { #What will we become#
+	id = farhar.7
+	title = farhar.7.t
+	desc = farhar.7.d
+	picture = GFX_event_farevenscreen
+
+	is_triggered_only = yes
+
+	option = {
+		name = farhar.7.a #Powerful#
+        remove_ideas = negativvlientuman
+		set_country_flag = tumanpobejden
+	}
+}
+
+country_event = {
+	id = farhar.8
+	title = farhar.8.t
+	desc = farhar.8.d
+	picture = GFX_event_farevenscreen4
+	
+    fire_only_once = yes
+
+	trigger = {
+		tag = FDA
+		date > 2275.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = farhar.8.a
+        add_political_power = 5
+		set_country_flag = farharpolitdetiamota
+	}
+}
+
+country_event = {
+	id = farhar.9
+	title = farhar.9.t
+	desc = farhar.9.d
+	picture = GFX_event_farevenscreen4
+	
+    is_triggered_only = yes
+
+
+	option = {
+		name = farhar.9.a
+        every_country = {
+				limit = {
+					OR = {
+						tag = FDA
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FZU
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+	}
+}
+
+country_event = {
+	id = farhar.10
+	title = farhar.10.t
+	desc = farhar.10.d
+	picture = GFX_event_farevenscreen4
+	
+    is_triggered_only = yes
+
+
+	option = {
+		name = farhar.10.a
+		FMM = { 
+		    transfer_state = 992
+			add_political_power = 250
+		    add_manpower = 1000
+			set_rule = { can_create_factions = yes }
+			create_faction = "obiedkorolfarhar"
+			add_to_faction = FMR
+			hidden_effect = {
+			    load_oob = FMM_2275	
+			}
+		}
+		FMR = { 
+			add_political_power = 250
+		    add_manpower = 1500
+			hidden_effect = {
+			    load_oob = FMR_2275	
+			}
+		}
+        every_country = {
+				limit = {
+					OR = {
+						tag = FDA
+						tag = FZU
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FMM
+							tag = FMR
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+	}
+}
+
+country_event = {
+	id = farhar.11
+	title = farhar.11.t
+	desc = farhar.11.d
+	picture = GFX_event_farevenscreen4
+	
+    fire_only_once = yes
+
+	option = {
+		name = farhar.11.a
+        add_political_power = 5
+	}
+}
+
+country_event = {
+	id = farhar.12
+	title = farhar.12.t
+	desc = farhar.12.d
+	picture = GFX_event_farevenscreen5
+	
+    is_triggered_only = yes
+
+	option = {
+		name = farhar.12.a
+        every_country = {
+				limit = {
+					OR = {
+						tag = FOO
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FIN
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+			hidden_effect = {
+			    country_event = { days = 90 id = farhar.13 }
+			}
+			add_timed_idea = {
+				idea = farperbetiih
+				days = 90
+			}
+	}
+	
+	option = {
+		name = farhar.12.b
+        add_timed_idea = {
+				idea = farpnebur
+				days = 240
+			}
+		981 = { add_core_of = FIN }
+		transfer_state = 981
+	}
+}
+
+country_event = {
+	id = farhar.13
+	title = farhar.13.t
+	desc = farhar.13.d
+	picture = GFX_event_farevenscreen5
+	
+    is_triggered_only = yes
+
+	option = {
+		name = farhar.13.a
+        set_capital = 977
+			start_civil_war = {
+				ruling_party = people
+				ideology = elites
+				size = 0.5
+				capital = 984
+				states = { 984 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FIN
+					has_government = elites
+				}
+				load_oob = "FIN_civilwar_people"
+				set_stability = 0.5
+				set_war_support = 0.5
+			}
+			
+			set_politics = {
+				ruling_party = people
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.29
+			}
+			add_popularity = {
+				ideology = elites
+				popularity = 0.55
+			}
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.30
+			}
+			add_popularity = {
+				ideology = people
+				popularity = 0.1
+			}	
+			set_stability = 0.5
+			load_oob = "FIN_civilwar_elite"
+			set_war_support = 0.5
+		}
+		add_stability = -0.25
+		random_other_country = {
+			limit = {
+				original_tag = FIN
+				has_government = elites
+			}
+			set_cosmetic_tag = GER_civil_war
+			hidden_effect = { activate_mission = GER_mefo_bills_mission }
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = FIN
+					has_government = elites
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = FIN
+				}
+			}
+			FIN = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
+						}
+					}
+					set_nationality = event_target:fascist_germany_civil_war
+				}
+			}
+		}
+	}
+	}
+}

@@ -1,0 +1,957 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = newsfallout
+
+news_event = {
+	id = newsfallout.1
+	title = newsfallout.1.t
+	desc = {
+		text = newsfallout.1.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.1.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_vaultescepe
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.1.a
+		trigger = { 
+			NOT = { TAG = USP }
+		}
+	}
+	option = {
+		name = newsfallout.1.b
+		trigger = { TAG = USP }
+	}
+}
+
+news_event = {
+	id = newsfallout.2
+	title = newsfallout.2.t
+	desc = {
+		text = newsfallout.2.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.2.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_memrialwashington4
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.2.a
+		trigger = { 
+			NOT = { TAG = USP }
+		}
+	}
+	option = {
+		name = newsfallout.2.b
+		trigger = { TAG = USP }
+	}
+}
+
+news_event = {
+	id = newsfallout.3
+	title = newsfallout.3.t
+	desc = {
+		text = newsfallout.3.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.3.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newfallnewcount
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.3.a
+		trigger = { 
+			NOT = { TAG = ESP }
+		}
+	}
+	option = {
+		name = newsfallout.3.b
+		trigger = { TAG = ESP }
+	}
+}
+
+news_event = {
+	id = newsfallout.4
+	title = newsfallout.4.t
+	desc = {
+		text = newsfallout.4.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.4.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_enc
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.4.a
+		trigger = { 
+			NOT = { TAG = ESP }
+		}
+	}
+	option = {
+		name = newsfallout.4.b
+		trigger = { TAG = ESP }
+	}
+}
+
+news_event = {
+	id = newsfallout.5
+	title = newsfallout.5.t
+	desc = {
+		text = newsfallout.5.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.5.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_washington3
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.5.a
+		trigger = { 
+			NOT = { TAG = SPP }
+		}
+	}
+	option = {
+		name = newsfallout.5.b
+		trigger = { TAG = SPP }
+	}
+}
+
+news_event = {
+	id = newsfallout.6
+	title = newsfallout.6.t
+	desc = {
+		text = newsfallout.6.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.6.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newyork
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.6.a
+		trigger = { 
+			NOT = { TAG = NUE }
+		}
+	}
+	option = {
+		name = newsfallout.6.b
+		trigger = { TAG = NUE }
+	}
+}
+
+news_event = {
+	id = newsfallout.7
+	title = newsfallout.7.t
+	desc = {
+		text = newsfallout.7.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.7.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_pitsbur
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.7.a
+		trigger = { 
+			NOT = { TAG = PIT }
+		}
+	}
+	option = {
+		name = newsfallout.7.b
+		trigger = { TAG = PIT }
+	}
+}
+
+news_event = {
+	id = newsfallout.8
+	title = newsfallout.8.t
+	desc = {
+		text = newsfallout.8.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.8.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_minet
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.8.a
+		trigger = { 
+			NOT = { TAG = MEN }
+		}
+	}
+	option = {
+		name = newsfallout.8.b
+		trigger = { TAG = MEN }
+	}
+}
+
+news_event = {
+	id = newsfallout.9
+	title = newsfallout.9.t
+	desc = {
+		text = newsfallout.9.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.9.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_minitman4
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.9.a
+		trigger = { 
+			NOT = { TAG = MEN }
+		}
+	}
+	option = {
+		name = newsfallout.9.b
+		trigger = { TAG = MEN }
+	}
+}
+
+news_event = {
+	id = newsfallout.10
+	title = newsfallout.10.t
+	desc = {
+		text = newsfallout.10.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.10.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_minitman10
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.10.a
+		trigger = { 
+			NOT = { TAG = MEN }
+		}
+	}
+	option = {
+		name = newsfallout.10.b
+		trigger = { TAG = MEN }
+	}
+}
+
+news_event = {
+	id = newsfallout.11
+	title = newsfallout.11.t
+	desc = {
+		text = newsfallout.11.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.11.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_rayvenrock4
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.11.a
+		trigger = { 
+			NOT = { TAG = USP }
+		}
+	}
+	option = {
+		name = newsfallout.11.b
+		trigger = { TAG = USP }
+	}
+}
+
+news_event = {
+	id = newsfallout.12
+	title = newsfallout.12.t
+	desc = {
+		text = newsfallout.12.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.12.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_rayvenrock5
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.12.a
+		trigger = { 
+			NOT = { TAG = ESP }
+		}
+	}
+	option = {
+		name = newsfallout.12.b
+		trigger = { TAG = ESP }
+	}
+}
+
+news_event = {
+	id = newsfallout.13
+	title = newsfallout.13.t
+	desc = {
+		text = newsfallout.13.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.13.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_enc1
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.13.a
+		trigger = { 
+			NOT = { TAG = ESP }
+			NOT = { TAG = NUE }
+		}
+	}
+	option = {
+		name = newsfallout.13.b
+		trigger = { TAG = ESP }
+	}
+	option = {
+		name = newsfallout.13.f
+		trigger = { TAG = NUE }
+	}
+}
+
+news_event = {
+	id = newsfallout.14
+	title = newsfallout.14.t
+	desc = {
+		text = newsfallout.14.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.14.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_enc8
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.14.a
+		trigger = { 
+			NOT = { TAG = ESP }
+			NOT = { TAG = NUE }
+		}
+	}
+	option = {
+		name = newsfallout.14.b
+		trigger = { TAG = ESP }
+	}
+	option = {
+		name = newsfallout.14.f
+		trigger = { TAG = PIT }
+	}
+}
+
+news_event = {
+	id = newsfallout.15
+	title = newsfallout.15.t
+	desc = {
+		text = newsfallout.15.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.15.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newyorkbrothe
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.15.a
+		trigger = { 
+			NOT = { TAG = SBS }
+			NOT = { TAG = NUE }
+		}
+	}
+	option = {
+		name = newsfallout.15.b
+		trigger = { TAG = SBS }
+	}
+	option = {
+		name = newsfallout.15.f
+		trigger = { TAG = NUE }
+	}
+}
+
+news_event = {
+	id = newsfallout.16
+	title = newsfallout.16.t
+	desc = {
+		text = newsfallout.16.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.16.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newyorkbrothe2
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.16.a
+		trigger = { 
+			NOT = { TAG = SBS }
+			NOT = { TAG = ESP }
+		}
+	}
+	option = {
+		name = newsfallout.16.b
+		trigger = { TAG = SBS }
+	}
+	option = {
+		name = newsfallout.16.f
+		trigger = { TAG = ESP }
+	}
+}
+
+news_event = {
+	id = newsfallout.17
+	title = newsfallout.17.t
+	desc = {
+		text = newsfallout.17.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.17.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newyorkbrothe3
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.17.a
+		trigger = { 
+			NOT = { TAG = ESP }
+			NOT = { TAG = SBS }
+		}
+	}
+	option = {
+		name = newsfallout.17.b
+		trigger = { TAG = ESP }
+		trigger = { TAG = SBS }
+	}
+}
+
+news_event = {
+	id = newsfallout.18
+	title = newsfallout.18.t
+	desc = {
+		text = newsfallout.18.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.18.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newyorkbrothe3
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.18.a
+		trigger = { 
+			NOT = { TAG = NUE }
+		}
+	}
+	option = {
+		name = newsfallout.18.b
+		trigger = { TAG = NUE }
+	}
+}
+
+news_event = {
+	id = newsfallout.19
+	title = newsfallout.19.t
+	desc = {
+		text = newsfallout.19.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.19.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newnewyork6
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.19.a
+		trigger = { 
+			NOT = { TAG = NUE }
+		}
+	}
+	option = {
+		name = newsfallout.19.b
+		trigger = { TAG = NUE }
+	}
+}
+
+news_event = {
+	id = newsfallout.20
+	title = newsfallout.20.t
+	desc = {
+		text = newsfallout.20.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.20.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_institute3
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.20.a
+		trigger = { 
+			NOT = { TAG = INS }
+		}
+	}
+	option = {
+		name = newsfallout.20.b
+		trigger = { TAG = INS }
+	}
+}
+
+news_event = {
+	id = newsfallout.21
+	title = newsfallout.21.t
+	desc = {
+		text = newsfallout.21.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.21.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_institute4
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.21.a
+		trigger = { 
+			NOT = { TAG = INS }
+		}
+	}
+	option = {
+		name = newsfallout.21.b
+		trigger = { TAG = INS }
+	}
+}
+
+news_event = {
+	id = newsfallout.22
+	title = newsfallout.22.t
+	desc = {
+		text = newsfallout.22.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.22.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_newyorkbrothe3
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.22.a
+		trigger = { 
+			NOT = { TAG = ESP }
+		}
+	}
+	option = {
+		name = newsfallout.22.b
+		trigger = { TAG = ESP }
+	}
+}
+
+news_event = {
+	id = newsfallout.23
+	title = newsfallout.23.t
+	desc = {
+		text = newsfallout.23.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.23.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_nuclear_town_pic_event
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.23.a
+		trigger = { 
+			NOT = { TAG = BIB }
+		}
+	}
+	option = {
+		name = newsfallout.23.b
+		trigger = { TAG = BIB }
+	}
+}
+
+news_event = {
+	id = newsfallout.24
+	title = newsfallout.24.t
+	desc = {
+		text = newsfallout.24.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.24.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_nuclear_town_pic_event1
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.24.a
+		trigger = { 
+			NOT = { TAG = BIB }
+		}
+	}
+	option = {
+		name = newsfallout.24.b
+		trigger = { TAG = BIB }
+	}
+}
+
+news_event = {
+	id = newsfallout.25
+	title = newsfallout.25.t
+	desc = {
+		text = newsfallout.25.d
+		trigger = {
+			NOT = { has_global_flag = GER_civil_war_end }
+		}
+	}
+	desc = {
+		text = newsfallout.25.d.b
+		trigger = {
+			has_global_flag = GER_civil_war_end
+		}
+	}
+	picture = GFX_event_nuclear_town_pic_event2
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+	
+	option = {
+		name = newsfallout.25.a
+		trigger = { 
+			NOT = { TAG = ADE }
+			NOT = { TAG = OPE }
+			NOT = { TAG = STY }
+		}
+	}
+	option = {
+		name = newsfallout.25.b
+		trigger = { TAG = ADE }
+		trigger = { TAG = OPE }
+		trigger = { TAG = STY }
+	}
+}
+

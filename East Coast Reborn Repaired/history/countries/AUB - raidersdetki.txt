@@ -1,0 +1,51 @@
+﻿capital = 895
+oob = "AUB_2275"
+
+
+
+set_technology = {
+	tribal_civilization = 1
+	settled_civilization = 1
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.25
+set_war_support = 0.65
+set_convoys = 100
+
+add_opinion_modifier = { target = SBS modifier = torgovieoperacii }
+add_opinion_modifier = { target = SPP modifier = torgovieoperacii }
+add_opinion_modifier = { target = TEN modifier = torgovieoperacii }
+add_opinion_modifier = { target = USP modifier = torgovieoperacii }
+add_opinion_modifier = { target = ROY modifier = torgovieoperacii }
+add_opinion_modifier = { target = RAB modifier = torgovieoperacii }
+
+set_politics = {
+	ruling_party = ruler 
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 30
+	intellectuals = 0
+	ruler = 70
+}
+
+add_ideas = {
+     raider_nation
+   }
+
+create_country_leader  = {
+	name = "Lady of Dead"
+	desc = "Stinger_DESC"
+	picture = "gfx/leaders/Raider/Portrait_Raider_Generic_14.dds"
+	expire = "3000.1.1"
+	ideology = gang
+	
+	traits = {
+	 warmonger
+	}
+}

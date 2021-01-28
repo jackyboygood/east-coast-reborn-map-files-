@@ -1,0 +1,55 @@
+﻿capital = 823
+oob = "GRI_2275"
+
+
+set_technology = {
+	# baseline techs
+	tribal_civilization = 1
+		
+	#industry
+		
+	#infantry
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+		
+	#support
+	support_weaponry = 1
+	explosive_tech = 1
+	#vehicle
+		
+	#naval
+	destroyer_tech = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.4 
+set_war_support = 0.4
+
+set_convoys = 70
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	tribal_nation
+	
+}
+
+create_country_leader  = {
+	name = "Chief Jackson"
+	desc = ""
+	picture = "gfx/leaders/GRI/Jackson.dds"
+	expire = "3000.1.1"
+	ideology = chieftain
+	
+	traits = {
+	}
+}

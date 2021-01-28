@@ -1,0 +1,58 @@
+﻿division_template = {
+	name = "Super Mutant Battlegroup"
+	regiments = {
+		super_mutant_infantry = { x = 0 y = 0 }
+		super_mutant_infantry = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division {
+		name = "Mariposa Remnants"
+		location = 1099
+		division_template = "Super Mutant Battlegroup"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Head-Squashers"
+		location = 1106
+		division_template = "Super Mutant Battlegroup"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Pain-Bringers"
+		location = 1110
+		division_template = "Super Mutant Battlegroup"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Крушители"
+		location = 1118
+		division_template = "Super Mutant Battlegroup"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Bone-Pickers"
+		location = 1104
+		division_template = "Super Mutant Battlegroup"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = super_mutant_melee_equipment_1
+			creator = "VSU"
+		}
+		requested_factories = 4
+		progress = 0.75
+		efficiency = 100
+	}
+}

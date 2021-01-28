@@ -1,0 +1,62 @@
+﻿capital = 927
+oob = "KOV_2275"
+
+set_technology = {
+	# baseline techs
+	tribal_civilization = 1
+	settled_civilization = 1
+	#industry
+	oral_instruction = 1
+	#infantry
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	#support
+	anti_personnel_tech = 1
+	support_weaponry = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+     raider_nation
+}
+
+add_opinion_modifier = { target = BSM modifier = torgovieoperacii }
+
+create_country_leader  = {
+	name = "Slag"
+	desc = ""
+	picture = "gfx/leaders/KOV/shlak.dds"
+	expire = "3000.1.1"
+	ideology = benevolent_dictatorship
+	
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Slag"
+	portrait_path = "gfx/leaders/KOV/shlak.dds"
+	skill = 4
+	traits = {
+		offensive_doctrine
+	}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+}

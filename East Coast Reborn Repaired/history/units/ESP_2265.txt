@@ -1,0 +1,79 @@
+﻿division_template = {
+	name = "10w PA Division"
+	regiments = {
+		power_armour = { x = 0 y = 0 }
+		power_armour = { x = 0 y = 1 }
+		power_armour = { x = 0 y = 2 }
+		power_armour = { x = 0 y = 3 }
+		power_armour = { x = 0 y = 4 }
+	}	
+}
+division_template = {
+	name = "Enclave Auxiliaries"	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+# division_template = {
+	# name = "Mech Test"
+	# regiments = {
+		# motorized = { x = 0 y = 0 }
+	# }
+# }
+# division_template = {
+	# name = "Robot Test"
+	# regiments = {
+		# light_robot = { x = 0 y = 0 }
+	# }
+# }
+# division_template = {
+	# name = "Tank Test"
+	# regiments = {
+		# medium_armor = { x = 0 y = 0 }
+	# }
+# }
+
+units = {
+	division {
+		name = "1st Navarro Veterans"
+		location = 1148
+		division_template = "10w PA Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}	
+	division {
+		name = "2nd Navarro Veterans"
+		location = 1148
+		division_template = "10w PA Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}	
+	division {
+		name = "Enclave Remnants"
+		location = 1148
+		division_template = "10w PA Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}	
+	division {
+		name = "Enclave Remnants"
+		location = 1148
+		division_template = "10w PA Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "1st Enclave Auxiliaries"
+		location = 1148
+		division_template = "Enclave Auxiliaries"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+}

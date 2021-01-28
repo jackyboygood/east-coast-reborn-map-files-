@@ -1,0 +1,721 @@
+﻿add_namespace = detievent
+
+country_event = {
+	id = detievent.1
+	title = detievent.1.t
+	desc = detievent.1.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.1.a
+		ai_chance = { 
+			factor = 25 
+		}
+		add_manpower = 100
+		set_country_flag = soglasievaultsouls
+		USP = { 
+			add_to_faction = LIT
+			hidden_effect = {
+				country_event = { days = 2 id = detievent.2 }
+			}
+		}
+	}
+	option = {
+		name = detievent.1.b
+		add_manpower = -100
+		USP = { 
+			hidden_effect = {
+				country_event = { days = 2 id = detievent.3 }
+			}
+		}
+		
+		ESP = { 
+			hidden_effect = {
+				country_event = { days = 2 id = detievent.7 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = detievent.2
+	title = detievent.2.t
+	desc = detievent.2.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.2.a
+		add_manpower = 100
+	}
+}
+
+country_event = {
+	id = detievent.3
+	title = detievent.3.t
+	desc = detievent.3.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.3.a
+		create_wargoal = {
+				type = annex_everything
+				target = LIT
+		}		
+	}
+}
+
+country_event = {
+	id = detievent.4
+	title = detievent.4.t
+	desc = detievent.4.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.4.a
+		add_manpower = 100
+		ESP = { 
+			hidden_effect = {
+				country_event = { days = 2 id = detievent.7 }
+			}
+		}
+		every_country = {
+				limit = {
+					OR = {
+						tag = USP
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = USP
+						    tag = LIT
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = detievent.5
+	title = detievent.5.t
+	desc = detievent.5.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.5.a
+		add_resource = { type = water amount = 8 state = 887 }
+		add_manpower = 600
+	}
+	option = {
+		name = detievent.5.b
+		add_resource = { type = fuel amount = 8 state = 887 }
+		add_manpower = 600
+	}
+	option = {
+		name = detievent.5.c
+        add_manpower = 500
+		add_resource = { type = metal amount = 8 state = 887 }
+	}
+}
+
+country_event = {
+	id = detievent.6
+	title = detievent.6.t
+	desc = detievent.6.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.6.a
+		custom_effect_tooltip = litlerobot_tt
+		load_oob = litlrobot_2275
+	}
+	option = {
+		name = detievent.6.b
+		custom_effect_tooltip = motorslitle_tt
+		set_technology = {
+			bike_tech_1 = 1
+		}
+		load_oob = litmotoris_2275
+	}
+	option = {
+		name = detievent.6.c
+		custom_effect_tooltip = infantrylitle_tt
+		load_oob = litinfant_2275
+	}
+}
+
+country_event = {
+	id = detievent.7
+	title = detievent.7.t
+	desc = detievent.7.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.7.a
+		ai_chance = { 
+			factor = 100 
+		}
+		add_manpower = -250
+		LIT = { 
+			hidden_effect = {
+				country_event = { days = 1 id = detievent.8 }
+			}
+		}
+	}
+	option = {
+		name = detievent.7.b
+		add_manpower = 500
+	}
+}
+
+country_event = {
+	id = detievent.8
+	title = detievent.8.t
+	desc = detievent.8.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.8.a
+		ai_chance = { 
+			factor = 100 
+		}
+		set_country_flag = detkipodenclave
+		add_manpower = -250
+		ESP = { 
+			hidden_effect = {
+				country_event = { days = 1 id = detievent.9 }
+			}
+		}
+	}
+	option = {
+		name = detievent.8.b
+		ai_chance = { 
+			factor = 100 
+		}
+        set_country_flag = otkaz_ot_vseh
+		ESP = { 
+			hidden_effect = {
+				country_event = { days = 1 id = detievent.10 }
+			}
+		}
+		every_country = {
+				limit = {
+					OR = {
+						tag = ESP
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						    tag = LIT
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = detievent.9
+	title = detievent.9.t
+	desc = detievent.9.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.9.a
+		set_country_flag = detkipodenclave
+		set_autonomy = { target = LIT autonomy_state = autonomy_puppet }
+		LIT = { 
+		   create_country_leader = {
+	       name = "Mayor MacCready"
+	       desc = ""
+	       picture = "gfx/leaders/LIT/enclave_mak_kridi.dds"
+	       expire = "3000.1.1"
+	       ideology = militarist_technocracy
+           }
+		}
+	}
+}
+
+country_event = {
+	id = detievent.10
+	title = detievent.10.t
+	desc = detievent.10.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.10.a
+		add_manpower = 120
+	}
+}
+
+country_event = {
+	id = detievent.12
+	title = detievent.12.t
+	desc = detievent.12.d
+	picture = GFX_event_canadda14
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USP
+		date > 2276.5.1
+		LIT = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = detievent.12.a
+		add_political_power = 50
+		add_manpower = 120
+		transfer_state = 896
+		LIT = { 
+			hidden_effect = {
+				country_event = { days = 1 id = detievent.13 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = detievent.13
+	title = detievent.13.t
+	desc = detievent.13.d
+	picture = GFX_event_canadda14
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = detievent.13.a
+		add_political_power = 50
+		add_manpower = 250
+		transfer_state = 897
+		set_country_flag = resvedvernulis
+	}
+}
+
+country_event = {
+	id = detievent.14
+	title = detievent.14.t
+	desc = detievent.14.d
+	picture = GFX_event_canadda14
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = detievent.14.a
+		add_political_power = 50
+		add_manpower = 500
+		create_country_leader = {
+	       name = "Mayk Duglas"
+	       desc = ""
+	       picture = "gfx/leaders/LIT/duglas.dds"
+	       expire = "3000.1.1"
+	       ideology = town_hall_democracy
+		   traits = { decorated_vault101 }
+        }
+	}
+	option = {
+		name = detievent.14.b
+		add_political_power = 50
+		add_manpower = 500
+		create_country_leader = {
+	       name = "Minerva Severus"
+	       desc = ""
+	       picture = "gfx/leaders/LIT/minerva_severus.dds"
+	       expire = "3000.1.1"
+	       ideology = constitutional_republic
+		   traits = { Tony_technician shaman_merfi }
+        }
+	}
+}
+
+country_event = {
+	id = detievent.15
+	title = detievent.15.t
+	desc = detievent.15.d
+	picture = GFX_event_canadda14
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = detievent.15.a
+		ai_chance = { 
+			factor = 25
+		}
+		    LIT = { 
+		            add_to_faction = IBS
+	        }
+			every_country = {
+				limit = {
+					OR = {
+						tag = IBS
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+		}
+	}
+	option = {
+	    ai_chance = { 
+			factor = 25
+		}
+		name = detievent.15.b
+		add_manpower = 100
+	}
+}
+
+country_event = {
+	id = detievent.16
+	title = detievent.16.t
+	desc = detievent.16.d
+	picture = GFX_event_canadda14
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = detievent.16.a
+		ai_chance = { 
+			factor = 25
+		}
+		    LIT = { 
+		            add_to_faction = DEV
+	        }
+			every_country = {
+				limit = {
+					OR = {
+						tag = DEV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+		}
+	}
+	option = {
+	    ai_chance = { 
+			factor = 25
+		}
+		name = detievent.16.b
+		add_manpower = 100
+	}
+}
+
+country_event = {
+	id = detievent.17
+	title = detievent.17.t
+	desc = detievent.17.d
+	picture = GFX_event_canadda14
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = detievent.17.a
+		ai_chance = { 
+			factor = 25
+		}
+		    LIT = { 
+		            add_to_faction = DIK
+	        }
+			every_country = {
+				limit = {
+					OR = {
+						tag = DIK
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+		}
+	}
+	option = {
+	    ai_chance = { 
+			factor = 25
+		}
+		name = detievent.17.b
+		add_manpower = 100
+	}
+}
+
+country_event = {
+	id = detievent.18
+	title = detievent.18.t
+	desc = detievent.18.d
+	picture = GFX_event_detkievent1
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = detievent.18.a
+		ai_chance = { 
+			factor = 25
+		}
+		    LIT = { 
+		            add_to_faction = MIN
+	        }
+			every_country = {
+				limit = {
+					OR = {
+						tag = MIN
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+		}
+	}
+	option = {
+	    ai_chance = { 
+			factor = 25
+		}
+		name = detievent.18.b
+		add_manpower = 100
+	}
+}
+
+country_event = {
+	id = detievent.19
+	title = detievent.19.t
+	desc = detievent.19.d
+	picture = GFX_event_detkievent1
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LIT
+		date > 2278.1.1
+		LIT = { exists = yes }
+		TEN = { exists = yes }
+		ROY = { exists = yes }
+		ESP = { exists = no }
+		has_country_flag = otkaz_ot_vseh
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = detievent.19.a
+        every_country = {
+				limit = {
+					OR = {
+						tag = TEN
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+						    tag = ROY
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			 }
+	    }
+	}
+	option = {
+		name = detievent.19.b
+        every_country = {
+				limit = {
+					OR = {
+						tag = TEN
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+						    tag = ROY
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			 }
+	    }
+	}
+}
+
+country_event = {
+	id = detievent.11
+	title = detievent.11.t
+	desc = detievent.11.d
+	picture = GFX_event_detkievent
+
+	is_triggered_only = yes
+
+	option = {
+		name = detievent.11.a
+		set_capital = 887
+			start_civil_war = {
+				ruling_party = elites
+				ideology = people
+				size = 0.5
+				capital = 893
+				states = { 893 892 894 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = LIT
+					has_government = people
+				}
+				load_oob = "lit_queen_civilwar"
+				set_stability = 0.5
+				set_war_support = 0.5
+			}
+			
+			set_politics = {
+				ruling_party = elites
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.29
+			}
+			add_popularity = {
+				ideology = elites
+				popularity = 0.55
+			}
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.30
+			}
+			add_popularity = {
+				ideology = people
+				popularity = 0.1
+			}	
+			set_stability = 0.5
+			load_oob = "lit_makkridi_civilwar"
+			set_war_support = 0.5
+		}
+		add_stability = -0.25
+		random_other_country = {
+			limit = {
+				original_tag = LIT
+				has_government = people
+			}
+			set_cosmetic_tag = GER_civil_war
+			hidden_effect = { activate_mission = GER_mefo_bills_mission }
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = LIT
+					has_government = people
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = LIT
+				}
+			}
+			LIT = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
+						}
+					}
+					set_nationality = event_target:fascist_germany_civil_war
+				}
+			}
+		}
+	}
+	}
+}

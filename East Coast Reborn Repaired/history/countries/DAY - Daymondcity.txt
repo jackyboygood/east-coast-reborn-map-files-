@@ -1,0 +1,84 @@
+﻿capital = 930
+oob = "DAY_2275"
+
+set_technology = {
+	grand_army = 1
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	basic_ballistic_weaponry = 1
+	support_weaponry = 1
+	anti_personnel_tech = 1
+	recon_tech = 1
+	bike_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	destroyer_tech = 1
+	cruiser_tech = 1
+	battleship_tech = 1
+	heavy_cruiser_tech = 1
+	truck_tech_1 = 1
+	anti_tank_tech = 1
+	special_forces = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_rule = { can_join_factions = no }
+
+
+set_politics = {
+	ruling_party = people
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 100
+	elites = 0
+	intellectuals = 0
+	ruler = 0
+}
+
+add_ideas = {}
+
+
+add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
+add_opinion_modifier = { target = STR modifier = torgovieoperacii }
+add_opinion_modifier = { target = INS modifier = torgovieoperacii }
+add_opinion_modifier = { target = BSM modifier = torgovieoperacii }
+add_opinion_modifier = { target = RIJ modifier = torgovieoperacii }
+add_opinion_modifier = { target = BSS modifier = torgovieoperacii }
+
+create_country_leader  = {
+	name = "Mayor McDonough"
+	desc = ""
+	picture = "gfx/leaders/DAY/daymondcitymar.dds"
+	expire = "3000.1.1"
+	ideology = town_hall_democracy
+	traits = {
+		well_liked_leader
+	}
+}
+
+create_country_leader  = {
+	name = "McDonough Synth"
+	desc = ""
+	picture = "gfx/leaders/DAY/makdonahsinth.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {}
+	
+}	
+
+create_corps_commander = {
+	name = "Captain Guard of Diamond City"
+	portrait_path = "gfx/leaders/DAY/diamond-city-swat.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+    }
+}
+

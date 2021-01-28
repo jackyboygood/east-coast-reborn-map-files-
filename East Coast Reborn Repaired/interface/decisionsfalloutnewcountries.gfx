@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_decision_Usaeast"
+		texturefile = "gfx/interface/decisions/Usaeast.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_Canadaob"
+		texturefile = "gfx/interface/decisions/Canadaob.dds"
+	}
+	
+	
+}

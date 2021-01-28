@@ -1,0 +1,45 @@
+﻿capital = 948
+oob = "DRU_2275"
+
+
+set_technology = {
+	tribal_civilization = 1
+	tool_engineering = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	support_weaponry = 1
+	demolitions_weaponry_tech = 1
+	fireteam_weaponry_tech = 1
+	bike_tech_1 = 1
+}
+
+set_stability = 1.0 
+set_war_support = 0.4
+
+set_convoys = 70
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	tribal_nation
+}
+
+create_country_leader  = {
+	name = "Oldest Druid"
+	desc = "SANJA_DESC"
+	picture = "gfx/leaders/DRU/leader.dds"
+	expire = "3000.1.1"
+	ideology = chieftain
+	
+	traits = {
+	}
+}

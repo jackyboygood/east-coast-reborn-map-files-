@@ -1,0 +1,2617 @@
+focus_tree = {
+	id = farharbororigi
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+			    tag = FAR
+			    tag = FIN
+			    tag = FDA
+			}
+		}
+	}
+	default = no
+	
+	focus = {
+		id = settler_forfathers1
+		icon = GFX_goal_generic_building_focus
+		cost = 1.00
+		x = 12
+		y = 1
+
+		completion_reward = {
+			country_event = { id = farhar.1 }
+		}
+	}
+	focus = {
+		id = settler_defend1
+		icon = GFX_goal_generic_building_focus
+		cost = 1.00
+		prerequisite = {
+			focus = settler_forfathers1
+		}
+		x = 12
+		y = 2
+
+		completion_reward = {
+			country_event = { id = farhar.2 }
+		}
+	}
+	focus = {
+		id = settler_become1
+		icon = GFX_goal_generic_building_focus
+		cost = 1.00
+		prerequisite = {
+			focus = settler_defend1
+		}
+		x = 12
+		y = 3
+
+		completion_reward = {
+			country_event = { id = farhar.3 }
+		}
+	}
+	
+	focus = {
+		id = settler_palisade1
+		icon = GFX_goal_generic_building_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_become1
+		}
+		relative_position_id = settler_become1
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = erect_palisade
+		}
+	}
+	
+	focus = {
+		id = settler_community1
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_palisade1
+		}
+		relative_position_id = settler_palisade1
+		x = 0
+		y = 1
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_caravan1
+		icon = GFX_goal_bottlecap
+		cost = 8.6
+		prerequisite = {
+			focus = settler_palisade1
+		}
+		relative_position_id = settler_palisade1
+		x = -2
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_caravan entered"
+			}
+			add_ideas = caravanmilitia
+			hidden_effect = {
+				set_technology = { settler_caravanmilitia = 1 }
+			}
+			add_manpower = 250
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_caravan exited"
+			}
+		}
+	}
+	focus = {
+		id = settler_gunsmiths1
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_caravan1
+		}
+		relative_position_id = settler_caravan1
+		x = 0
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = gunsmith_bonus
+				bonus = 0.5
+				uses = 1
+				category = ballistic_weaponry_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = settlers_wall1
+		icon = GFX_goal_generic_walls_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_palisade1
+		}
+		relative_position_id = settler_palisade1
+		x = 2
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = wall_construction
+				remove_idea = erect_palisade
+			}
+		}
+	}
+	focus = {
+		id = settler_defenses1
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settlers_wall1
+		}
+		relative_position_id = settlers_wall1
+		x = 0
+		y = 1
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_arrive1
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_community1
+		}
+		relative_position_id = settler_community1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_timed_idea = { idea = settler_wasteland_settlers days = 100 }
+		}
+	}
+	
+	focus = {
+		id = settler_tato1
+		icon = GFX_goal_generic_supplies_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_arrive1
+		}
+		relative_position_id = settler_arrive1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = tato_farming
+		}
+	}
+	
+	focus = {
+		id = settler_pride1
+		icon = GFX_goal_generic_national_unity
+		cost = 8.6
+		prerequisite = {
+			focus = settler_defenses1
+		}
+		relative_position_id = settler_defenses1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas =	local_pride
+		}
+	}
+	
+	focus = {
+		id = settler_subsidize1
+		icon = GFX_goal_generic_regular_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_gunsmiths1
+		}
+		relative_position_id = settler_gunsmiths1
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = settler_subsidized_weapon_manufacturers
+				remove_idea = caravanmilitia
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_schools1
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_become1
+		}
+		relative_position_id = settler_become1
+		x = -6
+		y = 1
+		completion_reward = {
+			add_ideas =	new_schools
+		}
+	}
+	
+	focus = {
+		id = settler_laboratory1
+		icon = GFX_focus_research
+		cost = 8.6
+		prerequisite = {
+			focus = settler_schools1
+		}
+		relative_position_id = settler_schools1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = settler_medical1
+		icon = GFX_goal_generic_food_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_laboratory1
+		}
+		relative_position_id = settler_laboratory1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = medical_bonus
+				bonus = 0.5
+				uses = 1
+				category = chem_tech
+			}
+		}
+	}
+	focus = {
+		id = settler_chemistry1
+		icon = GFX_goal_generic_data_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_medical1
+		}
+		relative_position_id = settler_medical1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = chem_lab
+		}
+	}
+	
+	focus = {
+		id = settler_science1
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_laboratory1
+		}
+		relative_position_id = settler_laboratory1
+		x = -2
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = robot_bonus
+				bonus = 0.2
+				uses = 1
+				category = robotics_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = settlers_protection1
+		icon = GFX_goal_generic_special_forces
+		cost = 8.6
+		prerequisite = {
+			focus = settler_science1
+		}
+		relative_position_id = settler_science1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = medical_bonus
+				bonus = 0.5
+				uses = 1
+				category = chem_tech
+			}
+			add_tech_bonus = {
+				name = robot_bonus
+				bonus = 0.2
+				uses = 1
+				category = robotics_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_vehicles1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.6
+		prerequisite = {
+			focus = settler_laboratory1
+		}
+		relative_position_id = settler_laboratory1
+		x = 2
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = transport_bonus
+				bonus = 0.5
+				uses = 1
+				category = vehicle_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_war1
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.6
+		prerequisite = {
+			focus = settler_vehicles1
+		}
+		relative_position_id = settler_vehicles1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = apc_bonus
+				bonus = 0.5
+				uses = 1
+				category = apc_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_enforce1
+		icon = GFX_goal_bottlecap
+		cost = 8.6
+		prerequisite = {
+			focus = settler_become1
+		}
+		relative_position_id = settler_become1
+		x = 4
+		y = 1
+		completion_reward = {
+			add_ideas = enforced_trade_laws
+		}
+	}
+	
+	focus = {
+		id = settler_roadways1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.6
+		prerequisite = {
+			focus = settler_enforce1
+		}
+		relative_position_id = settler_enforce1
+		x = 0
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_future1
+		icon = GFX_goal_generic_building_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_roadways1
+		}
+		relative_position_id = settler_roadways1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = settler_city1
+		icon = GFX_goal_generic_cities_focus
+		cost = 8.6
+		prerequisite = {
+			focus = settler_future1
+		}
+		relative_position_id = settler_future1
+		x = 0
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_1
+		icon = GFX_goal_farhargoa1
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = settler_become1
+		}
+		available = {
+			has_country_flag = farharpolit
+		}
+		relative_position_id = settler_become1
+		x = 8
+		y = 1
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = farhar_2
+		icon = GFX_goal_farhargoa2
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_1
+		}
+		available = {
+
+		}
+		relative_position_id = farhar_1
+		x = 0
+		y = 1
+		completion_reward = {
+			add_manpower = 100
+		}
+	}
+	
+	focus = {
+		id = farhar_3
+		icon = GFX_goal_farhargoa4
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_2
+		}
+		mutually_exclusive = {
+			focus = farhar_11
+		}
+		relative_position_id = farhar_2
+		x = 2
+		y = 1
+		completion_reward = {
+			add_ideas = ruler
+			add_political_power = 60
+		}
+	}
+	
+	focus = {
+		id = farhar_4
+		icon = GFX_goal_farhargoa5
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_3
+		}
+		relative_position_id = farhar_3
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = eliminating_rivals
+		}
+	}
+	
+	focus = {
+		id = farhar_5
+		icon = GFX_goal_farhargoa6
+		cost = 1.00
+		prerequisite = {
+			focus = farhar_4
+		}
+		relative_position_id = farhar_4
+		x = 0
+		y = 1
+		completion_reward = {
+		set_politics = {
+			ruling_party = ruler 
+			elections_allowed = no
+		}
+		set_popularities = {
+			ruler = 50
+			elites = 8
+			people = 40
+			intellectuals = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_6
+		icon = GFX_goal_farhargoa7
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_5
+		}
+		relative_position_id = farhar_5
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = rulerideale
+		}
+	}
+	
+	focus = {
+		id = farhar_7
+		icon = GFX_goal_farhargoa
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_6
+		}
+		relative_position_id = farhar_6
+		x = 0
+		y = 1
+		completion_reward = {
+			970 = { add_core_of = FAR }
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FSL
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FAR
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_8
+		icon = GFX_goal_farhargoa8
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_7
+		}
+		relative_position_id = farhar_7
+		available = {
+          FSL = { exists = no }
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			972 = { add_core_of = FAR }
+			971 = { add_core_of = FAR }
+			973 = { add_core_of = FAR }
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FZB
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FAR
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_9
+		icon = GFX_goal_farhargoa9
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_8
+		}
+		relative_position_id = farhar_8
+		available = {
+          FZB = { exists = no }
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			add_manpower = -100
+			every_country = {
+				limit = {
+					OR = {
+						tag = FGB
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FAR
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_10
+		icon = GFX_goal_farhargoa10
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_9
+		}
+		relative_position_id = farhar_9
+		available = {
+          FTA = { exists = yes }
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			set_autonomy = { target = FTA autonomy_state = autonomy_puppet }
+		}
+	}
+	
+	focus = {
+		id = farhar_11
+		icon = GFX_goal_farhargoa3
+		cost = 10.00
+		prerequisite = {
+			focus = farhar_2
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		mutually_exclusive = {
+			focus = farhar_3
+		}
+		relative_position_id = farhar_2
+		x = -2
+		y = 1
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = farhar_12
+		icon = GFX_goal_farhargoa
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_11
+		}
+		relative_position_id = farhar_11
+		x = 0
+		y = 1
+		completion_reward = {
+			set_autonomy = { target = FSL autonomy_state = autonomy_puppet }
+		}
+	}
+	
+	focus = {
+		id = farhar_13
+		icon = GFX_goal_farhargoa8
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_12
+		}
+		relative_position_id = farhar_12
+		available = {
+          
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			add_manpower = -50
+			every_country = {
+				limit = {
+					OR = {
+						tag = FAR
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FZB
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_14
+		icon = GFX_goal_farhargoa13
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_13
+		}
+		relative_position_id = farhar_13
+		available = {
+		FZB = { exists = no }
+          
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		  	971 = { add_core_of = FSL }
+			972 = { add_core_of = FAR }
+			973 = { add_core_of = FAR }
+			transfer_state = 972
+			FSL = { 
+		          transfer_state = 971
+				  add_manpower = 350
+			}
+
+		}
+	}
+	
+	focus = {
+		id = farhar_15
+		icon = GFX_goal_farhargoa9
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_14
+		}
+		relative_position_id = farhar_14
+		available = {
+		FZB = { exists = no }
+          
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FAR
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FGB
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_16
+		icon = GFX_goal_farhargoa14
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_15
+		}
+		relative_position_id = farhar_15
+		available = {
+		FGB = { exists = no }
+          
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+		  	add_ideas = people
+			add_stability = 0.1
+			add_war_support = 0.1
+
+		}
+	}
+	
+	focus = {
+		id = farhar_17
+		icon = GFX_goal_farhargoa11
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_16
+		}
+		mutually_exclusive = {
+			focus = farhar_18
+		}
+		relative_position_id = farhar_16
+		available = {
+		FGB = { exists = no }
+          
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			979 = { add_core_of = FAR }
+			978 = { add_core_of = FAR }
+			980 = { add_core_of = FAR }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FTA
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FAR
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_18
+		icon = GFX_goal_farhargoa12
+		cost = 40.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_16
+		}
+		mutually_exclusive = {
+			focus = farhar_17
+		}
+		relative_position_id = farhar_16
+		available = {
+		FGB = { exists = no }
+          
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			979 = { add_core_of = FAR }
+			978 = { add_core_of = FAR }
+			980 = { add_core_of = FAR }
+			annex_country = { target = FTA transfer_troops = yes }
+		}
+	}
+	
+	focus = {
+		id = farhar_19
+		icon = GFX_goal_farhargoa15
+		cost = 10.00
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = farhar_17 focus = farhar_18
+		}
+		relative_position_id = farhar_17
+		x = 1
+		y = 1
+		completion_reward = {
+			set_autonomy = { target = FVL autonomy_state = autonomy_puppet }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_20
+		icon = GFX_goal_institut2
+		prerequisite = {focus = settler_become1 }
+		available = {
+			has_country_flag = farharpolitakadia
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = settler_become1
+		x = 13
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = begstvoinstitut
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_21
+		icon = GFX_goal_NEW_the_old_world
+		prerequisite = {focus = farhar_20 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_20
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_22
+		icon = GFX_goal_institut3
+		prerequisite = {focus = farhar_21 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_21
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.3 uses = 2 category = robotics_tech }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_23
+		icon = GFX_goal_institut4
+		prerequisite = {focus = farhar_22 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_22
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_manpower = 1000
+			983 = { add_core_of = FIN }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_24
+		icon = GFX_goal_institut4
+		prerequisite = {focus = farhar_23 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_23
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			transfer_state = 983
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_25
+		icon = GFX_goal_institut7
+		prerequisite = {focus = farhar_24 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_24
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_manpower = 423
+			add_equipment_to_stockpile = { type = support_robot_equipment_1 amount = 350 producer = INS }
+			add_equipment_to_stockpile = { type = support_robot_equipment_2 amount = 100 producer = INS }
+			hidden_effect = {
+				load_oob = "fin_human_vaulttraveler"
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_26
+		icon = GFX_goal_institut26
+		prerequisite = {focus = farhar_25 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_25
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			swap_ideas = {
+				add_idea = sinth_command_from_afar1 
+				remove_idea = sinth_command_from_afar
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_27
+		icon = GFX_goal_institut11
+		prerequisite = {focus = farhar_26 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_26
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		    custom_effect_tooltip = conden_tt
+			hidden_effect = {
+				country_event = { days = 5 id = farhar.6 }
+				country_event = { days = 5 id = farhar.7 }
+			}
+			FAR = { 
+			hidden_effect = {
+				country_event = { days = 23 id = farhar.7 }	
+			   }
+		    }
+			FDA = { 
+			hidden_effect = {
+				country_event = { days = 14 id = farhar.7 }	
+			   }
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_28
+		icon = GFX_goal_institut11
+		prerequisite = {focus = farhar_27 }
+		available = {
+			FUM = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_27
+		x = 0
+		y = 1
+		cost = 8.0
+		completion_reward = {
+		    add_named_threat = { threat = -2 name = fallout3_war55 }
+			985 = { add_core_of = FIN }
+			986 = { add_core_of = FIN }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FTM
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FIN
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_29
+		icon = GFX_goal_institut11
+		prerequisite = {focus = farhar_28 }
+		available = {
+			FTM = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_28
+		x = 0
+		y = 1
+		cost = 8.0
+		completion_reward = {
+		    add_named_threat = { threat = -2 name = fallout3_war55 }
+			982 = { add_core_of = FIN }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FSP
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FIN
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_30
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 8.6
+		relative_position_id = settler_become1
+		prerequisite = {
+			focus = settler_become1
+		}
+		x = -11
+		y = 1
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 250
+		}
+	}
+	
+	focus = {
+		id = farhar_31
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.6
+		relative_position_id = farhar_30
+		prerequisite = {
+			focus = farhar_30
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = vault_garage
+				bonus = 0.4
+				uses = 2
+				category = vehicle_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_32
+		icon = GFX_goal_generic_common_energy_weapons_focus
+		cost = 8.6
+		relative_position_id = farhar_30
+		prerequisite = {
+			focus = farhar_30
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = vault_weapons
+				bonus = 0.3
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_33
+		icon = GFX_goal_generic_common_energy_weapons_focus
+		cost = 8.6
+		relative_position_id = farhar_32
+		prerequisite = {
+			focus = farhar_32
+		}
+		prerequisite = {
+			focus = farhar_31
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = milsecurity
+		}
+	}
+	
+	focus = {
+		id = farhar_34
+		icon = GFX_goal_generic_position_armies
+		cost = 8.6
+		relative_position_id = farhar_33
+		prerequisite = {
+			focus = farhar_33
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = farhar_35
+		icon = GFX_goal_generic_communcation_focus
+		cost = 8.6
+		relative_position_id = farhar_33
+		prerequisite = {
+			focus = farhar_33
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = advancedcommunications
+		}
+	}
+	
+	focus = {
+		id = farhar_36
+		icon = GFX_goal_generic_building_focus
+		cost = 8.6
+		relative_position_id = settler_become1
+		prerequisite = {
+			focus = settler_become1
+		}
+		available = {
+			has_country_flag = tumanpobejden
+		}
+		x = -15
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_37
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = farhar_36
+		}
+		relative_position_id = farhar_36
+		x = 1
+		y = 1
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_38
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = farhar_37
+		}
+		relative_position_id = farhar_37
+		x = 0
+		y = 1
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_39
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = farhar_36
+		}
+		relative_position_id = farhar_36
+		x = -1
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_40
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = farhar_39
+		}
+		relative_position_id = farhar_39
+		x = 0
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_41
+		icon = GFX_goal_legion_denarius
+		cost = 8.6
+		prerequisite = {
+			focus = farhar_40
+		}
+		prerequisite = {
+			focus = farhar_38
+		}
+		relative_position_id = farhar_40
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_ideas = farrosteconom
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_42
+		icon = GFX_goal_farhargoa16
+		prerequisite = {focus = settler_become1 }
+		available = {
+			has_country_flag = farharpolitdetiamota
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = settler_become1
+		x = 18
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_ideas = fanaticifarharbor
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_43
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_42 }
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = farhar_52
+		} 
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_42
+		x = 4
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_44
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_43 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_43
+		x = 0
+		y = 1
+		cost = 5.0
+		completion_reward = {
+		FZU = { 
+		    add_manpower = 10000
+		   }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_45
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_44 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_44
+		x = 0
+		y = 1
+		cost = 5.0
+		completion_reward = {
+		FZU = { 
+		    add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 producer = FZU }
+		   }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_46
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_45 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_45
+		x = 0
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			989 = { add_core_of = FDA }
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FSV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FZU
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+			hidden_effect = {
+			FZU = { 
+		    load_oob = "FZU_2277"
+		        }
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_47
+		icon = GFX_goal_farhargoa18
+		prerequisite = {focus = farhar_46 }
+		available = {
+			FSV = { exists = no }
+			FZU = { exists = yes }
+		}
+		mutually_exclusive = {
+			focus = farhar_48
+		} 
+		relative_position_id = farhar_46
+		x = -1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			add_political_power = 150
+			add_manpower = 321
+			989 = { add_core_of = FDA }
+			993 = { add_core_of = FDA }
+			transfer_state = 989
+			transfer_state = 993
+			hidden_effect = {
+				country_event = { days = 165 id = farhar.9 }
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_48
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_46 }
+		available = {
+			FSV = { exists = no }
+			FZU = { exists = yes }
+		}
+		mutually_exclusive = {
+			focus = farhar_47
+		}
+		ai_will_do = { factor = 30 } 
+		relative_position_id = farhar_46
+		x = 1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+				set_autonomy = { target = FZU autonomy_state = autonomy_puppet }
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_49
+		icon = GFX_goal_farhargoa16
+		prerequisite = {focus = farhar_48 focus = farhar_47 }
+		available = {
+			FSV = { exists = no }
+			FZU = { exists = yes }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_48
+		x = -1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			990 = { add_core_of = FDA }
+			991 = { add_core_of = FDA }
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FSO
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FZU
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+			hidden_effect = {
+				country_event = { days = 2 id = farhar.10 }
+			}
+			hidden_effect = {
+			FZU = { 
+		    load_oob = "FZU_2277"
+			add_ideas = fsupermutkiller
+		        }
+			}
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_50
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_49 }
+		available = {
+			FMM = { exists = no }
+			FMR = { exists = no }
+			FZU = { exists = yes }
+			date > 2278.1.1
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_49
+		x = -1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			add_political_power = 150	
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_51
+		icon = GFX_goal_farhargoa16
+		prerequisite = {focus = farhar_49 }
+		available = {
+			FMM = { exists = no }
+			FMR = { exists = no }
+			FZU = { exists = yes }
+			date > 2278.1.1
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_49
+		x = 1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+		    create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FAR
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = FIN
+						tag = FAR
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FDA
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+			FIN = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = farhar.11 }
+			    }
+		    }
+			FAR = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = farhar.11 }
+			    }
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_52
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_42 }
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = farhar_43
+		} 
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_42
+		x = 0
+		y = 1
+		cost = 9.0
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_53
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_52 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_52
+		x = 0
+		y = 1
+		cost = 9.0
+		completion_reward = {
+			add_manpower = 250
+			993 = { add_core_of = FDA }
+			transfer_state = 993
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_54
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_53 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_53
+		x = 0
+		y = 1
+		cost = 9.0
+		completion_reward = {
+			add_manpower = 500
+			992 = { add_core_of = FDA }
+			transfer_state = 992
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_55
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_54 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_54
+		x = 0
+		y = 1
+		cost = 9.0
+		completion_reward = {
+		    989 = { add_core_of = FDA }
+			create_wargoal = {
+				type = annex_everything
+				target = FSV
+			}
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FSV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FDA
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_56
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_55 }
+		available = {
+			FSV = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_55
+		x = 0
+		y = 1
+		cost = 9.0
+		completion_reward = {
+			add_ideas = fsupermutkiller
+		}
+	}
+	
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_57
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_56 }
+		available = {
+			FSV = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_56
+		x = 0
+		y = 1
+		cost = 5.0
+		completion_reward = {
+		    990 = { add_core_of = FDA }
+			991 = { add_core_of = FDA }
+			create_wargoal = {
+				type = annex_everything
+				target = FSO
+			}
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FSO
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FDA
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_58
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_57 }
+		available = {
+			
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_57
+		x = 0
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			FMR = { 
+		    transfer_state = 992
+			992 = { add_core_of = FDA }
+			add_political_power = 250
+		    add_manpower = 1500
+		    }
+			FMM = { 
+		    transfer_state = 993
+			993 = { add_core_of = FDA }
+			add_political_power = 250
+		    add_manpower = 1500
+			set_rule = { can_create_factions = yes }
+			create_faction = "obiedkorolfarhar"
+			add_to_faction = FMR
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_59
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_58 }
+		available = {
+			FSU = { exists = no }
+			FSO = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_58
+		x = 0
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FMM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FMR
+			}
+			add_named_threat = { threat = -1 name = fallout3_war55 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = FMM
+						tag = FMR
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FDA
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_60
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_59 }
+		mutually_exclusive = {
+			focus = farhar_61
+		} 
+		available = {
+			FMM = { exists = no }
+			FMR = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_59
+		x = -1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+			994 = { add_core_of = FDA }
+			995 = { add_core_of = FDA }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_61
+		icon = GFX_goal_farhargoa17
+		prerequisite = {focus = farhar_59 }
+		available = {
+			FMM = { exists = no }
+			FMR = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		mutually_exclusive = {
+			focus = farhar_60
+		} 
+		relative_position_id = farhar_59
+		x = 1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+		    994 = { add_core_of = FMM }
+			1074 = { add_core_of = FMM }
+		    release = FMM
+			set_autonomy = { target = FMM autonomy_state = autonomy_puppet }	
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_62
+		icon = GFX_goal_farhargoa16
+		prerequisite = {focus = farhar_61 focus = farhar_60 }
+		available = {
+			date > 2278.1.1
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_61
+		x = -1
+		y = 1
+		cost = 5.0
+		completion_reward = {
+		    create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FAR
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = FIN
+						tag = FAR
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = FDA
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+			FIN = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = farhar.11 }
+			    }
+		    }
+			FAR = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = farhar.11 }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = farhar_63
+		icon = GFX_goal_bos_wasteland_conscription
+		relative_position_id = settler_become1
+		cost = 8.0
+		prerequisite = {
+			focus = settler_become1
+		}
+		x = -20
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = ship_destroyer_tech }
+		}
+	}
+	
+	focus = {
+		id = farhar_64
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_63
+		cost = 4.0
+		prerequisite = {
+			focus = farhar_63
+		}
+		x = 0
+		y = 1
+		available = {
+			991 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			991 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_65
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_63
+		cost = 4.0
+		prerequisite = {
+			focus = farhar_63
+		}
+		x = 2
+		y = 1
+		available = {
+			986 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			986 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_66
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_63
+		cost = 4.0
+		prerequisite = {
+			focus = farhar_63
+		}
+		x = -2
+		y = 1
+		available = {
+			969 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			969 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = farhar_67
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_64
+		cost = 1.6
+		prerequisite = {
+			focus = farhar_64 focus = farhar_65 focus = farhar_66
+		}
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ship_heavy_cruiser_tech }
+		}
+	}
+	
+	focus = {
+		id = farhar_68
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_65
+		cost = 1.6
+		prerequisite = {
+			focus = farhar_65 focus = farhar_64 focus = farhar_66
+		}
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ship_heavy_cruiser_tech }
+		}
+	}
+	
+	focus = {
+		id = farhar_69
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_66
+		cost = 1.6
+		prerequisite = {
+			focus = farhar_66 focus = farhar_65 focus = farhar_64
+		}
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ship_heavy_cruiser_tech }
+		}
+	}
+	
+	focus = {#SIERRA - 2- The lab
+		id = farhar_70
+		icon = GFX_goal_farhargoa17
+		available = {
+			FAR = { exists = no }
+			FIN = { exists = no }
+		}
+		ai_will_do = { factor = 20 } 
+		relative_position_id = farhar_61
+		x = 3
+		y = -1
+		cost = 20.0
+		completion_reward = {
+			988 = { add_core_of = FDA }
+            969 = { add_core_of = FDA }
+			970 = { add_core_of = FDA }
+            971 = { add_core_of = FDA }
+            972 = { add_core_of = FDA }
+			973 = { add_core_of = FDA }
+            974 = { add_core_of = FDA }
+            975 = { add_core_of = FDA }
+			976 = { add_core_of = FDA }
+            977 = { add_core_of = FDA }
+            978 = { add_core_of = FDA }
+            979 = { add_core_of = FDA }
+            980 = { add_core_of = FDA }
+            981 = { add_core_of = FDA }
+            982 = { add_core_of = FDA }
+            983 = { add_core_of = FDA }
+            984 = { add_core_of = FDA }
+            995 = {
+			       add_manpower = -10000
+		    }
+            994 = {
+			       add_manpower = -7462
+		    }				
+		}
+	}
+	
+	focus = {
+		id = farhar_71
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_70
+		cost = 5.0
+		prerequisite = {
+			focus = farhar_70
+		}
+		x = -1
+		y = 1
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = farhar_72
+		} 
+		completion_reward = {
+			add_political_power = -150
+			add_manpower = -250
+		}
+	}
+	
+	focus = {
+		id = farhar_72
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_70
+		cost = 5.0
+		mutually_exclusive = {
+			focus = farhar_71
+		} 
+		prerequisite = {
+			focus = farhar_70
+		}
+		x = 1
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			969 = {
+				set_state_name = "rinfarhar"
+			}
+			977 = {
+				set_state_name = "ruinakadia"
+			}
+			969 = { add_core_of = FDA }
+            977 = { add_core_of = FDA }
+			969 = {
+			       add_manpower = -11356
+		    }
+            977 = {
+			       add_manpower = -10536
+		    }	
+		}
+	}
+	
+	focus = {
+		id = farhar_73
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_71
+		cost = 5.0
+		prerequisite = {
+			focus = farhar_71 focus = farhar_72
+		}
+		x = 1
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "farharbdetiatoma"
+		}
+	}
+	
+	focus = {
+		id = farhar_74
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_73
+		cost = 5.0
+		prerequisite = {
+			focus = farhar_73
+		}
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		completion_reward = {
+			set_autonomy = { target = DAT autonomy_state = autonomy_puppet }
+			add_to_faction = DAT
+		}
+	}
+	
+	focus = {
+		id = farhar_75
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = farhar_19
+		cost = 5.0
+		prerequisite = {
+			focus = farhar_19
+		}
+		x = 0
+		y = 1
+		available = {
+			FDA = { exists = no }
+		}
+		completion_reward = {
+			add_ideas = farmirskayajisn
+		}
+	}
+	
+	focus = {
+		id = farhar_76
+		icon = GFX_goal_institut23
+		relative_position_id = farhar_29
+		ai_will_do = { factor = 20 } 
+		cost = 5.0
+		x = 0
+		y = 2
+		available = {
+			FSP = { exists = no }
+			has_country_flag = farharpolitakadia
+		}
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = INS_idea_backhand_support_idea
+		}
+	}
+	
+	focus = {
+		id = farhar_77
+		icon = GFX_goal_generic_building_focus
+		relative_position_id = farhar_76
+		ai_will_do = { factor = 20 } 
+		prerequisite = {
+			focus = farhar_76
+		}
+		cost = 1.00
+		x = 0
+		y = 1
+
+		completion_reward = {
+			country_event = { id = farhar.12 }
+		}
+	}
+	
+
+	
+	

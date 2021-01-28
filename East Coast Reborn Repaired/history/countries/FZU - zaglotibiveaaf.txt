@@ -1,0 +1,54 @@
+﻿capital = 992
+oob = "FZU_2275"
+
+set_technology = {
+	Bolotniks_mutant_civilization = 1
+	tribal_civilization = 1
+	tool_engineering = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	support_weaponry = 1
+	demolitions_weaponry_tech = 1
+	fireteam_weaponry_tech = 1
+	bike_tech_1 = 1
+}
+
+set_stability = 0.2 
+set_war_support = 0.6
+set_rule = { can_join_factions = no }
+set_convoys = 50
+
+add_opinion_modifier = { target = FMM modifier = tumanmir }
+add_opinion_modifier = { target = FDA modifier = tumanmir }
+add_opinion_modifier = { target = FMR modifier = tumanmir }
+add_opinion_modifier = { target = FSO modifier = tumanmir }
+add_opinion_modifier = { target = FSV modifier = tumanmir }
+
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+
+}
+
+
+
+create_country_leader  = {
+	name = "Great Zaglot"
+	desc = ""
+	picture = "gfx/leaders/FZB/Zaglot.dds"
+	expire = "3000.1.1"
+	ideology = gang
+	traits = {
+	}
+}

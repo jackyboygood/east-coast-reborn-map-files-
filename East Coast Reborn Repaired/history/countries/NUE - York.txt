@@ -1,0 +1,112 @@
+﻿capital = 904
+oob = "NUE_2275"
+
+set_technology = {
+	grand_army = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+	support_weaponry = 1
+	fireteam_weaponry_tech = 1
+	recon_company_tech_1 = 1
+	bike_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	anti_tank_equipment_tech_1 = 1
+	special_forces_doctrine = 1
+	spec_ops_equipment_tech_1 = 1
+	pre_agriculture_industry_tech = 1
+	agriculture_industry_tech_1 = 1
+	agriculture_industry_tech_2 = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_rule = { can_join_factions = no }
+set_convoys = 60
+
+
+set_politics = {
+	ruling_party = people
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 62
+	elites = 20
+	intellectuals = 10
+	ruler = 8
+}
+
+add_ideas = {}
+
+add_opinion_modifier = { target = REC modifier = torgovieoperacii }
+
+create_country_leader  = {
+	name = "President Catherine Matgomery"
+	desc = ""
+	picture = "gfx/leaders/NUE/Portrait_president.dds"
+	expire = "3000.1.1"
+	ideology = town_hall_democracy
+	traits = {
+		well_liked_leader
+	}
+}
+
+create_corps_commander = {
+	name = "General Louise Campbell"
+	portrait_path = "gfx/leaders/NUE/Portrait_general.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+    
+}
+
+create_corps_commander = {
+	name = "Corporal Abigel Vots"
+	portrait_path = "gfx/leaders/DEV/Rosie.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "General Jordan Marmont"
+	portrait_path = "gfx/leaders/NUE/Portrait_general1.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Captain of the Marine Corps Federation"
+	portrait_path = "gfx/leaders/NUE/Portrait_general3.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Colonel Kate Walker"
+	portrait_path = "gfx/leaders/NUE/Portrait_general2.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+	
+}

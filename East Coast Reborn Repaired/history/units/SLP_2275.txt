@@ -1,0 +1,64 @@
+﻿division_template = {
+	name = "Добровольцы"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Ветераны"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+
+
+	}
+}
+
+units = {
+	division {
+		name = "Добровольцы"
+		location = 11672
+		division_template = "Добровольцы"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+	division {
+		name = "Добровольцы"
+		location = 11672
+		division_template = "Ветераны"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+	division {
+		name = "Courtyard Old Guard"
+		location = 11672
+		division_template = "Добровольцы"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+	division {
+		name = "Courtyard Old Guard"
+		location = 11672
+		division_template = "Ветераны"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+    division {
+		name = "Courtyard Old Guard"
+		location = 11672
+		division_template = "Добровольцы"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}

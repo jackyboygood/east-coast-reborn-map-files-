@@ -1,0 +1,792 @@
+focus_tree = {
+	id = Pitsburg_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = PIT
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_1
+		icon = GFX_goal_generic_ideological_fury_focus
+		x = 8
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_1 entered"
+			}
+			add_manpower = 2000
+			country_event = { id = Pitt.1 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_1 exited"
+			}
+	    }
+	}
+	
+	focus = {
+		id = Pitsburg_2
+		icon = GFX_goal_generic_ideological_fury_focus
+		prerequisite = { focus = Pitsburg_1 }
+		relative_position_id = Pitsburg_1
+		x = 0
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_2 entered"
+			}
+			country_event = { id = Pitt.2 }
+			load_oob = "PIT_2275"
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_2 exited"
+			}
+	    }
+	}
+	
+	focus = {
+		id = Pitsburg_3
+		icon = GFX_goal_generic_ideological_fury_focus
+		prerequisite = { focus = Pitsburg_2 }
+		relative_position_id = Pitsburg_2
+		x = 0	
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 60			
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_3 entered"
+			}
+			country_event = { id = Pitt.3 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_3 exited"
+			}
+	    }
+	}
+	
+	focus = {
+		id = Pitsburg_4
+		icon = GFX_goal_legion_workshop
+		relative_position_id = Pitsburg_3
+		cost = 8.6
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_3
+		}
+		available = {
+			938 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_4 entered"
+			}
+			938 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_4 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_5
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = Pitsburg_3 }
+		relative_position_id = Pitsburg_3
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_3
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_5 entered"
+			}
+			swap_ideas = {
+				add_idea = cast_system_1
+				remove_idea = cast_system
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_5 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_6
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = Pitsburg_5 }
+		relative_position_id = Pitsburg_5
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = SLP
+
+		cost = 8.6
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = SLP
+			}
+			SLP = { exists = yes }
+		}
+
+		bypass = {
+			SLP = { exists = no }
+			SLP = { is_subject_of = PIT}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SLP
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = SLP
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+
+    focus = {
+		id = Pitsburg_7
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = Pitsburg_4
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_4
+		}
+		available = {
+			937 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_4 entered"
+			}
+			937 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_4 exited"
+			}
+		}
+	}
+
+	focus = {
+		id = Pitsburg_8
+		icon = GFX_goal_generic_food_focus
+		relative_position_id = Pitsburg_6
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_6
+		}
+		available = {
+			937 = { is_owned_and_controlled_by = ROOT }
+			938 = { is_owned_and_controlled_by = ROOT }
+			936 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_8 entered"
+			}
+			937 = {
+				add_manpower = 250
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = water_generator
+					level = 1
+					instant_build = yes
+				}
+			}
+			938 = {
+				add_manpower = 250
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = water_generator
+					level = 1
+					instant_build = yes
+				}
+			}
+			936 = {
+				add_manpower = 250
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = water_generator
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_8 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_9
+		icon = GFX_goal_brk_drums_of_war
+		relative_position_id = Pitsburg_3
+		cost = 8.6
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_3
+		}
+
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_9 entered"
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.6
+				uses = 2
+				category = land_doctrine
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_9 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pittsburg_power_armor
+		icon = GFX_goal_generic_t45d_power_armour_focus
+		relative_position_id = Pitsburg_9
+		cost = 8.6
+		x = 2
+		y = 1
+		
+		prerequisite = {
+			focus = Pitsburg_9
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pittsburg_power_armor entered"
+			}
+			set_technology = {
+				stripped_pa_tech = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pittsburg_power_armor exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_10
+		icon = GFX_goal_brk_war
+		relative_position_id = Pitsburg_9
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_9
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_10 entered"
+			}
+			add_war_support = 0.1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_10 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_11
+		icon = GFX_goal_generic_recruitment_focus
+		relative_position_id = Pitsburg_8
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_8
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_11 entered"
+			}
+			938 = {
+				add_resource = {
+					type = metal
+					amount = 8
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_11 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_12
+		icon = GFX_goal_legion_slaves
+		relative_position_id = Pitsburg_10
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_10
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_12 entered"
+			}
+			add_political_power = 25
+			add_manpower = 500
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_12 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_13
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = Pitsburg_12 }
+		relative_position_id = Pitsburg_12
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = SHE
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = SHE
+			}
+			SHE = { exists = yes }
+		}
+
+		bypass = {
+			SHE = { exists = no }
+			SHE = { is_subject_of = PIT}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SHE
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = SHE
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_14
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = Pitsburg_7 }
+		relative_position_id = Pitsburg_7
+		cost = 8.6
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_14 entered"
+			}
+			add_research_slot = 1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_14 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_15
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = Pitsburg_14 }
+		relative_position_id = Pitsburg_14
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = PBU
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = PBU
+			}
+			PBU = { exists = yes }
+		}
+
+		bypass = {
+			PBU = { exists = no }
+			PBU = { is_subject_of = PIT}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PBU
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = PBU
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_pervie_opity
+		icon = GFX_goal_generic_ideological_fury_focus
+		x = 15
+		y = 0
+
+		cost = 8.6
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+        has_country_flag = PIT_marie_1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_pervie_opity entered"
+			}
+			country_event = { id = Pitt.5 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_pervie_opity exited"
+			}
+	    }
+	}
+	
+	focus = {
+		id = Pitsburg_opits
+		icon = GFX_goal_generic_scientific_exchange
+		relative_position_id = Pitsburg_pervie_opity
+		cost = 8.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_pervie_opity
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_opits entered"
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_opits exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_vactination
+		icon = GFX_goal_NEW_bio_med_gel_experiments
+		relative_position_id = Pitsburg_opits
+		cost = 17.2
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Pitsburg_opits
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_opits entered"
+			}
+			remove_ideas = trogs
+			add_war_support = 0.05
+			add_stability = 0.05
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_opits exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Pitsburg_otmena
+		icon = GFX_goal_support_democracy
+		relative_position_id = Pitsburg_vactination
+		x = 0
+		y = 1
+
+		cost = 8.6
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		prerequisite = {
+			focus = Pitsburg_vactination
+		}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_otmena entered"
+			}
+		
+			if = {
+				limit = { has_idea = cast_system }
+				remove_ideas = cast_system
+			}
+			else = {
+				remove_ideas = cast_system_1
+			}
+			
+			add_war_support = 0.05
+			add_stability = 0.05
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_otmena exited"
+			}
+	    }
+	}
+	
+	focus = {
+		id = Pitsburg_reform_army
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = Pitsburg_otmena }
+		relative_position_id = Pitsburg_otmena
+		x = 0
+		y = 1
+
+		cost = 17.2
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_reform_army entered"
+			}
+			load_oob = "PIT_reform"
+			delete_unit_template_and_units = { division_template = "Ashur's Raiders" }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Pitsburg_reform_army exited"
+			}
+	    }
+	}
+	

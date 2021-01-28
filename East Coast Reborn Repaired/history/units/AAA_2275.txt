@@ -1,0 +1,70 @@
+﻿division_template = {
+	name = "Наёмники"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "farmers"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+	}
+}
+
+
+units = {
+	division {
+		name = "Kenneth's Boys"
+		location = 1318
+		division_template = "Наёмники"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Bridge Trolls"
+		location = 1318
+		division_template = "Наёмники"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Hell's Skullfuckers"
+		location = 1318
+		division_template = "Наёмники"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Shafters"
+		location = 1318
+		division_template = "farmers"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+division {
+		name = "Whistler's Nightmare"
+		location = 1318
+		division_template = "farmers"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AAA"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

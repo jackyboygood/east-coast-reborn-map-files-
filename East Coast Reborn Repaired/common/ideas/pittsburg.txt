@@ -1,0 +1,107 @@
+ideas = {
+
+	country = {
+		
+        promplus = {
+			
+			picture = promplus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		cast_system = {
+		
+			picture = brk_slavery
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		
+		cast_system_1 = {
+		
+			picture = brk_slavery_2
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		trogs = {
+			
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.04
+				MONTHLY_POPULATION = -0.4
+				research_speed_factor = 0.05
+				army_org_factor = -0.2
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		ludoedi = {
+			
+			picture = ludoedi
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				justify_war_goal_time = -0.15
+				production_speed_buildings_factor = -0.08
+				army_speed_factor = 0.05
+				training_time_factor = 0.05
+				
+			}
+		}
+	}

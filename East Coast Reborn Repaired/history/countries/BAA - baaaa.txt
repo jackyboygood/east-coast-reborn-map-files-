@@ -1,0 +1,46 @@
+﻿capital = 938
+oob = "BAA_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_convoys = 35
+
+set_politics = {
+	ruling_party = people
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 60
+	elites = 15
+	intellectuals = 20
+	ruler = 5
+}
+
+add_ideas = {
+}
+
+add_opinion_modifier = { target = BAB modifier = torgovayasvazcan }
+add_opinion_modifier = { target = AAZ modifier = torgovayasvazcan }
+add_opinion_modifier = { target = AAF modifier = torgovayasvazcan }
+add_opinion_modifier = { target = BAC modifier = torgovayasvazcan }
+
+create_country_leader  = {
+	name = "Ted Balgruf"
+	desc = "Jack Vickers_DESC"
+	picture = "gfx/leaders/BAA/Portrait_Sheriffaad.dds"
+	expire = "3000.1.1"
+	ideology = commune
+	traits = {
+
+		
+    }
+}

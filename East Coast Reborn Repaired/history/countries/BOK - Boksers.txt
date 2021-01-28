@@ -1,0 +1,45 @@
+﻿capital = 905
+oob = "BOK_2275"
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	raider_reckless_aggression = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.2 
+set_war_support = 0.55
+set_rule = { can_join_factions = no }
+
+set_convoys = 50
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	raider_nation
+	reckless_aggression
+	roaring_machines
+}
+
+add_opinion_modifier = { target = MUT modifier = torgovieoperacii }
+add_opinion_modifier = { target = NBS modifier = torgovieoperacii }
+
+create_country_leader  = {
+	name = "Boxy"
+	desc = ""
+	picture = "gfx/leaders/BOK/Portrait_boksi.dds"
+	expire = "3000.1.1"
+	ideology = gang
+	traits = {
+	}
+}

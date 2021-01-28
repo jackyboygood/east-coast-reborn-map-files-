@@ -1,0 +1,16 @@
+﻿division_template = {
+	name = "Liberty Prime"
+	regiments = {
+		libertipraym = { x = 0 y = 0 }
+	}
+}
+units = {
+
+	division {
+		name = "Liberty Prime"
+		location = 1107
+		division_template = "Liberty Prime"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+}

@@ -1,0 +1,63 @@
+﻿division_template = {
+	name = "Militia Operators"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry  = { x = 1 y = 0 }
+		infantry  = { x = 1 y = 1 }
+		infantry  = { x = 1 y = 2 }
+	}
+}
+units = {
+	division {
+			name = "Guard"
+			location = 11824
+			division_template = "Guard"
+			start_experience_factor = 1.0
+			start_equipment_factor = 1.0
+		}
+		fleet = {
+		name = "The Seabear"
+		naval_base = 1413
+		task_force = {
+			name = "The Seabear"
+			location = 1413
+			ship = { name = "Rapids Exile Raider I" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider II" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider III" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider IV" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider V" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider VI" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider VII" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider VIII" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider IX" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider X" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+			ship = { name = "Rapids Exile Raider XI" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = BIB } } }
+		}
+	}
+}
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BIB"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

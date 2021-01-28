@@ -1,0 +1,58 @@
+﻿capital = 954
+
+oob = "AAJ_2265"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	destroyer_tech = 1
+	cruiser_tech = 1
+	battleship_tech = 1
+	heavy_cruiser_tech = 1
+	basic_laser_weaponry = 1
+	improved_laser_weaponry  = 1
+	power_armour = 1
+	power_armour_t45d = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.5
+set_war_support = 0.3
+set_convoys = 60
+
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 80
+	ruler = 20
+}
+
+add_ideas = {
+	bunkerblues
+	oldguard
+}
+
+add_opinion_modifier = { target = TRL modifier = boshatesmutants }
+add_opinion_modifier = { target = WBH modifier = boshateswashingtonstatebos }
+
+set_research_slots = 3
+
+create_country_leader = {
+	name = "Matthew McConaughey"
+	desc = ""
+	picture = "gfx/leaders/AAJ/aajleader.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {
+	}
+	
+}

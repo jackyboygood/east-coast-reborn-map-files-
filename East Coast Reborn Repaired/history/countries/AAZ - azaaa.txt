@@ -1,0 +1,72 @@
+﻿capital = 942
+oob = "AAZ_2275"
+
+
+set_technology = {
+	tribal_civilization = 1
+	blunt_weaponry = 1
+	dikarskie_civilization = 1
+	tank_tech_1 = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 1.0
+set_war_support = 0.0
+
+set_convoys = 35
+set_rule = { can_join_factions = no }
+set_politics = {
+	ruling_party = people
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 51
+	elites = 0
+	intellectuals = 0
+	ruler = 49
+}
+
+add_ideas = {
+	tribal_nation
+	
+}
+
+add_opinion_modifier = { target = BAC modifier = torgovayasvazcan }
+add_opinion_modifier = { target = BAB modifier = torgovayasvazcan }
+add_opinion_modifier = { target = BAA modifier = torgovayasvazcan }
+
+create_country_leader  = {
+	name = "Derom"
+	desc = "SANJA_DESC"
+	picture = "gfx/leaders/AAZ/Portrait_leaderindeec.dds"
+	expire = "3000.1.1"
+	ideology = commune
+	
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Rex"
+	id = 0000001
+	desc = ""
+	picture = "gfx/leaders/AAZ/Rex.dds"
+	expire = "3000.1.1"
+	ideology = oligarchy
+	traits = { 
+	cruel_tyrant
+	}
+}
+
+create_country_leader  = {
+	name = "Bulb"
+	desc = ""
+	picture = "gfx/leaders/AAZ/elite_leader.dds"
+	expire = "3000.1.1"
+	ideology = ideocracy
+	
+	traits = {
+	}
+}

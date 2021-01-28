@@ -1,0 +1,69 @@
+﻿division_template = {
+	name = "Trees Wariors"
+	regiments = {
+		Tree_mutant_infantry = { x = 0 y = 0 }
+		Tree_mutant_infantry = { x = 0 y = 1 }
+		Tree_mutant_infantry = { x = 0 y = 2 }
+		Tree_mutant_infantry = { x = 0 y = 3 }
+		Tree_mutant_infantry = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+division {
+		name = "Trees Wariors"
+		location = 651
+		division_template = "Trees Wariors"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}

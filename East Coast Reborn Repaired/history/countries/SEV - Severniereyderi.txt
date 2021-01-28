@@ -1,0 +1,69 @@
+﻿capital = 868
+oob = "SEV_2275"
+
+set_technology = {
+	# baseline techs
+	tribal_civilization = 1
+	settled_civilization = 1
+	#industry
+	oral_instruction = 1
+	#infantry
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	#support
+	explosive_tech = 1
+	anti_personnel_tech = 1
+	support_weaponry = 1
+	#vehicle
+	bike_tech_1 = 1
+	#naval
+	destroyer_tech = 1
+	destroyer_tech_2 = 1
+	cruiser_tech = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.65
+set_war_support = 0.25
+set_convoys = 100
+
+set_politics = {
+	ruling_party = elites
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 70
+	intellectuals = 5
+	ruler = 25
+}
+
+add_ideas = {
+    raider_nation
+}
+
+create_country_leader = {
+	name = "Charon O'Connor"
+	desc = ""
+	picture = "gfx/leaders/SEV/CharonTactics.dds"
+	expire = "3000.1.1"
+	ideology = survivalism
+	traits = {
+		cruel_tyrant
+	}
+}
+
+create_field_marshal = {
+	name = "Charon O'Connor"
+	portrait_path = "gfx/leaders/SEV/CharonTactics.dds"
+	skill = 4
+	traits = {
+		offensive_doctrine
+	}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+    }
+}

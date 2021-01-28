@@ -1,0 +1,77 @@
+﻿division_template = {
+	name = "Добровольцы"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Florids Freedom People"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division {
+		name = "Courtyard Old Guard"
+		location = 11752
+		division_template = "Florids Freedom People"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+	division {
+		name = "Courtyard Old Guard"
+		location = 11752
+		division_template = "Florids Freedom People"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+	division {
+		name = "Courtyard Old Guard"
+		location = 11752
+		division_template = "Florids Freedom People"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+	division {
+		name = "Courtyard Old Guard"
+		location = 11752
+		division_template = "Florids Freedom People"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+}
+units = {
+    division {
+		name = "Courtyard Old Guard"
+		location = 11752
+		division_template = "Florids Freedom People
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+}
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ballistic_equipment_1
+			creator = "CCC"
+		}
+		requested_factories = 5
+		progress = 0.75
+		efficiency = 100
+	}
+}

@@ -1,0 +1,116 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_unit_Tree_mutant_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_trees_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_Tree_mutant_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_trees_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_Tree_mutant_infantry_icon_small"
+		texturefile = "gfx/texticons/onmap_unit_super_trees_infantry_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_Bolotniks_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_bolotniks_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_Bolotniks_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_bolotniks_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_Bolotniks_infantry_icon_small"
+		texturefile = "gfx/texticons/onmap_unit_bolotniks_infantry_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_libertipraym_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_liberty_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_libertipraym_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/unit_liberty_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_libertipraym_icon_small"
+		texturefile = "gfx/texticons/unit_liberty_infantry_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_detivoini_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_detivoini_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_detivoini_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/unit_detivoini_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_detivoini_icon_small"
+		texturefile = "gfx/texticons/unit_detivoini_infantry_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_archers_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_bolotniks_archers_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_archers_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/unit_bolotniks_archers_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_archers_icon_small"
+		texturefile = "gfx/texticons/unit_bolotniks_archers_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_wariors_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_wariors_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_wariors_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/unit_wariors_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_wariors_icon_small"
+		texturefile = "gfx/texticons/unit_wariors_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+}

@@ -1,0 +1,1878 @@
+focus_tree = {
+	id = vault101
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USP
+		}
+	}
+	default = no
+	
+	focus = {
+		id = vault101_1
+		icon = GFX_goal_VLT_all_clear
+		cost = 1.00
+		x = 15
+		y = 0
+		cost = 1.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.1
+		    }
+		}
+	}
+	focus = {
+		id = vault101_2
+		icon = GFX_goal_VLT_crim
+		x = 0
+		y = 1
+		prerequisite = { focus = vault101_1 }
+		relative_position_id = vault101_1 
+		cost = 1.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.2
+		    }
+		}
+	}
+	focus = {
+		id = vault101_3
+		icon = GFX_goal_VLT_crim
+		x = 0
+		y = 1
+		prerequisite = { focus = vault101_2 }
+		relative_position_id = vault101_2 
+		cost = 1.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.3
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_4
+		icon = GFX_goal_generic_cities_focus
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_3
+		}
+		available = {
+			876 = { is_owned_and_controlled_by = ROOT }
+		}
+		x = 13
+		y = 1
+		relative_position_id = vault101_3
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_4 entered"
+			}
+			876 = {
+				add_extra_state_shared_building_slots = 3
+				add_manpower = 300
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_4 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_5
+		icon = GFX_goal_generic_ammo_boxes_focus
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_4
+		}
+		x = -2
+		y = 1
+		relative_position_id = vault101_4
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_5 entered"
+			}
+			add_ideas = vaultmedreg
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_5 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_6
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_4
+		}
+		available = {
+			882 = { is_owned_and_controlled_by = ROOT }
+		}
+		x = 2
+		y = 1
+		relative_position_id = vault101_4
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_6 entered"
+			}
+			882 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_6 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_7
+		icon = GFX_focus_generic_little_entente
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_5
+		}
+		x = 0
+		y = 1
+		relative_position_id = vault101_5
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_7 entered"
+			}
+			add_ideas = courtyarddraft
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_7 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_8
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_6
+		}
+		x = 0
+		y = 1
+		relative_position_id = vault101_6
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_8 entered"
+			}
+			add_ideas = milsecurity
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_8 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_9
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_7
+		}
+		prerequisite = {
+			focus = vault101_8
+		}
+		available = {
+			876 = { is_owned_and_controlled_by = ROOT }
+		}
+		x = 1
+		y = 1
+		relative_position_id = vault101_7
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_9 entered"
+			}
+			876 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = vault_robosec
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_9 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_10
+		text = vault_sec
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_3
+		}
+		x = 21
+		y = 1
+		relative_position_id = vault101_3
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_10 entered"
+			}
+			army_experience = 20
+			add_manpower = 250
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_10 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_11
+		text = vault_garage
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_10
+		}
+		x = -2
+		y = 1
+		relative_position_id = vault101_10
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_11 entered"
+			}
+			add_tech_bonus = {
+				name = vault_garage
+				bonus = 0.4
+				uses = 2
+				category = vehicle_tech
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_11 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_12
+		text = vault_arm_guard
+		icon = GFX_goal_generic_common_energy_weapons_focus
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_10
+		}
+		x = 0
+		y = 1
+		relative_position_id = vault101_10
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_12 entered"
+			}
+			add_tech_bonus = {
+				name = vault_weapons
+				bonus = 0.4
+				uses = 2
+				category = infantry_weapons
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_12 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_13
+		text = vault_robot
+		icon = GFX_goal_generic_production2
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_10
+		}
+		x = 2
+		y = 1
+		relative_position_id = vault101_10
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_13 entered"
+			}
+			add_tech_bonus = {
+				name = vault_robotics
+				bonus = 0.4
+				uses = 2
+				category = robotics_tech
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_13 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_14
+		icon = GFX_goal_VLT_generic
+		relative_position_id = vault101_3
+		cost = 10.00
+		prerequisite = {
+			focus = vault101_3
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_14 entered"
+			}
+			add_political_power = 60
+			add_manpower = 350
+			set_country_flag = vault_tec_calling
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_14 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_15
+		icon = GFX_goal_megatonna1
+		relative_position_id = vault101_14
+		prerequisite = {
+			focus = vault101_14
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.4
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_17
+		icon = GFX_goal_megatonna
+		relative_position_id = vault101_15
+		prerequisite = {
+			focus = vault101_15
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.6
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_18
+		icon = GFX_goal_megatonna2
+		relative_position_id = vault101_17
+		prerequisite = {
+			focus = vault101_17
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.7
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_19
+		icon = GFX_goal_megatonna3
+		relative_position_id = vault101_18
+		prerequisite = {
+			focus = vault101_18
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.8
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_20
+		icon = GFX_goal_megatonna4
+		relative_position_id = vault101_19
+		prerequisite = {
+			focus = vault101_19
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.9
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_21
+		icon = GFX_goal_megatonna5
+		relative_position_id = vault101_20
+		prerequisite = {
+			focus = vault101_20
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.17
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_22
+		icon = GFX_goal_megatonna6
+		relative_position_id = vault101_21
+		prerequisite = {
+			focus = vault101_21
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.21
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_23
+		icon = GFX_goal_megatonna7
+		relative_position_id = vault101_22
+		prerequisite = {
+			focus = vault101_22
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.22
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_24
+		icon = GFX_goal_megatonna8
+		relative_position_id = vault101_23
+		prerequisite = {
+			focus = vault101_23
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.24
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_25
+		icon = GFX_goal_megatonna9
+		relative_position_id = vault101_24
+		prerequisite = {
+			focus = vault101_24
+		}
+		cost = 8.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.37
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_26
+		icon = GFX_goal_megatonna10
+		relative_position_id = vault101_25
+		prerequisite = {
+			focus = vault101_25
+		}
+		cost = 8.00
+		x = -2
+		y = 0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.38
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_27
+		icon = GFX_goal_megatonna11
+		relative_position_id = vault101_26
+		prerequisite = {
+			focus = vault101_26
+		}
+		cost = 8.00
+		x = 0
+		y = -1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.40
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_28
+		icon = GFX_goal_megatonna12
+		relative_position_id = vault101_27
+		prerequisite = {
+			focus = vault101_27
+		}
+		cost = 8.00
+		x = 0
+		y = -1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.45
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_29
+		icon = GFX_goal_megatonna13
+		cost = 8.00
+		relative_position_id = vault101_28
+		prerequisite = {
+			focus = vault101_28
+		}
+		x = 0
+		y = -1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.47
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_30
+		icon = GFX_goal_megatonna14
+		cost = 8.00
+		relative_position_id = vault101_29
+		prerequisite = {
+			focus = vault101_29
+		}
+		x = 0
+		y = -1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.50
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_31
+		icon = GFX_goal_megatonna15
+		cost = 15.00
+		relative_position_id = vault101_30
+		prerequisite = {
+			focus = vault101_30
+		}
+		x = 0
+		y = -1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = vault101ev.57
+		    }
+		}
+	}
+	
+	focus = {
+		id = vault101_32
+		icon = GFX_goal_VLT_all_clear
+		prerequisite = { focus = vault101_31 }
+		relative_position_id = vault101_31
+		x = 0
+		y = -1
+		
+		will_lead_to_war_with = ESP
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = ESP
+			}
+			ESP = { exists = yes }
+		}
+
+		bypass = {
+			ESP = { exists = no }
+			ESP = { is_subject_of = USP}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    every_country = {
+				limit = {
+					OR = {
+						tag = USP
+						tag = SBS
+						tag = RIV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				}
+			}
+	    }
+	}
+}
+	
+	focus = {
+		id = vault101_33
+		icon = GFX_goal_megatonna16
+		relative_position_id = vault101_12
+		available = {
+			ESP = { exists = no }
+		}
+		cost = 12.00
+		
+		x = 0
+		y = 2
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_33 entered"
+			}
+			country_event = {
+				id = vault101ev.63
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_33 exited"
+			}
+		}
+	}
+	
+	focus = {#Purity - VLT - purify
+		id = vault101_34
+		icon = GFX_goal_enc_smash
+		available = {
+			has_country_leader = {
+				id = 5678
+				ruling_only = yes
+				name = "Butch Deloria"
+			}
+		}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = vault101_33
+		x = 2
+		y = 1
+		prerequisite = { focus = vault101_33} 
+	
+		completion_reward = {
+			876 = {
+				add_manpower = -2000
+			}
+			875 = {
+				add_manpower = -850
+			}
+			881 = {
+				add_manpower = -800
+			}
+			882 = {
+				add_manpower = -500
+			}
+			add_stability = 0.05
+			add_war_support = 0.30
+			remove_ideas = djeymsescape
+		}
+		cost = 50.0	
+ }
+ 
+ focus = {
+		id = vault101_35
+		icon = GFX_goal_megatonna20
+		relative_position_id = vault101_33
+		cost = 10.0
+		prerequisite = {
+			focus = vault101_33
+		}
+		x = -2
+		y = 1
+		available = {
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_35 entered"
+			}
+			881 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			875 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_35 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_36
+		icon = GFX_goal_doroga
+		prerequisite = { focus = vault101_35 }
+		ai_will_do = { factor = 1 } 
+		relative_position_id = vault101_35
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_political_power = 50
+			876 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			882 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			883 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			881 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			875 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_37
+		icon = GFX_goal_megatonna19
+		prerequisite = {focus = vault101_36}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = vault101_36
+		available = {
+			881 = { is_controlled_by = USP } #do we actually own it right now?
+		}
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_research_slot = 1
+			881 = {
+				add_manpower = 1253
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_38
+		icon = GFX_goal_megatonna18
+		relative_position_id = vault101_37
+		cost = 40.0
+		prerequisite = {
+			focus = vault101_37
+		}
+		x = 0
+		y = 1
+		available = {
+			controls_state = 881
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_38 entered"
+			}
+			881 = {
+				add_resource = {
+					type = electricity
+					amount = 40
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_38 exited"
+			}
+		}
+	}
+	
+	focus = {#Purity - VLT - purify
+		id = vault101_39
+		icon = GFX_goal_megatonna17
+		ai_will_do = { factor = 1 } 
+		relative_position_id = vault101_38
+		x = 0
+		y = 1
+		prerequisite = { focus = vault101_38}	
+		completion_reward = {
+			add_stability = 0.25
+			add_war_support = -0.10
+			remove_ideas = djeymsescape
+		}
+		cost = 20.0	
+ }
+ 
+    focus = {
+		id = vault101_40
+		icon = GFX_goal_enc_slave_labour
+		ai_will_do = { factor = 1 } 
+		relative_position_id = vault101_34
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = vault101_34
+		} 
+		cost = 10.0
+		completion_reward = {add_ideas = ENC_slave_labour}
+		
+ } 
+ 
+    focus = {
+		id = vault101_41
+		icon = GFX_goal_enc_smash
+		relative_position_id = vault101_40
+        prerequisite = {
+			focus = vault101_40
+		} 
+		available = {
+			is_puppet = no
+			has_government = ruler
+		}
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+			add_manpower = 600
+			add_named_threat = { threat = -80 name = USP_Rebel }
+			country_event = { id = vault101ev.64 }
+		}
+	}
+	
+	focus = {
+		id = vault101_42
+		icon = GFX_goal_bos_wasteland_conscription
+		prerequisite = { focus = vault101_41 }
+		relative_position_id = vault101_41
+		x = 0
+		y = 1
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    POI = { 
+		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
+			}
+			GRI = { 
+		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
+			}
+			KEL = { 
+		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
+			}
+			add_political_power = -200
+			add_manpower = 1500
+			add_opinion_modifier = { target = POI modifier = uspandpointlookout }
+			add_opinion_modifier = { target = GRI modifier = uspandpointlookout }
+			add_opinion_modifier = { target = KEL modifier = uspandpointlookout }
+		}
+	}
+	
+	focus = {
+		id = vault101_43
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = vault101_42
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_42
+		}
+		x = 0
+		y = 1
+		available = {
+			876 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_43 entered"
+			}
+			876 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_43 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_44
+		icon = GFX_goal_megatonna21
+		cost = 8.6
+		available = {
+			has_country_leader = {
+				id = 5678
+				ruling_only = yes
+				name = "Butch Deloria"
+			}
+			has_completed_focus = vault101_43
+		}
+		x = 0
+		y = 2
+		relative_position_id = vault101_9
+		completion_reward = {
+			add_ideas = vault101buch
+            LIT = {
+				set_country_flag = amatabej
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_45
+		icon = GFX_goal_megatonna22
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_44
+		}
+		x = 3
+		y = 1
+		relative_position_id = vault101_44
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_45 entered"
+			}
+			army_experience = 20
+			add_manpower = 2000
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_45 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_46
+		icon = GFX_goal_megatonna27
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_45
+		}
+		x = 0
+		y = 1
+		available = {
+			GRI = { exists = yes }
+		}
+		relative_position_id = vault101_45
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_46 entered"
+			}
+			add_to_faction = GRI
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_46 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_47
+		icon = GFX_goal_megatonna25
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_45
+		}
+		x = -2
+		y = 1
+		available = {
+			POI = { exists = yes }
+		}
+		relative_position_id = vault101_45
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_47 entered"
+			}
+			add_to_faction = POI
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_47 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_48
+		icon = GFX_goal_megatonna26
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_45
+		}
+		x = 2
+		y = 1
+		available = {
+			RAB = { exists = yes }
+		}
+		relative_position_id = vault101_45
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_48 entered"
+			}
+			add_to_faction = RAB
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_48 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_49
+		icon = GFX_goal_megatonna24
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_44
+		}
+		x = -3
+		y = 1
+		relative_position_id = vault101_44
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_49 entered"
+			}
+			add_stability = 0.15
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_49 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_50
+		icon = GFX_goal_megatonna23
+		relative_position_id = vault101_49
+		cost = 11.0
+		available = {
+
+		}
+		prerequisite = {
+			focus = vault101_49
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Freddy Gomes"
+				gfx = "GFX_portrait_Freddy_Gomes"
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Uolly Mack"
+				gfx = "GFX_portrait_Uolly_Mack"
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Poll Hanon"
+				gfx = "GFX_portrait_Poll_Hanon"
+				skill = 4
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_51
+		icon = GFX_goal_bos_victory_or_death
+		relative_position_id = vault101_44
+		prerequisite = { focus = vault101_44 }
+		x = -1
+		y = 1
+		
+		will_lead_to_war_with = SBS
+
+		cost = 12.0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = SBS
+			}
+			SBS = { exists = yes }
+			has_completed_focus = vault101_50
+		}
+
+		bypass = {
+			SBS = { exists = no }
+			SBS = { is_subject_of = USP }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SBS
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_52
+		icon = GFX_goal_megatonna28
+		cost = 8.6
+		available = {
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
+			has_completed_focus = vault101_39
+		}
+		x = 0
+		y = 3
+		relative_position_id = vault101_44
+		completion_reward = {
+			add_ideas = amatast
+			LIT = {
+				set_country_flag = buchisgnan
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_53
+		icon = GFX_goal_generic_metal_focus
+		relative_position_id = vault101_52
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_52
+		}
+		x = -2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_53 entered"
+			}
+			capital_scope = {
+				add_resource = { type = metal amount = 15 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_53 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_54
+		icon = GFX_goal_generic_advanced_technology_focus
+		relative_position_id = vault101_52
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_52
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_54 entered"
+			}
+			capital_scope = {
+				add_resource = { type = advanced_technology amount = 12 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_54 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_55
+		icon = GFX_goal_generic_fuel_focus
+		relative_position_id = vault101_52
+		cost = 8.6
+		prerequisite = {
+			focus = vault101_52
+		}
+		x = 2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_55 entered"
+			}
+			capital_scope = {
+				add_resource = { type = fuel amount = 12 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_55 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_56
+		icon = GFX_goal_generic_fuel_focus
+		relative_position_id = vault101_54
+		cost = 8.6
+		available = {
+			has_completed_focus = vault101_44
+		}
+		bypass = {
+            has_full_control_of_state = 773
+		}
+		x = 0
+		y = 2
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 773 # Carson City
+				}
+				USP = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_57
+		icon = GFX_goal_generic_fuel_focus
+		prerequisite = {
+			focus = vault101_56
+		}
+		relative_position_id = vault101_56
+		cost = 8.6
+		bypass = {
+            has_full_control_of_state = 765
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 765 # Carson City
+				}
+				USP = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_58
+		icon = GFX_goal_generic_fuel_focus
+		prerequisite = {
+			focus = vault101_56
+		}
+		relative_position_id = vault101_56
+		cost = 8.6
+		bypass = {
+            has_full_control_of_state = 794
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 794 # Carson City
+				}
+				USP = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = vault101_59
+		icon = GFX_goal_megatonna17
+		prerequisite = {
+			focus = vault101_33
+		}
+		ai_will_do = { factor = 1000 } 
+		relative_position_id = vault101_33
+		cost = 8.6
+		bypass = {
+            
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+             add_ideas = cleanoperation
+		}
+	}
+	
+	

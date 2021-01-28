@@ -1,0 +1,152 @@
+ideas = {
+	country = {
+	
+	    minitmen_protect = {
+			allowed = { always = no	}
+
+			allowed_civil_war = {
+				has_government = people
+			}
+
+			removal_cost = -1
+			picture = minitmen_protect
+			modifier = {
+				drift_defence_factor = 0.05
+				stability_factor = 0.08
+			}
+		}
+		minitmen_drift = {
+			allowed = { always = no	}
+
+			allowed_civil_war = {
+				has_government = people
+			}
+
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				people_drift = 0.05
+			}
+		} 
+		
+		vihodec = {
+			
+			picture = vihodec
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.03
+				stability_factor = 0.02
+				political_power_gain = 0.05
+			}
+		}
+		
+		
+		Prestongarvi = {
+			
+			picture = Prestongarvi
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.03
+				political_power_gain = 0.6
+			}
+		}
+		
+		Vihodechero = {
+			picture = vihodec
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.10
+                stability_factor = 0.04
+			}
+		}
+		
+		NaborUs = {
+			picture = NaborUs
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.08
+			}
+		}
+		
+		UsSupport = {
+			picture = UsSupport
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				people_drift = 0.10
+			}
+		}
+		
+		blackminitmenidea = {
+			picture = blackminitmenidea
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				elites_drift = 0.10
+				conscription = 0.05
+				war_support_factor = 0.03
+				justify_war_goal_time = -0.5
+			}
+		}
+		
+		prestonnew = {
+			picture = prestonnew
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				ruler_drift = 0.10
+				political_power_gain = 0.3
+			}
+		}

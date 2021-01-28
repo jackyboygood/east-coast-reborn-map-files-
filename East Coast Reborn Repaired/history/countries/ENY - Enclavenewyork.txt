@@ -1,0 +1,83 @@
+﻿capital = 856
+oob = "ENY_2275"
+
+set_technology = {
+	elite_army = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	nautics_tech_1 = 1
+	energy_weaponry_tech_1 = 1
+	energy_weaponry_tech_2 = 1
+	spec_ops_equipment_tech_1 = 1
+	spec_ops_equipment_tech_2 = 1
+	hardening_armour_tech = 1
+	simple_servo_tech = 1
+	stripped_pa_tech = 1
+	scav_pa_tech = 1
+	vertibird_tech = 1
+	vertibird_cas_tech =1
+	enclave_pa_unlock_tech = 1
+	power_armour_enclave_1 = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.6
+set_convoys = 35
+set_rule = { can_join_factions = no }
+
+set_politics = {
+	ruling_party = elites
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 100
+	intellectuals = 0
+	ruler = 0
+}
+
+add_ideas = {
+	add_ideas = enc_scientists
+    add_ideas = ENC_officers
+    add_ideas = closed_economy
+}
+
+create_country_leader  = {
+	name = "Colonel John Niemann"
+	desc = "Jack Vickers_DESC"
+	picture = "gfx/leaders/ENY/djonnima.dds"
+	expire = "3000.1.1"
+	ideology = militarist_technocracy
+	traits = {
+		
+    }
+}
+
+create_corps_commander = {
+	name = "Lt. Harper"
+	portrait_path = "gfx/leaders/ENY/leyt.dds"
+	skill = 3
+	traits = {
+	}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sergeant Dornan"
+	portrait_path = "gfx/leaders/ENY/dorn.dds"
+	skill = 2
+	traits = {
+	}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

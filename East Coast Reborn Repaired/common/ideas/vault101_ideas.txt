@@ -1,0 +1,60 @@
+ideas = {
+    country = {
+	
+	    vault101buch = {
+
+			picture = vault101buch
+
+			allowed = {
+				is_raider_nation = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				ruler_drift = 0.17
+				experience_gain_army = 0.05
+				supply_consumption_factor = -0.05
+				military_leader_cost_factor = -0.03
+				justify_war_goal_time = -0.2	
+			}
+		}
+		
+		amatast = {
+			
+			picture = amatast
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			    people_drift = 0.17
+				conscription = -0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				political_power_gain = 0.05
+				research_time_factor = -0.05
+				supply_consumption_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				
+			}
+			equipment_bonus = {
+				light_robot_equipment = {
+					build_cost_ic = -0.30
+					instant = yes
+				}
+			}
+		}

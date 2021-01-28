@@ -1,0 +1,124 @@
+﻿division_template = {
+	name = "Melon Civil War Archers"
+	regiments = {
+		archers = { x = 0 y = 0 }
+		archers = { x = 0 y = 1 }
+		archers = { x = 0 y = 2 }
+		archers = { x = 0 y = 3 }
+		archers = { x = 0 y = 4 }
+		archers = { x = 0 y = 5 }
+	}
+}
+
+division_template = {
+	name = "Melon Civil War Wariors"
+	regiments = {
+		wariors = { x = 0 y = 0 }
+		wariors = { x = 0 y = 1 }
+		wariors = { x = 0 y = 2 }
+		wariors = { x = 0 y = 3 }
+		wariors = { x = 0 y = 4 }
+		wariors = { x = 0 y = 5 }
+	}
+}
+
+units = {
+	division {
+		name = "Melon Civil War Archers"
+		location = 11603
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Archers"
+		location = 11610
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Archers"
+		location = 11611
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Archers"
+		location = 11608
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Archers"
+		location = 11607
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Archers"
+		location = 11599
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Archers"
+		location = 11594
+		division_template = "Melon Civil War Archers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11592
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11593
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11653
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11654
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11659
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11609
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Melon Civil War Wariors"
+		location = 11609
+		division_template = "Melon Civil War Wariors"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}

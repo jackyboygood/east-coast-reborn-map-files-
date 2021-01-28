@@ -1,0 +1,338 @@
+﻿add_namespace = Sovk
+
+country_event = {
+	id = Sovk.1
+	title = Sovk.1.t
+	desc = Sovk.1.d
+	picture = GFX_event_sovet_events
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.1.a
+		add_manpower = -100
+		944 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = Sovk.1.b
+		add_manpower = 211
+		944 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = Sovk.1.c
+        add_manpower = -500
+		944 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.2
+	title = Sovk.2.t
+	desc = Sovk.2.d
+	picture = GFX_event_sovet_events1
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.2.a
+		944 = {
+			add_manpower = -4500
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.3
+	title = Sovk.3.t
+	desc = Sovk.3.d
+	picture = GFX_event_sovet_events2
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.3.b
+		ai_chance = {
+			factor = 25
+		}
+		add_research_slot = 1
+		set_politics = {
+			ruling_party = intellectuals
+			elections_allowed = no
+		}
+		set_popularities = {
+			ruler = 46
+			elites = 0
+			people = 0
+			intellectuals = 54
+		}
+
+	}
+	option = {
+		name = Sovk.3.a
+		ai_chance = {
+			factor = 25
+		}
+	    create_country_leader = {
+	       name = "Aleksey Simonov"
+	       id = 5800
+	       desc = ""
+	       picture = "gfx/leaders/SOV/Aleksey_Simonov.dds"
+	       expire = "3000.1.1"
+	       ideology = oligarchy
+        }
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+			ruling_party = ruler
+			elections_allowed = no
+		}
+		set_popularities = {
+			ruler = 80
+			elites = 0
+			people = 0
+			intellectuals = 20
+		}
+		944 = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.4
+	title = Sovk.4.t
+	desc = Sovk.4.d
+	picture = GFX_event_sovet_events5
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.4.a
+		transfer_state = 965
+		transfer_state = 964
+		965 = { add_core_of = SOV }
+		964 = { add_core_of = SOV }
+	}
+}
+
+country_event = {
+	id = Sovk.5
+	title = Sovk.5.t
+	desc = Sovk.5.d
+	picture = GFX_event_sovet_events3
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.5.a
+			create_wargoal = {
+				type = annex_everything
+				target = AAG
+		    }
+	}
+}
+
+country_event = {
+	id = Sovk.6
+	title = Sovk.6.t
+	desc = Sovk.6.d
+	picture = GFX_event_sovet_events4
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.6.a
+		    create_wargoal = {
+				type = annex_everything
+				target = AAG
+			}
+		load_oob = sovetinplaj
+		transfer_state = 965
+		965 = { add_core_of = SOV }
+	}
+}
+
+country_event = {
+	id = Sovk.7
+	title = Sovk.7.t
+	desc = Sovk.7.d
+	picture = GFX_event_sovet_events6
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.7.a
+        country_event = {
+				id = Sovk.8
+		}
+	}
+	option = {
+		name = Sovk.7.b
+		ai_chance = {
+			factor = 100
+		}
+		country_event = {
+				id = Sovk.9
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.8
+	title = Sovk.8.t
+	desc = Sovk.8.d
+	picture = GFX_event_sovet_events7
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.8.a
+		ai_chance = { 
+			factor = 100 
+		}
+        country_event = {
+				id = Sovk.10
+		}
+	}
+	option = {
+		name = Sovk.8.b
+		country_event = {
+				id = Sovk.11
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.9
+	title = Sovk.9.t
+	desc = Sovk.9.d
+	picture = GFX_event_sovet_events8
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.9.a
+		ai_chance = {
+			factor = 100
+		}
+        country_event = {
+				id = Sovk.10
+		}
+	}
+	option = {
+		name = Sovk.9.b
+		country_event = {
+				id = Sovk.13
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.10
+	title = Sovk.10.t
+	desc = Sovk.10.d
+	picture = GFX_event_sovet_events9
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.10.a
+		ai_chance = { 
+			factor = 100 
+		}
+		add_ideas = sovetubiycaaborigen
+		AAQ = { 
+			add_political_power = -50
+			add_manpower = -150
+		}
+        create_wargoal = {
+				type = annex_everything
+				target = AAQ
+		}	
+	}
+	
+	option = {
+		name = Sovk.10.b
+		AAQ = { 
+			add_political_power = -100
+			add_manpower = -250
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.11
+	title = Sovk.11.t
+	desc = Sovk.11.d
+	picture = GFX_event_sovet_events10
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.11.a
+        country_event = {
+				id = Sovk.12
+		}
+	}
+	option = {
+		name = Sovk.11.b
+		country_event = {
+				id = Sovk.10
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.12
+	title = Sovk.12.t
+	desc = Sovk.12.d
+	picture = GFX_event_sovet_events11
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.12.a
+		    add_manpower = 600	
+			set_autonomy = { target = AAQ autonomy_state = autonomy_puppet }
+		}
+	}
+}
+
+country_event = {
+	id = Sovk.13
+	title = Sovk.13.t
+	desc = Sovk.13.d
+	picture = GFX_event_sovet_events12
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.13.a
+		add_ideas = proklatie_anishinaabe
+		955 = { add_core_of = SOV }
+		958 = { add_core_of = SOV }
+		AAQ = { 
+			add_political_power = 200
+			add_manpower = 1250
+		}
+	}
+}

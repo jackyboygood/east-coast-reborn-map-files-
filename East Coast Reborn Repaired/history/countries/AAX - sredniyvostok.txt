@@ -1,0 +1,41 @@
+﻿capital = 931
+oob = "AAX_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	raider_reckless_aggression = 1
+	naval_invasion_tech = 1
+}
+set_convoys = 0
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	reckless_aggression
+	ludoedi
+	demonspustini
+}
+
+create_country_leader  = {
+	name = "Desert Man"
+	desc = "Stinger_DESC"
+	picture = "gfx/leaders/AAX/leader.dds"
+	expire = "3000.1.1"
+	ideology = gang
+	
+	traits = {
+	 warmonger
+	}
+}

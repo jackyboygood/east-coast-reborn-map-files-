@@ -1,0 +1,283 @@
+ideas = {
+	country = {
+		# Enclave state
+		
+           EnclavePolkovnik = {
+
+			picture = supportpolkovnikicon
+
+			allowed = {
+				is_raider_nation = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				elites_drift = 0.30
+				conscription = 0.02
+			}
+		}
+		
+		Enclaveedem = {
+
+			picture = supportpresidenticon
+
+			allowed = {
+				is_raider_nation = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				elites_drift = 0.30
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		Militari_leader = {
+			picture = enc__idea_fist
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.08
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		vaultherometro = {
+			picture = mean_bastards
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				war_support_factor = 0.03
+			}
+		}
+		
+		nonpravila = {
+			picture = nonpravila
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		
+		pravila = {
+			
+			picture = pravila
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+		
+		killchildren = {
+			picture = killchildren
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		
+		nokillchildren = {
+			
+			picture = nokillchildren
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				conscription = 0.03
+			}
+		}
+		
+		ghulvi = {
+			
+			picture = ghulvi
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription = -0.03
+				stability_factor = -0.10
+				war_support_factor = 0.05
+			}
+		}
+		
+		djeymsescape = {
+			picture = dad
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.075
+			}
+		}
+		
+		ESP_FEV_soldiers = {  
+			picture = enc_super_soldiers
+			allowed = { 
+				always = no
+            }
+
+            allowed_civil_war = { 
+				always = yes
+            }
+            removal_cost = -1
+			modifier = {
+					army_attack_factor = 0.2
+					army_defence_factor = 0.13
+					army_org_factor = -0.05
+					army_morale_factor = 0.05
+					army_speed_factor = -0.02
+			}
+		}
+		
+		ESP_officers_local = {  
+			picture = enc_officers
+            removal_cost = -1
+			modifier = {
+				ruler_drift = 0.1
+				max_planning = 0.05
+				army_leader_start_level = 2
+				# new
+				planning_speed = 0.05
+				army_speed_factor = 0.02
+				
+				army_leader_start_level = 2
+				army_leader_start_attack_level = 2
+				army_leader_start_planning_level = 2
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 2
+				military_leader_cost_factor = 0.25
+				
+			}
+		}	
+		
+		ESP_officers_local_2 = {  
+			picture = enc_officers
+            removal_cost = -1
+			modifier = {
+				ruler_drift = 0.1
+				army_leader_start_level = 3
+				# new
+				planning_speed = 0.06
+				army_speed_factor = 0.02				
+				
+				army_leader_start_level = 2
+				army_leader_start_attack_level = 2
+				army_leader_start_planning_level = 2
+				army_leader_start_defense_level = 2
+				army_leader_start_logistics_level = 2
+				military_leader_cost_factor = 0.30
+			}
+		}	
+		
+		ESP_officers_central = {  
+			picture = enc_officers
+            removal_cost = -1
+			modifier = {
+				elites_drift = 0.1
+				army_leader_start_level = 2
+				# new 
+				army_org_factor = 0.2
+				max_planning = 0.02
+				max_command_power = 15
+				army_leader_start_level = 2
+				army_leader_start_attack_level = 2
+				army_leader_start_planning_level = 2
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 2	
+				military_leader_cost_factor = 1			
+			}
+		}
+		ESP_officers_central_2 = {  
+			picture = enc_officers
+            removal_cost = -1
+			modifier = {
+				elites_drift = 0.1
+				army_leader_start_level = 3
+				# new 
+				army_org_factor = 0.05
+				max_planning = 0.25
+				supply_consumption_factor = -0.10
+				max_command_power = 50				
+				
+				army_leader_start_level = 2
+				army_leader_start_attack_level = 3
+				army_leader_start_planning_level = 3
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 2
+				
+				military_leader_cost_factor = 1
+			}
+		}

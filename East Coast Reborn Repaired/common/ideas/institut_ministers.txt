@@ -1,0 +1,229 @@
+ideas = {
+political_advisor = {
+
+        doctor_le_institute = {
+                cost = 350
+				picture = advisor_insitut2
+
+				allowed = { original_tag = INS }
+				available = { has_completed_focus = institut_25 }
+
+				traits = { peaceful_lee }
+
+				ai_will_do = {
+				factor = 10
+			}
+			}
+			
+		doctor_folcret = {
+                cost = 350
+			picture = advisor_insitut1
+
+			allowed = {
+				original_tag = INS
+			}
+			available =	{
+				has_completed_focus = institut_13
+			}
+			traits = { din_folcret }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}	
+		
+		jeremy = {
+			picture = advisor_insitut
+
+			allowed = {
+				original_tag = INS
+			}
+			traits = { jeremy_engineer }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		Tony = {
+			picture = advisor_insitut
+
+			allowed = {
+				original_tag = INS
+			}
+			traits = { Tony_technician }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+		
+theorist = {
+		nachalnikohraniinsta = {
+		     cost = 250
+			picture = advisor_insitut3
+
+			allowed = {
+				original_tag = INS
+			}
+			traits = { inst_security }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+high_command = {
+		erik_kraus = {
+		    cost = 225
+			picture = advisor_insitut
+
+			allowed = {
+				original_tag = INS
+			}
+			traits = { instesoteric_engineer }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		Kellog = {
+			picture = advisor_insitut10
+            cost = 250
+			allowed = {
+				original_tag = INS
+			}
+			traits = { spy_newyork }
+
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		
+		fafax = {
+			picture = advisor_insitut11
+            cost = 500
+			allowed = {
+				original_tag = INS
+			}
+			available =	{
+				has_completed_focus = institut_67
+			}
+			traits = { universal_sinth }
+
+			ai_will_do = {
+				factor = 30
+			}
+		}
+	}
+tank_manufacturer = {
+        designer = yes
+		
+		sinth_manufacturer = {
+
+			picture = advisor_insitut4
+			
+			allowed = {
+				original_tag = INS
+			}
+			
+			cost = 210
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.13
+			}
+			
+			traits = {  }
+		}
+	}
+industrial_concern = {
+        biolog_otdel = {
+			
+			picture = advisor_insitut5
+
+			allowed = {
+				original_tag = INS
+			}
+			
+			cost = 230
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.05
+				electronics = 0.05
+			}
+			
+			traits = {  }
+		}
+    }
+materiel_manufacturer = {
+        otdel_orujia = {
+			
+			picture = advisor_insitut6
+
+			allowed = {
+				original_tag = INS
+			}
+			
+			cost = 200
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+				artillery = 0.05
+			}
+			
+			traits = {  }
+		}
+	}
+	
+army_chief = {
+
+       sinth_attack_protocols = {
+			
+			picture = advisor_insitut7
+			
+			allowed = {
+				original_tag = INS
+			}
+			
+			cost = 200
+			traits = { aggressive_ai }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		sinth_defensive_protocols = {
+			
+			picture = advisor_insitut8
+			
+			allowed = {
+				original_tag = INS
+			}
+			
+			cost = 200
+			traits = { reserved_ai }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		sinth_unorthodox_protocols = {
+			
+			picture = advisor_insitut9
+			
+			allowed = {
+				original_tag = INS
+			}
+			
+			cost = 200
+			traits = { unpredictable_ai }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}

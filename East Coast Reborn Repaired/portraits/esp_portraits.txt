@@ -1,0 +1,244 @@
+ESP = {
+	political = {
+		intellectuals = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		people = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		ruler = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		elites = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+	}
+	army = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+}
+
+AAE = {
+	political = {
+		intellectuals = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		people = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		ruler = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		elites = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+	}
+	army = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+}
+
+ENY = {
+	political = {
+		intellectuals = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		people = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		ruler = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+		elites = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			}
+			female = {
+			}
+		}
+	}
+	army = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+}
+
+DAD = {
+	political = {
+		intellectuals = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+			}
+			female = {
+			}
+		}
+		people = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+			}
+			female = {
+			}
+		}
+		ruler = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+			}
+			female = {
+			}
+		}
+		elites = {
+			male = {
+							"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			                "gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+			}
+			female = {
+			}
+		}
+	}
+	army = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/ESP/Portrait_Enclave_Generic.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_2.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_3.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_4.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_5.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_6.dds"
+			"gfx/leaders/ESP/Portrait_Enclave_Generic_7.dds"
+		}
+	}
+}
+#

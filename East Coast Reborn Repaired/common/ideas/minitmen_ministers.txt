@@ -1,0 +1,115 @@
+ideas = {
+political_advisor = {
+
+        mather_merfi = {
+			picture = advisor_minitman
+
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { shaman_merfi }
+
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		Meri_djayn = {
+			picture = advisor_minitman4
+
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { agitator }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		struges = {
+			picture = advisor_minitman2
+
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { Tony_technician }
+
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		paperre = {
+		    cost = 250
+			picture = advisor_minitman6
+
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { paper_reporter }
+
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+	
+theorist = {	
+        independen = {
+		    cost = 600
+			picture = advisor_minitman1
+            available = { has_completed_focus = Minitmen_20 }
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { fort_independens }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		polkovnik_sanders = {
+		    cost = 230
+			picture = advisor_minitman3
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { Sanders_polkovnik }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+high_command = {
+       minitman_shou = {
+		    cost = 200
+			picture = advisor_minitman5
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { frontline_operative }
+
+			ai_will_do = {
+				factor = 100
+			}
+		} 
+    }
+
+army_chief = {
+		codsvord1 = {
+			cost = 90
+			picture = advisor_minitman7
+			
+			allowed = {
+				original_tag = MEN
+			}
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 100
+			}
+		}
+    }		

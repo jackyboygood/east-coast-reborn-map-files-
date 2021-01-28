@@ -1,0 +1,48 @@
+﻿capital = 887
+oob = "LIT_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	tribal_civilization = 1
+	detivoini_civilization = 1
+	naval_invasion_tech = 1
+	commercial_protectron = 1
+}
+
+set_stability = 1.0
+set_war_support = 0.02
+
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 40
+	elites = 0
+	intellectuals = 60
+	ruler = 0
+}
+
+add_ideas = {
+ isgnaniedetki
+ detskoepravlenie
+}
+
+add_opinion_modifier = { target = SPP modifier = torgovieoperacii }
+add_opinion_modifier = { target = TEN modifier = torgovieoperacii }
+add_opinion_modifier = { target = USP modifier = torgovieoperacii }
+add_opinion_modifier = { target = ROY modifier = torgovieoperacii }
+add_opinion_modifier = { target = RAB modifier = torgovieoperacii }
+
+create_country_leader  = {
+	name = "Princess"
+	desc = ""
+	picture = "gfx/leaders/LIT/Portrait_princess.dds"
+	expire = "3000.1.1"
+	ideology = ideocracy
+	traits = {
+		
+	}
+}

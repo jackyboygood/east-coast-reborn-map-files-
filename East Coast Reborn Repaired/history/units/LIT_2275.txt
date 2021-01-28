@@ -1,0 +1,47 @@
+﻿division_template = {
+	name = "Дети Солдаты"
+	regiments = {
+		detivoini = { x = 0 y = 0 }
+		detivoini = { x = 0 y = 1 }
+		detivoini = { x = 1 y = 0 }
+		detivoini = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division {
+		name = "Смурфики"
+		location = 1108
+		division_template = "Дети Солдаты"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division {
+		name = "Принцесски"
+		location = 1108
+		division_template = "Дети Солдаты"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division {
+		name = "Одуванчики"
+		location = 1108
+		division_template = "Дети Солдаты"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division {
+		name = "Одуванчики"
+		location = 1108
+		division_template = "Дети Солдаты"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division {
+		name = "Акулы"
+		location = 1108
+		division_template = "Дети Солдаты"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}

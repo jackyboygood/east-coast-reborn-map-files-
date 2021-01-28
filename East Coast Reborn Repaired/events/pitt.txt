@@ -1,0 +1,91 @@
+add_namespace = Pitt
+
+country_event = {
+	id = Pitt.1
+	title = Pitt.1.t
+	desc = Pitt.1.d
+	picture = GFX_event_pitt
+
+	is_triggered_only = yes
+
+	option = {
+		name = Pitt.1.a		
+	}
+}
+
+country_event = {
+	id = Pitt.2
+	title = Pitt.2.t
+	desc = Pitt.2.d
+	picture = GFX_event_pitsbur
+
+	is_triggered_only = yes
+
+	option = {
+		name = Pitt.2.a		
+	}
+}
+
+country_event = {
+	id = Pitt.3
+	title = Pitt.3.t
+	desc = Pitt.3.d
+	picture = GFX_event_ashur
+
+	is_triggered_only = yes
+
+	option = {
+		name = Pitt.3.a		
+	}
+}
+
+country_event = {
+	id = Pitt.4
+	title = Pitt.4.t
+	desc = Pitt.4.d
+	picture = GFX_event_marie
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PIT
+		date > 2276.7.16 
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Pitt.4.a	
+        set_country_flag = PIT_marie_1		
+	}
+}
+
+country_event = {
+	id = Pitt.5
+	title = Pitt.5.t
+	desc = Pitt.5.d
+	picture = GFX_event_marie
+
+	is_triggered_only = yes
+
+	option = {
+		name = Pitt.5.a	
+		custom_effect_tooltip = vactina	
+	}
+}
+
+country_event = {
+	id = Pitt.6
+	title = Pitt.6.t
+	desc = Pitt.6.d
+	picture = GFX_event_Ashur_speach
+
+	is_triggered_only = yes
+
+	option = {
+		name = Pitt.6.a	
+        load_focus_tree = Pitsburg_reformed		
+	}
+}

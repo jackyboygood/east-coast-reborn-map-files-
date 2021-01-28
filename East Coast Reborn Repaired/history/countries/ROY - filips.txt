@@ -1,0 +1,67 @@
+﻿capital = 933
+oob = "ROY_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	ghoul_civilization = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_convoys = 25
+
+add_opinion_modifier = { target = TEN modifier = torgovieoperacii }
+add_opinion_modifier = { target = AUB modifier = torgovieoperacii }
+
+set_politics = {
+	ruling_party = elites
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 20
+	elites = 80
+	intellectuals = 0
+	ruler = 0
+}
+
+add_ideas = {}
+
+
+create_country_leader  = {
+	name = "Roy Philips"
+	desc = ""
+	picture = "gfx/leaders/ROY/Roy_Philips.dds"
+	expire = "3000.1.1"
+	ideology = militarist_oligarchy
+	
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "John Harlond"
+	portrait_path = "gfx/leaders/ROY/Harland.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+    
+}
+
+create_corps_commander = {
+	name = "Bessie Lynn"
+	portrait_path = "gfx/leaders/ROY/Bessie_Lynn.dds"
+	skill = 3
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+    }

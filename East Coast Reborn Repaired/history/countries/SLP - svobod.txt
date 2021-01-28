@@ -1,0 +1,69 @@
+﻿capital = 934
+oob = "SLP_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	destroyer_tech = 1
+	cruiser_tech = 1
+	naval_invasion_tech = 1
+
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+set_convoys = 35
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader  = {
+	name = "Chuck-Chuck"
+	desc = ""
+	picture = "gfx/leaders/SLP/Portrait_svobodleader.dds"
+	expire = "3000.1.1"
+	ideology = commune
+	traits = {
+    }
+}
+
+create_country_leader  = {
+	name = "Trogs"
+	desc = ""
+	picture = "gfx/leaders/SLP/trog.dds"
+	expire = "3000.1.1"
+	ideology = gang
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Trog"
+	portrait_path = "gfx/leaders/SLP/trog.dds"
+	skill = 3
+	traits = {
+	}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+

@@ -1,0 +1,72 @@
+﻿division_template = {
+	name = "Cannibals"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "Cannibals Militia"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division {
+		name = "Kenneth's Boys"
+		location = 1194
+		division_template = "Cannibals"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Bridge Trolls"
+		location = 1194
+		division_template = "Cannibals"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Hell's Skullfuckers"
+		location = 1194
+		division_template = "Cannibals"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Shafters"
+		location = 1194
+		division_template = "Cannibals"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+division {
+		name = "Whistler's Nightmare"
+		location = 10815
+		division_template = "Cannibals"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GUR"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

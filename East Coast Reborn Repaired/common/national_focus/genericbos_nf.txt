@@ -1,0 +1,1541 @@
+focus_tree = {
+	id = genericbos_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+			    tag = NBS
+			    tag = AAJ
+			    tag = BSS
+				tag = IBS
+				tag = DAA
+			}
+		}
+	}
+	default = no
+	
+	focus = {
+		id = genericbos_our_founding
+		icon = GFX_goal_bos_generic
+		cost = 1.00
+		x = 10
+		y = 0
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_founding entered"
+			}
+			country_event = { id = nf_genericbos.1 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_founding exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_our_interim
+		icon = GFX_goal_bos_generic
+		cost = 1.00
+		prerequisite = {
+			focus = genericbos_our_founding
+		}
+		x = 10
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_interim entered"
+			}
+			country_event = { id = nf_genericbos.2 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_interim exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_our_future
+		icon = GFX_goal_bos_generic
+		cost = 1.00
+		prerequisite = {
+			focus = genericbos_our_interim
+		}
+		x = 10
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_future entered"
+			}
+			country_event = { id = nf_genericbos.3 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_future exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_water_operations
+		icon = GFX_goal_bos_steel_cage
+		cost = 8.6
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = 1
+		y = 3
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_water_operations entered"
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_water_operations exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_aerial_operations
+		icon = GFX_goal_bos_scourge_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = 5
+		y = 3
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_aerial_operations entered"
+			}
+			air_experience = 25
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_aerial_operations exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_from_the_skies
+		icon = GFX_goal_bos_scourge_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_aerial_operations
+		}
+		x = 4
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_from_the_skies entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_from_the_skies exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_staging_bases
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_aerial_operations
+		}
+		x = 6
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_staging_bases entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_staging_bases exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_our_right
+		icon = GFX_goal_bos_generic_industrial
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = 10
+		y = 3
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_right entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_right exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_salvaged_metal
+		icon = GFX_goal_generic_metal_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_right
+		}
+		x = 8
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_salvaged_metal entered"
+			}
+			capital_scope = {
+				add_resource = { type = metal amount = 16 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_salvaged_metal exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_salvaged_electronics
+		icon = GFX_goal_generic_electronics_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_right
+		}
+		x = 12
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_salvaged_electronics entered"
+			}
+			capital_scope = {
+				add_resource = { type = electronics amount = 16 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_salvaged_electronics exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_our_might
+		icon = GFX_goal_bos_generic_infantry
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = 15
+		y = 3
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_might entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_might exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_steel_legions
+		icon = GFX_goal_bos_victory_or_death
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_might
+		}
+		x = 14
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_steel_legions entered"
+			}
+			add_ideas = genericbossteellegions
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_steel_legions exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_wastelander_conscripts
+		icon = GFX_goal_bos_wasteland_conscription
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_might
+		}
+		x = 16
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_wastelander_conscripts entered"
+			}
+			add_manpower = 500
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_wastelander_conscripts exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_flesh_before_steel
+		icon = GFX_goal_bos_outsider_recruitment
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_wastelander_conscripts
+		}
+		x = 16
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_flesh_before_steel entered"
+			}
+			add_ideas = genericbosfleshbeforesteel
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_flesh_before_steel exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_basic_arms_for_basic_people
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_flesh_before_steel
+		}
+		x = 16
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_basic_arms_for_basic_people entered"
+			}
+			add_equipment_to_stockpile = {
+				type = energy_equipment_2
+				amount = 200
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_basic_arms_for_basic_people exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_doctrinal_thought
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_basic_arms_for_basic_people
+		}
+		x = 16
+		y = 7
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_doctrinal_thought entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_doctrinal_thought exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_our_goal
+		icon = GFX_goal_bos_generic
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = 19
+		y = 3
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_goal entered"
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_our_goal exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_seek_technology
+		icon = GFX_goal_bos_generic_research
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_goal
+		}
+		x = 18
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_seek_technology entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_seek_technology exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_scribe_research
+		icon = GFX_goal_bos_generic_research
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_seek_technology
+		}
+		x = 18
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_scribe_research entered"
+			}
+			add_ideas = genericbosscriberesearch
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_scribe_research exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_old_developments
+		icon = GFX_goal_bos_repconn_hq
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_scribe_research
+		}
+		x = 18
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_old_developments entered"
+			}
+			capital_scope = {
+				add_resource = { type = advanced_technology amount = 8 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_old_developments exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_robotic_advancements
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_old_developments
+		}
+		x = 18
+		y = 7
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_robotic_advancements entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = robotics_tech }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_robotic_advancements exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_bunker_thought
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_goal
+		}
+		x = 20
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_bunker_thought entered"
+			}
+			add_ideas = genericbosbunkerthought
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_bunker_thought exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_surface_outposts
+		icon = GFX_goal_generic_BOS_focus_surface_outposts
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_bunker_thought
+		}
+		x = 20
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_surface_outposts entered"
+			}
+			swap_ideas = {
+				add_idea = genericbossurfaceoutposts
+				remove_idea = genericbosbunkerthought
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_surface_outposts exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_underground_workshops
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_surface_outposts
+		}
+		x = 20
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_underground_workshops entered"
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_underground_workshops exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_new_technology
+		icon = GFX_goal_bos_generic_research
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_underground_workshops
+		}
+		x = 20
+		y = 7
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_new_technology entered"
+			}
+			add_ideas = genericbosnewtech
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_new_technology exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_port_expansion
+		icon = GFX_goal_generic_harbours_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_water_operations
+		}
+		x = 1
+		y = 4
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_port_expansion entered"
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_port_expansion exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_supporting_vessels
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_port_expansion
+		}
+		x = 0
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_supporting_vessels entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ship_destroyer_tech }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_supporting_vessels exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_larger_vessels
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_port_expansion
+		}
+		x = 2
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_larger_vessels entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ship_heavy_cruiser_tech }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_larger_vessels exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_reclaim_a_flagship
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_supporting_vessels
+		}
+		prerequisite = {
+			focus = genericbos_larger_vessels
+		}
+		x = 1
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_reclaim_a_flagship entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = ship_battleship_tech }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_reclaim_a_flagship exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_aerial_supremacy
+		icon = GFX_goal_generic_air_doctrines_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_from_the_skies
+		}
+		prerequisite = {
+			focus = genericbos_staging_bases
+		}
+		x = 5
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_aerial_supremacy entered"
+			}
+			add_ideas = genericbosaerialsupermacy
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_aerial_supremacy exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_flight_academy
+		icon = GFX_goal_generic_BOS_focus_flight_academy
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_aerial_supremacy
+		}
+		x = 5
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_flight_academy entered"
+			}
+			add_ideas = genericbosflightacademy
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_flight_academy exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_increase_power_production
+		icon = GFX_goal_generic_electricity_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_our_right
+		}
+		x = 10
+		y = 4
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_increase_power_production entered"
+			}
+			capital_scope = {
+				add_resource = { type = electricity amount = 16 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_increase_power_production exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_advanced_tech
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_salvaged_metal
+		}
+		prerequisite = {
+			focus = genericbos_increase_power_production
+		}
+		prerequisite = {
+			focus = genericbos_salvaged_electronics
+		}
+		x = 9
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_advanced_tech entered"
+			}
+			capital_scope = {
+				add_resource = { type = advanced_technology amount = 8 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_advanced_tech exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_fueling_our_rise
+		icon = GFX_goal_generic_fuel_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_increase_power_production
+		}
+		prerequisite = {
+			focus = genericbos_salvaged_electronics
+		}
+		prerequisite = {
+			focus = genericbos_salvaged_metal
+		}
+		x = 11
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_fueling_our_rise entered"
+			}
+			capital_scope = {
+				add_resource = { type = fuel amount = 8 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_fueling_our_rise exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_arm_foundries
+		icon = GFX_goal_generic_common_energy_weapons_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_advanced_tech
+		}
+		prerequisite = {
+			focus = genericbos_fueling_our_rise
+		}
+		x = 9
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_arm_foundries entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_arm_foundries exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_civilian_workshops
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_fueling_our_rise
+		}
+		x = 11
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_civilian_workshops entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_civilian_workshops exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_heavy_production
+		icon = GFX_goal_legion_workshop
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_arm_foundries
+		}
+		prerequisite = {
+			focus = genericbos_civilian_workshops
+		}
+		x = 10
+		y = 7
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_heavy_production entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			capital_scope = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_heavy_production exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_new_initiates
+		icon = GFX_goal_generic_BoS_diplomatic_focus
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_steel_legions
+		}
+		x = 14
+		y = 5
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_new_initiates entered"
+			}
+			add_manpower = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_new_initiates exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_t45d_production
+		icon = GFX_goal_generic_BOS_focus_t45d_production
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_new_initiates
+		}
+		x = 14
+		y = 6
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_t45d_production entered"
+			}
+			
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment_2
+				amount = 250
+			}
+			
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_t45d_production exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_t51b_production
+		icon = GFX_goal_generic_BOS_focus_t51b_production
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_t45d_production
+		}
+		x = 14
+		y = 7
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_t51b_production entered"
+			}
+			
+			if = {
+				limit = {
+					has_tech = power_armour_t51b
+				}
+				add_equipment_to_stockpile = {
+					type = power_armor_equipment_3
+					amount = 250
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = power_armour_t51b
+					}
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = power_armor_tech
+				}
+			}
+			
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_t51b_production exited"
+			}
+		}
+	}
+	focus = {
+		id = genericbos_combined_operations
+		icon = GFX_goal_generic_BOS_focus_combined_operations
+		cost = 8.6
+		prerequisite = {
+			focus = genericbos_t51b_production
+		}
+		prerequisite = {
+			focus = genericbos_doctrinal_thought
+		}
+		x = 15
+		y = 8
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_combined_operations entered"
+			}
+			add_ideas = genericboscombinedoperations
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_combined_operations exited"
+			}
+		}
+	}
+	#focus = {
+	#	id = genericbos_vertibird_schematics
+	#	icon = GFX_goal_bos_vertibird_schematics
+	#	cost = 8.6
+	#	prerequisite = {
+	#		focus = genericbos_robotic_advancements
+	#	}
+	#	x = 18
+	#	y = 8
+	#
+	#	completion_reward = {
+	#		if = {
+	#			limit = { has_global_flag = debug_logs }
+	#			log = "[GetDateText]: [Root.GetName] genericbos_vertibird_schematics entered"
+	#		}
+	#		set_technology = {
+	#			vertiberd_gunship = 1
+	#			vertiberd_transport1 = 1
+	#		}
+	#		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 5 }
+	#		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 5 }
+	#		if = {
+	#			limit = { has_global_flag = debug_logs }
+	#			log = "[GetDateText]: [Root.GetName] genericbos_vertibird_schematics exited"
+	#		}
+	#	}
+	#}
+	#focus = {
+	#	id = genericbos_tesla_theory
+	#	icon = GFX_goal_generic_electricity_focus
+	#	cost = 8.6
+	#	prerequisite = {
+	#		focus = genericbos_new_technology
+	#	}
+	#	x = 20
+	#	y = 8
+	#
+	#	completion_reward = {
+	#		if = {
+	#			limit = { has_global_flag = debug_logs }
+	#			log = "[GetDateText]: [Root.GetName] genericbos_tesla_theory entered"
+	#		}
+	#		set_technology = {
+	#			tesla_weaponry = 1
+	#		}
+	#		if = {
+	#			limit = { has_global_flag = debug_logs }
+	#			log = "[GetDateText]: [Root.GetName] genericbos_tesla_theory exited"
+	#		}
+	#	}
+	#}
+	
+	focus = {
+		id = genericbos_aa
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 10.0
+		ai_will_do = { factor = 1 } 
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = -2
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_staging_bases entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = air_base
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] genericbos_staging_bases exited"
+			}
+		}
+	}
+	
+	focus = {#SIERRA - Our Base of Operations
+		id = genericbos_ab
+		icon = GFX_goal_enc_verti
+		prerequisite = {focus = genericbos_aa}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = genericbos_aa
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = ESP }
+			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 100 producer = ESP }
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {#SIERRA - Our Base of Operations
+		id = genericbos_ac
+		icon = GFX_goal_enc_verti
+		prerequisite = {focus = genericbos_ab}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = genericbos_ab
+		x = -1
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		    add_political_power = 100
+			add_manpower = 1430
+			add_tech_bonus = {
+				ahead_reduction = 0.3
+				uses = 1
+				category = energy_weaponry_tech
+			}
+		}
+	}
+	
+	focus = {#SIERRA - Our Base of Operations
+		id = genericbos_ad
+		icon = GFX_goal_enc_verti
+		prerequisite = {focus = genericbos_ab}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = genericbos_ab
+		x = 1
+		y = 1
+		cost = 10.0
+		completion_reward = {
+		    add_manpower = 500
+			add_equipment_to_stockpile = { type = power_armor_equipment_1 amount = 500 producer = BOS }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 500 producer = BOS }
+		}
+	}
+	
+	focus = {
+		id = bos_restructure1
+		icon = GFX_goal_generic_position_armies
+		cost = 8.6
+		relative_position_id = genericbos_our_future
+		ai_will_do = { factor = 1 } 
+		prerequisite = {
+			focus = genericbos_our_future
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_restructure1 entered"
+			}
+			add_political_power = 50
+			#hidden_effect = {
+			#	set_country_flag = do_next_focus_now
+			#}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_restructure1 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = bos_outsiders1
+		icon = GFX_goal_bos_outsider_recruitment
+		ai_will_do = { factor = 1 } 
+		cost = 8.6
+		prerequisite = {
+			focus = bos_restructure1
+		}
+		relative_position_id = bos_restructure1
+		x = -1
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_outsiders1 entered"
+			}
+			swap_ideas = {
+				remove_idea = oldguard
+				add_idea = outsider_recruitment
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_outsiders1 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = bos_techreallocation1
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 8.6
+		ai_will_do = { factor = 1 } 
+		prerequisite = {
+			focus = bos_restructure1
+		}
+		relative_position_id = bos_restructure1
+		x = 1
+		y = 1
+		completion_reward = {
+		    if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_teams entered"
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = electronics
+					amount = 6
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] settler_teams exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = bos_wastelandconscripts1
+		icon = GFX_goal_bos_wasteland_conscription
+		cost = 8.6
+		ai_will_do = { factor = 1 } 
+		prerequisite = {
+			focus = bos_outsiders1
+		}
+		relative_position_id = bos_outsiders1
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_wastelandconscripts1 entered"
+			}
+			add_ideas = wasteland_conscripts
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_wastelandconscripts1 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = bos_advancedcommunication1
+		icon = GFX_goal_generic_communcation_focus
+		cost = 8.6
+		ai_will_do = { factor = 1 } 
+		relative_position_id = bos_techreallocation1
+		prerequisite = {
+			focus = bos_techreallocation1
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_advancedcommunication1 entered"
+			}
+			add_ideas = advancedcommunications
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_advancedcommunication1 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = bos_surfacetensions1
+		icon = GFX_goal_generic_territory_or_war
+		cost = 8.6
+		ai_will_do = { factor = 1 } 
+		prerequisite = {
+			focus = bos_outsiders1
+		}
+		prerequisite = {
+			focus = bos_advancedcommunication1
+		}
+		relative_position_id = bos_outsiders1
+		x = 1
+		y = 2
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_surfacetensions1 entered"
+			}
+			set_rule = { can_send_volunteers = yes }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] bos_surfacetensions1 exited"
+			}
+		}
+	}
+	
+	
+	
+}

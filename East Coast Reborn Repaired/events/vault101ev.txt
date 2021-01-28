@@ -1,0 +1,1374 @@
+﻿add_namespace = vault101ev
+
+country_event = {
+	id = vault101ev.1
+	title = vault101ev.1.t
+	desc = vault101ev.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.1.a
+		add_manpower = 1000
+		883 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = vault101ev.1.b
+		add_manpower = 600
+		883 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_ideas = years
+	}
+	option = {
+		name = vault101ev.1.c
+
+		add_manpower = 400
+		883 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_ideas = moreyears
+	}
+}
+country_event = {
+	id = vault101ev.2
+	title = vault101ev.2.t
+	desc = vault101ev.2.d
+    picture = GFX_event_vaultescepe
+	
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.2.a
+		add_ideas = crimserv
+		add_ideas = djeymsescape
+		hidden_effect = {
+			country_event = { days = 1 id = newsfallout.1 }
+		}
+	}
+	option = {
+		name = vault101ev.2.b
+		add_ideas = crimslaves
+		add_ideas = djeymsescape
+		hidden_effect = {
+			country_event = { days = 1 id = newsfallout.1 }
+		}
+	}
+	option = {
+		name = vault101ev.2.c
+		add_ideas = crimwar
+		add_ideas = djeymsescape
+		hidden_effect = {
+			country_event = { days = 1 id = newsfallout.1 }
+		}
+	}
+	option = {
+		name = vault101ev.2.e
+		add_ideas = crimkill
+		add_ideas = djeymsescape
+		hidden_effect = {
+			country_event = { days = 1 id = newsfallout.1 }
+		}
+	}
+}
+country_event = {
+	id = vault101ev.3
+	title = vault101ev.3.t
+	desc = vault101ev.3.d
+	picture = GFX_event_vaultescepe1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.3.a
+		add_resource = {
+			type = metal
+			amount = 2
+			state = 883
+		}
+		add_equipment_to_stockpile = {
+			type = ballistic_equipment_1
+			amount = 2000
+			producer = USP
+		}
+		custom_effect_tooltip = vault_firearms_tt
+		hidden_effect = {
+			set_country_flag = USP_Firearms
+			load_oob = vault_ohrana
+		}
+	}
+	option = {
+		name = vault101ev.3.b
+		set_technology = {
+			energy_weaponry_tech_1 = 1
+		}
+		add_resource = {
+			type = circuitry
+			amount = 3
+			state = 883
+		}
+		custom_effect_tooltip = vault_lasers_tt
+		hidden_effect = {
+			load_oob = vault_ohrana1
+			set_country_flag = USP_Lasers
+		}
+	}
+	option = {
+		name = vault101ev.3.c
+		add_resource = {
+			type = composites
+			amount = 5
+			state = 883
+		}
+		add_equipment_to_stockpile = {
+			type = support_robot_protectron_equipment_1
+			amount = 150
+			producer = USP
+		}
+		custom_effect_tooltip = vault_robot_tt
+		hidden_effect = {
+			load_oob = vault_ohrana2
+			set_country_flag = USP_Robots
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.4
+	title = vault101ev.4.t
+	desc = vault101ev.4.d
+	picture = GFX_event_megtona
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.4.a
+		add_political_power = 15
+		add_manpower = 60
+	}
+}
+
+country_event = {
+	id = vault101ev.5
+	title = vault101ev.5.t
+	desc = vault101ev.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.5.a
+		add_political_power = 15
+		add_manpower = 60
+	}
+}
+
+country_event = {
+	id = vault101ev.6
+	title = vault101ev.6.t
+	desc = vault101ev.6.d
+	picture = GFX_event_megtona1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.6.a
+		ai_chance = { 
+			factor = 100 
+		}
+		add_ideas = SBS_radio
+		add_political_power = 20
+	}
+	option = {
+		name = vault101ev.6.b
+		add_political_power = 10
+		add_manpower = 50
+	}
+}
+
+country_event = {
+	id = vault101ev.7
+	title = vault101ev.7.t
+	desc = vault101ev.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.7.a
+		add_political_power = 15
+		add_manpower = 60
+	}
+}
+
+country_event = {
+	id = vault101ev.8
+	title = vault101ev.8.t
+	desc = vault101ev.8.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = usa_influence_fired
+	}
+
+	option = {
+		name = vault101ev.8.a
+        ai_chance = { 
+			factor = 100 
+		}
+        881 = { add_core_of = USP }	
+        875 = { add_core_of = USP }			
+		create_wargoal = {
+				type = annex_everything
+				target = UBS
+		}	
+	}
+}
+
+country_event = {
+	id = vault101ev.9
+	title = vault101ev.9.t
+	desc = vault101ev.9.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.9.a
+		country_event = {
+				id = vault101ev.10
+		}
+		
+	}
+	option = {
+		name = vault101ev.9.b
+		country_event = {
+				id = vault101ev.11
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.10
+	title = vault101ev.10.t
+	desc = vault101ev.10.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.10.a
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = vault101ev.11
+	title = vault101ev.11.t
+	desc = vault101ev.11.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.11.a
+		add_political_power = 5
+		add_manpower = -30
+	    country_event = {
+				id = vault101ev.12
+		}
+	}
+	option = {
+		name = vault101ev.11.b
+		country_event = {
+				id = vault101ev.9
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.12
+	title = vault101ev.12.t
+	desc = vault101ev.12.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.12.a
+		country_event = {
+				id = vault101ev.13
+		}
+	}
+	option = {
+		name = vault101ev.12.b
+		country_event = {
+				id = vault101ev.14
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.13
+	title = vault101ev.13.t
+	desc = vault101ev.13.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.13.a
+		add_political_power = -150
+		country_event = {
+				id = vault101ev.15
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.14
+	title = vault101ev.14.t
+	desc = vault101ev.14.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.14.a
+		add_political_power = 15
+		add_manpower = 60
+	}
+}
+
+country_event = {
+	id = vault101ev.15
+	title = vault101ev.15.t
+	desc = vault101ev.15.d
+	picture = GFX_event_Metro_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.15.a
+		add_political_power = 15
+		add_manpower = 20
+		country_event = {
+				id = vault101ev.16
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.16
+	title = vault101ev.16.t
+	desc = vault101ev.16.d
+	picture = GFX_event_Metro_washington1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.16.a
+		add_political_power = 20
+		add_manpower = -165
+		add_ideas = vaultherometro
+	}
+}
+
+country_event = {
+	id = vault101ev.17
+	title = vault101ev.17.t
+	desc = vault101ev.17.d
+	picture = GFX_event_washington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.17.a
+		country_event = {
+				id = vault101ev.18
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.18
+	title = vault101ev.18.t
+	desc = vault101ev.18.d
+	picture = GFX_event_washington1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.18.a
+		add_manpower = 200
+		country_event = {
+				id = vault101ev.19
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.19
+	title = vault101ev.19.t
+	desc = vault101ev.19.d
+	picture = GFX_event_washington2
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.19.a
+		add_manpower = 60
+		add_political_power = 15
+		country_event = {
+				id = vault101ev.20
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.20
+	title = vault101ev.20.t
+	desc = vault101ev.20.d
+	picture = GFX_event_washington3
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.20.a
+		add_political_power = 70
+		hidden_effect = {
+			country_event = { days = 1 id = newsfallout.5 }
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.21
+	title = vault101ev.21.t
+	desc = vault101ev.21.d
+	picture = GFX_event_washington4
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.21.a
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = vault101ev.22
+	title = vault101ev.22.t
+	desc = vault101ev.22.d
+	picture = GFX_event_Rive_city
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.22.a
+		country_event = {
+				id = vault101ev.23
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.23
+	title = vault101ev.23.t
+	desc = vault101ev.23.d
+	picture = GFX_event_Rive_city1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.23.a
+        add_political_power = 20
+		add_manpower = 50
+	}
+}
+
+country_event = {
+	id = vault101ev.24
+	title = vault101ev.24.t
+	desc = vault101ev.24.d
+	picture = GFX_event_vault112
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.24.a
+        country_event = {
+				id = vault101ev.25
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.25
+	title = vault101ev.25.t
+	desc = vault101ev.25.d
+	picture = GFX_event_vault112a
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.25.a
+        country_event = {
+				id = vault101ev.26
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.26
+	title = vault101ev.26.t
+	desc = vault101ev.26.d
+	picture = GFX_event_vault112b
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.26.a
+		country_event = {
+				id = vault101ev.27
+		}
+		
+	}
+	option = {
+		name = vault101ev.26.b
+		country_event = {
+				id = vault101ev.30
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.27
+	title = vault101ev.27.t
+	desc = vault101ev.27.d
+	picture = GFX_event_vault112v
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.27.a
+		country_event = {
+				id = vault101ev.28
+		}
+		
+	}
+	option = {
+		name = vault101ev.27.b
+		country_event = {
+				id = vault101ev.26
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.28
+	title = vault101ev.28.t
+	desc = vault101ev.28.d
+	picture = GFX_event_vault112d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.28.a
+        country_event = {
+				id = vault101ev.29
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.29
+	title = vault101ev.29.t
+	desc = vault101ev.29.d
+	picture = GFX_event_vault112f
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.29.a
+        add_ideas = nonpravila
+		add_manpower = 150
+	}
+}
+
+country_event = {
+	id = vault101ev.30
+	title = vault101ev.30.t
+	desc = vault101ev.30.d
+	picture = GFX_event_vault112e
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.30.a
+        country_event = {
+				id = vault101ev.31
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.31
+	title = vault101ev.31.t
+	desc = vault101ev.31.d
+	picture = GFX_event_vault112t
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.31.a
+		country_event = {
+				id = vault101ev.32
+		}
+		
+	}
+	option = {
+		name = vault101ev.31.b
+		country_event = {
+				id = vault101ev.35
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.32
+	title = vault101ev.32.t
+	desc = vault101ev.32.d
+	picture = GFX_event_vault112s
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.32.a
+        country_event = {
+				id = vault101ev.33
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.33
+	title = vault101ev.33.t
+	desc = vault101ev.33.d
+	picture = GFX_event_vault112x
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.33.a
+        country_event = {
+				id = vault101ev.34
+		}
+	}
+	option = {
+		name = vault101ev.33.b
+		country_event = {
+				id = vault101ev.34
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.34
+	title = vault101ev.34.t
+	desc = vault101ev.34.d
+	picture = GFX_event_vault112f
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.34.a
+        add_political_power = 20
+		add_ideas = pravila
+	}
+}
+
+country_event = {
+	id = vault101ev.35
+	title = vault101ev.35.t
+	desc = vault101ev.35.d
+	picture = GFX_event_vault112c
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.35.a
+        country_event = {
+				id = vault101ev.36
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.36
+	title = vault101ev.36.t
+	desc = vault101ev.36.d
+	picture = GFX_event_vault112y
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.36.a
+        country_event = {
+				id = vault101ev.34
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.37
+	title = vault101ev.37.t
+	desc = vault101ev.37.d
+	picture = GFX_event_Rive_city1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.37.a
+        create_faction = Stolichnoy
+		add_to_faction = RIV
+	}
+}
+
+country_event = {
+	id = vault101ev.38
+	title = vault101ev.38.t
+	desc = vault101ev.38.d
+	picture = GFX_event_memrialwashington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.38.a
+        country_event = {
+				id = vault101ev.39
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.39
+	title = vault101ev.39.t
+	desc = vault101ev.39.d
+	picture = GFX_event_memrialwashington1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.39.a
+        USP = { 
+			transfer_state = 880
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.40
+	title = vault101ev.40.t
+	desc = vault101ev.40.d
+	picture = GFX_event_memrialwashington
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.40.a
+        country_event = {
+				id = vault101ev.41
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.41
+	title = vault101ev.41.t
+	desc = vault101ev.41.d
+	picture = GFX_event_memrialwashington2
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.41.a
+        country_event = {
+				id = vault101ev.42
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.42
+	title = vault101ev.42.t
+	desc = vault101ev.42.d
+	picture = GFX_event_memrialwashington3
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.42.a
+        country_event = {
+				id = vault101ev.43
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.43
+	title = vault101ev.43.t
+	desc = vault101ev.43.d
+	picture = GFX_event_memrialwashington4
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.43.a
+        country_event = {
+				id = vault101ev.44
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.44
+	title = vault101ev.44.t
+	desc = vault101ev.44.d
+	picture = GFX_event_memrialwashington5
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.44.a
+        ESP = { 
+			transfer_state = 880
+			880 = { add_core_of = ESP }
+			add_political_power = 150
+		    add_manpower = 500
+			hidden_effect = {
+				load_oob = enclavememori
+				country_event = { days = 3 id = newsfallout.2 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.45
+	title = vault101ev.45.t
+	desc = vault101ev.45.d
+	picture = GFX_event_citadel
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.45.a
+        country_event = {
+				id = vault101ev.46
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.46
+	title = vault101ev.46.t
+	desc = vault101ev.46.d
+	picture = GFX_event_citadel1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.46.a
+		add_to_faction = SBS
+		add_political_power = 20
+		add_manpower = 500
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+	}
+}
+
+country_event = {
+	id = vault101ev.47
+	title = vault101ev.47.t
+	desc = vault101ev.47.d
+	picture = GFX_event_litl_lamplayt
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.47.a
+		ai_chance = { 
+			factor = 100 
+		}
+        country_event = {
+				id = vault101ev.48
+		}
+	}
+	option = {
+		name = vault101ev.47.b
+		country_event = {
+				id = vault101ev.49
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.48
+	title = vault101ev.48.t
+	desc = vault101ev.48.d
+	picture = GFX_event_litl_lamplayt1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.48.a
+		ai_chance = { 
+			factor = 100 
+		}
+		add_political_power = 60
+		add_manpower = 350
+		LIT = { 
+			hidden_effect = {
+				country_event = { days = 2 id = detievent.1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.49
+	title = vault101ev.49.t
+	desc = vault101ev.49.d
+	picture = GFX_event_litl_lamplayt2
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.49.a
+        add_ideas = killchildren
+		add_manpower = -100
+		create_wargoal = {
+				type = annex_everything
+				target = LIT
+		}
+        LIT = { 
+			hidden_effect = {
+				country_event = { days = 1 id = detievent.4 }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = USP
+		    }
+		}		
+	}
+	option = {
+		name = vault101ev.49.b
+		add_ideas = nokillchildren
+		add_manpower = -50
+		create_wargoal = {
+				type = annex_everything
+				target = LIT
+		}
+		LIT = { 
+			hidden_effect = {
+				country_event = { days = 1 id = detievent.4 }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = USP
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.50
+	title = vault101ev.50.t
+	desc = vault101ev.50.d
+	picture = GFX_event_vault87
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.50.a
+        country_event = {
+				id = vault101ev.51
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.51
+	title = vault101ev.51.t
+	desc = vault101ev.51.d
+	picture = GFX_event_1vault87
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.51.a
+        country_event = {
+				id = vault101ev.52
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.52
+	title = vault101ev.52.t
+	desc = vault101ev.52.d
+	picture = GFX_event_vault871
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.52.a
+        country_event = {
+				id = vault101ev.53
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.53
+	title = vault101ev.53.t
+	desc = vault101ev.53.d
+	picture = GFX_event_vault872
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.53.a
+        country_event = {
+				id = vault101ev.54
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.54
+	title = vault101ev.54.t
+	desc = vault101ev.54.d
+	picture = GFX_event_vault873
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.54.a
+		ai_chance = { 
+			factor = 100 
+		}
+        country_event = {
+				id = vault101ev.55
+		}
+	}
+	option = {
+		name = vault101ev.54.b
+		add_ideas = ghulvi
+		country_event = {
+				id = vault101ev.55
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.55
+	title = vault101ev.55.t
+	desc = vault101ev.53.d
+	picture = GFX_event_vault874
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.55.a
+        country_event = {
+				id = vault101ev.56
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.56
+	title = vault101ev.56.t
+	desc = vault101ev.56.d
+	picture = GFX_event_vault875
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.56.a
+        ESP = { 
+			transfer_state = 886
+			886 = { add_core_of = ESP }
+			add_political_power = 65
+		    add_manpower = 150
+			hidden_effect = {
+				load_oob = enclavememori_vault87
+				country_event = { days = 3 id = newsfallout.3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.57
+	title = vault101ev.57.t
+	desc = vault101ev.57.d
+	picture = GFX_event_rayvenrock
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.57.a
+        country_event = {
+				id = vault101ev.58
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.58
+	title = vault101ev.58.t
+	desc = vault101ev.58.d
+	picture = GFX_event_rayvenrock1
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.58.a
+        country_event = {
+				id = vault101ev.59
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.59
+	title = vault101ev.59.t
+	desc = vault101ev.59.d
+	picture = GFX_event_rayvenrock2
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.59.a
+        country_event = {
+				id = vault101ev.60
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.60
+	title = vault101ev.60.t
+	desc = vault101ev.60.d
+	picture = GFX_event_rayvenrock3
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.60.a
+		ai_chance = { 
+			factor = 100 
+		}
+        country_event = {
+				id = vault101ev.61
+		}
+	}
+	option = {
+		name = vault101ev.60.b
+		country_event = {
+				id = vault101ev.62
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.61
+	title = vault101ev.61.t
+	desc = vault101ev.61.d
+	picture = GFX_event_rayvenrock4
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.61.a
+        ESP = { 
+			add_political_power = 100
+		    add_manpower = 1000
+			hidden_effect = {
+				country_event = { days = 1 id = newsfallout.11 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.62
+	title = vault101ev.62.t
+	desc = vault101ev.62.d
+	picture = GFX_event_rayvenrock5
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.62.a
+        USP = { 
+			transfer_state = 877
+			add_political_power = 60
+		    add_manpower = 520
+			hidden_effect = {
+				country_event = { days = 1 id = newsfallout.12 }	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.63
+	title = vault101ev.63.t
+	desc = vault101ev.63.d
+	picture = GFX_event_1vault101
+
+	is_triggered_only = yes
+
+	option = {
+		name = vault101ev.63.a
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no
+		}
+		set_popularities = {
+			ruler = 30
+			elites = 10
+			people = 40
+			intellectuals = 20
+		}
+	}
+	option = {
+		name = vault101ev.63.b
+		ai_chance = {
+			factor = 25
+		}
+		create_faction = Tunnel_Snakes
+		set_politics = {
+			ruling_party = ruler
+			elections_allowed = no
+		}
+		set_popularities = {
+			ruler = 50
+			elites = 0
+			people = 50
+			intellectuals = 0
+		}
+	}
+}
+
+country_event = {
+	id = vault101ev.64
+	title = vault101ev.64.t
+	desc = vault101ev.64.d
+	picture = GFX_event_2vault101
+
+	is_triggered_only = yes
+	
+	#civil war starts
+	option = {
+		name = vault101ev.64.a
+		hidden_effect = {
+			set_capital = 750
+			start_civil_war = {
+				ruling_party = ruler
+				ideology = people
+				size = 0.5
+				capital = 876
+				states = { 876 883 882 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = USP
+					has_government = people
+				}
+				set_stability = 0.5
+				set_war_support = 0.5
+				load_oob = "USP_rebel"
+			}
+			
+			set_politics = {
+				ruling_party = ruler
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.29
+			}
+			add_popularity = {
+				ideology = elites
+				popularity = 0.30
+			}
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.55
+			}
+			add_popularity = {
+				ideology = people
+				popularity = 0.1
+			}	
+			set_stability = 0.5
+			set_war_support = 0.5
+			load_oob = "USP_Bandits"
+		}
+		add_stability = -0.25
+		hidden_effect = { set_cosmetic_tag = GER_provisional_gvt }
+		random_other_country = {
+			limit = {
+				original_tag = USP
+				has_government = people
+			}
+			set_cosmetic_tag = GER_civil_war
+			hidden_effect = { activate_mission = GER_mefo_bills_mission }
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = USP
+					has_government = people
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = USP
+				}
+			}
+			USP = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
+						}
+					}
+					set_nationality = event_target:fascist_germany_civil_war
+				}
+			}
+		}
+	}
+}

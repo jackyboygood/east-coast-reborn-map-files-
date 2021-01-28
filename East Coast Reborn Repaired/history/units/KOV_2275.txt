@@ -1,0 +1,54 @@
+﻿division_template = {
+	name = "Militia Force"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Кованные"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division {
+			name = "'Thunder' Company"
+			location = 1398
+			division_template = "Кованные"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.5
+		}
+	division {
+			name = "Coer Border Patrol"
+			location = 1398
+			division_template = "Кованные"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.5
+		}
+		division {
+			name = "Coer Border Patrol"
+			location = 1398
+			division_template = "Кованные"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.5
+		}
+}
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "KOV"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

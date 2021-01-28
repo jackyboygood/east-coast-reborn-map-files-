@@ -1,0 +1,39 @@
+﻿capital = 934
+oob = "SHE_2275"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.2
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+     raider_nation
+}
+
+create_country_leader  = {
+	name = "Shanley Sledgehammer"
+	desc = "Grozdan "
+	picture = "gfx/leaders/SHE/Portrait_shenly.dds"
+	expire = "3000.1.1"
+	ideology = benevolent_dictatorship
+	
+	traits = {
+	}
+}

@@ -1,0 +1,3240 @@
+focus_tree = {
+	id = lamplayt_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = LIT
+		}
+	}
+	default = no
+	
+	focus = {
+		id = lamplayt_1
+		icon = GFX_goal_dett2
+		cost = 1.0
+		x = 14
+		y = 0
+		completion_reward = {
+			country_event = { id = detievent.5 }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_2
+		icon = GFX_goal_dett1
+		prerequisite = { focus = lamplayt_1 }
+		relative_position_id = lamplayt_1
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+			country_event = { id = detievent.6 }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_3
+		icon = GFX_goal_dett
+		prerequisite = { focus = lamplayt_2 }
+		relative_position_id = lamplayt_2
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   create_country_leader = {
+	       name = "Mayor MacCready"
+	       desc = ""
+	       picture = "gfx/leaders/LIT/Portrait_mac.dds"
+	       expire = "3000.1.1"
+	       ideology = ideocracy
+           }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_4
+		icon = GFX_goal_dett3
+		prerequisite = { focus = lamplayt_3 }
+		relative_position_id = lamplayt_3
+		cost = 10.0
+		x = -8
+		y = 1
+		completion_reward = {
+			add_political_power = 150
+			add_manpower = 1000
+		}
+	}
+	
+	focus = {
+		id = lamplayt_5
+		icon = GFX_goal_dett4
+		prerequisite = { focus = lamplayt_4 }
+		relative_position_id = lamplayt_4
+		cost = 5.5
+		x = -4
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_6
+		icon = GFX_goal_dett5
+		prerequisite = { focus = lamplayt_4 }
+		relative_position_id = lamplayt_4
+		cost = 5.5
+		x = 0
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_7
+		icon = GFX_goal_dett6
+		prerequisite = { focus = lamplayt_4 }
+		relative_position_id = lamplayt_4
+		cost = 5.5
+		x = 4
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_8
+		icon = GFX_goal_dett7
+		prerequisite = { focus = lamplayt_5 }
+		relative_position_id = lamplayt_5
+		cost = 5.5
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_9
+		icon = GFX_goal_dett8
+		prerequisite = { focus = lamplayt_5 }
+		relative_position_id = lamplayt_5
+		cost = 5.5
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_10
+		icon = GFX_goal_dett9
+		prerequisite = { focus = lamplayt_6 }
+		relative_position_id = lamplayt_6
+		cost = 5.5
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_11
+		icon = GFX_goal_dett10
+		prerequisite = { focus = lamplayt_6 }
+		relative_position_id = lamplayt_6
+		cost = 5.5
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_12
+		icon = GFX_goal_dett
+		prerequisite = { focus = lamplayt_3 }
+		relative_position_id = lamplayt_3
+		cost = 10.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = lamplayt_13
+		icon = GFX_goal_legion_denarius
+		prerequisite = { focus = lamplayt_12 }
+		relative_position_id = lamplayt_12
+		cost = 8.8
+		ai_will_do = { factor = 25 }
+		x = -1
+		y = 1
+		completion_reward = {
+			887 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_14
+		icon = GFX_goal_generic_military_industry_focus
+		prerequisite = { focus = lamplayt_12 }
+		relative_position_id = lamplayt_12
+		cost = 8.8
+		x = 1
+		y = 1
+		completion_reward = {
+			887 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_15
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = { focus = lamplayt_3 }
+		relative_position_id = lamplayt_3
+		ai_will_do = { factor = 100 }
+		cost = 8.8
+		x = 8
+		y = 1
+		completion_reward = {
+			890 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			add_equipment_to_stockpile = {
+			type = ballistic_equipment_1
+			amount = 100
+			producer = USP
+		    }
+			add_equipment_to_stockpile = {
+			type = light_robot_equipment_1
+			amount = 20
+			producer = USP
+		    }
+			custom_effect_tooltip = detkivooruj_tt
+			load_oob = LIT_2275
+		}
+	}
+	
+	focus = {
+		id = lamplayt_16
+		icon = GFX_goal_dett11
+		prerequisite = { focus = lamplayt_13 }
+		available = {
+			date > 2276.1.1
+		}
+		ai_will_do = { factor = 25 }
+		relative_position_id = lamplayt_13
+		cost = 4.0
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_political_power = -150
+			swap_ideas = {
+				add_idea = isgnaniedetki1 
+				remove_idea = isgnaniedetki
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_17
+		icon = GFX_goal_generic_slums_focus
+		prerequisite = { focus = lamplayt_16 }
+		relative_position_id = lamplayt_16
+		ai_will_do = { factor = 25 }
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			887 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_18
+		icon = GFX_goal_dett12
+		prerequisite = { focus = lamplayt_17 }
+		relative_position_id = lamplayt_17
+		ai_will_do = { factor = 25 }
+		available = {
+			date > 2277.1.1
+		}
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_political_power = -50
+			swap_ideas = {
+				add_idea = isgnaniedetki2 
+				remove_idea = isgnaniedetki1
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_19
+		icon = GFX_goal_generic_slums_focus
+		prerequisite = { focus = lamplayt_18 }
+		relative_position_id = lamplayt_18
+		cost = 8.8
+		ai_will_do = { factor = 25 }
+		x = 0
+		y = 1
+		completion_reward = {
+			887 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_20
+		icon = GFX_goal_dett13
+		prerequisite = { focus = lamplayt_19 }
+		relative_position_id = lamplayt_19
+		available = {
+			date > 2278.1.1
+		}
+		ai_will_do = { factor = 25 }
+		cost = 12.0
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_political_power = 150
+			swap_ideas = {
+				add_idea = isgnaniedetki3 
+				remove_idea = isgnaniedetki2
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_21
+		icon = GFX_goal_bos_generic_infantry
+		prerequisite = { focus = lamplayt_14 }
+		relative_position_id = lamplayt_14
+		available = {
+			date > 2276.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = litllamplaytsoldier
+		    add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine 
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_22
+		icon = GFX_goal_generic_land_doctrines_focus
+		prerequisite = { focus = lamplayt_21 }
+		relative_position_id = lamplayt_21
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+		   army_experience = 15
+		}
+	}
+	
+	focus = {
+		id = lamplayt_23
+		icon = GFX_goal_generic_airbases_focus
+		prerequisite = { focus = lamplayt_22 }
+		relative_position_id = lamplayt_22
+		available = {
+			date > 2277.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_political_power = -50
+		   887 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_24
+		icon = GFX_goal_NCR_Blast_from_the_Past
+		prerequisite = { focus = lamplayt_23 }
+		relative_position_id = lamplayt_23
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_tech_bonus = {
+				name = explosive_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_ideas = blastfromthepast
+		}
+	}
+	
+	focus = {
+		id = lamplayt_25
+		icon = GFX_goal_bos_generic_infantry
+		prerequisite = { focus = lamplayt_24 }
+		relative_position_id = lamplayt_24
+		available = {
+			date > 2278.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_26
+		icon = GFX_goal_sovetinfall
+		prerequisite = { focus = lamplayt_20 }
+		prerequisite = { focus = lamplayt_25 }
+		prerequisite = { focus = lamplayt_46 }
+		relative_position_id = lamplayt_20
+		cost = 8.8
+		x = 2
+		y = 1
+		completion_reward = {
+		    add_political_power = 150
+			swap_ideas = {
+				add_idea = detskoepravlenie1
+				remove_idea = detskoepravlenie
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_27
+		icon = GFX_goal_generic_laser_muskets_focus
+		prerequisite = { focus = lamplayt_15 }
+		relative_position_id = lamplayt_15
+		ai_will_do = { factor = 25 }
+		mutually_exclusive = {
+			focus = lamplayt_30
+		}
+		cost = 8.8
+		x = -2
+		y = 1
+		completion_reward = {
+			add_ideas = samodelorujie
+		}
+	}
+	
+	focus = {
+		id = lamplayt_28
+		icon = GFX_goal_bos_wasteland_conscription
+		prerequisite = { focus = lamplayt_27 }
+		relative_position_id = lamplayt_27
+		available = {
+         date > 2276.5.15
+		}
+		ai_will_do = { factor = 25 }
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = vseobshayapovinnost
+		}
+	}
+	
+	focus = {
+		id = lamplayt_29
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = { focus = lamplayt_28 }
+		relative_position_id = lamplayt_28
+		ai_will_do = { factor = 25 }
+		available = {
+			date > 2277.1.20
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 2000
+			producer = LIT
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_30
+		icon = GFX_goal_generic_laser_muskets_focus
+		mutually_exclusive = {
+			focus = lamplayt_27
+		}
+		prerequisite = { focus = lamplayt_15 }
+		relative_position_id = lamplayt_15
+		ai_will_do = { factor = 25 }
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			890 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_31
+		icon = GFX_goal_generic_laser_muskets_focus
+		prerequisite = { focus = lamplayt_30 }
+		relative_position_id = lamplayt_30
+		ai_will_do = { factor = 25 }
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_timed_idea = {
+				idea = bratskoeorujielitl
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_32
+		icon = GFX_goal_generic_laser_muskets_focus
+		prerequisite = { focus = lamplayt_31 }
+		relative_position_id = lamplayt_31
+		ai_will_do = { factor = 25 }
+		available = {
+			date > 2278.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_ideas = bratskoeorujielit2
+		}
+	}
+	
+	focus = {
+		id = lamplayt_33
+		icon = GFX_goal_generic_robots_focus
+		prerequisite = { focus = lamplayt_15 }
+		relative_position_id = lamplayt_15
+		available = {
+         date > 2277.1.1
+		}
+		mutually_exclusive = {
+			focus = lamplayt_36
+		}
+		cost = 8.8
+		x = 2
+		y = 1
+		completion_reward = {
+			add_ideas = robotidetey
+		}
+	}
+	
+	focus = {
+		id = lamplayt_34
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = { focus = lamplayt_33 }
+		relative_position_id = lamplayt_33
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = support_robot_equipment_1
+			amount = 500
+			producer = LIT
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_35
+		icon = GFX_goal_generic_military_industry_focus
+		prerequisite = { focus = lamplayt_34 }
+		relative_position_id = lamplayt_34
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			890 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_36
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = lamplayt_15 }
+		relative_position_id = lamplayt_15
+		mutually_exclusive = {
+			focus = lamplayt_33
+		}
+		ai_will_do = { factor = 25 }
+		cost = 8.8
+		x = 4
+		y = 1
+		completion_reward = {
+			set_technology = {
+			stripped_pa_tech = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_37
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = { focus = lamplayt_36 }
+		relative_position_id = lamplayt_36
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = power_armor_equipment amount = 500 producer = LIT }
+			add_political_power = -90
+		}
+	}
+	
+	focus = {
+		id = lamplayt_38
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = lamplayt_37 }
+		relative_position_id = lamplayt_37
+		available = {
+         date > 2278.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = powerarmordetkiii
+		}
+	}
+	
+	focus = {
+		id = lamplayt_39
+		icon = GFX_goal_dett14
+		prerequisite = { focus = lamplayt_7 }
+		relative_position_id = lamplayt_7
+		available = {
+		 has_country_flag = resvedvernulis
+		}
+		cost = 5.5
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_40
+		icon = GFX_goal_dett15
+		prerequisite = { focus = lamplayt_7 }
+		relative_position_id = lamplayt_7
+		available = {
+		 has_country_flag = resvedvernulis
+		}
+		cost = 5.5
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_41
+		icon = GFX_goal_legion_denarius
+		cost = 8.60
+		prerequisite = {
+			focus = lamplayt_12
+		}
+		relative_position_id = lamplayt_12
+		x = 3
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_42
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = lamplayt_41 }
+		relative_position_id = lamplayt_41
+		available = {
+			date > 2276.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = detlieffectfabric
+		}
+	}
+	
+	focus = {
+		id = lamplayt_43
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.60
+		prerequisite = {
+			focus = lamplayt_42
+		}
+		relative_position_id = lamplayt_42
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_44
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = lamplayt_43 }
+		relative_position_id = lamplayt_43
+		available = {
+			date > 2277.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = detlieffectfabric1
+				remove_idea = detlieffectfabric
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_45
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.60
+		prerequisite = {
+			focus = lamplayt_44
+		}
+		relative_position_id = lamplayt_44
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_46
+		icon = GFX_goal_enc_power_armor_focus
+		prerequisite = { focus = lamplayt_45 }
+		relative_position_id = lamplayt_45
+		available = {
+			date > 2278.1.1
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				add_idea = detlieffectfabric2
+				remove_idea = detlieffectfabric1
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_47
+		icon = GFX_goal_dett20
+		relative_position_id = lamplayt_32
+		available = {
+			date > 2276.1.1
+		}
+		ai_will_do = { factor = 50 }
+		cost = 1.0
+		x = 1
+		y = 2
+		completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = lamplayt_48
+		icon = GFX_goal_tripartite_pact
+		relative_position_id = lamplayt_47
+		prerequisite = { focus = lamplayt_47 }
+		mutually_exclusive = {
+			focus = lamplayt_52
+		}
+		mutually_exclusive = {
+			focus = lamplayt_58
+		}
+		ai_will_do = { factor = 50 }
+		cost = 2.5
+		x = 0
+		y = 1
+		completion_reward = {
+		    AUA = { 
+		          add_opinion_modifier = { target = LIT modifier = kornidetskie }
+			}
+			add_opinion_modifier = { target = AUA modifier = kornidetskie }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_49
+		icon = GFX_goal_doroga
+		prerequisite = { focus = lamplayt_48 }
+		relative_position_id = lamplayt_48
+		ai_will_do = { factor = 100 }
+		cost = 2.5
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_political_power = -150
+			893 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 3
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_50
+		icon = GFX_goal_canadaaa7
+		prerequisite = { focus = lamplayt_49 }
+		relative_position_id = lamplayt_49
+		cost = 2.5
+		ai_will_do = { factor = 100 }
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_political_power = 150
+			set_autonomy = { target = AUA autonomy_state = autonomy_puppet }
+			AUA = { 
+		          add_opinion_modifier = { target = LIT modifier = kornidetskie }
+				  create_country_leader = {
+	              name = "Spoloh"
+	              desc = ""
+	              picture = "gfx/leaders/AUA/Portrait_spoloh.dds"
+	              expire = "3000.1.1"
+	              ideology = ideocracy
+                }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_51
+		icon = GFX_goal_dett23
+		prerequisite = { focus = lamplayt_50 }
+		relative_position_id = lamplayt_50
+		ai_will_do = { factor = 100 }
+		cost = 2.5
+		x = 0
+		y = 1
+		completion_reward = {
+		    892 = { add_core_of = LIT }
+			add_named_threat = { threat = -3 name = fallout3_war55 }
+		    create_wargoal = {
+				type = annex_everything
+				target = AUC
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_52
+		icon = GFX_goal_generic_ideological_fury_focus
+		relative_position_id = lamplayt_47
+		prerequisite = { focus = lamplayt_47 }
+		mutually_exclusive = {
+			focus = lamplayt_48
+		}
+		mutually_exclusive = {
+			focus = lamplayt_58
+		}
+		ai_will_do = { factor = 1 }
+		cost = 2.5
+		x = -3
+		y = 1
+		completion_reward = {
+		    AUC = { 
+		          add_opinion_modifier = { target = LIT modifier = kornidetskieeeef }
+			}
+			add_opinion_modifier = { target = AUC modifier = kornidetskieeeef }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_53
+		icon = GFX_goal_generic_war_focus
+		relative_position_id = lamplayt_52
+		prerequisite = { focus = lamplayt_52 }
+		ai_will_do = { factor = 30 }
+		cost = 2.5
+		x = 0
+		y = 1
+		completion_reward = {
+		    892 = { add_core_of = LIT }
+			add_named_threat = { threat = -3 name = fallout3_war55 }
+		    every_country = {
+				limit = {
+					OR = {
+						tag = AUC
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = AUC
+						    tag = LIT
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_54
+		icon = GFX_goal_dett24
+		prerequisite = { focus = lamplayt_53 }
+		relative_position_id = lamplayt_53
+		available = {
+			date > 2277.1.1
+			AUC = { exists = yes }
+		}
+		ai_will_do = { factor = 30 }
+		cost = 2.5
+		x = -1
+		y = 1
+		completion_reward = {
+		    add_named_threat = { threat = -3 name = fallout3_war55 }
+		    every_country = {
+				limit = {
+					OR = {
+						tag = AUA
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = AUA
+						    tag = LIT
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_55
+		icon = GFX_goal_dett25
+		relative_position_id = lamplayt_53
+		prerequisite = { focus = lamplayt_53 }
+		available = {
+			date < 2277.1.1
+			AUC = { exists = no }
+		}
+		ai_will_do = { factor = 30 }
+		cost = 1.8
+		x = 1
+		y = 1
+		completion_reward = {
+		    add_political_power = 100
+			set_country_flag = spasenierijey
+		}
+	}
+	
+	focus = {
+		id = lamplayt_56
+		icon = GFX_goal_dett26
+		relative_position_id = lamplayt_55
+		prerequisite = { focus = lamplayt_55 }
+		mutually_exclusive = {
+			focus = lamplayt_57
+		}
+		ai_will_do = { factor = 30 }
+		available = {
+         has_country_flag = spasenierijey
+		}
+		cost = 5.5
+		x = 0
+		y = 1
+		completion_reward = {
+			set_autonomy = { target = AUA autonomy_state = autonomy_puppet }
+			add_opinion_modifier = { target = AUA modifier = spasenierijey }
+			AUA = { 
+		          add_opinion_modifier = { target = LIT modifier = spasenierijey }
+				  create_country_leader = {
+	              name = "Redhead"
+	              desc = ""
+	              picture = "gfx/leaders/AUA/Portrait_redhead.dds"
+	              expire = "3000.1.1"
+	              ideology = ideocracy
+                }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_57
+		icon = GFX_focus_generic_self_management
+		relative_position_id = lamplayt_55
+		prerequisite = { focus = lamplayt_55 }
+		mutually_exclusive = {
+			focus = lamplayt_56
+		}
+		available = {
+         has_country_flag = spasenierijey
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.5
+		x = -2
+		y = 1
+		completion_reward = {
+		    annex_country = { target = AUA transfer_troops = yes }
+			893 = { add_core_of = LIT }
+			894 = { add_core_of = LIT }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_58
+		icon = GFX_goal_dett21
+		prerequisite = { focus = lamplayt_47 }
+		relative_position_id = lamplayt_47
+		ai_will_do = { factor = 1 }
+		mutually_exclusive = {
+			focus = lamplayt_48
+		}
+		mutually_exclusive = {
+			focus = lamplayt_52
+		}
+		available = {
+			
+		}
+		cost = 2.5
+		x = 3
+		y = 1
+		completion_reward = {
+			add_timed_idea = {
+				idea = tenpenianddetki
+				days = 200
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_59
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 2.5
+		ai_will_do = { factor = 30 }
+		prerequisite = {
+			focus = lamplayt_58
+		}
+		relative_position_id = lamplayt_58
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_60
+		icon = GFX_goal_dett21
+		ai_will_do = { factor = 30 }
+		relative_position_id = lamplayt_59
+		prerequisite = { focus = lamplayt_59 }
+		cost = 2.5
+		x = 0
+		y = 1
+		completion_reward = {
+		    TEN = { 
+		          add_opinion_modifier = { target = LIT modifier = potepotnosh }
+			}
+			add_opinion_modifier = { target = TEN modifier = potepotnosh }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_61
+		icon = GFX_goal_dett22
+		ai_will_do = { factor = 30 }
+		prerequisite = { focus = lamplayt_60 }
+		relative_position_id = lamplayt_60
+		available = {
+
+		}
+		cost = 2.5
+		x = -1
+		y = 1
+		completion_reward = {
+		    893 = { add_core_of = LIT }
+			894 = { add_core_of = TEN }
+			892 = { add_core_of = LIT }
+			add_named_threat = { threat = -3 name = fallout3_war55 }
+		    every_country = {
+				limit = {
+					OR = {
+						tag = TEN
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = AUA
+							tag = AUC
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_62
+		icon = GFX_goal_dett30
+		ai_will_do = { factor = 100 }
+		relative_position_id = lamplayt_60
+		prerequisite = { focus = lamplayt_60 }
+		available = {
+			AUC = { exists = no }
+			AUA = { exists = no }
+			TEN = { exists = yes }
+		}
+		cost = 2.5
+		x = 1
+		y = 1
+		completion_reward = {
+
+		   TEN = { 
+		          transfer_state = 894
+		          set_politics = {
+			          parties = {
+				          ruler = { popularity = 10 }
+				          elites = { popularity = 10 }
+				          people = { popularity = 30 }
+				          intellectuals = { popularity = 50 }
+			        }
+			       ruling_party = intellectuals
+			       elections_allowed = no
+				   }
+				  create_country_leader = {
+	              name = "Mortimer Rufus"
+	              desc = ""
+	              picture = "gfx/leaders/Settler/Portrait_Settler_Generic_15.dds"
+	              expire = "3000.1.1"
+	              ideology = ideocracy
+                }
+			}
+			transfer_state = 893
+			transfer_state = 892
+		}
+	}
+	
+	focus = {
+		id = lamplayt_63
+		icon = GFX_goal_dett16
+		relative_position_id = lamplayt_6
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 1.0
+		x = 0
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_64
+		icon = GFX_goal_dett17
+		relative_position_id = lamplayt_63
+		prerequisite = { focus = lamplayt_63 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 5.5
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_65
+		icon = GFX_goal_dett18
+		relative_position_id = lamplayt_63
+		prerequisite = { focus = lamplayt_63 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 5.5
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_66
+		icon = GFX_goal_dett19
+		relative_position_id = lamplayt_64
+		prerequisite = { focus = lamplayt_64 }
+		prerequisite = { focus = lamplayt_65 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 5.5
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_67
+		icon = GFX_goal_dett19
+		relative_position_id = lamplayt_64
+		prerequisite = { focus = lamplayt_64 }
+		prerequisite = { focus = lamplayt_65 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 5.5
+		x = 1	
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_68
+		icon = GFX_goal_dett19
+		relative_position_id = lamplayt_64
+		prerequisite = { focus = lamplayt_64 }
+		prerequisite = { focus = lamplayt_65 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 5.5
+		x = 3
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_69
+		icon = GFX_goal_enc_vac
+		relative_position_id = lamplayt_67
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = lamplayt_70
+		icon = GFX_goal_enc_new_capital
+		relative_position_id = lamplayt_69
+		prerequisite = { focus = lamplayt_69 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = -2
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+			set_technology = { scientific_civilization = 1 }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_71
+		icon = GFX_goal_enc_power_armor_focus
+		relative_position_id = lamplayt_70
+		prerequisite = { focus = lamplayt_70 }
+		mutually_exclusive = {
+			focus = lamplayt_72
+		}
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_72
+		icon = GFX_goal_enc_power_armor_focus
+		relative_position_id = lamplayt_70
+		prerequisite = { focus = lamplayt_70 }
+		mutually_exclusive = {
+			focus = lamplayt_71
+		}
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = new_advisor
+		}
+	}
+	
+	focus = {
+		id = lamplayt_73
+		icon = GFX_goal_enc_scientists
+		relative_position_id = lamplayt_72
+		prerequisite = { focus = lamplayt_72 focus = lamplayt_71 }	
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = -1
+		y = 1
+		completion_reward = {
+			add_ideas = enc_scientists
+		}
+	}
+	
+	focus = {
+		id = lamplayt_74
+		icon = GFX_goal_enc_experiments
+		relative_position_id = lamplayt_73
+		prerequisite = { focus = lamplayt_73 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_research_slot = 2
+		}
+	}
+	
+	focus = {
+		id = lamplayt_75
+		icon = GFX_goal_enc_para_2
+		relative_position_id = lamplayt_69
+		prerequisite = { focus = lamplayt_69 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 2
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 500 producer = ESP }
+			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 500 producer = ESP }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_76
+		icon = GFX_goal_enc_army_doctrine
+		relative_position_id = lamplayt_75
+		prerequisite = { focus = lamplayt_75 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine 
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_77
+		icon = GFX_goal_enc_integrate_officers
+		relative_position_id = lamplayt_76
+		prerequisite = { focus = lamplayt_76 }	
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = ENC_officers
+		}
+	}
+	
+	focus = {
+		id = lamplayt_78
+		icon = GFX_goal_shield_enc_wip
+		relative_position_id = lamplayt_77
+		prerequisite = { focus = lamplayt_77 }	
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		}
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = ENC_purist
+			add_war_support = 0.1
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = lamplayt_79
+		icon = GFX_goal_enc_segregation
+		relative_position_id = lamplayt_78
+		prerequisite = { focus = lamplayt_78 }
+        mutually_exclusive = {
+			focus = lamplayt_80
+		}		
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		 date > 2282.1.1
+		}
+		ai_will_do = { factor = 1 }
+		cost = 9.0
+		x = -1
+		y = 1
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = lamplayt_79
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_80
+		icon = GFX_goal_enc_empower_congress
+		relative_position_id = lamplayt_78
+		prerequisite = { focus = lamplayt_78 }
+		mutually_exclusive = {
+			focus = lamplayt_79
+		}
+		ai_will_do = { factor = 1 }
+		available = {
+         has_country_flag = detkipodenclave
+		 ESP = { exists = yes }
+		 date > 2282.1.1
+		}
+		cost = 9.0
+		x = 1
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = lamplayt_81
+		icon = GFX_goal_generic_advanced_technology_focus
+		relative_position_id = lamplayt_51
+		prerequisite = { focus = lamplayt_51 focus = lamplayt_56 focus = lamplayt_57 focus = lamplayt_61 focus = lamplayt_62 focus = lamplayt_54 }
+		ai_will_do = { factor = 50 }
+		available = {
+         date > 2277.1.1
+		}
+		cost = 9.0
+		x = 0
+		y = 2
+		completion_reward = {
+			set_technology = { settled_civilization = 1 }
+		}
+	}
+
+	focus = {
+		id = lamplayt_82
+		icon = GFX_goal_dett29
+		relative_position_id = lamplayt_81
+		prerequisite = { focus = lamplayt_81 }
+		ai_will_do = { factor = 50 }
+		available = {
+
+		}
+		cost = 9.0
+		x = -1
+		y = 1
+		completion_reward = {
+			AUB = { 
+		          add_opinion_modifier = { target = LIT modifier = annexcanadaaa }
+			}
+			add_opinion_modifier = { target = AUB modifier = annexcanadaaa }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_83
+		icon = GFX_goal_generic_building_focus
+		relative_position_id = lamplayt_90
+		prerequisite = { focus = lamplayt_90 }
+		ai_will_do = { factor = 50 }
+		available = {
+
+		}
+		cost = 8.8
+		x = 0
+		y = 1
+		completion_reward = {
+			895 = { add_core_of = LIT }
+			add_named_threat = { threat = -3 name = fallout3_war55 }
+		    every_country = {
+				limit = {
+					OR = {
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = AUB
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_84
+		icon = GFX_goal_dett28
+		relative_position_id = lamplayt_81
+		prerequisite = { focus = lamplayt_81 }
+		available = {
+
+		}
+		cost = 9.0
+		x = 1
+		y = 1
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = lamplayt_85
+		icon = GFX_goal_dett27
+		relative_position_id = lamplayt_84
+		prerequisite = { focus = lamplayt_84 }
+		available = {
+
+		}
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			887 = {
+			add_manpower = 1500
+		    }
+			894 = {
+			add_manpower = 456
+		    }
+			893 = {
+			add_manpower = 800
+		    }
+			895 = {
+			add_manpower = 975
+		    }
+			896 = {
+			add_manpower = 600
+		    }
+			add_timed_idea = {
+				idea = baybiboom
+				days = 350
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_86
+		icon = GFX_goal_enc_purge_officers
+		relative_position_id = lamplayt_79	
+		prerequisite = { focus = lamplayt_79 }
+		available = {
+		 ESP = { exists = yes }
+		}
+		ai_will_do = { factor = 1 }
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+		    add_political_power = 150
+			add_manpower = 1000
+			add_autonomy_ratio = {
+				value = 0.15
+				localization = lamplayt_86
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_87
+		icon = GFX_goal_enc_armed_militias
+		relative_position_id = lamplayt_86
+		prerequisite = { focus = lamplayt_86 }
+		available = {
+		 ESP = { exists = yes }
+		}
+		ai_will_do = { factor = 1 }
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 1.00
+				localization = lamplayt_87
+			}
+			create_country_leader = {
+	        name = "Queen"
+	        desc = ""
+	        picture = "gfx/leaders/LIT/Portrait_queen.dds"
+	        expire = "3000.1.1"
+	        ideology = feudalism
+           }
+		   every_country = {
+				limit = {
+					OR = {
+						tag = LIT
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = ESP
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_88
+		icon = GFX_goal_enc_police_officer
+		relative_position_id = lamplayt_80	
+		prerequisite = { focus = lamplayt_80 }
+		available = {
+		 ESP = { exists = yes }
+		}
+		ai_will_do = { factor = 1 }
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.15
+				localization = lamplayt_88
+			}
+			hidden_effect = {
+				country_event = { days = 150 id = detievent.11 }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_89
+		icon = GFX_goal_enc_education_civilian
+		relative_position_id = lamplayt_88	
+		prerequisite = { focus = lamplayt_88 }
+		available = {
+		 ESP = { exists = yes }
+		}
+		ai_will_do = { factor = 1 }
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			887 = {
+			add_manpower = 5000
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_90
+		icon = GFX_goal_NCN_Blessed_Are_The_Merciful
+		relative_position_id = lamplayt_82	
+		prerequisite = { focus = lamplayt_82 }
+		available = {
+		}
+		ai_will_do = { factor = 50 }
+		cost = 9.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_manpower = 1000
+		}
+	}
+	
+	focus = {
+		id = lamplayt_91
+		icon = GFX_goal_bos_wasteland_conscription
+		relative_position_id = lamplayt_83	
+		prerequisite = { focus = lamplayt_83 }
+		available = {
+		}
+		ai_will_do = { factor = 1 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+			add_war_support = 0.3
+		}
+	}
+	
+	focus = {
+		id = lamplayt_92
+		icon = GFX_goal_enc_judiciary_nevada
+		relative_position_id = lamplayt_26
+		available = {
+		has_country_flag = resvedvernulis
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 2
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+	
+	focus = {
+		id = lamplayt_93
+		icon = GFX_goal_enc_reform_forced_deal_dark
+		relative_position_id = lamplayt_92
+		prerequisite = { focus = lamplayt_92 }
+		available = {
+          has_country_flag = otkaz_ot_vseh
+		  date > 2279.1.1
+		  has_completed_focus = lamplayt_62
+		}
+		mutually_exclusive = {
+			focus = lamplayt_100
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+			887 = {
+			add_manpower = -350
+		    }
+			882 = {
+			add_manpower = -50
+		    }
+			883 = {
+			add_manpower = -156
+		    }
+			884 = {
+			add_manpower = -31
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_94
+		icon = GFX_goal_enc_subsidized_lives
+		relative_position_id = lamplayt_93
+		prerequisite = { focus = lamplayt_93 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = isvergmarmak_tt
+			882 = {
+			add_manpower = -1050
+		    }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_95
+		icon = GFX_goal_enc_fruits_of_their_labors
+		relative_position_id = lamplayt_94
+		prerequisite = { focus = lamplayt_94 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		    set_capital = 887
+			start_civil_war = {
+				ruling_party = people
+				ideology = intellectuals
+				size = 0.5
+				capital = 882
+				states = { 882 883 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = LIT
+					has_government = intellectuals
+				}
+				load_oob = "LIT_int_civilwar"
+				set_stability = 0.5
+				set_war_support = 0.5
+				add_manpower = 1000
+			}
+			
+			set_politics = {
+				ruling_party = people
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.4
+			}
+			add_popularity = {
+				ideology = elites
+				popularity = 0.0
+			}
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = people
+				popularity = 0.5
+			}
+            load_oob = "LIT_human_civilwar"	
+            add_manpower = 1000		
+			set_stability = 0.5
+			set_war_support = 0.5
+		}
+		add_stability = -0.25
+		random_other_country = {
+			limit = {
+				original_tag = LIT
+				has_government = intellectuals
+			}
+			set_cosmetic_tag = GER_civil_war
+			hidden_effect = { activate_mission = GER_mefo_bills_mission }
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = LIT
+					has_government = intellectuals
+				}
+				save_event_target_as = fascist_germany_civil_war
+				every_unit_leader = {
+					set_nationality = LIT
+				}
+			}
+			LIT = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 10
+							has_id = 15
+							has_id = 20
+							has_id = 24
+						}
+					}
+					set_nationality = event_target:fascist_germany_civil_war
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_96
+		icon = GFX_goal_enc_nevada_assembly
+		relative_position_id = lamplayt_95
+		prerequisite = { focus = lamplayt_95 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   country_event = { id = detievent.14 }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_97
+		icon = GFX_goal_enc_first_citizens
+		relative_position_id = lamplayt_96
+		prerequisite = { focus = lamplayt_96 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 10.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_war_support = 0.5
+		}
+	}
+	
+	focus = {
+		id = lamplayt_98
+		icon = GFX_goal_NEW_new_world_old_ideas
+		relative_position_id = lamplayt_97
+		prerequisite = { focus = lamplayt_97 }
+		available = {
+           has_full_control_of_state = 887
+		   has_full_control_of_state = 883
+		}
+		ai_will_do = { factor = 30 }
+		cost = 10.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   set_capital = 887
+		   add_stability = 0.5
+		   add_war_support = -0.2
+		   887 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			882 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			883 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			884 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_99
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = lamplayt_98
+		prerequisite = { focus = lamplayt_98 }
+		available = {
+          TEN = { exists = yes }
+		}
+		ai_will_do = { factor = 30 }
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   TEN = { 
+		          set_politics = {
+			          parties = {
+				          ruler = { popularity = 10 }
+				          elites = { popularity = 10 }
+				          people = { popularity = 60 }
+				          intellectuals = { popularity = 20 }
+			        }
+			       ruling_party = people
+			       elections_allowed = yes
+				   }
+				  create_country_leader = {
+	              name = "Mortimer Rufus"
+	              desc = ""
+	              picture = "gfx/leaders/Settler/Portrait_Settler_Generic_15.dds"
+	              expire = "3000.1.1"
+	              ideology = constitutional_monarchy
+                }
+			}
+		   create_faction = svoylitlaliens
+		   add_to_faction = TEN
+		}
+	}
+	
+	focus = {
+		id = lamplayt_100
+		icon = GFX_goal_enc_first_citizens
+		relative_position_id = lamplayt_92
+		prerequisite = { focus = lamplayt_92 }
+		available = {
+          has_country_flag = otkaz_ot_vseh
+		  date > 2279.1.1
+		  has_completed_focus = lamplayt_62
+		}
+		mutually_exclusive = {
+			focus = lamplayt_93
+		}
+		ai_will_do = { factor = 30 }
+		cost = 4.0
+		x = -2
+		y = 1
+		completion_reward = {
+		   add_war_support = 0.4
+		}
+	}
+	
+	focus = {
+		id = lamplayt_101
+		icon = GFX_goal_NCN_Blessed_Are_The_Merciful
+		relative_position_id = lamplayt_100
+		prerequisite = { focus = lamplayt_100 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 4.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_manpower = 2000
+		}
+	}
+	
+	focus = {
+		id = lamplayt_102
+		icon = GFX_goal_dett32
+		relative_position_id = lamplayt_101
+		prerequisite = { focus = lamplayt_101 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   custom_effect_tooltip = makkridiubilatolpa_tt
+		   LIT = { 
+		          set_politics = {
+			          parties = {
+				          ruler = { popularity = 60 }
+				          elites = { popularity = 0 }
+				          people = { popularity = 0 }
+				          intellectuals = { popularity = 40 }
+			        }
+			       ruling_party = ruler
+			       elections_allowed = no
+				   }
+				  create_country_leader = {
+	              name = "Great Sammy"
+	              desc = ""
+	              picture = "gfx/leaders/LIT/sammy.dds"
+	              expire = "3000.1.1"
+	              ideology = gang
+                }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_103
+		icon = GFX_goal_dett34
+		relative_position_id = lamplayt_102
+		prerequisite = { focus = lamplayt_102 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_country_leader_trait = besposh_trait
+		}
+	}
+	
+	focus = {
+		id = lamplayt_104
+		icon = GFX_goal_generic_slums_focus
+		relative_position_id = lamplayt_103
+		prerequisite = { focus = lamplayt_103 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   887 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			892 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			893 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			894 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			890 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_105
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = lamplayt_104
+		prerequisite = { focus = lamplayt_104 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   890 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			887 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			892 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			893 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			894 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_106
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = lamplayt_105
+		prerequisite = { focus = lamplayt_105 }
+		available = {
+          TEN = { exists = yes }
+		}
+		ai_will_do = { factor = 30 }
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   TEN = { 
+		          set_politics = {
+			          parties = {
+				          ruler = { popularity = 50 }
+				          elites = { popularity = 20 }
+				          people = { popularity = 10 }
+				          intellectuals = { popularity = 20 }
+			        }
+			       ruling_party = ruler
+			       elections_allowed = no
+				   }
+				  create_country_leader = {
+	              name = "Mortimer Rufus"
+	              desc = ""
+	              picture = "gfx/leaders/Settler/Portrait_Settler_Generic_15.dds"
+	              expire = "3000.1.1"
+	              ideology = oligarchy
+                }
+			}
+		   create_faction = svoylitlaliens
+		   add_to_faction = TEN
+		}
+	}
+	
+	focus = {
+		id = lamplayt_107
+		icon = GFX_goal_dett
+		relative_position_id = lamplayt_92
+		prerequisite = { focus = lamplayt_92 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 2
+		y = 1
+		completion_reward = {
+		   add_stability = 0.25
+		}
+	}
+	
+	focus = {
+		id = lamplayt_108
+		icon = GFX_goal_dett33
+		relative_position_id = lamplayt_107
+		prerequisite = { focus = lamplayt_107 }
+		available = {
+		intellectuals > 0.53
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   add_country_leader_trait = zashitniklitlelamplayt
+		}
+	}
+	
+	focus = {
+		id = lamplayt_109
+		icon = GFX_goal_dett31
+		relative_position_id = lamplayt_108
+		prerequisite = { focus = lamplayt_108 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   890 = {
+				add_building_construction = { type = bunker province = 11362 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 11364 level = 4 instant_build = yes }
+				add_building_construction = { type = bunker province = 11365 level = 4 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_110
+		icon = GFX_goal_dett31
+		relative_position_id = lamplayt_109
+		prerequisite = { focus = lamplayt_109 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 6.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   892 = {
+				add_building_construction = { type = bunker province = 11382 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11383 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11384 level = 3 instant_build = yes }
+			}
+			893 = {
+				add_building_construction = { type = bunker province = 11390 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11396 level = 3 instant_build = yes }
+			}
+			887 = {
+				add_building_construction = { type = bunker province = 11371 level = 3 instant_build = yes }
+			}
+			897 = {
+				add_building_construction = { type = bunker province = 11417 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11418 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11419 level = 3 instant_build = yes }
+			}
+			894 = {
+				add_building_construction = { type = bunker province = 11397 level = 3 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_111
+		icon = GFX_goal_dett31
+		relative_position_id = lamplayt_110
+		prerequisite = { focus = lamplayt_110 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   887 = {
+				add_building_construction = { type = bunker province = 11367 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11368 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11369 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11372 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11378 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11377 level = 2 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_112
+		icon = GFX_goal_dett31
+		relative_position_id = lamplayt_111
+		prerequisite = { focus = lamplayt_111 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   887 = {
+				add_building_construction = { type = bunker province = 11376 level = 4 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_113
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = lamplayt_112
+		prerequisite = { focus = lamplayt_112 }
+		available = {
+		  has_country_flag = otkaz_ot_vseh
+		  has_completed_focus = lamplayt_62
+		}
+		ai_will_do = { factor = 30 }
+		cost = 1.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   create_faction = svoylitlaliens
+		   add_to_faction = TEN
+		}
+	}
+	
+	focus = {
+		id = lamplayt_114
+		icon = GFX_goal_enc_experiments
+		relative_position_id = lamplayt_106
+		prerequisite = { focus = lamplayt_106 focus = lamplayt_99 focus = lamplayt_113 }
+		available = {
+          has_country_flag = otkaz_ot_vseh
+		  date > 2278.1.1
+		}
+		cost = 10.0
+		x = 2
+		y = 1
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {#Purity - Human improvement
+		id = lamplayt_115
+		icon = GFX_goal_enc_super_soldier
+		available = {
+            has_country_flag = bigcheloverk
+			ESP = { exists = yes }
+		}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = lamplayt_74
+		x = -1
+		y = 1
+		prerequisite = { focus = lamplayt_74}
+		mutually_exclusive = { focus = lamplayt_116 }
+		completion_reward = {
+			add_ideas = ESP_FEV_soldiers
+		}
+		cost = 25.0
+    }
+	
+	focus = {#Cloning
+		id = lamplayt_116
+		icon = GFX_goal_enc_cloning
+		ai_will_do = { factor = 1 }
+		available = {
+			has_country_flag = bigcheloverk1
+			ESP = { exists = yes }
+		}
+		prerequisite = { focus = lamplayt_74 }
+		relative_position_id = lamplayt_74
+		mutually_exclusive = { focus = lamplayt_115 }
+		x = 1
+		y = 1
+		cost = 15.0
+		completion_reward = {
+			custom_effect_tooltip = enc_cloning_tt
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_117
+		icon = GFX_goal_Enclave17
+		ai_will_do = { factor = 1 }
+		available = {
+			ESP = { exists = no }
+		}
+		prerequisite = { focus = lamplayt_87 }
+		relative_position_id = lamplayt_87
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_country_leader_trait = usakoroleva
+			add_political_power = 100
+			add_stability = -0.3
+			add_war_support = 0.5
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_118
+		icon = GFX_goal_enc_management
+		ai_will_do = { factor = 1 }
+		available = {
+			ESP = { exists = no }
+		}
+		prerequisite = { focus = lamplayt_117 }
+		relative_position_id = lamplayt_117
+		x = 0
+		y = 1
+		cost = 15.0
+		completion_reward = {
+			898 = { add_core_of = LIT }
+			889 = { add_core_of = LIT }
+			888 = { add_core_of = LIT }
+			883 = { add_core_of = LIT }
+			876 = { add_core_of = LIT }
+			882 = { add_core_of = LIT }
+			881 = { add_core_of = LIT }
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_119
+		icon = GFX_goal_enc_management
+		ai_will_do = { factor = 1 }
+		available = {
+			ESP = { exists = yes }
+		}
+		prerequisite = { focus = lamplayt_89 }
+		relative_position_id = lamplayt_89
+		x = 0
+		y = 1
+		cost = 15.0
+		completion_reward = {
+		    transfer_state = 876
+			transfer_state = 883
+			transfer_state = 882
+			transfer_state = 896
+			876 = { add_core_of = LIT }
+			883 = { add_core_of = LIT }
+			882 = { add_core_of = LIT }
+			896 = { add_core_of = LIT }
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_120
+		icon = GFX_goal_Enclave17
+		ai_will_do = { factor = 1 }
+		available = {
+			ESP = { exists = yes }
+		}
+		prerequisite = { focus = lamplayt_119 }
+		relative_position_id = lamplayt_119
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_country_leader_trait = nadejniy_sousnik_det
+			add_political_power = 100
+			add_stability = 0.3
+		}
+	}
+	
+	focus = {
+		id = lamplayt_121
+		icon = GFX_goal_dett2
+		cost = 15.0
+		available = {
+          has_country_flag = otkaz_ot_vseh
+		  has_completed_focus = lamplayt_113
+		}
+		prerequisite = { focus = lamplayt_113 }
+		relative_position_id = lamplayt_113
+		x = 0
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = predlojdeyvsous_tt
+			IBS = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = detievent.15 }
+			    }
+		    }
+			DEV = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = detievent.16 }
+			    }
+		    }
+			DIK = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = detievent.17 }
+			    }
+		    }
+			MIN = { 
+			    hidden_effect = {
+				     country_event = { days = 1 id = detievent.18 }
+			    }
+		    }
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_122
+		icon = GFX_goal_generic_food_focus
+		ai_will_do = { factor = 1 }
+		available = {
+
+		}
+		prerequisite = { focus = lamplayt_85 }
+		relative_position_id = lamplayt_85
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_tech_bonus = {
+				name = medical_bonus
+				bonus = 0.5
+				uses = 1
+				category = chem_tech
+			}
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_123
+		icon = GFX_goal_generic_data_focus
+		ai_will_do = { factor = 1 }
+		available = {
+
+		}
+		prerequisite = { focus = lamplayt_122 }
+		relative_position_id = lamplayt_122
+		x = 0
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_ideas = chem_lab
+		}
+	}
+	
+	focus = {#Cloning
+		id = lamplayt_124
+		icon = GFX_goal_enc_management
+		ai_will_do = { factor = 1000 }
+		available = {
+           has_country_flag = soglasievaultsouls
+		}
+		relative_position_id = lamplayt_36
+		x = 4
+		y = -1
+		cost = 7.0
+		completion_reward = {
+		    transfer_state = 1043
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = lamplayt_125
+		icon = GFX_goal_generic_slums_focus
+		relative_position_id = lamplayt_124
+		prerequisite = { focus = lamplayt_124 }
+		available = {
+
+		}
+		ai_will_do = { factor = 80 }
+		cost = 5.0
+		x = -2
+		y = 1
+		completion_reward = {
+		   892 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_126
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = lamplayt_124
+		prerequisite = { focus = lamplayt_124 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 5.0
+		x = 2
+		y = 1
+		completion_reward = {
+		   892 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_127
+		icon = GFX_goal_dett31
+		relative_position_id = lamplayt_124
+		prerequisite = { focus = lamplayt_124 }
+		available = {
+
+		}
+		ai_will_do = { factor = 80 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		   891 = {
+				add_building_construction = { type = bunker province = 11387 level = 3 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_128
+		icon = GFX_goal_support_layons
+		relative_position_id = lamplayt_127
+		prerequisite = { focus = lamplayt_127 }
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		ai_will_do = { factor = 80 }
+		cost = 5.0
+		x = 0
+		y = 1
+		completion_reward = {
+		    SBS = { 
+		          add_opinion_modifier = { target = LIT modifier = layonsanddetki }
+			}
+			add_opinion_modifier = { target = LIT modifier = layonsanddetki }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_129
+		icon = GFX_goal_bos_generic_infantry
+		cost = 8.6
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		relative_position_id = lamplayt_128
+		prerequisite = { focus = lamplayt_128 }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_130
+		icon = GFX_goal_bos_victory_or_death
+		cost = 8.6
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		relative_position_id = lamplayt_129
+		prerequisite = { focus = lamplayt_129 }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_ideas = genericbossteellegions
+		}
+	}
+	
+	focus = {
+		id = lamplayt_131
+		icon = GFX_goal_generic_BoS_diplomatic_focus
+		cost = 8.6
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		relative_position_id = lamplayt_129
+		prerequisite = { focus = lamplayt_129 }
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_manpower = 1500
+		}
+	}
+	
+	focus = {
+		id = lamplayt_132
+		icon = GFX_goal_bos_outsider_recruitment
+		cost = 8.6
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		relative_position_id = lamplayt_130
+		prerequisite = { focus = lamplayt_130 }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_ideas = genericbosfleshbeforesteel
+		}
+	}
+	
+	focus = {
+		id = lamplayt_133
+		icon = GFX_goal_generic_BOS_focus_t45d_production
+		cost = 8.6
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		relative_position_id = lamplayt_131
+		prerequisite = { focus = lamplayt_131 }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment_2
+				amount = 500
+				producer = SBS
+			}
+		}
+	}
+	
+	focus = {
+		id = lamplayt_134
+		icon = GFX_goal_megatonna29
+		cost = 8.6
+		available = {
+           ESP = { exists = no }
+		   SBS = { exists = yes }
+		}
+		relative_position_id = lamplayt_133
+		prerequisite = { focus = lamplayt_133 }
+		prerequisite = { focus = lamplayt_132 }
+		x = 1
+		y = 1
+
+		completion_reward = {
+			hidden_effect = { load_oob = SBS_Liberty_praym }
+		}
+	}
+	
+	focus = {
+		id = lamplayt_135
+		icon = GFX_goal_megatonna17
+		ai_will_do = { factor = 1 } 
+		relative_position_id = lamplayt_134
+		available = {
+           ESP = { exists = no }
+           has_country_flag = soglasievaultsouls	   
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = cleanoperation
+		}
+		cost = 20.0	
+ }
+ 
+    focus = {
+		id = lamplayt_136
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 8.6
+		available = {
+		   has_country_flag = soglasievaultsouls	   
+           ESP = { exists = no }
+		}
+		relative_position_id = lamplayt_135
+		prerequisite = { focus = lamplayt_135 }
+		x = 0
+		y = 1
+
+		completion_reward = {
+			army_experience = 50
+			add_manpower = 1200
+		}
+	}
+	
+	focus = {
+		id = lamplayt_137
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		available = {
+		   has_country_flag = soglasievaultsouls	   
+           ESP = { exists = no }
+		   USP = { exists = yes }
+		}
+		relative_position_id = lamplayt_135
+		prerequisite = { focus = lamplayt_135 }
+		x = -2
+		y = 1
+
+		completion_reward = {
+			890 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = vault_robosec
+		}
+	}
+	
+	focus = {
+		id = lamplayt_138
+		icon = GFX_goal_generic_ammo_boxes_focus
+		cost = 8.6
+		available = {
+		   has_country_flag = soglasievaultsouls	   
+           ESP = { exists = no }
+		   USP = { exists = yes }
+		}
+		relative_position_id = lamplayt_135
+		prerequisite = { focus = lamplayt_135 }
+		x = 2
+		y = 1
+
+		completion_reward = {
+			add_ideas = vaultmedreg
+		}
+	}
+	
+	focus = {
+		id = lamplayt_139
+		icon = GFX_goal_megatonna28
+		cost = 8.6
+		available = {
+		   has_country_flag = amatabej	   
+           ESP = { exists = no }
+		   USP = { exists = yes }
+		}
+		relative_position_id = lamplayt_137
+		prerequisite = { focus = lamplayt_136 }
+		prerequisite = { focus = lamplayt_137 }
+		prerequisite = { focus = lamplayt_138 }
+		mutually_exclusive = {
+			focus = lamplayt_140
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_ideas = amatast
+		}
+	}
+	
+	focus = {
+		id = lamplayt_140
+		icon = GFX_goal_megatonna21
+		cost = 8.6
+		available = {
+		   has_country_flag = buchisgnan   
+           ESP = { exists = no }
+		   USP = { exists = yes }
+		}
+		relative_position_id = lamplayt_138
+		prerequisite = { focus = lamplayt_136 }
+		prerequisite = { focus = lamplayt_137 }
+		prerequisite = { focus = lamplayt_138 }
+		mutually_exclusive = {
+			focus = lamplayt_139
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_ideas = vault101buch
+		}
+	}
+	
+	focus = {
+		id = lamplayt_141
+		icon = GFX_goal_NCN_Blessed_Are_The_Merciful
+		relative_position_id = lamplayt_115
+		prerequisite = { focus = lamplayt_115 focus = lamplayt_116 }
+		available = {
+
+		}
+		ai_will_do = { factor = 30 }
+		cost = 10.0
+		x = 1
+		y = 1
+		completion_reward = {
+		   add_manpower = 2000
+		}
+	}
+	
+

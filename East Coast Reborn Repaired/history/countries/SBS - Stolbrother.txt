@@ -1,0 +1,84 @@
+﻿capital = 867
+oob = "SBS_2265"
+set_technology = {
+	elite_army = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	nautics_tech_1 = 1
+	energy_weaponry_tech_1 = 1
+	energy_weaponry_tech_2 = 1
+	spec_ops_equipment_tech_1 = 1
+	spec_ops_equipment_tech_2 = 1
+	hardening_armour_tech = 1
+	simple_servo_tech = 1
+	stripped_pa_tech = 1
+	scav_pa_tech = 1
+}
+
+set_stability = 0.6
+set_war_support = 0.4
+set_rule = { can_join_factions = no }
+set_convoys = 60
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 80
+	ruler = 20
+}
+
+add_ideas = {
+	bunkerblues
+	oldguard
+}
+
+add_opinion_modifier = { target = TRL modifier = boshatesmutants }
+add_opinion_modifier = { target = WBH modifier = boshateswashingtonstatebos }
+
+set_research_slots = 3
+
+create_country_leader = {
+	name = "Elder Owyn Lyons"
+	desc = ""
+	picture = "gfx/leaders/SBS/portrait_layons.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {
+	
+	}
+
+}
+
+create_field_marshal = {
+	name = "Star Paladin Cross"
+	portrait_path = "gfx/leaders/SBS/Star_Paladin_Cross.dds"
+	skill = 4
+	traits = {
+		offensive_doctrine
+	}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Sarah Lyons"
+	portrait_path = "gfx/leaders/SBS/Sarah_Lyons.dds"
+	skill = 3
+	traits = {
+	}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

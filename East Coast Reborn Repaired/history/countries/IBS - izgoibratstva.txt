@@ -1,0 +1,65 @@
+﻿capital = 771
+oob = "IBS_2275"
+set_technology = {
+	elite_army = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	nautics_tech_1 = 1
+	energy_weaponry_tech_1 = 1
+	energy_weaponry_tech_2 = 1
+	spec_ops_equipment_tech_1 = 1
+	spec_ops_equipment_tech_2 = 1
+	hardening_armour_tech = 1
+	simple_servo_tech = 1
+	stripped_pa_tech = 1
+	scav_pa_tech = 1
+}
+
+set_stability = 0.4 
+set_war_support = 0.6
+add_opinion_modifier = { target = USP modifier = torgovieoperacii }
+
+set_convoys = 50
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	reckless_aggression
+	bunkerblues
+	oldguard
+}
+
+create_country_leader  = {
+	name = "Protector Henry Casdin"
+	desc = ""
+	picture = "gfx/leaders/IBS/Portrait_Hranitelkaden.dds"
+	expire = "3000.1.1"
+	ideology = gang
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Protector McGraw"
+	portrait_path = "gfx/leaders/IBS/Protector_McGraw.dds"
+	skill = 3
+	traits = {
+	}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

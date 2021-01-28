@@ -1,0 +1,603 @@
+ideas = {
+    political_advisor = {
+		mikhail_kalinin = {
+			
+			cost = 250
+			allowed = {
+				original_tag = "SOV"
+			}
+			available = 
+			{
+				has_completed_focus = Sovetinfallout_5
+			}
+			
+
+			
+			traits = { popular_figurehead }
+		}
+
+		SOV_nikolai_voznesensky = {
+			cost = 300
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SOV_nikolai_yezhov = {
+			cost = 200
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = 
+			{
+			}
+			
+			traits = { prince_of_terror }
+		}
+    }
+		
+	army_chief = {
+		
+		
+		semyon_timoshenko = {
+			
+			cost = 500
+			allowed = {
+				original_tag = SOV
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_1_group_b }
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+						} 
+					}
+				}
+			}
+			
+
+			
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		alexander_yegorov = {
+			
+			cost = 350
+			allowed = {
+				original_tag = SOV
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			# PURGED
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		vasily_blucher = {
+			
+			cost = 350
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				has_completed_focus = Sovetinfallout_5
+			}
+			
+
+			
+			# PURGED
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	navy_chief = {
+		
+		nikolay_kuznetsov = {
+			
+			cost = 400
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			# Not Purged, but eventually demoted
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ivan_yumashev = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	air_chief = {
+		
+		
+		alexander_novikov = {
+			
+            cost = 300			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			# Not Purged, but imprisoned
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		konstantin_vershinin = {
+			
+			cost = 425
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		yakov_smushkevich = {
+			
+			cost = 220
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			# PURGED
+			traits = { air_chief_safety_2 } # Could also have reform
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pavel_rychagov = {
+			
+			cost = 200
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			# PURGED
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	
+	high_command = {
+		
+		aleksandr_vasilevsky = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+						} 
+					}
+				}
+			}
+			
+
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		konstantin_rokossovsky = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV # Unlocked via focus
+				hidden_trigger = {
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+						} 
+					}
+				}
+			}
+			available = 
+			{
+				has_completed_focus = Sovetinfallout_5
+			}
+			
+
+			
+			# Not purged, but tried and tortured, then released
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		pavel_zhigarev = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+
+			
+			traits = { air_airborne_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		arseniy_golovko = {
+			
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = counter_purge }
+				hidden_trigger = {
+					NOT = { 
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+						} 
+					}
+				}
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+		
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		okmo = {
+			
+			cost = 200
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		mig_design_bureau = {
+			
+			cost = 280
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ilyushin_design_bureau = {
+			
+			cost = 280
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		tupolev_design_bureau = {
+			
+			cost = 280
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		yakovlev_design_bureau = {
+			
+			cost = 280
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		
+		grabin_design_bureau = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}	
+		
+		
+		gaz = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+				mot_rockets = 0.50
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	theorist = {	
+	
+			
+		mikhail_tukhachevsky = {
+			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				has_completed_focus = Sovetinfallout_5
+			}
+			
+			cost = 350
+			
+			research_bonus = {
+				cat_mass_assault = 0.10
+			}
+			
+			# PURGED
+			traits = { mass_assault_expert }
+		}
+		
+		boris_shaposhnikov = {
+			
+			cost = 300
+			allowed = {
+				original_tag = SOV
+			}
+			
+
+			
+			research_bonus = {
+				land_doctrine = 0.06
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		sergey_gorshkov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				naval_doctrine = 0.06
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		sergei_rudenko = {
+			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_battlefield_support = 0.8
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+	}
+}

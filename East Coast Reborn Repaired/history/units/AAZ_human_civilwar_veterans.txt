@@ -1,0 +1,56 @@
+﻿division_template = {
+	name = "New Archers"
+	regiments = {
+		archers = { x = 0 y = 0 }
+		archers = { x = 0 y = 1 }
+		archers = { x = 0 y = 2 }
+		archers = { x = 0 y = 3 }
+		archers = { x = 0 y = 4 }
+		archers = { x = 0 y = 5 }
+		archers = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "New Wariors"
+	regiments = {
+		wariors = { x = 0 y = 0 }
+		wariors = { x = 0 y = 1 }
+		wariors = { x = 0 y = 2 }
+		wariors = { x = 0 y = 3 }
+		wariors = { x = 0 y = 4 }
+		wariors = { x = 0 y = 5 }
+		wariors = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division {
+		name = "Civil War Veterans"
+		location = 11609
+		division_template = "New Archers"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Civil War Veterans"
+		location = 11609
+		division_template = "New Archers"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Civil War Veterans"
+		location = 11609
+		division_template = "New Wariors"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Civil War Veterans"
+		location = 11609
+		division_template = "New Wariors"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+}

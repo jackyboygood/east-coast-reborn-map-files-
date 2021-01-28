@@ -1,0 +1,228 @@
+ideas = {
+    country = {
+		# Enclave state
+		
+		gabriel = {
+			
+			picture = seth
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.05
+			}
+		}
+		
+		Ben = {
+			
+			picture = aradesh
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.03
+				stability_factor = 0.02
+			}
+		}
+		
+		luisa = {
+			
+			picture = tandi
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		
+		sovet = {
+			
+			picture = sovetfederacii
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.07
+				war_support_factor = -0.03
+			}
+		}
+		
+		ekonomrost = {
+			
+			picture = salvaged_military_industry
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+		
+		Militaripolitic = {
+			picture = mean_bastards
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.06
+			}
+		}
+		
+		Vlianienabolserov = {
+
+			picture = BRK_Defense_Council
+
+			allowed = {
+				is_raider_nation = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				people_drift = 0.20
+			}
+		}
+		
+		nue_radio = {  
+			picture = federateradio
+			allowed = { 
+				always = no
+            }
+
+            allowed_civil_war = { 
+				always = yes
+            }
+            removal_cost = -1
+			modifier = {
+			   political_power_gain = 0.08
+			   decryption_factor = 0.06
+			}
+		}
+		
+		bigkeyt = {
+			picture = bigkeyt 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+				
+			modifier = {
+				heat_attrition_factor = -0.15
+			}
+		}
+		
+		keytraft = {
+			
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
+		
+		marmontarmy = {
+		
+			picture = marmontarmy
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_factor = 0.07
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		
+		defdemocra = {  
+			picture = defdemocra
+			allowed = { 
+				always = no
+            }
+
+            allowed_civil_war = { 
+				always = yes
+            }
+            removal_cost = -1
+			modifier = {
+			   political_power_gain = 0.08
+			   people_drift = 0.05
+			}
+		}

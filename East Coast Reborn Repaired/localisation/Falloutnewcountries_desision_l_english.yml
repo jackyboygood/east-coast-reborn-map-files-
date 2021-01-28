@@ -1,0 +1,20 @@
+﻿l_english:
+ form_stolichusa_category:0 "Rebuild the United States"
+ form_stolichusa_category_desc:0 "Now that many of the territories of the Capital Wasteland have been conquered, it’s time to think about reviving the United States of America. The whole east coast will flourish under our rule.."
+ form_USAINSTOLICH:0 "Announce the Re-formation of the United States"
+ 
+ form_canadian_category:0 "Rebuild Canada as a single state"
+ form_canadian_category_desc:0 "Before the great war, our united country was viciously annexed by the United States. For a long time no one could imagine restoring the former prosperity of Canada, but we have done it."
+ form_canadobiedinenie:0 "Announce The Restoration Of Canada"
+
+ form_sovet_category:0 "American Annexation"
+ form_sovet_category_desc:0 "During the great war, our country maintained friendly relations with the United States, but the world has changed. Many countries have emerged in the United States that are ready to destroy us...."
+ form_Sovetin:0 "It's Time to Accept the New Order"
+ 
+ ESP_cloning: "Experiments with Clones"
+ AAE_cloning: "Experiments with Clones"
+ 
+ OPE_border_clashes: "Border Conflicts"
+ OPE_border_clashes_tt: "Border Conflicts"
+ OPE_provoke_border_clashes_effect_tooltip: "Border Conflicts"
+ OPE_border_conflict_initiate_incident: "Border Conflicts"

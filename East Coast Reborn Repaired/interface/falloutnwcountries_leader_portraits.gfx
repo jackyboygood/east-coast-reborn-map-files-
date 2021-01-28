@@ -1,0 +1,53 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+	
+	### GER
+	
+	spriteType = {
+		name = "GFX_portrait_diamond-city-swat"
+		texturefile = "gfx/leaders/INS/diamond-city-swat.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Danny_Sullivan"
+		texturefile = "gfx/leaders/INS/Danny_Sullivan.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_marmont"
+		texturefile = "gfx/leaders/INS/marmont.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_kyle"
+		texturefile = "gfx/leaders/INS/kyle.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_synth_general"
+		texturefile = "gfx/leaders/MEN/synth_general.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_synth_general1"
+		texturefile = "gfx/leaders/MEN/synth_general1.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Uolly_Mack"
+		texturefile = "gfx/leaders/USP/Uolly_Mack.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Poll_Hanon"
+		texturefile = "gfx/leaders/USP/Poll_Hanon.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Freddy_Gomes"
+		texturefile = "gfx/leaders/USP/Freddy_Gomes.dds"		
+	}
+
+
+}

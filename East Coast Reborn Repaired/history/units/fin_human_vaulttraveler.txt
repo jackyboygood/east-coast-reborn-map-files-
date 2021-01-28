@@ -1,0 +1,102 @@
+﻿division_template = {
+	name = "People of Acadia"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		anti_tank_company = { x = 0 y = 1 }
+		recon_company = { x = 0 y = 2 }
+	}
+}
+
+
+units = {
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.3
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division {
+		name = "People of Acadia"
+		location = 11999
+		division_template = "People of Acadia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FIN"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		# Enclave state
+		
+        SBS_radio = {  
+			picture = enc_radio
+			allowed = { 
+				always = no
+            }
+
+            allowed_civil_war = { 
+				always = yes
+            }
+            removal_cost = -1
+			modifier = {
+			   political_power_gain = 0.20
+			   decryption_factor = 0.2
+			}
+		}
+		
+		SBS_support = {
+			picture = brotherhood_tactics_lexicon
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+			}
+		}

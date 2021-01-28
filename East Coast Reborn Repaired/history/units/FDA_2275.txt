@@ -1,0 +1,177 @@
+﻿division_template = {
+	name = "Followers"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Children of Atom"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry  = { x = 1 y = 0 }
+		infantry  = { x = 1 y = 1 }
+		infantry  = { x = 1 y = 2 }
+	}
+}
+units = {
+	division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.5
+			start_equipment_factor = 1.0
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.3
+			start_equipment_factor = 1.0
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+		division {
+			name = "Children of Atom"
+			location = 12066
+			division_template = "Children of Atom"
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+		}
+}
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FDA"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

@@ -1,0 +1,86 @@
+﻿capital = 925
+
+oob = "BSS_2265"
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	destroyer_tech = 1
+	cruiser_tech = 1
+	battleship_tech = 1
+	heavy_cruiser_tech = 1
+	basic_laser_weaponry = 1
+	improved_laser_weaponry  = 1
+	power_armour = 1
+	power_armour_t45d = 1
+	naval_invasion_tech = 1
+}
+
+set_stability = 0.7
+set_war_support = 0.3
+set_convoys = 35
+
+
+set_politics = {
+	ruling_party = intellectuals
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 80
+	ruler = 20
+}
+
+add_ideas = {
+	bunkerblues
+	oldguard
+}
+
+add_opinion_modifier = { target = TRL modifier = boshatesmutants }
+add_opinion_modifier = { target = WBH modifier = boshateswashingtonstatebos }
+add_opinion_modifier = { target = MEN modifier = torgovieoperacii }
+add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
+add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
+
+set_research_slots = 3
+
+create_country_leader = {
+	name = "Arthur Maxson"
+	desc = ""
+	picture = "gfx/leaders/BSS/artur.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {
+		war_hero
+	}
+	
+}
+
+create_corps_commander = {
+	name = "Paladin Dance"
+	portrait_path = "gfx/leaders/BSS/FO4_Paladin_Danse.dds"
+	skill = 3
+	traits = {
+	}
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Captain Kells"
+	portrait_path = "gfx/leaders/BSS/kels.dds"
+	skill = 2
+	traits = {
+	}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

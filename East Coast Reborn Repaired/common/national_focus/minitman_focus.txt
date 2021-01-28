@@ -1,0 +1,2107 @@
+focus_tree = {
+	id = Minitmen
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEN
+		}
+	}
+	default = no
+	
+		focus = {
+		id = Minitmen_1
+		icon = GFX_goal_VLT_all_clear
+		cost = 2.0
+		x = 15
+		y = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.1
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_2
+		icon = GFX_goal_generic_recruitment_focus
+		prerequisite = { focus = Minitmen_1 }
+		relative_position_id = Minitmen_1
+		x = 0
+		y = 1
+
+		cost = 2.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 750
+		}
+	}
+	
+    focus = {
+		id = Minitmen_3
+		icon = GFX_goal_konkord
+		prerequisite = { focus = Minitmen_2 }
+		relative_position_id = Minitmen_2
+		cost = 2.0
+		x = 0
+		y = 1
+		cost = 7.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.2
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_4
+		icon = GFX_goal_konkord
+		prerequisite = { focus = Minitmen_3 }
+		relative_position_id = Minitmen_3
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = DJA
+
+		cost = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = DJA
+			}
+			DJA = { exists = yes }
+		}
+
+		bypass = {
+			DJA = { exists = no }
+			DJA = { is_subject_of = MEN}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    926 = { add_core_of = MEN }
+			create_wargoal = {
+				type = annex_everything
+				target = DJA
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = MEN
+						tag = DJA
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = MEN
+							tag = DJA
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_5
+		icon = GFX_goal_Minutamen1
+		prerequisite = { focus = Minitmen_4 }
+		relative_position_id = Minitmen_4
+		cost = 15.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.3
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_6
+		icon = GFX_goal_enc_management
+		prerequisite = { focus = Minitmen_5 }
+		relative_position_id = Minitmen_5
+		x = 3
+		y = 2
+
+		cost = 21.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = ENC_infighting_2
+				}
+				remove_ideas = ENC_infighting_2
+			}
+			else = {
+				remove_ideas = ENC_infighting
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_7
+		icon =GFX_goal_Senkchuary
+		prerequisite = { focus = Minitmen_5 }
+		ai_will_do = { factor = 98 } 
+		relative_position_id = Minitmen_5
+		x = -4
+		y = 2
+		cost = 7.8
+		completion_reward = {
+			add_political_power = 50
+			932 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 4
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_8
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = Minitmen_7}
+		ai_will_do = { factor = 98 } 
+		relative_position_id = Minitmen_7
+		x = 0
+		y = 1
+		cost = 7.8
+		completion_reward = {
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 600 producer = ERB }
+			add_resource = { type = advanced_technology amount = 10 state = 928 }
+			add_resource = { type = electronics amount = 30 state = 928 }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_9
+		icon = GFX_goal_generic_data_focus
+		prerequisite = {focus = Minitmen_8}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = Minitmen_8
+		x = 2
+		y = 1
+		cost = 7.8
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 0.2
+				uses = 2
+				category = energy_weaponry_tech
+			}
+			add_tech_bonus = {
+				ahead_reduction = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_10
+		icon = GFX_goal_enc_scientists
+		prerequisite = {focus = Minitmen_8}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = Minitmen_8
+		x = -2
+		y = 1
+		cost = 8.6
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = Minitmen_11
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = {focus = Minitmen_8}
+		available = {
+			926 = { is_controlled_by = MEN } #do we actually own it right now?
+		}
+		ai_will_do = { factor = 1 }
+		relative_position_id = Minitmen_8
+		x = 0
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 500 producer = ERB }
+		}
+		cost = 7.8
+	}
+	
+	focus = {
+		id = Minitmen_12
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = Minitmen_11
+		cost = 8.6
+		prerequisite = {focus = Minitmen_9}
+		prerequisite = {focus = Minitmen_10}
+		prerequisite = {focus = Minitmen_11}
+		x = 0
+		y = 1
+		available = {
+			controls_state = 932
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_12 entered"
+			}
+			932 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_12 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_13
+		icon = GFX_goal_bos_generic_infantry
+		relative_position_id = Minitmen_5
+		ai_will_do = { factor = 95 } 
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_5
+		}
+		x = -10
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_13 entered"
+			}
+			add_tech_bonus = { bonus = 0.3 uses = 2 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_13 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_14
+		icon = GFX_goal_bos_wasteland_conscription
+		prerequisite = {focus = Minitmen_13}
+		ai_will_do = { factor = 95 } 
+		relative_position_id = Minitmen_13
+		x = 2
+		y = 1
+		cost = 10.0
+		completion_reward = {
+			add_manpower = 1500
+		}
+	}
+	
+	focus = {
+		id = Minitmen_15
+		icon = GFX_goal_NCR_Blast_from_the_Past
+		relative_position_id = Minitmen_13
+		cost = 8.6
+		available = {
+		917 = { is_controlled_by = MEN } 
+		}
+		prerequisite = {
+			focus = Minitmen_13
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_15 entered"
+			}
+			add_tech_bonus = {
+				name = explosive_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_ideas = blastfromthepast
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_15 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_16
+		icon = GFX_goal_MEN_1
+		relative_position_id = Minitmen_13
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_13
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_16 entered"
+			}
+			add_ideas = minitmen_protect
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_16 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_17
+		icon = GFX_goal_generic_supplies_focus
+		prerequisite = {focus = Minitmen_16}
+		prerequisite = {focus = Minitmen_15}
+		prerequisite = {focus = Minitmen_14}
+		available = {
+			917 = { is_controlled_by = MEN } #do we actually own it right now?
+		}
+		ai_will_do = { factor = 1 }
+		relative_position_id = Minitmen_16
+		x = 1
+		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 1000 producer = ERB }
+		}
+		cost = 7.8
+	}
+	
+	focus = {
+		id = Minitmen_18
+		icon = GFX_goal_generic_food_focus
+		relative_position_id = Minitmen_16
+		cost = 8.6
+		x = -1
+		y = 1
+        prerequisite = {focus = Minitmen_16}
+		prerequisite = {focus = Minitmen_15}
+		prerequisite = {focus = Minitmen_14}
+		available = {
+			918 = { is_owned_and_controlled_by = ROOT }
+			923 = { is_owned_and_controlled_by = ROOT }
+			926 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_18 entered"
+			}
+			923 = {
+				add_manpower = 250
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = water_generator
+					level = 2
+					instant_build = yes
+				}
+			}
+			926 = {
+				add_manpower = 250
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = water_generator
+					level = 1
+					instant_build = yes
+				}
+			}
+			918 = {
+				add_manpower = 250
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = water_generator
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_18 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_20
+		icon = GFX_goal_fortindependens
+		prerequisite = { focus = Minitmen_19 }
+		relative_position_id = Minitmen_19
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = RSD
+
+		cost = 0.5
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = RSD
+			}
+			RSD = { exists = yes }
+		}
+
+		bypass = {
+			RSD = { exists = no }
+			RSD = { is_subject_of = MEN}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = RSD
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = MEN
+						tag = RSD
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = MEN
+							tag = RSD
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_19
+		icon = GFX_goal_VLT_all_clear
+		prerequisite = { focus = Minitmen_6 }
+		relative_position_id = Minitmen_6
+		cost = 7.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+		has_completed_focus = Minitmen_16
+		918 = { is_controlled_by = MEN } 
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.4
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_21
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 2.0
+		x = 9
+		y = 0
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_10 entered"
+			}
+			army_experience = 25
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] vault101_10 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_22
+		icon = GFX_goal_enc_election
+		relative_position_id = Minitmen_20
+		cost = 1.00
+		available = {
+		date > 2278.1.1	
+		}
+		prerequisite = {
+			focus = Minitmen_20
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_22 entered"
+			}
+			country_event = {
+				id = Minitmeni.5
+			}
+			hidden_effect = {
+			       country_event = { days = 3 id = newsfallout.9 }
+		    }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_22 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_23
+		icon = GFX_goal_MEN_1
+		relative_position_id = Minitmen_12
+		x = 0
+		y = 3
+
+		cost = 7.9
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+        has_completed_focus = Minitmen_22
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 125
+			set_technology = {
+			stripped_pa_tech = 1
+			}
+			add_equipment_to_stockpile = { type = power_armor_equipment amount = 600 producer = MEN }
+			load_oob = MEN_2278
+		}
+	}
+	
+	focus = {
+		id = Minitmen_24
+		text = Minitmen_24
+		icon = GFX_goal_Men_rules1
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_23
+		}
+		mutually_exclusive = {
+			focus = Minitmen_25
+			focus = Minitmen_26
+			focus = Minitmen_27
+		}
+		x = -6
+		y = 1
+		relative_position_id = Minitmen_23
+		available = {
+			has_country_leader = {
+				id = 2002
+				ruling_only = yes
+				name = "Престон Гарви"
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_24 entered"
+			}
+			add_political_power = 60
+			add_ideas = prestonnew
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_24 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_25
+		text = Minitmen_25
+		icon = GFX_goal_Men_intelegents1
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_23
+		}
+		mutually_exclusive = {
+			focus = Minitmen_24
+			focus = Minitmen_26
+			focus = Minitmen_27
+		}
+		x = -2
+		y = 1
+		relative_position_id = Minitmen_23
+		available = {
+			has_country_leader = {
+				id = 2001
+				ruling_only = yes
+				name = "Ли Хаммонд"
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_25 entered"
+			}
+			add_political_power = 60
+			add_ideas = oldways
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_25 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_26
+		text = Minitmen_26
+		icon = GFX_goal_Men_elite1
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_23
+		}
+		mutually_exclusive = {
+			focus = Minitmen_24
+			focus = Minitmen_25
+			focus = Minitmen_27
+		}
+		x = 2
+		y = 1
+		relative_position_id = Minitmen_23
+		available = {
+			has_country_leader = {
+				id = 2000
+				ruling_only = yes
+				name = "Мелман Ван Хуттен"
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_26 entered"
+			}
+			add_political_power = 60
+			add_ideas = blackminitmenidea
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_26 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_27
+		text = Minitmen_27
+		icon = GFX_goal_Men_usa1
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_23
+		}
+		mutually_exclusive = {
+			focus = Minitmen_24
+			focus = Minitmen_25
+			focus = Minitmen_26
+		}
+		x = 6
+		y = 1
+		relative_position_id = Minitmen_23
+		available = {
+			has_country_leader = {
+				id = 2003
+				ruling_only = yes
+				name = "Выходец из Убежища 111"
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_26 entered"
+			}
+			add_political_power = 60
+			add_ideas = UsSupport
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_26 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_28
+		icon = GFX_goal_Poselenie
+		relative_position_id = Minitmen_24
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_24
+		}
+		x = 0
+		y = 1
+		available = {
+			controls_state = 917
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] newyork.6 entered"
+			}
+			add_political_power = 100
+			add_manpower = 1245
+			917 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] newyork.6 exited"
+			}
+		}
+	}
+		
+	focus = {
+		id = Minitmen_29
+		icon = GFX_goal_Men_elite1
+		relative_position_id = Minitmen_28
+		prerequisite = { focus = Minitmen_28 }
+		cost = 7.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = STR
+			}
+			STR = { exists = yes }
+		}
+
+		bypass = {
+			STR = { exists = no }
+			STR = { is_subject_of = MEN}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.6
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_30
+		icon = GFX_goal_MEN_1
+		relative_position_id = Minitmen_29
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_29
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
+			}
+			add_tech_bonus = { bonus = 0.4 uses = 2 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_31
+		icon = GFX_goal_generic_building_focus
+		relative_position_id = Minitmen_56
+		cost = 8.6
+		prerequisite = {
+			focus = Minitmen_56
+		}
+		x = 0
+		y = 1
+		available = {
+			controls_state = 919
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_31 entered"
+			}
+			919 = {
+				add_resource = {
+					type = electricity
+					amount = 13
+				}
+				add_resource = {
+					type = advanced_technology
+					amount = 8
+				}
+				add_resource = {
+					type = fuel
+					amount = 12
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_31 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_32
+		icon = GFX_goal_Army_deportament
+		relative_position_id = Minitmen_27
+		cost = 10.6
+		prerequisite = {
+			focus = Minitmen_27
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_33
+		icon = GFX_goal_Army_deportament1
+		prerequisite = { focus = Minitmen_32 }
+		relative_position_id = Minitmen_32
+		x = 0
+		y = 1
+
+		cost = 7.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 2500
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 1000 producer = MEN }
+			add_ideas = NaborUs
+		}
+	}
+	
+	focus = {
+		id = Minitmen_34
+		icon = GFX_goal_generic_military_industry_focus
+		prerequisite = { focus = Minitmen_33 }
+		relative_position_id = Minitmen_33
+		cost = 8.6
+		x = 0
+		y = 1
+		available = {
+			has_completed_focus = Minitmen_33
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					has_completed_focus = Minitmen_33
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_34 entered"
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_34 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_35
+		icon = GFX_goal_Dobrososedstva1
+		cost = 10.00
+		prerequisite = { focus = Minitmen_34 }
+		relative_position_id = Minitmen_34
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.11
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_36
+		icon = GFX_goal_Attack_on_usa
+		prerequisite = { focus = Minitmen_35 }
+		relative_position_id = Minitmen_35
+		x = 0
+		y = 1
+		
+
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			has_full_control_of_state = 923
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 923 # Carson City
+				}
+				MEN = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_37
+		icon = GFX_goal_generic_recruitment_focus
+		prerequisite = { focus = Minitmen_26 }
+		relative_position_id = Minitmen_26
+		x = 0
+		y = 1
+
+		cost = 7.0
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 6230
+		}
+	}
+	
+	focus = {
+		id = Minitmen_38
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_37 }
+		relative_position_id = Minitmen_37
+		x = 0
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			has_full_control_of_state = 923
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 923 # Carson City
+				}
+				MEN = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_39
+		icon = GFX_goal_legion_slaves
+		prerequisite = { focus = Minitmen_38 }
+		relative_position_id = Minitmen_38
+		x = 0	
+		y = 1
+
+		cost = 12.9
+
+		ai_will_do = {
+			factor = 60			
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = brk_slave
+			add_political_power = 45
+			add_manpower = -200
+		}
+	}
+	
+	focus = {
+		id = Minitmen_40
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = Minitmen_39 }
+		relative_position_id = Minitmen_39
+		cost = 10.6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = Minitmen_39
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_40 entered"
+			}
+			swap_ideas = {
+				add_idea = brk_slave_1
+				remove_idea = brk_slave
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_40 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_41
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_40 }
+		relative_position_id = Minitmen_40
+		x = 0
+		y = 1
+
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+           RIJ = { exists = no }
+		}
+
+		bypass = {
+			has_full_control_of_state = 919
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 919 # Carson City
+				}
+				MEN = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_42
+		icon = GFX_goal_MEN_2
+		relative_position_id = Minitmen_25
+		prerequisite = { focus = Minitmen_25 }
+		cost = 7.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.12
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_43
+		icon = GFX_goal_MEN_3
+		relative_position_id = Minitmen_42
+		prerequisite = { focus = Minitmen_42 }
+		cost = 7.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = BSS
+			}
+			BSS = { exists = yes }
+		}
+
+		bypass = {
+			BSS = { exists = no }
+			BSS = { is_subject_of = MEN}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.13
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_44
+		icon = GFX_goal_sbs_scientist
+		prerequisite = {focus = Minitmen_43}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = Minitmen_43
+		x = 0
+		y = 1
+		cost = 8.6
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = Minitmen_45
+		icon = GFX_goal_MEN_4
+		prerequisite = { focus = Minitmen_44 }
+		relative_position_id = Minitmen_44
+		x = 0
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			has_full_control_of_state = 919
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 919 # Carson City
+				}
+				MEN = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_46
+		icon = GFX_goal_Minutamen3
+		prerequisite = { focus = Minitmen_5 }
+		ai_will_do = { factor = 100 } 
+		relative_position_id = Minitmen_5
+		x = 8
+		y = 2
+		cost = 5.0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = Minitmen_47
+		icon = GFX_goal_Minutamen2
+		prerequisite = { focus = Minitmen_46 }
+		relative_position_id = Minitmen_46
+		cost = 10.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.14
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_48
+		icon = GFX_goal_generic_military_industry_focus
+		relative_position_id = Minitmen_47
+		ai_will_do = { factor = 100 } 
+		cost = 7.0
+		prerequisite = {focus = Minitmen_47}
+		x = -2
+		y = 1
+		available = {
+			controls_state = 929
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_48 entered"
+			}
+			929 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_48 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_49
+		icon = GFX_goal_Poselenie
+		relative_position_id = Minitmen_47
+		ai_will_do = { factor = 89 } 
+		cost = 7.0
+		prerequisite = {
+			focus = Minitmen_47
+		}
+		x = 2
+		y = 1
+		available = {
+			controls_state = 929
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_49 entered"
+			}
+			929 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Minitmen_49 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_50
+		icon = GFX_goal_doroga
+		prerequisite = { focus = Minitmen_47 }
+		ai_will_do = { factor = 88 } 
+		relative_position_id = Minitmen_47
+		x = 0
+		y = 1
+		cost = 7.8
+		completion_reward = {
+			add_political_power = 50
+			929 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+			926 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_51
+		icon = GFX_goal_konkord
+		prerequisite = { focus = Minitmen_50 }
+		prerequisite = { focus = Minitmen_49 }
+		prerequisite = { focus = Minitmen_48 }
+		relative_position_id = Minitmen_50
+		x = 0
+		y = 2
+		
+		will_lead_to_war_with = KOV
+
+		cost = 2.0
+
+		ai_will_do = {
+			factor = 85
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    927 = { add_core_of = MEN }
+			create_wargoal = {
+				type = annex_everything
+				target = KOV
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = MEN
+						tag = KOV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = MEN
+							tag = KOV
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_52
+		icon = GFX_goal_Minutamen4
+		prerequisite = { focus = Minitmen_51 }
+		relative_position_id = Minitmen_51
+		cost = 10.00
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 82
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = Minitmeni.17
+		    }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_53
+		icon =GFX_goal_Senkchuary
+		prerequisite = { focus = Minitmen_52 }
+		available = {
+			918 = { is_controlled_by = MEN } 
+		}
+		ai_will_do = { factor = 100 } 
+		relative_position_id = Minitmen_52
+		x = -1
+		y = 1
+		cost = 0.5
+		completion_reward = {
+			set_capital = 918
+			918 = { add_core_of = MEN }
+			918 = {
+				set_state_name = "forpo"
+			}
+			annex_country = { target = KOV transfer_troops = yes }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_54
+		icon = GFX_goal_fortindependens
+		prerequisite = { focus = Minitmen_52 }
+		available = {
+		917 = { is_controlled_by = MEN } 
+		}
+		ai_will_do = { factor = 12 } 
+		relative_position_id = Minitmen_52
+		x = 1
+		y = 1
+		cost = 0.5
+		completion_reward = {
+			set_capital = 917
+			917 = { add_core_of = MEN }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_55
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = Minitmen_22
+		prerequisite = {
+			focus = Minitmen_22
+		}
+		x = 0
+		y = 1
+
+		cost = 6.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		INS = { exists = no }
+		BSS = { exists = no }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	
+	focus = {
+		id = Minitmen_56
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_30 }
+		relative_position_id = Minitmen_30
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = STR
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			has_full_control_of_state = 919
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 919 # Carson City
+				}
+				MEN = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_57
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_45 }
+		relative_position_id = Minitmen_45
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = RIJ
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+           STR = { exists = no }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = RIJ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = USD
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_58
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_41 }
+		relative_position_id = Minitmen_41
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = BSS
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+          STR = { exists = no }
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BSS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = USD
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_59
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_36 }
+		relative_position_id = Minitmen_36
+		x = 0
+		y = 1
+		
+
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+          RIJ = { exists = no }
+		}
+
+		bypass = {
+			has_full_control_of_state = 919
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 919 # Carson City
+				}
+				MEN = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_60
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_59 }
+		relative_position_id = Minitmen_59
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = BSS
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+         STR = { exists = no }
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BSS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = USD
+			}
+		}
+	}
+	
+	focus = {
+		id = Minitmen_61
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = Minitmen_53
+		x = 1
+		y = 1
+
+		cost = 20.0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		controls_state = 920
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_technology = { scientific_civilization = 1 }
+			add_political_power = 100
+			add_research_slot = 1
+		}
+	}

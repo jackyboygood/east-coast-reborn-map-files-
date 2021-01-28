@@ -1,0 +1,83 @@
+﻿capital = 940
+oob = "ESC_2275"
+
+
+
+set_technology = {
+	# baseline techs
+	tribal_civilization = 1
+	settled_civilization = 1
+	#industry
+	oral_instruction = 1
+	#infantry
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	#support
+	explosive_tech = 1
+	anti_personnel_tech = 1
+	support_weaponry = 1
+	#vehicle
+	bike_tech_1 = 1
+	#naval
+	destroyer_tech = 1
+	destroyer_tech_2 = 1
+	cruiser_tech = 1
+	naval_invasion_tech = 1
+	heavy_cruiser_tech = 1
+}
+
+set_stability = 0.65
+set_war_support = 0.45
+set_convoys = 100
+set_rule = { can_join_factions = no }
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 25
+	intellectuals = 5
+	ruler = 70
+}
+
+add_ideas = {
+	 warmonger
+   }
+
+create_country_leader = {
+	name = "King Tom"
+	desc = "KENNETH_DESC"
+	picture = "gfx/leaders/ESC/King_TOM.dds"
+	expire = "3000.1.1"
+	ideology = benevolent_dictatorship
+	traits = {
+		cruel_tyrant
+	}
+}
+
+create_country_leader = {
+	name = "President Tom"
+	desc = "KENNETH_DESC"
+	picture = "gfx/leaders/ESC/King_TOM.dds"
+	expire = "3000.1.1"
+	ideology = town_hall_democracy
+	traits = {
+		cruel_tyrant
+	}
+}
+
+create_field_marshal = {
+	name = "Miguel Sanchez"
+	portrait_path = "gfx/leaders/ESC/gener.dds"
+	skill = 4
+	traits = {
+		offensive_doctrine
+	}
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+}

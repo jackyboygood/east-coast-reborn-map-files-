@@ -1,0 +1,136 @@
+﻿division_template = {
+	name = "Livirbil Infantry"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 0 y = 5 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon_company = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Livirbil motorized infantry"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division {
+		name = "Livirbil Infantry"
+		location = 11592
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil Infantry"
+		location = 11594
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil Infantry"
+		location = 11599
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11607
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil Infantry"
+		location = 11608
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11611
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil Infantry"
+		location = 11610
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11603
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11592
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil Infantry"
+		location = 11594
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11610
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil Infantry"
+		location = 11608
+		division_template = "Livirbil Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11607
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division {
+		name = "Livirbil motorized infantry"
+		location = 11599
+		division_template = "Livirbil motorized infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+}
