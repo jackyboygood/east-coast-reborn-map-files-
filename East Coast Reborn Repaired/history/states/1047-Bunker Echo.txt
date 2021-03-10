@@ -1,0 +1,10 @@
+state={
+	id=1047
+	name="Bunker Echo"
+	provinces={
+		1418 12893 12894 12895 12896 12897 12898 12899 12900 12901 12902 12903 
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

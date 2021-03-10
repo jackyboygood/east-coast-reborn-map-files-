@@ -1,0 +1,9 @@
+state={
+	id=996
+	name="Swamp Hut"
+	provinces={
+		1064 12516 12517 12518 12519 12520 12521 12522 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+state={
+	id=1011
+	name="Saugus Ironworks"
+	provinces={
+		1398 12638 12639 12640 12641 12642 12643 12644 12645 12646 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+state={
+	id=949
+	name="East Mountain"
+	provinces={
+		13041 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

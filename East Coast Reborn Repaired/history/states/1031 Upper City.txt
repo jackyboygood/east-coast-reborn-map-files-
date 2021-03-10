@@ -1,0 +1,9 @@
+state={
+	id=1031
+	name="Upper City"
+	provinces={
+		12722 12724 12725 12726 12727 12728
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+state={
+	id=959
+	name="Crambury Island"
+	provinces={
+		683 13108 13109 13110 13111 13112 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

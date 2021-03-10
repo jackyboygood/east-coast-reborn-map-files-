@@ -1,0 +1,9 @@
+state={
+	id=1009
+	name="Sanctuary"
+	provinces={
+		12624 12625 12626 12627 12628 12629 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

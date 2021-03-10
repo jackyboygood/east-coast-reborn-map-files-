@@ -1,0 +1,25 @@
+state={
+	id=1022
+	name="Paradise Falls"
+	history={
+		owner = RAB
+		add_core_of = RAB
+
+		victory_points = {
+			1051 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 4
+			industrial_complex = 3
+
+		}
+	}
+
+	provinces={
+		1022 1051 1067 1120 12494 12501 13186 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category = city
+}

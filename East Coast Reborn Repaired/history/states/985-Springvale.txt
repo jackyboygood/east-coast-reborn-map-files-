@@ -1,0 +1,25 @@
+state={
+	id=985
+	name="Springvale"
+	history={
+		owner = USP
+		add_core_of = USP
+
+		victory_points = {
+			12361 10
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	
+	provinces={
+		12360 12361 12362 12363 
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category = town
+}

@@ -1,0 +1,9 @@
+state={
+	id=957
+	name="Brookshad Lighthouse"
+	provinces={
+		13100 13101 13102 13103 13104 13105 13106 13107 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

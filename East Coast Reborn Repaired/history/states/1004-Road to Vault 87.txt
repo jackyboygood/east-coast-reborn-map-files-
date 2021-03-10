@@ -1,0 +1,9 @@
+state={
+	id=1004
+	name="Road to Vault 87"
+	provinces={
+		12426 12427 12428 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

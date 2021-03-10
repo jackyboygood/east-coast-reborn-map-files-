@@ -1,0 +1,9 @@
+state={
+	id=1019
+	name="North Mountain"
+	provinces={
+		12987 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

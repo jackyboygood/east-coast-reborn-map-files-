@@ -1,0 +1,24 @@
+state={
+	id=984
+	name="Northern Paradise Falls"
+	history={
+		owner = RAB
+		add_core_of = RAB
+
+		victory_points = {
+			12462 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+	}
+	provinces={
+		12458 12459 12460 12461 12462 
+	}
+	manpower=2500
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}

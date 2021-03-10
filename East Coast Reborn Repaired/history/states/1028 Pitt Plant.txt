@@ -1,0 +1,9 @@
+state={
+	id=1028
+	name="Pitt Plant"
+	provinces={
+		12716 12717 12718 12719 12720 12721
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

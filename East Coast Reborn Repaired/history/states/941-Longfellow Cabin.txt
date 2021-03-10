@@ -1,0 +1,9 @@
+state={
+	id=941
+	name="LONGFELLOW CABIN"
+	provinces={
+		13003 13004 13005 13006 13007 13008 13009 13010 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

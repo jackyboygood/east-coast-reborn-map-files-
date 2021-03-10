@@ -1,0 +1,25 @@
+state={
+	id=993
+	name="Metro"
+	history={
+		owner = ROY
+		add_core_of = ROY
+
+		victory_points = {
+			 12702 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+	}
+
+	provinces={
+		12698 12699 12700 12701 12702 12703 12704 12705 12706 12707 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

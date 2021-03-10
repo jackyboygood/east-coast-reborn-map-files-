@@ -1,0 +1,9 @@
+state={
+	id=1013
+	name="Boston Airport"
+	provinces={
+		1340 1355 1368 1375 12647 12648 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

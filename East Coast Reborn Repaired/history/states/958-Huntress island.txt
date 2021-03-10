@@ -1,0 +1,9 @@
+state={
+	id=958
+	name="Huntress Island"
+	provinces={
+		685 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

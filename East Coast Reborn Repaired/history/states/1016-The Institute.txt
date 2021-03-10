@@ -1,0 +1,9 @@
+state={
+	id=1016
+	name="The Institute"
+	provinces={
+		1284 1302 12659 12660 12661 12662 12663 12664 12665 12666 12667 12668 12669 12670 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+state={
+	id=969
+	name="Ruined Danbury"
+	provinces={
+		1239 8724 12585 12586 12587 12588 12589 12590 12591 12592 12593 12594 12595 12596 12597 12598 12599 12600 12601 12602 12603 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

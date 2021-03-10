@@ -1,0 +1,9 @@
+state={
+	id=1024
+	name="Rock Hills Supermarket"
+	provinces={
+		1084 1088 1089 1090 1092 1094 1101 1111 1124
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

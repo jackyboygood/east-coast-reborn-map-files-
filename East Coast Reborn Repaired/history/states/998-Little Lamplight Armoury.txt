@@ -1,0 +1,9 @@
+state={
+	id=998
+	name="Little Lamplight Armoury"
+	provinces={
+		12409 12410 12411 12412 12413 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

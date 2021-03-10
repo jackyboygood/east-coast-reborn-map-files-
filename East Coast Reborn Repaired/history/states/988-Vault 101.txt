@@ -1,0 +1,25 @@
+state={
+	id=988
+	name="Vault 101"
+	history={
+		owner = USP
+		add_core_of = USP
+
+		victory_points = {
+			12359 25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 3
+
+		}
+	}
+	
+	provinces={
+		1079 12359 12364 12365 
+	}
+	manpower=6000
+	buildings_max_level_factor=1.000
+	state_category = city
+}

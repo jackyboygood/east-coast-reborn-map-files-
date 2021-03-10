@@ -1,0 +1,9 @@
+state={
+	id=1027
+	name="East Port of New York"
+	provinces={
+		12570 12571 12572 12573 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+state={
+	id=954
+	name="Azalea"
+	provinces={
+		633 13062 13063 13064 13065 13066 13067 13068 13069 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,9 @@
+state={
+	id=950
+	name="Ringe Cove"
+	provinces={
+		454 13161 13162 13163 13164 13165 13166 13167 13168 13169 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

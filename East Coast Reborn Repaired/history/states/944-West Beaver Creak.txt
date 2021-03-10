@@ -1,0 +1,9 @@
+state={
+	id=944
+	name="West Beaver Creek"
+	provinces={
+		13011 13012 13013 13014 13015 13016 13017 13018 13019 13020 13021 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

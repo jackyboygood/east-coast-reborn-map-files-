@@ -1,0 +1,9 @@
+state={
+	id=1025
+	name="Arlington Cemetery"
+	provinces={
+		12349 12350 12351 12352
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

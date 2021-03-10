@@ -1,0 +1,25 @@
+state={
+	id=1003
+	name="Adams Air Force Base"
+	history={
+		owner = ESP
+		add_core_of = ESP
+
+		victory_points = {
+			12382  25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 5
+			industrial_complex = 2
+
+		}
+	}
+
+	provinces={
+		1148 12378 12379 12380 12381 12382 12383 12384 
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

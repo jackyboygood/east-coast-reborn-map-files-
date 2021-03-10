@@ -1,0 +1,9 @@
+state={
+	id=1000
+	name="Tom's Castle"
+	provinces={
+		1181 12741 12742 12743 12744 12745 12746 12747 12748 12749 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

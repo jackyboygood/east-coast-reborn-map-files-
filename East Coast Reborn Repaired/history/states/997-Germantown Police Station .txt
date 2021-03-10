@@ -1,0 +1,26 @@
+state={
+	id=997
+	name="Germantown Police Station"
+	history={
+		owner = AUC
+		add_core_of = AUC
+
+		victory_points = {
+			 12430 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 1
+
+		}
+	}
+
+
+	provinces={
+		12429 12430 12431 12432 12433 
+	}
+	manpower=4000
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

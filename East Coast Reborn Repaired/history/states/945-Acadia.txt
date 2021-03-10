@@ -1,0 +1,9 @@
+state={
+	id=945
+	name="Acadia"
+	provinces={
+		13043 13044 13045 13046 13047 13048 13049 13050 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

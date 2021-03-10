@@ -1,0 +1,25 @@
+state={
+	id=1001
+	name="Fort Foxtrot"
+	history={
+		owner = RAR
+		add_core_of = RAR
+
+		victory_points = {
+			12377 15
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+	}
+
+	provinces={
+		1133 1139 1153 12366 12367 12368 12369 12370 12371 12372 12373 12374 12375 12376 12377 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

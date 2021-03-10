@@ -1,0 +1,9 @@
+state={
+	id=1021
+	name="Ruins of Quincy"
+	provinces={
+		1251 1275 12671 12672 12673 12674 12675 12676 12677 12678 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

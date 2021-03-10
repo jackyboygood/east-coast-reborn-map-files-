@@ -1,0 +1,10 @@
+state={
+	id=1033
+	name="East Bridge of detroit"
+	provinces={
+		8670 12971 12972
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

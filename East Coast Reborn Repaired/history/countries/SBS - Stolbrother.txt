@@ -1,4 +1,4 @@
-﻿capital = 867
+﻿capital = 1070
 oob = "SBS_2265"
 set_technology = {
 	elite_army = 1

@@ -1,0 +1,9 @@
+state={
+	id=960
+	name="Vim's Lemonade Factory"
+	provinces={
+		13137 13138 13139 13140 13141 13142 13143 13144 13145 13146 13147 13148 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

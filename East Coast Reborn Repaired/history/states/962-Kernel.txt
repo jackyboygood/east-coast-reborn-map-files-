@@ -1,0 +1,9 @@
+state={
+	id=962
+	name="Kernel"
+	provinces={
+		13113 13114 13115 13116 13117 13118 13119 13120 13121 13122 13123 13124 13125 13126 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

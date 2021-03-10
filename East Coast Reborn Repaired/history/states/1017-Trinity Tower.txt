@@ -1,0 +1,9 @@
+state={
+	id=1017
+	name="Trinity Tower"
+	provinces={
+		1307 1308 1311 1324 1342 1356 1360 1364 12693 12694 12695 12696 12697 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

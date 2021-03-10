@@ -1,0 +1,9 @@
+state={
+	id=1002
+	name="Barricade Vault 87"
+	provinces={
+		12398 12399 12400 12401 12402 12403 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

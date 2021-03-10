@@ -1,0 +1,9 @@
+state={
+	id=964
+	name="Atom's Source"
+	provinces={
+		465 13181 13182 13183 13184 13185 13187 13188 13189 13190 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

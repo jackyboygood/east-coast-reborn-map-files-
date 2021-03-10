@@ -1,0 +1,9 @@
+state={
+	id=966
+	name="Old House by the Pound"
+	provinces={
+		13078 13079 13080 13081 13082 13083 13084 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

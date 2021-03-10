@@ -1,0 +1,10 @@
+state={
+	id=1046
+	name="STATE_1046"
+	provinces={
+		12879  12878 12883 12877 12886 12885 12884 12890 12887 12888 12889 12881 12876 12875 12882 8688 12880 12891 12892 1429
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis 
+}

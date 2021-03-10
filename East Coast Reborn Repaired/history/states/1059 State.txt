@@ -1,0 +1,10 @@
+state={
+	id=1059
+	name="STATE_1059"
+	provinces={
+		12816 12811 12813 653 12818 12819 12815 12814 12812 12817 12824 12808 12825
+	}
+	manpower=4000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

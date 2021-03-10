@@ -176,7 +176,6 @@ is_settler_nation = {
 		original_tag = USD
 		original_tag = BAA
 		original_tag = BAG
-		original_tag = CAA
 		original_tag = MEN
 		original_tag = CCC
 		original_tag = DAD
@@ -242,7 +241,6 @@ is_brotherhood_nation = {
 		original_tag = NBS
 		original_tag = BSS
 		original_tag = SBS
-		original_tag = DAA
 		has_country_flag = is_brotherhood_nation
 	}
 	NOT = { has_country_flag = not_a_brotherhood_nation }

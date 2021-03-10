@@ -1,0 +1,11 @@
+state={
+	id=972
+	name="Chicago Harbor"
+	provinces={
+		12785 12786 12787 12788 12789 
+	}
+	manpower=17580
+	buildings_max_level_factor=1.000
+	state_category= megalopolis
+
+}

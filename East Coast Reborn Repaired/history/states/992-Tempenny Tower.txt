@@ -1,0 +1,25 @@
+state={
+	id=992
+	name="Tempenny Tower"
+	history={
+		owner = TEN
+		add_core_of = TEN
+
+		victory_points = {
+			 12480 25
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 6
+
+		}
+	}
+
+	provinces={
+		12476 12477 12478 12479 12480 12481 12482 12483 12484 12485 12486 12487 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category = city 
+}

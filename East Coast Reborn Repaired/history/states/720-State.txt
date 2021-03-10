@@ -1,0 +1,11 @@
+
+state={
+	id=720
+	name="Echo Base Food Warehouse"
+	provinces={
+		12969 1403 1396 12967 12966 12965 12964 12968
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

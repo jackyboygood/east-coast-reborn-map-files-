@@ -1,0 +1,25 @@
+state={
+	id=979
+	name="Rangers Base"
+	history={
+		owner = RAR
+		add_core_of = RAR
+
+		victory_points = {
+			1132 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 2
+
+		}
+	}
+
+	provinces={
+		1127 1132 1136 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category = town
+}

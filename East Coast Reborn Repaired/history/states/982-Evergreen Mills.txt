@@ -1,0 +1,9 @@
+state={
+	id=982
+	name="Evergreen Mills"
+	provinces={
+		1040 12449 12450 12451 12452 12453 12454 12455 12456 12457 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

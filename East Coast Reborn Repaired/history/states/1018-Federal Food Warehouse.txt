@@ -1,0 +1,9 @@
+state={
+	id=1018
+	name="Federal Food Warehouse"
+	provinces={
+		1294 1319 1333 1344 12686 12687 12688 12689 12690 12691 12692 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

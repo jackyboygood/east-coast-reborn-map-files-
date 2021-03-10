@@ -1,0 +1,9 @@
+state={
+	id=1051
+	name="Gwinnet Restaurant"
+	provinces={
+		12657 12658 12656 12655 12654 12653 12651 1273 12652
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

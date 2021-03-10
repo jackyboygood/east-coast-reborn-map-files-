@@ -1,0 +1,11 @@
+
+state={
+	id=970
+	name="The Ancient Forest"
+	provinces={
+		13 440 651 678 12827 12828 12829 12830 12831 12832 12833 12834 12835 
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

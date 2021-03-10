@@ -1,0 +1,9 @@
+state={
+	id=952
+	name="Wind Farm"
+	provinces={
+		13057 13058 13059 13060 13061 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

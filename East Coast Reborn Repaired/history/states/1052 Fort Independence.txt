@@ -1,0 +1,9 @@
+state={
+	id=1052
+	name="Fort Indepence"
+	provinces={
+		12649 12650 1252
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

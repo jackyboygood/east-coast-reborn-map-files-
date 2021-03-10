@@ -1,0 +1,9 @@
+state={
+	id=967
+	name="Mirmika"
+	provinces={
+		45 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

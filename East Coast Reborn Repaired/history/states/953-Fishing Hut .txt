@@ -1,0 +1,9 @@
+state={
+	id=953
+	name="Fishing Hut"
+	provinces={
+		13051 13052 13053 13054 13055 13056 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

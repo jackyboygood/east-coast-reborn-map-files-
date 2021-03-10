@@ -1,0 +1,10 @@
+state={
+	id=1045
+	name="Forest Mine"
+	provinces={
+		245 670 12836 12837 12838 12839 12840 12841 12842 12843 
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

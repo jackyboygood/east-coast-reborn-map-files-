@@ -1,0 +1,9 @@
+state={
+	id=991
+	name="Corvega Landfill"
+	provinces={
+		12444 12445 12446 12447 12448 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

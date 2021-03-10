@@ -1,0 +1,9 @@
+state={
+	id=1010
+	name="Concord"
+	provinces={
+		1373 12630 12631 12632 12633 12634 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

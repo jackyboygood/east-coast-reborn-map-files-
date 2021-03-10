@@ -1,0 +1,9 @@
+state={
+	id=1030
+	name="Lower City"
+	provinces={
+		12729 12730 12731 12732 12733
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

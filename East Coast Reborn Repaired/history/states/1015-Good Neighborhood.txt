@@ -1,0 +1,9 @@
+state={
+	id=1015
+	name="Good Neighborhood"
+	provinces={
+		1295 1303 1310 1312 1321 1326 1332 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

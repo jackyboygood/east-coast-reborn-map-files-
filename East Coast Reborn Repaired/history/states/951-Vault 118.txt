@@ -1,0 +1,9 @@
+state={
+	id=951
+	name="Vault 118"
+	provinces={
+		13127 13128 13129 13130 13131 13132 13133 13134 13135 13136 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

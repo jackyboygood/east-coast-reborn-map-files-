@@ -1,0 +1,9 @@
+state={
+	id=1029
+	name="Port of The Pitt"
+	provinces={
+		12708 12709 12710 12711 12712 12713 12714 12715
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

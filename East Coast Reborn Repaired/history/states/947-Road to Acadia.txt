@@ -1,0 +1,9 @@
+state={
+	id=947
+	name="Road to Acadia"
+	provinces={
+		13037 13038 13039 13040 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

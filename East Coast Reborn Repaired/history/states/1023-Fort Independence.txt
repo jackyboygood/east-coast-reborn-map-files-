@@ -1,0 +1,25 @@
+state={
+	id=1023
+	name="Fort Independence"
+	history={
+		owner = IBS
+		add_core_of = IBS
+
+		victory_points = {
+			12474 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 2
+
+		}
+	}
+	
+	provinces={
+		1072 12469 12470 12471 12472 12473 12474 12475 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category = town
+}
