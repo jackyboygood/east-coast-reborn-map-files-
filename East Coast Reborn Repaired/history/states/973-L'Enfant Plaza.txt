@@ -1,27 +1,28 @@
 state={
-	id=1053
-	name="Nakano Hut"
+	id=973
+	name="L'Enfant Plaza"
 	resources = {
-
+		metal = 4
 	}
 	history={
-		owner = NAC
-		add_core_of = NAC
+		owner = VSU
+		add_core_of = VSU
 
 		victory_points = {
-			12985 25
+			12391 5
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 1
 
 		}
 	}
+
 	provinces={
-		12983 12984 12985 12986
+		1122 12391 
 	}
-	manpower=2000
+	manpower=8000
 	buildings_max_level_factor=1.000
-	state_category = rural 
+	state_category = town
 }

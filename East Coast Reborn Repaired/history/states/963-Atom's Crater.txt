@@ -1,9 +1,27 @@
 state={
 	id=963
 	name="Atom's Crater"
+	resources = {
+		
+	}
+	history={
+		owner = DAT
+		add_core_of = DAT
+
+		victory_points = {
+			12989 25
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
 	provinces={
 		1250 12989 12990 12991 12992 
 	}
-	manpower=0
+	manpower=1000
 	buildings_max_level_factor=1.000
+	state_category = rural 
 }

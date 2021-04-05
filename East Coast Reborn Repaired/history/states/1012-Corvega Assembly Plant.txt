@@ -1,9 +1,30 @@
 state={
 	id=1012
 	name="Corvega Assembly Plant"
+	resources = {
+		metal = 18
+		energy = 8
+		circuitry = 8
+	
+	}
+	history={
+		owner = DJA
+		add_core_of = DJA
+
+		victory_points = {
+			12636 25
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+	}
 	provinces={
 		1370 12635 12636 12637 
 	}
-	manpower=0
+	manpower=2500
 	buildings_max_level_factor=1.000
+	state_category = town 
 }

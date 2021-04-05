@@ -1,6 +1,10 @@
 state={
 	id=984
 	name="Northern Paradise Falls"
+	resources = {
+		circuitry = 3
+		
+	}
 	history={
 		owner = RAB
 		add_core_of = RAB

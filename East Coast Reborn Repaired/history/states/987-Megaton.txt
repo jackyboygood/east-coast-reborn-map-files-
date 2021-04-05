@@ -1,6 +1,13 @@
 state={
 	id=987
 	name="Megaton"
+	resources = {
+		metal = 8
+		water = 12
+		energy = 4
+		circuitry = 2
+		
+	}
 	history={
 		owner = USP
 		add_core_of = USP

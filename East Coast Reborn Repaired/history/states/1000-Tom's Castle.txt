@@ -1,9 +1,29 @@
 state={
 	id=1000
+	resources = {
+		metal = 8
+		energy = 4
+		
+	}
 	name="Tom's Castle"
+	history={
+		owner = ESC
+		add_core_of = ESC
+
+		victory_points = {
+			12746 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 5
+			industrial_complex = 1
+
+		}
+	}
 	provinces={
 		1181 12741 12742 12743 12744 12745 12746 12747 12748 12749 
 	}
-	manpower=0
+	manpower=8000
 	buildings_max_level_factor=1.000
+	state_category= large_town
 }

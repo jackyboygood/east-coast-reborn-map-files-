@@ -1,6 +1,13 @@
 state={
 	id=990
 	name="Big Town"
+	resources = {
+		metal = 4
+		water = 2
+		energy = 2
+		circuitry = 1
+	
+	}
 	history={
 		owner = AUA
 		add_core_of = AUA

@@ -1,6 +1,11 @@
 state={
 	id=993
 	name="Metro"
+	resources = {
+		metal = 4
+		energy = 2
+		
+	}
 	history={
 		owner = ROY
 		add_core_of = ROY

@@ -1,6 +1,11 @@
 state={
 	id=981
 	name="Oasis"
+	resources = {
+		
+		water = 10
+	
+	}
 	history={
 		owner = DIK
 		add_core_of = DIK

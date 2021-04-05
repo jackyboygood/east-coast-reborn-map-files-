@@ -1,6 +1,13 @@
 state={
 	id=979
+
 	name="Rangers Base"
+	resources = {
+		metal = 2
+		energy = 2
+		
+		
+	}
 	history={
 		owner = RAR
 		add_core_of = RAR

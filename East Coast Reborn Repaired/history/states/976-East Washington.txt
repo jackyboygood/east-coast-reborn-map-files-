@@ -1,9 +1,0 @@
-state={
-	id=976
-	name="East Washington"
-	provinces={
-		1119 1126 12394 12395 
-	}
-	manpower=0
-	buildings_max_level_factor=1.000
-}

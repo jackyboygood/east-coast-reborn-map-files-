@@ -1,9 +1,32 @@
 state={
 	id=1009
 	name="Sanctuary"
+	resources = {
+		metal = 8
+		composites = 8
+		water = 16
+		energy = 10
+		circuitry = 8
+	
+	}
+	history={
+		owner = MEN
+		add_core_of = MEN
+
+		victory_points = {
+			12627 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 7
+
+		}
+	}
 	provinces={
 		12624 12625 12626 12627 12628 12629 
 	}
-	manpower=0
+	manpower=15000
 	buildings_max_level_factor=1.000
+	state_category = city
 }

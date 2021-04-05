@@ -1,6 +1,13 @@
 state={
 	id=975
 	name="Rivet City"
+	resources = {
+		metal = 12
+		water = 16
+		energy = 15
+		circuitry = 8
+	
+	}
 	history={
 		owner = RIV
 		add_core_of = RIV

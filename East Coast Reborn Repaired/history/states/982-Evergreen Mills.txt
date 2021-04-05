@@ -1,9 +1,29 @@
 state={
 	id=982
 	name="Evergreen Mills"
+	resources = {
+		metal = 20
+		
+	}
+	history={
+		owner = AUB
+		add_core_of = AUB
+
+		victory_points = {
+			12453  25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 4
+			industrial_complex = 3
+
+		}
+	}
+
 	provinces={
 		1040 12449 12450 12451 12452 12453 12454 12455 12456 12457 
 	}
-	manpower=0
+	manpower=12000
 	buildings_max_level_factor=1.000
+	state_category = large_town
 }

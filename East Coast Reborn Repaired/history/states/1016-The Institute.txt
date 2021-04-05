@@ -1,9 +1,31 @@
 state={
 	id=1016
 	name="The Institute"
+	resources = {
+		composites = 8
+		water = 10
+		energy = 12
+		circuitry = 8
+		advanced = 8
+	}
+	history={
+		owner = INS
+		add_core_of = INS
+
+		victory_points = {
+			1284 25
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 5
+			industrial_complex = 5
+
+		}
+	}
 	provinces={
 		1284 1302 12659 12660 12661 12662 12663 12664 12665 12666 12667 12668 12669 12670 
 	}
-	manpower=0
+	manpower=20000
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

@@ -1,6 +1,12 @@
 state={
 	id=1022
 	name="Paradise Falls"
+	resources = {
+		metal = 8
+		water = 3
+		energy = 2
+		
+	}
 	history={
 		owner = RAB
 		add_core_of = RAB

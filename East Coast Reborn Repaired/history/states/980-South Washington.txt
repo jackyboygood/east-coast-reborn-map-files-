@@ -1,9 +1,30 @@
 state={
 	id=980
 	name="South Washington"
+	resources = {
+		metal = 15
+		circuitry = 2
+		
+	}
+	history={
+		owner = VSU
+		add_core_of = VSU
+
+		victory_points = {
+			1104 25
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
+
+		}
+	}
+	
 	provinces={
 		1096 1099 1104 1106 
 	}
-	manpower=0
+	manpower=25000
 	buildings_max_level_factor=1.000
+	state_category = city
 }

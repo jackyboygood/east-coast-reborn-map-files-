@@ -1,9 +1,28 @@
 state={
 	id=1024
 	name="Rock Hills Supermarket"
+	resources = {
+
+	}
+	history={
+		owner = UBS
+		add_core_of = UBS
+
+		victory_points = {
+			1101 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+	}
+	
 	provinces={
 		1084 1088 1089 1090 1092 1094 1101 1111 1124
 	}
-	manpower=0
+	manpower=6000
 	buildings_max_level_factor=1.000
+	state_category = town
 }

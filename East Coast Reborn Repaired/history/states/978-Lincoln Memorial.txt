@@ -1,9 +1,11 @@
 state={
 	id=978
 	name="Lincoln Memorial"
+	resources = {
+	}
 	history={
-		owner = SBS
-		add_core_of = SBS
+		owner = SEV
+		add_core_of = SEV
 
 		victory_points = {
 			1128 15

@@ -1,5 +1,7 @@
 state={
 	id=985
+	resources = {
+	}
 	name="Springvale"
 	history={
 		owner = USP

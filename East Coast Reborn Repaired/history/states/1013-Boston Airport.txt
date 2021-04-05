@@ -1,9 +1,29 @@
 state={
 	id=1013
 	name="Boston Airport"
+	resources = {
+		metal = 16
+		water = 10
+		
+	}
+	history={
+		owner = BSS
+		add_core_of = BSS
+
+		victory_points = {
+			1013 25
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
 	provinces={
 		1340 1355 1368 1375 12647 12648 
 	}
-	manpower=0
+	manpower=8000
 	buildings_max_level_factor=1.000
+	state_category = town
 }

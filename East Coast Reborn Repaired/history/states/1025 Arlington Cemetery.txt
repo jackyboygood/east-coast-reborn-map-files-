@@ -1,9 +1,26 @@
 state={
 	id=1025
+	resources = {
+	}
 	name="Arlington Cemetery"
+	history={
+		owner = UBS
+		add_core_of = UBS
+
+		victory_points = {
+			12350 5
+		}
+		buildings = {
+			infrastructure = 3
+		
+
+		}
+	}
+	
 	provinces={
 		12349 12350 12351 12352
 	}
-	manpower=0
+	manpower=1000
 	buildings_max_level_factor=1.000
+	state_category = rural
 }

@@ -1,6 +1,9 @@
 state={
 	id=997
 	name="Germantown Police Station"
+	resources = {
+		circuitry = 2
+	}
 	history={
 		owner = AUC
 		add_core_of = AUC

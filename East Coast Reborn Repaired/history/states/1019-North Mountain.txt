@@ -1,9 +1,24 @@
 state={
 	id=1019
 	name="North Mountain"
+	resources = {
+	
+	}
+	history={
+		owner = DAT
+		add_core_of = DAT
+
+		victory_points = {
+			12987 5
+		}
+		buildings = {
+			infrastructure = 0
+		}
+	}
 	provinces={
 		12987 
 	}
-	manpower=0
+	manpower=100
 	buildings_max_level_factor=1.000
+	state_category = wasteland 
 }

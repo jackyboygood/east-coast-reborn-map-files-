@@ -1,9 +1,26 @@
 state={
 	id=1002
 	name="Barricade Vault 87"
-	provinces={
-		12398 12399 12400 12401 12402 12403 
+	resources = {
+
 	}
-	manpower=0
+	history={
+		owner = SPP
+		add_core_of = SPP
+
+		victory_points = {
+			12401 15
+		}
+		buildings = {
+			infrastructure = 4
+		
+		}
+	}
+
+	provinces={
+		12398 12399 12400 12401 12402 12403 12428 12427 12426
+	}
+	manpower=2500
 	buildings_max_level_factor=1.000
+	state_category = town
 }

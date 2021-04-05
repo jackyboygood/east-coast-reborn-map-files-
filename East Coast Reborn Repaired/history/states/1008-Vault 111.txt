@@ -1,9 +1,30 @@
 state={
 	id=1008
 	name="Vault 111"
+	resources = {
+		metal = 8
+		water = 5
+		energy = 8
+	
+	}
+	history={
+		owner = MEN
+		add_core_of = MEN
+
+		victory_points = {
+			12618 15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
 	provinces={
 		1378 12618 12619 12620 12621 12622 12623 
 	}
-	manpower=0
+	manpower=1000
 	buildings_max_level_factor=1.000
+	state_category = rural
 }

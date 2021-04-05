@@ -1,9 +1,29 @@
 state={
 	id=1054
-	name="STATE_1054"
+	name="Port of Billsilvania"
+	resources = {
+	
+		water = 10
+	
+	}
+	history={
+		owner = BAS
+		add_core_of = BAS
+
+		victory_points = {
+			8682 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+
+		}
+	}
 	provinces={
 		8682
 	}
-	manpower=0
+	manpower=3000
 	buildings_max_level_factor=1.000
+	state_category = large_town
 }

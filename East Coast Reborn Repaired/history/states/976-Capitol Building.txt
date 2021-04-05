@@ -1,17 +1,18 @@
 state={
-	id=1018
-	name="Federal Food Warehouse"
+	id=976
+	name="Capitol Building"
 	resources = {
 		metal = 2
-		water = 15
-
+		
+		circuitry = 2
+	
 	}
 	history={
-		owner = RIJ
-		add_core_of = RIJ
+		owner = VSU
+		add_core_of = VSU
 
 		victory_points = {
-			12690 25
+			12394 15
 		}
 		buildings = {
 			infrastructure = 3
@@ -20,10 +21,11 @@ state={
 
 		}
 	}
+
 	provinces={
-		1294 1319 1333 1344 12686 12687 12688 12689 12690 12691 12692 
+		1119 1126 12394 12395 
 	}
-	manpower=4000
+	manpower=12200
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = city
 }

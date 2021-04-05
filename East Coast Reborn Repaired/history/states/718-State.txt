@@ -2,10 +2,30 @@
 state={
 	id=718
 	name="STATE_718"
+	resources = {
+		metal = 8
+		water = 6
+	
+		
+	}
+	history={
+		owner = REC
+		add_core_of = REC
+
+		victory_points = {
+			1338 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 4
+
+		}
+	}
 	provinces={
 		1347 1322 1306 1335 1241 1297 1283
 	}
-	manpower=1000
+	manpower=20000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

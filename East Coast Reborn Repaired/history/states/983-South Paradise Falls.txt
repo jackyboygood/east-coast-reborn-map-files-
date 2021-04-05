@@ -1,6 +1,12 @@
 state={
 	id=983
 	name="South Paradise Falls"
+	resources = {
+		metal = 8
+		water = 2
+		energy = 2
+		
+	}
 	history={
 		owner = RAB
 		add_core_of = RAB

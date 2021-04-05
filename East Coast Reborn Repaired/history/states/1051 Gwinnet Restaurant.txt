@@ -1,9 +1,30 @@
 state={
 	id=1051
 	name="Gwinnet Restaurant"
+	resources = {
+		metal = 8
+		
+	}
+	history={
+		owner = STR
+		add_core_of = STR
+
+		victory_points = {
+			12656 15
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+
 	provinces={
 		12657 12658 12656 12655 12654 12653 12651 1273 12652
 	}
-	manpower=0
+	manpower=4000
 	buildings_max_level_factor=1.000
+	state_category = rural 
 }
+

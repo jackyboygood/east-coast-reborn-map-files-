@@ -1,6 +1,13 @@
 state={
 	id=992
 	name="Tempenny Tower"
+	resources = {
+		metal = 4
+		water = 10
+		energy = 4
+		circuitry = 4
+		
+	}
 	history={
 		owner = TEN
 		add_core_of = TEN

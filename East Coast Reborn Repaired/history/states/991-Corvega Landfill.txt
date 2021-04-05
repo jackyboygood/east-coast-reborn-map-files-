@@ -1,9 +1,30 @@
 state={
 	id=991
 	name="Corvega Landfill"
+	resources = {
+		metal = 12
+		circuitry = 4
+		
+	}
+	history={
+		owner = AUA
+		add_core_of = AUA
+
+		victory_points = {
+			12445 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+	}
+	
+
 	provinces={
 		12444 12445 12446 12447 12448 
 	}
-	manpower=0
+	manpower=1500
 	buildings_max_level_factor=1.000
+	state_category = rural
 }

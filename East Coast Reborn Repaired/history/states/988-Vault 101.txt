@@ -1,6 +1,13 @@
 state={
 	id=988
 	name="Vault 101"
+	resources = {
+
+		water = 32
+		energy = 12
+		circuitry = 6
+		advanced = 4
+	}
 	history={
 		owner = USP
 		add_core_of = USP

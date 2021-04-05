@@ -1,6 +1,14 @@
 state={
 	id=1070
 	name="Citadel"
+	resources = {
+		metal = 15
+		composites = 3
+		water = 8
+		energy = 12
+		circuitry = 10
+		advanced = 4
+	}
 	history={
 		owner = SBS
 		add_core_of = SBS

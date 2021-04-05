@@ -1,6 +1,11 @@
 state={
 	id=974
 	name="Jefferson Memorial"
+	resources = {
+		
+		water = 50
+		
+	}
 	history={
 		owner = SBS
 		add_core_of = SBS

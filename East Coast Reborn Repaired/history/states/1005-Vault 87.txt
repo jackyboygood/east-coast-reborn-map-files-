@@ -1,9 +1,31 @@
 state={
 	id=1005
 	name="Vault 87"
+	resources = {
+		metal = 8
+		energy = 8
+		circuitry = 8
+		
+	}
+	history={
+		owner = SPP
+		add_core_of = SPP
+
+		victory_points = {
+			12405 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		12404 12405 12406 12407 12408 
 	}
-	manpower=0
+	manpower=10000
 	buildings_max_level_factor=1.000
+	state_category = large_town
 }

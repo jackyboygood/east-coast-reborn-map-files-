@@ -1,9 +1,27 @@
 state={
 	id=1004
 	name="Road to Vault 87"
-	provinces={
-		12426 12427 12428 
+	resources = {
 	}
-	manpower=0
+	history={
+		owner = SPP
+		add_core_of = SPP
+
+		victory_points = {
+			12405 5
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+
+	provinces={
+		12414 12415 12419 12425 12416 12424 
+	}
+	manpower=2000
 	buildings_max_level_factor=1.000
+	state_category = rural
 }

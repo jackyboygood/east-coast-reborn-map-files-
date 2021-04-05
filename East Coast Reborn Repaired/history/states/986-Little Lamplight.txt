@@ -1,9 +1,31 @@
 state={
 	id=986
 	name="Little Lamplight"
-	provinces={
-		1108 12414 12415 12416 12417 12418 12419 12420 12421 12422 12423 12424 12425 
+	resources = {
+		metal = 4
+		water = 5
+		energy = 4
+		
 	}
-	manpower=0
+	history={
+		owner = LIT
+		add_core_of = LIT
+
+		victory_points = {
+			12420 25
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+
+		}
+	}
+	
+	provinces={
+		1108 12417 12418 12420 12421 12422 12423 
+	}
+	manpower=4000
 	buildings_max_level_factor=1.000
+	state_category = town
 }

@@ -1,6 +1,10 @@
 state={
 	id=1001
 	name="Fort Foxtrot"
+	resources = {
+		metal = 4
+	
+	}
 	history={
 		owner = RAR
 		add_core_of = RAR
