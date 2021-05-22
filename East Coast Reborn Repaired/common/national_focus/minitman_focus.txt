@@ -12,7 +12,7 @@ focus_tree = {
 		focus = {
 		id = Minitmen_1
 		icon = GFX_goal_VLT_all_clear
-		cost = 2.0
+		cost = 7
 		x = 15
 		y = 0
 
@@ -51,7 +51,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 2.0
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -83,7 +83,6 @@ focus_tree = {
 		icon = GFX_goal_konkord
 		prerequisite = { focus = Minitmen_2 }
 		relative_position_id = Minitmen_2
-		cost = 2.0
 		x = 0
 		y = 1
 		cost = 7.0
@@ -125,7 +124,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = DJA
 
-		cost = 0.5
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -152,11 +151,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    926 = { add_core_of = MEN }
-			create_wargoal = {
-				type = annex_everything
-				target = DJA
-			}
+		    1010 = { add_core_of = MEN }
 			every_country = {
 				limit = {
 					OR = {
@@ -187,15 +182,12 @@ focus_tree = {
 		icon = GFX_goal_Minutamen1
 		prerequisite = { focus = Minitmen_4 }
 		relative_position_id = Minitmen_4
-		cost = 15.00
+		cost = 20
 		x = 0
 		y = 1
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
 		}
 
 		bypass = {
@@ -219,13 +211,13 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_6
-		icon = GFX_goal_enc_management
+		icon = GFX_goal_generic_western
 		prerequisite = { focus = Minitmen_5 }
 		relative_position_id = Minitmen_5
 		x = 3
-		y = 2
+		y = 1
 
-		cost = 21.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -247,15 +239,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = ENC_infighting_2
-				}
-				remove_ideas = ENC_infighting_2
-			}
-			else = {
-				remove_ideas = ENC_infighting
-		    }
+		add_stability = 0.1
 		}
 	}
 	
@@ -265,15 +249,20 @@ focus_tree = {
 		prerequisite = { focus = Minitmen_5 }
 		ai_will_do = { factor = 98 } 
 		relative_position_id = Minitmen_5
-		x = -4
-		y = 2
-		cost = 7.8
+		x = -3
+		y = 1
+		cost = 60
 		completion_reward = {
 			add_political_power = 50
-			932 = {
+			1009 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 4
+					instant_build = yes 
+				}
+			    add_building_construction = { 
+					type = industrial_complex 
+					level = 2
 					instant_build = yes 
 				}
 			}
@@ -288,11 +277,11 @@ focus_tree = {
 		relative_position_id = Minitmen_7
 		x = 0
 		y = 1
-		cost = 7.8
+		cost = 60
 		completion_reward = {
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 600 producer = ERB }
-			add_resource = { type = advanced_technology amount = 10 state = 928 }
-			add_resource = { type = electronics amount = 30 state = 928 }
+			add_resource = { type = advanced_technology amount = 10 state = 1008 }
+			add_resource = { type = circuitry amount = 10 state = 1008 }
 		}
 	}
 	
@@ -304,13 +293,14 @@ focus_tree = {
 		relative_position_id = Minitmen_8
 		x = 2
 		y = 1
-		cost = 7.8
+		cost = 60
 		completion_reward = {
 			add_tech_bonus = {
-				ahead_reduction = 0.2
+				ahead_reduction = 0.5
 				uses = 2
-				category = energy_weaponry_tech
+				category = energy_weaponry_tech_category
 			}
+			
 			add_tech_bonus = {
 				ahead_reduction = 0.5
 				uses = 1
@@ -321,13 +311,13 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_10
-		icon = GFX_goal_enc_scientists
+		icon = GFX_goal_ENC_science_reform
 		prerequisite = {focus = Minitmen_8}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Minitmen_8
 		x = -2
 		y = 1
-		cost = 8.6
+		cost = 60
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -338,37 +328,40 @@ focus_tree = {
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = {focus = Minitmen_8}
 		available = {
-			926 = { is_controlled_by = MEN } #do we actually own it right now?
+			1010 = { is_controlled_by = MEN } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
 		relative_position_id = Minitmen_8
 		x = 0
 		y = 1
 		completion_reward = {
-			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 500 producer = ERB }
+			add_equipment_to_stockpile = { 
+			type = energy_equipment_1 
+			amount = 500 
+			producer = USA }
 		}
-		cost = 7.8
+		cost = 60
 	}
 	
 	focus = {
 		id = Minitmen_12
 		icon = GFX_goal_generic_military_industry_focus
 		relative_position_id = Minitmen_11
-		cost = 8.6
+		cost = 60
 		prerequisite = {focus = Minitmen_9}
 		prerequisite = {focus = Minitmen_10}
 		prerequisite = {focus = Minitmen_11}
 		x = 0
 		y = 1
 		available = {
-			controls_state = 932
+			controls_state = 1009
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_12 entered"
 			}
-			932 = {
+			1009 = {
 				add_building_construction = {
 					type = arms_factory
 					level = 3
@@ -384,22 +377,25 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_13
-		icon = GFX_goal_bos_generic_infantry
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_take_aim
 		relative_position_id = Minitmen_5
 		ai_will_do = { factor = 95 } 
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_5
 		}
-		x = -10
-		y = 2
+		x = -9
+		y = 1
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_13 entered"
 			}
-			add_tech_bonus = { bonus = 0.3 uses = 2 category = land_doctrine }
+			add_tech_bonus = { 
+			bonus = 0.3 
+			uses = 2 
+			category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_13 exited"
@@ -409,13 +405,13 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_14
-		icon = GFX_goal_bos_wasteland_conscription
+		icon = GFX_goal_brahmin_cart
 		prerequisite = {focus = Minitmen_13}
 		ai_will_do = { factor = 95 } 
 		relative_position_id = Minitmen_13
 		x = 2
 		y = 1
-		cost = 10.0
+		cost = 60
 		completion_reward = {
 			add_manpower = 1500
 		}
@@ -425,9 +421,9 @@ focus_tree = {
 		id = Minitmen_15
 		icon = GFX_goal_NCR_Blast_from_the_Past
 		relative_position_id = Minitmen_13
-		cost = 8.6
+		cost = 60
 		available = {
-		917 = { is_controlled_by = MEN } 
+		1052 = { is_controlled_by = MEN } 
 		}
 		prerequisite = {
 			focus = Minitmen_13
@@ -443,7 +439,7 @@ focus_tree = {
 				name = explosive_bonus
 				bonus = 0.5
 				uses = 1
-				category = artillery
+				category = support_demolitions_tech_category
 			}
 			add_ideas = blastfromthepast
 			if = {
@@ -457,7 +453,7 @@ focus_tree = {
 		id = Minitmen_16
 		icon = GFX_goal_MEN_1
 		relative_position_id = Minitmen_13
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_13
 		}
@@ -478,44 +474,45 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_17
+		cost = 60
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = {focus = Minitmen_16}
 		prerequisite = {focus = Minitmen_15}
 		prerequisite = {focus = Minitmen_14}
 		available = {
-			917 = { is_controlled_by = MEN } #do we actually own it right now?
+			1052 = { is_controlled_by = MEN } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
 		relative_position_id = Minitmen_16
 		x = 1
 		y = 1
 		completion_reward = {
-			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 1000 producer = ERB }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 1000 producer =USA }
 		}
-		cost = 7.8
+		
 	}
 	
 	focus = {
 		id = Minitmen_18
 		icon = GFX_goal_generic_food_focus
 		relative_position_id = Minitmen_16
-		cost = 8.6
+		cost = 60
 		x = -1
 		y = 1
         prerequisite = {focus = Minitmen_16}
 		prerequisite = {focus = Minitmen_15}
 		prerequisite = {focus = Minitmen_14}
 		available = {
-			918 = { is_owned_and_controlled_by = ROOT }
-			923 = { is_owned_and_controlled_by = ROOT }
-			926 = { is_owned_and_controlled_by = ROOT }
+			1051 = { is_owned_and_controlled_by = ROOT }
+			1021 = { is_owned_and_controlled_by = ROOT }
+			1052 = { is_owned_and_controlled_by = ROOT }
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_18 entered"
 			}
-			923 = {
+			1021 = {
 				add_manpower = 250
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -524,7 +521,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			926 = {
+			1051 = {
 				add_manpower = 250
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -533,7 +530,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			918 = {
+			1052 = {
 				add_manpower = 250
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -559,7 +556,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = RSD
 
-		cost = 0.5
+		cost = 45
 
 		ai_will_do = {
 			factor = 70
@@ -620,7 +617,7 @@ focus_tree = {
 		icon = GFX_goal_VLT_all_clear
 		prerequisite = { focus = Minitmen_6 }
 		relative_position_id = Minitmen_6
-		cost = 7.00
+		cost = 45
 		x = 0
 		y = 1
 
@@ -630,8 +627,7 @@ focus_tree = {
 
 		available = {
 		has_completed_focus = Minitmen_16
-		918 = { is_controlled_by = MEN } 
-
+		1021 = { is_controlled_by = MEN } 
 		}
 
 		bypass = {
@@ -656,9 +652,12 @@ focus_tree = {
 	focus = {
 		id = Minitmen_21
 		icon = GFX_goal_generic_land_doctrines_focus
-		cost = 2.0
-		x = 9
-		y = 0
+		cost = 7
+		x = 17
+		y = 4
+		prerequisite = {
+		focus = Minitmen_4
+		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -674,11 +673,12 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_22
-		icon = GFX_goal_enc_election
+		icon = GFX_goal_generic_vault_survival
 		relative_position_id = Minitmen_20
-		cost = 1.00
+		cost = 20
 		available = {
 		date > 2278.1.1	
+		has_completed_focus = Minitmen_54
 		}
 		prerequisite = {
 			focus = Minitmen_20
@@ -708,7 +708,7 @@ focus_tree = {
 		icon = GFX_goal_MEN_1
 		relative_position_id = Minitmen_12
 		x = 0
-		y = 3
+		y = 2
 
 		cost = 7.9
 
@@ -735,7 +735,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 125
 			set_technology = {
-			stripped_pa_tech = 1
+			power_armour_tech_level_tribal = 1
 			}
 			add_equipment_to_stockpile = { type = power_armor_equipment amount = 600 producer = MEN }
 			load_oob = MEN_2278
@@ -746,7 +746,7 @@ focus_tree = {
 		id = Minitmen_24
 		text = Minitmen_24
 		icon = GFX_goal_Men_rules1
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -761,8 +761,6 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				id = 2002
-				ruling_only = yes
-				name = "Престон Гарви"
 			}
 		}
 		completion_reward = {
@@ -783,7 +781,7 @@ focus_tree = {
 		id = Minitmen_25
 		text = Minitmen_25
 		icon = GFX_goal_Men_intelegents1
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -798,8 +796,6 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				id = 2001
-				ruling_only = yes
-				name = "Ли Хаммонд"
 			}
 		}
 		completion_reward = {
@@ -820,7 +816,7 @@ focus_tree = {
 		id = Minitmen_26
 		text = Minitmen_26
 		icon = GFX_goal_Men_elite1
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -835,8 +831,6 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				id = 2000
-				ruling_only = yes
-				name = "Мелман Ван Хуттен"
 			}
 		}
 		completion_reward = {
@@ -857,7 +851,7 @@ focus_tree = {
 		id = Minitmen_27
 		text = Minitmen_27
 		icon = GFX_goal_Men_usa1
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -872,8 +866,6 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				id = 2003
-				ruling_only = yes
-				name = "Выходец из Убежища 111"
 			}
 		}
 		completion_reward = {
@@ -894,14 +886,14 @@ focus_tree = {
 		id = Minitmen_28
 		icon = GFX_goal_Poselenie
 		relative_position_id = Minitmen_24
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_24
 		}
 		x = 0
 		y = 1
 		available = {
-			controls_state = 917
+			controls_state = 1052
 		}
 		completion_reward = {
 			if = {
@@ -910,7 +902,7 @@ focus_tree = {
 			}
 			add_political_power = 100
 			add_manpower = 1245
-			917 = {
+			1052 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -927,10 +919,10 @@ focus_tree = {
 		
 	focus = {
 		id = Minitmen_29
-		icon = GFX_goal_Men_elite1
+		icon = GFX_goal_generic_automatron_splash
 		relative_position_id = Minitmen_28
 		prerequisite = { focus = Minitmen_28 }
-		cost = 7.00
+		cost = 60
 		x = 0
 		y = 1
 
@@ -969,7 +961,7 @@ focus_tree = {
 		id = Minitmen_30
 		icon = GFX_goal_MEN_1
 		relative_position_id = Minitmen_29
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_29
 		}
@@ -981,7 +973,10 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
 			}
-			add_tech_bonus = { bonus = 0.4 uses = 2 category = land_doctrine }
+			add_tech_bonus = { 
+			bonus = 0.4 
+			uses = 2 
+			category = cat_grand_army}
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
@@ -993,33 +988,37 @@ focus_tree = {
 		id = Minitmen_31
 		icon = GFX_goal_generic_building_focus
 		relative_position_id = Minitmen_56
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_56
 		}
 		x = 0
 		y = 1
 		available = {
-			controls_state = 919
+			controls_state = 1021
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_31 entered"
 			}
-			919 = {
+			1021 = {
 				add_resource = {
 					type = electricity
 					amount = 13
 				}
 				add_resource = {
-					type = advanced_technology
+					type = circuitry
 					amount = 8
 				}
 				add_resource = {
-					type = fuel
+					type = energy
 					amount = 12
 				}
+			}
+			
+			1021 = {
+			set_state_name = "Quincy"
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -1032,7 +1031,7 @@ focus_tree = {
 		id = Minitmen_32
 		icon = GFX_goal_Army_deportament
 		relative_position_id = Minitmen_27
-		cost = 10.6
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_27
 		}
@@ -1044,7 +1043,10 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
 			}
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
+			add_tech_bonus = { 
+			bonus = 0.5 
+			uses = 2 
+			category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
@@ -1060,7 +1062,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 7.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 8
@@ -1094,7 +1096,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		prerequisite = { focus = Minitmen_33 }
 		relative_position_id = Minitmen_33
-		cost = 8.6
+		cost = 60
 		x = 0
 		y = 1
 		available = {
@@ -1130,7 +1132,7 @@ focus_tree = {
 	focus = {
 		id = Minitmen_35
 		icon = GFX_goal_Dobrososedstva1
-		cost = 10.00
+		cost = 45
 		prerequisite = { focus = Minitmen_34 }
 		relative_position_id = Minitmen_34
 		x = 0
@@ -1173,7 +1175,7 @@ focus_tree = {
 		
 
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1196,14 +1198,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 923 # Carson City
-				}
-				MEN = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
+        RIJ = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
@@ -1215,7 +1214,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 7.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 8
@@ -1251,7 +1250,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1274,26 +1273,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 923 # Carson City
-				}
-				MEN = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
+	        RIJ = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
 	focus = {
 		id = Minitmen_39
-		icon = GFX_goal_legion_slaves
+		icon = GFX_goal_generic_slave_collars
 		prerequisite = { focus = Minitmen_38 }
 		relative_position_id = Minitmen_38
 		x = 0	
 		y = 1
 
-		cost = 12.9
+		cost = 60
 
 		ai_will_do = {
 			factor = 60			
@@ -1327,7 +1323,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = Minitmen_39 }
 		relative_position_id = Minitmen_39
-		cost = 10.6
+		cost = 60
 		x = 0
 		y = 1
 
@@ -1360,7 +1356,7 @@ focus_tree = {
 		y = 1
 
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1383,14 +1379,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 919 # Carson City
-				}
-				MEN = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
+        STR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
@@ -1399,7 +1392,7 @@ focus_tree = {
 		icon = GFX_goal_MEN_2
 		relative_position_id = Minitmen_25
 		prerequisite = { focus = Minitmen_25 }
-		cost = 7.00
+		cost = 60
 		x = 0
 		y = 1
 
@@ -1435,7 +1428,7 @@ focus_tree = {
 		icon = GFX_goal_MEN_3
 		relative_position_id = Minitmen_42
 		prerequisite = { focus = Minitmen_42 }
-		cost = 7.00
+		cost = 60
 		x = 0
 		y = 1
 
@@ -1478,7 +1471,7 @@ focus_tree = {
 		relative_position_id = Minitmen_43
 		x = 0
 		y = 1
-		cost = 8.6
+		cost = 60
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -1493,7 +1486,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1504,7 +1497,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_full_control_of_state = 919
+			has_full_control_of_state = 1021
 		}
 
 		cancel_if_invalid = yes
@@ -1516,14 +1509,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 919 # Carson City
-				}
-				MEN = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
+        STR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
@@ -1534,8 +1524,8 @@ focus_tree = {
 		ai_will_do = { factor = 100 } 
 		relative_position_id = Minitmen_5
 		x = 8
-		y = 2
-		cost = 5.0
+		y = 1
+		cost = 45
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -1546,7 +1536,7 @@ focus_tree = {
 		icon = GFX_goal_Minutamen2
 		prerequisite = { focus = Minitmen_46 }
 		relative_position_id = Minitmen_46
-		cost = 10.00
+		cost = 60
 		x = 0
 		y = 1
 
@@ -1582,19 +1572,19 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		relative_position_id = Minitmen_47
 		ai_will_do = { factor = 100 } 
-		cost = 7.0
+		cost = 60
 		prerequisite = {focus = Minitmen_47}
 		x = -2
 		y = 1
 		available = {
-			controls_state = 929
+			controls_state = 1012
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_48 entered"
 			}
-			929 = {
+			1012 = {
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1613,21 +1603,21 @@ focus_tree = {
 		icon = GFX_goal_Poselenie
 		relative_position_id = Minitmen_47
 		ai_will_do = { factor = 89 } 
-		cost = 7.0
+		cost = 60
 		prerequisite = {
 			focus = Minitmen_47
 		}
 		x = 2
 		y = 1
 		available = {
-			controls_state = 929
+			controls_state = 1012
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_49 entered"
 			}
-			929 = {
+			1012 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1650,17 +1640,17 @@ focus_tree = {
 		relative_position_id = Minitmen_47
 		x = 0
 		y = 1
-		cost = 7.8
+		cost = 60
 		completion_reward = {
 			add_political_power = 50
-			929 = {
+			1012 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 1
 					instant_build = yes 
 				}
 			}
-			926 = {
+			1010 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 1
@@ -1678,11 +1668,11 @@ focus_tree = {
 		prerequisite = { focus = Minitmen_48 }
 		relative_position_id = Minitmen_50
 		x = 0
-		y = 2
+		y = 1
 		
 		will_lead_to_war_with = KOV
 
-		cost = 2.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 85
@@ -1705,7 +1695,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    927 = { add_core_of = MEN }
+		    1011 = { add_core_of = MEN }
 			create_wargoal = {
 				type = annex_everything
 				target = KOV
@@ -1740,7 +1730,7 @@ focus_tree = {
 		icon = GFX_goal_Minutamen4
 		prerequisite = { focus = Minitmen_51 }
 		relative_position_id = Minitmen_51
-		cost = 10.00
+		cost = 60
 		x = 0
 		y = 1
 
@@ -1776,20 +1766,20 @@ focus_tree = {
 		icon =GFX_goal_Senkchuary
 		prerequisite = { focus = Minitmen_52 }
 		available = {
-			918 = { is_controlled_by = MEN } 
+			1051 = { is_controlled_by = MEN } 
 		}
 		ai_will_do = { factor = 100 } 
 		relative_position_id = Minitmen_52
 		x = -1
 		y = 1
-		cost = 0.5
+		cost = 45
 		completion_reward = {
-			set_capital = 918
-			918 = { add_core_of = MEN }
-			918 = {
+			set_capital = 1051
+			1051 = { add_core_of = MEN }
+			1051 = {
 				set_state_name = "forpo"
 			}
-			annex_country = { target = KOV transfer_troops = yes }
+			#annex_country = { target = KOV transfer_troops = yes }
 		}
 	}
 	
@@ -1798,16 +1788,16 @@ focus_tree = {
 		icon = GFX_goal_fortindependens
 		prerequisite = { focus = Minitmen_52 }
 		available = {
-		917 = { is_controlled_by = MEN } 
+		1052 = { is_controlled_by = MEN } 
 		}
 		ai_will_do = { factor = 12 } 
 		relative_position_id = Minitmen_52
 		x = 1
 		y = 1
-		cost = 0.5
+		cost = 45
 		completion_reward = {
-			set_capital = 917
-			917 = { add_core_of = MEN }
+			set_capital = 1052
+			1052 = { add_core_of = MEN }
 		}
 	}
 	
@@ -1821,7 +1811,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 6.0
+		cost = 35
 
 		ai_will_do = {
 			factor = 1
@@ -1859,18 +1849,14 @@ focus_tree = {
 		
 		will_lead_to_war_with = STR
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
 		}
 
-		available = {
-
-		}
-
 		bypass = {
-			has_full_control_of_state = 919
+			has_full_control_of_state = 1021
 		}
 
 		cancel_if_invalid = yes
@@ -1882,14 +1868,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 919 # Carson City
-				}
-				MEN = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
+		STR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
@@ -1947,7 +1930,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = BSS
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1988,10 +1971,8 @@ focus_tree = {
 		relative_position_id = Minitmen_36
 		x = 0
 		y = 1
-		
-
-
-		cost = 10.0
+	
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -2014,14 +1995,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 919 # Carson City
-				}
-				MEN = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
+        STR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
@@ -2035,7 +2013,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = BSS
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -2076,19 +2054,15 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 20.0
+		cost = 105
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-		controls_state = 920
+		controls_state = 1016
 		
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2100,7 +2074,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_technology = { scientific_civilization = 1 }
+			set_technology = { 
+            infantry_tech_level_scientific = 1
+			support_tech_level_scientific = 1
+			special_forces_tech_level_scientific = 1
+			tools_tech_level_scientific = 1
+			habitation_tech_level_scientific = 1
+			exploitation_tech_level_scientific = 1
+			electronics_tech_level_scientific = 1
+			}
 			add_political_power = 100
 			add_research_slot = 1
 		}

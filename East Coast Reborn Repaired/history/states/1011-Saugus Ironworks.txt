@@ -2,7 +2,7 @@ state={
 	id=1011
 	name="Saugus Ironworks"
 	resources = {
-		metal = 50
+		metal = 10
 	
 	}
 	history={
@@ -13,9 +13,13 @@ state={
 			12641 25
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 5
+			infrastructure = 3
+			arms_factory = 4
 			industrial_complex = 2
+			dockyard = 4
+			1398 = {
+				naval_base = 2
+			}
 
 		}
 	}

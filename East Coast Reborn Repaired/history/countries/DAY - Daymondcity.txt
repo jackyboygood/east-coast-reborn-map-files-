@@ -2,30 +2,57 @@
 oob = "DAY_2275"
 
 set_technology = {
-	grand_army = 1
-	standard_weaponry_tech = 1
-	blunt_weaponry = 1
-	basic_ballistic_weaponry = 1
-	support_weaponry = 1
-	anti_personnel_tech = 1
-	recon_tech = 1
-	bike_tech_1 = 1
-	tribal_civilization = 1
+    infantry_tech_level_tribal = 1
+	infantry_tech_level_settler = 1
+	#infantry_tech_level_scientific = 1
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+	#support_tech_level_scientific = 1
+	special_forces_tech_level_tribal = 1
+	special_forces_tech_level_settler = 1
+	#special_forces_tech_level_scientific = 1
+	#power_armour_tech_level_settler = 1
+	#power_armour_tech_level_scientific = 1
+	vehicles_tech_level_tribal = 1
+	#vehicles_tech_level_settler = 1
+	#vehicles_tech_level_scientific = 1
+	robotics_tech_level_tribal = 1
+	#robotics_tech_level_settler = 1
+	#robotics_tech_level_scientific = 1
+	air_tech_level_tribal = 1
+	#air_tech_level_settler = 1
+	#air_tech_level_scientific = 1
+	naval_tech_level_tribal = 1
+	#naval_tech_level_settler = 1
+	#naval_tech_level_scientific = 1
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	#tools_tech_level_scientific = 1
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	#habitation_tech_level_scientific = 1
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	#exploitation_tech_level_scientific = 1
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
+	#electronics_tech_level_scientific = 1
+
 	settled_civilization = 1
-	destroyer_tech = 1
-	cruiser_tech = 1
-	battleship_tech = 1
-	heavy_cruiser_tech = 1
-	truck_tech_1 = 1
-	anti_tank_tech = 1
-	special_forces = 1
-	naval_invasion_tech = 1
+	tool_engineering = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	pre_construction_industry_tech = 1
+	pre_agriculture_industry_tech = 1
+	pre_recycling_industry_tech = 1
+	basic_industry_tech = 1
+	support_weaponry = 1
 }
 
 set_stability = 0.6
 set_war_support = 0.2
 set_rule = { can_join_factions = no }
-
+set_country_flag = is_settler_nation
 
 set_politics = {
 	ruling_party = people

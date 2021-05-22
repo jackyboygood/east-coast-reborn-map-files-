@@ -1,4 +1,4 @@
-﻿capital = 928
+﻿capital = 1009
 oob = "MEN_2275"
 
 set_technology = {
@@ -10,14 +10,37 @@ set_technology = {
 	fireteam_weaponry_tech = 1
 	recon_company_tech_1 = 1
 	bike_tech_1 = 1
-	tribal_civilization = 1
-	settled_civilization = 1
 	anti_tank_equipment_tech_1 = 1
 	special_forces_doctrine = 1
 	spec_ops_equipment_tech_1 = 1
 	pre_agriculture_industry_tech = 1
 	agriculture_industry_tech_1 = 1
 	agriculture_industry_tech_2 = 1
+	infantry_tech_level_tribal = 1
+	infantry_tech_level_settler = 1
+	#infantry_tech_level_scientific = 1
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+	#support_tech_level_scientific = 1
+	special_forces_tech_level_tribal = 1
+	special_forces_tech_level_settler = 1
+	#special_forces_tech_level_scientific = 1
+	air_tech_level_tribal = 1
+	air_tech_level_settler = 1
+	naval_tech_level_tribal = 1
+	naval_tech_level_settler = 1
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	#tools_tech_level_scientific = 1
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	#habitation_tech_level_scientific = 1
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	#exploitation_tech_level_scientific = 1
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
+	#electronics_tech_level_scientific = 1
 }
 
 set_stability = 0.3
@@ -38,7 +61,7 @@ set_popularities = {
 	ruler = 30
 }
 
-add_ideas = {
+#add_ideas = {
      ENC_infighting
     }
 	
@@ -73,7 +96,7 @@ create_country_leader = {
 	name = "Preston Garvey"
 	id = 2002
 	desc = Dornan_DESC
-	picture = "gfx/leaders/MEN/Portrait_garvi.dds"
+	picture = "gfx/leaders/MTM/portrait_mtm_leader.dds"
 	expire = "3000.1.1"
 	ideology = benevolent_dictatorship			
 	traits = {
@@ -81,7 +104,7 @@ create_country_leader = {
 	}
 }		
 create_country_leader = {
-	name = "Vault Dweller from 111"
+	name = "Sole Survivor"
 	id = 2003
 	desc = ""
 	picture = "gfx/leaders/MEN/usavihodec.dds"
@@ -105,7 +128,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Preston Garvey"
-	portrait_path = "gfx/leaders/MEN/Portrait_garvi.dds"
+	portrait_path = "gfx/leaders/MTM/portrait_mtm_leader.dds"
 	skill = 3
 	traits = {
 	}
@@ -113,30 +136,6 @@ create_corps_commander = {
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 3
-}
-
-create_field_marshal = {
-	name = "General Augustus Pavlovna"
-	portrait_path = "gfx/leaders/MEN/Portrait_dorogaya.dds"
-	skill = 3
-	traits = {
-	}
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_field_marshal = {
-	name = "General Mac Gunn"
-	portrait_path = "gfx/leaders/MEN/Portrait_makgan.dds"
-	skill = 3
-	traits = {
-	}
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -163,15 +162,5 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Sergeant Lewise O * Hara"
-	portrait_path = "gfx/leaders/MEN/luisohara.dds"
-	skill = 2
-	traits = {
-	}
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
+
 
