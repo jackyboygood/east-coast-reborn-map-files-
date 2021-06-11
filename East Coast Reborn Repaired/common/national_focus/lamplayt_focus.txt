@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_1
 		icon = GFX_goal_dett2
-		cost = 1.0
+		cost = 7
 		x = 14
 		y = 0
 		completion_reward = {
@@ -25,7 +25,7 @@ focus_tree = {
 		icon = GFX_goal_dett1
 		prerequisite = { focus = lamplayt_1 }
 		relative_position_id = lamplayt_1
-		cost = 1.0
+		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
@@ -38,7 +38,7 @@ focus_tree = {
 		icon = GFX_goal_dett
 		prerequisite = { focus = lamplayt_2 }
 		relative_position_id = lamplayt_2
-		cost = 1.0
+		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
@@ -57,7 +57,7 @@ focus_tree = {
 		icon = GFX_goal_dett3
 		prerequisite = { focus = lamplayt_3 }
 		relative_position_id = lamplayt_3
-		cost = 10.0
+		cost = 60
 		x = -8
 		y = 1
 		completion_reward = {
@@ -71,7 +71,7 @@ focus_tree = {
 		icon = GFX_goal_dett4
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 5.5
+		cost = 45
 		x = -4
 		y = 1
 		completion_reward = {
@@ -84,7 +84,7 @@ focus_tree = {
 		icon = GFX_goal_dett5
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 5.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -97,7 +97,7 @@ focus_tree = {
 		icon = GFX_goal_dett6
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 5.5
+		cost = 45
 		x = 4
 		y = 1
 		completion_reward = {
@@ -110,7 +110,7 @@ focus_tree = {
 		icon = GFX_goal_dett7
 		prerequisite = { focus = lamplayt_5 }
 		relative_position_id = lamplayt_5
-		cost = 5.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -123,7 +123,7 @@ focus_tree = {
 		icon = GFX_goal_dett8
 		prerequisite = { focus = lamplayt_5 }
 		relative_position_id = lamplayt_5
-		cost = 5.5
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -136,7 +136,7 @@ focus_tree = {
 		icon = GFX_goal_dett9
 		prerequisite = { focus = lamplayt_6 }
 		relative_position_id = lamplayt_6
-		cost = 5.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -149,7 +149,7 @@ focus_tree = {
 		icon = GFX_goal_dett10
 		prerequisite = { focus = lamplayt_6 }
 		relative_position_id = lamplayt_6
-		cost = 5.5
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -162,7 +162,7 @@ focus_tree = {
 		icon = GFX_goal_dett
 		prerequisite = { focus = lamplayt_3 }
 		relative_position_id = lamplayt_3
-		cost = 10.0
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -172,15 +172,15 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_13
-		icon = GFX_goal_legion_denarius
+		icon = GFX_goal_brahmin_cart
 		prerequisite = { focus = lamplayt_12 }
 		relative_position_id = lamplayt_12
-		cost = 8.8
+		cost = 60
 		ai_will_do = { factor = 25 }
 		x = -1
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 2
@@ -195,11 +195,11 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		prerequisite = { focus = lamplayt_12 }
 		relative_position_id = lamplayt_12
-		cost = 8.8
+		cost = 60
 		x = 1
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = arms_factory 
@@ -216,11 +216,11 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_3 }
 		relative_position_id = lamplayt_3
 		ai_will_do = { factor = 100 }
-		cost = 8.8
+		cost = 60
 		x = 8
 		y = 1
 		completion_reward = {
-			890 = {
+			998 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = arms_factory 
@@ -252,7 +252,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 25 }
 		relative_position_id = lamplayt_13
-		cost = 4.0
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -270,11 +270,11 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_16 }
 		relative_position_id = lamplayt_16
 		ai_will_do = { factor = 25 }
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 			    add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = industrial_complex
@@ -294,7 +294,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 1.0
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -311,12 +311,12 @@ focus_tree = {
 		icon = GFX_goal_generic_slums_focus
 		prerequisite = { focus = lamplayt_18 }
 		relative_position_id = lamplayt_18
-		cost = 8.8
+		cost = 60
 		ai_will_do = { factor = 25 }
 		x = 0
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 			    add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = industrial_complex
@@ -336,7 +336,7 @@ focus_tree = {
 			date > 2278.1.1
 		}
 		ai_will_do = { factor = 25 }
-		cost = 12.0
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -350,13 +350,13 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_21
-		icon = GFX_goal_bos_generic_infantry
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_gun_laws
 		prerequisite = { focus = lamplayt_14 }
 		relative_position_id = lamplayt_14
 		available = {
 			date > 2276.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -364,7 +364,7 @@ focus_tree = {
 		    add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = land_doctrine 
+				category = cat_land_doctrine 
 			}
 		}
 	}
@@ -374,7 +374,7 @@ focus_tree = {
 		icon = GFX_goal_generic_land_doctrines_focus
 		prerequisite = { focus = lamplayt_21 }
 		relative_position_id = lamplayt_21
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -390,12 +390,12 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
 		   add_political_power = -50
-		   887 = {
+		   986 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -411,7 +411,7 @@ focus_tree = {
 		icon = GFX_goal_NCR_Blast_from_the_Past
 		prerequisite = { focus = lamplayt_23 }
 		relative_position_id = lamplayt_23
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -427,17 +427,17 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_25
-		icon = GFX_goal_bos_generic_infantry
+		icon = GFX_goal_generic_spartan_legacy
 		prerequisite = { focus = lamplayt_24 }
 		relative_position_id = lamplayt_24
 		available = {
 			date > 2278.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
-		   add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+		   add_tech_bonus = { bonus = 0.2 uses = 2 category = cat_land_doctrine }
 		}
 	}
 	
@@ -448,7 +448,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_25 }
 		prerequisite = { focus = lamplayt_46 }
 		relative_position_id = lamplayt_20
-		cost = 8.8
+		cost = 60
 		x = 2
 		y = 1
 		completion_reward = {
@@ -469,7 +469,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lamplayt_30
 		}
-		cost = 8.8
+		cost = 60
 		x = -2
 		y = 1
 		completion_reward = {
@@ -479,14 +479,14 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_28
-		icon = GFX_goal_bos_wasteland_conscription
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_take_aim
 		prerequisite = { focus = lamplayt_27 }
 		relative_position_id = lamplayt_27
 		available = {
          date > 2276.5.15
 		}
 		ai_will_do = { factor = 25 }
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -503,7 +503,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.20
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -524,11 +524,11 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_15 }
 		relative_position_id = lamplayt_15
 		ai_will_do = { factor = 25 }
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
-			890 = {
+			998 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = arms_factory 
@@ -545,7 +545,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_30 }
 		relative_position_id = lamplayt_30
 		ai_will_do = { factor = 25 }
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -565,7 +565,7 @@ focus_tree = {
 		available = {
 			date > 2278.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -584,7 +584,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lamplayt_36
 		}
-		cost = 8.8
+		cost = 60
 		x = 2
 		y = 1
 		completion_reward = {
@@ -597,7 +597,7 @@ focus_tree = {
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = { focus = lamplayt_33 }
 		relative_position_id = lamplayt_33
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -614,11 +614,11 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		prerequisite = { focus = lamplayt_34 }
 		relative_position_id = lamplayt_34
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
-			890 = {
+			998 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = arms_factory 
@@ -638,7 +638,7 @@ focus_tree = {
 			focus = lamplayt_33
 		}
 		ai_will_do = { factor = 25 }
-		cost = 8.8
+		cost = 60
 		x = 4
 		y = 1
 		completion_reward = {
@@ -653,7 +653,7 @@ focus_tree = {
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = { focus = lamplayt_36 }
 		relative_position_id = lamplayt_36
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -670,7 +670,7 @@ focus_tree = {
 		available = {
          date > 2278.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -686,7 +686,7 @@ focus_tree = {
 		available = {
 		 has_country_flag = resvedvernulis
 		}
-		cost = 5.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -702,7 +702,7 @@ focus_tree = {
 		available = {
 		 has_country_flag = resvedvernulis
 		}
-		cost = 5.5
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -712,8 +712,8 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_41
-		icon = GFX_goal_legion_denarius
-		cost = 8.60
+		icon = GFX_goal_cap_and_cash
+		cost = 60
 		prerequisite = {
 			focus = lamplayt_12
 		}
@@ -769,7 +769,7 @@ focus_tree = {
 		available = {
 			date > 2276.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -780,7 +780,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_43
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 8.60
+		cost = 60
 		prerequisite = {
 			focus = lamplayt_42
 		}
@@ -836,7 +836,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -850,7 +850,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_45
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 8.60
+		cost = 60
 		prerequisite = {
 			focus = lamplayt_44
 		}
@@ -906,7 +906,7 @@ focus_tree = {
 		available = {
 			date > 2278.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -925,7 +925,7 @@ focus_tree = {
 			date > 2276.1.1
 		}
 		ai_will_do = { factor = 50 }
-		cost = 1.0
+		cost = 45
 		x = 1
 		y = 2
 		completion_reward = {
@@ -945,7 +945,7 @@ focus_tree = {
 			focus = lamplayt_58
 		}
 		ai_will_do = { factor = 50 }
-		cost = 2.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -962,12 +962,12 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_48 }
 		relative_position_id = lamplayt_48
 		ai_will_do = { factor = 100 }
-		cost = 2.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
 		    add_political_power = -150
-			893 = {
+			990 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 3
@@ -982,7 +982,7 @@ focus_tree = {
 		icon = GFX_goal_canadaaa7
 		prerequisite = { focus = lamplayt_49 }
 		relative_position_id = lamplayt_49
-		cost = 2.5
+		cost = 45
 		ai_will_do = { factor = 100 }
 		x = 0
 		y = 1
@@ -1008,12 +1008,12 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_50 }
 		relative_position_id = lamplayt_50
 		ai_will_do = { factor = 100 }
-		cost = 2.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		    892 = { add_core_of = LIT }
-			add_named_threat = { threat = -3 name = fallout3_war55 }
+		    997 = { add_core_of = LIT }
+			#add_named_threat = { threat = -3 name = fallout3_war55 }
 		    create_wargoal = {
 				type = annex_everything
 				target = AUC
@@ -1033,7 +1033,7 @@ focus_tree = {
 			focus = lamplayt_58
 		}
 		ai_will_do = { factor = 1 }
-		cost = 2.5
+		cost = 45
 		x = -3
 		y = 1
 		completion_reward = {
@@ -1050,11 +1050,11 @@ focus_tree = {
 		relative_position_id = lamplayt_52
 		prerequisite = { focus = lamplayt_52 }
 		ai_will_do = { factor = 30 }
-		cost = 2.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		    892 = { add_core_of = LIT }
+		    997 = { add_core_of = LIT }
 			add_named_threat = { threat = -3 name = fallout3_war55 }
 		    every_country = {
 				limit = {
@@ -1087,11 +1087,14 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_53 }
 		relative_position_id = lamplayt_53
 		available = {
+		    997 = {
+			is_controlled_by = LIT
+			}
 			date > 2277.1.1
 			AUC = { exists = yes }
 		}
 		ai_will_do = { factor = 30 }
-		cost = 2.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1127,11 +1130,14 @@ focus_tree = {
 		relative_position_id = lamplayt_53
 		prerequisite = { focus = lamplayt_53 }
 		available = {
+		    997 = {
+			is_controlled_by = LIT
+			}
 			date < 2277.1.1
 			AUC = { exists = no }
 		}
 		ai_will_do = { factor = 30 }
-		cost = 1.8
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1152,7 +1158,7 @@ focus_tree = {
 		available = {
          has_country_flag = spasenierijey
 		}
-		cost = 5.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1183,13 +1189,13 @@ focus_tree = {
          has_country_flag = spasenierijey
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.5
+		cost = 45
 		x = -2
 		y = 1
 		completion_reward = {
 		    annex_country = { target = AUA transfer_troops = yes }
-			893 = { add_core_of = LIT }
-			894 = { add_core_of = LIT }
+			990 = { add_core_of = LIT }
+			991 = { add_core_of = LIT }
 		}
 	}
 	
@@ -1208,7 +1214,7 @@ focus_tree = {
 		available = {
 			
 		}
-		cost = 2.5
+		cost = 45
 		x = 3
 		y = 1
 		completion_reward = {
@@ -1222,7 +1228,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_59
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 2.5
+		cost = 45
 		ai_will_do = { factor = 30 }
 		prerequisite = {
 			focus = lamplayt_58
@@ -1282,7 +1288,7 @@ focus_tree = {
 		ai_will_do = { factor = 30 }
 		relative_position_id = lamplayt_59
 		prerequisite = { focus = lamplayt_59 }
-		cost = 2.5
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1302,13 +1308,13 @@ focus_tree = {
 		available = {
 
 		}
-		cost = 2.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
-		    893 = { add_core_of = LIT }
-			894 = { add_core_of = TEN }
-			892 = { add_core_of = LIT }
+		    990 = { add_core_of = LIT }
+			991 = { add_core_of = TEN }
+			997 = { add_core_of = LIT }
 			add_named_threat = { threat = -3 name = fallout3_war55 }
 		    every_country = {
 				limit = {
@@ -1346,13 +1352,13 @@ focus_tree = {
 			AUA = { exists = no }
 			TEN = { exists = yes }
 		}
-		cost = 2.5
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
 
 		   TEN = { 
-		          transfer_state = 894
+		          transfer_state = 991
 		          set_politics = {
 			          parties = {
 				          ruler = { popularity = 10 }
@@ -1371,8 +1377,8 @@ focus_tree = {
 	              ideology = ideocracy
                 }
 			}
-			transfer_state = 893
-			transfer_state = 892
+			transfer_state = 990
+			transfer_state = 997
 		}
 	}
 	
@@ -1384,7 +1390,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 1.0
+		cost = 45
 		x = 0
 		y = 2
 		completion_reward = {
@@ -1401,7 +1407,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 5.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1418,7 +1424,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 5.5
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1436,7 +1442,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 5.5
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1454,7 +1460,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 5.5
+		cost = 45
 		x = 1	
 		y = 1
 		completion_reward = {
@@ -1472,7 +1478,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 5.5
+		cost = 45
 		x = 3
 		y = 1
 		completion_reward = {
@@ -1505,12 +1511,21 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 60
 		x = -2
 		y = 1
 		completion_reward = {
 			custom_effect_tooltip = new_advisor
-			set_technology = { scientific_civilization = 1 }
+			set_technology = { 
+            infantry_tech_level_scientific = 1
+			support_tech_level_scientific = 1
+			special_forces_tech_level_settler = 1
+	        special_forces_tech_level_scientific = 1
+			tools_tech_level_scientific = 1
+			habitation_tech_level_scientific = 1
+			exploitation_tech_level_scientific = 1
+			electronics_tech_level_scientific = 1
+			}
 		}
 	}
 	
@@ -1526,7 +1541,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1546,7 +1561,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1563,7 +1578,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1580,7 +1595,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1597,12 +1612,12 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = 2
 		y = 1
 		completion_reward = {
-			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 500 producer = ESP }
-			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 500 producer = ESP }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 500 producer = USA }
+			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 500 producer = USA }
 		}
 	}
 	
@@ -1615,7 +1630,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1623,7 +1638,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = land_doctrine 
+				category = cat_land_doctrine 
 			}
 		}
 	}
@@ -1637,7 +1652,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1654,7 +1669,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1678,7 +1693,7 @@ focus_tree = {
 		 date > 2282.1.1
 		}
 		ai_will_do = { factor = 1 }
-		cost = 9.0
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1703,7 +1718,7 @@ focus_tree = {
 		 ESP = { exists = yes }
 		 date > 2282.1.1
 		}
-		cost = 9.0
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1720,11 +1735,20 @@ focus_tree = {
 		available = {
          date > 2277.1.1
 		}
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 2
 		completion_reward = {
-			set_technology = { settled_civilization = 1 }
+			set_technology = { 
+			infantry_tech_level_scientific = 1
+			support_tech_level_scientific = 1
+			special_forces_tech_level_settler = 1
+	        special_forces_tech_level_scientific = 1
+			tools_tech_level_scientific = 1
+			habitation_tech_level_scientific = 1
+			exploitation_tech_level_scientific = 1
+			electronics_tech_level_scientific = 1
+			}
 		}
 	}
 
@@ -1737,7 +1761,7 @@ focus_tree = {
 		available = {
 
 		}
-		cost = 9.0
+		cost = 45
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1757,11 +1781,11 @@ focus_tree = {
 		available = {
 
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
-			895 = { add_core_of = LIT }
+			983 = { add_core_of = LIT }
 			add_named_threat = { threat = -3 name = fallout3_war55 }
 		    every_country = {
 				limit = {
@@ -1794,7 +1818,7 @@ focus_tree = {
 		available = {
 
 		}
-		cost = 9.0
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1810,24 +1834,21 @@ focus_tree = {
 		available = {
 
 		}
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 			add_manpower = 1500
 		    }
-			894 = {
+			990 = {
 			add_manpower = 456
 		    }
-			893 = {
+			991 = {
 			add_manpower = 800
 		    }
-			895 = {
+			997 = {
 			add_manpower = 975
-		    }
-			896 = {
-			add_manpower = 600
 		    }
 			add_timed_idea = {
 				idea = baybiboom
@@ -1845,7 +1866,7 @@ focus_tree = {
 		 ESP = { exists = yes }
 		}
 		ai_will_do = { factor = 1 }
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1867,12 +1888,12 @@ focus_tree = {
 		 ESP = { exists = yes }
 		}
 		ai_will_do = { factor = 1 }
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
 			add_autonomy_ratio = {
-				value = 1.00
+				value = 70
 				localization = lamplayt_87
 			}
 			create_country_leader = {
@@ -1914,7 +1935,7 @@ focus_tree = {
 		 ESP = { exists = yes }
 		}
 		ai_will_do = { factor = 1 }
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1937,11 +1958,11 @@ focus_tree = {
 		 ESP = { exists = yes }
 		}
 		ai_will_do = { factor = 1 }
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 			add_manpower = 5000
 		    }
 		}
@@ -1955,7 +1976,7 @@ focus_tree = {
 		available = {
 		}
 		ai_will_do = { factor = 50 }
-		cost = 9.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1965,13 +1986,13 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_91
-		icon = GFX_goal_bos_wasteland_conscription
+		icon = GFX_goal_generic_focus_magazine_aat_sniper
 		relative_position_id = lamplayt_83	
 		prerequisite = { focus = lamplayt_83 }
 		available = {
 		}
 		ai_will_do = { factor = 1 }
-		cost = 5.0
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1987,7 +2008,7 @@ focus_tree = {
 		has_country_flag = resvedvernulis
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 2
 		completion_reward = {
@@ -2007,13 +2028,15 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = lamplayt_100
+			focus = lamplayt_107
+			
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-			887 = {
+			986 = {
 			add_manpower = -350
 		    }
 			882 = {
@@ -2037,12 +2060,12 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
 			custom_effect_tooltip = isvergmarmak_tt
-			882 = {
+			997 = {
 			add_manpower = -1050
 		    }
 		}
@@ -2057,17 +2080,17 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		    set_capital = 887
+		    set_capital = 986
 			start_civil_war = {
 				ruling_party = people
 				ideology = intellectuals
 				size = 0.5
-				capital = 882
-				states = { 882 883 }
+				capital = 997
+				states = { 997 883 }
 			}
 			random_other_country = {
 				limit = {
@@ -2150,7 +2173,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 1.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2167,7 +2190,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 10.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2181,25 +2204,25 @@ focus_tree = {
 		relative_position_id = lamplayt_97
 		prerequisite = { focus = lamplayt_97 }
 		available = {
-           has_full_control_of_state = 887
-		   has_full_control_of_state = 883
+           has_full_control_of_state = 986
+		   has_full_control_of_state = 997
 		}
 		ai_will_do = { factor = 30 }
-		cost = 10.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   set_capital = 887
+		   set_capital = 986
 		   add_stability = 0.5
 		   add_war_support = -0.2
-		   887 = {
+		   986 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 2
 					instant_build = yes 
 				}
 			}
-			882 = {
+			997 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 2
@@ -2232,7 +2255,7 @@ focus_tree = {
           TEN = { exists = yes }
 		}
 		ai_will_do = { factor = 30 }
-		cost = 1.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2272,9 +2295,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = lamplayt_93
+			focus = lamplayt_103
+			
 		}
 		ai_will_do = { factor = 30 }
-		cost = 4.0
+		cost = 45
 		x = -2
 		y = 1
 		completion_reward = {
@@ -2291,7 +2316,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 4.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2308,7 +2333,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2344,7 +2369,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2361,50 +2386,27 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   887 = {
-			    add_extra_state_shared_building_slots = 1
+		   986 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes 
 				}
 			}
-			892 = {
-			    add_extra_state_shared_building_slots = 1
+			998 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes 
 				}
 			}
-			893 = {
-			    add_extra_state_shared_building_slots = 1
-				add_building_construction = { 
-					type = industrial_complex
-					level = 1
-					instant_build = yes 
-				}
-			}
-			894 = {
-			    add_extra_state_shared_building_slots = 1
-				add_building_construction = { 
-					type = industrial_complex
-					level = 1
-					instant_build = yes 
-				}
-			}
-			890 = {
-			    add_extra_state_shared_building_slots = 1
-				add_building_construction = { 
-					type = industrial_complex
-					level = 1
-					instant_build = yes 
-				}
-			}
+
 		}
 	}
 	
@@ -2417,47 +2419,23 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   890 = {
-			    add_extra_state_shared_building_slots = 1
+		   998 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = arms_factory 
-					level = 1
+					level = 2
 					instant_build = yes 
 				}
 			}
-			887 = {
-			    add_extra_state_shared_building_slots = 1
+			986 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = arms_factory 
-					level = 1
-					instant_build = yes 
-				}
-			}
-			892 = {
-			    add_extra_state_shared_building_slots = 1
-				add_building_construction = { 
-					type = arms_factory 
-					level = 1
-					instant_build = yes 
-				}
-			}
-			893 = {
-			    add_extra_state_shared_building_slots = 1
-				add_building_construction = { 
-					type = arms_factory 
-					level = 1
-					instant_build = yes 
-				}
-			}
-			894 = {
-			    add_extra_state_shared_building_slots = 1
-				add_building_construction = { 
-					type = arms_factory 
-					level = 1
+					level = 2
 					instant_build = yes 
 				}
 			}
@@ -2473,7 +2451,7 @@ focus_tree = {
           TEN = { exists = yes }
 		}
 		ai_will_do = { factor = 30 }
-		cost = 1.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2506,11 +2484,17 @@ focus_tree = {
 		icon = GFX_goal_dett
 		relative_position_id = lamplayt_92
 		prerequisite = { focus = lamplayt_92 }
-		available = {
+
+        mutually_exclusive = {
+		focus = lamplayt_100
+		focus = lamplayt_93
+		}
+		
+        available = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 2
 		y = 1
 		completion_reward = {
@@ -2528,7 +2512,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2545,11 +2529,11 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   890 = {
+		   998 = {
 				add_building_construction = { type = bunker province = 11362 level = 4 instant_build = yes }
 				add_building_construction = { type = bunker province = 11364 level = 4 instant_build = yes }
 				add_building_construction = { type = bunker province = 11365 level = 4 instant_build = yes }
@@ -2566,30 +2550,22 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 6.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   892 = {
-				add_building_construction = { type = bunker province = 11382 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11383 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11384 level = 3 instant_build = yes }
+		   998 = {
+				add_building_construction = { type = bunker province = 12409 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12411 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12412 level = 3 instant_build = yes }
 			}
-			893 = {
-				add_building_construction = { type = bunker province = 11390 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11396 level = 3 instant_build = yes }
+			
+			986 = {
+				add_building_construction = { type = bunker province = 1108 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12421 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 12422 level = 3 instant_build = yes }
 			}
-			887 = {
-				add_building_construction = { type = bunker province = 11371 level = 3 instant_build = yes }
-			}
-			897 = {
-				add_building_construction = { type = bunker province = 11417 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11418 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11419 level = 3 instant_build = yes }
-			}
-			894 = {
-				add_building_construction = { type = bunker province = 11397 level = 3 instant_build = yes }
-			}
+			
 		}
 	}
 	
@@ -2602,11 +2578,11 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   887 = {
+		   986 = {
 				add_building_construction = { type = bunker province = 11367 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 11368 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 11369 level = 2 instant_build = yes }
@@ -2626,11 +2602,11 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   887 = {
+		   986 = {
 				add_building_construction = { type = bunker province = 11376 level = 4 instant_build = yes }
 			}
 		}
@@ -2646,7 +2622,7 @@ focus_tree = {
 		  has_completed_focus = lamplayt_62
 		}
 		ai_will_do = { factor = 30 }
-		cost = 1.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2664,7 +2640,7 @@ focus_tree = {
           has_country_flag = otkaz_ot_vseh
 		  date > 2278.1.1
 		}
-		cost = 10.0
+		cost = 60
 		x = 2
 		y = 1
 		completion_reward = {
@@ -2688,7 +2664,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ESP_FEV_soldiers
 		}
-		cost = 25.0
+		cost = 45
     }
 	
 	focus = {#Cloning
@@ -2704,7 +2680,7 @@ focus_tree = {
 		mutually_exclusive = { focus = lamplayt_115 }
 		x = 1
 		y = 1
-		cost = 15.0
+		cost = 45
 		completion_reward = {
 			custom_effect_tooltip = enc_cloning_tt
 		}
@@ -2721,7 +2697,7 @@ focus_tree = {
 		relative_position_id = lamplayt_87
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			add_country_leader_trait = usakoroleva
 			add_political_power = 100
@@ -2741,15 +2717,15 @@ focus_tree = {
 		relative_position_id = lamplayt_117
 		x = 0
 		y = 1
-		cost = 15.0
+		cost = 45
 		completion_reward = {
-			898 = { add_core_of = LIT }
-			889 = { add_core_of = LIT }
-			888 = { add_core_of = LIT }
-			883 = { add_core_of = LIT }
-			876 = { add_core_of = LIT }
-			882 = { add_core_of = LIT }
-			881 = { add_core_of = LIT }
+			1003 = { add_core_of = LIT }
+			989 = { add_core_of = LIT }
+			#888 = { add_core_of = LIT }
+			988 = { add_core_of = LIT }
+			987 = { add_core_of = LIT }
+			985 = { add_core_of = LIT }
+			#881 = { add_core_of = LIT }
 		}
 	}
 	
@@ -2764,16 +2740,16 @@ focus_tree = {
 		relative_position_id = lamplayt_89
 		x = 0
 		y = 1
-		cost = 15.0
+		cost = 45
 		completion_reward = {
-		    transfer_state = 876
-			transfer_state = 883
-			transfer_state = 882
-			transfer_state = 896
-			876 = { add_core_of = LIT }
-			883 = { add_core_of = LIT }
-			882 = { add_core_of = LIT }
-			896 = { add_core_of = LIT }
+		    transfer_state = 987
+			transfer_state = 988
+			transfer_state = 985
+			#transfer_state = 896
+			987 = { add_core_of = LIT }
+			988 = { add_core_of = LIT }
+			985 = { add_core_of = LIT }
+			#896 = { add_core_of = LIT }
 		}
 	}
 	
@@ -2788,7 +2764,7 @@ focus_tree = {
 		relative_position_id = lamplayt_119
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			add_country_leader_trait = nadejniy_sousnik_det
 			add_political_power = 100
@@ -2799,7 +2775,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_121
 		icon = GFX_goal_dett2
-		cost = 15.0
+		cost = 145
 		available = {
           has_country_flag = otkaz_ot_vseh
 		  has_completed_focus = lamplayt_113
@@ -2844,13 +2820,13 @@ focus_tree = {
 		relative_position_id = lamplayt_85
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 60
 		completion_reward = {
 			add_tech_bonus = {
 				name = medical_bonus
 				bonus = 0.5
 				uses = 1
-				category = chem_tech
+				category = support_medical_tech_category
 			}
 		}
 	}
@@ -2866,7 +2842,7 @@ focus_tree = {
 		relative_position_id = lamplayt_122
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 60
 		completion_reward = {
 			add_ideas = chem_lab
 		}
@@ -2882,9 +2858,9 @@ focus_tree = {
 		relative_position_id = lamplayt_36
 		x = 4
 		y = -1
-		cost = 7.0
+		cost = 7
 		completion_reward = {
-		    transfer_state = 1043
+		    transfer_state = 1005
 			add_political_power = 150
 		}
 	}
@@ -2898,11 +2874,11 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 80 }
-		cost = 5.0
+		cost = 45
 		x = -2
 		y = 1
 		completion_reward = {
-		   892 = {
+		   986 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = industrial_complex
@@ -2922,11 +2898,11 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 5.0
+		cost = 45
 		x = 2
 		y = 1
 		completion_reward = {
-		   892 = {
+		   986 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = arms_factory 
@@ -2946,12 +2922,16 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 80 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
-		   891 = {
-				add_building_construction = { type = bunker province = 11387 level = 3 instant_build = yes }
+		   998 = {
+				add_building_construction = { 
+				type = bunker 
+				province = 12411
+				level = 3 
+				instant_build = yes }
 			}
 		}
 	}
@@ -2966,7 +2946,7 @@ focus_tree = {
 		   SBS = { exists = yes }
 		}
 		ai_will_do = { factor = 80 }
-		cost = 5.0
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2979,8 +2959,8 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_129
-		icon = GFX_goal_bos_generic_infantry
-		cost = 8.6
+		icon = GFX_goal_generic_medal
+		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -2991,14 +2971,17 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+			add_tech_bonus = { 
+			bonus = 0.2 
+			uses = 2 
+			category = cat_land_doctrine }
 		}
 	}
 	
 	focus = {
 		id = lamplayt_130
-		icon = GFX_goal_bos_victory_or_death
-		cost = 8.6
+		icon = GFX_goal_generic_f76_player3
+		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -3016,7 +2999,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_131
 		icon = GFX_goal_generic_BoS_diplomatic_focus
-		cost = 8.6
+		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -3033,8 +3016,8 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_132
-		icon = GFX_goal_bos_outsider_recruitment
-		cost = 8.6
+		icon = GFX_goal_generic_power_armor_blue
+		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -3052,7 +3035,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_133
 		icon = GFX_goal_generic_BOS_focus_t45d_production
-		cost = 8.6
+		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -3074,7 +3057,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_134
 		icon = GFX_goal_megatonna29
-		cost = 8.6
+		cost = 70
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -3104,13 +3087,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = cleanoperation
 		}
-		cost = 20.0	
+		cost = 45	
  }
  
     focus = {
 		id = lamplayt_136
 		icon = GFX_goal_generic_land_doctrines_focus
-		cost = 8.6
+		cost = 45
 		available = {
 		   has_country_flag = soglasievaultsouls	   
            ESP = { exists = no }
@@ -3129,7 +3112,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_137
 		icon = GFX_goal_generic_robots_focus
-		cost = 8.6
+		cost = 45
 		available = {
 		   has_country_flag = soglasievaultsouls	   
            ESP = { exists = no }
@@ -3141,7 +3124,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			890 = {
+			998 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -3156,7 +3139,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_138
 		icon = GFX_goal_generic_ammo_boxes_focus
-		cost = 8.6
+		cost = 45
 		available = {
 		   has_country_flag = soglasievaultsouls	   
            ESP = { exists = no }
@@ -3175,7 +3158,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_139
 		icon = GFX_goal_megatonna28
-		cost = 8.6
+		cost = 45
 		available = {
 		   has_country_flag = amatabej	   
            ESP = { exists = no }
@@ -3199,7 +3182,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_140
 		icon = GFX_goal_megatonna21
-		cost = 8.6
+		cost = 45
 		available = {
 		   has_country_flag = buchisgnan   
            ESP = { exists = no }
@@ -3229,7 +3212,7 @@ focus_tree = {
 
 		}
 		ai_will_do = { factor = 30 }
-		cost = 10.0
+		cost = 60
 		x = 1
 		y = 1
 		completion_reward = {

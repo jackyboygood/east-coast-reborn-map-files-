@@ -627,7 +627,7 @@ focus_tree = {
 
 		available = {
 		has_completed_focus = Minitmen_16
-		1021 = { is_controlled_by = MEN } 
+		1051 = { is_controlled_by = MEN } 
 		}
 
 		bypass = {

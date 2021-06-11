@@ -14,7 +14,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		x = 17
 		y = 0 
-		cost = 1.0
+		cost = 7
 		completion_reward = {
 			add_ideas = SBS_radio
 			add_political_power = 100
@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_2
 		icon = GFX_goal_Newyorkbroth1
-		cost = 5.00
+		cost = 7
 		relative_position_id = Deyv_1 
 		prerequisite = {
 			focus = Deyv_1 
@@ -64,7 +64,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_3
 		icon = GFX_goal_Newyorkbroth1
-		cost = 5.00
+		cost = 7
 		relative_position_id = Deyv_2 
 		prerequisite = {
 			focus = Deyv_2 
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_4
 		icon = GFX_goal_generic_slums_focus
-		cost = 8.6
+		cost = 60
 		relative_position_id = Deyv_3 
 		prerequisite = {
 			focus = Deyv_3
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_5
 		icon = GFX_goal_generic_advanced_technology_focus
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_4
 		}
@@ -186,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_6
 		icon = GFX_goal_generic_advanced_technology_focus
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_5
 		}
@@ -210,7 +210,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_7
 		icon = GFX_goal_generic_military_industry_focus
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_4
 		}
@@ -262,7 +262,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_8
 		icon = GFX_goal_generic_supplies_focus
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_7
 		}
@@ -281,11 +281,11 @@ focus_tree = {
 						option = ENABLED
 					}
 				}
-				set_temp_variable = { caps_to_add = 200 }
-				hidden_effect = {
-					add_caps = yes
-				}
-				custom_effect_tooltip = add_caps_simple_tt
+			set_temp_variable = {
+				caps_to_add = 50
+			}
+			add_caps = yes
+			#custom_effect_tooltip = add_caps_simple_tt
 			}
 			random_owned_controlled_state = {
 				add_resource = {
@@ -307,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_9
 		icon = GFX_focus_YUG_pan_slavic_congress
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_6
 		}
@@ -331,7 +331,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_10
 		icon = GFX_goal_generic_bunkers_focus
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_8
 		}
@@ -339,7 +339,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			874 = {
+			999 = {
 				add_building_construction = { type = bunker province = 1140 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 1152 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 1137 level = 2 instant_build = yes }
@@ -355,7 +355,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Deyv_3
 		}
-		cost = 8.6
+		cost = 60
 		available = {
 			
 		}
@@ -371,7 +371,7 @@ focus_tree = {
 		id = Deyv_12
 		icon = GFX_goal_deyvgeneralss
 		relative_position_id = Deyv_11
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_11
 		}
@@ -392,7 +392,7 @@ focus_tree = {
 		id = Deyv_13
 		icon = GFX_goal_bobgeneralss
 		relative_position_id = Deyv_11
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_11
 		}
@@ -413,7 +413,7 @@ focus_tree = {
 		id = Deyv_14
 		icon = GFX_goal_NCR_Blast_from_the_Past
 		relative_position_id = Deyv_12
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_12
 		}
@@ -434,7 +434,7 @@ focus_tree = {
 		id = Deyv_15
 		icon = GFX_goal_NCR_Army_of_Mobility
 		relative_position_id = Deyv_14
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_14
 		}
@@ -445,7 +445,7 @@ focus_tree = {
 				name = motorized_bonus
 				bonus = 0.5
 				uses = 1
-				category = motorized_equipment
+				category = motorized_equipment_category
 			}
 			add_ideas = mobilearmy
 		}
@@ -455,7 +455,7 @@ focus_tree = {
 		id = Deyv_16
 		icon = GFX_goal_NCR_The_Tip_of_the_Spear
 		relative_position_id = Deyv_15
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_15
 		}
@@ -470,7 +470,7 @@ focus_tree = {
 		id = Deyv_17
 		icon = GFX_goal_NCR_Infantry_Drills
 		relative_position_id = Deyv_13
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_13
 		}
@@ -488,7 +488,7 @@ focus_tree = {
 		id = Deyv_18
 		icon = GFX_goal_canadaaa9
 		relative_position_id = Deyv_17
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_17
 		}
@@ -503,7 +503,7 @@ focus_tree = {
 		id = Deyv_19
 		icon = GFX_goal_NCR_Big_Jim_Draft
 		relative_position_id = Deyv_18
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_18
 		}
@@ -516,13 +516,13 @@ focus_tree = {
 	
 	focus = {
 		id = Deyv_20
-		icon = GFX_goal_bos_wasteland_conscription
+		icon = GFX_goal_tribal_generic
 		prerequisite = {focus = Deyv_19 focus = Deyv_16}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Deyv_19
 		x = -2
 		y = 1
-		cost = 10.6
+		cost = 60
 		completion_reward = {
 			add_manpower = 2000
 		}
@@ -531,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_21
 		icon = GFX_goal_NCR_Mechanized_Core
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_11
 		}
@@ -547,7 +547,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_22
 		icon = GFX_goal_NCR_Shock_Companies
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Deyv_21
 		}
@@ -555,15 +555,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_equipment_to_stockpile = { type = apc_equipment_1 amount = 50 producer = DEV }
-			add_ideas = shockcomp
+			add_equipment_to_stockpile = { type = truck_equipment_1 amount = 100 producer = DEV }
+			#add_ideas = shockcomp
 		}
 	}
 	
 	focus = {
 		id = Deyv_23
-		icon = GFX_goal_NCR_Rapid_Advance
-		cost = 8.6
+		icon = GFX_goal_generic_bike
+		cost = 60
 		prerequisite = {
 			focus = Deyv_22
 		}
@@ -582,7 +582,7 @@ focus_tree = {
 			focus = Deyv_3
 		}
 		relative_position_id = Deyv_3
-		cost = 8.6
+		cost = 60
 		x = 7
 		y = 1
 		available = {
@@ -606,7 +606,7 @@ focus_tree = {
 		available = {
 			date > 2276.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -617,7 +617,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_26
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 8.60
+		cost = 60
 		prerequisite = {
 			focus = Deyv_25
 		}
@@ -673,7 +673,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -687,7 +687,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_28
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 8.60
+		cost = 60
 		prerequisite = {
 			focus = Deyv_27
 		}
@@ -743,7 +743,7 @@ focus_tree = {
 		available = {
 			date > 2278.1.1
 		}
-		cost = 8.8
+		cost = 60
 		x = 0
 		y = 1
 		completion_reward = {
@@ -762,7 +762,7 @@ focus_tree = {
 		relative_position_id = Deyv_3
 		x = 13
 		y = 1
-		cost = 6.0
+		cost = 45
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -782,7 +782,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Deyv_40
 		}
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_30
 		}
@@ -798,7 +798,7 @@ focus_tree = {
 		id = Deyv_32
 		icon = GFX_goal_dave1
 		ai_will_do = { factor = 80 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_31
 		}
@@ -814,7 +814,7 @@ focus_tree = {
 		id = Deyv_33
 		icon = GFX_goal_generic_advanced_technology_focus
 		ai_will_do = { factor = 80 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_32
 		}
@@ -849,7 +849,7 @@ focus_tree = {
 		id = Deyv_34
 		icon = GFX_goal_dave2
 		ai_will_do = { factor = 80 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_33
 		}
@@ -868,7 +868,7 @@ focus_tree = {
 		id = Deyv_35
 		icon = GFX_goal_megatonna17
 		ai_will_do = { factor = 25 }
-		cost = 8.6
+		cost = 45
 		available = {
 			date > 2277.6.1
 		}
@@ -892,7 +892,7 @@ focus_tree = {
 		id = Deyv_36
 		icon = GFX_goal_dave2
 		ai_will_do = { factor = 25 }
-		cost = 8.6
+		cost = 45
 		available = {
 			date > 2277.6.1
 		}
@@ -917,13 +917,13 @@ focus_tree = {
 		id = Deyv_37
 		icon = GFX_goal_generic_advanced_technology_focus
 		ai_will_do = { factor = 25 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_36
 			focus = Deyv_35
 		}
 		relative_position_id = Deyv_36
-		x = -1
+		x = 0
 		y = 1
 		completion_reward = {
 		    903 = { add_core_of = DEV }
@@ -931,30 +931,8 @@ focus_tree = {
 				type = annex_everything
 				target = DEE
 			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = DEV
-						tag = DEE
-					}
-				}
-				every_country = {
-					limit = {
-						NOT = { tag = PREV }
-						OR = {
-							tag = DEV
-							tag = DEE
-						}
-						NOT = { has_war_with = PREV }
-					}
-					declare_war_on = {
-						target = PREV
-						type = take_core_state
-				    }
-			    }
 		    }
 		}
-	}
 	
 	focus = {
 		id = Deyv_38
@@ -973,13 +951,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = cleanoperation
 		}
-		cost = 5.0	
+		cost = 45	
  }
  
  focus = {
 		id = Deyv_39
 		icon = GFX_goal_bobgeneralss
-		cost = 5.00
+		cost = 45
 		relative_position_id = Deyv_30 
 		prerequisite = {
 			focus = Deyv_30 
@@ -1045,14 +1023,14 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = deyvi12idea
 		}
-		cost = 5.0	
+		cost = 45	
  }
  
  focus = {
 		id = Deyv_41
 		icon = GFX_goal_generic_advanced_technology_focus
 		ai_will_do = { factor = 1 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_39
 		}
@@ -1074,7 +1052,7 @@ focus_tree = {
 		id = Deyv_42
 		icon = GFX_goal_dave4
 		ai_will_do = { factor = 1 }
-		cost = 2.0
+		cost = 45
 		prerequisite = {
 			focus = Deyv_41
 		}
@@ -1118,7 +1096,7 @@ focus_tree = {
 		id = Deyv_43
 		icon = GFX_goal_dave5
 		ai_will_do = { factor = 1 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_42
 		}
@@ -1162,7 +1140,7 @@ focus_tree = {
 		id = Deyv_44
 		icon = GFX_goal_Enclave18
 		ai_will_do = { factor = 1 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_43
 		}
@@ -1206,7 +1184,7 @@ focus_tree = {
 		id = Deyv_45
 		icon = GFX_goal_blackminitman
 		ai_will_do = { factor = 1 }
-		cost = 8.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_44
 		}
@@ -1250,10 +1228,10 @@ focus_tree = {
 		id = Deyv_46
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
-		cost = 8.6
+		cost = 45
 		available = {
 			date > 2276.1.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_3
@@ -1262,7 +1240,7 @@ focus_tree = {
 		x = -12
 		y = 1
 		completion_reward = {
-		    add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 1000 producer = NUE }
+		    add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 1000 producer = USA }
 		}
 	}
 	
@@ -1270,10 +1248,10 @@ focus_tree = {
 		id = Deyv_47
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
-		cost = 5.0
+		cost = 45
 		available = {
 			date > 2276.1.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_46
@@ -1290,10 +1268,10 @@ focus_tree = {
 		id = Deyv_48
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
-		cost = 5.0
+		cost = 45
 		available = {
 			date > 2276.5.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_47
@@ -1310,10 +1288,10 @@ focus_tree = {
 		id = Deyv_49
 		icon = GFX_goal_generic_slums_focus
 		ai_will_do = { factor = 25 }
-		cost = 5.0
+		cost = 45
 		available = {
 			date > 2276.1.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_46
@@ -1322,7 +1300,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-		    940 = {
+		    1000 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = industrial_complex
@@ -1337,10 +1315,10 @@ focus_tree = {
 		id = Deyv_50
 		icon = GFX_goal_generic_slums_focus
 		ai_will_do = { factor = 25 }
-		cost = 5.0
+		cost = 45
 		available = {
 			date > 2276.1.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_49
@@ -1349,7 +1327,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-		    940 = {
+		    1000 = {
 			    add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = industrial_complex
@@ -1364,10 +1342,10 @@ focus_tree = {
 		id = Deyv_51
 		icon = GFX_goal_generic_slums_focus
 		ai_will_do = { factor = 25 }
-		cost = 5.0
+		cost = 45
 		available = {
 			date > 2276.5.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_50
@@ -1376,7 +1354,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-		 940 = {
+		 1000 = {
 				set_state_name = "Factories"
 			}
 		}
@@ -1386,10 +1364,10 @@ focus_tree = {
 		id = Deyv_52
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
-		cost = 10.0
+		cost = 70
 		available = {
 			date > 2276.5.1
-			940 = { is_controlled_by = DEV }
+			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
 			focus = Deyv_51
@@ -1409,7 +1387,7 @@ focus_tree = {
 		id = Deyv_53
 		icon = GFX_goal_enc_verti
 		ai_will_do = { factor = 25 }
-		cost = 8.0
+		cost = 45
 		available = {
 			date > 2276.1.1
 		}
@@ -1445,7 +1423,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_54
 		icon = GFX_goal_Newyorkbroth1
-		cost = 4.00
+		cost = 45
 		relative_position_id = Deyv_53
 		prerequisite = {
 			focus = Deyv_53 
@@ -1484,7 +1462,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_55
 		icon = GFX_goal_Newyorkbroth1
-		cost = 4.00
+		cost = 45
 		relative_position_id = Deyv_53
 		prerequisite = {
 			focus = Deyv_53 
@@ -1523,7 +1501,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_56
 		icon = GFX_goal_Newyorkbroth1
-		cost = 4.00
+		cost = 45
 		relative_position_id = Deyv_53
 		prerequisite = {
 			focus = Deyv_53 
@@ -1562,7 +1540,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_57
 		icon = GFX_goal_enc_scientists
-		cost = 4.00
+		cost = 45
 		relative_position_id = Deyv_55
 		prerequisite = {
 			focus = Deyv_54
@@ -1606,7 +1584,7 @@ focus_tree = {
 		id = Deyv_58
 		icon = GFX_goal_megatonna11
 		ai_will_do = { factor = 25 }
-		cost = 2.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_57
 		}
@@ -1651,7 +1629,7 @@ focus_tree = {
 	focus = {
 		id = Deyv_59
 		icon = GFX_goal_Enclave12
-		cost = 4.00
+		cost = 45
 		relative_position_id = Deyv_57
 		prerequisite = {
 			focus = Deyv_57
@@ -1688,10 +1666,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_60
+		id = Deyv_45
 		icon = GFX_goal_Enclave21
 		ai_will_do = { factor = 25 }
-		cost = 2.6
+		cost = 45
 		prerequisite = {
 			focus = Deyv_54
 		}
