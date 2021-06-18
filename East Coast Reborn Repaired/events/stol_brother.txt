@@ -138,5 +138,8 @@ country_event = {
 		DEV = { 
 		          add_opinion_modifier = { target = SBS modifier = deyv-otkazsbs }
 		}
+		SBS = {
+						create_wargoal = { type = annex_everything target = DEV }
+			  }
 	}
 }

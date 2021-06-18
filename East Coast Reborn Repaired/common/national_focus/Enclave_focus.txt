@@ -12,9 +12,9 @@ focus_tree = {
 		id = Enclavesp_1 
 		icon = GFX_goal_enc_radio
 		ai_will_do = { factor = 1 }
-		x = 20
+		x = -8
 		y = 0 
-		cost = 1.0
+		cost = 7
 		completion_reward = {
 			add_ideas = ENC_radio
 			878 = {
@@ -37,7 +37,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_1 
 		x = 0
 		y = 1
-		cost = 1.0
+		cost = 7
 		completion_reward = {
 			add_political_power = 45
 			hidden_effect = { country_event = { id = enc.28 } } # mariposa 1
@@ -50,23 +50,16 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_3
 		icon = GFX_goal_enc_troop_call
 		prerequisite = { focus = Enclavesp_2 }
-		relative_position_id = Enclavesp_2
-		x = 0
-		y = 1
+		#relative_position_id = Enclavesp_1
+		x = -8
+		y = 2
 
-		cost = 1.0
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -82,18 +75,18 @@ focus = {#Expedition - to Mariposa
 		}
 	}
 	
-	focus = {#SIERRA ------------------------ THE SIERA ARMY DEPOT ------------------------------
+	focus = {
 		id = Enclavesp_4
 		icon =GFX_goal_generic_walls_focus
 		prerequisite = { focus = Enclavesp_3 }
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_3
-		x = -13
+		x = -14
 		y = 1
-		cost = 5.8
+		cost = 60
 		completion_reward = {
 			add_political_power = 100
-			877 = {
+			989 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 4
@@ -109,14 +102,14 @@ focus = {#Expedition - to Mariposa
 		prerequisite = {focus = Enclavesp_4}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_4
-		x = -1
+		x = -2
 		y = 1
-		cost = 7.8
+		cost = 60
 		completion_reward = {
 		    add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = ESP }
 			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 100 producer = ESP }
 			add_stability = 0.2
-			878 = { #black rock
+			1003 = { #black rock
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -139,14 +132,14 @@ focus = {#Expedition - to Mariposa
 		prerequisite = {focus = Enclavesp_4}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_4
-		x = 1
+		x = 0
 		y = 1
-		cost = 5.8
+		cost = 60
 		completion_reward = {
 			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 600 producer = ESP }
 			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 400 producer = ESP }
-			add_resource = { type = metal amount = 10 state = 877 }
-			add_resource = { type = energy amount = 30 state = 877 }
+			add_resource = { type = metal amount = 10 state = 989 }
+			add_resource = { type = energy amount = 30 state = 989 }
 		}
 	}
 	
@@ -156,14 +149,14 @@ focus = {#Expedition - to Mariposa
 		prerequisite = {focus = Enclavesp_4}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_4
-		x = 3
+		x = 2
 		y = 1
-		cost = 5.8
+		cost = 60
 		completion_reward = {
 			add_tech_bonus = {
 				ahead_reduction = 0.2
 				uses = 2
-				category = energy_weaponry_tech
+				category = energy_weaponry_tech_category
 			}
 			add_tech_bonus = {
 				ahead_reduction = 0.2
@@ -183,10 +176,10 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_4
 		x = 0
 		y = 2
-		cost = 5.8
+		cost = 60
 		completion_reward = {
 			add_stability = 0.2
-			877 = { #black rock
+			989 = { #black rock
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -195,7 +188,31 @@ focus = {#Expedition - to Mariposa
 				}
 				add_building_construction = { 
 					type = bunker 
-					province = 11340 #Black Rock
+					province = 12386 #Black Rock
+					level = 1
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = bunker 
+					province = 12389 #Black Rock
+					level = 1
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = bunker 
+					province = 12390 #Black Rock
+					level = 1
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = bunker 
+					province = 12388 #Black Rock
+					level = 1
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = bunker 
+					province = 12385 #Black Rock
 					level = 1
 					instant_build = yes 
 				}
@@ -209,9 +226,9 @@ focus = {#Expedition - to Mariposa
 		prerequisite = {focus = Enclavesp_8}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_8
-		x = 1
+		x = 2
 		y = 1
-		cost = 8.6
+		cost = 60
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -224,9 +241,9 @@ focus = {#Expedition - to Mariposa
 		mutually_exclusive = {focus = Enclavesp_11}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_8
-		x = -3
+		x = -2
 		y = 1
-		cost = 5.8
+		cost = 60
 		completion_reward = {
 			add_ideas = ENC_PA_production
 		}
@@ -239,86 +256,22 @@ focus = {#Expedition - to Mariposa
 		mutually_exclusive = {focus = Enclavesp_10}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_8
-		x = -1
+		x = 0
 		y = 1
-		cost = 5.8
+		cost = 60
 		completion_reward = {
 			set_technology = { plasma_weaponry = 1 }
 			add_ideas = ENC_energy_production
 		}
 	}
 	
-	focus = {#Purist - Remember the oil rig
-		id = Enclavesp_12
-		icon = GFX_goal_enc_remember_rig
-		prerequisite = { focus = Enclavesp_3 }
-		ai_will_do = { factor = 1 }
-		relative_position_id = Enclavesp_3
-		x = 0
-		y = 1
-		cost = 6.8
-		completion_reward = {
-			add_war_support = 0.1
-			add_political_power = 100
-		}
- }
- 
- focus = {#Purity - protectors of humanity
-		id = Enclavesp_13
-		icon = GFX_goal_shield_enc_wip
-		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_12
-		x = 0
-		y = 1
-		prerequisite = { focus = Enclavesp_12}
-		available = {
-			elites > 0.7
-		}
-		completion_reward = {
-			swap_ideas = {
-				add_idea = ENC_purist2 
-				remove_idea = ENC_purist
-			}
-		}
-		cost = 6.8
-		
- }
- 
- focus = {#Purist - Remember Navarro
-		id = Enclavesp_14
-		icon = GFX_goal_enc_remember
-		prerequisite = { focus = Enclavesp_13 }
-		ai_will_do = { factor = 1 }
-		relative_position_id = Enclavesp_13
-		x = 0
-		y = 1
-		cost = 6.8
-		completion_reward = {
-			add_war_support = 0.1
-			add_political_power = 100
-		}
-	}
-	
-	focus = {#Purity - God Bless the Enclave
-		id = Enclavesp_15
-		icon = GFX_goal_enc_sword_cross
-		ai_will_do = { factor = 1 } 
-		available = {
-			elites > 0.95
-		}
-		relative_position_id = Enclavesp_14
-		x = 0
-		y = 1
-		prerequisite = { focus = Enclavesp_14 }
-		cost = 15.8
-		completion_reward = {swap_ideas = {add_idea = ENC_purist3 remove_idea = ENC_purist2}}
- }
+
  
  focus = {
 		id = Enclavesp_16
 		icon = GFX_goal_support_polkovnik
 		ai_will_do = { factor = 25 } 
-		cost = 10.0
+		cost = 45
 		relative_position_id = Enclavesp_3
 		prerequisite = {
 			focus = Enclavesp_3
@@ -326,7 +279,7 @@ focus = {#Expedition - to Mariposa
 		mutually_exclusive = {
 			focus = Enclavesp_17
 		}
-		x = -7
+		x = -5
 		y = 1
 		available_if_capitulated = yes
 		completion_reward = {
@@ -348,14 +301,14 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_17
 		icon = GFX_goal_support_president
 		relative_position_id = Enclavesp_3
-		cost = 10.0
+		cost = 45
 		prerequisite = {
 			focus = Enclavesp_3
 		}
 		mutually_exclusive = {
 			focus = Enclavesp_16
 		}
-		x = -4
+		x = 4
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = { factor = 25 } 
@@ -382,7 +335,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 21.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -427,7 +380,7 @@ focus = {#Expedition - to Mariposa
 		
 		will_lead_to_war_with = RAR
 
-		cost = 8.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 150
@@ -450,7 +403,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		completion_reward = {
-		    884 = { add_core_of = ESP }
+		    1001 = { add_core_of = ESP }
 			create_wargoal = {
 				type = annex_everything
 				target = RAR
@@ -466,7 +419,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 21.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -510,7 +463,7 @@ focus = {#Expedition - to Mariposa
 		y = 1
 		relative_position_id = Enclavesp_20
 		will_lead_to_war_with = SPP
-		cost = 3
+		cost = 45
 
 		ai_will_do = {
 			factor = 5
@@ -543,7 +496,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_22
 		icon = GFX_goal_generic_supplies_focus
 		available = {
-			884 = { is_controlled_by = ESP } #do we actually own it right now?
+			1001 = { is_controlled_by = ESP } #do we actually own it right now?
 		}
 		ai_will_do = {
 			factor = 150
@@ -556,18 +509,18 @@ focus = {#Expedition - to Mariposa
 			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 250 producer = ESP }
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 250 producer = ESP }
 		}
-		cost = 5.8
+		cost = 45
 	}
 	
 	focus = {
 		id = Enclavesp_24
 		icon = GFX_goal_enc_accept_wastelanders
-		prerequisite = { focus = Enclavesp_21 }
-		relative_position_id = Enclavesp_21
-		x = 0
+		prerequisite = { focus = Enclavesp_20 }
+		relative_position_id = Enclavesp_20
+		x = 3
 		y = 1
 
-		cost = 9.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -600,7 +553,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_25
 		icon = GFX_goal_generic_supplies_focus
 		available = {
-			877 = { is_controlled_by = ESP } #do we actually own it right now?
+			989 = { is_controlled_by = ESP } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
 		relative_position_id = Enclavesp_24
@@ -618,7 +571,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_26
 		icon = GFX_goal_enc_election
 		relative_position_id = Enclavesp_16
-		cost = 1.00
+		cost = 7
 		prerequisite = {
 			focus = Enclavesp_16
 		}
@@ -642,7 +595,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_27
 		icon = GFX_goal_Encv
-		cost = 8.00
+		cost = 45
 		relative_position_id = Enclavesp_22
 		prerequisite = {
 			focus = Enclavesp_22
@@ -680,10 +633,10 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_28
 		icon = GFX_goal_Enclave
-		cost = 5.00
+		cost = 45
 		relative_position_id = Enclavesp_11
-		x = -1
-		y = 4
+		x = 0
+		y = 3
 
 		ai_will_do = {
 			factor = 8
@@ -691,6 +644,7 @@ focus = {#Expedition - to Mariposa
 
 		available = {
 		has_completed_focus = Enclavesp_5
+		has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -715,7 +669,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_29
 		icon = GFX_goal_Enclave1
-		cost = 5.00
+		cost = 45
 		prerequisite = {
 			focus = Enclavesp_28
 		}
@@ -753,7 +707,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_30
 		icon = GFX_goal_Enclave2
-		cost = 5.00
+		cost = 45
 		prerequisite = {
 			focus = Enclavesp_28
 		}
@@ -791,7 +745,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_31
 		icon = GFX_goal_Enclave3
-		cost = 5.00
+		cost = 45
 		prerequisite = {
 			focus = Enclavesp_28
 		}
@@ -829,7 +783,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_32
 		icon = GFX_goal_Enclave4
-		cost = 1.00
+		cost = 45
 		prerequisite = { focus = Enclavesp_29 }
 		prerequisite = { focus = Enclavesp_30 }
 		prerequisite = { focus = Enclavesp_31 }
@@ -867,7 +821,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_33
 		icon = GFX_goal_Enclave5
-		cost = 5.00
+		cost = 45
 		prerequisite = { focus = Enclavesp_32 }
 		relative_position_id = Enclavesp_32
 		x = -1
@@ -903,7 +857,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_34
 		icon = GFX_goal_Enclave6
-		cost = 5.00
+		cost = 45
 		prerequisite = { focus = Enclavesp_32 }
 		relative_position_id = Enclavesp_32
 		x = 1
@@ -939,7 +893,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_35
 		icon = GFX_goal_Enclave7
-		cost = 5.00
+		cost = 45
 		prerequisite = { focus = Enclavesp_33 }
 		prerequisite = { focus = Enclavesp_34 }
 		relative_position_id = Enclavesp_33
@@ -976,7 +930,7 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_36
 		icon = GFX_goal_Enclave8
-		cost = 5.00
+		cost = 45
 		prerequisite = { focus = Enclavesp_35 }
 		relative_position_id = Enclavesp_35
 		x = 0
@@ -1013,13 +967,13 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_37
 		icon = GFX_goal_enc_slave_labour
 		ai_will_do = { factor = 1 } 
-		available = {
-			has_completed_focus = Enclavesp_16
+		prerequisite = {
+			focus = Enclavesp_20
 		}
-		relative_position_id = Enclavesp_25
+		relative_position_id = Enclavesp_20
 		x = -3
-		y = 2
-		cost = 10.0
+		y = 1
+		cost = 60
 		completion_reward = {add_ideas = ENC_slave_labour}
 		
     } 
@@ -1033,7 +987,7 @@ focus = {#Expedition - to Mariposa
 		y = 1
 		prerequisite = { focus = Enclavesp_37}
 		completion_reward = {swap_ideas = {remove_idea = ENC_slave_labour add_idea = ENC_slave_labour_collars}}
-		cost = 10.0
+		cost = 60
 		
     }
 	
@@ -1050,20 +1004,20 @@ focus = {#Expedition - to Mariposa
 		}
 		completion_reward = {swap_ideas = {remove_idea = ENC_slave_labour_collars add_idea = ENC_slave_labour_mutants}}
 
-		cost = 15.0
+		cost = 60
     }
  
     focus = {
 		id = Enclavesp_40
 		icon = GFX_goal_enc_army_doctrine
 		ai_will_do = { factor = 1 }
-		available = {
-				
+		prerequisite = {
+		focus = Enclavesp_3	
 		}
-		relative_position_id = Enclavesp_15
-		x = 0
-		y = 4
-		cost = 1.0
+		relative_position_id = Enclavesp_3
+		x = 14
+		y = 1
+		cost = 7
 		completion_reward = {
 			army_experience = 15
 			add_tech_bonus = {
@@ -1086,7 +1040,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_40
 		x = -2
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			add_ideas = ENC_strike_teams
 		}
@@ -1097,10 +1051,11 @@ focus = {#Expedition - to Mariposa
 		icon = GFX_goal_enc_air_production
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_41 }
+		mutually_exclusive = { focus = Enclavesp_44 }
 		relative_position_id = Enclavesp_41
 		x = -1
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			add_ideas = ENC_verti_production
 		}
@@ -1112,10 +1067,9 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_42 }
 		relative_position_id = Enclavesp_42
-		mutually_exclusive = { focus = Enclavesp_45 }
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			swap_ideas = { 
 				add_idea = ENC_drop_training 
@@ -1130,9 +1084,10 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_41 }
 		relative_position_id = Enclavesp_41
+		mutually_exclusive = { focus = Enclavesp_42 }
 		x = 1
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			swap_ideas = { 
 				remove_idea = ENC_officers
@@ -1147,10 +1102,9 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_44 }
 		relative_position_id = Enclavesp_44
-		mutually_exclusive = { focus = Enclavesp_43 }
 		x = 0 
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = ESP_officers_local
@@ -1171,7 +1125,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_40
 		x = 2
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.3
@@ -1187,9 +1141,10 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_46 }
 		relative_position_id = Enclavesp_46 
+		mutually_exclusive = { focus = Enclavesp_49 }
 		x = -1
 		y = 1  
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			swap_ideas = { 
 				add_idea = ESP_officers_central
@@ -1204,10 +1159,9 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_47 }
 		relative_position_id = Enclavesp_47
-		mutually_exclusive = { focus = Enclavesp_50 }
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ESP_officers_central
@@ -1222,9 +1176,10 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_46 }
 		relative_position_id = Enclavesp_46
+		mutually_exclusive = { focus = Enclavesp_47 }
 		x = 1 
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			air_experience = 50
 			add_ideas = ENC_air_supremacy
@@ -1237,26 +1192,25 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_49 }
 		relative_position_id = Enclavesp_49
-		mutually_exclusive = { focus = Enclavesp_48 }
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
-			set_technology = { xian_85_fighter = 1}
+			set_technology = { high_fighter_tech = 1}
 		}
 	}
 	
 	focus = {#Purity - FEV experiments
 		id = Enclavesp_51
 		icon = GFX_goal_enc_experiments
-		available = {
-			has_completed_focus = Enclavesp_17
+		prerequisite = {
+			focus = Enclavesp_18
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_25
-		x = 1
+		relative_position_id = Enclavesp_17
+		x = 3
 		y = 2
-		cost = 5.0
+		cost = 60
 		completion_reward = {
 			add_stability = -0.10
 		}
@@ -1270,7 +1224,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_51
 		x = 0
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 			add_research_slot = 1
 			swap_ideas = {remove_idea = ENC_scientists add_idea = ENC_scientists_buffed}
@@ -1281,7 +1235,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_53
 		icon = GFX_goal_enc_super_soldier
 		available = {
-            886 = { is_controlled_by = ESP } #do we actually own it right now?
+            1070 = { is_controlled_by = ESP } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_52
@@ -1303,14 +1257,14 @@ focus = {#Expedition - to Mariposa
 		icon = GFX_goal_enc_cloning
 		ai_will_do = { factor = 1 }
 		available = {
-			886 = { is_controlled_by = ESP } # NAVARRO
+			1070 = { is_controlled_by = ESP } # NAVARRO
 		}
 		prerequisite = { focus = Enclavesp_52 }
 		relative_position_id = Enclavesp_52
 		mutually_exclusive = { focus = Enclavesp_53 }
 		x = 1
 		y = 1
-		cost = 15.0
+		cost = 60
 		completion_reward = {
 			custom_effect_tooltip = enc_cloning_tt
 			LIT = { 
@@ -1322,18 +1276,24 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_55
 		icon = GFX_goal_Enclave15
+		prerequisite = {
+		focus = Enclavesp_86
+		}
+		prerequisite = {
+		focus = Enclavesp_87
+		}
 		available = {
-			867 = { is_controlled_by = ESP } # NAVARRO
-			876 = { is_controlled_by = ESP } # NAVARRO
-			884 = { is_controlled_by = ESP } # NAVARRO
-			886 = { is_controlled_by = ESP } # NAVARRO
+			1070 = { is_controlled_by = ESP } # NAVARRO
+			988 = { is_controlled_by = ESP } # NAVARRO
+			1001 = { is_controlled_by = ESP } # NAVARRO
+			1022 = { is_controlled_by = ESP } # NAVARRO
 			has_completed_focus = Enclavesp_16
 		}
-		relative_position_id = Enclavesp_39
-		x = -1
-		y = 3
+		relative_position_id = Enclavesp_21
+		x = 0
+		y = 2
 		
-		cost = 5.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
@@ -1353,11 +1313,10 @@ focus = {#Expedition - to Mariposa
 		}
 
 		completion_reward = {
-		    872 = { add_core_of = ESP }
-			872 = { add_core_of = ESP }
+		    999 = { add_core_of = ESP }
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 872 # Carson City
+						has_full_control_of_state = 999
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1369,16 +1328,13 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_56
 		icon = GFX_goal_Enclave14
-		available = {
-			has_completed_focus = Enclavesp_16
-		}
 		relative_position_id = Enclavesp_55
-		prerequisite = { focus = Enclavesp_55 }
-		x = -2
-		y = 1
+		prerequisite = { focus = Enclavesp_79 }
+		x = -1
+		y = 2
 		
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1402,7 +1358,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 873 # Carson City
+						has_full_control_of_state = 981 #Oasis
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1417,23 +1373,20 @@ focus = {#Expedition - to Mariposa
 		available = {
 		}
 		relative_position_id = Enclavesp_55
-		prerequisite = { focus = Enclavesp_55 }
-		x = 2
-		y = 1
+		prerequisite = { focus = Enclavesp_79 }
+		x = 1
+		y = 2
 		
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
 		}
 
-		available = {
-
-		}
 
 		bypass = {
-			has_full_control_of_state = 888
+			has_full_control_of_state = 1023
 		}
 
 		cancel_if_invalid = yes
@@ -1445,10 +1398,10 @@ focus = {#Expedition - to Mariposa
 		}
 
 		completion_reward = {
-		    888 = { add_core_of = ESP }
+		    1023 = { add_core_of = ESP }
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 888 # Carson City
+						has_full_control_of_state = 1023 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1457,81 +1410,32 @@ focus = {#Expedition - to Mariposa
 		}
 	}
 	
-	focus = {
-		id = Enclavesp_58
-		icon = GFX_goal_Enclave12
-		available = {
-			888 = { is_controlled_by = ESP } # NAVARRO
-			873 = { is_controlled_by = ESP } # NAVARRO
-			has_completed_focus = Enclavesp_16
-		}
-		relative_position_id = Enclavesp_55
-		prerequisite = { focus = Enclavesp_55 }
-		x = 0
-		y = 1
-		
-
-		cost = 10.0
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			has_full_control_of_state = 798
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		    943 = { add_core_of = ESP }
-			717 = { add_core_of = ESP }
-			903 = { add_core_of = ESP }
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 717 # Carson City
-				}
-				ESP = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
-		}
-	}
+	
 	
 	focus = {
 		id = Enclavesp_59
 		icon = GFX_goal_Enclave11
 		available = {
-			717 = { is_controlled_by = ESP } # NAVARRO
+			981 = { is_controlled_by = ESP } # NAVARRO
 			has_completed_focus = Enclavesp_16
 		}
-		relative_position_id = Enclavesp_58
+		relative_position_id = Enclavesp_55
 		prerequisite = { focus = Enclavesp_58 }
 		prerequisite = { focus = Enclavesp_57 }
 		prerequisite = { focus = Enclavesp_56 }
 		x = 0
-		y = 1
+		y = 3
 		
 		will_lead_to_war_with = NUE
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
 		}
 
 		available = {
-
+        has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -1561,22 +1465,24 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_60
 		icon = GFX_goal_Enclave16
-		relative_position_id = Enclavesp_55
-		x = 4
-		y = 0
+		relative_position_id = Enclavesp_78
+		prerequisite= {
+		focus = Enclavesp_78
+		}
+		x = 0
+		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
 		}
 
 		available = {
-			867 = { is_controlled_by = ESP } # NAVARRO
-			876 = { is_controlled_by = ESP } # NAVARRO
-			884 = { is_controlled_by = ESP } # NAVARRO
-			886 = { is_controlled_by = ESP } # NAVARRO
-			has_completed_focus = Enclavesp_17
+			1070 = { is_controlled_by = ESP } # NAVARRO
+			988 = { is_controlled_by = ESP } # NAVARRO
+			1001 = { is_controlled_by = ESP } # NAVARRO
+			1022 = { is_controlled_by = ESP } # NAVARRO
 		}
 
 		bypass = {
@@ -1605,7 +1511,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -1629,26 +1535,29 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_war_support = 0.2
-			867 = { add_core_of = ESP }
-			868 = { add_core_of = ESP }
-			869 = { add_core_of = ESP }
-			870 = { add_core_of = ESP }
-			872 = { add_core_of = ESP }
-			871 = { add_core_of = ESP }
-			879 = { add_core_of = ESP }
-			875 = { add_core_of = ESP }
-			881 = { add_core_of = ESP }
+			1070 = { add_core_of = ESP }
+			1001 = { add_core_of = ESP }
+			979 = { add_core_of = ESP }
+			974 = { add_core_of = ESP }
+			976 = { add_core_of = ESP }
+			977 = { add_core_of = ESP }
+			973 = { add_core_of = ESP }
+			978 = { add_core_of = ESP }
+			975 = { add_core_of = ESP }
+			987 = { add_core_of = ESP }
+			988 = { add_core_of = ESP }
+			985 = { add_core_of = ESP }
 			add_stability = 0.05
-			867 = {
+			1070 = {
 			   add_manpower = -1500
 		    }
-			873 = {
+			988 = {
 			   add_manpower = -1230
 		    }
-			874 = {
+			975 = {
 			   add_manpower = -1800
 		    }
-			888 = {
+			1001 = {
 			   add_manpower = -1000
 		    }
 		}
@@ -1659,17 +1568,17 @@ focus = {#Expedition - to Mariposa
 		icon = GFX_goal_Enclave17
 		prerequisite = { focus = Enclavesp_61 }
 		relative_position_id = Enclavesp_61
-		x = 4
-		y = 0
+		x = 0
+		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
 		}
 
 		available = {
-		867 = { is_controlled_by = ESP }
+		1070 = { is_controlled_by = ESP }
 		}
 
 		bypass = {
@@ -1686,8 +1595,8 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_political_power = 100
-			set_capital = 867
-			867 = {
+			set_capital = 1070
+			1070 = {
 				set_state_name = "belihdom"
 			}
 		}
@@ -1701,7 +1610,7 @@ focus = {#Expedition - to Mariposa
 		x = -2
 		y = 1
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 10
@@ -1726,8 +1635,8 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.03
-			transfer_state = 873
-			873 = {
+			981 = { add_core_of = ESP }
+			981 = {
 			   add_manpower = -1500
 		    }
 		}
@@ -1741,7 +1650,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 8
@@ -1766,9 +1675,9 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.03
-			874 = { add_core_of = ESP }
-			transfer_state = 874
-			874 = {
+			999 = { add_core_of = ESP }
+			#transfer_state = 999
+			999 = {
 			   add_manpower = -1970
 		    }
 		}
@@ -1782,14 +1691,14 @@ focus = {#Expedition - to Mariposa
 		x = 2
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
 		}
 
 		available = {
-
+        
 		}
 
 		bypass = {
@@ -1806,10 +1715,10 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_war_support = 0.05
-			888 = { add_core_of = ESP }
+			1023 = { add_core_of = ESP }
 			add_stability = 0.03
-			888 = {
-			   add_manpower = -6540
+			1023 = {
+			   add_manpower = -3491
 		    }
 			create_wargoal = {
 				type = annex_everything
@@ -1828,14 +1737,14 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
 		}
 
 		available = {
-
+        has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -1855,19 +1764,19 @@ focus = {#Expedition - to Mariposa
 			add_war_support = 0.1
 			add_stability = 0.05
 			903 = { add_core_of = ESP }
-			717 = { add_core_of = ESP }
+			981 = { add_core_of = ESP }
 			943 = { add_core_of = ESP }
 			940 = { add_core_of = ESP }
 			901 = { add_core_of = ESP }
 			transfer_state = 903
-			transfer_state = 717
+			transfer_state = 981
 			transfer_state = 943
 			transfer_state = 940
 			transfer_state = 901
 			903 = {
 			   add_manpower = -752
 		    }
-			717 = {
+			981 = {
 			   add_manpower = -1034
 		    }
 			943 = {
@@ -1909,11 +1818,11 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_68
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = Enclavesp_48
-		x = 2
-		y = 3
+		relative_position_id = Enclavesp_40
+		x = 0
+		y = 5
 
-		cost = 6.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 8
@@ -1922,6 +1831,7 @@ focus = {#Expedition - to Mariposa
 		available = {
 		SBS = { exists = no }
 		USP = { exists = no }
+		has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -1950,7 +1860,7 @@ focus = {#Expedition - to Mariposa
 		x = -2
 		y = 1
 
-		cost = 6.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 8
@@ -1985,7 +1895,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 6.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 8
@@ -2013,48 +1923,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_71
-		icon = GFX_goal_enc_veterans_call
-		prerequisite = { focus = Enclavesp_68 }
-		relative_position_id = Enclavesp_68
-		x = 2
-		y = 1
-
-		cost = 6.0
-
-		ai_will_do = {
-			factor = 8
-		}
-
-		available = {
-		ERB = { exists = yes }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_to_faction = ERB
-		}
-	}
-	
-	focus = {
 		id = Enclavesp_72
 		icon = GFX_goal_enc_veterans_call
 		relative_position_id = Enclavesp_59
 		x = 0
 		y = 2
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2064,10 +1939,11 @@ focus = {#Expedition - to Mariposa
 		SBS = { exists = no }
 		USP = { exists = no }
 		NUE = { exists = no }
+		has_country_flag = yog_finished_map
 		}
 
 		bypass = {
-          has_full_control_of_state = 716
+          has_full_control_of_state = 986
 		  LIT = { exists = no }
 		}
 
@@ -2082,7 +1958,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 716 # Carson City
+						has_full_control_of_state = 986 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2099,7 +1975,7 @@ focus = {#Expedition - to Mariposa
 		x = -2
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2111,7 +1987,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		bypass = {
-          has_full_control_of_state = 765
+          has_full_control_of_state = 719
 		}
 
 		cancel_if_invalid = yes
@@ -2125,7 +2001,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 765 # Carson City
+						has_full_control_of_state = 719 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2142,7 +2018,7 @@ focus = {#Expedition - to Mariposa
 		x = 2
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2154,7 +2030,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		bypass = {
-          has_full_control_of_state = 794
+          has_full_control_of_state = 729
 		}
 
 		cancel_if_invalid = yes
@@ -2168,7 +2044,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 794 # Carson City
+						has_full_control_of_state = 729 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2185,7 +2061,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2227,7 +2103,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 5.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 100
@@ -2260,10 +2136,10 @@ focus = {#Expedition - to Mariposa
 		icon = GFX_goal_enc_fort
 		prerequisite = { focus = Enclavesp_68 }
 		relative_position_id = Enclavesp_68
-		x = 4
+		x = 2
 		y = 1
 
-		cost = 6.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2298,7 +2174,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 1.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 1000
@@ -2340,10 +2216,10 @@ focus = {#Expedition - to Mariposa
 			has_completed_focus = Enclavesp_55
    
 		}
-		x = 2
-		y = 0
+		x = 0
+		y = 1
 		
-		cost = 1.0
+		cost = 45
 		completion_reward = {
 			add_ideas = cleanoperation
 		}
@@ -2357,7 +2233,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2399,7 +2275,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2441,7 +2317,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2483,7 +2359,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2525,7 +2401,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2567,7 +2443,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -2578,7 +2454,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		bypass = {
-          has_full_control_of_state = 877
+          has_full_control_of_state = 989
 		}
 
 		cancel_if_invalid = yes
@@ -2592,7 +2468,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 877 # Carson City
+						has_full_control_of_state = 989 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2604,22 +2480,19 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_86
 		icon = GFX_goal_enc_sword_cross
-		prerequisite = { focus = Enclavesp_25 }
-		relative_position_id = Enclavesp_25
+		prerequisite = { focus = Enclavesp_21 }
+		relative_position_id = Enclavesp_21
 		x = 1
 		y = 1
 		
 		will_lead_to_war_with = RAR
 
-		cost = 8.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 150
 		}
 
-		available = {
-          880 = { is_controlled_by = ESP }
-		}
 
 		bypass = {
 
@@ -2634,7 +2507,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		completion_reward = {
-		    884 = { add_core_of = ESP }
+		    1001 = { add_core_of = ESP }
 			create_wargoal = {
 				type = annex_everything
 				target = RAR
@@ -2645,12 +2518,12 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_87
 		icon = GFX_goal_enc_fort
-		prerequisite = { focus = Enclavesp_25 }
-		relative_position_id = Enclavesp_25
+		prerequisite = { focus = Enclavesp_21 }
+		relative_position_id = Enclavesp_21
 		x = -1
 		y = 1
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 1000

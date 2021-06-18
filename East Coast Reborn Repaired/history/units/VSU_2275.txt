@@ -9,35 +9,35 @@
 units = {
 	division {
 		name = "Mariposa Remnants"
-		location = 1099
+		location = 1123
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Head-Squashers"
-		location = 1106
+		location = 12391
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Pain-Bringers"
-		location = 1110
+		location = 1114
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Крушители"
-		location = 1118
+		location = 1107
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "Bone-Pickers"
-		location = 1104
+		location = 1126
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0

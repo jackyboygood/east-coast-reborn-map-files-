@@ -2858,9 +2858,9 @@ focus_tree = {
 		relative_position_id = lamplayt_36
 		x = 4
 		y = -1
-		cost = 7
+		cost = 60
 		completion_reward = {
-		    transfer_state = 1005
+		    transfer_state = 1002
 			add_political_power = 150
 		}
 	}

@@ -2,21 +2,17 @@ state={
 	id=980
 	name="South Washington"
 	resources = {
-		metal = 15
-		circuitry = 2
-		
+		metal = 3	
 	}
 	history={
-		owner = VSU
-		add_core_of = VSU
+		owner = UBS
+		add_core_of = UBS
 
 		victory_points = {
 			1104 25
 		}
 		buildings = {
-			infrastructure = 5
-			arms_factory = 3
-			industrial_complex = 3
+			arms_factory = 1
 
 		}
 	}
