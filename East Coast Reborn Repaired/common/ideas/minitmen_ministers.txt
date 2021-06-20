@@ -41,7 +41,7 @@ political_advisor = {
 		}
 		
 		paperre = {
-		    cost = 250
+		    cost = 100
 			picture = advisor_minitman6
 
 			allowed = {
@@ -57,7 +57,7 @@ political_advisor = {
 	
 theorist = {	
         independen = {
-		    cost = 600
+		    cost = 100
 			picture = advisor_minitman1
             available = { has_completed_focus = Minitmen_20 }
 			allowed = {
@@ -85,7 +85,7 @@ theorist = {
 	}
 high_command = {
        minitman_shou = {
-		    cost = 200
+		    cost = 100
 			picture = advisor_minitman5
 			allowed = {
 				original_tag = MEN
@@ -100,7 +100,7 @@ high_command = {
 
 army_chief = {
 		codsvord1 = {
-			cost = 90
+			cost = 100
 			picture = advisor_minitman7
 			
 			allowed = {
