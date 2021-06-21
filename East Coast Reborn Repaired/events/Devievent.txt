@@ -11,7 +11,7 @@ country_event = {
 	option = {
 		name = devievent.1.a
 		add_manpower = 1000
-		874 = {
+		999 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 3
@@ -22,7 +22,7 @@ country_event = {
 	option = {
 		name = devievent.1.b
 		add_manpower = 500
-		874 = {
+		999 = {
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
@@ -34,7 +34,7 @@ country_event = {
 		name = devievent.1.c
 
 		add_manpower = 350
-		874 = {
+		999 = {
 			add_building_construction = {
 				type = arms_factory
 				level = 2
@@ -100,7 +100,7 @@ country_event = {
 	option = {
 		name = devievent.3.a
 		add_ideas = deyvi13idea
-		874 = {
+		999 = {
 				set_state_name = "kindbob"
 			}
 		hidden_effect = { set_cosmetic_tag = Bobcountry_ruler }
@@ -108,7 +108,7 @@ country_event = {
 	option = {
 		name = devievent.3.b
 		add_ideas = deyvi14idea
-		874 = {
+		999 = {
 				set_state_name = "bobatopia"
 			}
 		hidden_effect = { set_cosmetic_tag = Bobcountry_intellectuals }
@@ -116,7 +116,7 @@ country_event = {
 	option = {
 		name = devievent.3.c
 		add_ideas = deyvi15idea
-		874 = {
+		999 = {
 				set_state_name = "respubob"
 			}
 		hidden_effect = { set_cosmetic_tag = Bobcountry_elites }

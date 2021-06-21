@@ -82,7 +82,6 @@ set_popularities = {
 
 add_ideas = {
 	bunkerblues
-	oldguard
 }
 
 add_opinion_modifier = { target = TRL modifier = boshatesmutants }

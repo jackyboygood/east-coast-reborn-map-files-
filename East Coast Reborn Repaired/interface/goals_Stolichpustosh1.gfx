@@ -1267,4 +1267,9 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/dave5.dds"			
 	}
 	
+	######USP#####
+    SpriteType = {
+	name = "GFX_goal_USP_god_bless"
+	texturefile = "gfx/interface/goals/USP_god_bless.dds"			
+	}
 }

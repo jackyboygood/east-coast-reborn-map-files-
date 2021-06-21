@@ -137,8 +137,8 @@ country_event = {
 	option = {
 		name = Enclavestate.5.a
 		ESP = { 
-			transfer_state = 885
-			885 = { add_core_of = ESP }
+			transfer_state = 1002
+			1002 = { add_core_of = ESP }
 			add_political_power = 200
 		    add_manpower = -750
 			hidden_effect = {
@@ -149,8 +149,8 @@ country_event = {
 	option = {
 		name = Enclavestate.5.b
 		ESP = { 
-			transfer_state = 885
-			885 = { add_core_of = ESP }
+			transfer_state = 1002
+			1002 = { add_core_of = ESP }
 			add_political_power = -50
 		    add_manpower = -220
 			hidden_effect = {

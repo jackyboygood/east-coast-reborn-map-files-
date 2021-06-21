@@ -121,18 +121,18 @@ country_event = {
 
 	option = {
 		name = detievent.5.a
-		add_resource = { type = water amount = 8 state = 887 }
+		add_resource = { type = water amount = 8 state = 986 }
 		add_manpower = 600
 	}
 	option = {
 		name = detievent.5.b
-		add_resource = { type = fuel amount = 8 state = 887 }
+		add_resource = { type = fuel amount = 8 state = 986 }
 		add_manpower = 600
 	}
 	option = {
 		name = detievent.5.c
         add_manpower = 500
-		add_resource = { type = metal amount = 8 state = 887 }
+		add_resource = { type = metal amount = 8 state = 986 }
 	}
 }
 
@@ -307,7 +307,7 @@ country_event = {
 		name = detievent.12.a
 		add_political_power = 50
 		add_manpower = 120
-		transfer_state = 896
+		transfer_state = 984
 		LIT = { 
 			hidden_effect = {
 				country_event = { days = 1 id = detievent.13 }
@@ -329,7 +329,7 @@ country_event = {
 		name = detievent.13.a
 		add_political_power = 50
 		add_manpower = 250
-		transfer_state = 897
+		transfer_state = 984
 		set_country_flag = resvedvernulis
 	}
 }
@@ -640,13 +640,13 @@ country_event = {
 
 	option = {
 		name = detievent.11.a
-		set_capital = 887
+		set_capital = 986
 			start_civil_war = {
 				ruling_party = elites
 				ideology = people
 				size = 0.5
-				capital = 893
-				states = { 893 892 894 }
+				capital = 998
+				states = { 998 997 990 }
 			}
 			random_other_country = {
 				limit = {

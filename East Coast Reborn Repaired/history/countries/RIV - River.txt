@@ -46,7 +46,6 @@ set_technology = {
 	support_weaponry = 1
 	demolitions_weaponry_tech = 1
 	fireteam_weaponry_tech = 1
-	raider_reckless_aggression = 1
 	wasteland_pa_tech = 1
 }
 

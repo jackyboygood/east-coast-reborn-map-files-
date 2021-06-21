@@ -12,12 +12,12 @@ focus_tree = {
 		id = Stolibrother_1
 		icon = GFX_goal_enc_radio
 		ai_will_do = { factor = 1 }
-		x = 10
-		y = 0 
+		x = 11
+		y = 1
 		cost = 7.8
 		completion_reward = {
 			add_ideas = SBS_radio
-			867 = {
+			1070 = {
 				add_building_construction = {
 					type = radar_station
 					level = 2
@@ -31,26 +31,15 @@ focus_tree = {
 
     focus = {
 		id = Stolibrother_2
-		icon = GFX_goal_bos_wasteland_conscription
+		icon = GFX_goal_generic_focus_magazine_gunsandbullets_gun_laws
 		prerequisite = { focus = Stolibrother_1 }
 		relative_position_id = Stolibrother_1
 		x = 0
 		y = 1
-
-		cost = 5.8
-
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -65,205 +54,10 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = Stolibrother_28
-		icon = GFX_goal_bos_generic
-		cost = 8.6
-		available = {
-			has_completed_focus =  Stolibrother_3
-		}
-		relative_position_id = Stolibrother_20
-		x = 1
-		y = 2
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_28 entered"
-			}
-			add_political_power = 100
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_28 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_29
-		icon = GFX_goal_bos_generic_research
-		cost = 8.6
-		relative_position_id = Stolibrother_28
-		prerequisite = {
-			focus = Stolibrother_28
-		}
-		x = -2
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_29 entered"
-			}
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_29 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_30
-		icon = GFX_goal_bos_generic_research
-		cost = 8.6
-		relative_position_id = Stolibrother_29
-		prerequisite = {
-			focus = Stolibrother_29
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_30 entered"
-			}
-			add_ideas = genericbosscriberesearch
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_30 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_31
-		icon = GFX_goal_bos_repconn_hq
-		cost = 8.6
-		relative_position_id = Stolibrother_30
-		prerequisite = {
-			focus = Stolibrother_30
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_31 entered"
-			}
-			capital_scope = {
-				add_resource = { type = advanced_technology amount = 8 }
-			}
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_31 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_32
-		icon = GFX_goal_generic_robots_focus
-		cost = 8.6
-		relative_position_id = Stolibrother_31
-		prerequisite = {
-			focus = Stolibrother_31
-		}
-		prerequisite = {
-			focus = Stolibrother_35
-		}
-		x = 1
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_32 entered"
-			}
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = robotics_tech }
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_32 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_33
-		icon = GFX_goal_generic_bunkers_focus
-		cost = 8.6
-		relative_position_id = Stolibrother_28
-		prerequisite = {
-			focus = Stolibrother_28
-		}
-		x = 1
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_33 entered"
-			}
-			add_ideas = genericbosbunkerthought
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_33 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_34
-		icon = GFX_goal_generic_BOS_focus_surface_outposts
-		cost = 8.6
-		relative_position_id = Stolibrother_33
-		prerequisite = {
-			focus = Stolibrother_33
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_34 entered"
-			}
-			swap_ideas = {
-				add_idea = genericbossurfaceoutposts
-				remove_idea = genericbosbunkerthought
-			}
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_34 exited"
-			}
-		}
-	}
-	focus = {
-		id = Stolibrother_35
-		icon = GFX_goal_generic_military_industry_focus
-		cost = 8.6
-		relative_position_id = Stolibrother_34
-		prerequisite = {
-			focus = Stolibrother_34
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_35 entered"
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_35 exited"
-			}
-		}
-	}
 	
 	focus = {
 		id = Stolibrother_3
-		icon = GFX_goal_bos_generic
+		icon = GFX_goal_generic_freedom
 		prerequisite = { focus = Stolibrother_2 }
 		relative_position_id = Stolibrother_2
 		x = 0
@@ -271,7 +65,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = SEV
 
-		cost = 5.0
+		cost = 7
 
 		ai_will_do = {
 			factor = 90
@@ -298,9 +92,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    870 = { add_core_of = SBS }
-			869 = { add_core_of = SBS }
-			768 = { add_core_of = SBS }
+		    1024 = { add_core_of = SBS }
+			980 = { add_core_of = SBS }
 			create_wargoal = {
 				type = annex_everything
 				target = SEV
@@ -310,13 +103,13 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_4
-		icon = GFX_goal_bos_generic_industrial
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		relative_position_id = Stolibrother_3
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_3
 		}
-		x = -3
+		x = -6
 		y = 1
 
 		completion_reward = {
@@ -336,7 +129,7 @@ focus_tree = {
 		id = Stolibrother_5
 		icon = GFX_goal_generic_metal_focus
 		relative_position_id = Stolibrother_4
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_4
 		}
@@ -362,7 +155,7 @@ focus_tree = {
 		id = Stolibrother_6
 		icon = GFX_goal_generic_electricity_focus
 		relative_position_id = Stolibrother_4
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_4
 		}
@@ -375,7 +168,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Stolibrother_6 entered"
 			}
 			capital_scope = {
-				add_resource = { type = electricity amount = 10 }
+				add_resource = { type = energy amount = 10 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -388,7 +181,7 @@ focus_tree = {
 		id = Stolibrother_7
 		icon = GFX_goal_generic_electronics_focus
 		relative_position_id = Stolibrother_4
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_4
 		}
@@ -401,7 +194,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Stolibrother_7 entered"
 			}
 			capital_scope = {
-				add_resource = { type = electronics amount = 10 }
+				add_resource = { type = circuitry amount = 10 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -414,7 +207,7 @@ focus_tree = {
 		id = Stolibrother_8
 		icon = GFX_goal_generic_advanced_technology_focus
 		relative_position_id = Stolibrother_5
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_5
 		}
@@ -446,7 +239,7 @@ focus_tree = {
 		id = Stolibrother_9
 		icon = GFX_goal_generic_fuel_focus
 		relative_position_id = Stolibrother_7
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_5
 		}
@@ -465,7 +258,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Stolibrother_9 entered"
 			}
 			capital_scope = {
-				add_resource = { type = fuel amount = 8 }
+				add_resource = { type = energy amount = 8 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -476,13 +269,13 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_10
-		icon = GFX_goal_bos_generic_infantry
+		icon = GFX_goal_generic_BOS_focus_combined_operations
 		relative_position_id = Stolibrother_3
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_3
 		}
-		x = 3
+		x = 0
 		y = 1
 
 		completion_reward = {
@@ -490,7 +283,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
 			}
-			add_tech_bonus = { bonus = 0.2 uses = 2 category = land_doctrine }
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
@@ -500,9 +293,9 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_11
-		icon = GFX_goal_bos_victory_or_death
+		icon = GFX_goal_generic_BOS_focus_t45d_production
 		relative_position_id = Stolibrother_10
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_10
 		}
@@ -524,9 +317,9 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_12
-		icon = GFX_goal_bos_wasteland_conscription
+		icon = GFX_goal_generic_power_armour_raider_3
 		relative_position_id = Stolibrother_10
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_10
 		}
@@ -550,7 +343,7 @@ focus_tree = {
 		id = Stolibrother_13
 		icon = GFX_goal_generic_BoS_diplomatic_focus
 		relative_position_id = Stolibrother_11
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_11
 		}
@@ -572,9 +365,9 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_14
-		icon = GFX_goal_bos_outsider_recruitment
+		icon = GFX_goal_generic_f76_player
 		relative_position_id = Stolibrother_12
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_12
 		}
@@ -598,7 +391,7 @@ focus_tree = {
 		id = Stolibrother_15
 		icon = GFX_goal_generic_BOS_focus_t45d_production
 		relative_position_id = Stolibrother_13
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_13
 		}
@@ -628,7 +421,7 @@ focus_tree = {
 		id = Stolibrother_16
 		icon = GFX_goal_generic_common_firearms_focus
 		relative_position_id = Stolibrother_14
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_14
 		}
@@ -690,7 +483,7 @@ focus_tree = {
 		x = 7
 		y = 1
 
-		cost = 17.8
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -727,7 +520,7 @@ focus_tree = {
 		relative_position_id = Stolibrother_8
 		x = 2
 		y = 1
-		cost = 8.6
+		cost = 60
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -743,7 +536,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = VSU
 
-		cost = 12.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -770,7 +563,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    871 = { add_core_of = SBS }
+		    977 = { add_core_of = SBS }
 			create_wargoal = {
 				type = annex_everything
 				target = VSU
@@ -780,13 +573,13 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_20
-		icon = GFX_goal_moj_help_the_needy
+		icon = GFX_goal_chem_super_stim
 		relative_position_id = Stolibrother_19
-		cost = 10.6
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_19
 		}
-		x = 0
+		x = -1
 		y = 1
 
 		completion_reward = {
@@ -804,13 +597,13 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_21
-		icon = GFX_goal_moj_know_our_name
+		icon = GFX_goal_generic_BOS_focus_t51b_production
 		relative_position_id = Stolibrother_19
-		cost = 6.3
+		cost = 60
 		prerequisite = {
 			focus = Stolibrother_19
 		}
-		x = 2
+		x = 1
 		y = 1
 
 		completion_reward = {
@@ -830,11 +623,14 @@ focus_tree = {
 	focus = {
 		id = Stolibrother_22
 		icon = GFX_goal_Newyorkbroth1
-		cost = 5.00
-		relative_position_id = Enclavesp_20
-		x = -4
-		y = 3
-
+		cost = 45
+		available = {
+		has_country_flag = yog_finished_map
+		}
+		relative_position_id = Stolibrother_4
+		x = 0
+		y = 5
+		
 		ai_will_do = {
 			factor = 80
 		}
@@ -867,7 +663,7 @@ focus_tree = {
 		id = Stolibrother_23
 		icon = GFX_goal_Newyorkbroth
 		relative_position_id = Stolibrother_22
-		cost = 5.0
+		cost = 45
 		prerequisite = {
 			focus = Stolibrother_22
 		}
@@ -892,7 +688,7 @@ focus_tree = {
 		id = Stolibrother_24
 		icon = GFX_goal_Newyorkbroth2
 		relative_position_id = Stolibrother_22
-		cost = 5.0
+		cost = 45
 		prerequisite = {
 			focus = Stolibrother_22
 		}
@@ -917,7 +713,7 @@ focus_tree = {
 		id = Stolibrother_25
 		icon = GFX_goal_Newyorkbroth3
 		relative_position_id = Stolibrother_22
-		cost = 5.0
+		cost = 45
 		prerequisite = {
 			focus = Stolibrother_22
 		}
@@ -940,7 +736,7 @@ focus_tree = {
 	focus = {
 		id = Stolibrother_26
 		icon = GFX_goal_Newyorkbroth4
-		cost = 5.00
+		cost = 45
 		prerequisite = {
 			focus = Stolibrother_23
 		}
@@ -985,7 +781,7 @@ focus_tree = {
 	focus = {
 		id = Stolibrother_27
 		icon = GFX_goal_Newyorkbroth5
-		cost = 5.00
+		cost = 45
 		prerequisite = {
 			focus = Stolibrother_26
 		}
@@ -1022,23 +818,226 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = Stolibrother_28
+		icon = GFX_goal_generic_t51b_power_armour_focus
+		cost = 7
+		available = {
+			has_completed_focus =  Stolibrother_3
+		}
+		relative_position_id = Stolibrother_20
+		x = 1
+		y = 3
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_28 entered"
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_28 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_29
+		icon = GFX_goal_generic_circuit_reg_2
+		cost = 60
+		relative_position_id = Stolibrother_28
+		prerequisite = {
+			focus = Stolibrother_28
+		}
+		x = -1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_29 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_29 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_30
+		icon = GFX_goal_generic_terminal_1
+		cost = 60
+		relative_position_id = Stolibrother_29
+		prerequisite = {
+			focus = Stolibrother_29
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_30 entered"
+			}
+			add_ideas = genericbosscriberesearch
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_30 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = Stolibrother_31
+		icon = GFX_goal_generic_circuit_reg
+		cost = 60
+		relative_position_id = Stolibrother_30
+		prerequisite = {
+			focus = Stolibrother_30
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_31 entered"
+			}
+			capital_scope = {
+				add_resource = { type = advanced_technology amount = 8 }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_31 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_32
+		icon = GFX_goal_generic_robots_focus
+		cost = 60
+		relative_position_id = Stolibrother_31
+		prerequisite = {
+			focus = Stolibrother_31
+		}
+		prerequisite = {
+			focus = Stolibrother_35
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_32 entered"
+			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = robotics_tech_category }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_32 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_33
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 60
+		relative_position_id = Stolibrother_28
+		prerequisite = {
+			focus = Stolibrother_28
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_33 entered"
+			}
+			add_ideas = genericbosbunkerthought
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_33 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_34
+		icon = GFX_goal_generic_BOS_focus_surface_outposts
+		cost = 60
+		relative_position_id = Stolibrother_33
+		prerequisite = {
+			focus = Stolibrother_33
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_34 entered"
+			}
+			swap_ideas = {
+				add_idea = genericbossurfaceoutposts
+				remove_idea = genericbosbunkerthought
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_34 exited"
+			}
+		}
+	}
+	focus = {
+		id = Stolibrother_35
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 60
+		relative_position_id = Stolibrother_34
+		prerequisite = {
+			focus = Stolibrother_34
+		}
+		x = 0
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_35 entered"
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Stolibrother_35 exited"
+			}
+		}
+	}
+	
+	focus = {
 		id = Stolibrother_36
 		icon = GFX_goal_megatonna29
-		relative_position_id = Stolibrother_17
+		relative_position_id = Stolibrother_19
+	    prerequisite = {
+			focus = Stolibrother_19
+		}
 		available = {
-		   880 = { is_controlled_by = ESP } #do we actually own it right now?
+		  989 = { is_controlled_by = ESP } #do we actually own it right now?
 		   ESP = { exists = yes }
 		}
 		bypass = {
 			ESP = { exists = no }
 			ESP = { is_subject_of = SBS}
 		}
-		cost = 10.0
+		cost = 70
 		ai_will_do = {
 			factor = 500
 		}
-		x = 2
-		y = 0
+		x = -3
+		y = 1
+		
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -1055,11 +1054,15 @@ focus_tree = {
 	focus = {
 		id = Stolibrother_37
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = Stolibrother_36
-		x = 0
-		y = 1
+		relative_position_id = Stolibrother_19
+		x = -3
+		y = 2
+		
+	    prerequisite = {
+			focus = Stolibrother_36
+		}
 
-		cost = 6.0
+		cost = 70
 
 		ai_will_do = {
 			factor = 8
@@ -1091,17 +1094,17 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_38
-		icon = GFX_goal_bos_generic
-		relative_position_id = Stolibrother_4
+		icon = GFX_goal_mutant_war_focus
+		relative_position_id = Stolibrother_19
 		prerequisite = {
-			focus = Stolibrother_4
+			focus = Stolibrother_19
 		}
-		x = -4
+		x = 3
 		y = 1
 		
 		will_lead_to_war_with = SPP
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 25
@@ -1137,7 +1140,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_39
-		icon = GFX_goal_bos_generic
+		icon = GFX_goal_generic_swords
 		relative_position_id = Stolibrother_38
 		prerequisite = {
 			focus = Stolibrother_38
@@ -1146,7 +1149,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
@@ -1156,6 +1159,7 @@ focus_tree = {
 			ESP = { exists = no }
 			has_full_control_of_state = 716
 			has_full_control_of_state = 852
+			has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -1184,13 +1188,13 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_40
-		icon = GFX_goal_bos_generic
-		relative_position_id = Stolibrother_39
-		x = 0
-		y = 3
+		icon = GFX_goal_generic_generic_diplomatic_focus
+		relative_position_id = Stolibrother_4
+		x = 6
+		y = 5
 		
 
-		cost = 10.0
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1201,7 +1205,7 @@ focus_tree = {
 		}
 
 		bypass = {
-            has_full_control_of_state = 844
+            has_full_control_of_state = 975
 		}
 
 		cancel_if_invalid = yes
@@ -1219,7 +1223,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_41
-		icon = GFX_goal_bos_generic
+		icon = GFX_goal_generic_generic_diplomatic_focus
 		relative_position_id = Stolibrother_40
 		prerequisite = {
 			focus = Stolibrother_40
@@ -1228,7 +1232,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1239,7 +1243,7 @@ focus_tree = {
 		}
 
 		bypass = {
-            has_full_control_of_state = 763
+            has_full_control_of_state = 981
 		}
 
 		cancel_if_invalid = yes
@@ -1257,7 +1261,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_42
-		icon = GFX_goal_bos_generic
+		icon = GFX_goal_generic_generic_diplomatic_focus
 		relative_position_id = Stolibrother_40
 		prerequisite = {
 			focus = Stolibrother_40
@@ -1266,7 +1270,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1297,7 +1301,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_43
-		icon = GFX_goal_bos_generic
+		icon = GFX_goal_generic_war_focus
 		relative_position_id = Stolibrother_41
 		prerequisite = {
 			focus = Stolibrother_41
@@ -1309,7 +1313,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1320,7 +1324,7 @@ focus_tree = {
 		}
 
 		bypass = {
-            has_full_control_of_state = 769
+            has_full_control_of_state = 1023
 		}
 
 		cancel_if_invalid = yes
@@ -1332,13 +1336,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			annex_country = { target = IBS transfer_troops = yes }
+			SBS = {
+						create_wargoal = { type = annex_everything target = IBS }
+			  }
 		}
 	}
 	
 	focus = {
 		id = Stolibrother_44
-		icon = GFX_goal_bos_generic
+		icon = GFX_goal_generic_war_focus
 		relative_position_id = Stolibrother_43
 		prerequisite = {
 			focus = Stolibrother_43
@@ -1347,7 +1353,7 @@ focus_tree = {
 		y = 1
 		
 
-		cost = 10.0
+		cost = 70
 
 		ai_will_do = {
 			factor = 90
@@ -1358,7 +1364,7 @@ focus_tree = {
 		}
 
 		bypass = {
-            has_full_control_of_state = 820
+            has_full_control_of_state = 1022
 		}
 
 		cancel_if_invalid = yes
@@ -1372,7 +1378,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 820 # Carson City
+						has_full_control_of_state = 1022 # Carson City
 				}
 				SBS = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1402,7 +1408,7 @@ focus_tree = {
 						add_ideas = cleanoperation
 				}
 		}
-		cost = 5.0	
+		cost = 60
  }
 	
 	
