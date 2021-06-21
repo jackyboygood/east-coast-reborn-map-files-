@@ -1,9 +1,28 @@
 state={
 	id=1026
 	name="Calver State"
+	resources = {
+	
+	}
+	history={
+		owner = KEL
+		add_core_of = KEL
+
+		victory_points = {
+			12488 25
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	
 	provinces={
 		1034 12488 12489 12490 12491 12492 12493 12495 12496 12497
 	}
-	manpower=0
+	manpower=3000
 	buildings_max_level_factor=1.000
+	state_category = town 
 }

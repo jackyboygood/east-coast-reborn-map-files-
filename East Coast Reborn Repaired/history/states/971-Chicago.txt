@@ -1,6 +1,29 @@
 state={
 	id=971
 	name="Chicago"
+	resources = {
+		metal = 12
+		composites = 2
+		water = 4
+		energy = 4
+		circuitry = 6
+		advanced = 2
+	}
+	history={
+		owner = DAD
+		add_core_of = DAD
+
+		victory_points = {
+			1271 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		1271 12790 12791 12792 12793 12794 12795 12796 12797 12798 12799 12800 12801 
 	}

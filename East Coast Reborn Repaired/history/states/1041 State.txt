@@ -1,9 +1,31 @@
 state={
 	id=1041
-	name="STATE_1041"
+	name="Central New-York"
+	resources = {
+		metal = 30
+		energy = 8
+		circuitry = 4
+		
+	}
+	history={
+		owner = NUE
+		add_core_of = NUE
+
+		victory_points = {
+			12529  25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 5
+			industrial_complex = 4
+
+		}
+	}
+
 	provinces={
 		12527 12528 12533 12535 12531 12536 12530 12529 12534 12532
 	}
-	manpower=0
+	manpower=20000
 	buildings_max_level_factor=1.000
+	state_category = metropolis
 }

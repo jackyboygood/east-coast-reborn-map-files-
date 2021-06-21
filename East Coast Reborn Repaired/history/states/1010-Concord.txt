@@ -2,7 +2,10 @@ state={
 	id=1010
 	name="Concord"
 	resources = {
-		metal = 2
+		metal = 8
+		energy = 4
+		circuitry = 8
+	
 	}
 	history={
 		owner = DJA
@@ -12,7 +15,10 @@ state={
 			12634 25
 		}
 		buildings = {
-			arms_factory = 1
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 2
+
 		}
 	}
 	provinces={

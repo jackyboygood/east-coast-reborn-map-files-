@@ -1,11 +1,31 @@
 
 state={
 	id=970
-	name="The Ancient Forest"
+	name="The Great Luminous Forest "
+	resources = {
+		water = 2
+		
+		
+		
+	}
+	history={
+		owner = DUB
+		add_core_of = DUB
+
+		victory_points = {
+			12832 25
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
 	provinces={
 		13 440 651 678 12827 12828 12829 12830 12831 12832 12833 12834 12835 
 	}
-	manpower=1500
+	manpower=9000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

@@ -1,9 +1,31 @@
 state={
 	id=1067
-	name="STATE_1067"
+	name="Cleaveland"
+	resources = {
+		metal = 8
+	    water =2
+		energy = 2
+		circuitry = 2
+		
+	}
+	history={
+		owner = KLI
+		add_core_of = KLI
+
+		victory_points = {
+			12382  25
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+	}
 	provinces={
 		1201 1224 1204 1243
 	}
-	manpower=0
+	manpower=8000
 	buildings_max_level_factor=1.000
+	state_category = city 
 }

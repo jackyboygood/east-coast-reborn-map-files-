@@ -1,10 +1,29 @@
 state={
 	id=1045
 	name="Forest Mine"
+	resources = {
+		metal = 1
+		water = 1
+		
+	}
+	history={
+		owner = AAF
+		add_core_of = AAF
+
+		victory_points = {
+			12838 25
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
 	provinces={
 		245 670 12836 12837 12838 12839 12840 12841 12842 12843 
 	}
-	manpower=1500
+	manpower=7500
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

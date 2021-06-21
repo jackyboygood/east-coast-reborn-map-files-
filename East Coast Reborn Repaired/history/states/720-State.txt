@@ -2,6 +2,24 @@
 state={
 	id=720
 	name="Echo Base Food Warehouse"
+	resources = {
+		metal = 4
+	}
+	history={
+		owner = AAB
+		add_core_of = AAB
+
+		victory_points = {
+			12966 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		12969 1403 1396 12967 12966 12965 12964 12968
 	}

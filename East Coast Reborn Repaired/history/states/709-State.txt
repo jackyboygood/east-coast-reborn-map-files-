@@ -1,0 +1,32 @@
+state={
+	id=709
+	name="Detroit"
+	resources = {
+        metal =8
+		water = 2
+		energy = 4
+		circuitry = 6
+		
+	}
+	history={
+		owner = DET
+		add_core_of = DET
+
+		victory_points = {
+			1299 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 3
+
+		}
+	}
+	
+	provinces={
+		1170 1280 1288 1299 1369 1397 8671 8672
+	}
+	manpower = 100000
+	state_category = large_town 
+	buildings_max_level_factor=1.000
+}

@@ -1,9 +1,30 @@
 state={
 	id=1038
 	name="STATE_1038"
+	resources = {
+
+		metal = 2
+		water = 1
+		
+	}
+	history={
+		owner = MUT
+		add_core_of = MUT
+
+		victory_points = {
+			12575 5
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 
+
+		}
+	}
 	provinces={
 		 12577 12576 12575 12574
 	}
-	manpower=0
+	manpower=3000
 	buildings_max_level_factor=1.000
+	state_category = town 
 }

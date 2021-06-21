@@ -1,6 +1,27 @@
 state={
 	id=972
 	name="Chicago Harbor"
+	resources = {
+		metal = 4
+		water = 2
+		circuitry = 2
+		
+	}
+	history={
+		owner = DAD
+		add_core_of = DAD
+
+		victory_points = {
+			12789 5
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		12785 12786 12787 12788 12789 
 	}

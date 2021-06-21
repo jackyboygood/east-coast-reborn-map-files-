@@ -1,6 +1,26 @@
 state={
 	id=1062
-	name="STATE_1062"
+	name="Anishinaabe Camp"
+	resources = {
+		metal = 4
+		water = 4
+		
+	}
+	history={
+		owner = AAQ
+		add_core_of = AAQ
+
+		victory_points = {
+			12935 25
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+	}
+
 	provinces={
 		8704 12931 12936 12943 12928 1465 12926 12927 12942 12935 12934 12933 12941 
 	}

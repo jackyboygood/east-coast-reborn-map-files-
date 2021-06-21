@@ -2,21 +2,21 @@ state={
 	id=1012
 	name="Corvega Assembly Plant"
 	resources = {
-		metal = 8
-		energy = 2
-		circuitry = 2
+		metal = 18
+		energy = 8
+		circuitry = 8
 	
 	}
 	history={
-		owner = KOV
-		add_core_of = KOV
+		owner = DJA
+		add_core_of = DJA
 
 		victory_points = {
 			12636 25
 		}
 		buildings = {
-			infrastructure = 2
-			arms_factory = 2
+			infrastructure = 5
+			arms_factory = 3
 			industrial_complex = 2
 
 		}

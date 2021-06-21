@@ -1,9 +1,31 @@
 state={
 	id=1042
-	name="STATE_1042"
+	name="Central Port of New-York "
+	resources = {
+		metal = 4
+		water = 2
+		energy = 8
+		circuitry = 4
+		
+	}
+	history={
+		owner = NUE 
+		add_core_of = NUE
+
+		victory_points = {
+			12547  25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 5
+			industrial_complex = 4
+
+		}
+	}
 	provinces={
 		 12546 12547 12548
 	}
-	manpower=0
+	manpower=15000
 	buildings_max_level_factor=1.000
+	state_category = city 
 }

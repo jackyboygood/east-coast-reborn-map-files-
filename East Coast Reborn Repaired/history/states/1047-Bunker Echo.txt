@@ -1,6 +1,28 @@
 state={
 	id=1047
 	name="Bunker Echo"
+	resources = {
+		metal = 1
+		water = 2
+		energy = 4
+		circuitry = 2
+		
+	}
+	history={
+		owner = AAJ
+		add_core_of = AAJ
+
+		victory_points = {
+			12903 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 3
+
+		}
+	}
+
 	provinces={
 		1418 12893 12894 12895 12896 12897 12898 12899 12900 12901 12902 12903 
 	}

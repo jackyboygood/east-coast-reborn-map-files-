@@ -1,9 +1,29 @@
 state={
 	id=994
 	name="Herzog Mines"
+	resources = {
+
+		metal = 8
+	}
+	history={
+		owner = POI
+		add_core_of = POI
+
+		victory_points = {
+			12514 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+	}
+	
 	provinces={
 		1103 12508 12509 12510 12511 12512 12513 12514 12515 
 	}
-	manpower=0
+	manpower=2000
 	buildings_max_level_factor=1.000
+	state_category = rural 
 }

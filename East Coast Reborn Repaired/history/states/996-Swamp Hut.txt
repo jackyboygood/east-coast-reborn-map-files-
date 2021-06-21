@@ -1,9 +1,29 @@
 state={
 	id=996
 	name="Swamp Hut"
+	resources = {
+
+		water = 32
+		
+	}
+	history={
+		owner = POI
+		add_core_of = POI
+
+		victory_points = {
+			12521 25
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+	}
+	
 	provinces={
 		1064 12516 12517 12518 12519 12520 12521 12522 
 	}
-	manpower=0
+	manpower=1000
 	buildings_max_level_factor=1.000
+	state_category = rural 
 }

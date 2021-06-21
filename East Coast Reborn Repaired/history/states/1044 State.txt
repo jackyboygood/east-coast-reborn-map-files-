@@ -1,9 +1,32 @@
 state={
 	id=1044
-	name="STATE_1044"
+	name="Ruins of the Workshop at Phil"
+	resources = {
+		metal = 8
+		water =2
+		energy = 2
+		circuitry = 1
+		
+	}
+	history={
+		owner = KEN
+		add_core_of = KEN
+
+		victory_points = {
+			12612  15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 5
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		12604 12613 12612 12611 12607 12608 12609 12605 12606 12610
 	}
-	manpower=0
+	manpower=8000
 	buildings_max_level_factor=1.000
+	state_category = large_town 
 }

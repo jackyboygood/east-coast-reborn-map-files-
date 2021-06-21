@@ -1,9 +1,31 @@
 state={
 	id=1030
 	name="Lower City"
+	resources = {
+		metal = 5
+	    water =2
+		energy = 2
+		circuitry = 4
+		
+	}
+	history={
+		owner = PIT
+		add_core_of = PIT
+
+		victory_points = {
+			12732  15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+
+		}
+	}
 	provinces={
 		12729 12730 12731 12732 12733
 	}
-	manpower=0
+	manpower=10000
 	buildings_max_level_factor=1.000
+	state_category = metropolis 
 }

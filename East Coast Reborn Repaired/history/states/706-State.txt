@@ -1,0 +1,33 @@
+state={
+	id=706
+	name="Cannibal Lair"
+	resources = {
+        metal =4
+		water = 2
+		energy = 1
+		circuitry = 2
+		
+	}
+	history={
+		owner = GUR
+		add_core_of = GUR
+
+		victory_points = {
+			1058 25
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+
+		}
+	}
+	
+
+	provinces={
+		1048 1058 1095 1194 8665 8667 8710 8711
+	}
+	manpower = 15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

@@ -1,9 +1,31 @@
 state={
 	id=1029
 	name="Port of The Pitt"
+	resources = {
+		metal = 2
+	    water =2
+		energy = 2
+		circuitry = 2
+		
+	}
+	history={
+		owner = SHE
+		add_core_of = SHE
+
+		victory_points = {
+			12708 25 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+	}
 	provinces={
 		12708 12709 12710 12711 12712 12713 12714 12715
 	}
-	manpower=0
+	manpower=7000
 	buildings_max_level_factor=1.000
+	state_category = city 
 }

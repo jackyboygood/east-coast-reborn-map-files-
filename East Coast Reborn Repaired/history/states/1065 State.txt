@@ -1,6 +1,26 @@
 state={
 	id=1065
-	name="STATE_1065"
+	name="Abandoned Landfill"
+	resources = {
+		metal = 4
+		circuitry = 2
+		
+	}
+	history={
+		owner = AAG
+		add_core_of = AAG
+
+		victory_points = {
+			12871 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+
 	provinces={
 		12872 12860 12859 12871 12858
 	}

@@ -1,10 +1,26 @@
 state={
 	id=1061
-	name="STATE_1061"
+	name="Abandoned Hut in the Forest"
+	resources = {
+	
+	}
+	history={
+		owner = AAQ
+		add_core_of = AAQ
+
+		victory_points = {
+			12937 5
+		}
+		buildings = {
+			infrastructure = 1
+			
+
+		}
+	}
 	provinces={
 		12937 12929 12930 12940 12939 12938
 	}
-	manpower=750
+	manpower=1500
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

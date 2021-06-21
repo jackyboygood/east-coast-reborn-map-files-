@@ -1,6 +1,26 @@
 state={
 	id=1034
-	name="STATE_1034"
+	name="Omas City"
+	resources = {
+		metal = 5
+		energy = 4
+		circuitry = 2
+		water =4
+	}
+	history={
+		owner = AAA
+		add_core_of = AAA
+
+		victory_points = {
+			12979  25
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+	}
 	provinces={
 		1318 12973 12974 12975 12976 12977 12978 12979 12980 12981 12982 1377 12970
 	}

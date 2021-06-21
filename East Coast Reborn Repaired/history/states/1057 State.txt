@@ -1,6 +1,23 @@
 state={
 	id=1057
-	name="STATE_1057"
+	name="Farmland"
+	resources = {
+
+	}
+	history={
+		owner = AAD
+		add_core_of = AAD
+
+		victory_points = {
+			12917 25
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		1426  12915 12957 12958 12919 12920 12918 12916 12925 12924 12921 12922 12923 12917 
 	}

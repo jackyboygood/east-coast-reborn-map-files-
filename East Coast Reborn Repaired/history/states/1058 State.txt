@@ -1,10 +1,32 @@
 state={
 	id=1058
-	name="STATE_1058"
+	name="Ronto"
+	resources = {
+		metal = 10
+		water = 4
+		energy = 4
+		circuitry = 5
+		
+	}
+	history={
+		owner = RON
+		add_core_of = RON
+
+		victory_points = {
+			12955 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 4
+
+		}
+	}
+
 	provinces={
 		12950 12951 12959 12960 12948 12946 12945 12955 12954 12956 12952 12953 12944 1382 12963 12949 12962 12961 12947
 	}
-	manpower=90000
+	manpower=75000
 	buildings_max_level_factor=1.000
 	state_category= megalopolis
 }

@@ -1,6 +1,26 @@
 state={
 	id=1060
-	name="STATE_1060"
+	name="Water Treatment Plant "
+	resources = {
+		
+		water = 8
+		
+	}
+	history={
+		owner = AAE
+		add_core_of = AAE
+
+		victory_points = {
+			12822 5
+		}
+		buildings = {
+			infrastructure = 6
+			
+			
+
+		}
+	}
+
 	provinces={
 		12823 12820 12822 12809 12821 12826 232 12810 
 	}

@@ -1,9 +1,30 @@
 state={
 	id=1027
 	name="East Port of New York"
+	resources = {
+
+		metal = 2
+		water = 5
+		
+	}
+	history={
+		owner = MUT
+		add_core_of = MUT
+
+		victory_points = {
+			12573 5
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+	}
 	provinces={
 		12570 12571 12572 12573 
 	}
-	manpower=0
+	manpower = 5000
 	buildings_max_level_factor=1.000
+	state_category = town 
 }

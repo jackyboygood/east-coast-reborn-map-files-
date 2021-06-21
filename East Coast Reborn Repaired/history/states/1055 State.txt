@@ -1,9 +1,27 @@
 state={
 	id=1055
-	name="STATE_1055"
+	name="The Castle"
+	resources = {
+	   
+	}
+	history={
+		owner = PIT
+		add_core_of = PIT
+
+		victory_points = {
+			12723 25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+
+		}
+	}
 	provinces={
 		12723
 	}
-	manpower=0
+	manpower=2700
 	buildings_max_level_factor=1.000
+	state_category = Metropolis 
 }

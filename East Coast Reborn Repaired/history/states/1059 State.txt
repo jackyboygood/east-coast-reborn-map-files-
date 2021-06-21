@@ -1,6 +1,27 @@
 state={
 	id=1059
-	name="STATE_1059"
+	name="Charlie Military Base "
+	resources = {
+		metal = 6
+		water = 4
+		circuitry = 4
+		
+	}
+	history={
+		owner = AAE
+		add_core_of = AAE
+
+		victory_points = {
+			12818 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 5
+			industrial_complex = 4
+
+		}
+	}
+
 	provinces={
 		12816 12811 12813 653 12818 12819 12815 12814 12812 12817 12824 12808 12825
 	}

@@ -1,9 +1,31 @@
 state={
 	id=1032
 	name="Vault 98"
+	resources = {
+		metal = 4
+	    water =3
+		energy = 5
+		circuitry = 2
+		
+	}
+	history={
+		owner = PBU
+		add_core_of = PBU
+
+		victory_points = {
+			12737  25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+	}
 	provinces={
 		12734 12735 12736 12737 12738 12739 12740 1209
 	}
-	manpower=0
+	manpower=2000
 	buildings_max_level_factor=1.000
+	state_category = town 
 }

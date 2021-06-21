@@ -1,9 +1,31 @@
 state={
 	id=969
 	name="Ruined Danbury"
+	resources = {
+		metal = 8
+		water = 4
+		energy = 8
+		circuitry = 4
+		
+	}
+	history={
+		owner = KEN
+		add_core_of = KEN
+
+		victory_points = {
+			12596  25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 5
+			industrial_complex = 3
+
+		}
+	}
 	provinces={
 		1239 8724 12585 12586 12587 12588 12589 12590 12591 12592 12593 12594 12595 12596 12597 12598 12599 12600 12601 12602 12603 
 	}
-	manpower=0
+	manpower=15000
 	buildings_max_level_factor=1.000
+	state_category = city 
 }

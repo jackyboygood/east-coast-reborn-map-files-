@@ -1,7 +1,25 @@
 
 state={
 	id=722
-	name="STATE_722"
+	name="Enclave Nuclear Reactor"
+	resources = {
+		energy = 15
+		
+	}
+	history={
+		owner = AAE
+		add_core_of = AAE
+
+		victory_points = {
+			12807 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+
+		}
+	}
+
 	provinces={
 		12807 12803 12802 12806 12804 12805 8703
 	}

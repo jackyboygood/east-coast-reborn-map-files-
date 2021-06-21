@@ -1,9 +1,32 @@
 state={
 	id=1031
 	name="Upper City"
+	resources = {
+		metal = 8
+	    water =2
+		energy = 2
+		circuitry = 2
+		
+	}
+	history={
+		owner = PIT
+		add_core_of = PIT
+
+		victory_points = {
+			12724  15
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+	}
 	provinces={
 		12722 12724 12725 12726 12727 12728
 	}
-	manpower=0
+	manpower=8000
 	buildings_max_level_factor=1.000
+	state_category = metropolis 
+
 }

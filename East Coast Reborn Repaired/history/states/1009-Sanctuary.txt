@@ -2,8 +2,11 @@ state={
 	id=1009
 	name="Sanctuary"
 	resources = {
-		water = 4
-		circuitry = 4
+		metal = 8
+		composites = 8
+		water = 16
+		energy = 10
+		circuitry = 8
 	
 	}
 	history={
@@ -14,8 +17,9 @@ state={
 			12627 25
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 7
 
 		}
 	}

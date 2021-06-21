@@ -1,6 +1,26 @@
 state={
 	id=1056
-	name="STATE_1056"
+	name="Northwest Avato City "
+	resources = {
+		metal = 2
+		water = 1
+		
+	}
+	history={
+		owner = AAD
+		add_core_of = AAD
+
+		victory_points = {
+			12904 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+
 	provinces={
 		12904 12905 12914 12912 12913 12911 12910 12908 12907 12906 12909 1457
 	}
