@@ -86,6 +86,6 @@ country_event = {
 
 	option = {
 		name = Pitt.6.a	
-        load_focus_tree = Pitsburg_reformed		
+        #load_focus_tree = Pitsburg_reformed		
 	}
 }
