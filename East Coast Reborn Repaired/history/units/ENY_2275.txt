@@ -43,21 +43,21 @@ division_template = {
 units = {
 	division {
 		name = "New York Warriors"
-		location = 11523
+		location = 12573
 		division_template = "Нью-Йоркский десантный батальон"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
     division {
 		name = "New York Enclave Auxiliaries"
-		location = 11523
+		location = 12573
 		division_template = "Нью-Йоркский Экспидиционный Корпус"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "New York Enclave Auxiliaries"
-		location = 11523
+		location = 12573
 		division_template = "Нью-Йоркский Экспидиционный Корпус"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
