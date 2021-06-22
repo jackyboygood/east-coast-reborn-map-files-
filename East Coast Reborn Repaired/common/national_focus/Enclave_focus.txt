@@ -24,7 +24,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = ENC_radio_broadcasts__tt
+			#custom_effect_tooltip = ENC_radio_broadcasts__tt
 		}
 		
 }
@@ -644,7 +644,6 @@ focus = {#Expedition - to Mariposa
 
 		available = {
 		has_completed_focus = Enclavesp_5
-		has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -682,7 +681,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-            910 = { is_controlled_by = ENY } #do we actually own it right now?
+            1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -720,7 +719,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-            910 = { is_controlled_by = ENY } #do we actually own it right now?
+            1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -758,7 +757,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-             910 = { is_controlled_by = ENY } #do we actually own it right now?
+             1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -796,7 +795,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-             910 = { is_controlled_by = ENY } #do we actually own it right now?
+             1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -832,7 +831,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-             910 = { is_controlled_by = ENY } #do we actually own it right now?
+             1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -868,7 +867,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-             910 = { is_controlled_by = ENY } #do we actually own it right now?
+             1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -905,7 +904,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-             910 = { is_controlled_by = ENY } #do we actually own it right now?
+             1027= { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -941,7 +940,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-             911 = { is_controlled_by = ENY } #do we actually own it right now?
+             1037 = { is_controlled_by = ENY } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -1287,7 +1286,6 @@ focus = {#Expedition - to Mariposa
 			988 = { is_controlled_by = ESP } # NAVARRO
 			1001 = { is_controlled_by = ESP } # NAVARRO
 			1022 = { is_controlled_by = ESP } # NAVARRO
-			has_completed_focus = Enclavesp_16
 		}
 		relative_position_id = Enclavesp_21
 		x = 0
@@ -1330,7 +1328,7 @@ focus = {#Expedition - to Mariposa
 		icon = GFX_goal_Enclave14
 		relative_position_id = Enclavesp_55
 		prerequisite = { focus = Enclavesp_79 }
-		x = -1
+		x = -2
 		y = 2
 		
 
@@ -1341,6 +1339,9 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
+		DIK = {
+		is_neighbor_of = LAC
+		}
 		}
 
 		bypass = {
@@ -1374,9 +1375,14 @@ focus = {#Expedition - to Mariposa
 		}
 		relative_position_id = Enclavesp_55
 		prerequisite = { focus = Enclavesp_79 }
-		x = 1
+		x = 2
 		y = 2
 		
+		available = {
+		IBS = {
+		is_neighbor_of = ESP
+		}
+		}
 
 		cost = 45
 
@@ -1410,14 +1416,89 @@ focus = {#Expedition - to Mariposa
 		}
 	}
 	
+	focus = {
+		id = Enclavesp_58
+		icon = GFX_goal_Enclave12
+		available = {
+			981 = { is_controlled_by = ESP } # NAVARRO
+			1023 = { is_controlled_by = ESP } # NAVARRO
+		}
+		relative_position_id = Enclavesp_79
+		prerequisite = { focus = Enclavesp_79 }
+		x = 0
+		y = 1
+		
+
+		cost = 10.0
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			has_full_control_of_state = 798
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		    1007 = { add_core_of = ESP }
+			717 = { add_core_of = ESP }
+			1049 = { add_core_of = ESP }
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 717 # Easton
+						
+				}
+				ESP = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 1007 # Easton
+						
+				}
+				ESP = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+			every_other_country = {
+				limit = {
+						has_full_control_of_state = 1049 # Easton
+						
+				}
+				ESP = {
+						create_wargoal = { type = annex_everything target = PREV }
+				}
+			}
+		}
+	}
+	
 	
 	
 	focus = {
 		id = Enclavesp_59
 		icon = GFX_goal_Enclave11
 		available = {
-			981 = { is_controlled_by = ESP } # NAVARRO
-			has_completed_focus = Enclavesp_16
+			981 = { is_controlled_by = ESP } 
+			1007 = { is_controlled_by = ESP } 
+			717 = { is_controlled_by = ESP } 
+			1049 = { is_controlled_by = ESP } 
+			1023 = { is_controlled_by = ESP }
+            NUE = {
+			is_neighbor_of = ESP
+			}			
 		}
 		relative_position_id = Enclavesp_55
 		prerequisite = { focus = Enclavesp_58 }
@@ -1434,12 +1515,8 @@ focus = {#Expedition - to Mariposa
 			factor = 90
 		}
 
-		available = {
-        has_country_flag = yog_finished_map
-		}
-
 		bypass = {
-			has_full_control_of_state = 904
+			has_full_control_of_state = 1041
 		}
 
 		cancel_if_invalid = yes
@@ -1453,7 +1530,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 904 # Carson City
+						has_full_control_of_state = 1041 # Central New York
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1534,20 +1611,21 @@ focus = {#Expedition - to Mariposa
 		}
 
 		completion_reward = {
-			add_war_support = 0.2
+			add_war_support = 0.15
+			add_stability = -0.2
 			1070 = { add_core_of = ESP }
 			1001 = { add_core_of = ESP }
-			979 = { add_core_of = ESP }
-			974 = { add_core_of = ESP }
-			976 = { add_core_of = ESP }
-			977 = { add_core_of = ESP }
-			973 = { add_core_of = ESP }
-			978 = { add_core_of = ESP }
+			#979 = { add_core_of = ESP }
+			#974 = { add_core_of = ESP }
+			#976 = { add_core_of = ESP }
+			#977 = { add_core_of = ESP }
+			#973 = { add_core_of = ESP }
+			#978 = { add_core_of = ESP }
 			975 = { add_core_of = ESP }
-			987 = { add_core_of = ESP }
-			988 = { add_core_of = ESP }
-			985 = { add_core_of = ESP }
-			add_stability = 0.05
+			#987 = { add_core_of = ESP }
+			#988 = { add_core_of = ESP }
+			#985 = { add_core_of = ESP }
+			
 			1070 = {
 			   add_manpower = -1500
 		    }
@@ -1617,7 +1695,9 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+        DIK = {
+		is_neighbor_of = ESP
+		}
 		}
 
 		bypass = {
@@ -1634,7 +1714,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = 0.03
+			add_stability = -0.05
 			981 = { add_core_of = ESP }
 			981 = {
 			   add_manpower = -1500
@@ -1657,7 +1737,9 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+        DEV = {
+	    is_neighbor_of = ESP
+		}
 		}
 
 		bypass = {
@@ -1674,7 +1756,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = 0.03
+			add_stability = -0.03
 			999 = { add_core_of = ESP }
 			#transfer_state = 999
 			999 = {
@@ -1698,7 +1780,9 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-        
+        IBS = {
+		is_neighbor_of = ESP
+		}
 		}
 
 		bypass = {
@@ -1715,8 +1799,8 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_war_support = 0.05
+			add_stability = -0.03
 			1023 = { add_core_of = ESP }
-			add_stability = 0.03
 			1023 = {
 			   add_manpower = -3491
 		    }
@@ -1744,7 +1828,6 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-        has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -1762,31 +1845,39 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_war_support = 0.1
-			add_stability = 0.05
-			903 = { add_core_of = ESP }
-			981 = { add_core_of = ESP }
-			943 = { add_core_of = ESP }
-			940 = { add_core_of = ESP }
-			901 = { add_core_of = ESP }
-			transfer_state = 903
-			transfer_state = 981
-			transfer_state = 943
-			transfer_state = 940
-			transfer_state = 901
-			903 = {
-			   add_manpower = -752
+			add_stability = -0.05
+			1000 = { add_core_of = ESP }
+			1007 = { add_core_of = ESP }
+			1049 = { add_core_of = ESP }
+			995 = { add_core_of = ESP }
+			996 = { add_core_of = ESP }
+			1026 = { add_core_of = ESP }
+			717 = { add_core_of = ESP }
+			transfer_state = 1000
+			transfer_state = 1007
+			#transfer_state = 1049
+			#transfer_state = 995
+			#transfer_state = 996
+			1000 = {
+			   add_manpower = -4000
 		    }
-			981 = {
+			1007 = {
 			   add_manpower = -1034
 		    }
-			943 = {
-			   add_manpower = -345
+			1049 = {
+			   add_manpower = -800
 		    }
-			940 = {
-			   add_manpower = -895
+			995 = {
+			   add_manpower = -1895
 		    }
-			901 = {
+			996 = {
+			   add_manpower = -632
+		    }
+			1026 = {
 			   add_manpower = -1632
+		    }
+			717 = {
+			   add_manpower = -4651
 		    }
 		}
 	}
@@ -1795,9 +1886,9 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_67
 		icon = GFX_goal_Enclave19
 		relative_position_id = Enclavesp_66
-		cost = 3.0
+		cost = 45
 		available = {
-           916 = { is_owned_and_controlled_by = NUE }
+           1041 = { is_owned_and_controlled_by = NUE }
 		}
 		prerequisite = {
 			focus = Enclavesp_66
@@ -1831,7 +1922,6 @@ focus = {#Expedition - to Mariposa
 		available = {
 		SBS = { exists = no }
 		USP = { exists = no }
-		has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -1867,7 +1957,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		ENY = { exists = yes }
+		ENY = { 
+		exists = yes
+        is_neighbor_of = ESP
+		 }
+		
 		}
 
 		bypass = {
@@ -1902,7 +1996,10 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		AAE = { exists = yes }
+		AAE = { 
+		exists = yes 
+		is_neighbor_of = ESP
+		}
 		}
 
 		bypass = {
@@ -1939,12 +2036,11 @@ focus = {#Expedition - to Mariposa
 		SBS = { exists = no }
 		USP = { exists = no }
 		NUE = { exists = no }
-		has_country_flag = yog_finished_map
 		}
 
 		bypass = {
-          has_full_control_of_state = 986
-		  LIT = { exists = no }
+          has_full_control_of_state = 716
+		  SPP = { exists = no }
 		}
 
 		cancel_if_invalid = yes
@@ -1958,7 +2054,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 986 # Carson City
+						has_full_control_of_state = 716 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1982,8 +2078,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		SBS = { exists = no }
-		USP = { exists = no }
+        has_full_control_of_state = 716
 		}
 
 		bypass = {
@@ -2025,12 +2120,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		SBS = { exists = no }
-		USP = { exists = no }
+        has_full_control_of_state = 716
 		}
 
 		bypass = {
-          has_full_control_of_state = 729
+          has_full_control_of_state = 969
 		}
 
 		cancel_if_invalid = yes
@@ -2044,7 +2138,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 729 # Carson City
+						has_full_control_of_state = 969 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2068,12 +2162,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		SBS = { exists = no }
-		USP = { exists = no }
+		 has_full_control_of_state = 716
 		}
 
 		bypass = {
-          has_full_control_of_state = 781
+          has_full_control_of_state = 986
 		}
 
 		cancel_if_invalid = yes
@@ -2087,7 +2180,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 781 # Carson City
+						has_full_control_of_state = 986 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2099,9 +2192,19 @@ focus = {#Expedition - to Mariposa
 	focus = {
 		id = Enclavesp_76
 		icon = GFX_goal_Enclave17
-		relative_position_id = Enclavesp_70
+		relative_position_id = Enclavesp_72
 		x = 0
-		y = 1
+		y = 4
+		
+		prerequisite = {
+		focus = Enclavesp_83
+		}
+		prerequisite = {
+		focus = Enclavesp_84
+		}
+		prerequisite = {
+		focus = Enclavesp_85
+		}
 
 		cost = 60
 
@@ -2110,8 +2213,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		SBS = { exists = no }
-		USP = { exists = no }
+          num_of_controlled_states = 80
 		}
 
 		bypass = {
@@ -2146,7 +2248,10 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		DAD = { exists = yes }
+		DAD = { 
+		exists = yes 
+		is_neighbor_of = ESP
+		}
 		}
 
 		bypass = {
@@ -2204,7 +2309,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_79
-		icon = GFX_goal_megatonna17
+		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1000 } 
 		relative_position_id = Enclavesp_55
 		prerequisite = {
@@ -2234,17 +2339,19 @@ focus = {#Expedition - to Mariposa
 		y = 1
 
 		cost = 45
-
+        
+		available = {
+		has_full_control_of_state = 719
+		}
+		
 		ai_will_do = {
 			factor = 8
 		}
 
-		available = {
 
-		}
 
 		bypass = {
-          has_full_control_of_state = 824
+          has_full_control_of_state = 1046
 		}
 
 		cancel_if_invalid = yes
@@ -2258,13 +2365,14 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 824 # Carson City
+						has_full_control_of_state = 1046 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
 				}
 			}
 		}
+
 	}
 	
 	focus = {
@@ -2282,11 +2390,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+        has_full_control_of_state = 986
 		}
 
 		bypass = {
-          has_full_control_of_state = 825
+          has_full_control_of_state = 715
 		}
 
 		cancel_if_invalid = yes
@@ -2300,7 +2408,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 825 # Carson City
+						has_full_control_of_state = 715 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2324,11 +2432,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+       has_full_control_of_state = 969
 		}
 
 		bypass = {
-          has_full_control_of_state = 704
+          has_full_control_of_state = 729
 		}
 
 		cancel_if_invalid = yes
@@ -2342,7 +2450,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 704 # Carson City
+						has_full_control_of_state = 729 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2366,11 +2474,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+        has_full_control_of_state = 1046
 		}
 
 		bypass = {
-          has_full_control_of_state = 1012
+          has_full_control_of_state = 1047
 		}
 
 		cancel_if_invalid = yes
@@ -2384,7 +2492,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 1012 # Carson City
+						has_full_control_of_state = 1047 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2408,11 +2516,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+        has_full_control_of_state = 715
 		}
 
 		bypass = {
-          has_full_control_of_state = 820
+          has_full_control_of_state = 707
 		}
 
 		cancel_if_invalid = yes
@@ -2426,7 +2534,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 820 # Carson City
+						has_full_control_of_state = 707 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -2450,11 +2558,11 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-
+        has_full_control_of_state = 1047
 		}
 
 		bypass = {
-          has_full_control_of_state = 989
+          has_full_control_of_state = 1016
 		}
 
 		cancel_if_invalid = yes
@@ -2468,7 +2576,7 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 989 # Carson City
+						has_full_control_of_state = 1016 # Carson City
 				}
 				ESP = {
 						create_wargoal = { type = annex_everything target = PREV }
