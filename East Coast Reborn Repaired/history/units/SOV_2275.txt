@@ -13,49 +13,49 @@
 units = {
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.5
 	}
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
 	}
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
 	}
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
 	}
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
 	}
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
 	}
 	division {
 		name = "Russian Security"
-		location = 11734
+		location = 12781
 		division_template = "Red Army"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2

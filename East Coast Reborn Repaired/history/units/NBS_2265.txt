@@ -42,21 +42,21 @@ division_template = {
 units = {
 	division {
 		name = "Нью-йоркские Силовые войска братства стали"
-		location = 1217
+		location = 12564
 		division_template = "Нью-Йоркские Силовые Войска"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Нью-йоркские Силовые войска братства стали"
-		location = 1217
+		location = 12564
 		division_template = "Экспедиционный Корпус"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Нью-йоркские Силовые войска братства стали"
-		location = 1217
+		location = 12564
 		division_template = "Экспедиционный Корпус"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0

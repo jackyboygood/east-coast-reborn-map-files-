@@ -10,9 +10,8 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_1
-		icon = GFX_goal_enc_radio
-		ai_will_do = { factor = 1 }
-		x = 11
+		icon = GFX_goal_SBS_GNR
+		x = 10
 		y = 1
 		cost = 7.8
 		completion_reward = {
@@ -24,14 +23,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = ENC_radio_broadcasts__tt
+			#custom_effect_tooltip = ENC_radio_broadcasts__tt
 		}
 		
     }
 
     focus = {
 		id = Stolibrother_2
-		icon = GFX_goal_generic_focus_magazine_gunsandbullets_gun_laws
+		icon = GFX_goal_SBS_Wasteland_Prop
 		prerequisite = { focus = Stolibrother_1 }
 		relative_position_id = Stolibrother_1
 		x = 0
@@ -57,13 +56,13 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_3
-		icon = GFX_goal_generic_freedom
+		icon = GFX_goal_SBS_Shooting
 		prerequisite = { focus = Stolibrother_2 }
 		relative_position_id = Stolibrother_2
 		x = 0
 		y = 1
 		
-		will_lead_to_war_with = SEV
+		will_lead_to_war_with = UBS
 
 		cost = 7
 
@@ -72,15 +71,12 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				is_in_faction_with = SEV
-			}
-			SEV = { exists = yes }
+			UBS = { exists = yes }
 		}
 
 		bypass = {
-			SEV = { exists = no }
-			SEV = { is_subject_of = SBS}
+			UBS = { exists = no }
+			UBS = { is_subject_of = SBS}
 		}
 
 		cancel_if_invalid = yes
@@ -92,11 +88,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    1024 = { add_core_of = SBS }
-			980 = { add_core_of = SBS }
+		    #1024 = { add_core_of = SBS }
+			#980 = { add_core_of = SBS }
 			create_wargoal = {
 				type = annex_everything
-				target = SEV
+				target = UBS
 			}
 		}
 	}
@@ -477,7 +473,7 @@ focus_tree = {
 	
     focus = {
 		id = Stolibrother_17
-		icon = GFX_goal_support_layons
+		icon = GFX_goal_SBS_Elder_Lyons
 		prerequisite = { focus = Stolibrother_3 }
 		relative_position_id = Stolibrother_3
 		x = 7
@@ -490,7 +486,9 @@ focus_tree = {
 		}
 
 		available = {
-
+        UBS = {
+		exists = no
+		}
 		}
 
 		bypass = {
@@ -528,7 +526,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_19
-		icon = GFX_goal_attackon_supermutant
+		icon = GFX_goal_SBS_Mutant
 		prerequisite = { focus = Stolibrother_17 }
 		relative_position_id = Stolibrother_17
 		x = 0
@@ -568,12 +566,16 @@ focus_tree = {
 				type = annex_everything
 				target = VSU
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = SEV
+			}
 		}
 	}
 	
 	focus = {
 		id = Stolibrother_20
-		icon = GFX_goal_chem_super_stim
+		icon = GFX_goal_SBS_Wasteland_Help
 		relative_position_id = Stolibrother_19
 		cost = 60
 		prerequisite = {
@@ -581,6 +583,14 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		available = {
+		SEV = {
+		exists = no
+		}
+		VSU = {
+		exists = no
+		}
+		}
 
 		completion_reward = {
 			if = {
@@ -605,6 +615,15 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		
+		available = {
+		SEV = {
+		exists = no
+		}
+		VSU = {
+		exists = no
+		}
+		}
 
 		completion_reward = {
 			if = {
@@ -625,7 +644,6 @@ focus_tree = {
 		icon = GFX_goal_Newyorkbroth1
 		cost = 45
 		available = {
-		has_country_flag = yog_finished_map
 		}
 		relative_position_id = Stolibrother_4
 		x = 0
@@ -668,7 +686,7 @@ focus_tree = {
 			focus = Stolibrother_22
 		}
 		available = {
-		909 = { is_controlled_by = NBS } #do we actually own it right now?
+		1036 = { is_controlled_by = NBS } #do we actually own it right now?
 		}
 		ai_will_do = {
 			factor = 80
@@ -693,7 +711,7 @@ focus_tree = {
 			focus = Stolibrother_22
 		}
 		available = {
-		909 = { is_controlled_by = NBS } #do we actually own it right now?
+		1036 = { is_controlled_by = NBS } #do we actually own it right now?
 		}
 		ai_will_do = {
 			factor = 80
@@ -718,7 +736,7 @@ focus_tree = {
 			focus = Stolibrother_22
 		}
 		available = {
-		909 = { is_controlled_by = NBS } #do we actually own it right now?
+		1036 = { is_controlled_by = NBS } #do we actually own it right now?
 		}
 		ai_will_do = {
 			factor = 80
@@ -755,8 +773,8 @@ focus_tree = {
 		}
 
 		available = {
-		   911 = { is_controlled_by = ENY } #do we actually own it right now?
-		   909 = { is_controlled_by = NBS } #do we actually own it right now?
+		   1037 = { is_controlled_by = ENY } #do we actually own it right now?
+		   1036 = { is_controlled_by = NBS } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -794,8 +812,8 @@ focus_tree = {
 		}
 
 		available = {
-		   912 = { is_controlled_by = ENY } #do we actually own it right now?
-		   908 = { is_controlled_by = NBS } #do we actually own it right now?
+		   1038 = { is_controlled_by = ENY } #do we actually own it right now?
+		   1039 = { is_controlled_by = NBS } #do we actually own it right now?
 		}
 
 		bypass = {
@@ -1018,7 +1036,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_36
-		icon = GFX_goal_megatonna29
+		icon = GFX_goal_SBS_Liberty_Prime
 		relative_position_id = Stolibrother_19
 	    prerequisite = {
 			focus = Stolibrother_19
@@ -1053,7 +1071,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_37
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_SBS_Trust
 		relative_position_id = Stolibrother_19
 		x = -3
 		y = 2
@@ -1094,7 +1112,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_38
-		icon = GFX_goal_mutant_war_focus
+		icon = GFX_goal_SBS_Mutant_2
 		relative_position_id = Stolibrother_19
 		prerequisite = {
 			focus = Stolibrother_19
@@ -1140,7 +1158,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_39
-		icon = GFX_goal_generic_swords
+		icon = GFX_goal_SBS_Pitt
 		relative_position_id = Stolibrother_38
 		prerequisite = {
 			focus = Stolibrother_38
@@ -1158,12 +1176,10 @@ focus_tree = {
 		available = {
 			ESP = { exists = no }
 			has_full_control_of_state = 716
-			has_full_control_of_state = 852
-			has_country_flag = yog_finished_map
 		}
 
 		bypass = {
-            has_full_control_of_state = 783
+            has_full_control_of_state = 1055
 		}
 
 		cancel_if_invalid = yes
@@ -1177,7 +1193,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 783 # Carson City
+						has_full_control_of_state = 1055 # Carson City
 				}
 				SBS = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1202,6 +1218,9 @@ focus_tree = {
 
 		available = {
 			ESP = { exists = no }
+			RIV = {
+			is_in_faction_with = SBS
+			}
 		}
 
 		bypass = {
@@ -1389,7 +1408,7 @@ focus_tree = {
 	
 	focus = {
 		id = Stolibrother_45
-		icon = GFX_goal_megatonna17
+		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1000 } 
 		relative_position_id = Stolibrother_20
 		prerequisite = {
@@ -1398,6 +1417,9 @@ focus_tree = {
 		}
 		available = {
            ESP = { exists = no }
+		   RIV = {
+		   has_full_control_of_state = 974
+		   }
    
 		}
 		x = 1
@@ -1405,6 +1427,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = cleanoperation
 			RIV = {
+						add_ideas = cleanoperation
+				}
+			USP = {
 						add_ideas = cleanoperation
 				}
 		}

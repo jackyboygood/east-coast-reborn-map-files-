@@ -95,6 +95,8 @@ set_stability = 0.5
 set_war_support = 0.6
 set_rule = { can_join_factions = no }
 set_convoys = 60
+set_country_flag = is_brotherhood_nation
+set_country_flag = is_brotherhood_nation_proper
 
 set_politics = {
 	ruling_party = intellectuals
@@ -117,6 +119,8 @@ add_ideas = {
 	bunkerblues
 	#oldguard
 }
+
+
 
 add_opinion_modifier = { target = VSU modifier = boshatesmutants }
 add_opinion_modifier = { target = SPP modifier = boshatesmutants }

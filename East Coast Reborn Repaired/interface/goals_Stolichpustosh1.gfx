@@ -1267,9 +1267,200 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/dave5.dds"			
 	}
 	
+	######MEN#######
+	SpriteType = {
+	name = "GFX_goal_MEN_strt"
+	texturefile = "gfx/interface/goals/MEN/MEN_strt.dds"			
+	}
+	
+	
+	
 	######USP#####
     SpriteType = {
 	name = "GFX_goal_USP_god_bless"
-	texturefile = "gfx/interface/goals/USP_god_bless.dds"			
+	texturefile = "gfx/interface/goals/USP/USP_god_bless.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Megaton"
+	texturefile = "gfx/interface/goals/USP/USP_Megaton.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Choice"
+	texturefile = "gfx/interface/goals/USP/USP_Choice.dds"			
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_USP_Butch_Trolling"
+	texturefile = "gfx/interface/goals/USP/USP_Butch_Trolling.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Slave"
+	texturefile = "gfx/interface/goals/USP/USP_Slave.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Slave"
+	texturefile = "gfx/interface/goals/USP/USP_Slave.dds"			
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_USP_Civil_War"
+	texturefile = "gfx/interface/goals/USP/USP_Civil_War.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Choice_Butch"
+	texturefile = "gfx/interface/goals/USP/USP_Choice_Butch.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Tunnel_Snakes_Rule"
+	texturefile = "gfx/interface/goals/USP/USP_Tunnel_Snakes_Rule.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Tunnel_Snakes"
+	texturefile = "gfx/interface/goals/USP/USP_Tunnel_Snakes.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_No_BOS"
+	texturefile = "gfx/interface/goals/USP/USP_No_BOS.dds"			
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_USP_Default"
+	texturefile = "gfx/interface/goals/USP/USP_Default.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Amata"
+	texturefile = "gfx/interface/goals/USP/USP_Amata.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Builder"
+	texturefile = "gfx/interface/goals/USP/USP_Builder.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Boy_Smart"
+	texturefile = "gfx/interface/goals/USP/USP_Boy_Smart.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Builder_2"
+	texturefile = "gfx/interface/goals/USP/USP_Builder_2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_Boy_Smart_2"
+	texturefile = "gfx/interface/goals/USP/USP_Boy_Smart_2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_USP_All_Good"
+	texturefile = "gfx/interface/goals/USP/USP_All_Good.dds"		
+	}
+	
+	######USP#####
+	
+	
+    SpriteType = {
+	name = "GFX_goal_Project_Purity"
+	texturefile = "gfx/interface/goals/Project_Purity.dds"		
+	}
+	
+	
+	######SBS#####
+	SpriteType = {
+	name = "GFX_goal_SBS_GNR"
+	texturefile = "gfx/interface/goals/SBS/SBS_GNR.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Wasteland_Help"
+	texturefile = "gfx/interface/goals/SBS/SBS_Wasteland_Help.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_Shooting"
+	texturefile = "gfx/interface/goals/SBS/SBS_Shooting.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Elder_Lyons"
+	texturefile = "gfx/interface/goals/SBS/SBS_Elder_Lyons.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Mutant"
+	texturefile = "gfx/interface/goals/SBS/SBS_Mutant.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Liberty_Prime"
+	texturefile = "gfx/interface/goals/SBS/SBS_Liberty_Prime.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_Wasteland_Prop"
+	texturefile = "gfx/interface/goals/SBS/SBS_Wasteland_Prop.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Mutant_2"
+	texturefile = "gfx/interface/goals/SBS/SBS_Mutant_2.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Pitt"
+	texturefile = "gfx/interface/goals/SBS/SBS_Pitt.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Trust"
+	texturefile = "gfx/interface/goals/SBS/SBS_Trust.dds"		
+	}
+	
+	
+	
+	######SBS#####
+	
+	
+	
+	
+	
+	
+	#####SOV######
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie.dds"		
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Anti_Drink"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Anti_Drink.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Pro_Drink"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Pro_Drink.dds"		
+	}
+	
+	
+	
+	
+	
+	
+	#####SOV######
 }

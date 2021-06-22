@@ -24,49 +24,49 @@ division_template = {
 units = {
 	division {
 		name = "Ashur's Boys"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Hell's Skullfuckers"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Shafters"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
     division {
 		name = "Pittsburgh's Nightmare"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Shafters"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
     division {
 		name = "Pittsburgh's Nightmare"
-		location = 11676
+		location = 12723
 		division_template = "Ashur's Raiders"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

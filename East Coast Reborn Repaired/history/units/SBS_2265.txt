@@ -43,51 +43,38 @@ division_template = {
 units = {
 	division {
 		name = "1st Navarro Veterans"
-		location = 1070
+		location = 1110
 		division_template = "Львиный Прайм"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "2nd Navarro Veterans"
-		location = 1070
+		location = 1110
 		division_template = "Львиный Прайм"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "1st Enclave Auxiliaries"
-		location = 1070
+		location = 1110
 		division_template = "Добровольцы Братства Стали"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "1st Enclave Auxiliaries"
-		location = 1070
+		location = 1110
 		division_template = "Добровольцы Братства Стали"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "1st Enclave Auxiliaries"
-		location = 1070
+		location = 1110
 		division_template = "Добровольцы Братства Стали"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}	
-	division {
-		name = "1st Enclave Auxiliaries"
-		location = 1070
-		division_template = "Добровольцы Братства Стали"
-		start_experience_factor = 0.6
-		start_equipment_factor = 1.0
-	}
-	division {
-		name = "1st Enclave Auxiliaries"
-		location = 1070
-		division_template = "Добровольцы Братства Стали"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-	}
+	
 	

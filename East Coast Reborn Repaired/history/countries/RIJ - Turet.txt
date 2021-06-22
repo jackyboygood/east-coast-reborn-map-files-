@@ -62,16 +62,15 @@ set_politics = {
 
 set_popularities = {
 	people = 0
-	elites = 70
-	intellectuals = 5
+	elites = 65
+	intellectuals = 10
 	ruler = 25
 }
 
 add_ideas = {
     raider_nation
 }
-
-add_opinion_modifier = { target = MEN modifier = torgovieoperacii }
+S
 
 create_country_leader = {
 	name = "Red Tourette"

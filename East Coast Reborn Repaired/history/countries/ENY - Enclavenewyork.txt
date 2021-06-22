@@ -1,7 +1,33 @@
-﻿capital = 856
+﻿capital = 1027
 oob = "ENY_2275"
 
 set_technology = {
+    infantry_tech_level_tribal = 1
+	infantry_tech_level_settler = 1
+	infantry_tech_level_scientific = 1
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+	support_tech_level_scientific = 1
+	special_forces_tech_level_tribal = 1
+	special_forces_tech_level_settler = 1
+	power_armour_tech_level_settler = 1
+	power_armour_tech_level_scientific = 1
+	vehicles_tech_level_tribal = 1
+	vehicles_tech_level_settler = 1
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
+	air_tech_level_tribal = 1
+	air_tech_level_settler = 1
+	naval_tech_level_tribal = 1
+	naval_tech_level_settler = 1
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
 	elite_army = 1
 	standard_weaponry_tech = 1
 	melee_weaponry_tech_1 = 1
@@ -18,16 +44,24 @@ set_technology = {
 	simple_servo_tech = 1
 	stripped_pa_tech = 1
 	scav_pa_tech = 1
-	vertibird_tech = 1
-	vertibird_cas_tech =1
-	enclave_pa_unlock_tech = 1
+	underground_industry_tech = 1
+	vault_industry_tech = 1
 	power_armour_enclave_1 = 1
+	vertibird_tech = 1
+	vertibird_cas_tech = 1
+	implant_tech_visibility_tech = 1
 }
 
 set_stability = 0.6
 set_war_support = 0.6
 set_convoys = 35
 set_rule = { can_join_factions = no }
+set_country_flag = enclave_nation
+
+add_opinion_modifier = { target = SBS modifier = bitterEnemies }
+SBS = {add_opinion_modifier = { target = ESP modifier = bitterEnemies }}
+add_opinion_modifier = { target = NBS modifier = bitterEnemies }
+NBS = {add_opinion_modifier = { target = ESP modifier = bitterEnemies }}
 
 set_politics = {
 	ruling_party = elites
@@ -42,9 +76,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	add_ideas = enc_scientists
-    add_ideas = ENC_officers
-    add_ideas = closed_economy
+add_ideas = enc_scientists
+add_ideas = ENC_officers
+add_ideas = closed_economy
+add_ideas = ENC_special_forces
 }
 
 create_country_leader  = {

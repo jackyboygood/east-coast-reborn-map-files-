@@ -172,7 +172,7 @@ country_event = {
 		name = Enclavestate.6.a
 		release = ENY
 		ENY = { 
-		    transfer_state = 910
+		    transfer_state = 1027
 			add_political_power = 250
 		    add_manpower = 500
 			hidden_effect = {
@@ -244,7 +244,7 @@ country_event = {
 	option = {
 		name = Enclavestate.10.a
 		ENY = { 
-		    add_research_slot = 3
+		    add_research_slot = 2
 		}
 	}
 }
@@ -293,12 +293,14 @@ country_event = {
 	option = {
 		name = Enclavestate.13.a
 		ENY = { 
-		    transfer_state = 911
-			911 = { add_core_of = ENY }
+		    transfer_state = 1037
+			transfer_state = 1038
+			1037 = { add_core_of = ENY }
 			add_political_power = 100
 		    add_manpower = 1500
 			hidden_effect = {
 				country_event = { days = 7 id = newsfallout.14 }	
+				
 			}
 		}
 	}
@@ -315,8 +317,8 @@ country_event = {
 	option = {
 		name = Enclavestate.14.a
 		ENY = { 
-		    transfer_state = 912
-			912 = { add_core_of = ENY }
+		    transfer_state = 1037
+			1038 = { add_core_of = ENY }}
 		}
 	}
 }
