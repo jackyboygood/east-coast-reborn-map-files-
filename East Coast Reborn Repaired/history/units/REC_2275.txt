@@ -20,98 +20,98 @@ division_template = {
 units = {
 	division {
 		name = "Kenneth's Boys"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Hell's Skullfuckers"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Shafters"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 division {
 		name = "Whistler's Nightmare"
-		location = 1241
+		location = 1290
 		division_template = "Kamlo Survivalists"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

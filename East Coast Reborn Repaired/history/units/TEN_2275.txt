@@ -23,49 +23,49 @@ division_template = {
 units = {
 	division {
 		name = "Gabriel's Sons"
-		location = 11440
+		location = 12480
 		division_template = "Clergymen"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Raphael's Warriors"
-		location = 11440
+		location = 12480
 		division_template = "Clergymen"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Uriel's Chosen"
-		location = 11440
+		location = 12480
 		division_template = "Clergymen"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Selaphiel's Devotees"
-		location = 11440
+		location = 12480
 		division_template = "Clergymen"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 division {
 		name = "Raguel's Flock"
-		location = 11440
+		location = 12480
 		division_template = "Clergymen"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 	}
 division {
 		name = "Raguel's Flock"
-		location = 11440
+		location = 12480
 		division_template = "Clergymen"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 	}
 division {
 		name = "Lucifer's Own"
-		location = 11440
+		location = 12480
 		division_template = "Nonbelievers"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
