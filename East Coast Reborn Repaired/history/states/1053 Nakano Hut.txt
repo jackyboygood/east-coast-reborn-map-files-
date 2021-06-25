@@ -5,8 +5,8 @@ state={
 
 	}
 	history={
-		owner = NAC
-		add_core_of = NAC
+		owner = KOV
+		add_core_of = KOV
 
 		victory_points = {
 			12985 25
