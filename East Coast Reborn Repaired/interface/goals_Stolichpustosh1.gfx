@@ -1438,9 +1438,104 @@ spriteTypes = {
 	#####SOV######
 	
 	SpriteType = {
+	name = "GFX_goal_SOV_Start_1"
+	texturefile = "gfx/interface/goals/SOV/SOV_Start_1.dds"		
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Start_2"
+	texturefile = "gfx/interface/goals/SOV/SOV_Start_2.dds"		
+	}	
+    
+	SpriteType = {
+	name = "GFX_goal_SOV_Start_3"
+	texturefile = "gfx/interface/goals/SOV/SOV_Start_3.dds"		
+	}	
+    
+	SpriteType = {
+	name = "GFX_goal_SOV_Start_4"
+	texturefile = "gfx/interface/goals/SOV/SOV_Start_4.dds"		
+	}	
+	
+	
+	
+	
+	
+	
+	SpriteType = {
 	name = "GFX_goal_SOV_Commie"
 	texturefile = "gfx/interface/goals/SOV/SOV_Commie.dds"		
 	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Anti_Drink"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Anti_Drink.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SOV_Commie_Anti_Drink"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Anti_Drink.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SOV_Commie_Moryaki"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Moryaki.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Work"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Work.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Industry"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Industry.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SOV_Commie_Army"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Army.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Flag"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Flag.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Secret"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Secret.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SOV_Commie_Restoration"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Restoration.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Vic"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Vic.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Capital"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Capital.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Expedition"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Expedition.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Commie_Faction"
+	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Faction.dds"		
+	}
+	
+	
+	
+	
+    
 	
 	SpriteType = {
 	name = "GFX_goal_SOV_Drunkyard"
@@ -1448,13 +1543,83 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-	name = "GFX_goal_SOV_Commie_Anti_Drink"
-	texturefile = "gfx/interface/goals/SOV/SOV_Commie_Anti_Drink.dds"		
+	name = "GFX_goal_SOV_Drunkyard_Pro_Drink"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Pro_Drink.dds"		
 	}
 	
 	SpriteType = {
-	name = "GFX_goal_SOV_Drunkyard_Pro_Drink"
-	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Pro_Drink.dds"		
+	name = "GFX_goal_SOV_Drunkyard_Army"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Army.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Bottle"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Bottle.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Pivo"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Pivo.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Science"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Science.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Science_Sober"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Science_Sober.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_FREE"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_FREE.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Science_Work"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Science_Work.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Victoria"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Victoria.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Will_People"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Will_People.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Soldier"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Soldier.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Battle"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Battle.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Civ"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Civ.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Mil"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Mil.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Delirium"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Delirium.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SOV_Drunkyard_Faction"
+	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Faction.dds"		
 	}
 	
 	
