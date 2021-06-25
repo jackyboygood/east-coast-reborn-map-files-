@@ -1,5 +1,5 @@
-﻿capital = 1048
-oob = "MAM_2275"
+﻿capital = 720
+oob = "AAB_2275"
 
 set_technology = {
 	infantry_tech_level_tribal = 1
@@ -16,14 +16,14 @@ set_technology = {
 	vehicles_tech_level_tribal = 1
 	vehicles_tech_level_settler = 1
 	#vehicles_tech_level_scientific = 1
-	#robotics_tech_level_tribal = 1
-	#robotics_tech_level_settler = 1
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
 	#robotics_tech_level_scientific = 1
 	air_tech_level_tribal = 1
 	air_tech_level_settler = 1
 	#air_tech_level_scientific = 1
 	naval_tech_level_tribal = 1
-	#naval_tech_level_settler = 1
+	naval_tech_level_settler = 1
 	#naval_tech_level_scientific = 1
 	tools_tech_level_tribal = 1
 	tools_tech_level_settler = 1
@@ -37,64 +37,78 @@ set_technology = {
 	electronics_tech_level_tribal = 1
 	electronics_tech_level_settler = 1
 	#electronics_tech_level_scientific = 1
+	grand_army = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
 	tribal_civilization = 1
 	settled_civilization = 1
-	ghoul_civilization = 1
-	tool_engineering = 1
-	standard_weaponry_tech = 1
-	ballistic_weaponry_tech_1 = 1
-	melee_weaponry_tech_1 = 1
-	pre_construction_industry_tech = 1
-	pre_agriculture_industry_tech = 1
-	pre_recycling_industry_tech = 1
-	basic_industry_tech = 1
-	support_weaponry = 1
-	fireteam_weaponry_tech = 1
-	demolitions_weaponry_tech = 1
+	#scientific_civilization = 1
 	nautics_tech_1 = 1
-	light_navy_hull_tech_1 = 1
-	naval_invasion_tech_1 = 1
-	heavy_infantry_tech_1 = 1
-	glider_tech = 1
-	aerodynamics_tech_1 = 1
-	fighter_tech_1 = 1
+	#energy_weaponry_tech_1 = 1
+	#energy_weaponry_tech_2 = 1
+	spec_ops_equipment_tech_1 = 1
+	#spec_ops_equipment_tech_2 = 1
+	#hardening_armour_tech = 1
+	#simple_servo_tech = 1
+	#wasteland_pa_tech = 1
+	#scav_pa_tech = 1
+	#underground_industry_tech = 1
+	support_weaponry = 1
+	anti_tank_equipment_tech_1 = 1
 }
 
-set_stability = 0.6
-set_war_support = 0.2
-set_country_flag = is_ghoul_nation
-set_country_flag = has_unique_manpower_law
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		nautics_tech_1 = 1
+		light_navy_hull_tech_1 = 1
+		naval_invasion_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		nautics_tech_non_mtg_1 = 1
+		light_navy_hull_tech_non_mtg_1 = 1
+		naval_invasion_tech_non_mtg_1 = 1
+	}
+}
+
+set_stability = 0.2 
+set_war_support = 0.55
+set_rule = { can_join_factions = no }
 set_country_flag = is_raider_nation
 
-set_convoys = 25
+set_convoys = 50
 set_politics = {
-	ruling_party = elites
+	ruling_party = ruler
 	elections_allowed = no
 }
 
 set_popularities = {
-	people = 20
-	elites = 80
+	people = 0
+	elites = 0
 	intellectuals = 0
-	ruler = 0
+	ruler = 100
 }
 
 add_ideas = {
-	always_ready_always_there
-	officer_law_military_academy
-	training_law_military_academy
-	tot_economic_mobilisation
-	closed_economy
+	raider_nation
+	reckless_aggression
+	roaring_machines
 }
 
-add_opinion_modifier = { target = KEN modifier = torgovieoperacii }
-
 create_country_leader  = {
-	name = "Captain Chi Howe"
-	desc = ""
-	picture = "gfx/leaders/MAM/Ghul.dds"
+	name = "Crusher"
+	desc = "Guarez_DESC"
+	picture = "gfx/leaders/AAB/Portrait_Leaderaab.dds"
 	expire = "3000.1.1"
-	ideology = militarist_oligarchy
+	ideology = gang
 	
 	traits = {
 	}

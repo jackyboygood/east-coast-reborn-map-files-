@@ -1,13 +1,15 @@
-﻿capital = 1058
-oob = "RON_2275"
+﻿capital = 709
+oob = "DET_2275"
+
+
 
 set_technology = {
     infantry_tech_level_tribal = 1
 	infantry_tech_level_settler = 1
-	#infantry_tech_level_scientific = 1
+	infantry_tech_level_scientific = 1
 	support_tech_level_tribal = 1
 	support_tech_level_settler = 1
-	#support_tech_level_scientific = 1
+	support_tech_level_scientific = 1
 	special_forces_tech_level_tribal = 1
 	special_forces_tech_level_settler = 1
 	#special_forces_tech_level_scientific = 1
@@ -20,23 +22,23 @@ set_technology = {
 	robotics_tech_level_settler = 1
 	#robotics_tech_level_scientific = 1
 	air_tech_level_tribal = 1
-	#air_tech_level_settler = 1
+	air_tech_level_settler = 1
 	#air_tech_level_scientific = 1
 	naval_tech_level_tribal = 1
-	#naval_tech_level_settler = 1
+	naval_tech_level_settler = 1
 	#naval_tech_level_scientific = 1
 	tools_tech_level_tribal = 1
 	tools_tech_level_settler = 1
-	#tools_tech_level_scientific = 1
+	tools_tech_level_scientific = 1
 	habitation_tech_level_tribal = 1
 	habitation_tech_level_settler = 1
-	#habitation_tech_level_scientific = 1
+	habitation_tech_level_scientific = 1
 	exploitation_tech_level_tribal = 1
 	exploitation_tech_level_settler = 1
-	#exploitation_tech_level_scientific = 1
+	exploitation_tech_level_scientific = 1
 	electronics_tech_level_tribal = 1
 	electronics_tech_level_settler = 1
-	#electronics_tech_level_scientific = 1
+	electronics_tech_level_scientific = 1
 	tool_engineering = 1
 	standard_weaponry_tech = 1
 	melee_weaponry_tech_1 = 1
@@ -68,34 +70,37 @@ if = {
 	}
 }
 
-set_stability = 0.5
-set_war_support = 0.4
+set_stability = 0.65
+set_war_support = 0.25
+set_convoys = 100
+set_research_slots = 4
 set_country_flag = is_settler_nation
 
-set_convoys = 0
 set_politics = {
-	ruling_party = people
+	ruling_party = elites
 	elections_allowed = no
 }
 
 set_popularities = {
-	people = 55
-	elites = 20
+	people = 0
+	elites = 70
 	intellectuals = 5
-	ruler = 20
+	ruler = 25
 }
 
-add_ideas = {}
+add_ideas = {
+     raider_nation
+   }
 
-add_opinion_modifier = { target = AAA modifier = torgovieoperacii }
-
-create_country_leader  = {
-	name = "India Floretsen"
-	desc = "Grozdan Haykov_DESC"
-	picture = "gfx/leaders/RON/Portrait_Leaderron.dds"
+create_country_leader = {
+	name = "Skull"
+	desc = "KENNETH_DESC"
+	picture = "gfx/leaders/DET/Leaders.dds"
 	expire = "3000.1.1"
-	ideology = commune
-	
+	ideology = survivalism
 	traits = {
+		cruel_tyrant
 	}
 }
+
+

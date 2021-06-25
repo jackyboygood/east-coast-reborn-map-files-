@@ -1,0 +1,62 @@
+﻿capital = 970
+oob = "DUB_2275"
+
+
+set_technology = {
+	infantry_tech_level_tribal = 1
+	special_forces_tech_level_tribal = 1
+	support_tech_level_tribal = 1
+	vehicles_tech_level_tribal = 1
+	air_tech_level_tribal = 1
+	naval_tech_level_tribal = 1
+	tools_tech_level_tribal = 1
+	habitation_tech_level_tribal = 1
+	exploitation_tech_level_tribal = 1
+	electronics_tech_level_tribal = 1
+	tribal_tech_visibility_tech = 1
+	tribal_tech_access_tech = 1
+	tribal_civilization = 1
+	tool_engineering = 1
+	melee_weaponry_tech_1 = 1
+	unit_training_tech_1 = 1
+	pre_construction_industry_tech = 1
+	pre_agriculture_industry_tech = 1
+	pre_recycling_industry_tech = 1
+	basic_industry_tech = 1
+	support_weaponry = 1
+	Tree_mutant_civilization = 1
+}
+
+set_stability = 0.4 
+set_war_support = 0.4
+set_convoys = 0
+set_country_flag = is_tribal_nation
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {
+	Trees_nation
+	add_ideas = closed_economy
+}
+
+create_country_leader  = {
+	name = "The Oldest Tree"
+	desc = ""
+	picture = "gfx/leaders/DUB/leaderdub.dds"
+	expire = "3000.1.1"
+	ideology = chieftain
+	
+	traits = {
+
+	}
+}

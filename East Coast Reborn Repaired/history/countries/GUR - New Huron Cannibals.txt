@@ -1,8 +1,8 @@
-﻿capital = 944
-oob = "SOV_2275"
+﻿capital = 706
+oob = "GUR_2275"
 
 set_technology = {
-    infantry_tech_level_tribal = 1
+	infantry_tech_level_tribal = 1
 	infantry_tech_level_settler = 1
 	#infantry_tech_level_scientific = 1
 	support_tech_level_tribal = 1
@@ -11,11 +11,10 @@ set_technology = {
 	special_forces_tech_level_tribal = 1
 	special_forces_tech_level_settler = 1
 	#special_forces_tech_level_scientific = 1
-	power_armour_tech_level_tribal = 1
 	#power_armour_tech_level_settler = 1
 	#power_armour_tech_level_scientific = 1
 	vehicles_tech_level_tribal = 1
-	#vehicles_tech_level_settler = 1
+	vehicles_tech_level_settler = 1
 	#vehicles_tech_level_scientific = 1
 	robotics_tech_level_tribal = 1
 	robotics_tech_level_settler = 1
@@ -38,54 +37,54 @@ set_technology = {
 	electronics_tech_level_tribal = 1
 	electronics_tech_level_settler = 1
 	#electronics_tech_level_scientific = 1
+	grand_army = 1
 	standard_weaponry_tech = 1
-	blunt_weaponry = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
 	tribal_civilization = 1
-	raider_reckless_aggression = 1
-	scrap_fighter = 1
 	settled_civilization = 1
-	naval_invasion_tech = 1
+	#scientific_civilization = 1
+	nautics_tech_1 = 1
+	#energy_weaponry_tech_1 = 1
+	#energy_weaponry_tech_2 = 1
+	spec_ops_equipment_tech_1 = 1
+	#spec_ops_equipment_tech_2 = 1
+	#hardening_armour_tech = 1
+	#simple_servo_tech = 1
+	#wasteland_pa_tech = 1
+	#scav_pa_tech = 1
+	#underground_industry_tech = 1
+	support_weaponry = 1
+	anti_tank_equipment_tech_1 = 1
 }
+set_convoys = 25
 
-set_stability = 0.5
-set_war_support = 0.3
-set_rule = { can_join_factions = yes }
-set_convoys = 20
-
-
-set_research_slots = 3
 set_politics = {
 	ruling_party = ruler
 	elections_allowed = no
 }
+set_country_flag = is_raider_nation
 
 set_popularities = {
-	people = 2
+	people = 0
 	elites = 0
-	intellectuals = 48
-	ruler = 50
+	intellectuals = 0
+	ruler = 100
 }
 
 add_ideas = {
+	reckless_aggression
+	ludoedi
 }
 
-create_country_leader = {
-	name = "Mikhail Alexandrovich"
-	desc = "POLITICS_CITIZEN_DESC"
-	id = 5808
-	picture = "gfx/leaders/SOV/comunism_leader.dds"
+create_country_leader  = {
+	name = "Barwick"
+	desc = "Stinger_DESC"
+	picture = "gfx/leaders/GUR/leader.dds"
 	expire = "3000.1.1"
-	ideology = ideocracy
+	ideology = gang
+	
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Aleksey Frolov"
-	desc = ""
-	picture = "gfx/leaders/SOV/Aleksey_Frolov.dds"
-	expire = "3000.1.1"
-	ideology = oligarchy
-	traits = {
+	 warmonger
 	}
 }

@@ -1,8 +1,8 @@
-﻿capital = 1048
-oob = "MAM_2275"
+﻿capital = 1066
+oob = "SOV_2275"
 
 set_technology = {
-	infantry_tech_level_tribal = 1
+    infantry_tech_level_tribal = 1
 	infantry_tech_level_settler = 1
 	#infantry_tech_level_scientific = 1
 	support_tech_level_tribal = 1
@@ -11,19 +11,20 @@ set_technology = {
 	special_forces_tech_level_tribal = 1
 	special_forces_tech_level_settler = 1
 	#special_forces_tech_level_scientific = 1
+	power_armour_tech_level_tribal = 1
 	#power_armour_tech_level_settler = 1
 	#power_armour_tech_level_scientific = 1
 	vehicles_tech_level_tribal = 1
-	vehicles_tech_level_settler = 1
+	#vehicles_tech_level_settler = 1
 	#vehicles_tech_level_scientific = 1
-	#robotics_tech_level_tribal = 1
-	#robotics_tech_level_settler = 1
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
 	#robotics_tech_level_scientific = 1
 	air_tech_level_tribal = 1
 	air_tech_level_settler = 1
 	#air_tech_level_scientific = 1
 	naval_tech_level_tribal = 1
-	#naval_tech_level_settler = 1
+	naval_tech_level_settler = 1
 	#naval_tech_level_scientific = 1
 	tools_tech_level_tribal = 1
 	tools_tech_level_settler = 1
@@ -37,65 +38,55 @@ set_technology = {
 	electronics_tech_level_tribal = 1
 	electronics_tech_level_settler = 1
 	#electronics_tech_level_scientific = 1
-	tribal_civilization = 1
-	settled_civilization = 1
-	ghoul_civilization = 1
-	tool_engineering = 1
 	standard_weaponry_tech = 1
-	ballistic_weaponry_tech_1 = 1
 	melee_weaponry_tech_1 = 1
-	pre_construction_industry_tech = 1
-	pre_agriculture_industry_tech = 1
-	pre_recycling_industry_tech = 1
-	basic_industry_tech = 1
+	ballistic_weaponry_tech_1 = 1
 	support_weaponry = 1
-	fireteam_weaponry_tech = 1
 	demolitions_weaponry_tech = 1
-	nautics_tech_1 = 1
-	light_navy_hull_tech_1 = 1
-	naval_invasion_tech_1 = 1
-	heavy_infantry_tech_1 = 1
-	glider_tech = 1
-	aerodynamics_tech_1 = 1
-	fighter_tech_1 = 1
+	fireteam_weaponry_tech = 1
 }
 
-set_stability = 0.6
-set_war_support = 0.2
+set_stability = 0.5
+set_war_support = 0.3
+set_rule = { can_join_factions = no }
+set_convoys = 20
 set_country_flag = is_ghoul_nation
-set_country_flag = has_unique_manpower_law
-set_country_flag = is_raider_nation
+set_country_flag = is_settler_nation
 
-set_convoys = 25
+
+set_research_slots = 3
 set_politics = {
-	ruling_party = elites
+	ruling_party = ruler
 	elections_allowed = no
 }
 
 set_popularities = {
-	people = 20
-	elites = 80
-	intellectuals = 0
-	ruler = 0
+	people = 35
+	elites = 0
+	intellectuals = 25
+	ruler = 40
 }
 
 add_ideas = {
-	always_ready_always_there
-	officer_law_military_academy
-	training_law_military_academy
-	tot_economic_mobilisation
-	closed_economy
 }
 
-add_opinion_modifier = { target = KEN modifier = torgovieoperacii }
-
-create_country_leader  = {
-	name = "Captain Chi Howe"
-	desc = ""
-	picture = "gfx/leaders/MAM/Ghul.dds"
+create_country_leader = {
+	name = "Mikhail Alexandrovich"
+	desc = "POLITICS_CITIZEN_DESC"
+	id = 5808
+	picture = "gfx/leaders/SOV/comunism_leader.dds"
 	expire = "3000.1.1"
-	ideology = militarist_oligarchy
-	
+	ideology = ideocracy
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aleksey Frolov"
+	desc = ""
+	picture = "gfx/leaders/SOV/Aleksey_Frolov.dds"
+	expire = "3000.1.1"
+	ideology = warlordship
 	traits = {
 	}
 }
