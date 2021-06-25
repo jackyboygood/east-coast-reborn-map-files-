@@ -13,76 +13,27 @@ units = {
 
 	division {
 		name = "1-ая Дивизия Морской Пехоты"
-		location = 11488
+		location = 12581
 		division_template = "Морпехи Федерации"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
-	division {
-		name = "2-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-	division {
-		name = "3-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
+
 	
 	division {
 		name = "4-ая Дивизия Морской Пехоты"
-		location = 11488
+		location = 12531
 		division_template = "Морпехи Федерации"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
-	
-	division {
-		name = "5-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
+
 	division {
 		name = "1-ая Дивизия Морской Пехоты"
-		location = 11488
+		location = 12530
 		division_template = "Морпехи Федерации"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
-	division {
-		name = "2-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-	division {
-		name = "3-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-	
-	division {
-		name = "4-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-	
-	division {
-		name = "5-ая Дивизия Морской Пехоты"
-		location = 11488
-		division_template = "Морпехи Федерации"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
+
 }

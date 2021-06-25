@@ -22,35 +22,35 @@ division_template = {
 units = {
 	division {
 		name = "Sanja's Band"
-		location = 11452
+		location =12507
 		division_template = "Defenders of Point Lookout"
 		start_experience_factor = 0.9
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Warriors of Armarilla"
-		location = 11452
+		location =12507
 		division_template = "Defenders of Point Lookout"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bloomfields Tribesmen"
-		location = 11452
+		location =12507
 		division_template = "Defenders of Point Lookout"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Chaco Mesa Battlegroup"
-		location = 11452
+		location =12507
 		division_template = "Defenders of Point Lookout"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Del-Norte Lonewalkers"
-		location = 11452
+		location =12507
 		division_template = "Defenders of Point Lookout"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0

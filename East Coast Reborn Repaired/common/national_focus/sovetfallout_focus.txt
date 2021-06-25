@@ -11,8 +11,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_1
-		icon = GFX_goal_sovetinfall
-		cost = 2.0
+		icon = GFX_goal_SOV_Start_1
+		cost = 7
 		x = 14
 		y = 0
 		completion_reward = {
@@ -30,10 +30,10 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_2
-		icon = GFX_goal_sovetinfall1
+		icon = GFX_goal_SOV_Start_2
 		prerequisite = { focus = Sovetinfallout_1 }
 		relative_position_id = Sovetinfallout_1 
-		cost = 2.0
+		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
@@ -51,9 +51,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_3
-		icon = GFX_goal_sovetinfall2
+		icon = GFX_goal_SOV_Start_3
 		relative_position_id = Sovetinfallout_2
-		cost = 2.0
+		cost = 7
 		prerequisite = {
 			focus = Sovetinfallout_2
 		}
@@ -75,10 +75,10 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_4
-		icon = GFX_goal_sovetinfall3
+		icon = GFX_goal_SOV_Start_4
 		prerequisite = { focus = Sovetinfallout_3 }
 		relative_position_id = Sovetinfallout_3
-		cost = 2.0
+		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
@@ -96,7 +96,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_5
-		icon = GFX_goal_sovetinfall4
+		icon = GFX_goal_SOV_Drunkyard
 		relative_position_id = Sovetinfallout_4
 		available = {
 			has_country_leader = {
@@ -105,7 +105,7 @@ focus_tree = {
 				name = "Aleksey Simonov"
 			}
 		}
-		cost = 4.0
+		cost = 14
 		x = -6
 		y = 1
 
@@ -124,9 +124,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_6
-		icon = GFX_goal_sovetinfall5
+		icon = GFX_goal_SOV_Drunkyard_Pro_Drink
 		relative_position_id = Sovetinfallout_5
-		cost = 3.0
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_5
 		}
@@ -148,12 +148,12 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_7
-		icon = GFX_goal_generic_land_doctrines_focus
+		icon = GFX_goal_SOV_Drunkyard_Army
 		relative_position_id = Sovetinfallout_6
 		prerequisite = {
 			focus = Sovetinfallout_6
 		}
-		cost = 3.0
+		cost = 45
 		x = -3
 		y = 1
 		completion_reward = {
@@ -171,9 +171,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_8
-		icon = GFX_goal_sovetinfall6
+		icon = GFX_goal_SOV_Drunkyard_Pivo
 		relative_position_id = Sovetinfallout_6
-		cost = 3.0
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_6
 		}
@@ -187,7 +187,8 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_9 entered"
 			}
-			944 = {
+			1066 = {
+			    add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -203,9 +204,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_9
-		icon = GFX_goal_Poselenie
+		icon = GFX_goal_SOV_Drunkyard_Bottle
 		relative_position_id = Sovetinfallout_6
-		cost = 3.0
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_6
 		}
@@ -220,8 +221,8 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] newyork.6 entered"
 			}
 			add_political_power = 85
-			944 = {
-				add_extra_state_shared_building_slots = 1
+			1066 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -237,13 +238,13 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_10
-		icon = GFX_goal_sbs_scientist
+		icon = GFX_goal_SOV_Drunkyard_Science
 		prerequisite = {focus = Sovetinfallout_6}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Sovetinfallout_6
 		x = 3
 		y = 1
-		cost = 3.0
+		cost = 45
 		completion_reward = {
 			add_research_slot = -1
 		}
@@ -251,8 +252,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_11
-		icon = GFX_focus_research
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Science_Work
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_10
 		}
@@ -283,8 +284,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_12
-		icon = GFX_focus_generic_military_mission
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_FREE
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_10
 		}
@@ -315,8 +316,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_13
-		icon = GFX_goal_sbs_scientist
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Science_Sober
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_10
 		}
@@ -341,7 +342,7 @@ focus_tree = {
 				name = vault_weapons
 				bonus = 0.2
 				uses = 2
-				category = infantry_weapons
+				category = infantry_tech_category
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -352,9 +353,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_14
-		icon = GFX_goal_institut15
+		icon = GFX_goal_SOV_Drunkyard_Victoria
 		relative_position_id = Sovetinfallout_12
-		cost = 3.0
+		cost = 45
 		available = {
 			
 		}
@@ -385,8 +386,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_15
-		icon = GFX_goal_sovetinfall7
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Will_People
+		cost = 45
 		prerequisite = { focus = Sovetinfallout_14 }
 		relative_position_id = Sovetinfallout_14
 		x = 0
@@ -423,8 +424,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_16
-		icon = GFX_goal_sovetinfall9
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Soldier
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_15
 		}
@@ -438,27 +439,29 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_17
-		icon = GFX_goal_generic_robots_focus
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Mil
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_15
 		}
 		available = {
-			964 = { is_owned_and_controlled_by = ROOT }
-			965 = { is_owned_and_controlled_by = ROOT }
+			1064 = { is_owned_and_controlled_by = ROOT }
+			1065 = { is_owned_and_controlled_by = ROOT }
 		}
 		x = 0
 		y = 1
 		relative_position_id = Sovetinfallout_15
 		completion_reward = {
-			964 = {
-				add_building_construction = {
+			1064 = {
+			    add_extra_state_shared_building_slots = 2
+			 	add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
 			}
-			965 = {
+			1065 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -470,14 +473,14 @@ focus_tree = {
 	
 	focus = {
 		id =  Sovetinfallout_18
-		icon = GFX_goal_generic_military_industry_focus
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Civ
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_15
 		}
 		available = {
-			964 = { is_owned_and_controlled_by = ROOT }
-			965 = { is_owned_and_controlled_by = ROOT }
+			1064 = { is_owned_and_controlled_by = ROOT }
+			1065 = { is_owned_and_controlled_by = ROOT }
 		}
 		x = 2
 		y = 1
@@ -487,16 +490,16 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_18 entered"
 			}
-			964 = {
-				add_extra_state_shared_building_slots = 1
+			1064 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			965 = {
-				add_extra_state_shared_building_slots = 1
+			1065 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -512,14 +515,14 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_19
-		icon = GFX_goal_sovetinfall8
-		cost = 3.0
+		icon = GFX_goal_SOV_Drunkyard_Battle
+		cost = 45
 		prerequisite = { focus = Sovetinfallout_17 }
 		prerequisite = { focus = Sovetinfallout_18 }
 		prerequisite = { focus = Sovetinfallout_16 }
 		relative_position_id = Sovetinfallout_17
 		x = 0
-		y = 2
+		y = 1
 
 		ai_will_do = {
 			factor = 8
@@ -550,7 +553,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_20
-		icon = GFX_goal_sovetinfall10
+		icon = GFX_goal_SOV_Commie
 		relative_position_id = Sovetinfallout_4
 		available = {
 			has_country_leader = {
@@ -559,7 +562,7 @@ focus_tree = {
 				name = "Mikhail Alexandrovich"
 			}
 		}
-		cost = 4.0
+		cost = 14
 		x = 6
 		y = 1
 
@@ -578,9 +581,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_21
-		icon = GFX_goal_sovetinfall11
+		icon = GFX_goal_SOV_Commie_Anti_Drink
 		relative_position_id = Sovetinfallout_20
-		cost = 13.0
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_20
 		}
@@ -602,12 +605,12 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_22
-		icon = GFX_goal_generic_land_doctrines_focus
+		icon = GFX_goal_SOV_Commie_Army
 		relative_position_id = Sovetinfallout_21
 		prerequisite = {
 			focus = Sovetinfallout_21
 		}
-		cost = 10.0
+		cost = 45
 		x = -3
 		y = 1
 		completion_reward = {
@@ -625,8 +628,8 @@ focus_tree = {
 	
 	focus = {
 		id =  Sovetinfallout_23
-		icon = GFX_goal_sovetinfall12
-		cost = 20.0
+		icon = GFX_goal_SOV_Commie_Work
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_21
 		}
@@ -643,8 +646,8 @@ focus_tree = {
 	
 	focus = {
 		id =  Sovetinfallout_24
-		icon = GFX_goal_generic_military_industry_focus
-		cost = 10.0
+		icon = GFX_goal_SOV_Commie_Industry
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_21
 		}
@@ -659,11 +662,11 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_24 entered"
 			}
-			944 = {
-				add_extra_state_shared_building_slots = 1
+			1066 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -676,8 +679,8 @@ focus_tree = {
 	
 	focus = {
 		id =  Sovetinfallout_25
-		icon = GFX_goal_sovetinfall13
-		cost = 10.0
+		icon = GFX_goal_SOV_Commie_Moryaki
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_21
 		}
@@ -692,8 +695,8 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_24 entered"
 			}
-			944 = {
-			    add_extra_state_shared_building_slots = 2
+			1066 = {
+			    add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 2
@@ -709,8 +712,8 @@ focus_tree = {
 	
 	focus = {
 		id =  Sovetinfallout_26
-		icon = GFX_goal_sovetinfall14
-		cost = 12.0
+		icon = GFX_goal_SOV_Commie_Flag
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_22
 		}
@@ -730,14 +733,15 @@ focus_tree = {
 		relative_position_id = Sovetinfallout_22
 		completion_reward = {
 		    add_political_power = 150	
+			add_stability = 0.15
 		}
 	}
 	
 	focus = {
 		id = Sovetinfallout_27
-		icon = GFX_goal_sovetinfall15
+		icon = GFX_goal_SOV_Commie_Restoration
 		relative_position_id = Sovetinfallout_26
-		cost = 10.0
+		cost = 45
 		available = {
 			AAG = { exists = yes }
 		}
@@ -754,35 +758,34 @@ focus_tree = {
 			AAG = { 
 		          add_opinion_modifier = { target = SOV modifier = Communismincanada }
 			}
-			add_political_power = 100
 			add_opinion_modifier = { target = AAG modifier = Communismincanada }
 		}
 	}
 	
 	focus = {
 		id = Sovetinfallout_28
-		icon = GFX_goal_enc_verti
+		icon = GFX_goal_SOV_Commie_Secret
 		prerequisite = {focus = Sovetinfallout_27}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Sovetinfallout_27
 		x = 1
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
-		    add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 100 producer = SOV }
+		    add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 100 producer = USA}
 			add_stability = 0.02
 		}
 	}
 	
 	focus = {
 		id = Sovetinfallout_29
-		icon = GFX_goal_enc_verti
+		icon = GFX_goal_SOV_Commie_Secret
 		prerequisite = {focus = Sovetinfallout_27}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Sovetinfallout_27
 		x = -1
 		y = 1
-		cost = 10.0
+		cost = 45
 		completion_reward = {
 		    set_technology = {
 			stripped_pa_tech = 1
@@ -792,8 +795,8 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_30
-		icon = GFX_goal_sovetinfall16
-		cost = 8.00
+		icon = GFX_goal_SOV_Commie_Vic
+		cost = 45
 		prerequisite = { focus = Sovetinfallout_28 }
 		prerequisite = { focus = Sovetinfallout_29 }
 		relative_position_id = Sovetinfallout_29
@@ -830,13 +833,13 @@ focus_tree = {
 	focus = {
 		id = Sovetinfallout_31
 		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = Sovetinfallout_1
+		relative_position_id = Sovetinfallout_21
 		available = {
 			has_completed_focus = Sovetinfallout_21
 		}
-		cost = 4.0
+		cost = 60
 		x = 6
-		y = 0
+		y = 1
 
 		completion_reward = {
 			if = {
@@ -855,7 +858,7 @@ focus_tree = {
 		id = Sovetinfallout_32
 		icon = GFX_goal_generic_fortify_city
 		relative_position_id = Sovetinfallout_31
-		cost = 10.0
+		cost = 60
 		prerequisite = {
 			focus = Sovetinfallout_31
 		}
@@ -869,7 +872,8 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 entered"
 			}
-			944 = {
+			1066 = {
+			    add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -887,7 +891,7 @@ focus_tree = {
 		id = Sovetinfallout_33
 		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = Sovetinfallout_31
-		cost = 10.0
+		cost = 60
 		prerequisite = {
 			focus = Sovetinfallout_31
 		}
@@ -901,8 +905,8 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_33 entered"
 			}
-			944 = {
-				add_extra_state_shared_building_slots = 1
+			1066 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -920,7 +924,7 @@ focus_tree = {
 		id = Sovetinfallout_34
 		icon = GFX_goal_generic_airbases_focus
 		relative_position_id = Sovetinfallout_33
-		cost = 8.6
+		cost = 60
 		prerequisite = {
 			focus = Sovetinfallout_33
 		}
@@ -930,7 +934,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		available = {
-			944 = { is_owned_and_controlled_by = SOV }
+			1066 = { is_owned_and_controlled_by = SOV }
 			has_completed_focus = Sovetinfallout_28
 		}
 		completion_reward = {
@@ -938,13 +942,13 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_34 entered"
 			}
-			944 = {
+			1066 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -963,7 +967,7 @@ focus_tree = {
 			focus = Sovetinfallout_32
 		}
 		available = {
-			944 = { is_controlled_by = SOV } #do we actually own it right now?
+			1066 = { is_controlled_by = SOV } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
 		relative_position_id = Sovetinfallout_33
@@ -972,14 +976,14 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 producer = SOV }
 		}
-		cost = 7.8
+		cost = 60
 	}
 	
 	focus = {
 		id = Sovetinfallout_36
 		icon = GFX_goal_generic_supplies_focus
 		available = {
-			944 = { is_owned_and_controlled_by = SOV }
+			1066 = { is_owned_and_controlled_by = SOV }
 			has_completed_focus = Sovetinfallout_29
 		}
 		prerequisite = {
@@ -992,28 +996,27 @@ focus_tree = {
 		relative_position_id = Sovetinfallout_33
 		x = 1
 		y = 1
-		cost = 10.0
+		cost = 60
 		completion_reward = {
-			add_equipment_to_stockpile = { type = power_armor_equipment amount = 500 producer = SOV }
+			add_equipment_to_stockpile = { type = power_armor_equipment amount = 500 producer = USA }
 		}
 	}
 	
 	focus = {
 		id = Sovetinfallout_37
-		icon = GFX_goal_sovetinfall18
+		icon = GFX_goal_SOV_Commie_Capital
 		prerequisite = { focus = Sovetinfallout_30 }
 		available = {
-		956 = { is_controlled_by = SOV } 
+		1064 = { is_controlled_by = SOV } 
 		}
 		ai_will_do = { factor = 12 } 
 		relative_position_id = Sovetinfallout_30
 		x = 0
 		y = 1
-		cost = 4.0
+		cost = 60
 		completion_reward = {
-			set_capital = 956
-			956 = { add_core_of = SOV }
-			956 = {
+			set_capital = 1064
+			1064 = {
 				set_state_name = "New_Rossia"
 			}
 		}
@@ -1021,8 +1024,8 @@ focus_tree = {
 	
 		focus = {
 		id = Sovetinfallout_38
-		icon = GFX_goal_sovetinfall17
-		cost = 30.00
+		icon = GFX_goal_SOV_Commie_Expedition
+		cost = 60
 		prerequisite = { focus = Sovetinfallout_37 }
 		relative_position_id = Sovetinfallout_37
 		x = 0
@@ -1059,16 +1062,16 @@ focus_tree = {
 		id = Sovetinfallout_39
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = Sovetinfallout_5
-		prerequisite = { focus = Sovetinfallout_5 }
+		#prerequisite = { focus = Sovetinfallout_5 }
 		ai_will_do = {
 			factor = 50
 		}
 		available = {
-			has_completed_focus = Sovetinfallout_5
+			has_completed_focus = Sovetinfallout_6
 		}
-		cost = 3.0
+		cost = 60
 		x = -7
-		y = 1
+		y = 2
 
 		completion_reward = {
 			if = {
@@ -1091,7 +1094,7 @@ focus_tree = {
 			focus = Sovetinfallout_39
 		}
 		available = {
-			944 = { is_controlled_by = SOV } #do we actually own it right now?
+			1066 = { is_controlled_by = SOV } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
 		relative_position_id = Sovetinfallout_39
@@ -1100,14 +1103,14 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 producer = SOV }
 		}
-		cost = 3.0
+		cost = 60
 	}
 	
 	focus = {
 		id = Sovetinfallout_41
 		icon = GFX_goal_generic_fortify_city
 		relative_position_id = Sovetinfallout_39
-		cost = 3.0
+		cost = 60
 		prerequisite = {
 			focus = Sovetinfallout_39
 		}
@@ -1121,7 +1124,8 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_40 entered"
 			}
-			944 = {
+			1066 = {
+			    add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 3
@@ -1139,7 +1143,7 @@ focus_tree = {
 		id = Sovetinfallout_42
 		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = Sovetinfallout_41
-		cost = 3.0
+		cost = 60
 		prerequisite = {
 			focus = Sovetinfallout_41
 		}
@@ -1156,8 +1160,8 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_33 entered"
 			}
-			944 = {
-				add_extra_state_shared_building_slots = 1
+			1066 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1173,9 +1177,9 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_43
-		icon = GFX_goal_sovetinfall5
+		icon = GFX_goal_SOV_Drunkyard_Delirium
 		relative_position_id = Sovetinfallout_19
-		cost = 3.0
+		cost = 60
 		prerequisite = {
 			focus = Sovetinfallout_19
 		}
@@ -1197,15 +1201,15 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_44
-		icon = GFX_focus_generic_little_entente
-		relative_position_id = Sovetinfallout_42
+		icon = GFX_goal_SOV_Drunkyard_Faction
+		relative_position_id = Sovetinfallout_19
 		prerequisite = {
-			focus = Sovetinfallout_42
+			focus = Sovetinfallout_43
 		}
 		x = 0
-		y = 1
+		y = 2
 
-		cost = 3.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 1
@@ -1235,7 +1239,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_45
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_SOV_Commie_Faction
 		relative_position_id = Sovetinfallout_38
 		prerequisite = {
 			focus = Sovetinfallout_38
@@ -1243,14 +1247,14 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 6.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-         date > 2280.1.1
+         date > 2279.1.1
 		}
 
 		bypass = {
@@ -1273,19 +1277,21 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_46
-		icon = GFX_goal_sovetinfall19
+		icon = GFX_goal_SOV_Commie_Restoration
 		available = {
-			955 = { is_controlled_by = SOV } # NAVARRO
-			958 = { is_controlled_by = SOV } # NAVARRO
-			has_completed_focus = Sovetinfallout_45
+			1061 = { is_controlled_by = SOV } # NAVARRO
+			1062 = { is_controlled_by = SOV } # NAVARRO
 		}
-		relative_position_id = Sovetinfallout_20
-		x = 7
-		y = 0
+		prerequisite = {
+		focus = Sovetinfallout_45
+		}
+		relative_position_id = Sovetinfallout_45
+		x = -1
+		y = 1
 		
 		will_lead_to_war_with = AAD
 
-		cost = 15.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
@@ -1317,11 +1323,14 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_47
-		icon = GFX_goal_sovetinfall20
+		icon = GFX_goal_SOV_Commie_Restoration
 		available = {
-			959 = { is_controlled_by = SOV } # NAVARRO
-			953 = { is_controlled_by = SOV } # NAVARRO
+			1056 = { is_controlled_by = SOV } # NAVARRO
+			1057 = { is_controlled_by = SOV } # NAVARRO
 			has_completed_focus = Sovetinfallout_45
+		}
+		prerequisite = {
+		focus = Sovetinfallout_45
 		}
 		relative_position_id = Sovetinfallout_46
 		x = 2
@@ -1329,7 +1338,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAJ
 
-		cost = 5.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
@@ -1365,7 +1374,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_48
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_SOV_Commie_Secret
 		relative_position_id = Sovetinfallout_46
 		prerequisite = {
 			focus = Sovetinfallout_46
@@ -1373,13 +1382,16 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+	    AAD = {
+		exists = no
+		}
 		}
 
 		bypass = {
@@ -1395,14 +1407,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			953 = { add_core_of = SOV }
-			959 = { add_core_of = SOV }
+			1056 = { add_core_of = SOV }
+			1057 = { add_core_of = SOV }
 		}
 	}
 	
 	focus = {
 		id = Sovetinfallout_49
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_goal_SOV_Commie_Secret
 		relative_position_id = Sovetinfallout_47
 		prerequisite = {
 			focus = Sovetinfallout_47
@@ -1410,18 +1422,18 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+		AAJ = {
+		exists = no
+		}
 		}
 
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1432,50 +1444,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			954 = { add_core_of = SOV }
+			1047 = { add_core_of = SOV }
 		}
 	}
 	
-	focus = {
-		id = Sovetinfallout_50
-		icon = GFX_focus_generic_little_entente
-		relative_position_id = Sovetinfallout_48
-		x = 1
-		y = 1
-
-		cost = 15.0
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		controls_state = 211
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_technology = { scientific_civilization = 1 }
-			set_technology = { securitron_tech = 1 }
-			add_political_power = 50
-			add_research_slot = 1
-		}
-	}
+	
+	
 	
 	focus = {
 		id = Sovetinfallout_51
-		icon = GFX_goal_sovetinfall20
+		icon = GFX_goal_SOV_Drunkyard_Battle
 		relative_position_id = Sovetinfallout_43
 		prerequisite = {
 			focus = Sovetinfallout_43
@@ -1485,7 +1463,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAJ
 
-		cost = 5.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
@@ -1522,7 +1500,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_52
-		icon = GFX_goal_sovetinfall20
+		icon = GFX_goal_SOV_Drunkyard_Battle
 		relative_position_id = Sovetinfallout_51
 		prerequisite = {
 			focus = Sovetinfallout_51
@@ -1532,13 +1510,14 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAJ
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
 		}
 
 		available = {
+		    is_neighbor_of = AAJ
 			AAD = { exists = no }
 			AAJ = { exists = yes }
 		}
@@ -1565,7 +1544,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_53
-		icon = GFX_goal_sovetinfall20
+		icon = GFX_goal_SOV_Drunkyard_Battle
 		relative_position_id = Sovetinfallout_51
 		prerequisite = {
 			focus = Sovetinfallout_51
@@ -1575,13 +1554,14 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAD
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
 		}
 
 		available = {
+		    is_neighbor_of = AAD
 			AAD = { exists = yes }
 			AAQ = { exists = no }
 		}
@@ -1608,7 +1588,7 @@ focus_tree = {
 	
 	focus = {
 		id = Sovetinfallout_54
-		icon = GFX_goal_sovetinfall20
+		icon = GFX_goal_SOV_Drunkyard_Battle
 		relative_position_id = Sovetinfallout_51
 		prerequisite = {
 			focus = Sovetinfallout_51
@@ -1618,13 +1598,14 @@ focus_tree = {
 		
 		will_lead_to_war_with = RON
 
-		cost = 10.0
+		cost = 60
 
 		ai_will_do = {
 			factor = 90
 		}
 
 		available = {
+		    is_neighbor_of = RON
 			RON = { exists = yes }
 			AAD = { exists = no }
 			AAJ = { exists = no }
@@ -1649,3 +1630,8 @@ focus_tree = {
 			}
 		}
 	}
+	
+	
+	
+	
+}

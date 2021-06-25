@@ -70,7 +70,7 @@ country_event = {
 	option = {
 		name = Sovk.3.b
 		ai_chance = {
-			factor = 15
+			factor = 85
 		}
 		add_research_slot = 1
 		set_politics = {
@@ -78,9 +78,9 @@ country_event = {
 			elections_allowed = no
 		}
 		set_popularities = {
-			ruler = 46
+			ruler = 0
 			elites = 0
-			people = 0
+			people = 46
 			intellectuals = 54
 		}
 
@@ -88,7 +88,7 @@ country_event = {
 	option = {
 		name = Sovk.3.a
 		ai_chance = {
-			factor = 25
+			factor = 30
 		}
 	    create_country_leader = {
 	       name = "Aleksey Simonov"
@@ -96,19 +96,19 @@ country_event = {
 	       desc = ""
 	       picture = "gfx/leaders/SOV/Aleksey_Simonov.dds"
 	       expire = "3000.1.1"
-	       ideology = oligarchy
+	       ideology = commune
         }
 		ai_chance = {
-			factor = 85
+			factor = 15
 		}
 		set_politics = {
-			ruling_party = ruler
+			ruling_party = people
 			elections_allowed = no
 		}
 		set_popularities = {
-			ruler = 80
+			ruler = 0
 			elites = 0
-			people = 0
+			people = 80
 			intellectuals = 20
 		}
 		1066 = {
@@ -144,7 +144,7 @@ country_event = {
 
 	option = {
 		name = Sovk.5.a
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = AAG
 		    }
@@ -339,3 +339,25 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = Sovk.13
+	title = Sovk.14.t
+	desc = Sovk.14.d
+	picture = GFX_event_sovet_events12
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sovk.14.a
+        set_autonomy = { target = FROM autonomy_state = autonomy_puppet }
+	}
+	
+	option = {
+		name = Sovk.14.b
+		declare_war_on = { 
+		target = FROM
+		type = annex_everything
+		}
+		}
+	}

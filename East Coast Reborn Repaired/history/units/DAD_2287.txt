@@ -91,63 +91,63 @@ division_template = {
 units = {
 	division {
 		name = "Chicago Power Armour"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Power Armour"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Chicago Power Armour"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Power Armour"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Chicago Power Armour"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Power Armour"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Chicago Enclave infantry"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Enclave infantry"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "Chicago Enclave infantry"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Enclave infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
     division {
 		name = "Chicago Enclave Supermutant"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Enclave Supermutant"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Chicago Enclave infantry"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Enclave infantry"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "Chicago Enclave infantry"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Enclave infantry"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
     division {
 		name = "Chicago Enclave Supermutant"
-		location = 11738
+		location = 12793
 		division_template = "Chicago Enclave Supermutant"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

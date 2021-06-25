@@ -29,7 +29,7 @@ division_template = {
 units = {
 	division {
 		name = "Courtyard Old Guard"
-		location = 1209
+		location = 12739
 		division_template = "Security Team"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
@@ -38,7 +38,7 @@ units = {
 units = {
 	division {
 		name = "Courtyard Old Guard"
-		location = 1209
+		location = 12739
 		division_template = "Security Team"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
@@ -47,7 +47,7 @@ units = {
 units = {
 	division {
 		name = "Courtyard Old Guard"
-		location = 1209
+		location = 12739
 		division_template = "Security Team"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
@@ -56,7 +56,7 @@ units = {
 units = {
 	division {
 		name = "Courtyard Old Guard"
-		location = 1209
+		location = 12739
 		division_template = "Robo-Security"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
@@ -65,7 +65,7 @@ units = {
 units = {
     division {
 		name = "Courtyard Old Guard"
-		location = 1209
+		location = 12739
 		division_template = "Robo-Security"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

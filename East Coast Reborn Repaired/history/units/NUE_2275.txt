@@ -19,82 +19,68 @@ division_template = {
 units = {
 	division {
 		name = "Kenneth's Boys"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Hell's Skullfuckers"
-		location = 11488
+		location = 12529
 		division_template = "Солдаты Федерации"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
-	division {
-		name = "Shafters"
-		location = 11488
-		division_template = "Солдаты Федерации"
-		start_experience_factor = 0.4
-		start_equipment_factor = 1.0
-	}
-    division {
-		name = "Whistler's Nightmare"
-		location = 11488
-		division_template = "Солдаты Федерации"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-}
+
 
 ##### Starting Production #####
 instant_effect = {

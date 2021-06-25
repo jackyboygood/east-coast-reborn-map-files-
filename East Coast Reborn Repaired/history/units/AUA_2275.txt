@@ -12,35 +12,35 @@
 units = {
 	division {
 		name = "Infantry"
-		location = 11392
+		location = 12440
 		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Infantry"
-		location = 11392
+		location = 12440
 		division_template = "Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Infantry"
-		location = 11392
+		location = 12440
 		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Infantry"
-		location = 11392
+		location = 12440
 		division_template = "Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Infantry"
-		location = 11392
+		location = 12440
 		division_template = "Infantry"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
