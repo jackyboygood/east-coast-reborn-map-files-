@@ -1622,10 +1622,103 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/SOV/SOV_Drunkyard_Faction.dds"		
 	}
 	
-	
-	
-	
-	
-	
 	#####SOV######
+	
+	
+	
+	
+	
+	
+	#####NUE#####
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_default"
+	texturefile = "gfx/interface/goals/NUE/NUE_default.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_training"
+	texturefile = "gfx/interface/goals/NUE/NUE_training.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_training_marmont"
+	texturefile = "gfx/interface/goals/NUE/NUE_training_marmont.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_training_Kate"
+	texturefile = "gfx/interface/goals/NUE/NUE_training_Kate.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_training_large"
+	texturefile = "gfx/interface/goals/NUE/NUE_training_large.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_Radio"
+	texturefile = "gfx/interface/goals/NUE/NUE_Radio.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_Terror"
+	texturefile = "gfx/interface/goals/NUE/NUE_Terror.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_marines_coming_up"
+	texturefile = "gfx/interface/goals/NUE/NUE_marines_coming_up.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_manhattan"
+	texturefile = "gfx/interface/goals/NUE/NUE_manhattan.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_Operation_free"
+	texturefile = "gfx/interface/goals/NUE/NUE_Operation_free.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_manhattan_true"
+	texturefile = "gfx/interface/goals/NUE/NUE_manhattan_true.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_marines_attack"
+	texturefile = "gfx/interface/goals/NUE/NUE_marines_attack.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_BOS"
+	texturefile = "gfx/interface/goals/NUE/NUE_BOS.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_NUE_ENC"
+	texturefile = "gfx/interface/goals/NUE/NUE_ENC.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_ENC_Kill"
+	texturefile = "gfx/interface/goals/NUE/NUE_ENC_Kill.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_NUE_BOS_Kill"
+	texturefile = "gfx/interface/goals/NUE/NUE_BOS_Kill.dds"		
+	}
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	#####NUE#####
 }
