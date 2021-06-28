@@ -10,7 +10,7 @@ country_event = {
 	option = {
 		name = vault101ev.1.a
 		add_manpower = 1000
-		883 = {
+		988 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 3
@@ -21,27 +21,27 @@ country_event = {
 	option = {
 		name = vault101ev.1.b
 		add_manpower = 600
-		883 = {
+		988 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 2
 				instant_build = yes
 			}
 		}
-		add_ideas = years
+		#add_ideas = years
 	}
 	option = {
 		name = vault101ev.1.c
 
 		add_manpower = 400
-		883 = {
+		988 = {
 			add_building_construction = {
 				type = infrastructure
 				level = 1
 				instant_build = yes
 			}
 		}
-		add_ideas = moreyears
+		#add_ideas = moreyears
 	}
 }
 country_event = {
@@ -57,7 +57,7 @@ country_event = {
 		add_ideas = crimserv
 		add_ideas = djeymsescape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 45 id = newsfallout.1 }
 		}
 	}
 	option = {
@@ -65,7 +65,7 @@ country_event = {
 		add_ideas = crimslaves
 		add_ideas = djeymsescape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 45 id = newsfallout.1 }
 		}
 	}
 	option = {
@@ -73,7 +73,7 @@ country_event = {
 		add_ideas = crimwar
 		add_ideas = djeymsescape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 45 id = newsfallout.1 }
 		}
 	}
 	option = {
@@ -81,7 +81,7 @@ country_event = {
 		add_ideas = crimkill
 		add_ideas = djeymsescape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 45 id = newsfallout.1 }
 		}
 	}
 }
@@ -197,6 +197,7 @@ country_event = {
 		add_political_power = 20
 		hidden_effect = { #ThreeDog
 			country_event = { days = 45 id = vault101ev.7 }
+			
 		}
 	}
 	option = {
@@ -243,10 +244,10 @@ country_event = {
         ai_chance = { 
 			factor = 100 
 		}
-		USP = { transfer_state = 1024}
+		USP = { transfer_state = 1025}
         1025 = { add_core_of = USP }				
 		hidden_effect = { #Meeting Raider
-			country_event = { days = 45 id = vault101ev.8 }
+			country_event = { days = 45 id = vault101ev.9 }
 		}
 	}
 }
@@ -472,7 +473,7 @@ country_event = {
 		name = vault101ev.20.a
 		add_political_power = 70
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.5 }
+			country_event = { days = 45 id = newsfallout.5 }
 	        country_event = { days = 45 id = vault101ev.21 }
 		}
 	}
@@ -489,6 +490,9 @@ country_event = {
 	option = {
 		name = vault101ev.21.a
 		add_political_power = 30
+		hidden_effect = {
+		country_event = { days = 45 id = vault101ev.22 }
+		}
 	}
 }
 
@@ -778,6 +782,9 @@ country_event = {
 		name = vault101ev.37.a
         create_faction = Stolichnoy
 		add_to_faction = RIV
+		hidden_effect = {
+		country_event = { days = 45 id = vault101ev.38}
+		}
 	}
 }
 
@@ -898,9 +905,9 @@ country_event = {
 			hidden_effect = {
 				load_oob = enclavememori
 				country_event = { days = 3 id = newsfallout.2 }
-	        country_event = { days = 45 id = vault101ev.45 }
-		}				
-			}
+		    }				
+		}
+	    country_event = { days = 45 id = vault101ev.45 }
 		}
 }
 
@@ -985,10 +992,11 @@ country_event = {
 			hidden_effect = {
 				country_event = { days = 2 id = detievent.1 }
 			}
+		}
 		hidden_effect = {
-	        country_event = { days = 45 id = vault101ev.50 }
+	        country_event = { days = 60 id = vault101ev.50 }
 		}
-		}
+		
 	}
 }
 
@@ -1004,42 +1012,42 @@ country_event = {
 		name = vault101ev.49.a
         add_ideas = killchildren
 		add_manpower = -100
-		create_wargoal = {
+		declare_war_on = {
 				type = annex_everything
 				target = LIT
 		}
         LIT = { 
 			hidden_effect = {
-				country_event = { days = 1 id = detievent.4 }
+				country_event = { days = 2 id = detievent.4 }
 			}
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = USP
 		    }
 		}
     	hidden_effect = {
-	        country_event = { days = 70 id = vault101ev.50 }
+	        country_event = { days = 60 id = vault101ev.50 }
 		}		
 	}
 	option = {
 		name = vault101ev.49.b
 		add_ideas = nokillchildren
 		add_manpower = -50
-		create_wargoal = {
+		declare_war_on = {
 				type = puppet_wargoal_focus
 				target = LIT
 		}
 		LIT = { 
 			hidden_effect = {
-				country_event = { days = 1 id = detievent.4 }
+				country_event = { days = 2 id = detievent.4 }
 			}
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = USP
 		    }
 		}
 		hidden_effect = {
-	        country_event = { days = 70 id = vault101ev.50 }
+	        country_event = { days = 60 id = vault101ev.50 }
 		}	
 	}
 }
@@ -1171,7 +1179,7 @@ country_event = {
 			}	
 		}
 		hidden_effect = {
-	        country_event = { days = 70 id = vault101ev.57 }
+	        country_event = { days = 60 id = vault101ev.57 }
 		}
 	}
 }
@@ -1263,7 +1271,7 @@ country_event = {
 			add_political_power = 100
 		    add_manpower = 1000
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.11 }	
+				country_event = { days = 45 id = newsfallout.11 }	
 			}
 		}
 		set_country_flag = ready_for_battle
@@ -1283,15 +1291,12 @@ country_event = {
         USP = { 
 			add_political_power = 60
 		    add_manpower = 520
-			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.12 }	
-			}
 			leave_faction = Stolichnoy
+			}
+		ESP = {
 			create_faction = "enclaveedin"
-			add_to_faction = ESP
-			
-		}
-		
+			add_to_faction = USP
+			}
 		set_country_flag = ready_for_battle
 		hidden_effect = {
 		country_event = { days = 45 id = vault101ev.64 }
@@ -1299,15 +1304,36 @@ country_event = {
 			ruling_party = ruler
 			elections_allowed = no
 		}
+	if = {
+	   limit = { 
+	   ESP = {
+	   	has_country_leader = {
+		id = 5555
+		ruling_only = yes
+		name = "President John Henry Eden"
+		}
+		}
+	   }
+       create_country_leader = {
+	   name = "Butch Deloria"
+	   id = 5678
+	   desc = ""
+	   picture = "gfx/leaders/USP/Butch_DeLoria_Enclave.dds"
+	   expire = "3000.1.1"
+	   ideology = oligarchy
+       }
+	   }
+		
 		set_popularities = {
 			ruler = 50
 			elites = 0
 			people = 50
 			intellectuals = 0
 		}
-		}
+		
 		set_country_flag = enclave_enjoyer
 	}
+}
 }
 
 country_event = {
@@ -1365,13 +1391,13 @@ country_event = {
 	option = {
 		name = vault101ev.64.a
 		hidden_effect = {
-			set_capital = 750
+			set_capital = 988
 			start_civil_war = {
 				ruling_party = ruler
 				ideology = people
 				size = 0.5
-				capital = 876
-				states = { 876 988 882 }
+				capital = 987
+				states = { 987 1025 }
 			}
 			random_other_country = {
 				limit = {
@@ -1405,7 +1431,7 @@ country_event = {
 			}	
 			set_stability = 0.5
 			set_war_support = 0.5
-			load_oob = "USP_Bandits"
+			#load_oob = "USP_Bandits"
 		}
 		add_stability = -0.25
 		hidden_effect = { set_cosmetic_tag = GER_provisional_gvt }
