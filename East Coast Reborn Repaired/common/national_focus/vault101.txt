@@ -134,7 +134,6 @@ focus_tree = {
 			}
 			988 = {
 				add_extra_state_shared_building_slots = 3
-				add_manpower = 300
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
@@ -190,7 +189,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] vault101_6 entered"
 			}
 			987= {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -272,7 +271,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] vault101_9 entered"
 			}
 			988 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -402,7 +401,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_15
-		icon = GFX_goal_megatonna1
+		icon = GFX_goal_USP_Megaton
 		relative_position_id = vault101_3
 		prerequisite = {
 			focus = vault101_3
@@ -436,7 +435,9 @@ focus_tree = {
 	icon = GFX_goal_USP_god_bless
     prerequisite = { focus = vault101_15}
 	relative_position_id = vault101_15
+	mutually_exclusive = {
 	focus = vault101_32
+	}
 	available = {
 		NOT = {
 		   is_in_faction_with = SBS
@@ -503,6 +504,9 @@ focus_tree = {
 			NOT = {
 				is_in_faction_with = ESP
 			}
+			NOT = {
+			has_country_flag = enclave_enjoyer
+			}
 			ESP = { exists = yes }
 			has_country_flag = ready_for_battle
 		}
@@ -548,7 +552,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_33
-		icon = GFX_goal_megatonna16
+		icon = GFX_goal_USP_Choice
 		relative_position_id = vault101_32
 		available = {
 			ESP = { exists = no }
@@ -579,9 +583,10 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#Purity - VLT - purify
+	focus = {
 		id = vault101_34
-		icon = GFX_goal_enc_smash
+		icon = GFX_goal_USP_Butch_Trolling
+		relative_position_id = vault101_44
 		available = {
 			has_country_leader = {
 				id = 5678
@@ -593,7 +598,6 @@ focus_tree = {
 		focus = vault101_44
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = vault101_44
 		x = 0
 		y = 1
 		prerequisite = { 
@@ -602,7 +606,7 @@ focus_tree = {
 	
 		completion_reward = {
 			988 = {
-				add_manpower = -2000
+				add_manpower = -1000
 			}
 			987 = {
 				add_manpower = -850
@@ -622,7 +626,7 @@ focus_tree = {
  
  focus = {
 		id = vault101_35
-		icon = GFX_goal_megatonna20
+		icon = GFX_goal_USP_Builder
 		relative_position_id = vault101_52
 		cost = 45
 		prerequisite = {
@@ -642,14 +646,10 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] vault101_35 entered"
 			}
-			987 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
 				}
-			}
-			988 = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -665,7 +665,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_36
-		icon = GFX_goal_doroga
+		icon = GFX_goal_USP_Builder_2
 		prerequisite = { focus = vault101_35 }
 		ai_will_do = { factor = 1 } 
 		relative_position_id = vault101_35
@@ -673,63 +673,45 @@ focus_tree = {
 		y = 1
 		cost = 45
 		completion_reward = {
-			add_political_power = 50
-			988 = {
-				add_building_construction = { 
-					type = infrastructure 
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
 					level = 1
-					instant_build = yes 
+					instant_build = yes
 				}
 			}
-			987= {
-				add_building_construction = { 
-					type = infrastructure 
-					level = 1
-					instant_build = yes 
-				}
-			}
-			985 = {
-				add_building_construction = { 
-					type = infrastructure 
-					level = 1
-					instant_build = yes 
-				}
-			}
-			1025 = {
-				add_building_construction = { 
-					type = infrastructure 
-					level = 1
-					instant_build = yes 
-				}
-			}
+
 		}
 	}
 	
 	focus = {
 		id = vault101_37
-		icon = GFX_goal_megatonna19
+		icon = GFX_goal_USP_Boy_Smart
 		prerequisite = {focus = vault101_35}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = vault101_35
 		available = {
-			987 = { is_controlled_by = USP } #do we actually own it right now?
+			985 = { is_controlled_by = USP } #do we actually own it right now?
 		}
 		x = 0
 		y = 1
 		cost = 45
 		completion_reward = {
 			add_research_slot = 1
-			987 = {
-				add_manpower = 1253
+			985 = {
+				set_state_name = "Springvale Academy of Science"
 			}
 		}
 	}
 	
 	focus = {
 		id = vault101_38
-		icon = GFX_goal_megatonna18
+		icon = GFX_goal_USP_Boy_Smart_2
 		relative_position_id = vault101_35
-		cost = 40.0
+		cost = 45
 		prerequisite = {
 			focus = vault101_35
 		}
@@ -758,7 +740,7 @@ focus_tree = {
 	
 	focus = {#Purity - VLT - purify
 		id = vault101_39
-		icon = GFX_goal_megatonna17
+		icon = GFX_goal_USP_All_Good
 		ai_will_do = { factor = 1 } 
 		relative_position_id = vault101_35
 		x = 0
@@ -767,7 +749,7 @@ focus_tree = {
 		prerequisite = { focus = vault101_37}
 		prerequisite = { focus = vault101_38}	
 		completion_reward = {
-			add_stability = 0.25
+			add_stability = 0.15
 			add_war_support = -0.10
 			remove_ideas = djeymsescape
 		}
@@ -776,7 +758,7 @@ focus_tree = {
  
     focus = {
 		id = vault101_40
-		icon = GFX_goal_enc_slave_labour
+		icon = GFX_goal_USP_Slave
 		ai_will_do = { factor = 1 } 
 		relative_position_id = vault101_34
 		x = 0
@@ -791,7 +773,7 @@ focus_tree = {
  
     focus = {
 		id = vault101_41
-		icon = GFX_goal_enc_smash
+		icon = GFX_goal_USP_Civil_War
 		relative_position_id = vault101_40
         prerequisite = {
 			focus = vault101_40
@@ -811,9 +793,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 120
-			add_manpower = 450
-			add_named_threat = { threat = -80 name = USP_Rebel }
+		    add_stability = -0.1
 			country_event = { id = vault101ev.64 }
 		}
 	}
@@ -833,7 +813,6 @@ focus_tree = {
 		}
 
 		available = {
-        has_country_flag = yog_finished_map
 		}
 
 		bypass = {
@@ -859,7 +838,7 @@ focus_tree = {
 		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
 			}
 			add_political_power = -200
-			add_manpower = 1500
+			add_manpower = 300
 			add_opinion_modifier = { target = POI modifier = uspandpointlookout }
 			add_opinion_modifier = { target = GRI modifier = uspandpointlookout }
 			add_opinion_modifier = { target = KEL modifier = uspandpointlookout }
@@ -868,7 +847,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_43
-		icon = GFX_goal_generic_airbases_focus
+		icon = GFX_goal_USP_Default
 		relative_position_id = vault101_41
 		cost = 45
 		prerequisite = {
@@ -906,7 +885,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_44
-		icon = GFX_goal_megatonna21
+		icon = GFX_goal_USP_Choice_Butch
 		cost = 45
 		prerequisite = {
 		focus = vault101_33
@@ -945,7 +924,6 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] vault101_45 entered"
 			}
 			army_experience = 20
-			add_manpower = 2000
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] vault101_45 exited"
@@ -1037,7 +1015,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_49
-		icon = GFX_goal_megatonna24
+		icon = GFX_goal_USP_Tunnel_Snakes_Rule
 		cost = 45
 		prerequisite = {
 			focus = vault101_41
@@ -1063,7 +1041,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_50
-		icon = GFX_goal_megatonna23
+		icon = GFX_goal_USP_Tunnel_Snakes
 		relative_position_id = vault101_41
 		cost = 45
         prerequisite={
@@ -1105,7 +1083,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_51
-		icon = GFX_goal_generic_swords
+		icon = GFX_goal_USP_No_BOS
 		relative_position_id = vault101_44
 		x = 0
 		y = 5
@@ -1157,7 +1135,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_52
-		icon = GFX_goal_megatonna28
+		icon = GFX_goal_USP_Amata
 		cost = 45
 		prerequisite = {
 		focus = vault101_33
@@ -1267,7 +1245,7 @@ focus_tree = {
 		focus = vault101_51
 		}
 		bypass = {
-            has_full_control_of_state = 1022
+            has_full_control_of_state = 1023
 		}
 		x = -2
 		y = 1
@@ -1275,7 +1253,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 1022 # Carson City
+						has_full_control_of_state = 1023 # Carson City
 				}
 				USP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1336,24 +1314,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = vault101_59
-		icon = GFX_goal_megatonna17
-		prerequisite = {
-			focus = vault101_33
-		}
-		ai_will_do = { factor = 1000 } 
-		relative_position_id = vault101_33
-		cost = 45
-		bypass = {
-            
-		}
-		x = 0
-		y = 1
 
-		completion_reward = {
-             add_ideas = cleanoperation
-		}
-	}
 	
 	

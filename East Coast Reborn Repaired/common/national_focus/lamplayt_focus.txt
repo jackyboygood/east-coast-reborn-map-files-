@@ -1494,7 +1494,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 9.0
+		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2735,6 +2735,8 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		available = {
 			ESP = { exists = yes }
+			SBS = {  exists = no }
+			USP = {  exists = no }
 		}
 		prerequisite = { focus = lamplayt_89 }
 		relative_position_id = lamplayt_89
@@ -2858,9 +2860,8 @@ focus_tree = {
 		relative_position_id = lamplayt_36
 		x = 4
 		y = -1
-		cost = 60
+		cost = 45
 		completion_reward = {
-		    transfer_state = 1002
 			add_political_power = 150
 		}
 	}
@@ -2938,7 +2939,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_128
-		icon = GFX_goal_support_layons
+		icon = GFX_goal_SBS_Elder_Lyons
 		relative_position_id = lamplayt_127
 		prerequisite = { focus = lamplayt_127 }
 		available = {
@@ -3054,36 +3055,18 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = lamplayt_134
-		icon = GFX_goal_megatonna29
-		cost = 70
-		available = {
-           ESP = { exists = no }
-		   SBS = { exists = yes }
-		}
-		relative_position_id = lamplayt_133
-		prerequisite = { focus = lamplayt_133 }
-		prerequisite = { focus = lamplayt_132 }
-		x = 1
-		y = 1
-
-		completion_reward = {
-			hidden_effect = { load_oob = SBS_Liberty_praym }
-		}
-	}
 	
 	focus = {
 		id = lamplayt_135
-		icon = GFX_goal_megatonna17
+		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1 } 
-		relative_position_id = lamplayt_134
+		relative_position_id = lamplayt_129
 		available = {
            ESP = { exists = no }
            has_country_flag = soglasievaultsouls	   
 		}
 		x = 0
-		y = 1
+		y = 3
 		completion_reward = {
 			add_ideas = cleanoperation
 		}
@@ -3157,7 +3140,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_139
-		icon = GFX_goal_megatonna28
+		icon = GFX_goal_USP_Amata
 		cost = 45
 		available = {
 		   has_country_flag = amatabej	   
@@ -3181,7 +3164,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_140
-		icon = GFX_goal_megatonna21
+		icon = GFX_goal_USP_Choice_Butch
 		cost = 45
 		available = {
 		   has_country_flag = buchisgnan   
