@@ -6791,11 +6791,11 @@ SOV = {
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 			female = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 		}
 		people = {
@@ -6805,11 +6805,11 @@ SOV = {
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 			female = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 		}
 		ruler = {
@@ -6819,11 +6819,11 @@ SOV = {
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 			female = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 		}
 		elites = {
@@ -6833,11 +6833,11 @@ SOV = {
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 			female = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 			}
 		}
 	}
@@ -6848,20 +6848,23 @@ SOV = {
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
 				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
-				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 		}
 		female = {
+		"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+		"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+		"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 		}
 	}
 	navy = {
 		male = {
-			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_1.dds"
-			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds"
-			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_3.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
 		}
 		female = {
+		   "gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+		   "gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+		   "gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
 		}
 	}
 }
