@@ -70,7 +70,7 @@ set_popularities = {
 add_ideas = {
     raider_nation
 }
-S
+
 
 create_country_leader = {
 	name = "Red Tourette"
@@ -86,7 +86,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Red Tourette"
 	portrait_path = "gfx/leaders/RIJ/rijaha.dds"
-	skill = 4
+	skill = 6
 	traits = {
 		offensive_doctrine
 	}

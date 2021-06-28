@@ -50,6 +50,15 @@ set_war_support = 0.2
 set_rule = { can_join_factions = no }
 set_convoys = 60
 
+set_truce = {
+	target = KRO
+	days = 730
+}
+set_truce = {
+	target = BOK
+	days = 730
+}
+
 
 set_politics = {
 	ruling_party = people
@@ -81,8 +90,8 @@ create_country_leader  = {
 create_corps_commander = {
 	name = "General Louise Campbell"
 	portrait_path = "gfx/leaders/NUE/Portrait_general.dds"
-	skill = 3
-	traits = {}
+	skill = 2
+	traits = {strong_trait}
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
@@ -91,32 +100,26 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Corporal Abigel Vots"
-	portrait_path = "gfx/leaders/DEV/Rosie.dds"
-	skill = 3
-	traits = {}
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
 	name = "General Jordan Marmont"
 	portrait_path = "gfx/leaders/NUE/Portrait_general1.dds"
-	skill = 3
-	traits = {}
+	skill = 2
+	traits = {
+	strong_trait 
+	intellectual_trait }
 	attack_skill = 4
 	defense_skill = 2
-	planning_skill = 3
+	planning_skill = 2
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Captain of the Marine Corps Federation"
+create_field_marshal = {
+	name = "Captain Rocker"
 	portrait_path = "gfx/leaders/NUE/Portrait_general3.dds"
 	skill = 3
-	traits = {}
+	traits = {
+	intellectual_trait 
+	agile_trait 
+	}
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
@@ -126,12 +129,14 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Colonel Kate Walker"
 	portrait_path = "gfx/leaders/NUE/Portrait_general2.dds"
-	skill = 3
-	traits = {}
-	attack_skill = 2
-	defense_skill = 3
+	skill = 2
+	traits = {
+	strong_trait 
+	agile_trait 
+	}
+	attack_skill = 3
+	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 3
+	logistics_skill = 1
 }
 	
-}

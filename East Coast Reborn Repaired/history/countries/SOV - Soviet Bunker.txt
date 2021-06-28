@@ -90,3 +90,30 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_field_marshal = {
+	name = "Mikhail Alexandrovich"
+	portrait_path = "gfx/leaders/SOV/comunism_leader.dds"
+	skill = 3
+	traits = {
+	intelligent_trait
+	}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alex Tarakanov"
+	portrait_path = "gfx/leaders/SOV/Alex_Tarakanov.dds"
+	skill = 2
+	traits = {
+	strong_trait
+	agile_trait
+	}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
