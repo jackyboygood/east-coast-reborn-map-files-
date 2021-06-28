@@ -46,7 +46,7 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = -0.05
 				political_power_gain = 0.05
-				research_time_factor = -0.05
+				research_speed_factor = -0.05
 				supply_consumption_factor = 0.05
 				production_speed_buildings_factor = 0.1
 				

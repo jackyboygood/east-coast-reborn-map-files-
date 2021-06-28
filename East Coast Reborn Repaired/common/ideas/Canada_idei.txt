@@ -12,9 +12,9 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = -0.75
-				conscription = 0.2
-				army_speed_factor = -0.1
-				army_core_attack_factor = 0.2
+				conscription = 0.4
+				army_speed_factor = -0.2
+				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.15
 			}
 
@@ -30,13 +30,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_buildings_factor = -0.05
-				army_attack_factor = 0.1
-				army_core_defence_factor = -0.1
-				supply_consumption_factor = -0.08
-				army_morale_factor = 0.42
-				equipment_conversion_speed = 0.35
-				ruler_drift = 0.15
+				production_speed_buildings_factor = -0.1
+				army_attack_factor = 0.15
+				army_defence_factor = -0.15
+				supply_consumption_factor = 0.2
+				army_morale_factor = 0.3
+				equipment_conversion_speed = 0.3
+				people_drift = 0.15
 			}
 
 		}
@@ -67,9 +67,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				conscription = 0.4
-				army_attack_factor = -0.25
-				army_defence_factor = -0.2
+				conscription = 0.2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 				army_speed_factor = -0.05
 			}
 		}
@@ -84,9 +84,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				army_attack_factor = 0.03
-				army_core_defence_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				stability_factor = -0.1
 				intellectuals_drift = 0.15
 			}
 
@@ -98,11 +97,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				local_resources_factor = 0.05
+				local_resources_factor = 0.1
 				global_building_slots_factor = -0.10
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.1
 				industry_free_repair_factor = 0.10
 				conscription = -0.10
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 		
@@ -166,15 +166,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_speed_factor = 0.1
-				army_morale_factor = 0.1
-				supply_consumption_factor = 0.08
+				army_speed_factor = 0.12
+				army_morale_factor = 0.23
+				supply_consumption_factor = 0.18
 				war_support_factor = 0.2
 				stability_factor = -0.12
 				industry_free_repair_factor = -0.15
 				conscription = 0.10
-				army_attack_factor = 0.07
-				army_defence_factor = 0.1
+				army_attack_factor = 0.2
+				army_defence_factor = -0.1
 			}
 		}
 		

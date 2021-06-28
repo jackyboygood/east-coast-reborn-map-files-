@@ -1,5 +1,5 @@
 ideas = {
-political_advisor = {
+economic_advisor = {
 
         stenly_armstrong = {
 			picture = advisor_101vault
@@ -54,7 +54,7 @@ political_advisor = {
 		}
 	}
 	
-theorist = {
+research_advisor = {
 		officer_gomes = {
 		    cost = 225
 			picture = advisor_101vault1
