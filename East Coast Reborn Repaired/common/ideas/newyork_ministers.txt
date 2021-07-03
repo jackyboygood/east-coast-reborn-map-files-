@@ -1,5 +1,5 @@
 ideas = {
-political_advisor = {
+cultural_advisor = {
 
         diplomatman = {
 			picture = advisor_newyork
@@ -139,7 +139,7 @@ high_command = {
 			}
 		}
 	}
-naval_manufacturer = {
+navy_restoration_advisor = {
         designer = yes
 
 		naval_manufacturer_newyork = {
@@ -159,7 +159,7 @@ naval_manufacturer = {
 			traits = { newyork_port }
 		}
 	}
-industrial_concern = {
+engineering_firm  = {
         red_reyser1 = {
 			 
 			picture = advisor_newyork8
@@ -178,27 +178,7 @@ industrial_concern = {
 			traits = {  }
 		}
     }
-tank_manufacturer = {
-        designer = yes
-		
-		newyork_razrab = {
 
-			picture = advisor_newyork9
-			
-			allowed = {
-				original_tag = NUE
-			}
-			
-			cost = 210
-			removal_cost = 10
-			
-			research_bonus = {
-				armor = 0.13
-			}
-			
-			traits = {  }
-		}
-	}
 air_chief = {
 
 		president_air = {
@@ -216,7 +196,7 @@ air_chief = {
 			}
 		}
 	}
-theorist = {
+research_advisor = {
         polkovnik_Bishop = {
 		    cost = 230
 			picture = advisor_newyork13
@@ -230,23 +210,3 @@ theorist = {
 			}
 		}
 	}	
-materiel_manufacturer = {
-        general_atommik = {
-			
-			picture = advisor_newyork14
-
-			allowed = {
-				original_tag = NUE
-			}
-			
-			cost = 260
-			removal_cost = 10
-			
-			research_bonus = {
-				infantry_weapons = 0.07
-				artillery = 0.06
-			}
-			
-			traits = { weapon_company  }
-		}
-	}

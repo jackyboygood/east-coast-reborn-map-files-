@@ -1,8 +1,8 @@
 ideas = {
 	army_chief = {
 
-		head_paladin_richardson51 = {
-			picture = BOS_generic4
+		head_paladin_richardson = {
+			picture = SBS_generic4
 
 			allowed = {
 				original_tag = SBS
@@ -22,8 +22,8 @@ ideas = {
 		}
 
 
-		paladin_myers51 = {
-			picture = BOS_generic6
+		paladin_myers = {
+			picture = SBS_generic6
 
 			allowed = {
 				original_tag = SBS
@@ -47,7 +47,7 @@ ideas = {
 	high_command = {
 
 		scribe_perez = {
-			picture = BOS_generic2
+			picture = SBS_generic2
 
 			allowed = {
 				original_tag = SBS
@@ -63,7 +63,7 @@ ideas = {
 		}
 
 		paladin_moore = {
-			picture = BOS_generic1
+			picture = SBS_generic1
 
 			allowed = {
 				original_tag = SBS
@@ -79,7 +79,7 @@ ideas = {
 		}
 
 		knight_watson = {
-			picture = BOS_generic5
+			picture = SBS_generic5
 
 			allowed = {
 				original_tag = SBS
@@ -95,7 +95,7 @@ ideas = {
 		}
 
 		scout_davies = {
-			picture = BOS_generic4
+			picture = SBS_generic4
 
 			allowed = {
 				original_tag = SBS
@@ -113,10 +113,10 @@ ideas = {
 
 	}
 
-	political_advisor = {
+	cultural_advisor = {
 		knight_simmons = {
 
-			picture = BOS_generic7
+			picture = SBS_generic7
 
 			allowed = {
 				original_tag = SBS
@@ -133,7 +133,7 @@ ideas = {
 
 		scribe_dyson = {
 
-			picture = BOS_generic10
+			picture = SBS_generic10
 
 			allowed = {
 				original_tag = SBS
@@ -150,7 +150,7 @@ ideas = {
 
 		paladin_myers_advisor = {
 
-			picture = BOS_generic8
+			picture = SBS_generic8
 
 			allowed = {
 				original_tag = SBS
@@ -167,7 +167,7 @@ ideas = {
 
 		journeyman_fritz = {
 
-			picture = BOS_generic9
+			picture = SBS_generic9
 
 			allowed = {
 				original_tag = SBS
@@ -184,11 +184,11 @@ ideas = {
 
 	}
 
-	theorist = {
+	research_advisor = {
 
-		BOS_military_theorist = {
+		SBS_military_theorist = {
 
-			picture = BOS_generic3
+			picture = SBS_generic3
 
 			allowed = {
 				original_tag = SBS
@@ -198,7 +198,7 @@ ideas = {
 				cat_elite_army = 0.10
 			}
 
-			traits = {}
+			traits = { military_theorist }
 		}
 	}
 }

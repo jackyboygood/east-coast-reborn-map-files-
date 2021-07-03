@@ -1,18 +1,5 @@
 ideas = {
-	political_advisor = {
-		sargeant_dornan51 = {
-            picture = advisor_enclave1		
-			cost = 200
-			allowed = {
-				original_tag = ESP
-			}
-			traits = {
-				drill_sargeant
-			}		
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	cultural_advisor = {
 		benjamin_curling51 = {		
 			picture = advisor_enclave2
 			
@@ -68,27 +55,6 @@ ideas = {
 				enc_disliked_pragmatist  
 			}
 		}
-		dr_henry51 = {
-			picture = d_henry
-			allowed = {
-				tag = ESP  
-			}
-			visible = {
-				has_country_flag = dr_henry_returns
-			}
-			traits = {
-				compassionate_doctor
-			}
-		}
-		ESP_arcade_gannon51 = {
-			picture = arcade_gannon		
-			allowed = {
-				tag = ESP  
-			}	
-			traits = {
-				genius_pacifist
-			}
-		}
 	}	
 
 	army_chief = {
@@ -139,7 +105,7 @@ ideas = {
 		}
 	}				
 	
-	theorist = {
+	research_advisor = {
 		enc_bomber_guy51 = {
 			picture = advisor_enclave7
 			allowed = {
@@ -194,203 +160,6 @@ ideas = {
 			}
 		}
 	}
-	
-	tank_manufacturer = {
-		ENC_PA_quanitity51 = {
-			picture = enc_designer_PA_2
-			allowed = {
-				original_TAG = ESP
-			}
-			equipment_bonus = {
-				power_armor_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}			
-			modifier = {
-				conscription_factor = -0.05
-			}
-		}
-		ENC_PA_quality51 = {
-			picture = enc_designer_PA
-			
-			allowed = {
-				original_TAG = ESP
-			}
-			equipment_bonus = {
-				power_armor_equipment = {
-					armor_value = 0.05
-					hardness = 0.1
-					breakthrough = 0.05
-					instant = yes
-				}
-			}			
-			modifier = {
-				conscription_factor = -0.05
-			}
-		}
-	}
-
-	naval_manufacturer = { 
-	
-		designer = yes
-	
-		enclave_naval_manufacturer51 = {
-			
-			picture = generic_naval_manufacturer_1
-
-			allowed = {
-				tag = ESP
-				NOT = {				
-					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
-				}
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			traits = { naval_manufacturer }
-		}
-	}
-
-	aircraft_manufacturer = { 
-	
-		designer = yes
-	
-		enclave_light_aircraft_manufacturer51 = {
-			
-			picture = enc_designer_fighter
-
-			allowed = {
-				tag = ESP
-				NOT = {
-					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
-				}
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { light_aircraft_manufacturer }
-		}
-		
-		enclave_medium_aircraft_manufacturer51 = {
-			
-			picture = enc_designer_verti
-
-			allowed = {
-				tag = ESP
-				NOT = {
-					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
-				}
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			
-			traits = { vertibird_aircraft_manufacturer }
-		}
-	}
-
-	industrial_concern = {
-	
-		enclave_industrial_concern51 = {
-			
-			picture = enc_chemical_corps
-
-			allowed = {
-				tag = ESP
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				industry = 0.10
-			}
-			
-			traits = { industrial_concern }
-		}
-
-		enclave_electronics_concern51 = {
-			
-			picture = enc_atomic_commision
-
-			allowed = {
-				tag = ESP
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			modifier = {
-				production_speed_electricity_generator_factor = 0.15
-				production_speed_civilian_power_grid_factor = 0.15
-			}
-			
-			research_bonus = {
-				electronics = 0.10
-			}
-			
-			traits = { electronics_concern }
-		}
-	}
-
-	materiel_manufacturer = {	
-		designer = no
-		enclave_plasma_equipment_manufacturer51 = {
-			
-			picture = enc_designer_plasma
-
-			allowed = {
-				tag = ESP
-				NOT = {
-					has_available_idea_with_traits = { idea = enclave_plasma_equipment_manufacturer limit = 1 }
-				}
-			}			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}			
-		traits = { enclave_plasma_equipment_manufacturer }
-
-		}
-		enclave_tesla_equipment_manufacturer51 = {
-			
-			picture = enc_designer_tesla
-
-			allowed = {
-				tag = ESP
-				NOT = {
-					has_available_idea_with_traits = { idea = enclave_tesla_equipment_manufacturer limit = 1 }
-				}
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			traits = { enclave_tesla_equipment_manufacturer }
-		}
-	}
-}
 
 # generic_air_bonus
 # generic_communism_drift_bonus

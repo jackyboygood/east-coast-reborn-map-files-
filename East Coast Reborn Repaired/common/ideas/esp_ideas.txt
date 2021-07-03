@@ -212,7 +212,6 @@ ideas = {
 				# new
 				planning_speed = 0.05
 				army_speed_factor = 0.02
-				
 				army_leader_start_level = 2
 				army_leader_start_attack_level = 2
 				army_leader_start_planning_level = 2

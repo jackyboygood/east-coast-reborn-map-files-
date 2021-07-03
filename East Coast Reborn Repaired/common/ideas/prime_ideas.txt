@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		renc_liberty_prime = {
+			picture = renc_repriming_liberty
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = -0.4
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+}
+# vim: set ft=pdx ts=2 sw=2 tw=79 :

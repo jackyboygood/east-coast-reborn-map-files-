@@ -1,8 +1,8 @@
 ideas = {
-political_advisor = {
+cultural_advisor = {
 
         doctor_le_institute = {
-                cost = 350
+                cost = 150
 				picture = advisor_insitut2
 
 				allowed = { original_tag = INS }
@@ -16,7 +16,7 @@ political_advisor = {
 			}
 			
 		doctor_folcret = {
-                cost = 350
+                cost = 150
 			picture = advisor_insitut1
 
 			allowed = {
@@ -58,9 +58,9 @@ political_advisor = {
 		}
 	}
 		
-theorist = {
+research_advisor = {
 		nachalnikohraniinsta = {
-		     cost = 250
+		     cost = 150
 			picture = advisor_insitut3
 
 			allowed = {
@@ -74,7 +74,7 @@ theorist = {
 	}
 high_command = {
 		erik_kraus = {
-		    cost = 225
+		    cost = 150
 			picture = advisor_insitut
 
 			allowed = {
@@ -88,7 +88,7 @@ high_command = {
 		
 		Kellog = {
 			picture = advisor_insitut10
-            cost = 250
+            cost = 150
 			allowed = {
 				original_tag = INS
 			}
@@ -101,7 +101,7 @@ high_command = {
 		
 		fafax = {
 			picture = advisor_insitut11
-            cost = 500
+            cost = 150
 			allowed = {
 				original_tag = INS
 			}
@@ -115,68 +115,7 @@ high_command = {
 			}
 		}
 	}
-tank_manufacturer = {
-        designer = yes
-		
-		sinth_manufacturer = {
 
-			picture = advisor_insitut4
-			
-			allowed = {
-				original_tag = INS
-			}
-			
-			cost = 210
-			removal_cost = 10
-			
-			research_bonus = {
-				armor = 0.13
-			}
-			
-			traits = {  }
-		}
-	}
-industrial_concern = {
-        biolog_otdel = {
-			
-			picture = advisor_insitut5
-
-			allowed = {
-				original_tag = INS
-			}
-			
-			cost = 230
-			removal_cost = 10
-			
-			research_bonus = {
-				industry = 0.05
-				electronics = 0.05
-			}
-			
-			traits = {  }
-		}
-    }
-materiel_manufacturer = {
-        otdel_orujia = {
-			
-			picture = advisor_insitut6
-
-			allowed = {
-				original_tag = INS
-			}
-			
-			cost = 200
-			removal_cost = 10
-			
-			research_bonus = {
-				infantry_weapons = 0.05
-				artillery = 0.05
-			}
-			
-			traits = {  }
-		}
-	}
-	
 army_chief = {
 
        sinth_attack_protocols = {
@@ -187,7 +126,7 @@ army_chief = {
 				original_tag = INS
 			}
 			
-			cost = 200
+			cost = 150
 			traits = { aggressive_ai }
 			
 			ai_will_do = {
@@ -203,7 +142,7 @@ army_chief = {
 				original_tag = INS
 			}
 			
-			cost = 200
+			cost = 150
 			traits = { reserved_ai }
 			
 			ai_will_do = {
@@ -219,7 +158,7 @@ army_chief = {
 				original_tag = INS
 			}
 			
-			cost = 200
+			cost = 150
 			traits = { unpredictable_ai }
 			
 			ai_will_do = {

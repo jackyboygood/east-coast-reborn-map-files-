@@ -1,5 +1,5 @@
 ideas = {
-political_advisor = {
+cultural_advisor = {
 
         mather_merfi = {
 			picture = advisor_minitman
@@ -41,7 +41,7 @@ political_advisor = {
 		}
 		
 		paperre = {
-		    cost = 100
+		    cost = 250
 			picture = advisor_minitman6
 
 			allowed = {
@@ -55,9 +55,9 @@ political_advisor = {
 		}
 	}
 	
-theorist = {	
+research_advisor = {	
         independen = {
-		    cost = 100
+		    cost = 600
 			picture = advisor_minitman1
             available = { has_completed_focus = Minitmen_20 }
 			allowed = {
@@ -85,7 +85,7 @@ theorist = {
 	}
 high_command = {
        minitman_shou = {
-		    cost = 100
+		    cost = 200
 			picture = advisor_minitman5
 			allowed = {
 				original_tag = MEN
@@ -100,7 +100,7 @@ high_command = {
 
 army_chief = {
 		codsvord1 = {
-			cost = 100
+			cost = 90
 			picture = advisor_minitman7
 			
 			allowed = {

@@ -1,7 +1,5 @@
 ideas = {
-	country = {
-		# Enclave state
-		
+	country = {		
         SBS_radio = {  
 			picture = enc_radio
 			allowed = { 
@@ -32,3 +30,93 @@ ideas = {
 				conscription = 0.05
 			}
 		}
+		
+		SBS_lyon_dead1 = {
+			picture = spineless
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.25
+				conscription = -0.05
+			}
+		}
+		
+		SBS_lyon_dead2 = {
+			picture = spineless
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.10
+				conscription = -0.01
+			}
+		}
+		
+		SBS_incompetent_leadership = {
+			picture = vengeful
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always =yes 
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.40
+				conscription = -0.05
+				war_support_factor = -0.50
+				justify_war_goal_time = 1.00					
+			}
+		}
+		
+		SBS_maxson_stories = {
+			picture = maxson_volunteers
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.20
+				conscription = 0.02
+			}
+		}
+		
+		SBS_boston_scribes = {
+			picture = generic_BOS_idea_scribes
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor =0.10
+			}
+		}
+	}
+}
+
+# vim: set ft=pdx ts=2 sw=2 tw=79 :
+				
+				
