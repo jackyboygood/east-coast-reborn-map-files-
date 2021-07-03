@@ -1,0 +1,43 @@
+category = {
+	name = "liberty_prime_sfx"
+	soundeffects = {
+		liberty_prime_online
+		liberty_prime_death
+	}
+}
+
+soundeffect = {
+	name = "liberty_prime_online"
+	sounds = {
+		sound = liberty_prime_online
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.6
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+sound = {
+	name = "liberty_prime_online"
+	file = "liberty_prime/liberty_prime_online.wav"
+}
+
+soundeffect = {
+	name = "liberty_prime_death"
+	sounds = {
+		sound = liberty_prime_death
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.9
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+sound = {
+	name = "liberty_prime_death"
+	file = "liberty_prime/liberty_prime_death.wav"
+}
+
+##########

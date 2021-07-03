@@ -1,0 +1,25 @@
+category = {
+	name = "enclave_sfx"
+	soundeffects = {
+		we_are_at_war
+	}
+}
+
+soundeffect = {
+	name = "we_are_at_war"
+	sounds = {
+		sound = we_are_at_war
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.2
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+sound = {
+	name = "we_are_at_war"
+	file = "enclave/we_are_at_war.wav"
+}
+
+##########
