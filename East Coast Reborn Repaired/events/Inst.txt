@@ -78,7 +78,7 @@ country_event = {
 			set_autonomy = { target = DAY autonomy_state = autonomy_puppet }
 			DAY = { 
 			      add_manpower = 250
-		          set_politics = {
+		          set_popularities = {
 			          parties = {
 				          ruler = { popularity = 10 }
 				          elites = { popularity = 10 }
@@ -109,7 +109,7 @@ country_event = {
 
 	option = {
 		name = inst.4.a		
-		931 = {
+		1017 = {
 			if = {
 				limit = { is_owned_by = BSM }
 				add_core_of = INS
@@ -133,7 +133,7 @@ country_event = {
 		    add_manpower = 350
 	        BSM = { 
 			      add_manpower = 2400
-		          set_politics = {
+		          set_popularities = {
 			          parties = {
 				          ruler = { popularity = 10 }
 				          elites = { popularity = 10 }

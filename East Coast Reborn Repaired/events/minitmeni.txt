@@ -473,3 +473,62 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = Minitmeni.18
+	title = Minutemeni.18.t
+	desc = bos_arrives
+	picture = GFX_event_bosarrives
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Minitmeni.18.a
+	}
+}
+country_event = {
+	id = Minitmeni.19
+	title = Minutemeni.19.t
+	desc = bos_arrives
+	picture = GFX_event_bosdeal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Minitmeni.19.a
+		ai_chance = 100
+		BSS = {
+			add_to_faction = MEN
+		}
+	}
+	option = {
+		name = Minitmeni.19.b
+		
+		SBS = {
+			country_event = stolbr.16
+		}
+	}		
+}
+country_event = {
+	id = Minitmeni.20
+	title = Minutemeni.20.t
+	desc = bos_arrives
+	picture = GFX_event_bosdeal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Minitmeni.20.a
+		diplomatic_relation = {
+			country = BSS
+			relation = non_aggression_pact
+			active = yes
+	}
+	option = {
+		name = Minitmeni.20.a
+		
+		SBS = {
+			country_event = stolbr.16
+		}
+	}
+}

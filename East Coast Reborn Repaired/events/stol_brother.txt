@@ -121,6 +121,16 @@ country_event = {
 	option = {
 		name = stolbr.6.a
 		annex_country = { target = DEV transfer_troops = yes }
+		ESC = {
+		country_event = stolbr.17
+		}
+		BAS= {
+		country_event = stolbr.17
+		}
+	    999 = { add_core_of = SBS }
+		1000 = { add_core_of = SBS }
+	    1006 = { add_core_of = SBS }
+		1054 = { add_core_of = SBS }
 	}
 }
 
@@ -140,6 +150,277 @@ country_event = {
 		}
 		SBS = {
 						create_wargoal = { type = annex_everything target = DEV }
+						create_wargoal = { type = annex_everything target = ESC }
+						create_wargoal = { type = annex_everything target = BAS }
+						999 = { add_core_of = SBS }
+						1000 = { add_core_of = SBS }
+						1006 = { add_core_of = SBS }
+						1054 = { add_core_of = SBS }
 			  }
+	}
+}
+
+country_event = {
+	id = stolbr.8
+	title = stolbr.8.t
+	desc = stolbr.8.d
+	picture = GFX_event_bos_lyonsdead
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+        tag = SBS
+        date > 2278.1.1
+	}
+	
+	option = {
+		name = stolbr.8.a		
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Sarah Lyons"
+			desc = "sarah_desc"
+			picture = "sarah_lyons.dds"
+			expire = "4000.1.1"
+			ideology = technocracy
+
+			traits = { military_background
+			}
+		}
+		add_ideas = { 
+			SBS_lyon_dead1
+		}
+		remove_ideas {
+			SBS_support
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.9
+	title = stolbr.9.t
+	desc = stolbr.9.d
+	picture = GFX_event_bos_eldersarah
+	is_triggered_only = yes
+	
+	option = {
+		name = stolbr.9.a				
+		remove_ideas = {
+			SBS_lyon_dead1
+		}	
+		add_ideas = { 
+			SBS_lyon_dead2
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.10
+	title = stolbr.10.t
+	desc = stolbr.10.d
+	picture = GFX_event_bos_sarahdead
+	is_triggered_only = yes
+	
+	option = {
+		name = stolbr.10.a				
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Elder McNeil"
+			desc = ""
+			picture = "elder_mcneil.dds"
+			expire = "4000.1.1"
+			ideology = technocracy
+
+			traits = { 
+				ineffective
+			}
+		}
+		add_ideas = SBS_incompetent_leadership
+		remove_unit_leader = 2282 
+	}
+}
+
+country_event = {
+	id = stolbr.11
+	title = stolbr.11.t
+	desc = stolbr.11.d
+	picture = GFX_event_bos_shephardinvasion
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = stolbr.11.a		
+		set_country_flag = shephard_uprising
+		
+		SPP = {
+			transfer_state = 1002
+			transfer_state = 716
+			transfer_state = 1005
+			transfer_state = 1001
+			set_state_controller = 1002
+			set_state_controller = 1001
+			set_state_controller = 1005
+			set_state_controller = 716
+			add_manpower = 2000
+			}
+			
+		1002 = { add_core_of = SPP }
+		1005 = { add_core_of = SPP }
+		
+		hidden_effect = {
+		SPP = {
+			load_oob = SPP_2275
+			load_oob = SPP_2275
+			load_oob = SPP_2275
+			declare_war_on = {
+				target = SBS
+				type = annex_everything
+			}
+			create_country_leader  = {
+	        name = "Shephard"
+	        desc = ""
+	        picture = "gfx/leaders/SPP/Shephard.dds"
+	        expire = "3000.1.1"
+	        ideology = warlordship
+	        traits = {
+	        }
+}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.12
+	title = stolbr.12.t
+	desc = stolbr.12.d
+	picture = GFX_event_bos_shephardslain
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		SPP = { exists = no }
+		has_country_flag = shephard_uprising
+	}
+	
+	option = {
+		name = stolbr.12.a		
+		remove_country_flag = shephard_uprising
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_ideas = SBS_maxson_stories
+	}		
+}
+
+country_event = {
+	id = stolbr.13
+	title = stolbr.13.t
+	desc = stolbr.13.d
+	picture = GFX_event_eldermaxson
+	is_triggered_only = yes
+	
+	option = {
+		name = stolbr.13.a					
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Elder Maxson"
+			desc = ""
+			picture = "elder_maxson.dds"
+			expire = "4000.1.1"
+			ideology = technocracy
+
+			traits = { 
+				popular_figurehead
+			}
+		}
+		remove_ideas = SBS_incompetent_leadership
+	}
+}
+
+country_event = {
+	id = stolbr.14
+	title = stolbr.14.t
+	desc = stolbr.14.d
+	picture = GFX_event_boston_stormed
+	is_triggered_only = yes
+	
+	option = {
+		name = stolbr.14.a
+		add_war_support = 0.14
+		BSS = {
+		add_war_support = 0.14
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.15
+	title = stolbr.15.t
+	desc = stolbr.15.d
+	picture = GFX_event_minutemen_deal
+	is_triggered_only = yes
+	
+	option = {
+	    trigger = {
+		MEN = {
+		has_country_leader = {
+			id = 2001
+		}
+		}
+		}
+		name = stolbr.15.a
+		
+		MEN = {
+			country_event = Minitmeni.19
+		}
+	}
+	option = {
+		name = stolbr.15.b
+		
+		MEN = {
+			country_event = Minitmeni.20
+		}
+	}
+}
+
+country_event = {
+	id = stolbr.16
+	title = stolbr.16.t
+	desc = stolbr.16.d
+	picture = GFX_event_minutemen_deal
+	is_triggered_only = yes
+
+	option = {
+		name = stolbr.16.a
+		BSS = {
+		create_wargoal = {
+				type = annex_everything
+				target = MEN
+		}
+		}
+	}
+}
+
+
+country_event = {
+	id = stolbr.17
+	title = stolbr.17.t
+	desc = stolbr.17.d
+	#picture = GFX_event_minutemen_deal
+	is_triggered_only = yes
+	
+	option = {
+		name = stolbr.17.a
+		SBS = {
+		annex_country = { target = FROM transfer_troops = yes }
+		#988 = { add_core_of = SBS }
+		}
+	}
+	
+	option = {
+		name = stolbr.17.b
+		SBS = {
+		declare_war_on = {
+				type = annex_everything
+				target = FROM
+		}
+		
 	}
 }

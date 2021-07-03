@@ -955,3 +955,61 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = newsfallout.26
+	title = newsfallout.26.t
+	is_triggered_only = yes
+	desc = {
+		text = newsfallout.26.d
+		trigger = {
+		USP = {
+		has_country_flag = enclave_war
+		}
+		}
+	}
+	picture = GFX_event_capital_bos_enc_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = newsfallout.26.a
+		trigger = { 
+			NOT = { tag = SBS 
+			        tag = RIV 
+			        tag = ESP 
+		            tag = USP 
+				 }
+		}
+	}
+	
+	option = {
+		name = newsfallout.26.b
+		trigger = {
+		  OR = {
+			tag = SBS 
+			tag = RIV 
+		    tag = USP 
+			}
+		}
+		hidden_effect = {
+		scoped_sound_effect = we_are_at_war
+		}
+	}
+	
+	option = {
+		name = newsfallout.26.c
+		trigger = { TAG = ESP }
+		hidden effect = {
+		scoped_sound_effect = we_are_at_war
+		}
+	}
+	
+
+	
+
+	
+	
+}
+
