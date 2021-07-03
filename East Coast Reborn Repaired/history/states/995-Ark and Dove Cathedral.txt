@@ -9,11 +9,11 @@ state={
 		
 	}
 	history={
-		owner = GRI
-		add_core_of = GRI
+		owner = DEE
+		add_core_of = DEE
 
 		victory_points = {
-			12503 25
+			12503 5
 		}
 		buildings = {
 			infrastructure = 5
