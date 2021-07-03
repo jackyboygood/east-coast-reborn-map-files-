@@ -62,10 +62,43 @@ infantry_tech_level_tribal = 1
 	anti_tank_equipment_tech_1 = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		nautics_tech_1 = 1
+		light_navy_hull_tech_1 = 1
+		waterproof_sealing_tech = 1
+		medium_navy_hull_tech_1 = 1
+		multi_deck_construction_tech = 1
+		heavy_navy_hull_tech_1 = 1
+		naval_module_tech = 1
+		naval_weapons_module_tech = 1
+		naval_support_module_tech = 1
+		naval_armour_tech_1 = 1
+		naval_communications_module_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		nautics_tech_non_mtg_1 = 1
+		light_navy_hull_tech_non_mtg_1 = 1
+		waterproof_sealing_tech_non_mtg = 1
+		medium_navy_hull_tech_non_mtg_1 = 1
+		multi_deck_construction_tech_non_mtg = 1
+		heavy_navy_hull_tech_non_mtg_1 = 1
+	}
+}
+
 set_stability = 0.7
 set_war_support = 0.3
 set_convoys = 35
-set_country_flag = is_settler_nation
+set_country_flag = is_brotherhood_nation
+set_country_flag = is_brotherhood_nation_proper
 
 
 set_politics = {
@@ -95,7 +128,7 @@ set_research_slots = 3
 create_country_leader = {
 	name = "Arthur Maxson"
 	desc = ""
-	picture = "gfx/leaders/BSS/artur.dds"
+	picture = "gfx/leaders/SBS/elder_maxson.dds"
 	expire = "3000.1.1"
 	ideology = technocracy
 	traits = {
@@ -106,7 +139,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Paladin Dance"
-	portrait_path = "gfx/leaders/BSS/FO4_Paladin_Danse.dds"
+	portrait_path = "gfx/leaders/SBS/danse.dds"
 	skill = 3
 	traits = {
 	}
@@ -118,7 +151,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Captain Kells"
-	portrait_path = "gfx/leaders/BSS/kels.dds"
+	portrait_path = "gfx/leaders/SBS/kells.dds"
 	skill = 2
 	traits = {
 	}

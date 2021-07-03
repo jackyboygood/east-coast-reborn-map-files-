@@ -1,4 +1,4 @@
-﻿capital = 895
+﻿capital = 982
 oob = "AUB_2275"
 set_technology = {
     infantry_tech_level_tribal = 1
@@ -51,6 +51,7 @@ set_technology = {
 set_stability = 0.25
 set_war_support = 0.65
 set_convoys = 100
+set_country_flag = is_raider_nation
 
 add_opinion_modifier = { target = SBS modifier = torgovieoperacii }
 add_opinion_modifier = { target = SPP modifier = torgovieoperacii }

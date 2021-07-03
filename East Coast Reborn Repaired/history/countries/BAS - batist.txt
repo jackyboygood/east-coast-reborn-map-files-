@@ -1,4 +1,4 @@
-﻿capital = 941
+﻿capital = 1006
 oob = "BAS_2275"
 set_research_slots = 3
 
@@ -51,6 +51,7 @@ set_technology = {
 
 set_stability = 0.7
 set_war_support = 0.4
+set_country_flag = is_settler_nation
 
 set_convoys = 35
 set_politics = {
@@ -70,7 +71,7 @@ add_ideas = {
 }
 
 create_country_leader  = {
-	name = "Smileing Bill"
+	name = "Smiling Bill"
 	desc = ""
 	picture = "gfx/leaders/BAS/Bill.dds"
 	expire = "3000.1.1"

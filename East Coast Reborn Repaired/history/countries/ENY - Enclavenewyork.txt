@@ -75,12 +75,11 @@ set_popularities = {
 	ruler = 0
 }
 
-add_ideas = {
 add_ideas = enc_scientists
 add_ideas = ENC_officers
 add_ideas = closed_economy
 add_ideas = ENC_special_forces
-}
+
 
 create_country_leader  = {
 	name = "Colonel John Niemann"

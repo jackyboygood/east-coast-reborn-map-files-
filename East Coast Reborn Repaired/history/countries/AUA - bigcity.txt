@@ -1,4 +1,4 @@
-﻿capital = 893
+﻿capital = 990
 oob = "AUA_2275"
 
 set_technology = {
@@ -47,12 +47,12 @@ set_technology = {
 	demolitions_weaponry_tech = 1
 	fireteam_weaponry_tech = 1
 	bike_tech_1 = 1
-	spec_ops_equipment_tech_1 = 1
 }
 
 set_stability = 0.6
 set_war_support = 0.2
 set_convoys = 35
+set_country_flag = is_settler_nation
 
 add_opinion_modifier = { target = SBS modifier = torgovieoperacii }
 add_opinion_modifier = { target = SPP modifier = torgovieoperacii }

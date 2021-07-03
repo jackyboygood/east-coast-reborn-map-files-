@@ -1,4 +1,4 @@
-﻿capital = 777
+﻿capital = 1022
 oob = "RAB_2275"
 
 set_technology = {
@@ -51,6 +51,8 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.2
 set_convoys = 75
+set_country_flag = is_raider_nation
+
 add_opinion_modifier = { target = LIT modifier = torgovieoperacii }
 add_opinion_modifier = { target = AUA modifier = torgovieoperacii }
 add_opinion_modifier = { target = AUB modifier = torgovieoperacii }

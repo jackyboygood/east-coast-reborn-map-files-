@@ -99,7 +99,6 @@ set_popularities = {
 
 add_ideas = {
 	raider_nation
-	reckless_aggression
 	roaring_machines
 }
 

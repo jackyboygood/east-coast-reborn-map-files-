@@ -1,4 +1,4 @@
-﻿capital = 872
+﻿capital = 975
 oob = "RIV_2275"
 
 set_technology = {
@@ -51,6 +51,7 @@ set_technology = {
 
 set_stability = 0.8
 set_war_support = 0.2
+set_country_flag = is_settler_nation
 
 
 set_politics = {

@@ -67,11 +67,6 @@ set_popularities = {
 	ruler = 25
 }
 
-add_ideas = {
-    raider_nation
-}
-
-
 create_country_leader = {
 	name = "Red Tourette"
 	desc = ""

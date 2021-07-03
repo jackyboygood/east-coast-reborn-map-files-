@@ -60,15 +60,7 @@ set_popularities = {
 	intellectuals = 20
 	ruler = 30
 }
-
-#add_ideas = {
-     ENC_infighting
-    }
 	
-add_opinion_modifier = { target = RIJ modifier = torgovieoperacii }
-add_opinion_modifier = { target = BSS modifier = torgovieoperacii }
-add_opinion_modifier = { target = BSM modifier = torgovieoperacii }
-
 create_country_leader  = {
 	name = "Melman Van Hutten"
 	id = 2000

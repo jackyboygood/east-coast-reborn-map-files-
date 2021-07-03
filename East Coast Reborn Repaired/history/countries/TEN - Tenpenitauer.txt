@@ -1,16 +1,16 @@
-﻿capital = 765
+﻿capital = 992
 oob = "TEN_2275"
 
 set_technology = {
     infantry_tech_level_tribal = 1
 	infantry_tech_level_settler = 1
-	#infantry_tech_level_scientific = 1
+	infantry_tech_level_scientific = 1
 	support_tech_level_tribal = 1
 	support_tech_level_settler = 1
-	#support_tech_level_scientific = 1
+	support_tech_level_scientific = 1
 	special_forces_tech_level_tribal = 1
 	special_forces_tech_level_settler = 1
-	#special_forces_tech_level_scientific = 1
+	special_forces_tech_level_scientific = 1
 	power_armour_tech_level_tribal = 1
 	#power_armour_tech_level_settler = 1
 	#power_armour_tech_level_scientific = 1
@@ -51,6 +51,7 @@ set_technology = {
 
 set_stability = 0.6
 set_war_support = 0.2
+set_country_flag = is_settler_nation
 
 add_opinion_modifier = { target = ROY modifier = torgovieoperacii }
 add_opinion_modifier = { target = AUB modifier = torgovieoperacii }

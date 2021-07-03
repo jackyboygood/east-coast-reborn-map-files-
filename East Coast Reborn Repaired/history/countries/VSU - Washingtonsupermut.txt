@@ -1,4 +1,4 @@
-﻿capital = 871
+﻿capital = 976
 oob = "VSU_2275"
 
 set_technology = {

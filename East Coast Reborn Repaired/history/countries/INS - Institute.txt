@@ -117,14 +117,9 @@ set_popularities = {
 set_rule = { can_send_volunteers = no }
 add_ideas = {
 	bunkerblues
-	add_ideas = closed_economy
+	closed_economy
 	sinth_command_from_afar
 }
-
-add_opinion_modifier = { target = STR modifier = torgovieoperacii }
-add_opinion_modifier = { target = RIJ modifier = torgovieoperacii }
-add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
-add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
 
 set_research_slots = 4
 

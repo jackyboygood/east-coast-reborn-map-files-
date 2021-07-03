@@ -70,9 +70,9 @@ set_popularities = {
 	ruler = 0
 }
 
-add_ideas = {
-	add_ideas = enc_scientists
-    add_ideas = closed_economy
-	add_ideas = ESP_officers_central_2
-	add_ideas = ESP_FEV_soldiers
-}
+add_ideas = ENC_infighting
+add_ideas = enc_scientists
+add_ideas = closed_economy
+add_ideas = ENC_special_forces
+add_ideas = ESP_officers_central_2
+add_ideas = ESP_FEV_soldiers

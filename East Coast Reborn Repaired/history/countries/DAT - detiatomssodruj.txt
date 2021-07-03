@@ -1,7 +1,5 @@
-﻿capital = 921
+﻿capital = 963
 oob = "DAT_2275"
-
-
 
 set_technology = {
 	infantry_tech_level_tribal = 1
