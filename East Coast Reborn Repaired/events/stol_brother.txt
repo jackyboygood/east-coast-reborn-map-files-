@@ -313,7 +313,7 @@ country_event = {
 	id = stolbr.13
 	title = stolbr.13.t
 	desc = stolbr.13.d
-	picture = GFX_event_eldermaxson
+	picture = GFX_event_bos_maxon
 	is_triggered_only = yes
 	
 	option = {
@@ -338,7 +338,7 @@ country_event = {
 	id = stolbr.14
 	title = stolbr.14.t
 	desc = stolbr.14.d
-	picture = GFX_event_boston_stormed
+	picture = GFX_event_bos_boston
 	is_triggered_only = yes
 	
 	option = {
@@ -354,7 +354,7 @@ country_event = {
 	id = stolbr.15
 	title = stolbr.15.t
 	desc = stolbr.15.d
-	picture = GFX_event_minutemen_deal
+	picture = GFX_event_bos_minutemen
 	is_triggered_only = yes
 	
 	option = {
@@ -384,7 +384,7 @@ country_event = {
 	id = stolbr.16
 	title = stolbr.16.t
 	desc = stolbr.16.d
-	picture = GFX_event_minutemen_deal
+	picture = GFX_event_bos_minutemen
 	is_triggered_only = yes
 
 	option = {
@@ -403,7 +403,7 @@ country_event = {
 	id = stolbr.17
 	title = stolbr.17.t
 	desc = stolbr.17.d
-	#picture = GFX_event_minutemen_deal
+	picture = GFX_event_bos_desert_patrol
 	is_triggered_only = yes
 	
 	option = {
