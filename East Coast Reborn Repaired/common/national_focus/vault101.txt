@@ -478,6 +478,8 @@ focus_tree = {
 				}
 			}
 	    }
+	country_event = { id = newsfallout.26 }
+	set_coutry_flag = enclave_war	
 	}
 	
 	}
@@ -546,7 +548,10 @@ focus_tree = {
 						type = take_core_state
 				}
 			}
+			
 	    }
+		country_event = { id = newsfallout.26 }
+		set_country_flag = enclave_war
 	}
 }
 	

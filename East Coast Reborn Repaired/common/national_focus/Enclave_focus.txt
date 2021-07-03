@@ -992,7 +992,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_39
-		icon = GFX_goal_enc_slave_labour_mutants
+		icon = GFX_goal_ESP_Supermutant_Slave
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_38
 		x = 0
