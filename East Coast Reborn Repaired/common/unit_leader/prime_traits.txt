@@ -1,0 +1,27 @@
+leader_traits = {
+	renc_death_robot = {
+		type = corps_commander
+		allowed = {
+			always = no
+		}
+		gain_xp = {
+			always = no
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+
+		modifier = {
+			max_commander_army_size = -15
+			offence = 0.15
+			breakthrough_factor = 0.15
+		}
+		enable_ability = renc_eye_lasers
+		ai_will_do = {
+			factor = 1
+		}
+
+		trait_type = personality_trait
+	}
+}
