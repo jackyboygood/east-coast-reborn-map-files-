@@ -744,4 +744,67 @@ spriteTypes = {
 		name = "GFX_event_farevenscreen5"
 		texturefile = "gfx/event_pictures/farevenscreen5.dds"
 	}
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_event_bos_shephardslain"
+		texturefile = "gfx/event_pictures/bos_shephardslain.dds"
+	}
+	
+	
+	#####BOS#####
+	
+	spriteType = {
+		name = "GFX_event_capital_bos_enc_war"
+		texturefile = "gfx/event_pictures/capital_bos_enc_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_eldersarah"
+		texturefile = "gfx/event_pictures/bos_eldersarah.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_sarahdead"
+		texturefile = "gfx/event_pictures/bos_sarahdead.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_shephardinvasion"
+		texturefile = "gfx/event_pictures/bos_shephardinvasion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_shephardslain"
+		texturefile = "gfx/event_pictures/bos_shephardslain.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_minutemen"
+		texturefile = "gfx/event_pictures/bos_minutemen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_maxon"
+		texturefile = "gfx/event_pictures/bos_maxon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_boston"
+		texturefile = "gfx/event_pictures/bos_boston.dds"
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

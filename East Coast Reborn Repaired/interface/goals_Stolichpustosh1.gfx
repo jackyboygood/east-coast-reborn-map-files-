@@ -483,116 +483,6 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-	name = "GFX_goal_megatonna16"
-	texturefile = "gfx/interface/goals/megatonna16.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna17"
-	texturefile = "gfx/interface/goals/megatonna17.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna18"
-	texturefile = "gfx/interface/goals/megatonna18.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna19"
-	texturefile = "gfx/interface/goals/megatonna19.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna20"
-	texturefile = "gfx/interface/goals/megatonna20.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall"
-	texturefile = "gfx/interface/goals/sovetinfall.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall1"
-	texturefile = "gfx/interface/goals/sovetinfall1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall2"
-	texturefile = "gfx/interface/goals/sovetinfall2.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall3"
-	texturefile = "gfx/interface/goals/sovetinfall3.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall4"
-	texturefile = "gfx/interface/goals/sovetinfall4.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall5"
-	texturefile = "gfx/interface/goals/sovetinfall5.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall6"
-	texturefile = "gfx/interface/goals/sovetinfall6.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall7"
-	texturefile = "gfx/interface/goals/sovetinfall7.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall8"
-	texturefile = "gfx/interface/goals/sovetinfall8.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall9"
-	texturefile = "gfx/interface/goals/sovetinfall9.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall10"
-	texturefile = "gfx/interface/goals/sovetinfall10.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall11"
-	texturefile = "gfx/interface/goals/sovetinfall11.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall12"
-	texturefile = "gfx/interface/goals/sovetinfall12.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall13"
-	texturefile = "gfx/interface/goals/sovetinfall13.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall14"
-	texturefile = "gfx/interface/goals/sovetinfall14.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall15"
-	texturefile = "gfx/interface/goals/sovetinfall15.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall16"
-	texturefile = "gfx/interface/goals/sovetinfall16.dds"			
-	}
-	
-	SpriteType = {
 	name = "GFX_goal_Minutamen2"
 	texturefile = "gfx/interface/goals/Minutamen2.dds"			
 	}
@@ -685,51 +575,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_institut27"
 	texturefile = "gfx/interface/goals/institut27.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna21"
-	texturefile = "gfx/interface/goals/megatonna21.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna22"
-	texturefile = "gfx/interface/goals/megatonna22.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna23"
-	texturefile = "gfx/interface/goals/megatonna23.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna24"
-	texturefile = "gfx/interface/goals/megatonna24.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna25"
-	texturefile = "gfx/interface/goals/megatonna25.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna26"
-	texturefile = "gfx/interface/goals/megatonna26.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna27"
-	texturefile = "gfx/interface/goals/megatonna27.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna28"
-	texturefile = "gfx/interface/goals/megatonna28.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_megatonna29"
-	texturefile = "gfx/interface/goals/megatonna29.dds"			
 	}
 	
 	SpriteType = {
@@ -1426,6 +1271,116 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/SBS/SBS_Trust.dds"		
 	}
 	
+    SpriteType = {
+	name = "GFX_goal_SBS_Elder_Sarah"
+	texturefile = "gfx/interface/goals/SBS/SBS_Elder_Sarah.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Elder_Sarah_Cool"
+	texturefile = "gfx/interface/goals/SBS/SBS_Elder_Sarah_Cool.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_Fires"
+	texturefile = "gfx/interface/goals/SBS/SBS_Fires.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Elder_Maxon_Chad"
+	texturefile = "gfx/interface/goals/SBS/SBS_Elder_Maxon_Chad.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_int_Dave"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_Dave.dds"		
+	}    
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_int_Vault"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_Vault.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_int_Outcasts"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_Outcasts.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_int_River"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_River.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_int_Lamplight"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_Lamplight.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_int_Harold"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_Harold.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_int_Other"
+	texturefile = "gfx/interface/goals/SBS/SBS_int_Other.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Unify_DC"
+	texturefile = "gfx/interface/goals/SBS/SBS_Unify_DC.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Ranks"
+	texturefile = "gfx/interface/goals/SBS/SBS_Ranks.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_exp_Prepare"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Prepare.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_WBOS_support"
+	texturefile = "gfx/interface/goals/SBS/SBS_WBOS_support.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_exp_Boston"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Boston.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_Mutant_Boston"
+	texturefile = "gfx/interface/goals/SBS/SBS_Mutant_Boston.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_exp_Inst"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Inst.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_exp_Scribes"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Scribes.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_exp_No_Min"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_No_Min.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SBS_exp_Lee_Hammond"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Lee_Hammond.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_SBS_exp_Danse"
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Danse.dds"		
+	}
+	
 	
 	
 	######SBS#####
@@ -1721,4 +1676,32 @@ spriteTypes = {
 	
 	
 	#####NUE#####
+	
+	
+	
+	
+	######MEN#######
+	
+	SpriteType = {
+	name = "GFX_goal_MEN_BOS_Union"
+	texturefile = "gfx/interface/goals/MEN/MEN_BOS_Union.dds"		
+	}
+	
+	
+	#####MEN#######
+	
+	
+	
+	
+	
+	
+	######ESP#######
+	
+    SpriteType = {
+	name = "GFX_goal_ESP_Supermutant_Slave"
+	texturefile = "gfx/interface/goals/ESP/ESP_Supermutant_Slave.dds"		
+	}
+	
+	
+	######ESP#######
 }
