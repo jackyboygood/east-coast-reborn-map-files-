@@ -1702,6 +1702,54 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ESP/ESP_Supermutant_Slave.dds"		
 	}
 	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn.dds"		
+	}
 	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Start_1"
+	texturefile = "gfx/interface/goals/ESP/ESP_Start_1.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Start_2"
+	texturefile = "gfx/interface/goals/ESP/ESP_Start_2.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Start_3"
+	texturefile = "gfx/interface/goals/ESP/ESP_Start_3.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Election"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Election.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Purge"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Purge.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden_Mutant"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Mutant.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden_Crisis"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Crisis.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden_Rangers"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Rangers.dds"		
+	}
 	######ESP#######
 }

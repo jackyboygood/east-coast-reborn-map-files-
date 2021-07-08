@@ -494,4 +494,20 @@ spriteTypes = {
 			texturefile = "gfx/interface/ideas/deyvidea8.dds"
 		}
 		
+		
+		
+		
+		
+		
+		
+		#######ESP######
+		spriteType = { 
+			name = "GFX_idea_ESP_infighting"
+			texturefile = "gfx/interface/ideas/ESP/ESP_infighting.dds"
+		}
+		
+		
+		
+		########ESP#####
+		
 }
