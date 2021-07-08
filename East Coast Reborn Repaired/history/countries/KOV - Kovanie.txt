@@ -53,9 +53,13 @@ set_technology = {
 	wasteland_pa_tech = 1
 }
 
-set_stability = 0.6
-set_war_support = 0.2
+set_stability = 0.23
+set_war_support = 0.66
 set_country_flag = is_raider_nation
+set_country_flag = extra_power_armour_flag_ai
+set_country_flag = power_armor_doctrine_ai
+set_country_flag = elite_doctrine_ai
+set_country_flag = ignore_div_limiter_before_2280
 
 set_politics = {
 	ruling_party = ruler
@@ -71,6 +75,10 @@ set_popularities = {
 
 add_ideas = {
      raider_nation
+	 slavers_idea_2
+	 petty_gang_conscription
+	 undesirables_law_raider
+	 tot_economic_mobilisation
 }
 
 add_opinion_modifier = { target = BSM modifier = torgovieoperacii }

@@ -86,7 +86,7 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/SEV/CharonTactics.dds"
 	skill = 4
 	traits = {
-		offensive_doctrine
+		army_chief_offensive_1
 	}
 	attack_skill = 3
 	defense_skill = 3

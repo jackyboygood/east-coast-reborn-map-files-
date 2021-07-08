@@ -9,14 +9,14 @@
 units = {
 	division {
 		name = "Mariposa Remnants"
-		location = 12433
+		location = 12430
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Carcass-Wearers"
-		location = 12433
+		location = 12430
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0

@@ -82,7 +82,6 @@ set_convoys = 30
 add_opinion_modifier = { target = KEN modifier = torgovieoperacii }
 add_opinion_modifier = { target = KRO modifier = torgovieoperacii }
 add_opinion_modifier = { target = NUE modifier = torgovieoperacii }
-add_opinion_modifier = { target = BIB modifier = torgovieoperacii }
 
 set_politics = {
 	ruling_party = ruler
@@ -107,6 +106,6 @@ create_country_leader  = {
 	expire = "3000.1.1"
 	ideology = chieftain
 	traits = {
-
+     cult_of_personality
 	}
 }

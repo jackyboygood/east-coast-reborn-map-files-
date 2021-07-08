@@ -77,7 +77,6 @@ create_country_leader  = {
 	expire = "3000.1.1"
 	ideology = militarist_oligarchy
 	traits = {
-		dislikes_legion
 	}
 }
 
@@ -88,6 +87,5 @@ create_country_leader  = {
 	expire = "3000.1.1"
 	ideology = town_hall_democracy
 	traits = {
-		dislikes_legion
 	}
 }

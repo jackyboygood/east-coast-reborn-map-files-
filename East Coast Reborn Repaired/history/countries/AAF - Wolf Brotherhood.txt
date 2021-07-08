@@ -83,7 +83,6 @@ if = {
 set_stability = 0.2 
 set_war_support = 0.55
 set_rule = { can_join_factions = no }
-add_opinion_modifier = { target = BAA modifier = torgovayasvazcan }
 set_country_flag = is_raider_nation
 
 set_convoys = 0

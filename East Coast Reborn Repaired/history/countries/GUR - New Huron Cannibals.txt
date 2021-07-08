@@ -73,7 +73,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	reckless_aggression
 	ludoedi
 }
 

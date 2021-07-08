@@ -131,7 +131,7 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/SPP/Portrait_uruk.dds"
 	skill = 4
 	traits = {
-		offensive_doctrine
+		army_chief_offensive_1
 	}
 	attack_skill = 3
 	defense_skill = 3
@@ -153,4 +153,15 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = super_mutant_melee_equipment_1
+			creator = "SPP"
+		}
+		requested_factories = 4
+		progress = 0.75
+		efficiency = 100
+	}
+}

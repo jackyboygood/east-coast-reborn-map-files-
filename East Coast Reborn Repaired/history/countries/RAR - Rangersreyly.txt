@@ -79,8 +79,8 @@ create_country_leader  = {
 	expire = "3000.1.1"
 	ideology = commune
 	traits = {
-		dislikes_legion
-		
+		stout_defender
+		fortifications_expert
     }
 }
 

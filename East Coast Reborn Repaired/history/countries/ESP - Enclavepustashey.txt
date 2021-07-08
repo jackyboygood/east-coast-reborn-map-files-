@@ -1,5 +1,4 @@
 ﻿capital = 989
-
 oob = "ESP_2265"
 set_war_support = 0.20
 set_stability = 0.35
@@ -163,18 +162,17 @@ add_opinion_modifier = { target = SBS modifier = bitterEnemies }
 SBS = {add_opinion_modifier = { target = ESP modifier = bitterEnemies }}
 			
 # IDEAS
-add_ideas = ENC_infighting
-add_ideas = enc_scientists
-add_ideas = ENC_officers
-add_ideas = closed_economy
-add_ideas = ENC_special_forces
-
-add_ideas = the_remnants
-add_ideas = outsider_law_none
-add_ideas = hidden_economy
-add_ideas = enc_disorganized_economy
-add_ideas = enc_press_none
-add_ideas = training_law_navarro_veterans
+add_ideas = {
+  ESP_infighting
+  enc_scientists
+  ENC_officers
+  closed_economy
+  ENC_special_forces
+  the_remnants
+  outsider_law_none
+  hidden_economy
+  training_law_navarro_veterans
+ }
 
 create_field_marshal = {
 	name = "Colonel Autumn"

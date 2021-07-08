@@ -105,7 +105,7 @@ create_corps_commander = {
 	skill = 2
 	traits = {
 	strong_trait 
-	intellectual_trait }
+	perceptive_trait }
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 2
@@ -117,7 +117,7 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/NUE/Portrait_general3.dds"
 	skill = 3
 	traits = {
-	intellectual_trait 
+	lucky_trait
 	agile_trait 
 	}
 	attack_skill = 3

@@ -92,7 +92,7 @@ create_country_leader = {
 	expire = "3000.1.1"
 	ideology = benevolent_dictatorship			
 	traits = {
-		drill_sargeant
+	  well_liked_leader
 	}
 }		
 create_country_leader = {

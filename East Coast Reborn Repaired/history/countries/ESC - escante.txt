@@ -96,7 +96,6 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/ESC/gener.dds"
 	skill = 4
 	traits = {
-		offensive_doctrine
 	}
 	attack_skill = 3
 	defense_skill = 3

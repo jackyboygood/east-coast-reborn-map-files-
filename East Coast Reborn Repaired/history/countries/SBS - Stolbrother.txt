@@ -113,11 +113,9 @@ set_popularities = {
 add_ideas = {
 	officer_law_military_academy
 	training_law_military_academy
-	bunkerblues
 	paladins
 	outsider_law_none
 	bunkerblues
-	#oldguard
 }
 
 
@@ -125,7 +123,6 @@ add_ideas = {
 add_opinion_modifier = { target = VSU modifier = boshatesmutants }
 add_opinion_modifier = { target = SPP modifier = boshatesmutants }
 add_opinion_modifier = { target = AUC modifier = boshatesmutants }
-#add_opinion_modifier = { target = WBH modifier = boshateswashingtonstatebos }
 
 set_research_slots = 3
 
@@ -146,7 +143,7 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/SBS/Star_Paladin_Cross.dds"
 	skill = 4
 	traits = {
-		strong
+		strong_trait
 	}
 	attack_skill = 3
 	defense_skill = 3
