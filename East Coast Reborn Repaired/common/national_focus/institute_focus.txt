@@ -1759,7 +1759,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			add_equipment_to_stockpile = { type = support_robot_handy_equipment_1 amount = -1500 producer = INS }
+			add_equipment_to_stockpile = { type = support_robot_handy_equipment amount = -1500 producer = INS }
 			add_equipment_to_stockpile = { type = support_robot_protectron_equipment_2 amount = -600 producer = INS }
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -6000 producer = INS }
 			BAG = { 

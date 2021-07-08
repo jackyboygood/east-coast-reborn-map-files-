@@ -9,9 +9,9 @@ focus_tree = {
 	}
 	default = no
 	
-		focus = {
+	focus = {
 		id = Minitmen_1
-		icon = GFX_goal_VLT_all_clear
+		icon = GFX_goal_MEN_strt
 		cost = 7
 		x = 15
 		y = 0
@@ -19,22 +19,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			country_event = {
@@ -45,7 +33,7 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_2
-		icon = GFX_goal_generic_recruitment_focus
+		icon = GFX_goal_MEN_strt
 		prerequisite = { focus = Minitmen_1 }
 		relative_position_id = Minitmen_1
 		x = 0
@@ -56,22 +44,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_manpower = 750
@@ -80,7 +55,7 @@ focus_tree = {
 	
     focus = {
 		id = Minitmen_3
-		icon = GFX_goal_konkord
+		icon = GFX_goal_MEN_strt
 		prerequisite = { focus = Minitmen_2 }
 		relative_position_id = Minitmen_2
 		x = 0
@@ -89,14 +64,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -116,7 +83,7 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_4
-		icon = GFX_goal_konkord
+		icon = GFX_goal_MEN_strt
 		prerequisite = { focus = Minitmen_3 }
 		relative_position_id = Minitmen_3
 		x = 0
@@ -280,7 +247,7 @@ focus_tree = {
 		cost = 60
 		completion_reward = {
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 600 producer = ERB }
-			add_resource = { type = advanced_technology amount = 10 state = 1008 }
+			add_resource = { type = advanced amount = 10 state = 1008 }
 			add_resource = { type = circuitry amount = 10 state = 1008 }
 		}
 	}
@@ -705,7 +672,7 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_23
-		icon = GFX_goal_MEN_1
+		icon = GFX_goal_MEN_strt
 		relative_position_id = Minitmen_12
 		x = 0
 		y = 2
@@ -1003,10 +970,6 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Minitmen_31 entered"
 			}
 			1021 = {
-				add_resource = {
-					type = electricity
-					amount = 13
-				}
 				add_resource = {
 					type = circuitry
 					amount = 8

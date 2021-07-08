@@ -222,7 +222,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Stolibrother_8 entered"
 			}
 			capital_scope = {
-				add_resource = { type = advanced_technology amount = 6 }
+				add_resource = { type = advanced amount = 6 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -1123,9 +1123,7 @@ focus_tree = {
 			977 = { add_core_of = SBS }
 			978 = { add_core_of = SBS }
 			hidden_effect = {
-				country_event = {  
 					country_event = { days = 45 id = stolbr.10 }
-				}
 			}
 		}
 	}
@@ -1155,9 +1153,7 @@ focus_tree = {
 		
 		completion_reward = {
 			hidden_effect = {
-				country_event = {
 					country_event = { days = 15 id = stolbr.11 }
-				}
 			}
 			add_manpower = -3000
 			add_political_power = -50

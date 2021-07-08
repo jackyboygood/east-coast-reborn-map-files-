@@ -479,7 +479,7 @@ focus_tree = {
 			}
 	    }
 	country_event = { id = newsfallout.26 }
-	set_coutry_flag = enclave_war	
+	set_country_flag = enclave_war	
 	}
 	
 	}
@@ -1206,7 +1206,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] vault101_54 entered"
 			}
 			capital_scope = {
-				add_resource = { type = advanced_technology amount = 12 }
+				add_resource = { type = advanced amount = 12 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }

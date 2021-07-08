@@ -1009,10 +1009,10 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+focus = {
 		id = newyork_34
 		icon = GFX_goal_NUE_ENC
-		relative_position_id = newyork_56
+		relative_position_id = newyork_31
 		cost = 14
 		ai_will_do = { factor = 100 }
 		prerequisite = {
@@ -1025,7 +1025,7 @@ focus_tree = {
 			}
 		}
 		x = 1
-		y = 1
+		y = 2
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -1042,7 +1042,7 @@ focus_tree = {
 	focus = {
 		id = newyork_35
 		icon = GFX_goal_NUE_BOS
-		relative_position_id = newyork_56
+		relative_position_id = newyork_31
 		cost = 14
 		ai_will_do = { factor = 100 } 
 		prerequisite = {
@@ -1055,7 +1055,7 @@ focus_tree = {
 			}
 		}
 		x = -1
-		y = 1
+		y = 2
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -1169,7 +1169,7 @@ focus_tree = {
 	focus = {
 		id = newyork_39
 		icon = GFX_goal_New_york1
-		relative_position_id = newyork_56
+		relative_position_id = newyork_31
 		ai_will_do = { factor = 100 } 
 		available = {
 			date > 2280.1.1
@@ -1178,7 +1178,7 @@ focus_tree = {
 		}
 		cost = 45
 		x = 0
-		y = 4
+		y = 6
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -1449,7 +1449,7 @@ focus_tree = {
 					amount = 8
 				}
 				add_resource = {
-					type = electricity
+					type = energy
 					amount = 15
 				}
 			}
@@ -1772,3 +1772,5 @@ focus_tree = {
 			825 = { add_core_of = NUE }
 		}
 	}
+	
+	
