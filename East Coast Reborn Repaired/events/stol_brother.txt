@@ -267,9 +267,9 @@ country_event = {
 		
 		hidden_effect = {
 		SPP = {
-			load_oob = SPP_2275
-			load_oob = SPP_2275
-			load_oob = SPP_2275
+			load_oob = SPP_2275_war
+			load_oob = SPP_2275_war
+			load_oob = SPP_2275_war
 			declare_war_on = {
 				target = SBS
 				type = annex_everything
@@ -282,7 +282,10 @@ country_event = {
 	        ideology = warlordship
 	        traits = {
 	        }
-}
+        }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 800 producer = USA }
+		add_equipment_to_stockpile = { type = anti_tank_equipment amount = 400 producer = USA }
+		add_equipment_to_stockpile = { type = fireteam_equipment amount = 400 producer = USA }
 		}
 		}
 	}

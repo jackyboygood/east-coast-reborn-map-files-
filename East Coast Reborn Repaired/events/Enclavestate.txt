@@ -135,6 +135,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+	    
+	
 		name = Enclavestate.5.a
 		ESP = { 
 			transfer_state = 1002
