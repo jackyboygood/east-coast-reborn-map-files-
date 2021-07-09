@@ -13,10 +13,4 @@
  
  ESP_cloning: "Опыты с клонами"
  AAE_cloning: "Опыты с клонами"
- AAZ_cloning: "Опыты с клонами"
- AAZ_cloning_tt: "Опыты с клонами"
  
- OPE_border_clashes: "Пограничные Конфликты"
- OPE_border_clashes_tt: "Пограничные Конфликты"
- OPE_provoke_border_clashes_effect_tooltip: "Пограничные Конфликты"
- OPE_border_conflict_initiate_incident: "Пограничные Конфликты"

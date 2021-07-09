@@ -227,43 +227,6 @@ news_event = {
 }
 
 news_event = {
-	id = newsfallout.7
-	title = newsfallout.7.t
-	desc = {
-		text = newsfallout.7.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = newsfallout.7.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
-	picture = GFX_event_pitsbur
-	
-	major = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		set_global_flag = olympics_1936 
-	}
-	
-	option = {
-		name = newsfallout.7.a
-		trigger = { 
-			NOT = { TAG = PIT }
-		}
-	}
-	option = {
-		name = newsfallout.7.b
-		trigger = { TAG = PIT }
-	}
-}
-
-news_event = {
 	id = newsfallout.8
 	title = newsfallout.8.t
 	desc = {
@@ -408,43 +371,6 @@ news_event = {
 	option = {
 		name = newsfallout.11.b
 		trigger = { TAG = USP }
-	}
-}
-
-news_event = {
-	id = newsfallout.12
-	title = newsfallout.12.t
-	desc = {
-		text = newsfallout.12.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = newsfallout.12.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
-	picture = GFX_event_rayvenrock5
-	
-	major = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		set_global_flag = olympics_1936 
-	}
-	
-	option = {
-		name = newsfallout.12.a
-		trigger = { 
-			NOT = { TAG = ESP }
-		}
-	}
-	option = {
-		name = newsfallout.12.b
-		trigger = { TAG = ESP }
 	}
 }
 
@@ -804,158 +730,6 @@ news_event = {
 }
 
 news_event = {
-	id = newsfallout.22
-	title = newsfallout.22.t
-	desc = {
-		text = newsfallout.22.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = newsfallout.22.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
-	picture = GFX_event_newyorkbrothe3
-	
-	major = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		set_global_flag = olympics_1936 
-	}
-	
-	option = {
-		name = newsfallout.22.a
-		trigger = { 
-			NOT = { TAG = ESP }
-		}
-	}
-	option = {
-		name = newsfallout.22.b
-		trigger = { TAG = ESP }
-	}
-}
-
-news_event = {
-	id = newsfallout.23
-	title = newsfallout.23.t
-	desc = {
-		text = newsfallout.23.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = newsfallout.23.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
-	picture = GFX_event_nuclear_town_pic_event
-	
-	major = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		set_global_flag = olympics_1936 
-	}
-	
-	option = {
-		name = newsfallout.23.a
-		trigger = { 
-			NOT = { TAG = BIB }
-		}
-	}
-	option = {
-		name = newsfallout.23.b
-		trigger = { TAG = BIB }
-	}
-}
-
-news_event = {
-	id = newsfallout.24
-	title = newsfallout.24.t
-	desc = {
-		text = newsfallout.24.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = newsfallout.24.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
-	picture = GFX_event_nuclear_town_pic_event1
-	
-	major = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		set_global_flag = olympics_1936 
-	}
-	
-	option = {
-		name = newsfallout.24.a
-		trigger = { 
-			NOT = { TAG = BIB }
-		}
-	}
-	option = {
-		name = newsfallout.24.b
-		trigger = { TAG = BIB }
-	}
-}
-
-news_event = {
-	id = newsfallout.25
-	title = newsfallout.25.t
-	desc = {
-		text = newsfallout.25.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = newsfallout.25.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
-	picture = GFX_event_nuclear_town_pic_event2
-	
-	major = yes
-	
-	is_triggered_only = yes
-		
-	immediate = {
-		set_global_flag = olympics_1936 
-	}
-	
-	option = {
-		name = newsfallout.25.a
-		trigger = { 
-			NOT = { TAG = ADE }
-			NOT = { TAG = OPE }
-			NOT = { TAG = STY }
-		}
-	}
-	option = {
-		name = newsfallout.25.b
-		trigger = { TAG = ADE }
-		trigger = { TAG = OPE }
-		trigger = { TAG = STY }
-	}
-}
-
-news_event = {
 	id = newsfallout.26
 	title = newsfallout.26.t
 	is_triggered_only = yes
@@ -1005,11 +779,4 @@ news_event = {
 		scoped_sound_effect = we_are_at_war
 		}
 	}
-	
-
-	
-
-	
-	
 }
-

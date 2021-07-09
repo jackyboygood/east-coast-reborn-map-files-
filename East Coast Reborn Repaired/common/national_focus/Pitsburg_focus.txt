@@ -576,7 +576,7 @@ focus_tree = {
 
 		bypass = {
 			PBU = { exists = no }
-			PBU = { is_subject_of = PIT}
+			PBU = { is_subject_of = PIT }
 		}
 
 		cancel_if_invalid = yes

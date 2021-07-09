@@ -1,3 +1,0 @@
-graphical_culture = supermutant_gfx
-graphical_culture_2d = supermutant_2d
-color = { 255 78 64 }

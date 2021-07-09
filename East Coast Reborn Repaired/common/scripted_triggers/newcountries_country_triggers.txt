@@ -50,10 +50,6 @@ is_tribal_nation = {
 		original_tag = DRU
 		original_tag = GUR
 		original_tag = AAQ
-		original_tag = AAX
-		original_tag = BAC
-		original_tag = BAB
-		original_tag = AAZ
 		has_country_flag = is_tribal_nation
 	}
 	NOT = { has_country_flag = not_a_tribal_nation }
@@ -101,12 +97,7 @@ is_raider_nation = {
 		original_tag = BUF
 		original_tag = AAB
 		original_tag = AAF
-		original_tag = BAD
-		original_tag = BAE
-		original_tag = BIB
 		original_tag = AUB
-		original_tag = FTA
-		original_tag = FTM
 		has_country_flag = is_raider_nation
 	}
 	NOT = { has_country_flag = not_a_raider_nation }
@@ -165,7 +156,6 @@ is_settler_nation = {
 		original_tag = DAY
 		original_tag = ENY
 		original_tag = KLI
-		original_tag = KEY
 		original_tag = SAY
 		original_tag = AAA
 		original_tag = AAD
@@ -177,16 +167,9 @@ is_settler_nation = {
 		original_tag = BAA
 		original_tag = BAG
 		original_tag = MEN
-		original_tag = CCC
 		original_tag = DAD
 		original_tag = DAT
 		original_tag = AUA
-		original_tag = FSL
-		original_tag = FVL
-		original_tag = FAR
-		original_tag = FPP
-		original_tag = FMM
-		original_tag = FMR
 		original_tag = ESC
 		
 	has_country_flag = is_settler_nation
@@ -211,14 +194,6 @@ is_super_mutant = {
 		has_country_flag = is_super_mutant
 	}
 		NOT = { has_country_flag = not_a_super_mutant_nation }
-	}
-}
-
-is_nuclearworld_raired = {
-	OR = {
-		original_tag = OPE
-		original_tag = ADE
-		original_tag = STY
 	}
 }
 

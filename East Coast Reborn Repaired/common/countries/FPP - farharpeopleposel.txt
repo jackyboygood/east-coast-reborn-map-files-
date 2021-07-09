@@ -1,3 +1,0 @@
-graphical_culture = raider_gfx
-graphical_culture_2d = southamerican_2d	
-color = { 156 72 255 }
