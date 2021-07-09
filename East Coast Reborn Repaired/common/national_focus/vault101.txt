@@ -836,17 +836,9 @@ focus_tree = {
 		    POI = { 
 		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
 			}
-			GRI = { 
-		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
-			}
-			KEL = { 
-		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
-			}
 			add_political_power = -200
 			add_manpower = 300
 			add_opinion_modifier = { target = POI modifier = uspandpointlookout }
-			add_opinion_modifier = { target = GRI modifier = uspandpointlookout }
-			add_opinion_modifier = { target = KEL modifier = uspandpointlookout }
 		}
 	}
 	
@@ -937,40 +929,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_46
-		icon = GFX_goal_megatonna27
-		cost = 45
-		prerequisite = {
-			focus = vault101_45
-		}
-		x = 0
-		y = 1
-		available = {
-			GRI = { exists = yes }
-			has_war = no
-		}
-		relative_position_id = vault101_45
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_46 entered"
-			}
-			add_to_faction = GRI
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_46 exited"
-			}
-		}
-	}
-	
-	focus = {
 		id = vault101_47
 		icon = GFX_goal_megatonna25
 		cost = 45
 		prerequisite = {
 			focus = vault101_45
 		}
-		x = -2
+		x = -1
 		y = 1
 		available = {
 			POI = { exists = yes }
@@ -998,7 +963,7 @@ focus_tree = {
 		prerequisite = {
 			focus = vault101_45
 		}
-		x = 2
+		x = 1
 		y = 1
 		available = {
 			RAB = { exists = yes }
@@ -1318,7 +1283,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+}	
 
 	
 	

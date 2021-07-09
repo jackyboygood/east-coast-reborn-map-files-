@@ -1,3 +1,0 @@
-graphical_culture = ghoul_gfx
-graphical_culture_2d = ghoul_2d
-color = { 100 100 240 }

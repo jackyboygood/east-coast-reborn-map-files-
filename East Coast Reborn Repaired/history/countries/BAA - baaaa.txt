@@ -28,10 +28,7 @@ set_popularities = {
 add_ideas = {
 }
 
-add_opinion_modifier = { target = BAB modifier = torgovayasvazcan }
-add_opinion_modifier = { target = AAZ modifier = torgovayasvazcan }
 add_opinion_modifier = { target = AAF modifier = torgovayasvazcan }
-add_opinion_modifier = { target = BAC modifier = torgovayasvazcan }
 
 create_country_leader  = {
 	name = "Ted Balgruf"

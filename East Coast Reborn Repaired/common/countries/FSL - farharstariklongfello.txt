@@ -1,5 +1,0 @@
-graphical_culture = settler_gfx
-graphical_culture_2d = western_european_2d
-
-color = rgb { 50 215 106 }
-color_ui = rgb { 50 215 106 }

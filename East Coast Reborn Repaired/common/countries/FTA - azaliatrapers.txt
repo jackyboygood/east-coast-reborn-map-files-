@@ -1,3 +1,0 @@
-graphical_culture = raider_gfx
-graphical_culture_2d = vault_2d
-color = { 255 98 143 }

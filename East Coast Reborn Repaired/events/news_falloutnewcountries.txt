@@ -942,14 +942,12 @@ news_event = {
 	option = {
 		name = newsfallout.25.a
 		trigger = { 
-			NOT = { TAG = ADE }
 			NOT = { TAG = OPE }
 			NOT = { TAG = STY }
 		}
 	}
 	option = {
 		name = newsfallout.25.b
-		trigger = { TAG = ADE }
 		trigger = { TAG = OPE }
 		trigger = { TAG = STY }
 	}
