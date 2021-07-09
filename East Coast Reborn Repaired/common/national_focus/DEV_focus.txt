@@ -56,7 +56,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.1
+				id = DEV_event.1
 		    }
 		}
 	}
@@ -95,7 +95,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.2
+				id = DEV_event.2
 		    }
 		}
 	}
@@ -995,7 +995,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.3
+				id = DEV_event.3
 		    }
 		}
 	}
@@ -1355,7 +1355,13 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 		 1000 = {
-				set_state_name = "Factories"
+				set_state_name = "Dave Co. HQ"
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
 			}
 		}
 	}
@@ -1451,7 +1457,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.5
+				id = DEV_event.5
 		    }
 		}
 	}
@@ -1490,7 +1496,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.7
+				id = DEV_event.7
 		    }
 		}
 	}
@@ -1529,7 +1535,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.9
+				id = DEV_event.9
 		    }
 		}
 	}
@@ -1656,13 +1662,13 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.10
+				id = DEV_event.10
 		    }
 		}
 	}
 	
 	focus = {
-		id = Deyv_45
+		id = Deyv_60
 		icon = GFX_goal_Enclave21
 		ai_will_do = { factor = 25 }
 		cost = 45
@@ -1710,5 +1716,5 @@ focus_tree = {
 		    }
 		}
 	}
-	
+}
 	
