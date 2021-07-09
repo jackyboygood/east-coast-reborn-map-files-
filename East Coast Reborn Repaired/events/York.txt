@@ -1,15 +1,15 @@
 ﻿add_namespace = york
 
 country_event = {
-	id = york.1
-	title = york.1.t
-	desc = york.1.d
+	id = NUE.1
+	title = NUE.1.t
+	desc = NUE.1.d
 	picture = GFX_event_newnewyork
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.1.a
+		name = NUE.1.a
 		add_manpower = 1000
 		1041 = {
 			add_building_construction = {
@@ -21,7 +21,7 @@ country_event = {
 		add_ideas = gabriel
 	}
 	option = {
-		name = york.1.b
+		name = NUE.1.b
 		add_manpower = 600
 		1041 = {
 			add_building_construction = {
@@ -33,7 +33,7 @@ country_event = {
 		add_ideas = Ben
 	}
 	option = {
-		name = york.1.c
+		name = NUE.1.c
 
 		add_manpower = 400
 		1041 = {
@@ -48,27 +48,27 @@ country_event = {
 }
 
 country_event = {
-	id = york.2
-	title = york.2.t
-	desc = york.2.d
+	id = NUE.2
+	title = NUE.2.t
+	desc = NUE.2.d
 	picture = GFX_event_newnewyork1
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.2.a
+		name = NUE.2.a
 		add_ideas = Militaripolitic
 		add_political_power = 50
 		add_manpower = 1000
 	}
 	option = {
-		name = york.2.b
+		name = NUE.2.b
 		add_ideas = ekonomrost
 		add_political_power = 100
 		add_manpower = 250
 	}
 	option = {
-		name = york.2.c
+		name = NUE.2.c
 		add_ideas = sovet
 		add_political_power = 350
 	}
@@ -76,42 +76,42 @@ country_event = {
 }
 
 country_event = {
-	id = york.3
-	title = york.3.t
-	desc = york.3.d
+	id = NUE.3
+	title = NUE.3.t
+	desc = NUE.3.d
 	picture = GFX_event_newnewyork2
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.3.a
+		name = NUE.3.a
 
 		add_ideas = legion_nf_divide_et_impera
 	}
 
 	option = {
-		name = york.3.b
+		name = NUE.3.b
 
 		add_ideas = legion_nf_decimatio
 	}
 }
 
 country_event = { #Scouring the Old City
-	id = york.4
-	title = york.4.t
-	desc = york.4.d
+	id = NUE.4
+	title = NUE.4.t
+	desc = NUE.4.d
 	picture = GFX_event_generic_ruins_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.4.a
+		name = NUE.4.a
 
 		add_ideas = oldworldmachines
 	}
 
 	option = {
-		name = york.4.b
+		name = NUE.4.b
 
 		set_technology = {
 			oldworldarmour = 1
@@ -119,52 +119,52 @@ country_event = { #Scouring the Old City
 	}
 
 	option = {
-		name = york.4.c
+		name = NUE.4.c
 
 		add_ideas = oldworldtheatre
 	}
 }
 
 country_event = {
-	id = york.5
-	title = york.5.t
-	desc = york.5.d
+	id = NUE.5
+	title = NUE.5.t
+	desc = NUE.5.d
 	picture = GFX_event_enc9
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.5.a
+		name = NUE.5.a
 		add_political_power = 25
 		add_opinion_modifier = { target = ENY modifier = deployedrangers }
 	}
 }
 
 country_event = {
-	id = york.6
-	title = york.6.t
-	desc = york.6.d
+	id = NUE.6
+	title = NUE.6.t
+	desc = NUE.6.d
 	picture = GFX_event_newyorkbrothe2
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.6.a
+		name = NUE.6.a
 		add_political_power = 25
 		add_opinion_modifier = { target = NBS modifier = deployedrangers }
 	}
 }
 
 country_event = {
-	id = york.7
-	title = york.7.t
-	desc = york.7.d
+	id = NUE.7
+	title = NUE.7.t
+	desc = NUE.7.d
 	picture = GFX_event_newnewyork3
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.7.a
+		name = NUE.7.a
 		add_political_power = 100
 		add_manpower = 2000
 		add_ideas = defdemocra
@@ -172,15 +172,15 @@ country_event = {
 }
 
 country_event = {
-	id = york.8
-	title = york.8.t
-	desc = york.8.d
+	id = NUE.8
+	title = NUE.8.t
+	desc = NUE.8.d
 	picture = GFX_event_newnewyork4
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.8.a
+		name = NUE.8.a
 		transfer_state = 790
 		790 = { add_core_of = NUE }
 	    add_political_power = 25
@@ -193,15 +193,15 @@ country_event = {
 }
 
 country_event = {
-	id = york.9
-	title = york.9.t
-	desc = york.9.d
+	id = NUE.9
+	title = NUE.9.t
+	desc = NUE.9.d
 	picture = GFX_event_newnewyork5
 
 	is_triggered_only = yes
 
 	option = {
-		name = york.9.a
+		name = NUE.9.a
 		transfer_state = 788
 		transfer_state = 865
 		788 = { add_core_of = NUE }

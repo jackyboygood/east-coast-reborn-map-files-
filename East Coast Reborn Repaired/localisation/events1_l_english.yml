@@ -44,47 +44,48 @@
   ENC_event.14.t:0 "The End of the Contagion"
   ENC_event.14.d:0 "The past few weeks of innocuation have yielded great results. Improvements to the vaccine have allowed us to cure a majority of New York. That being said, the Brotherhood of Steel have been less excited about our success. They attacked one of our convoys and stole cases of the vaccine destined for the inhabitants of Brookhaven. The Brotherhood immediatly started innocuating their own citizens, bringing hundreds of citizens into their cause. The Brotherhood must be stopped!
   ENC_event.14.a:0 "Conflict is inevitable"
- 
+
+  # NUE
+  NUE.1.t:0 "Favorite Federation"
+  NUE.1.d:0 "The founding members of the Federation are legends throughout New York. But who among them stands out? Who will be the star of the propaganda and history books? Who should be depicted on banknotes and mentioned in speeches? Who should be singled out and stand above all others?"
+  NUE.1.a:0 "Gabriel Sanchez, the founder and Father of Federation."
+  NUE.1.b:0 "Ben Stevens, Charlie's former Ranger and Federation's greatest hero."
+  NUE.1.c:0 "Louise De Cervantes, Mother Of The Federation."
+  
+  NUE.2.t:0 "What Political course should we follow?"
+  NUE.2.d:0 "Inspired by our famous founder, the people of the Federation are looking to the future. Some believe that more citizens of the Federation should serve in the army, turning us into a military powerhouse. Others believe that we should turn our focus inward, improving the lives of our citizens and improving our economy. Finally, some believe that we should promise peace for our people, inspiring our neighbors to do the same. What path shall we choose?"
+  NUE.2.a:0 "Aggressive Democracy"
+  NUE.2.b:0 "Economic Powerhouse"
+  NUE.2.c:0 "Promises of Peace"
+
+  NUE.3.t:0 "Army Reforms"
+  NUE.3.d:0 "With our nation growing stronger everyday, our neighbors grow envious of our prosperity. Aggressive measures must be taken to ensure our army is strong enough to survive."
+  NUE.3.a:0 "We will drill our men with long marches"
+  NUE.3.b:0 "We will purge the weak to inspire the strong"
+
+  NUE.4.t:0 "A Search Of The New York Ruins"
+  NUE.4.d:0 "New York City holds many mysteries and secrets. What kinds of knowledge can be found amongst the ruins?"
+  NUE.4.a:0 "Machines of the Old World."
+  NUE.4.b:0 "Weapons of the Old World."
+  NUE.4.c:0 "Theaters of the Old World."
+
+  NUE.5.t:0 "Death to the Enclave!"
+  NUE.5.d:0 "For a long time, we tolerated the presence of the Enclave near our borders, but now our patience is running thin. The Enclave has been stealing our citizens with promises of peace and stability, claiming they have a cure for the New York Plague. Their imperialism must come to an end!"
+  NUE.5.a:0 "It's time to show them our teeth!""
+
+  NUE.7.t:0 "Preparing the Fleet and the Marines"
+  NUE.7.d:0 "Not so long ago, we received alarming information from Cuba: the gangs that terrorize their own homeland have began settling on the East Coast. Their foothold on the coast is weak, and their people are in search of saviors. We must ready our forces to protect the weak!"
+  NUE.7.a:0 "Ready our ships for invasion!"
+
+  NUE.8.t:0 "The Discovery of Yucatan"
+  NUE.8.d:0 "After sailing south for some distance, our troops stumbled upon a land unknown to us. Our scouts report that the locals are peaceful but are ruled by the evil and treacherous bandits 'Escambray'. After a short discussion, you have decided to send your Marines to assist the locals in overthrowing these gangs. After a series of brief skirmishes, we secured a foothold. The freed people welcome us as their new leader."
+  NUE.8.a:0 "These islands will become our foothold in the Caribbean."
+
+  NUE.9.t:0 "Landing on Yucatan"
+  NUE.9.d:0 "Your main fleet reached Yucatan and began the invasion of the island. Our troops encountered fierce resistance, with the battle lasting several hours. Our better military technology and superior organization gave us a clear advantage, but it was not without a high cost. When the battle was over, it was difficult to distinguish between our dead and the enemy's. We were too self-confident and paid dearly for it."
+  NUE.9.a:0 "We won the battle, but not the war." 
+
   # BELOW THIS LINE ISNT DONE YET
- york.1.t:0 "Favorite Federation"
- york.1.d:0 "The founding members of the Federation on the lands of old new York were a few people who, without exaggeration, are the Federation. But who among them will be the most mentioned in the propaganda and the history books? Who should be depicted on banknotes and mentioned in solemn speeches? Who should be singled out and stand above all other FN personifications? Here are the three most significant figures in the history of FN..."
- york.1.a:0 "Gabriel Sanchez, the founder and father of FINN."
- york.1.b:0 "Ben Stevens, Charlie's former Ranger and Federation's greatest hero."
- york.1.c:0 "Louise De Cervantes, Mother Of The Federation."
- york.2.t:0 "What Political course should we follow?"
- york.2.d:0 "After the choice of the founder Of the Federation, people are seriously thinking about changing the current political course, the most popular vote on some believe that our Federation to protect the need to become a more militarized country, while others believe that the weapon can only be a war, someone believes that it is necessary to create a Council that will help in solving public issues, one way or another by voting opinions are divided and there is not enough just one vote,you are the last who did not vote for what political course you will vote?"
- york.2.a:0 "Aggressive Democracy."
- york.2.b:0 "Economically Stable Democracy."
- york.2.c:0 "Federation Council."
- york.3.t:0 "The reform of the Army"
- york.3.d:0 "Our country is not the same as before, it grows from day to day and soon, neighboring countries, envying our prosperity can attack us, which is why it is necessary to create a regular army to protect our territories"
- york.3.a:0 "Thirds."
- york.3.b:0 "Decimations"
- york.4.t:0 "A Search Of The New York Ruins"
- york.4.d:0 "New York city holds many mysteries and secrets,but what kind of knowledge are missing,in the latest bypass our people found..."
- york.4.a:0 "The Machines Of The Old World."
- york.4.b:0 "Weapons Of The Old World."
- york.4.c:0 "The Theaters Of The Old World."
- york.5.t:0 "New York can no longer wait!"
- york.5.d:0 "For a long time, we tolerated the presence of the Enclave near our borders, but now the cup of our patience is overflowing. “From a disease with which our government could not cope, puts us in a very uncomfortable position and many people now support the Enclave, we need to hit them before it is too late"
- york.5.a:0 "It's time to make a little teeth."
- york.6.t:0 "New York can no longer wait!"
- york.6.d:0 "For a long time we tolerated the presence of the Brotherhood of Steel near our borders, but now the cup of our patience is overflowing. The Brotherhood of Steel has won the Enclave in the War between them in New York, and thanks to this victory, the Brotherhood has become stronger than ever. it's too late"
- york.6.a:0 "It's time to make a little teeth."
- york.7.t:0 "Preparing the Fleet and the Marines"
- york.7.d:0 "Not so long ago, we received alarming information from Cuba, gangs who rule themselves for their cruelty not only in the local district, but also in the entire east coast. the state is as strong as not when, and now we can safely send our troops to sail to the cubes in order to destroy the regimes of these thugs!!!"
- york.7.a:0 "We need to increase our fleet and create Marines for the invasion.."
- york.8.t:0 "The discovery of Yucatan"
- york.8.d:0 "Sailing in the direction of in the unknown distance, our troops stumbled upon an unknown land for us. Having landed a marine landing on the continent, our troops radioed you that the locals are mostly peaceful, but they are ruled by the evil and treacherous bandits 'Escambray'.After a short discussion with the command, you decide to send Marines into battle on the units of bandits located on the Islands. After a series of brief skirmishes, the province was captured by us, and the freed people welcome the new leader."
- york.8.a:0 "These islands will become our springboard in the Caribbean."
- york.9.t:0 "Landing on Yucatan"
- york.9.d:0 "Your main fleet reached Yucatan and began transferring Marines to the enemy's territory, our troops immediately after landing received fierce resistance, the battle lasted several hours and many territories were occupied by our and enemy troops, but our technological superiority still played into our hands, and the enemy was defeated...when the battle was over, it was difficult to distinguish between our dead and the enemy's, there were so many dead that it was difficult to count them, we were too self-confident and paid for it, we need to no longer make such mistakes."
- york.9.a:0 "We won the battle, but not the war, you need to gain a foothold in this area." 
- 
- 
- 
- 
- 
  Minitmeni.1.t:0 "Protection Of The Commonwealth"
  Minitmeni.1.d:0 "The Minutemen are experiencing not the best of his time,many of our were killed in the battles with raiders,mutants and in skirmishes with the Gunners. Our base is Fort independence was taken away from us by the Mirelurks. \nAfter all these losses, the Minutemen have been greatly Weakened, but our organization has not been destroyed and can continue to serve its purpose."
  Minitmeni.1.a:0 "Will Continue To Protect The Settlements"
