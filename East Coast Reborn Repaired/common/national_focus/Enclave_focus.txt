@@ -474,7 +474,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.5
+				id = ENC_event.5
 		    }
 		}
 	}
@@ -570,7 +570,7 @@ focus = {#Expedition - to Mariposa
 				log = "[GetDateText]: [Root.GetName] Enclavesp_26 entered"
 			}
 			country_event = {
-				id = Enclavestate.4
+				id = ENC_event.4
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -612,7 +612,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.5
+				id = ENC_event.5
 		    }
 		}
 	}
@@ -647,7 +647,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.6
+				id = ENC_event.6
 		    }
 		}
 	}
@@ -685,7 +685,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.7
+				id = ENC_event.7
 		    }
 		}
 	}
@@ -723,7 +723,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.8
+				id = ENC_event.8
 		    }
 		}
 	}
@@ -761,7 +761,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.9
+				id = ENC_event.9
 		    }
 		}
 	}
@@ -799,7 +799,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.10
+				id = ENC_event.10
 		    }
 		}
 	}
@@ -835,7 +835,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.11
+				id = ENC_event.11
 		    }
 		}
 	}
@@ -871,7 +871,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.12
+				id = ENC_event.12
 		    }
 		}
 	}
@@ -908,7 +908,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.13
+				id = ENC_event.13
 		    }
 		}
 	}
@@ -944,7 +944,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			country_event = {
-				id = Enclavestate.14
+				id = ENC_event.14
 		    }
 		}
 	}

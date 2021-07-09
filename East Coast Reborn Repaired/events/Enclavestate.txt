@@ -1,114 +1,16 @@
-﻿add_namespace = Enclavestate
+﻿add_namespace = ENC_event
+
 
 country_event = {
-	id = Enclavestate.1
-	title = Enclavestate.1.t
-	desc = Enclavestate.1.desc
-	picture = GFX_report_event_romanian_soldiers
-	
-	is_triggered_only = yes
-	
-	option = { #sure
-		name = Enclavestate.1.a
-		ai_chance = {
-			factor = 30
-			modifier = {
-				strength_ratio = { tag = ESP ratio < 0.8 }
-				factor = 2
-			}
-			modifier = {
-				strength_ratio = { tag = ESP ratio < 0.5 }
-				factor = 10
-			}
-			modifier = {
-				is_in_faction = yes
-				factor = 0.5
-			}
-		}
-		ESP = { country_event = Enclavestate.2 }
-	}
-
-	option = { #no
-		name = Enclavestate.1.b
-		ai_chance = {
-			factor = 70
-			modifier = {
-				is_in_faction = no
-				factor = 0.5
-			}
-		}
-		ESP = { country_event = Enclavestate.3 }	
-	}
-
-}
-#Bulgaria agrees
-country_event = {
-	id = Enclavestate.2 
-	title = Enclavestate.2.t
-	desc = Enclavestate.2.desc
-	picture = GFX_report_event_generic_sign_treaty2
-	
-	is_triggered_only = yes
-
-	option = { #cool
-		name = Enclavestate.2.a
-		puppet = SPP
-		hidden_effect = {
-		}
-	}
-
-}
-
-#BUL refuses
-country_event = {
-	id = Enclavestate.3 
-	title = Enclavestate.3.t
-	desc = Enclavestate.3.desc
-	picture = GFX_report_event_bulgarian_soldiers
-	
-	is_triggered_only = yes
-
-	option = { #cool
-		name = Enclavestate.3.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-				strength_ratio = { tag = SPP ratio < 1 }
-				factor = 10
-			}
-			modifier = {
-				SPP = {
-					is_in_faction = yes
-				}
-				factor = 10
-			}
-		}
-		
-	}
-
-	option = { #war
-		name = Enclavestate.3.b
-		ai_chance = {
-			factor = 90
-		}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = SPP
-		}
-	}
-
-}
-
-country_event = {
-	id = Enclavestate.4 
-	title = Enclavestate.4.t
-	desc = Enclavestate.4.d
+	id = ENC_event.4 
+	title = ENC_event.4.t
+	desc = ENC_event.4.d
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = Enclavestate.4.a
+		name = ENC_event.4.a
 		ai_chance = {
 			factor = 25
 		}
@@ -127,17 +29,15 @@ country_event = {
 }
 	
 country_event = {
-	id = Enclavestate.5
-	title = Enclavestate.5.t
-	desc = Enclavestate.5.d
+	id = ENC_event.5
+	title = ENC_event.5.t
+	desc = ENC_event.5.d
 	picture = GFX_event_enc
 
 	is_triggered_only = yes
 
 	option = {
-	    
-	
-		name = Enclavestate.5.a
+		name = ENC_event.5.a
 		ESP = { 
 			transfer_state = 1002
 			1002 = { add_core_of = ESP }
@@ -149,7 +49,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = Enclavestate.5.b
+		name = ENC_event.5.b
 		ESP = { 
 			transfer_state = 1002
 			1002 = { add_core_of = ESP }
@@ -163,15 +63,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.6
-	title = Enclavestate.6.t
-	desc = Enclavestate.6.d
+	id = ENC_event.6
+	title = ENC_event.6.t
+	desc = ENC_event.6.d
 	picture = GFX_event_enc1
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.6.a
+		name = ENC_event.6.a
 		release = ENY
 		ENY = { 
 		    transfer_state = 1027
@@ -186,15 +86,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.7
-	title = Enclavestate.7.t
-	desc = Enclavestate.7.d
+	id = ENC_event.7
+	title = ENC_event.7.t
+	desc = ENC_event.7.d
 	picture = GFX_event_enc2
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.7.a
+		name = ENC_event.7.a
 		ENY = { 
 		    add_manpower = 1200
 		}
@@ -202,15 +102,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.8
-	title = Enclavestate.8.t
-	desc = Enclavestate.8.d
+	id = ENC_event.8
+	title = ENC_event.8.t
+	desc = ENC_event.8.d
 	picture = GFX_event_enc3
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.8.a
+		name = ENC_event.8.a
 		ENY = { 
 		    add_manpower = 200
 			add_political_power = 450
@@ -219,15 +119,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.9
-	title = Enclavestate.9.t
-	desc = Enclavestate.9.d
+	id = ENC_event.9
+	title = ENC_event.9.t
+	desc = ENC_event.9.d
 	picture = GFX_event_vaultescepe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.9.a
+		name = ENC_event.9.a
 		ENY = { 
 		    add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 1000 producer = ESP }
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 2000 producer = ESP }
@@ -236,15 +136,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.10
-	title = Enclavestate.10.t
-	desc = Enclavestate.10.d
+	id = ENC_event.10
+	title = ENC_event.10.t
+	desc = ENC_event.10.d
 	picture = GFX_event_enc4
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.10.a
+		name = ENC_event.10.a
 		ENY = { 
 		    add_research_slot = 2
 		}
@@ -252,15 +152,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.11
-	title = Enclavestate.11.t
-	desc = Enclavestate.11.d
+	id = ENC_event.11
+	title = ENC_event.11.t
+	desc = ENC_event.11.d
 	picture = GFX_event_enc5
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.11.a
+		name = ENC_event.11.a
 		ENY = { 
 			add_political_power = 60
 		}
@@ -268,15 +168,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.12
-	title = Enclavestate.12.t
-	desc = Enclavestate.12.d
+	id = ENC_event.12
+	title = ENC_event.12.t
+	desc = ENC_event.12.d
 	picture = GFX_event_enc6
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.12.a
+		name = ENC_event.12.a
 		ENY = { 
 			add_political_power = -100
 			add_research_slot = -1
@@ -285,15 +185,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.13
-	title = Enclavestate.13.t
-	desc = Enclavestate.13.d
+	id = ENC_event.13
+	title = ENC_event.13.t
+	desc = ENC_event.13.d
 	picture = GFX_event_enc7
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.13.a
+		name = ENC_event.13.a
 		ENY = { 
 		    transfer_state = 1037
 			transfer_state = 1038
@@ -309,15 +209,15 @@ country_event = {
 }
 
 country_event = {
-	id = Enclavestate.14
-	title = Enclavestate.14.t
-	desc = Enclavestate.14.d
+	id = ENC_event.14
+	title = ENC_event.14.t
+	desc = ENC_event.14.d
 	picture = GFX_event_enc9
 
 	is_triggered_only = yes
 
 	option = {
-		name = Enclavestate.14.a
+		name = ENC_event.14.a
 		ENY = { 
 		    transfer_state = 1037
 			1038 = { add_core_of = ENY }}
