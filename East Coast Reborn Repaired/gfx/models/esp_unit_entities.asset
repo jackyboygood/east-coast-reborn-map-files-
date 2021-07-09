@@ -475,7 +475,7 @@ entity = {
 }
 entity = {
 	clone = "ESP_infantry_entity"
-	name = ESP_infantry_5_entity"
+	name = "ESP_infantry_5_entity"
 	pdxmesh = "ESP_infantry_rifle_mesh"
 	scale = 0.8
 	attach = { 	name = "rifle1"	Right_Hand_node = "owb_pipe_weapon_entity" }
