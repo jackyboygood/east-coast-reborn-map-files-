@@ -1,15 +1,15 @@
-﻿add_namespace = stolbr
+﻿add_namespace = SBS_event
 
 country_event = {
-	id = stolbr.1
-	title = stolbr.1.t
-	desc = stolbr.1.d
+	id = SBS_event.1
+	title = SBS_event.1.t
+	desc = SBS_event.1.d
 	picture = GFX_event_newyorkbrothe
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.1.a
+		name = SBS_event.1.a
 		release = NBS
 		NBS = { 
 		    transfer_state = 1036
@@ -24,15 +24,15 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.2
-	title = stolbr.2.t
-	desc = stolbr.2.d
+	id = SBS_event.2
+	title = SBS_event.2.t
+	desc = SBS_event.2.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.2.a
+		name = SBS_event.2.a
 		NBS = { 
 		    transfer_state = 1039
 			add_political_power = 50
@@ -45,15 +45,15 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.3
-	title = stolbr.3.t
-	desc = stolbr.3.d
+	id = SBS_event.3
+	title = SBS_event.3.t
+	desc = SBS_event.3.d
 	picture = GFX_event_newyorkbrothe3
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.3.a
+		name = SBS_event.3.a
 		NBS = { 
 			create_wargoal = {
 				type = annex_everything
@@ -67,65 +67,65 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.4
-	title = stolbr.4.t
-	desc = stolbr.4.d
+	id = SBS_event.4
+	title = SBS_event.4.t
+	desc = SBS_event.4.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.4.a
+		name = SBS_event.4.a
 		DEV = { 
 		    country_event = {
-				id = stolbr.5
+				id = SBS_event.5
 		    }
 		}
 	}
 }
 
 country_event = {
-	id = stolbr.5
-	title = stolbr.5.t
-	desc = stolbr.5.d
+	id = SBS_event.5
+	title = SBS_event.5.t
+	desc = SBS_event.5.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.5.a
+		name = SBS_event.5.a
 		SBS = { 
 		    country_event = {
-				id = stolbr.6
+				id = SBS_event.6
 		    }
 		}
 	}
 	option = {
-		name = stolbr.5.b
+		name = SBS_event.5.b
 		SBS = { 
 		    country_event = {
-				id = stolbr.7
+				id = SBS_event.7
 		    }
 		}
 	}
 }
 
 country_event = {
-	id = stolbr.6
-	title = stolbr.6.t
-	desc = stolbr.6.d
+	id = SBS_event.6
+	title = SBS_event.6.t
+	desc = SBS_event.6.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.6.a
+		name = SBS_event.6.a
 		annex_country = { target = DEV transfer_troops = yes }
 		ESC = {
-		country_event = stolbr.17
+		country_event = SBS_event.17
 		}
 		BAS= {
-		country_event = stolbr.17
+		country_event = SBS_event.17
 		}
 	    999 = { add_core_of = SBS }
 		1000 = { add_core_of = SBS }
@@ -135,15 +135,15 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.7
-	title = stolbr.7.t
-	desc = stolbr.7.d
+	id = SBS_event.7
+	title = SBS_event.7.t
+	desc = SBS_event.7.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.7.a
+		name = SBS_event.7.a
 		add_opinion_modifier = { target = DEV modifier = deyv-otkazsbs }
 		DEV = { 
 		          add_opinion_modifier = { target = SBS modifier = deyv-otkazsbs }
@@ -161,9 +161,9 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.8
-	title = stolbr.8.t
-	desc = stolbr.8.d
+	id = SBS_event.8
+	title = SBS_event.8.t
+	desc = SBS_event.8.d
 	picture = GFX_event_bos_lyonsdead
 	is_triggered_only = no
 	fire_only_once = yes
@@ -173,7 +173,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stolbr.8.a		
+		name = SBS_event.8.a		
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Sarah Lyons"
@@ -195,14 +195,14 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.9
-	title = stolbr.9.t
-	desc = stolbr.9.d
+	id = SBS_event.9
+	title = SBS_event.9.t
+	desc = SBS_event.9.d
 	picture = GFX_event_bos_eldersarah
 	is_triggered_only = yes
 	
 	option = {
-		name = stolbr.9.a				
+		name = SBS_event.9.a				
 		remove_ideas = {
 			SBS_lyon_dead1
 		}	
@@ -213,14 +213,14 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.10
-	title = stolbr.10.t
-	desc = stolbr.10.d
+	id = SBS_event.10
+	title = SBS_event.10.t
+	desc = SBS_event.10.d
 	picture = GFX_event_bos_sarahdead
 	is_triggered_only = yes
 	
 	option = {
-		name = stolbr.10.a				
+		name = SBS_event.10.a				
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Elder McNeil"
@@ -239,15 +239,15 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.11
-	title = stolbr.11.t
-	desc = stolbr.11.d
+	id = SBS_event.11
+	title = SBS_event.11.t
+	desc = SBS_event.11.d
 	picture = GFX_event_bos_shephardinvasion
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
-		name = stolbr.11.a		
+		name = SBS_event.11.a		
 		set_country_flag = shephard_uprising
 		
 		SPP = {
@@ -292,9 +292,9 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.12
-	title = stolbr.12.t
-	desc = stolbr.12.d
+	id = SBS_event.12
+	title = SBS_event.12.t
+	desc = SBS_event.12.d
 	picture = GFX_event_bos_shephardslain
 	is_triggered_only = no
 	fire_only_once = yes
@@ -304,7 +304,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stolbr.12.a		
+		name = SBS_event.12.a		
 		remove_country_flag = shephard_uprising
 		add_stability = 0.10
 		add_war_support = 0.10
@@ -313,14 +313,14 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.13
-	title = stolbr.13.t
-	desc = stolbr.13.d
+	id = SBS_event.13
+	title = SBS_event.13.t
+	desc = SBS_event.13.d
 	picture = GFX_event_bos_maxon
 	is_triggered_only = yes
 	
 	option = {
-		name = stolbr.13.a					
+		name = SBS_event.13.a					
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Elder Maxson"
@@ -338,14 +338,14 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.14
-	title = stolbr.14.t
-	desc = stolbr.14.d
+	id = SBS_event.14
+	title = SBS_event.14.t
+	desc = SBS_event.14.d
 	picture = GFX_event_bos_boston
 	is_triggered_only = yes
 	
 	option = {
-		name = stolbr.14.a
+		name = SBS_event.14.a
 		add_war_support = 0.14
 		BSS = {
 		add_war_support = 0.14
@@ -354,28 +354,28 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.15
-	title = stolbr.15.t
-	desc = stolbr.15.d
+	id = SBS_event.15
+	title = SBS_event.15.t
+	desc = SBS_event.15.d
 	picture = GFX_event_bos_minutemen
 	is_triggered_only = yes
 	
 	option = {
 	    trigger = {
-		MEN = {
-		has_country_leader = {
-			id = 2001
+			MEN = {
+				has_country_leader = {
+					id = 2001
+				}
+			}
 		}
-		}
-		}
-		name = stolbr.15.a
+		name = SBS_event.15.a
 		
 		MEN = {
 			country_event = MEN_event.19
 		}
 	}
 	option = {
-		name = stolbr.15.b
+		name = SBS_event.15.b
 		
 		MEN = {
 			country_event = MEN_event.20
@@ -384,14 +384,14 @@ country_event = {
 }
 
 country_event = {
-	id = stolbr.16
-	title = stolbr.16.t
-	desc = stolbr.16.d
+	id = SBS_event.16
+	title = SBS_event.16.t
+	desc = SBS_event.16.d
 	picture = GFX_event_bos_minutemen
 	is_triggered_only = yes
 
 	option = {
-		name = stolbr.16.a
+		name = SBS_event.16.a
 		BSS = {
 		create_wargoal = {
 				type = annex_everything
@@ -403,14 +403,14 @@ country_event = {
 
 
 country_event = {
-	id = stolbr.17
-	title = stolbr.17.t
-	desc = stolbr.17.d
+	id = SBS_event.17
+	title = SBS_event.17.t
+	desc = SBS_event.17.d
 	picture = GFX_event_bos_desert_patrol
 	is_triggered_only = yes
 	
 	option = {
-		name = stolbr.17.a
+		name = SBS_event.17.a
 		SBS = {
 		annex_country = { target = FROM transfer_troops = yes }
 		#988 = { add_core_of = SBS }
@@ -418,7 +418,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stolbr.17.b
+		name = SBS_event.17.b
 		SBS = {
 		declare_war_on = {
 				type = annex_everything

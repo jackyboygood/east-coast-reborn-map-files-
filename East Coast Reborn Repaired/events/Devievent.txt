@@ -1,4 +1,4 @@
-﻿add_namespace = devievent
+﻿add_namespace = DEV_event
 
 country_event = {
 	id = DEV_event.1

@@ -1,4 +1,4 @@
-﻿add_namespace = Minitmeni
+﻿add_namespace = MEN_event
 
 # Minitmen supports human
 country_event = {
@@ -476,8 +476,8 @@ country_event = {
 
 country_event = {
 	id = MEN_event.18
-	title = Minutemeni.18.t
-	desc = bos_arrives
+	title = MEN_event.18.t
+	desc = MEN_event.18.d
 	picture = GFX_event_bosarrives
 	
 	is_triggered_only = yes
@@ -488,7 +488,7 @@ country_event = {
 }
 country_event = {
 	id = MEN_event.19
-	title = Minutemeni.19.t
+	title = MEN_event.19.t
 	desc = bos_arrives
 	picture = GFX_event_bosdeal
 	
@@ -505,13 +505,13 @@ country_event = {
 		name = MEN_event.19.b
 		
 		SBS = {
-			country_event = stolbr.16
+			country_event = 16
 		}
 	}		
 }
 country_event = {
 	id = MEN_event.20
-	title = Minutemeni.20.t
+	title = MEN_event.20.t
 	desc = bos_arrives
 	picture = GFX_event_bosdeal
 	
@@ -525,10 +525,10 @@ country_event = {
 			active = yes
 	}
 	option = {
-		name = MEN_event.20.a
+		name = MEN_event.20.b
 		
 		SBS = {
-			country_event = stolbr.16
+			country_event = 16
 		}
 	}
 }

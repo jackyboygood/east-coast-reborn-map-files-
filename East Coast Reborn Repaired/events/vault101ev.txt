@@ -1,4 +1,4 @@
-﻿add_namespace = vault101ev
+﻿add_namespace = USP_event
 
 country_event = {
 	id = USP_event.1

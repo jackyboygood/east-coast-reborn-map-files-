@@ -146,3 +146,16 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = inst.5
+	title = inst.5.t
+	desc = inst.5.d
+	picture = GFX_event_bosarrives
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = inst.5.a
+	}
+}

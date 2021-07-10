@@ -20,7 +20,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
 			}
-			country_event = { id = NUE.1 }
+			country_event = { id = NUE_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
@@ -59,7 +59,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = NUE.2
+				id = NUE_event.2
 		    }
 		}
 	}
@@ -79,7 +79,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_3 entered"
 			}
-			country_event = { id = NUE.3 } # The Malpais Legate
+			country_event = { id = NUE_event.3 } # The Malpais Legate
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_3 exited"
@@ -137,7 +137,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_5 entered"
 			}
-			country_event = { id = NUE.4 }
+			country_event = { id = NUE_event.4 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_5 exited"
@@ -1036,7 +1036,7 @@ focus = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
 			}
-			country_event = { id = NUE.5 }
+			country_event = { id = NUE_event.5 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
@@ -1066,7 +1066,7 @@ focus = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
 			}
-			country_event = { id = NUE.6 }
+			country_event = { id = NUE_event.6 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
@@ -1189,7 +1189,7 @@ focus = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
 			}
-			country_event = { id = NUE.7 }
+			country_event = { id = NUE_event.7 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
@@ -1228,7 +1228,7 @@ focus = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_41 entered"
 			}
-			country_event = { id = NUE.8 }
+			country_event = { id = NUE_event.8 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_41 exited"
@@ -1250,7 +1250,7 @@ focus = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_42 entered"
 			}
-			country_event = { id = NUE.9 }
+			country_event = { id = NUE_event.9 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_42 exited"

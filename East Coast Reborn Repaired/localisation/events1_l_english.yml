@@ -165,45 +165,131 @@
   MEN_event.17.d:0 "To ensure our success in retaking Fort Independence, Preston decided to strengthen our positions by establishing control in the nearby area controlled by Gunners. Taking a couple of Minutemen with him, Preston went to the Gwinnet Restaurant under cover of the night. As he got closer, Garvey heard the sounds of beatings and laughter. He signaled, and the Minutemen crept towards the source of the sound. Approaching the source of the sound, Preston was faced with a horrifying sight: the public beating and berating of a man. Preston signaled for an attack, and before they could even turn to face the sound of the laser muskets, the Gunners were reduced to dust. Putting the laser musket on his back, Preston hurried to the poor man's aid. Despite the severity of his injuries, the man held on tightly and while the minutemen gave him first aid, asking: "Thank you for your help, without you I would have met my end. Are you the Minutemen I've heard so much about? I am from a settlement nearby and was just going to ask for help and join your good cause. It seems that fate itself has brought me to you""
   MEN_event.17.a:0 "Welcome to the cause!"
 
+  MEN_event.18.t:0 "The Brotherhood of Steel"
+  MEN_event.18.d:0 "The sound of rotors could be heard across the Commonwealth today as a massive airship passed overhead. Scouts of the Brotherhood of Steel have been reported for the past few weeks, but this airship is the sign of a far bigger operation. It is unclear what this new group's intentions are in the Wasteland, but we should be cautious."
+  MEN_event.18.a:0 "Where did they get all that Power Armor?"
+
+  MEN_event.19.t:0 "Hammond's Dream Come True"
+  MEN_event.19.d:0 "Ever since the Brotherhood landed, Lee Hammond has been looking forward to meeting the legendary Elder Maxson. Hammond's attitude towards the Wasteland had always aligned with the Brotherhood, and now they come offering him an honorary title if Knight in exchange for a permanent alliance between the Minutemen and the Brotherhood."
+  MEN_event.19.a:0 "Of course I accept!"
+  MEN_event.19.b:0 "The Minutemen must stay independent."
+
+  MEN_event.20.t:0 "Peace with the Brotherhood"
+  MEN_event.20.d:0 "The Brotherhood of Steel has sent us an offer of lasting peace if we agree to not interfere with their mission. Their cold attitude towards the settlers of the Commonwealth is frustrating, but perhaps peace is the best option."
+  MEN_event.20.a:0 "We will sign your treaty"
+  MEN_event.20.b:0 "We must reject these invaders!"
+
   # NUE
-  NUE.1.t:0 "Favorite Federation"
-  NUE.1.d:0 "The founding members of the Federation are legends throughout New York. But who among them stands out? Who will be the star of the propaganda and history books? Who should be depicted on banknotes and mentioned in speeches? Who should be singled out and stand above all others?"
-  NUE.1.a:0 "Gabriel Sanchez, the founder and Father of Federation."
-  NUE.1.b:0 "Ben Stevens, Charlie's former Ranger and Federation's greatest hero."
-  NUE.1.c:0 "Louise De Cervantes, Mother Of The Federation."
+  NUE_event.1.t:0 "Favorite Federation"
+  NUE_event.1.d:0 "The founding members of the Federation are legends throughout New York. But who among them stands out? Who will be the star of the propaganda and history books? Who should be depicted on banknotes and mentioned in speeches? Who should be singled out and stand above all others?"
+  NUE_event.1.a:0 "Gabriel Sanchez, the founder and Father of Federation."
+  NUE_event.1.b:0 "Ben Stevens, Charlie's former Ranger and Federation's greatest hero."
+  NUE_event.1.c:0 "Louise De Cervantes, Mother Of The Federation."
   
-  NUE.2.t:0 "What Political course should we follow?"
-  NUE.2.d:0 "Inspired by our famous founder, the people of the Federation are looking to the future. Some believe that more citizens of the Federation should serve in the army, turning us into a military powerhouse. Others believe that we should turn our focus inward, improving the lives of our citizens and improving our economy. Finally, some believe that we should promise peace for our people, inspiring our neighbors to do the same. What path shall we choose?"
-  NUE.2.a:0 "Aggressive Democracy"
-  NUE.2.b:0 "Economic Powerhouse"
-  NUE.2.c:0 "Promises of Peace"
+  NUE_event.2.t:0 "What Political course should we follow?"
+  NUE_event.2.d:0 "Inspired by our famous founder, the people of the Federation are looking to the future. Some believe that more citizens of the Federation should serve in the army, turning us into a military powerhouse. Others believe that we should turn our focus inward, improving the lives of our citizens and improving our economy. Finally, some believe that we should promise peace for our people, inspiring our neighbors to do the same. What path shall we choose?"
+  NUE_event.2.a:0 "Aggressive Democracy"
+  NUE_event.2.b:0 "Economic Powerhouse"
+  NUE_event.2.c:0 "Promises of Peace"
 
-  NUE.3.t:0 "Army Reforms"
-  NUE.3.d:0 "With our nation growing stronger everyday, our neighbors grow envious of our prosperity. Aggressive measures must be taken to ensure our army is strong enough to survive."
-  NUE.3.a:0 "We will drill our men with long marches"
-  NUE.3.b:0 "We will purge the weak to inspire the strong"
+  NUE_event.3.t:0 "Army Reforms"
+  NUE_event.3.d:0 "With our nation growing stronger everyday, our neighbors grow envious of our prosperity. Aggressive measures must be taken to ensure our army is strong enough to survive."
+  NUE_event.3.a:0 "We will drill our men with long marches"
+  NUE_event.3.b:0 "We will purge the weak to inspire the strong"
 
-  NUE.4.t:0 "A Search Of The New York Ruins"
-  NUE.4.d:0 "New York City holds many mysteries and secrets. What kinds of knowledge can be found amongst the ruins?"
-  NUE.4.a:0 "Machines of the Old World."
-  NUE.4.b:0 "Weapons of the Old World."
-  NUE.4.c:0 "Theaters of the Old World."
+  NUE_event.4.t:0 "A Search Of The New York Ruins"
+  NUE_event.4.d:0 "New York City holds many mysteries and secrets. What kinds of knowledge can be found amongst the ruins?"
+  NUE_event.4.a:0 "Machines of the Old World."
+  NUE_event.4.b:0 "Weapons of the Old World."
+  NUE_event.4.c:0 "Theaters of the Old World."
 
-  NUE.5.t:0 "Death to the Enclave!"
-  NUE.5.d:0 "For a long time, we tolerated the presence of the Enclave near our borders, but now our patience is running thin. The Enclave has been stealing our citizens with promises of peace and stability, claiming they have a cure for the New York Plague. Their imperialism must come to an end!"
-  NUE.5.a:0 "It's time to show them our teeth!""
+  NUE_event.5.t:0 "Death to the Enclave!"
+  NUE_event.5.d:0 "For a long time, we tolerated the presence of the Enclave near our borders, but now our patience is running thin. The Enclave has been stealing our citizens with promises of peace and stability, claiming they have a cure for the New York Plague. Their imperialism must come to an end!"
+  NUE_event.5.a:0 "It's time to show them our teeth!""
 
-  NUE.7.t:0 "Preparing the Fleet and the Marines"
-  NUE.7.d:0 "Not so long ago, we received alarming information from Cuba: the gangs that terrorize their own homeland have began settling on the East Coast. Their foothold on the coast is weak, and their people are in search of saviors. We must ready our forces to protect the weak!"
-  NUE.7.a:0 "Ready our ships for invasion!"
+  NUE_event.7.t:0 "Preparing the Fleet and the Marines"
+  NUE_event.7.d:0 "Not so long ago, we received alarming information from Cuba: the gangs that terrorize their own homeland have began settling on the East Coast. Their foothold on the coast is weak, and their people are in search of saviors. We must ready our forces to protect the weak!"
+  NUE_event.7.a:0 "Ready our ships for invasion!"
 
-  NUE.8.t:0 "The Discovery of Yucatan"
-  NUE.8.d:0 "After sailing south for some distance, our troops stumbled upon a land unknown to us. Our scouts report that the locals are peaceful but are ruled by the evil and treacherous bandits 'Escambray'. After a short discussion, you have decided to send your Marines to assist the locals in overthrowing these gangs. After a series of brief skirmishes, we secured a foothold. The freed people welcome us as their new leader."
-  NUE.8.a:0 "These islands will become our foothold in the Caribbean."
+  NUE_event.8.t:0 "The Discovery of Yucatan"
+  NUE_event.8.d:0 "After sailing south for some distance, our troops stumbled upon a land unknown to us. Our scouts report that the locals are peaceful but are ruled by the evil and treacherous bandits 'Escambray'. After a short discussion, you have decided to send your Marines to assist the locals in overthrowing these gangs. After a series of brief skirmishes, we secured a foothold. The freed people welcome us as their new leader."
+  NUE_event.8.a:0 "These islands will become our foothold in the Caribbean."
 
-  NUE.9.t:0 "Landing on Yucatan"
-  NUE.9.d:0 "Your main fleet reached Yucatan and began the invasion of the island. Our troops encountered fierce resistance, with the battle lasting several hours. Our better military technology and superior organization gave us a clear advantage, but it was not without a high cost. When the battle was over, it was difficult to distinguish between our dead and the enemy's. We were too self-confident and paid dearly for it."
-  NUE.9.a:0 "We won the battle, but not the war."
+  NUE_event.9.t:0 "Landing on Yucatan"
+  NUE_event.9.d:0 "Your main fleet reached Yucatan and began the invasion of the island. Our troops encountered fierce resistance, with the battle lasting several hours. Our better military technology and superior organization gave us a clear advantage, but it was not without a high cost. When the battle was over, it was difficult to distinguish between our dead and the enemy's. We were too self-confident and paid dearly for it."
+  NUE_event.9.a:0 "We won the battle, but not the war."
+
+  # SBS
+  SBS_event.1.t:0 "Ferry to New York"
+  SBS_event.1.d:0 "Elder Lyons has decided to assemble a division to go to New York. He has commissioned a ferry to transfer our expeditionary forces to New York along the river. The journey to New York was largely uneventful, but as we approached the docks, our boat hit another sunken ship and quickly started taking on water. Most of our forces escaped the ship, but we are now stranded in New York."
+  SBS_event.1.a:0 "We still have a job to do"
+
+  SBS_event.2.t:0 "Expansion Impact"
+  SBS_event.2.d:0 "Early scouting reports from New York speak of a terrible disease. It appears the Enclave detatchment in the area has found a cure and has started vaccinating the victims it can find. Our forces were able to track down and raid an Enclave convoy, securing an entire case of this vaccine. Our scribes have started studying these vials and have distributed the remainder to our citizens in New York."
+  SBS_event.2.a:0 "Wonderful!"
+
+  SBS_event.3.t:0 "Another War with the Enclave"
+  SBS_event.3.d:0 "We can no longer tolerate the presence of the Enclave in New York. We must push them out once and for all. Knight-Commander Trevor Phillips has already received the appropriate command orders and is now preparing troops for all-out war with the Enclave."
+  SBS_event.3.a:0 "Forward march!"
+
+  SBS_event.4.t:0 "Offer of the Union"
+  SBS_event.4.d:0 "With our victory over the Enclave and New York secured, the people of the Capital Wasteland have started to respect our presence. The Brotherhood of Steel will bring together all nations and stand as a symbol of peace and unity for all people. We should now send diplomats to the largest settlement, the Republic of Dave, to strengthen our union even further."
+  SBS_event.4.a:0 "Send Dave an offer"
+
+  SBS_event.5.t:0 "Offer of the Union"
+  SBS_event.5.d:0 "The Capital Brotherhood has offered to encorporate our humble nation in their lands in exchange for supplies and protection."
+  SBS_event.5.a:0 "We will stand together!"
+  SBS_event.5.b:0 "We will not be controlled!"
+
+  SBS_event.6.t:0 "The Republic of Dave Accepts"
+  SBS_event.6.d:0 "The Republic of Dave has agreed to our proposal. Our scribes are already on their way to improve their lands."
+  SBS_event.6.a:0 "Excellent!"
+
+  SBS_event.7.t:0 "The Republic of Dave Refuses"
+  SBS_event.7.d:0 "The Republic of Dave refused our offer. We cannot let them set a bad example for the other settler nations."
+  SBS_event.7.a:0 "They must be brought into the fold!"
+
+  SBS_event.8.t:0 "The Death of Elder Lyons"
+  SBS_event.8.d:0 "Tragedy has struck the Capital Brotherhood, as its beloved leader has passed away. Our doctors have declared that he died of old age, although some in the Brotherhood suspect external forces may be at play. Owyn Lyons lived a long and full 76 years, serving as the Elder of the Capital Brotherhood for two decades. He is survived by his daugher, the newly appointed Elder Sarah Lyons."
+  SBS_event.8.a:0 "Owyn Lyons will not soon be forgotten"
+
+  SBS_event.9.t:0 "Our New Elder"
+  SBS_event.9.d:0 "Sarah Lyons has earned the respect of many during her time as a Paladin, and has lead our forces valiantly in combat against the Super Mutants. However, she lacks her father's charisma and wisdom. Some have claimed that her title as Elder was not earned, and her first weeks in command have been rocky."
+  SBS_event.9.a:0 "She needs to find her footing"
+
+  SBS_event.10.t:0 "Tragedy at the Monument"
+  SBS_event.10.d:0 "Elder Sarah knew she was taking a risk pushing so far into Super Mutant territory, but she refued to be sidelined, insisting she lead her Brotherhood from the front. Unfortunatly, that became a costly choice as she was killed in combat after her squad was ambushed by a gang of Super Mutants led by an unidentified blue-skinned mutant."
+  SBS_event.10.a:0 "The Brotherhood must once again find a new Elder"
+
+  SBS_event.11.t:0 "Brotherhood in Disarray"
+  SBS_event.11.d:0 "Elder McNeil is a good soldier but lacks the organization and imagination required to outmanuever the Super Mutant menace. This new batch of mutants, lead by  the blue-skinned mutant that killed Sarah Lyon, has now established a foothold in the Capital."
+  SBS_event.11.a:0 "Shepard must be stopped!"
+
+  SBS_event.12.t:0 "Sarah Avenged"
+  SBS_event.12.d:0 "The Brotherhood finally tracked Shepard down to an abandoned building on the edge of the Capital Wasteland. A squad lead by a young paladin, Arthur Maxson, breached the compound and killed Shepard along with his support staff. This is not the first time that Paladin Maxson has caused a stir, and his connection to the Brotherhood's founder has inspired some to call for his promotion to Elder."
+  SBS_event.12.a:0 "Are we putting our trust in a 15 year old?"
+
+  SBS_event.13.t:0 "A Worthy Elder"
+  SBS_event.13.d:0 "Elder McNeil officially stepped down this morning, passing the position off to most popular candidate, Arthur Maxson. Decendent of the legendary Roger Maxson and raised by Elder Lyons, Arthur has pledged to bring a new era of peace and purity to the Capital Brotherhood."
+  SBS_event.13.a:0 "Trust in the Maxson name"
+
+  SBS_event.14.t:0 "Flight of the Prydwen"
+  SBS_event.14.d:0 "Elder Maxson's pride and joy has embarked on its most ambitious journey yet: delivering our Elder to the remnents of Boston. Elder Maxson, along with hundreds of support staff and many of our vertibirds, journeyed to the ruined city in search of the source of mysterious energy surges throughout the city."
+  SBS_event.14.a:0 "The Commonwealth won't know what hit them."
+
+  SBS_event.15.t:0 "First Contact with The Minutemen"
+  SBS_event.15.d:0 "A band of soldiers called The Minutemen have been patrolling the Commonwealth for decades, protecting the innocent and keeping the raiders and mutants back. Their use of laser weapons is unfortunate, but an alliance with them will increase our legitimacy in the area."
+  SBS_event.15.a:0 "Lee Hammond has the makings of a Brotherhood Paladin."
+  SBS_event.15.b:0 "We will offer them peace."
+
+  SBS_event.16.t:0 "The Minutemen Reject Our Offer"
+  SBS_event.16.d:0 "The Minutemen have rejected our offer of peace in the Commonwealth. They have interfered with our mission and use their defending of settlers as a cover for their expansionism. They must be stopped if our mission is to succeed in the Commonwealth."
+  SBS_event.16.a:0 "The Minutemen's time has come."
+
+  SBS_event.17.t:0 "Demand from the Brotherhood of Steel"
+  SBS_event.17.d:0 "A battalion of Power Armor-clad warriors have marched into our territory demanding that we hand over our advanced technology and comply with Brotherhood protocols."
+  SBS_event.17.a:0 "We have no choice but to surrender"
+  SBS_event.17.b:0 "We must reject these invaders!"
 
   # USP
   USP_event.1.t:0 "The Opening of Vault 101" 
@@ -459,6 +545,10 @@
  inst.4.d:0 "The time has come to decide what awaits the Boston Super Mutants, we could easily completely subjugate them all and make them fight for us, or we can give them a little more freedom and allow them to manage their own state, but like our puppet..."
  inst.4.a:0 "Fully Subdue"
  inst.4.b:0 "Make a puppet"
+
+ inst.5.t:0 "The Brotherhood of Steel"
+ inst.5.d:0 "Our coursers have reported a large flying object landing in the northern part of the Commonwealth. They appear to be equipt with the finest Old World technology. Their intentions in the Commonwealth are as of yet unclear."
+ inst.5.a:0 "We will keep our eye on them"
  
  
  
@@ -589,31 +679,3 @@ detievent.19.t: 0 "Roy Philips, trying to infiltrate Tenpenny Tower"
 detievent.19.d: 0 "Roy philips, along with other festivities, has been trying for a long time to infiltrate Tenpenny Tower, but its inhabitants are forever driving away the same time Roy Philips did not decide to solve the issue in an armed way and was content only with a verbal method... However, his terpeny came to an end and he begins an invasion of the apartments... "
 detievent.19.a: 0 "to Help"
 detievent.19.b: 0 "Not to help"
-
-##########BOS###########
-
-stolbr.1.t:0 "Ferry to New York"
-stolbr.1.d:0 "Elder Lyons decides to assemble a group to go to New York. The Elder Lyons found a ferry that agreed to transfer our expeditionary forces to New York along the river. all without exception, but upon arrival directly to New York itself, already near the entrance to the docks, we came across the nose of the sunken ship, as a result of which a break formed in our ferry and our ship began to sink quickly. most survived and now justifying They are in New York City."
-stolbr.1.a:0 "Well, at least most got to the destination."
-stolbr.2.t:0 "Expansion Impact"
-stolbr.2.d:0 "Reports of an unknown disease came to you from New York, but now you learned that the Enclave found the way to cure this disease, it’s a shame that your Scribes didn’t do it, but you can’t do anything. After the long siege, we conquered the Enclave convoy. After searching the convoy, we found vials of medicine for this disease. yven 'where the drug will be used to heal the sick, then this area is unnecessarily yavlyaetsyanicheynoy, respectively, it will be a tasty morsel in our Fellowship."
-stolbr.2.a:0 "Wonderful!"
-stolbr.3.t:0 "New War With the Enclave"
-stolbr.3.d:0 "We can no longer tolerate the presence of the Enclave in New York, it is necessary to end once and for all with their presence in New York ... Knight-Commander Trevor Phillips has already received the appropriate command orders and is now preparing troops for the Enclave War."
-stolbr.3.a:0 "Push troops to the border"
-stolbr.4.t:0 "Offer of the Union"
-Stolbr.4.d:0 "After the victory over the Enclave we became the dominant force on the capital void, and also because of this victory the residents of the capital void began to treat us better, now, we collect under our flags tribes and settlements living in the capital void, in turn the Republic of Dave, we need to send diplomats to them with this proposal."
-Stolbr.4.a:0 "Offer to join us"
-stolbr.5.t:0 "Offer of the Union"
-Stolbr.5.d:0 "The metropolitan brotherhood began to send to us its riders, they give us protection, provost and all necessary resources if we obey them."
-stolbr.5.a:0 "to Accept"
-stolbr.5.b:0 "to Refuse"
-stolbr.6.t:0 "They Agreed"
-Stolbr.6.d:0 "The Republic of Dave has agreed to our proposal"
-stolbr.6.a:0 is "excellent"
-stolbr.7.t:0 "They Refused"
-Stolbr.7.d:0 "The Republic of Dave refused our offer, how dare they?!"
-Stolbr.7.a:0 "we just won 't leave it."
-
-
-##########BOS###########
