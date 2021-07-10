@@ -818,23 +818,7 @@ country_event = {
 			transfer_state = 974
 		}
 		hidden_effect = {
-	        country_event = { days = 45 id = USP_event.40 }
-		}
-	}
-}
-
-country_event = {
-	id = USP_event.40
-	title = USP_event.40.t
-	desc = USP_event.40.d
-	picture = GFX_event_memrialwashington
-
-	is_triggered_only = yes
-
-	option = {
-		name = USP_event.40.a
-        country_event = {
-				id = USP_event.41
+	        country_event = { days = 45 id = USP_event.41 }
 		}
 	}
 }
@@ -1078,22 +1062,6 @@ country_event = {
 
 	option = {
 		name = USP_event.51.a
-        country_event = {
-				id = USP_event.52
-		}
-	}
-}
-
-country_event = {
-	id = USP_event.52
-	title = USP_event.52.t
-	desc = USP_event.52.d
-	picture = GFX_event_vault871
-
-	is_triggered_only = yes
-
-	option = {
-		name = USP_event.52.a
         country_event = {
 				id = USP_event.53
 		}
