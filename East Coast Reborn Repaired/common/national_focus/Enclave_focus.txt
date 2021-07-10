@@ -444,7 +444,7 @@ focus = {#Expedition - to Mariposa
 	
     focus = {
 		id = Enclavesp_21
-		icon = GFX_goal_enc_sabotage
+		icon = GFX_goal_ESP_Autumn_Mutants
 		prerequisite = { focus = Enclavesp_20 }
 		x = 0
 		y = 1
@@ -501,7 +501,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_24
-		icon = GFX_goal_enc_accept_wastelanders
+		icon = GFX_goal_ESP_Autumn_Mobilisation
 		prerequisite = { focus = Enclavesp_20 }
 		relative_position_id = Enclavesp_20
 		x = 3
@@ -951,7 +951,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_37
-		icon = GFX_goal_enc_slave_labour
+		icon = GFX_goal_ESP_Autumn_Slaves
 		ai_will_do = { factor = 1 } 
 		prerequisite = {
 			focus = Enclavesp_20
@@ -960,19 +960,19 @@ focus = {#Expedition - to Mariposa
 		x = -3
 		y = 1
 		cost = 60
-		completion_reward = {add_ideas = ENC_slave_labour}
+		completion_reward = {add_ideas = ESP_slave_labour}
 		
     } 
  
  focus = {
 		id = Enclavesp_38
-		icon = GFX_goal_enc_slave_labour_collars
+		icon = GFX_goal_ESP_Autumn_Slave_Collars
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_37
 		x = 0
 		y = 1
 		prerequisite = { focus = Enclavesp_37}
-		completion_reward = {swap_ideas = {remove_idea = ENC_slave_labour add_idea = ENC_slave_labour_collars}}
+		completion_reward = {swap_ideas = {remove_idea = ESP_slave_labour add_idea = ESP_slave_labour_collars}}
 		cost = 60
 		
     }
@@ -988,7 +988,7 @@ focus = {#Expedition - to Mariposa
 		available = {
 				716 = { is_controlled_by = ESP} # The Warren
 		}
-		completion_reward = {swap_ideas = {remove_idea = ENC_slave_labour_collars add_idea = ENC_slave_labour_mutants}}
+		completion_reward = {swap_ideas = {remove_idea = ESP_slave_labour_collars add_idea = ESP_slave_labour_mutants}}
 
 		cost = 60
     }
@@ -1016,7 +1016,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {# STRIKE TEAMS
 		id = Enclavesp_41
-		icon = GFX_goal_enc_para_2
+		icon = GFX_goal_ESP_Autumn_Chad
 		available = {
 			has_completed_focus = Enclavesp_16
 		}
@@ -1101,7 +1101,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {# ARMY REFORM
 		id = Enclavesp_46
-		icon = GFX_goal_enc_troop
+		icon = GFX_goal_ESP_Eden
 		ai_will_do = { factor = 1 }
 		available = {
 			has_completed_focus = Enclavesp_17
@@ -1188,7 +1188,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#Purity - FEV experiments
 		id = Enclavesp_51
-		icon = GFX_goal_enc_experiments
+		icon = GFX_goal_new_bio_med_gel_experiments
 		prerequisite = {
 			focus = Enclavesp_18
 		}
@@ -1261,7 +1261,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_55
-		icon = GFX_goal_Enclave15
+		icon = GFX_goal_ESP_Autumn_Chad
 		prerequisite = {
 		focus = Enclavesp_86
 		}
@@ -1312,7 +1312,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_56
-		icon = GFX_goal_Enclave14
+		icon = GFX_goal_ESP_Autumn_Oasis
 		relative_position_id = Enclavesp_55
 		prerequisite = { focus = Enclavesp_79 }
 		x = -2
@@ -1357,7 +1357,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_57
-		icon = GFX_goal_Enclave13
+		icon = GFX_goal_ESP_Autumn_Outcasts
 		available = {
 		}
 		relative_position_id = Enclavesp_55
@@ -1405,7 +1405,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_58
-		icon = GFX_goal_Enclave12
+		icon = GFX_goal_ESP_Autumn_Farmers
 		available = {
 			981 = { is_controlled_by = ESP } # NAVARRO
 			1023 = { is_controlled_by = ESP } # NAVARRO
@@ -1416,7 +1416,7 @@ focus = {#Expedition - to Mariposa
 		y = 1
 		
 
-		cost = 10.0
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1476,7 +1476,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_59
-		icon = GFX_goal_Enclave11
+		icon = GFX_goal_ESP_Autumn_York
 		available = {
 			981 = { is_controlled_by = ESP } 
 			1007 = { is_controlled_by = ESP } 
@@ -2305,7 +2305,6 @@ focus = {#Expedition - to Mariposa
 		available = {
             SBS = { exists = no }
 			USP = { exists = no }
-			has_completed_focus = Enclavesp_55
    
 		}
 		x = 0
@@ -2313,6 +2312,8 @@ focus = {#Expedition - to Mariposa
 		
 		cost = 45
 		completion_reward = {
+	        1070 = { add_core_of = ESP }
+			975 = { add_core_of = ESP }
 			add_ideas = cleanoperation
 		}
 	}
@@ -2574,7 +2575,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_86
-		icon = GFX_goal_enc_sword_cross
+		icon = GFX_goal_ESP_Autumn_Rangers
 		prerequisite = { focus = Enclavesp_21 }
 		relative_position_id = Enclavesp_21
 		x = 1
@@ -2603,6 +2604,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 		    1001 = { add_core_of = ESP }
+			979 = { add_core_of = ESP }
 			create_wargoal = {
 				type = annex_everything
 				target = RAR
@@ -2612,7 +2614,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_87
-		icon = GFX_goal_enc_fort
+		icon = GFX_goal_ESP_Autumn_Slavers
 		prerequisite = { focus = Enclavesp_21 }
 		relative_position_id = Enclavesp_21
 		x = -1
@@ -2625,7 +2627,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		date > 2278.1.1
+		date > 2277.1.1
 		RAB = { exists = yes }
 		}
 
