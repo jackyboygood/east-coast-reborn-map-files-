@@ -1713,7 +1713,7 @@ focus_tree = {
 					country_event = inst.5
 				}
 				MEN = {
-					country_event = Minitmeni.18
+					country_event = MEN_event.18
 				}
 			}
 		hidden_effect = {

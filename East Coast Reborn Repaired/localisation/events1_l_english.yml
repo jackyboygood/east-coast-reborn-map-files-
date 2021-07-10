@@ -45,6 +45,84 @@
   ENC_event.14.d:0 "The past few weeks of innocuation have yielded great results. Improvements to the vaccine have allowed us to cure a majority of New York. That being said, the Brotherhood of Steel have been less excited about our success. They attacked one of our convoys and stole cases of the vaccine destined for the inhabitants of Brookhaven. The Brotherhood immediatly started innocuating their own citizens, bringing hundreds of citizens into their cause. The Brotherhood must be stopped!
   ENC_event.14.a:0 "Conflict is inevitable"
 
+  # MEN
+  MEN_event.1.t:0 "Protectors of the Commonwealth"
+  MEN_event.1.d:0 "This is a dark time in the history of the Minutemen. Many of our finest were killed  the battles with raiders, mutants, and the Gunners. Our base in Fort Independence was taken away from us by the Mirelurks. \nDespite all these losses, the Minutemen still strive to bring hope to the Wasteland and protect those who cannot protect themselves. Our new leader, Preston Garvey, strives to lead us into a brighter future."
+  MEN_event.1.a:0 "The settlments need our help!"
+  MEN_event.1.a_tt:0 "Preston Garvey will become the sole leader of the Minutemen"
+
+  MEN_event.2.t:0 "New Home"
+  MEN_event.2.d:0 "Preston Garvey led the remenents of the Minutemen out of Fort Indepence into their temporary home in Sanctuary. Preston Garvey believes that the Concord can be turned into a new base of operations for the Minutemen, but the scouts who went to Concord never returned. Is this really the best way forward?"
+  MEN_event.2.a:0 "We must move forward!"
+
+  MEN_event.3.t:0 "The Mysterious Vault 111"
+  MEN_event.3.d:0 "Just when we thought all hope was lost, a mysterious stranger emerged from the hole in the ground known as Vault 111. This "Sole Survivoir" provided us with the help that we needed."
+  MEN_event.3.a:0 "Thank you, kind stranger"
+
+  MEN_event.4.t:0 "The March to Fort Independence"
+  MEN_event.4.d:0 "It's been many years since Fort Independence was lost. The Minutemen have finally started to recover from this setback, and the people came to Preston Garvey to approve a new assault on Fort Independence. Preston Garvey has decided to agree to the attack, but should we ask for help from the Wastelander from Vault 111?"
+  MEN_event.4.a:0 "The Sole Survivor can help us!"
+  MEN_event.4.b:0 "We don't need any help!"
+
+  MEN_event.5.t:0 "The Election of 2278"
+  MEN_event.5.d:0 "The Election of 2278 promises to be exciting one! 4 candidates have emerged as potential leaders fo the Minutemen.\nLee Hammond agrees with the core philosophy of the Brotherhood of Steel: that the technology of the Old World is dangerous and must be taken from those who would use it irresponsibly.\nMelman van Hutten sees the settlers he protects as a potential workforce for an army dedicated to protecting the weak. He will turn the Minutemen into a formitable fighting force.\nThe Sole Survivor has proved himself to be a very trustworthy person, and many in the Minutemen turn to him as the true leader of the organization.\n Finally, Preston Garvey's strength and confidence has held us together through our darkest times.\nWho will win this Election?"
+  MEN_event.5.a:0 "Lee Hammond"
+  MEN_event.5.b:0 "Melman Van Hutten"
+  MEN_event.5.c:0 "The Sole Survivor"
+  MEN_event.5.e:0 "Preston Garvey"
+
+  MEN_event.6.t:0 "Battle at the Boston Theatre"
+  MEN_event.6.d:0 "Preston Garvey and his Minutemen were responding to a request for help when they arrived at a cinema. The traders stuck inside were being beseiged by members of the Gunners who were eager to massacre the innoncents and rob them of their supplies. Preston Garvey knows that a fight with the Gunners will cost good solders, but news of this slaughter will cause many to lose faith in the Minutemen. He can also choose to attack the Gunners head on, sparking a costly conflict but fulfilling his Minutemen creed."
+  MEN_event.6.a:0 "Let's not pick any unnecessary fights"
+  MEN_event.6.b:0 "The Gunners must be stopped!"
+
+  MEN_event.7.t:0 "Preston Orders a Retreat"
+  MEN_event.7.d:0 "Preston Garvey could see the disappointment in the faces of his soldiers as he gave the order to retreat. His soldiers understand the tactical decision, but being pushed around so easily by the Gunners has hurt morale."
+  MEN_event.7.a:0 "The Wasteland won't soon forget this cowardice"
+
+  MEN_event.8.t:0 "Preston Orders an Attack"
+  MEN_event.8.d:0 "As the Minutemen move in, they turn to Preston for a plan of attack. They can attack the enemy head on, costing the Minutemen greatly but saving the lives of most of the beseiged traders. Our troops can instead move around the flank, surprising the Gunners but costing the trapped traders vital time and likely leading to many more innocents losing their lives."
+  MEN_event.8.a:0 "We must attack head on!"
+  MEN_event.8.b:0 "They won't see this flank coming!"
+
+  MEN_event.9.t:0 "Head-On Assault"
+  MEN_event.9.d:0 "Preston Garvey decides that there is no time for tactical maneuvers and begins to attack head-on. After 30 minutes of brutal combat, the battle was decided in the favor of the Minutemen. We suffered heavy loses in the assault but saved the lives of a majority of the innocents, many of whom join our cause. That being said, word of the battle has spread to the Gunner's commanders. War is coming."
+  MEN_event.9.a:0 "The Gunners have terrorized the Commonwealth for too long!"
+
+  MEN_event.10.t:0 "Move Around the Flank"
+  MEN_event.10.d:0 "Preston Garvey decides to surprise the entrenched Gunners. The battle over quickly, bodies of Gunners littering the steets. However, upon entering the cinema, it is clear we were too slow, as all but a handful of the traders are dead. The people of the Commonwealth now look to us to remove the threat of the Gunners for good. War is coming."
+  MEN_event.10.a:0 "The Gunners have terrorized the Commonwealth for too long!"
+
+  MEN_event.11.t:0 "Contract with Hancock"
+  MEN_event.11.d:0 "After lengthy negotiations, the Mayor of Goodneighbor has agreed to join the Minutemen in exchange for some small tasks around the community."
+  MEN_event.11.a:0 "Sounds like a deal!"
+  MEN_event.11.b:0 "We don't negotiate with ghouls"
+
+  MEN_event.12.t:0 "War on Goodneighbor"
+  MEN_event.12.d:0 "Mayor Hancock's use of Old World technology is dangerous and irresponsible. Goodneighbor needs to be stopped!"
+  MEN_event.12.a:0 "Call the Minutemen!"
+
+  MEN_event.13.t:0 "The Brotherhood and Minutemen Stand Together!"
+  MEN_event.13.d:0 "Lee Hammond and Arthur Maxson have signed a defense pact and agreed to work together to protect the Commonwealth."
+  MEN_event.13.a:0 "Long live our great union!"
+
+  MEN_event.14.t:0 "Corvega Assembly Plant"
+  MEN_event.14.d:0 "As they approached the massive derelict building, the Vault Dweller from 111 was filled with dread. The massive building towered over the horizon, begging to have its secrets exposed. The Sole Survivor observed 5 guards and an automated turret at the main entrance, two raiders on the roof and one last raider near the back entrance. Steeling themselves, they..."
+  MEN_event.14.a:0 "Fought their way through the front entrance."
+  MEN_event.14.b:0 "Snuck their way to the back door."
+
+  MEN_event.15.t:0 "Main Entrance"
+  MEN_event.15.d:0 "The Vault Dweller made quick work of the guards in the front of the building. As they stepped into the building, the eerie silence was broken by the sound of alarms. Dozens of raiders were dropped in the ensuing hail of bullets. The Vault Dweller faught his way to the top of the factory until he was face to face with the gang's leader. The battle lasted for a matter of minutes, with both being wounded in the fight. Eventually the Sole Survivor was victorious, standing over the corpse of the gang boss of the Forged. After completing the task, the Vault Dweller returned to Lexington, where residents thanked him for his help and promised to join the ranks of the Minutemen."
+  MEN_event.15.a:0 "Preston Garvey must hear of our success"
+  
+  MEN_event.16.t:0 "Back Entrance"
+  MEN_event.16.d:0 "The Vault Dweller crept along the walls of the factory, eventually arrive at the back entrance and disposing of the rear guard. They made quick work of the back lock, slithering into the back door... only to step directly into a trap. With no time to defuse the mine, the Sole Survivor met their end in the back of Corvega Assembly Plant, leaving the Minutemen without their leader."
+  MEN_event.16.a:0 "A Tragic End to the Minutemen"
+
+  MEN_event.17.t:0 "Journey to Gwinnet"
+  MEN_event.17.d:0 "To ensure our success in retaking Fort Independence, Preston decided to strengthen our positions by establishing control in the nearby area controlled by Gunners. Taking a couple of Minutemen with him, Preston went to the Gwinnet Restaurant under cover of the night. As he got closer, Garvey heard the sounds of beatings and laughter. He signaled, and the Minutemen crept towards the source of the sound. Approaching the source of the sound, Preston was faced with a horrifying sight: the public beating and berating of a man. Preston signaled for an attack, and before they could even turn to face the sound of the laser muskets, the Gunners were reduced to dust. Putting the laser musket on his back, Preston hurried to the poor man's aid. Despite the severity of his injuries, the man held on tightly and while the minutemen gave him first aid, asking: "Thank you for your help, without you I would have met my end. Are you the Minutemen I've heard so much about? I am from a settlement nearby and was just going to ask for help and join your good cause. It seems that fate itself has brought me to you""
+  MEN_event.17.a:0 "Welcome to the cause!"
+
   # NUE
   NUE.1.t:0 "Favorite Federation"
   NUE.1.d:0 "The founding members of the Federation are legends throughout New York. But who among them stands out? Who will be the star of the propaganda and history books? Who should be depicted on banknotes and mentioned in speeches? Who should be singled out and stand above all others?"
@@ -83,75 +161,11 @@
 
   NUE.9.t:0 "Landing on Yucatan"
   NUE.9.d:0 "Your main fleet reached Yucatan and began the invasion of the island. Our troops encountered fierce resistance, with the battle lasting several hours. Our better military technology and superior organization gave us a clear advantage, but it was not without a high cost. When the battle was over, it was difficult to distinguish between our dead and the enemy's. We were too self-confident and paid dearly for it."
-  NUE.9.a:0 "We won the battle, but not the war." 
+  NUE.9.a:0 "We won the battle, but not the war."
+
+  
 
   # BELOW THIS LINE ISNT DONE YET
- Minitmeni.1.t:0 "Protection Of The Commonwealth"
- Minitmeni.1.d:0 "The Minutemen are experiencing not the best of his time,many of our were killed in the battles with raiders,mutants and in skirmishes with the Gunners. Our base is Fort independence was taken away from us by the Mirelurks. \nAfter all these losses, the Minutemen have been greatly Weakened, but our organization has not been destroyed and can continue to serve its purpose."
- Minitmeni.1.a:0 "Will Continue To Protect The Settlements"
- Minitmeni.1.a_tt:0 "Preston Garvey To Become The Sole Leader Of The Minutemen"
- Minitmeni.2.t:0 "New Home"
- Minitmeni.2.d:0 "Preston Garvey,led the remnants of the Minutemen decided that we should find a safe place for future restoration,almost destroying the organization of the Minutemen,Preston Garvey believes that the Concord is perhaps the best our shelter for the next few years,but scouts who went to Concord and never returned. Is there really no other choice?"
- Minitmeni.2.a:0 "Moving to Concord"
- Minitmeni.3.t:0 "House Of Vault 111"
- Minitmeni.3.d:0 "In the very moment when hope was already lost,and remained only praying to was a miracle,in this very moment "Sole Survivoir" came for our help."
- Minitmeni.3.a:0 "Thanks for the help kind stranger"
- Minitmeni.4.t:0 "The March to Fort independence"
- Minitmeni.4.d:0 "It's been many years since Fort independence was Lost, the last time the Minutemen become more and more and they become stronger, and the power of the Organization makes more and more think about how to return the center of our organization,and after a while,people came to Preston Garvey with the requirement to approve the assault of Fort independence,Preston Garvey Decides to agree but whether he would warn about the campaign of the one without whose help would not happen to this campaign?"
- Minitmeni.4.a:0 "Call a Native of Vault 111 to March on Fort independence."
- Minitmeni.4.b:0 "Not to call people from Vault 111 to March on Fort independence"
- Minitmeni.5.t:0 "ELECTIONS 2278"
- Minitmeni.5.d:0 " Elections 2278 promise to be exciting as one of 4 candidates could be a potential leader fo the Minutemen.\n Lee Hammond is a man who obsessed with the ideas of Brotherhood technology protection. He believes, that Brotherhood is right, and noone should have access to the dangerous technology. \n Melman van Hutten says, that those settlers we saved are no more than a workforce whose only purpose is to maintain our army with resources.\n The Sole Survivor who proved himself to be a very trustful person.\n And Preston Garvey, whose strength and confidence hold us together when we were at the lowest point. \nWho will win this Election?"
- Minitmeni.5.a:0 "Lee Hammond."
- Minitmeni.5.b:0 "Melman Van Hutten"
- Minitmeni.5.c:0 "The Sole Survivor"
- Minitmeni.5.e:0 "Preston Garvey"
- Minitmeni.6.t:0 "Battle At The Movie Theater Boston"
- Minitmeni.6.d:0 "Arriving at the place of the request for help,Preston Garvey,along with his Minutemen, noticed this picture....A handful of besieged in the Boston cinema defends against a huge crowd of organizations (Arrows) without hesitation Preston Garvey decides...."
- Minitmeni.6.a:0 "Do not engage in combat (you will save the troops,but the prestige of the Minutemen will fall) "
- Minitmeni.6.b:0 "To attack (perhaps there will be losses) "
- Minitmeni.7.t:0 "The Order To Retreat"
- Minitmeni.7.d:0 "Preston Garvey gave the order to retreat not wanting to come into conflict with the organization of Shooters, the people of the Commonwealth will learn about our act and will not soon forget it"
- Minitmeni.7.a:0 "The Withdrawal Of Troops"
- Minitmeni.8.t:0 "The order of Attack"
- Minitmeni.8.d:0 "Costs nothing to give the order to Attack,but before you do this,you need to come up with a plan of attack,we can attack the enemy in the forehead, and then losses among the besieged to be small, however, our troops can postrotate,or we can circumvent the Gunners from the Flank and hit them,then we will save many lives of our boys,but we get them ,we risk losing many if not all besieged in the Cinema."
- Minitmeni.8.a:0 "Attack head On"
- Minitmeni.8.b:0 "To get around and attack from ambush in your ass"
- Minitmeni.9.t:0 "Frontal attack"
- Minitmeni.9.d:0 "Preston Garvey Decides that there is no time for tactical maneuvers and begins to attack head-on, after 30 minutes of battle, the battle was decided in our favor, although we surpassed the enemy in numbers,but nevertheless we have suffered heavy losses,it was only the first battle, now between the Minutemen and the Arrows Unleashed a full-fledged war."
- Minitmeni.9.a:0 "Regroup troops along the border with the Arrows"
- Minitmeni.10.t:0 "Flank bypass"
- Minitmeni.10.d:0 "Preston Garvey decided to use the tactics of surprise and attack the enemy from the flank,beating the enemy from the behind,he abruptly ordered the beginning of the attack and then the battle was a foregone conclusion,the Minutemen defeated after just 2 minutes after the attack began,however,all the defenders of the besieged theater was destroyed... killing all the besieged will have a negative impact on the reputation of the Minutemen,but we will still have a chance to meet the expectations of the Commonwealth settlers."
- Minitmeni.10.a:0 "Regroup troops along the border with the Arrows"
- Minitmeni.11.t:0 "Contract with Hancock"
- Minitmeni.11.d:0 "After lengthy negotiations, the Mayor of good Neighborliness,Hancock,agrees to join our power without declaring war but on the condition that we help him."
- Minitmeni.11.a:0 "Help with solving his problems"
- Minitmeni.11.b:0 "Leave and Return with the troops"
- Minitmeni.12.t:0 "War on Good Neighborhood"
- Minitmeni.12.d:0 "Mayor Hancock is wasteful of technology, allowing him to be all too lazy, you need to eliminate this outrage"
- Minitmeni.12.a:0 "Collect troops along their borders"
- Minitmeni.13.t:0 "Military Alliance of the Brotherhood of Steel and Minutemen"
- Minitmeni.13.d:0 "Lee Hammond and Arthur Maxson, sign a treaty of alliance from now on, you both pledge to help another in case of military conflict."
- Minitmeni.13.a:0 "Long live the great union !!!"
- Minitmeni.14.t:0 "Corveg Machine Assembly Shop"
- Minitmeni.14.d:0 "When he reached the right building,the vault dweller 111 was slightly vpechatlen,the massive building towered over the horizon,he decided that such a majestic building should not go just for a break,and for the beginning ought to reconnoiter.A native of Vault 111 found a suitable vantage point, took binoculars and began to examine everything around,he found 5 guards and an automated turret at the main entrance, two raiders on the roof and one raider near the back entrance, he decides to go..."
- Minitmeni.14.a:0 "Through The Main Entrance"
- Minitmeni.14.b:0 "Through The Back Door"
- Minitmeni.15.t:0 "Main Entrance"
- Minitmeni.15.d:0 "The vault dweller decided to go 111 on a break through the main entrance,fortunately it was fully staffed and had no enemies don't stand a chance...Once inside he was not found out not anyone inside,but he was included siren who worked throughout the building reporting the offender.The vault dweller 111,began to look on this basis the leader of the gang,a lot of raiders met him on the way and they all end the same...Death, but here is our hero has reached almost the top of the plant, when he suddenly noticed one raider,who was more than all the others,you do not need to be a big mind to understand,he is the leader of the gang, started a firefight fir...groin...bang....boom..tutututu boss raiders drops dead and the vault dweller 111 solemnly bends over his corpse.After completing the task the vault dweller returned to Tenpay bluff,residents who thanked him for his help and promised to join the ranks of the Minutemen..."
- Minitmeni.15.a:0 "We need to tell Preston Garvey."
- Minitmeni.16.t:0 "Back Entrance"
- Minitmeni.16.d:0 "The vault dweller 111 decides to go through the back door,because apparently it's safer just came closer, he notices the raider,who guards the entrance,you noticeable sneaking up on him with a knife,a direct blow to the throat,cut his throat and lay on the ground...in 40 seconds, he dies.Removing the corpse you open the door of the back entrance and go inside,but not noticing that there is no floor under you, you fell into a VAT of Hot water and died"
- Minitmeni.16.a:0 "****"
- Minitmeni.17.t:0 "Exploration Battle"
- Minitmeni.17.d:0 "To ensure our success in retaking Fort Independence, Preston decided to strengthen our positions by establishing control in the nearby area controlled by Gunners. Taking a couple of minutemen with him, Preston went to the Gwinnet Restaurant under cover of the night. As he got closer, Garvey heard the sounds of beatings and laughter. He signaled, and the minutemen began slowly walk the source of the sound. Approaching the source of the sound, Preston saw an unpleasant picture for himself: The Gunners were beating a man, while simultaneously mocking him. Preston could not stand such rigidity and gave the signal to attack. Before they could even turn around at the sound of the laser muskets, the Gunners were reduced to dust. Putting the laser musket on his back, Preston hurried to the poor man's aid. Despite the severity of his injuries, the man held on tightly and while the minutemen gave him first aid, he asked: "Thank you for your help, without you I would have met my end. Are you the Minutemen I've heard so much about?" I am from a settlement nearby and was just going to ask for help and join your good cause. It seems that fate itself has brought me to you"
- Minitmeni.17.a:0 "Successful Campaign"
- 
- 
- 
- 
- 
- 
  vault101ev.1.t:0 "Clearings"
  vault101ev.1.d:0 "There was not enough time and the Overseer of Vault 101 finally opened the Vault. It became clear that the earlier inhabitants of Vault 101 had gone rogue. However, disputes about when it happened first did not cease for a second. People expect that they will tell the caretaker. What do you say, sir?."
  vault101ev.1.a:0 "70 years later"
