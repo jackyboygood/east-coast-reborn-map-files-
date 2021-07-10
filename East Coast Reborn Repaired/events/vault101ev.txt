@@ -55,33 +55,33 @@ country_event = {
 	option = {
 		name = vault101ev.2.a
 		add_ideas = crimserv
-		add_ideas = djeymsescape
+		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 45 id = newsfallout.1 }
+			country_event = { days = 1 id = newsfallout.1 }
 		}
 	}
 	option = {
 		name = vault101ev.2.b
 		add_ideas = crimslaves
-		add_ideas = djeymsescape
+		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 45 id = newsfallout.1 }
+			country_event = { days = 1 id = newsfallout.1 }
 		}
 	}
 	option = {
 		name = vault101ev.2.c
 		add_ideas = crimwar
-		add_ideas = djeymsescape
+		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 45 id = newsfallout.1 }
+			country_event = { days = 1 id = newsfallout.1 }
 		}
 	}
 	option = {
 		name = vault101ev.2.e
 		add_ideas = crimkill
-		add_ideas = djeymsescape
+		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 45 id = newsfallout.1 }
+			country_event = { days = 1 id = newsfallout.1 }
 		}
 	}
 }
