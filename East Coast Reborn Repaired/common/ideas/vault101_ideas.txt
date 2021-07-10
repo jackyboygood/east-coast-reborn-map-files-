@@ -1,6 +1,22 @@
 ideas = {
     country = {
 	
+		James_Escape = {
+			picture = James
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.075
+			}
+		}
+	
 	    vault101buch = {
 
 			picture = vault101buch

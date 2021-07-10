@@ -167,22 +167,6 @@ ideas = {
 			}
 		}
 		
-		djeymsescape = {
-			picture = dad
-			allowed = {
-				always = no
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.075
-			}
-		}
-		
 		ESP_FEV_soldiers = {  
 			picture = enc_super_soldiers
 			allowed = { 
@@ -284,5 +268,66 @@ ideas = {
 			   political_power_gain = -0.20
 			}
 		}
+		
+		ESP_slave_labour = {
+			picture = slaves_1_idea
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				conscription_factor = -0.2
+			}
+		}
+		
+		ESP_slave_labour_collars = {
+			picture = slave_collars
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				industrial_capacity_dockyard = 0.20
+				conscription_factor = -0.05
+				compliance_gain = 0.50
+				required_garrison_factor = -0.20
+			}
+		}
+		
+		ESP_slave_labour_mutants = {
+			picture = tolerance_mutants_allowed
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				industrial_capacity_factory = 0.20
+				industrial_capacity_dockyard = 0.20
+				conscription_factor = -0.05
+				production_speed_buildings_factor = 0.2
+				compliance_gain = 0.50
+				required_garrison_factor = -0.10
+			}
+		}
+		
+		
+		
 	}
 }
