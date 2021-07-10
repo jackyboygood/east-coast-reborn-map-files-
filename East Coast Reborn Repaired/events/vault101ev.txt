@@ -1,14 +1,14 @@
 ﻿add_namespace = vault101ev
 
 country_event = {
-	id = vault101ev.1
-	title = vault101ev.1.t
-	desc = vault101ev.1.d
+	id = USP_event.1
+	title = USP_event.1.t
+	desc = USP_event.1.d
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.1.a
+		name = USP_event.1.a
 		add_manpower = 1000
 		988 = {
 			add_building_construction = {
@@ -19,7 +19,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.1.b
+		name = USP_event.1.b
 		add_manpower = 600
 		988 = {
 			add_building_construction = {
@@ -31,7 +31,7 @@ country_event = {
 		#add_ideas = years
 	}
 	option = {
-		name = vault101ev.1.c
+		name = USP_event.1.c
 
 		add_manpower = 400
 		988 = {
@@ -45,15 +45,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = vault101ev.2
-	title = vault101ev.2.t
-	desc = vault101ev.2.d
+	id = USP_event.2
+	title = USP_event.2.t
+	desc = USP_event.2.d
     picture = GFX_event_vaultescepe
 	
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.2.a
+		name = USP_event.2.a
 		add_ideas = crimserv
 		add_ideas = James_Escape
 		hidden_effect = {
@@ -61,7 +61,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.2.b
+		name = USP_event.2.b
 		add_ideas = crimslaves
 		add_ideas = James_Escape
 		hidden_effect = {
@@ -69,7 +69,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.2.c
+		name = USP_event.2.c
 		add_ideas = crimwar
 		add_ideas = James_Escape
 		hidden_effect = {
@@ -77,7 +77,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.2.e
+		name = USP_event.2.e
 		add_ideas = crimkill
 		add_ideas = James_Escape
 		hidden_effect = {
@@ -86,15 +86,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = vault101ev.3
-	title = vault101ev.3.t
-	desc = vault101ev.3.d
+	id = USP_event.3
+	title = USP_event.3.t
+	desc = USP_event.3.d
 	picture = GFX_event_vaultescepe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.3.a
+		name = USP_event.3.a
 		add_resource = {
 			type = metal
 			amount = 2
@@ -112,7 +112,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.3.b
+		name = USP_event.3.b
 		set_technology = {
 			energy_weaponry_tech_1 = 1
 		}
@@ -128,7 +128,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.3.c
+		name = USP_event.3.c
 		add_resource = {
 			type = composites
 			amount = 5
@@ -148,32 +148,32 @@ country_event = {
 }
 
 country_event = {
-	id = vault101ev.4
-	title = vault101ev.4.t
-	desc = vault101ev.4.d
+	id = USP_event.4
+	title = USP_event.4.t
+	desc = USP_event.4.d
 	picture = GFX_event_megtona
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.4.a
+		name = USP_event.4.a
 		add_political_power = 15
 		add_manpower = 60
 		hidden_effect = { # Radio Focus
-			country_event = { days = 45 id = vault101ev.6 }
+			country_event = { days = 45 id = USP_event.6 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.5
-	title = vault101ev.5.t
-	desc = vault101ev.5.d
+	id = USP_event.5
+	title = USP_event.5.t
+	desc = USP_event.5.d
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.5.a
+		name = USP_event.5.a
 		add_political_power = 15
 		add_manpower = 60
 		
@@ -181,57 +181,57 @@ country_event = {
 }
 
 country_event = {
-	id = vault101ev.6
-	title = vault101ev.6.t
-	desc = vault101ev.6.d
+	id = USP_event.6
+	title = USP_event.6.t
+	desc = USP_event.6.d
 	picture = GFX_event_megtona1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.6.a
+		name = USP_event.6.a
 		ai_chance = { 
 			factor = 100 
 		}
 		add_ideas = SBS_radio
 		add_political_power = 20
 		hidden_effect = { #ThreeDog
-			country_event = { days = 45 id = vault101ev.7 }
+			country_event = { days = 45 id = USP_event.7 }
 			
 		}
 	}
 	option = {
-		name = vault101ev.6.b
+		name = USP_event.6.b
 		add_political_power = 10
 		add_manpower = 50
 		hidden_effect = { #ThreeDog
-			country_event = { days = 45 id = vault101ev.7 }
+			country_event = { days = 45 id = USP_event.7 }
 		}
 	}
 	
 }
 
 country_event = {
-	id = vault101ev.7
-	title = vault101ev.7.t
-	desc = vault101ev.7.d
+	id = USP_event.7
+	title = USP_event.7.t
+	desc = USP_event.7.d
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.7.a
+		name = USP_event.7.a
 		add_political_power = 15
 		add_manpower = 60
 		hidden_effect = { # it happens again eventually
-			country_event = { days = 45 id = vault101ev.8 }
+			country_event = { days = 45 id = USP_event.8 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.8
-	title = vault101ev.8.t
-	desc = vault101ev.8.d
+	id = USP_event.8
+	title = USP_event.8.t
+	desc = USP_event.8.d
 
 	is_triggered_only = yes
 
@@ -240,663 +240,663 @@ country_event = {
 	}
 
 	option = {
-		name = vault101ev.8.a
+		name = USP_event.8.a
         ai_chance = { 
 			factor = 100 
 		}
 		USP = { transfer_state = 1025}
         1025 = { add_core_of = USP }				
 		hidden_effect = { #Meeting Raider
-			country_event = { days = 45 id = vault101ev.9 }
+			country_event = { days = 45 id = USP_event.9 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.9
-	title = vault101ev.9.t
-	desc = vault101ev.9.d
+	id = USP_event.9
+	title = USP_event.9.t
+	desc = USP_event.9.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.9.a
+		name = USP_event.9.a
 		country_event = {
-				id = vault101ev.10
+				id = USP_event.10
 		}
 		
 	}
 	option = {
-		name = vault101ev.9.b
+		name = USP_event.9.b
 		country_event = {
-				id = vault101ev.11
+				id = USP_event.11
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.10
-	title = vault101ev.10.t
-	desc = vault101ev.10.d
+	id = USP_event.10
+	title = USP_event.10.t
+	desc = USP_event.10.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.10.a
+		name = USP_event.10.a
 		add_political_power = 30
 		hidden_effect = { #Metro
-			country_event = { days = 45 id = vault101ev.17 }
+			country_event = { days = 45 id = USP_event.17 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.11
-	title = vault101ev.11.t
-	desc = vault101ev.11.d
+	id = USP_event.11
+	title = USP_event.11.t
+	desc = USP_event.11.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.11.a
+		name = USP_event.11.a
 		add_political_power = 5
 		add_manpower = -30
 	    country_event = {
-				id = vault101ev.12
+				id = USP_event.12
 		}
 	}
 	option = {
-		name = vault101ev.11.b
+		name = USP_event.11.b
 		country_event = {
-				id = vault101ev.9
+				id = USP_event.9
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.12
-	title = vault101ev.12.t
-	desc = vault101ev.12.d
+	id = USP_event.12
+	title = USP_event.12.t
+	desc = USP_event.12.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.12.a
+		name = USP_event.12.a
 		country_event = {
-				id = vault101ev.13
+				id = USP_event.13
 		}
 	}
 	option = {
-		name = vault101ev.12.b
+		name = USP_event.12.b
 		country_event = {
-				id = vault101ev.14
+				id = USP_event.14
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.13
-	title = vault101ev.13.t
-	desc = vault101ev.13.d
+	id = USP_event.13
+	title = USP_event.13.t
+	desc = USP_event.13.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.13.a
+		name = USP_event.13.a
 		add_political_power = -150
 		country_event = {
-				id = vault101ev.15
+				id = USP_event.15
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.14
-	title = vault101ev.14.t
-	desc = vault101ev.14.d
+	id = USP_event.14
+	title = USP_event.14.t
+	desc = USP_event.14.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.14.a
+		name = USP_event.14.a
 		add_political_power = 15
 		add_manpower = 60
 		hidden_effect = { #Metro
-			country_event = { days = 45 id = vault101ev.17 }
+			country_event = { days = 45 id = USP_event.17 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.15
-	title = vault101ev.15.t
-	desc = vault101ev.15.d
+	id = USP_event.15
+	title = USP_event.15.t
+	desc = USP_event.15.d
 	picture = GFX_event_Metro_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.15.a
+		name = USP_event.15.a
 		add_political_power = 15
 		add_manpower = 20
 		country_event = {
-				id = vault101ev.16
+				id = USP_event.16
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.16
-	title = vault101ev.16.t
-	desc = vault101ev.16.d
+	id = USP_event.16
+	title = USP_event.16.t
+	desc = USP_event.16.d
 	picture = GFX_event_Metro_washington1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.16.a
+		name = USP_event.16.a
 		add_political_power = 20
 		add_manpower = -165
 		add_ideas = vaultherometro
 		hidden_effect = { #Metro
-			country_event = { days = 45 id = vault101ev.17 }
+			country_event = { days = 45 id = USP_event.17 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.17
-	title = vault101ev.17.t
-	desc = vault101ev.17.d
+	id = USP_event.17
+	title = USP_event.17.t
+	desc = USP_event.17.d
 	picture = GFX_event_washington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.17.a
+		name = USP_event.17.a
 		country_event = {
-				id = vault101ev.18
+				id = USP_event.18
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.18
-	title = vault101ev.18.t
-	desc = vault101ev.18.d
+	id = USP_event.18
+	title = USP_event.18.t
+	desc = USP_event.18.d
 	picture = GFX_event_washington1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.18.a
+		name = USP_event.18.a
 		add_manpower = 200
 		country_event = {
-				id = vault101ev.19
+				id = USP_event.19
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.19
-	title = vault101ev.19.t
-	desc = vault101ev.19.d
+	id = USP_event.19
+	title = USP_event.19.t
+	desc = USP_event.19.d
 	picture = GFX_event_washington2
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.19.a
+		name = USP_event.19.a
 		add_manpower = 60
 		add_political_power = 15
 		country_event = {
-				id = vault101ev.20
+				id = USP_event.20
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.20
-	title = vault101ev.20.t
-	desc = vault101ev.20.d
+	id = USP_event.20
+	title = USP_event.20.t
+	desc = USP_event.20.d
 	picture = GFX_event_washington3
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.20.a
+		name = USP_event.20.a
 		add_political_power = 70
 		hidden_effect = {
 			country_event = { days = 45 id = newsfallout.5 }
-	        country_event = { days = 45 id = vault101ev.21 }
+	        country_event = { days = 45 id = USP_event.21 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.21
-	title = vault101ev.21.t
-	desc = vault101ev.21.d
+	id = USP_event.21
+	title = USP_event.21.t
+	desc = USP_event.21.d
 	picture = GFX_event_washington4
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.21.a
+		name = USP_event.21.a
 		add_political_power = 30
 		hidden_effect = {
-		country_event = { days = 45 id = vault101ev.22 }
+		country_event = { days = 45 id = USP_event.22 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.22
-	title = vault101ev.22.t
-	desc = vault101ev.22.d
+	id = USP_event.22
+	title = USP_event.22.t
+	desc = USP_event.22.d
 	picture = GFX_event_Rive_city
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.22.a
+		name = USP_event.22.a
 		country_event = {
-				id = vault101ev.23
+				id = USP_event.23
 				
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.23
-	title = vault101ev.23.t
-	desc = vault101ev.23.d
+	id = USP_event.23
+	title = USP_event.23.t
+	desc = USP_event.23.d
 	picture = GFX_event_Rive_city1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.23.a
+		name = USP_event.23.a
         add_political_power = 20
 		add_manpower = 50
 		hidden_effect = {
-	        country_event = { days = 45 id = vault101ev.24 }
+	        country_event = { days = 45 id = USP_event.24 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.24
-	title = vault101ev.24.t
-	desc = vault101ev.24.d
+	id = USP_event.24
+	title = USP_event.24.t
+	desc = USP_event.24.d
 	picture = GFX_event_vault112
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.24.a
+		name = USP_event.24.a
         country_event = {
-				id = vault101ev.25
+				id = USP_event.25
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.25
-	title = vault101ev.25.t
-	desc = vault101ev.25.d
+	id = USP_event.25
+	title = USP_event.25.t
+	desc = USP_event.25.d
 	picture = GFX_event_vault112a
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.25.a
+		name = USP_event.25.a
         country_event = {
-				id = vault101ev.26
+				id = USP_event.26
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.26
-	title = vault101ev.26.t
-	desc = vault101ev.26.d
+	id = USP_event.26
+	title = USP_event.26.t
+	desc = USP_event.26.d
 	picture = GFX_event_vault112b
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.26.a
+		name = USP_event.26.a
 		country_event = {
-				id = vault101ev.27
+				id = USP_event.27
 		}
 		
 	}
 	option = {
-		name = vault101ev.26.b
+		name = USP_event.26.b
 		country_event = {
-				id = vault101ev.30
+				id = USP_event.30
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.27
-	title = vault101ev.27.t
-	desc = vault101ev.27.d
+	id = USP_event.27
+	title = USP_event.27.t
+	desc = USP_event.27.d
 	picture = GFX_event_vault112v
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.27.a
+		name = USP_event.27.a
 		country_event = {
-				id = vault101ev.28
+				id = USP_event.28
 		}
 		
 	}
 	option = {
-		name = vault101ev.27.b
+		name = USP_event.27.b
 		country_event = {
-				id = vault101ev.26
+				id = USP_event.26
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.28
-	title = vault101ev.28.t
-	desc = vault101ev.28.d
+	id = USP_event.28
+	title = USP_event.28.t
+	desc = USP_event.28.d
 	picture = GFX_event_vault112d
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.28.a
+		name = USP_event.28.a
         country_event = {
-				id = vault101ev.29
+				id = USP_event.29
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.29
-	title = vault101ev.29.t
-	desc = vault101ev.29.d
+	id = USP_event.29
+	title = USP_event.29.t
+	desc = USP_event.29.d
 	picture = GFX_event_vault112f
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.29.a
+		name = USP_event.29.a
         add_ideas = nonpravila
 		add_manpower = 150
 		hidden_effect = {
-	        country_event = { days = 45 id = vault101ev.37 }
+	        country_event = { days = 45 id = USP_event.37 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.30
-	title = vault101ev.30.t
-	desc = vault101ev.30.d
+	id = USP_event.30
+	title = USP_event.30.t
+	desc = USP_event.30.d
 	picture = GFX_event_vault112e
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.30.a
+		name = USP_event.30.a
         country_event = {
-				id = vault101ev.31
+				id = USP_event.31
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.31
-	title = vault101ev.31.t
-	desc = vault101ev.31.d
+	id = USP_event.31
+	title = USP_event.31.t
+	desc = USP_event.31.d
 	picture = GFX_event_vault112t
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.31.a
+		name = USP_event.31.a
 		country_event = {
-				id = vault101ev.32
+				id = USP_event.32
 		}
 		
 	}
 	option = {
-		name = vault101ev.31.b
+		name = USP_event.31.b
 		country_event = {
-				id = vault101ev.35
+				id = USP_event.35
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.32
-	title = vault101ev.32.t
-	desc = vault101ev.32.d
+	id = USP_event.32
+	title = USP_event.32.t
+	desc = USP_event.32.d
 	picture = GFX_event_vault112s
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.32.a
+		name = USP_event.32.a
         country_event = {
-				id = vault101ev.33
+				id = USP_event.33
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.33
-	title = vault101ev.33.t
-	desc = vault101ev.33.d
+	id = USP_event.33
+	title = USP_event.33.t
+	desc = USP_event.33.d
 	picture = GFX_event_vault112x
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.33.a
+		name = USP_event.33.a
         country_event = {
-				id = vault101ev.34
+				id = USP_event.34
 		}
 	}
 	option = {
-		name = vault101ev.33.b
+		name = USP_event.33.b
 		country_event = {
-				id = vault101ev.34
+				id = USP_event.34
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.34
-	title = vault101ev.34.t
-	desc = vault101ev.34.d
+	id = USP_event.34
+	title = USP_event.34.t
+	desc = USP_event.34.d
 	picture = GFX_event_vault112f
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.34.a
+		name = USP_event.34.a
         add_political_power = 20
 		add_ideas = pravila
 		hidden_effect = {
-	        country_event = { days = 45 id = vault101ev.37 }
+	        country_event = { days = 45 id = USP_event.37 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.35
-	title = vault101ev.35.t
-	desc = vault101ev.35.d
+	id = USP_event.35
+	title = USP_event.35.t
+	desc = USP_event.35.d
 	picture = GFX_event_vault112c
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.35.a
+		name = USP_event.35.a
         country_event = {
-				id = vault101ev.36
+				id = USP_event.36
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.36
-	title = vault101ev.36.t
-	desc = vault101ev.36.d
+	id = USP_event.36
+	title = USP_event.36.t
+	desc = USP_event.36.d
 	picture = GFX_event_vault112y
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.36.a
+		name = USP_event.36.a
         country_event = {
-				id = vault101ev.34
+				id = USP_event.34
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.37
-	title = vault101ev.37.t
-	desc = vault101ev.37.d
+	id = USP_event.37
+	title = USP_event.37.t
+	desc = USP_event.37.d
 	picture = GFX_event_Rive_city1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.37.a
+		name = USP_event.37.a
         create_faction = Stolichnoy
 		add_to_faction = RIV
 		hidden_effect = {
-		country_event = { days = 45 id = vault101ev.38}
+		country_event = { days = 45 id = USP_event.38}
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.38
-	title = vault101ev.38.t
-	desc = vault101ev.38.d
+	id = USP_event.38
+	title = USP_event.38.t
+	desc = USP_event.38.d
 	picture = GFX_event_memrialwashington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.38.a
+		name = USP_event.38.a
         country_event = {
-				id = vault101ev.39
+				id = USP_event.39
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.39
-	title = vault101ev.39.t
-	desc = vault101ev.39.d
+	id = USP_event.39
+	title = USP_event.39.t
+	desc = USP_event.39.d
 	picture = GFX_event_memrialwashington1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.39.a
+		name = USP_event.39.a
         RIV = { 
 			transfer_state = 974
 		}
 		hidden_effect = {
-	        country_event = { days = 45 id = vault101ev.40 }
+	        country_event = { days = 45 id = USP_event.40 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.40
-	title = vault101ev.40.t
-	desc = vault101ev.40.d
+	id = USP_event.40
+	title = USP_event.40.t
+	desc = USP_event.40.d
 	picture = GFX_event_memrialwashington
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.40.a
+		name = USP_event.40.a
         country_event = {
-				id = vault101ev.41
+				id = USP_event.41
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.41
-	title = vault101ev.41.t
-	desc = vault101ev.41.d
+	id = USP_event.41
+	title = USP_event.41.t
+	desc = USP_event.41.d
 	picture = GFX_event_memrialwashington2
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.41.a
+		name = USP_event.41.a
         country_event = {
-				id = vault101ev.42
+				id = USP_event.42
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.42
-	title = vault101ev.42.t
-	desc = vault101ev.42.d
+	id = USP_event.42
+	title = USP_event.42.t
+	desc = USP_event.42.d
 	picture = GFX_event_memrialwashington3
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.42.a
+		name = USP_event.42.a
         country_event = {
-				id = vault101ev.43
+				id = USP_event.43
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.43
-	title = vault101ev.43.t
-	desc = vault101ev.43.d
+	id = USP_event.43
+	title = USP_event.43.t
+	desc = USP_event.43.d
 	picture = GFX_event_memrialwashington4
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.43.a
+		name = USP_event.43.a
         country_event = {
-				id = vault101ev.44
+				id = USP_event.44
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.44
-	title = vault101ev.44.t
-	desc = vault101ev.44.d
+	id = USP_event.44
+	title = USP_event.44.t
+	desc = USP_event.44.d
 	picture = GFX_event_memrialwashington5
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.44.a
+		name = USP_event.44.a
         ESP = { 
 			transfer_state = 974
 			974 = { add_core_of = ESP }
@@ -907,82 +907,82 @@ country_event = {
 				country_event = { days = 3 id = newsfallout.2 }
 		    }				
 		}
-	    country_event = { days = 45 id = vault101ev.45 }
+	    country_event = { days = 45 id = USP_event.45 }
 		}
 }
 
 country_event = {
-	id = vault101ev.45
-	title = vault101ev.45.t
-	desc = vault101ev.45.d
+	id = USP_event.45
+	title = USP_event.45.t
+	desc = USP_event.45.d
 	picture = GFX_event_citadel
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.45.a
+		name = USP_event.45.a
         country_event = {
-				id = vault101ev.46
+				id = USP_event.46
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.46
-	title = vault101ev.46.t
-	desc = vault101ev.46.d
+	id = USP_event.46
+	title = USP_event.46.t
+	desc = USP_event.46.d
 	picture = GFX_event_citadel1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.46.a
+		name = USP_event.46.a
 		add_to_faction = SBS
 		add_political_power = 20
 		add_manpower = 500
 		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
 		add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_land_doctrine }
 		hidden_effect = {
-	        country_event = { days = 45 id = vault101ev.47 }
+	        country_event = { days = 45 id = USP_event.47 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.47
-	title = vault101ev.47.t
-	desc = vault101ev.47.d
+	id = USP_event.47
+	title = USP_event.47.t
+	desc = USP_event.47.d
 	picture = GFX_event_litl_lamplayt
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.47.a
+		name = USP_event.47.a
 		ai_chance = { 
 			factor = 100 
 		}
         country_event = {
-				id = vault101ev.48
+				id = USP_event.48
 		}
 	}
 	option = {
-		name = vault101ev.47.b
+		name = USP_event.47.b
 		country_event = {
-				id = vault101ev.49
+				id = USP_event.49
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.48
-	title = vault101ev.48.t
-	desc = vault101ev.48.d
+	id = USP_event.48
+	title = USP_event.48.t
+	desc = USP_event.48.d
 	picture = GFX_event_litl_lamplayt1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.48.a
+		name = USP_event.48.a
 		ai_chance = { 
 			factor = 100 
 		}
@@ -994,22 +994,22 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-	        country_event = { days = 60 id = vault101ev.50 }
+	        country_event = { days = 60 id = USP_event.50 }
 		}
 		
 	}
 }
 
 country_event = {
-	id = vault101ev.49
-	title = vault101ev.49.t
-	desc = vault101ev.49.d
+	id = USP_event.49
+	title = USP_event.49.t
+	desc = USP_event.49.d
 	picture = GFX_event_litl_lamplayt2
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.49.a
+		name = USP_event.49.a
         add_ideas = killchildren
 		add_manpower = -100
 		declare_war_on = {
@@ -1026,11 +1026,11 @@ country_event = {
 		    }
 		}
     	hidden_effect = {
-	        country_event = { days = 60 id = vault101ev.50 }
+	        country_event = { days = 60 id = USP_event.50 }
 		}		
 	}
 	option = {
-		name = vault101ev.49.b
+		name = USP_event.49.b
 		add_ideas = nokillchildren
 		add_manpower = -50
 		declare_war_on = {
@@ -1047,127 +1047,127 @@ country_event = {
 		    }
 		}
 		hidden_effect = {
-	        country_event = { days = 60 id = vault101ev.50 }
+	        country_event = { days = 60 id = USP_event.50 }
 		}	
 	}
 }
 
 country_event = {
-	id = vault101ev.50
-	title = vault101ev.50.t
-	desc = vault101ev.50.d
+	id = USP_event.50
+	title = USP_event.50.t
+	desc = USP_event.50.d
 	picture = GFX_event_vault87
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.50.a
+		name = USP_event.50.a
         country_event = {
-				id = vault101ev.51
+				id = USP_event.51
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.51
-	title = vault101ev.51.t
-	desc = vault101ev.51.d
+	id = USP_event.51
+	title = USP_event.51.t
+	desc = USP_event.51.d
 	picture = GFX_event_1vault87
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.51.a
+		name = USP_event.51.a
         country_event = {
-				id = vault101ev.52
+				id = USP_event.52
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.52
-	title = vault101ev.52.t
-	desc = vault101ev.52.d
+	id = USP_event.52
+	title = USP_event.52.t
+	desc = USP_event.52.d
 	picture = GFX_event_vault871
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.52.a
+		name = USP_event.52.a
         country_event = {
-				id = vault101ev.53
+				id = USP_event.53
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.53
-	title = vault101ev.53.t
-	desc = vault101ev.53.d
+	id = USP_event.53
+	title = USP_event.53.t
+	desc = USP_event.53.d
 	picture = GFX_event_vault872
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.53.a
+		name = USP_event.53.a
         country_event = {
-				id = vault101ev.54
+				id = USP_event.54
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.54
-	title = vault101ev.54.t
-	desc = vault101ev.54.d
+	id = USP_event.54
+	title = USP_event.54.t
+	desc = USP_event.54.d
 	picture = GFX_event_vault873
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.54.a
+		name = USP_event.54.a
 		ai_chance = { 
 			factor = 100 
 		}
         country_event = {
-				id = vault101ev.55
+				id = USP_event.55
 		}
 	}
 	option = {
-		name = vault101ev.54.b
+		name = USP_event.54.b
 		add_ideas = ghulvi
 		country_event = {
-				id = vault101ev.55
+				id = USP_event.55
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.55
-	title = vault101ev.55.t
-	desc = vault101ev.53.d
+	id = USP_event.55
+	title = USP_event.55.t
+	desc = USP_event.53.d
 	picture = GFX_event_vault874
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.55.a
+		name = USP_event.55.a
         country_event = {
-				id = vault101ev.56
+				id = USP_event.56
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.56
-	title = vault101ev.56.t
-	desc = vault101ev.56.d
+	id = USP_event.56
+	title = USP_event.56.t
+	desc = USP_event.56.d
 	picture = GFX_event_vault875
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.56.a
+		name = USP_event.56.a
         ESP = { 
 			transfer_state = 1005
 			1005 = { add_core_of = ESP }
@@ -1179,94 +1179,94 @@ country_event = {
 			}	
 		}
 		hidden_effect = {
-	        country_event = { days = 60 id = vault101ev.57 }
+	        country_event = { days = 60 id = USP_event.57 }
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.57
-	title = vault101ev.57.t
-	desc = vault101ev.57.d
+	id = USP_event.57
+	title = USP_event.57.t
+	desc = USP_event.57.d
 	picture = GFX_event_rayvenrock
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.57.a
+		name = USP_event.57.a
         country_event = {
-				id = vault101ev.58
+				id = USP_event.58
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.58
-	title = vault101ev.58.t
-	desc = vault101ev.58.d
+	id = USP_event.58
+	title = USP_event.58.t
+	desc = USP_event.58.d
 	picture = GFX_event_rayvenrock1
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.58.a
+		name = USP_event.58.a
         country_event = {
-				id = vault101ev.59
+				id = USP_event.59
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.59
-	title = vault101ev.59.t
-	desc = vault101ev.59.d
+	id = USP_event.59
+	title = USP_event.59.t
+	desc = USP_event.59.d
 	picture = GFX_event_rayvenrock2
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.59.a
+		name = USP_event.59.a
         country_event = {
-				id = vault101ev.60
+				id = USP_event.60
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.60
-	title = vault101ev.60.t
-	desc = vault101ev.60.d
+	id = USP_event.60
+	title = USP_event.60.t
+	desc = USP_event.60.d
 	picture = GFX_event_rayvenrock3
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.60.a
+		name = USP_event.60.a
 		ai_chance = { 
 			factor = 100 
 		}
         country_event = {
-				id = vault101ev.61
+				id = USP_event.61
 		}
 	}
 	option = {
-		name = vault101ev.60.b
+		name = USP_event.60.b
 		country_event = {
-				id = vault101ev.62
+				id = USP_event.62
 		}
 	}
 }
 
 country_event = {
-	id = vault101ev.61
-	title = vault101ev.61.t
-	desc = vault101ev.61.d
+	id = USP_event.61
+	title = USP_event.61.t
+	desc = USP_event.61.d
 	picture = GFX_event_rayvenrock4
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.61.a
+		name = USP_event.61.a
         ESP = { 
 			add_political_power = 100
 		    add_manpower = 1000
@@ -1279,15 +1279,15 @@ country_event = {
 }
 
 country_event = {
-	id = vault101ev.62
-	title = vault101ev.62.t
-	desc = vault101ev.62.d
+	id = USP_event.62
+	title = USP_event.62.t
+	desc = USP_event.62.d
 	picture = GFX_event_rayvenrock5
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.62.a
+		name = USP_event.62.a
         USP = { 
 			add_political_power = 60
 		    add_manpower = 520
@@ -1299,7 +1299,7 @@ country_event = {
 			}
 		set_country_flag = ready_for_battle
 		hidden_effect = {
-		country_event = { days = 45 id = vault101ev.64 }
+		country_event = { days = 45 id = USP_event.64 }
 		set_politics = {
 			ruling_party = ruler
 			elections_allowed = no
@@ -1337,15 +1337,15 @@ country_event = {
 }
 
 country_event = {
-	id = vault101ev.63
-	title = vault101ev.63.t
-	desc = vault101ev.63.d
+	id = USP_event.63
+	title = USP_event.63.t
+	desc = USP_event.63.d
 	picture = GFX_event_1vault101
 
 	is_triggered_only = yes
 
 	option = {
-		name = vault101ev.63.a
+		name = USP_event.63.a
 		ai_chance = {
 			factor = 25
 		}
@@ -1361,7 +1361,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vault101ev.63.b
+		name = USP_event.63.b
 		ai_chance = {
 			factor = 25
 		}
@@ -1380,16 +1380,16 @@ country_event = {
 }
 
 country_event = {
-	id = vault101ev.64
-	title = vault101ev.64.t
-	desc = vault101ev.64.d
+	id = USP_event.64
+	title = USP_event.64.t
+	desc = USP_event.64.d
 	picture = GFX_event_2vault101
 
 	is_triggered_only = yes
 	
 	#civil war starts
 	option = {
-		name = vault101ev.64.a
+		name = USP_event.64.a
 		hidden_effect = {
 			set_capital = 988
 			start_civil_war = {

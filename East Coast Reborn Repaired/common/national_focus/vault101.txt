@@ -39,7 +39,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = vault101ev.1
+				id = USP_event.1
 		    }
 		}
 	}
@@ -74,7 +74,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = vault101ev.2
+				id = USP_event.2
 		    }
 		}
 	}
@@ -109,7 +109,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = vault101ev.3
+				id = USP_event.3
 		    }
 		}
 	}
@@ -423,7 +423,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = vault101ev.4
+				id = USP_event.4
 		    }
 		}
 	}
@@ -579,7 +579,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] vault101_33 entered"
 			}
 			country_event = {
-				id = vault101ev.63
+				id = USP_event.63
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -799,7 +799,7 @@ focus_tree = {
 		
 		completion_reward = {
 		    add_stability = -0.1
-			country_event = { id = vault101ev.64 }
+			country_event = { id = USP_event.64 }
 		}
 	}
 	
