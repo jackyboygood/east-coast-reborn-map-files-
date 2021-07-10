@@ -767,7 +767,12 @@ focus_tree = {
 		y = 1
 		cost = 60
 		completion_reward = {
-			add_manpower = 600
+		1041 = {
+			set_temp_variable = {
+					pop_add = 10000
+				}
+			add_state_population = yes
+			}
 		}
 	}
 	
