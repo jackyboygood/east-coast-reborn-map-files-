@@ -1358,7 +1358,7 @@ spriteTypes = {
 	
 	SpriteType = {
 	name = "GFX_goal_SBS_exp_Inst"
-	texturefile = "gfx/interface/goals/SBS/SBS_exp_Inst.dds"		
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_INS_event.dds"		
 	}
 	
 	SpriteType = {

@@ -1710,7 +1710,7 @@ focus_tree = {
 			1013 = { add_core_of = BSS }
 			hidden_effect = {
 				INS = {
-					country_event = inst.5
+					country_event = INS_event.5
 				}
 				MEN = {
 					country_event = Minitmeni.18

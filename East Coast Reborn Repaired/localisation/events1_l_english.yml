@@ -87,6 +87,30 @@
   ENC_event.14.d:0 "The past few weeks of innocuation have yielded great results. Improvements to the vaccine have allowed us to cure a majority of New York. That being said, the Brotherhood of Steel have been less excited about our success. They attacked one of our convoys and stole cases of the vaccine destined for the inhabitants of Brookhaven. The Brotherhood immediatly started innocuating their own citizens, bringing hundreds of citizens into their cause. The Brotherhood must be stopped!
   ENC_event.14.a:0 "Conflict is inevitable"
 
+  # INS
+  INS_event.1.t:0 "Redevelopment"
+  INS_event.1.d:0 "Ever since our new Governer, a man who goes by 'Father', rose to power in the Institute, things have changed drastically. New science divisions were opened, many long-standing sections were closed, and massive construction projects were started on the facility. The construction focus was..."
+  INS_event.1.a:0 "Infrastructure"
+  INS_event.1.b:0 "Civilian Factories"
+  INS_event.1.c:0 "Military Factories"
+
+  INS_event.2.t:0 "Goodneighbor War"
+  INS_event.2.d:0 "The patrols of Goodneighbor, lead by the mutant mayor, have interfered in our operations for too long. The city must be eliminated."
+  INS_event.2.a:0 "Give the order"
+
+  INS_event.3.t:0 "The Rise of Diamond City"
+  INS_event.3.d:0 "The residents of Diamond City have found out that Mayor McDonagh and the senior management of Diamond City have been replaced by synths. They have not discovered where these synths come from, but their searches for us have become disruptive. It is time to purge the city of life and replace the residents with synths."
+  INS_event.3.a:0 "No one will notice a difference."
+ 
+  INS_event.4.t:0 "The Fate of the Boston Supermutants"
+  INS_event.4.d:0 "The time has come to decide what will happen to the Boston Super Mutants. Their large bodies will make for an excellent labor force and we can incorporate their warriors into our ranks. Or perhaps keeping them semi-autonomous will allow us to use them as a distraction."
+  INS_event.4.a:0 "Total subjugation"
+  INS_event.4.b:0 "They will be our puppet"
+
+  INS_event.5.t:0 "The Brotherhood of Steel"
+  INS_event.5.d:0 "Our coursers have reported a large flying object landing in the northern part of the Commonwealth. They appear to be equipt with the finest Old World technology. Their intentions in the Commonwealth are as of yet unclear."
+  INS_event.5.a:0 "We will keep our eye on them"
+
   # MEN
   MEN_event.1.t:0 "Protectors of the Commonwealth"
   MEN_event.1.d:0 "This is a dark time in the history of the Minutemen. Many of our finest were killed  the battles with raiders, mutants, and the Gunners. Our base in Fort Independence was taken away from us by the Mirelurks. \nDespite all these losses, the Minutemen still strive to bring hope to the Wasteland and protect those who cannot protect themselves. Our new leader, Preston Garvey, strives to lead us into a brighter future."
@@ -528,34 +552,6 @@
  USP_event.64.d:0 "You have just been informed ... People in the provinces under your control can no longer live in fear and they will die better than they will continue to obey you ... They made their leader Amatu Daughter of the superintendent who could not win the election race, and apparently now she wants to get power by means of the misfortunes of these fools. Whatever it is, she now heads an army of rebels..."
  USP_event.64.a:0 "Cursed *****"
  
- 
- 
- inst.1.t:0 "Redevelopment"
- inst.1.d:0 "With the coming to power of the new governor of the Institute by the code name 'Father', much has changed. New scientific sections appeared, and many of the old ones on the contrary closed, but the reforms did not end with these changes and there are a couple more buildings in turn, we are going to build..."
- inst.1.a:0 "Infrastructure."
- inst.1.b:0 "Civilian Factories."
- inst.1.c:0 "Military Factories."
- inst.2.t:0 "Good Neighborhood War"
- inst.2.d:0 "Neighborhood units led by their mayor, Hancock, impede our operations in the Neighborhood Zone.."
- inst.2.a:0 "To give an order."
- inst.3.t:0 "The Rise of the Residents of Diamond City"
- inst.3.d:0 "The residents of Diamond City have found out that Mayor McDonagh and the senior management of Diamond City have been replaced by synths and now they go to the Mayor to deal with him. It’s not known where they came from, but from somewhere they learned about it, you need to urgently push a detachment of synths to help that you actually do ... Upon arrival, the squad starts firing, destroying everything in its path to the city hall building, there were a lot of shots, deaths, etc. However, they still reached their destination, the squad found the mayor, or rather what it remains ... However, your scientists say that it can still be rebelled it.Vse inhabitants of Diamond City in your order have been eliminated, your next steps?"
- inst.3.a:0 "Replace all residents, synths."
- inst.4.t:0 "The Fate of the Boston Supermutants"
- inst.4.d:0 "The time has come to decide what awaits the Boston Super Mutants, we could easily completely subjugate them all and make them fight for us, or we can give them a little more freedom and allow them to manage their own state, but like our puppet..."
- inst.4.a:0 "Fully Subdue"
- inst.4.b:0 "Make a puppet"
-
- inst.5.t:0 "The Brotherhood of Steel"
- inst.5.d:0 "Our coursers have reported a large flying object landing in the northern part of the Commonwealth. They appear to be equipt with the finest Old World technology. Their intentions in the Commonwealth are as of yet unclear."
- inst.5.a:0 "We will keep our eye on them"
- 
- 
- 
- 
- 
- 
-
  Sovk.1.t:0 "Difficult Relationships"
  Sovk.1.d:0 "Before the bombs fell, we fought a war against the Chinese, who had treacherously attacked our homeland, the United States was not interested in strengthening one of the communist countries, and so he gave our people support, so suddenly, a longtime enemy has suddenly become the most loyal ally After several years of war, Soviet-American relations warmed so much that the then president allowed the Soviet government to place one Soviet base in the United States to protect the heart of America from a possible airborne attack of the enemy.Our the troops were stationed on a small island near 'Ontario', which by that time was already under occupation by the American forces. A few months later, after the construction of the Soviet military base was completed, we were informed of a nuclear threat, as a result of which we had no choice. However, not everyone managed to get out on the island’s shelters, but at least someone..."
  Sovk.1.a:0 "Not many were saved"
@@ -603,11 +599,6 @@
  Sovk.13.t:0 "Meeting with the Ogre Cannibals"
  Sovk.13.d:0 "Tribal warriors came closer, and stunned you and your team. You came to consciousness somewhere in the hills in a huge cauldron. You tried to get out, but you did not succeed: the boiler was too big and how much, and the water boiled and fried your skin, it made you cry out in pain. In your last breath in agony, you shouted 'BE YOU ALL DAMN !!!' "
  Sovk.13.a:0 "Nobody will know about it..."
- 
- 
- 
- 
- 
  
 detievent.1.t: 0 "Offer of the Union"
 detievent.1.d: 0 "Asylum 101" keeps his way to asylum 87 through our lands 'Little-Lamplight' Never before let in strangers, and it is a fool and 101, but asylum-born "had a talent for communicating with children and your people have got trust in them, and now they go with him to you, to negotiate peace, friendship and in general..." how do we do them? "
