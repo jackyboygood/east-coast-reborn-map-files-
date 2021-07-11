@@ -1,15 +1,15 @@
 ﻿add_namespace = Sovk
 
 country_event = {
-	id = Sovk.1
-	title = Sovk.1.t
-	desc = Sovk.1.d
+	id = SOV_event.1
+	title = SOV_event.1.t
+	desc = SOV_event.1.d
 	picture = GFX_event_sovet_events
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.1.a
+		name = SOV_event.1.a
 		add_manpower = -100
 		1066 = {
 			add_building_construction = {
@@ -20,7 +20,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = Sovk.1.b
+		name = SOV_event.1.b
 		add_manpower = 211
 		1066 = {
 			add_building_construction = {
@@ -31,7 +31,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = Sovk.1.c
+		name = SOV_event.1.c
         add_manpower = -500
 		1066 = {
 			add_building_construction = {
@@ -44,15 +44,15 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.2
-	title = Sovk.2.t
-	desc = Sovk.2.d
+	id = SOV_event.2
+	title = SOV_event.2.t
+	desc = SOV_event.2.d
 	picture = GFX_event_sovet_events1
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.2.a
+		name = SOV_event.2.a
 		1066 = {
 			add_manpower = -4500
 		}
@@ -60,15 +60,15 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.3
-	title = Sovk.3.t
-	desc = Sovk.3.d
+	id = SOV_event.3
+	title = SOV_event.3.t
+	desc = SOV_event.3.d
 	picture = GFX_event_sovet_events2
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.3.b
+		name = SOV_event.3.b
 		ai_chance = {
 			factor = 85
 		}
@@ -86,7 +86,7 @@ country_event = {
 
 	}
 	option = {
-		name = Sovk.3.a
+		name = SOV_event.3.a
 		ai_chance = {
 			factor = 30
 		}
@@ -118,15 +118,15 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.4
-	title = Sovk.4.t
-	desc = Sovk.4.d
+	id = SOV_event.4
+	title = SOV_event.4.t
+	desc = SOV_event.4.d
 	picture = GFX_event_sovet_events5
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.4.a
+		name = SOV_event.4.a
 		transfer_state = 1064
 		transfer_state = 1065
 		1064 = { add_core_of = SOV }
@@ -135,15 +135,15 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.5
-	title = Sovk.5.t
-	desc = Sovk.5.d
+	id = SOV_event.5
+	title = SOV_event.5.t
+	desc = SOV_event.5.d
 	picture = GFX_event_sovet_events3
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.5.a
+		name = SOV_event.5.a
 			declare_war_on = {
 				type = annex_everything
 				target = AAG
@@ -152,15 +152,15 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.6
-	title = Sovk.6.t
-	desc = Sovk.6.d
+	id = SOV_event.6
+	title = SOV_event.6.t
+	desc = SOV_event.6.d
 	picture = GFX_event_sovet_events4
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.6.a
+		name = SOV_event.6.a
         declare_war_on = { 
 		target = AAG  
 		type = annex_everything
@@ -172,90 +172,90 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.7
-	title = Sovk.7.t
-	desc = Sovk.7.d
+	id = SOV_event.7
+	title = SOV_event.7.t
+	desc = SOV_event.7.d
 	picture = GFX_event_sovet_events6
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.7.a
+		name = SOV_event.7.a
         country_event = {
-				id = Sovk.8
+				id = SOV_event.8
 		}
 	}
 	option = {
-		name = Sovk.7.b
+		name = SOV_event.7.b
 		ai_chance = {
 			factor = 100
 		}
 		country_event = {
-				id = Sovk.9
+				id = SOV_event.9
 		}
 	}
 }
 
 country_event = {
-	id = Sovk.8
-	title = Sovk.8.t
-	desc = Sovk.8.d
+	id = SOV_event.8
+	title = SOV_event.8.t
+	desc = SOV_event.8.d
 	picture = GFX_event_sovet_events7
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.8.a
+		name = SOV_event.8.a
 		ai_chance = { 
 			factor = 100 
 		}
         country_event = {
-				id = Sovk.10
+				id = SOV_event.10
 		}
 	}
 	option = {
-		name = Sovk.8.b
+		name = SOV_event.8.b
 		country_event = {
-				id = Sovk.11
+				id = SOV_event.11
 		}
 	}
 }
 
 country_event = {
-	id = Sovk.9
-	title = Sovk.9.t
-	desc = Sovk.9.d
+	id = SOV_event.9
+	title = SOV_event.9.t
+	desc = SOV_event.9.d
 	picture = GFX_event_sovet_events8
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.9.a
+		name = SOV_event.9.a
 		ai_chance = {
 			factor = 100
 		}
         country_event = {
-				id = Sovk.10
+				id = SOV_event.10
 		}
 	}
 	option = {
-		name = Sovk.9.b
+		name = SOV_event.9.b
 		country_event = {
-				id = Sovk.13
+				id = SOV_event.13
 		}
 	}
 }
 
 country_event = {
-	id = Sovk.10
-	title = Sovk.10.t
-	desc = Sovk.10.d
+	id = SOV_event.10
+	title = SOV_event.10.t
+	desc = SOV_event.10.d
 	picture = GFX_event_sovet_events9
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.10.a
+		name = SOV_event.10.a
 		ai_chance = { 
 			factor = 100 
 		}
@@ -271,7 +271,7 @@ country_event = {
 	}
 	
 	option = {
-		name = Sovk.10.b
+		name = SOV_event.10.b
 		AAQ = { 
 			add_political_power = -100
 			add_manpower = -250
@@ -280,52 +280,52 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.11
-	title = Sovk.11.t
-	desc = Sovk.11.d
+	id = SOV_event.11
+	title = SOV_event.11.t
+	desc = SOV_event.11.d
 	picture = GFX_event_sovet_events10
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.11.a
+		name = SOV_event.11.a
         country_event = {
-				id = Sovk.12
+				id = SOV_event.12
 		}
 	}
 	option = {
-		name = Sovk.11.b
+		name = SOV_event.11.b
 		country_event = {
-				id = Sovk.10
+				id = SOV_event.10
 		}
 	}
 }
 
 country_event = {
-	id = Sovk.12
-	title = Sovk.12.t
-	desc = Sovk.12.d
+	id = SOV_event.12
+	title = SOV_event.12.t
+	desc = SOV_event.12.d
 	picture = GFX_event_sovet_events11
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.12.a
+		name = SOV_event.12.a
 		    add_manpower = 600	
 			set_autonomy = { target = AAQ autonomy_state = autonomy_puppet }
 		}
 }
 
 country_event = {
-	id = Sovk.13
-	title = Sovk.13.t
-	desc = Sovk.13.d
+	id = SOV_event.13
+	title = SOV_event.13.t
+	desc = SOV_event.13.d
 	picture = GFX_event_sovet_events12
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.13.a
+		name = SOV_event.13.a
 		add_ideas = proklatie_anishinaabe
 		declare_war_on = { 
 		target = AAQ
@@ -341,20 +341,20 @@ country_event = {
 }
 
 country_event = {
-	id = Sovk.13
-	title = Sovk.14.t
-	desc = Sovk.14.d
+	id = SOV_event.13
+	title = SOV_event.14.t
+	desc = SOV_event.14.d
 	picture = GFX_event_sovet_events12
 
 	is_triggered_only = yes
 
 	option = {
-		name = Sovk.14.a
+		name = SOV_event.14.a
         set_autonomy = { target = FROM autonomy_state = autonomy_puppet }
 	}
 	
 	option = {
-		name = Sovk.14.b
+		name = SOV_event.14.b
 		declare_war_on = { 
 		target = FROM
 		type = annex_everything
