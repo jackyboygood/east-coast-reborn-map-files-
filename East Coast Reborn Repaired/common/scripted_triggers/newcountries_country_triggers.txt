@@ -191,6 +191,7 @@ is_super_mutant = {
 		original_tag = VSU
 		original_tag = SPP
 		original_tag = BSM
+		original_tag = FSM
 		has_country_flag = is_super_mutant
 	}
 		NOT = { has_country_flag = not_a_super_mutant_nation }

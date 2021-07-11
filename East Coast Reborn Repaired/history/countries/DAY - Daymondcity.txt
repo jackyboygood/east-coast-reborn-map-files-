@@ -73,6 +73,7 @@ add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
 add_opinion_modifier = { target = STR modifier = torgovieoperacii }
 add_opinion_modifier = { target = INS modifier = torgovieoperacii }
 add_opinion_modifier = { target = BSM modifier = torgovieoperacii }
+add_opinion_modifier = { target = FSM modifier = torgovieoperacii }
 add_opinion_modifier = { target = RIJ modifier = torgovieoperacii }
 add_opinion_modifier = { target = BSS modifier = torgovieoperacii }
 

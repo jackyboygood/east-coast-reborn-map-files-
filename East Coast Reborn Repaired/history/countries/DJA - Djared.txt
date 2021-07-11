@@ -70,6 +70,7 @@ add_ideas = {
 }
 
 add_opinion_modifier = { target = BSM modifier = torgovieoperacii }
+add_opinion_modifier = { target = FSM modifier = torgovieoperacii }
 
 create_country_leader  = {
 	name = "Jared"

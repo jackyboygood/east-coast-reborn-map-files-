@@ -1,0 +1,108 @@
+capital = 1013
+oob = "FSM_2275"
+
+set_technology = {
+infantry_tech_level_tribal = 1
+	#infantry_tech_level_settler = 1
+	#infantry_tech_level_scientific = 1
+	support_tech_level_tribal = 1
+	#support_tech_level_settler = 1
+	#support_tech_level_scientific = 1
+	special_forces_tech_level_tribal = 1
+	#special_forces_tech_level_settler = 1
+	#special_forces_tech_level_scientific = 1
+	#power_armour_tech_level_settler = 1
+	#power_armour_tech_level_scientific = 1
+	#vehicles_tech_level_tribal = 1
+	#vehicles_tech_level_settler = 1
+	#vehicles_tech_level_scientific = 1
+	#robotics_tech_level_tribal = 1
+	#robotics_tech_level_settler = 1
+	#robotics_tech_level_scientific = 1
+	#air_tech_level_tribal = 1
+	#air_tech_level_settler = 1
+	#air_tech_level_scientific = 1
+	naval_tech_level_tribal = 1
+	#naval_tech_level_settler = 1
+	#naval_tech_level_scientific = 1
+	tools_tech_level_tribal = 1
+	#tools_tech_level_settler = 1
+	#tools_tech_level_scientific = 1
+	habitation_tech_level_tribal = 1
+	#habitation_tech_level_settler = 1
+	#habitation_tech_level_scientific = 1
+	exploitation_tech_level_tribal = 1
+	#exploitation_tech_level_settler = 1
+	#exploitation_tech_level_scientific = 1
+	electronics_tech_level_tribal = 1
+	#electronics_tech_level_settler = 1
+	#electronics_tech_level_scientific = 1
+	tribal_civilization = 1
+	tool_engineering = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	pre_construction_industry_tech = 1
+	pre_agriculture_industry_tech = 1
+	pre_recycling_industry_tech = 1
+	basic_industry_tech = 1
+	support_weaponry = 1
+	super_mutant_civilization = 1
+	super_mutant_behemoth = 1
+	super_mutant_nightkin_tech = 1
+}
+
+set_stability = 0.35
+set_war_support = 0.60
+set_rule = { can_join_factions = no }
+#set_country_flag = is_raider_nation
+set_country_flag = army_wages_disabled
+set_country_flag = is_super_mutant_nation
+set_country_flag = is_followers_black_listed_nation
+set_country_flag = has_unique_manpower_law
+
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 0
+	intellectuals = 0
+	ruler = 100
+}
+
+add_ideas = {}
+
+add_opinion_modifier = { target = STR modifier = torgovieoperacii }
+add_opinion_modifier = { target = INS modifier = torgovieoperacii }
+add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
+add_opinion_modifier = { target = RIJ modifier = torgovieoperacii }
+add_opinion_modifier = { target = BSS modifier = torgovieoperacii }
+add_opinion_modifier = { target = KOV modifier = torgovieoperacii }
+add_opinion_modifier = { target = DJA modifier = torgovieoperacii }
+
+create_country_leader  = {
+	name = "Strong Back"
+	desc = ""
+	picture = "gfx/leaders/FSM/leader.dds"
+	expire = "3000.1.1"
+	ideology = warlordship
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Strong Back"
+	portrait_path = "gfx/leaders/FSM/leader.dds"
+	skill = 3
+	traits = {
+	    rooted_trait
+	}
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+

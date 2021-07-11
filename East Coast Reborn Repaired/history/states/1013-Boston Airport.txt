@@ -1,14 +1,14 @@
 state={
 	id=1013
-	name="Boston Airport"
+	name="Fort Strong"
 	resources = {
 		metal = 16
 		water = 10
 		
 	}
 	history={
-		owner = BSS
-		add_core_of = BSS
+		owner = FSM
+		add_core_of = FSM
 
 		victory_points = {
 			13193 25

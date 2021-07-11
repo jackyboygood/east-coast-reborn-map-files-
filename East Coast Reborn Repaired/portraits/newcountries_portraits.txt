@@ -397,6 +397,86 @@ BSM = {
 	}
 }
 
+FSM = {
+	political = {
+		intellectuals = {
+			male = {
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_2.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_3.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_4.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_5.dds"
+			}
+			female = {
+			}
+		}
+		people = {
+			male = {
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_2.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_3.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_4.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_5.dds"
+			}
+			female = {
+			}
+		}
+		ruler = {
+			male = {
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_2.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_3.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_4.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_5.dds"
+			}
+			female = {
+			}
+		}
+		elites = {
+			male = {
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_2.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_3.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_4.dds"
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_5.dds"
+			}
+			female = {
+			}
+		}
+	}
+	political = {
+		intellectuals = {
+			male = {
+				"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+			}
+		}
+	}
+	army = {
+		male = {
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_2.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_3.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_4.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_5.dds"
+
+		}
+	}
+
+	navy = {
+		male = {
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_1.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_2.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_3.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_4.dds"
+			"gfx/leaders/Supermutant/Portrait_Supermutant_Generic_5.dds"
+		}
+	}
+}
+
 MAM = {
 	political = {
 		intellectuals = {
