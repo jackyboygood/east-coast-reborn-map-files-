@@ -1,6 +1,6 @@
 state={
 	id=1081
-	name="The Fields"
+	name="Nuka-World"
 	resources = {
 		water = 2
 	}

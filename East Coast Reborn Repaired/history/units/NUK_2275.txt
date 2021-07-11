@@ -1,0 +1,95 @@
+division_template = {
+	name = "Raiders"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Militia"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division {
+		name = "Fizztop Fighters"
+		location = 12683
+		division_template = "Raiders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+
+    division {
+		name = "King Cola's Killers"
+		location = 12683
+		division_template = "Raiders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+
+    division {
+		name = "Bradberton Beaters"
+		location = 12683
+		division_template = "Raiders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+
+    division {
+		name = "Safari Adventurers"
+		location = 12683
+		division_template = "Raiders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+
+    division {
+		name = "Dry Rock Daggers"
+		location = 12683
+		division_template = "Raiders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+
+    division {
+		name = "Nuka-Town Nutcases"
+		location = 12683
+		division_template = "Raiders"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NUK"
+		}
+		requested_factories = 3
+		progress = 0.75
+		efficiency = 100
+	}
+
+    add_equipment_production = {
+		equipment = {
+			type = support_equipment
+			creator = "NUK"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

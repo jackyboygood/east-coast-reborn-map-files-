@@ -1,8 +1,8 @@
-﻿capital = 1012
-oob = "DJA_2275"
+﻿capital = 1050
+oob = "NUK_2275"
 
 set_technology = {
-    infantry_tech_level_tribal = 1
+	infantry_tech_level_tribal = 1
 	infantry_tech_level_settler = 1
 	#infantry_tech_level_scientific = 1
 	support_tech_level_tribal = 1
@@ -12,10 +12,10 @@ set_technology = {
 	special_forces_tech_level_settler = 1
 	#special_forces_tech_level_scientific = 1
 	power_armour_tech_level_tribal = 1
-	#power_armour_tech_level_settler = 1
+	power_armour_tech_level_settler = 1
 	#power_armour_tech_level_scientific = 1
-	#vehicles_tech_level_tribal = 1
-	#vehicles_tech_level_settler = 1
+	vehicles_tech_level_tribal = 1
+	vehicles_tech_level_settler = 1
 	#vehicles_tech_level_scientific = 1
 	#robotics_tech_level_tribal = 1
 	#robotics_tech_level_settler = 1
@@ -24,7 +24,7 @@ set_technology = {
 	air_tech_level_settler = 1
 	#air_tech_level_scientific = 1
 	naval_tech_level_tribal = 1
-	#naval_tech_level_settler = 1
+	naval_tech_level_settler = 1
 	#naval_tech_level_scientific = 1
 	tools_tech_level_tribal = 1
 	tools_tech_level_settler = 1
@@ -46,39 +46,51 @@ set_technology = {
 	support_weaponry = 1
 	demolitions_weaponry_tech = 1
 	fireteam_weaponry_tech = 1
-	raider_reckless_aggression = 1
 }
 
 set_stability = 0.6
 set_war_support = 0.2
 set_country_flag = is_raider_nation
 
+set_convoys = 0
 set_politics = {
 	ruling_party = ruler
 	elections_allowed = no
 }
 
 set_popularities = {
-	people = 0
-	elites = 0
-	intellectuals = 0
-	ruler = 100
+	people = 10
+	elites = 10
+	intellectuals = 10
+	ruler = 70
+}
+
+set_party_name = {
+    ideology = people
+    name = NUK_disciples
+}
+
+set_party_name = {
+    ideology = elites
+    name = NUK_operators
+}
+
+set_party_name = {
+    ideology = intellectuals
+    name = NUK_pack
 }
 
 add_ideas = {
-     raider_nation
 }
 
-add_opinion_modifier = { target = BSM modifier = torgovieoperacii }
-add_opinion_modifier = { target = FSM modifier = torgovieoperacii }
-
 create_country_leader  = {
-	name = "Jared"
-	desc = ""
-	picture = "gfx/leaders/DJA/djared.dds"
+	name = "Porter Gage"
+	desc = "Porter Gage"
+	picture = "gfx/leaders/NUK/gage.dds"
 	expire = "3000.1.1"
 	ideology = benevolent_dictatorship
 	
 	traits = {
+		political_workhorse
 	}
 }

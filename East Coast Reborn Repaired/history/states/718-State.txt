@@ -13,7 +13,6 @@ state={
 		add_core_of = REC
 
 		victory_points = {
-			1338 25
 		}
 		buildings = {
 			infrastructure = 4

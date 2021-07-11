@@ -5,8 +5,8 @@ state={
 		
 	}
 	history={
-		owner = CES
-		add_core_of = CES
+		owner = NUK
+		add_core_of = NUK
 
 		victory_points = {
 		}

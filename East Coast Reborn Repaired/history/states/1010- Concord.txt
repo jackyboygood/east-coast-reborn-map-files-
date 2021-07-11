@@ -1,6 +1,6 @@
 state={
 	id=1010
-	name="Hard Fort"
+	name="Concord"
 	resources = {
 		metal = 2
 	}

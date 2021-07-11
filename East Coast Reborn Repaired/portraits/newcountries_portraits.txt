@@ -6640,3 +6640,140 @@ AUC = {
 		}
 	}
 }
+
+NUK = {
+	political = {
+		intellectuals = {
+			male = {
+				"gfx/leaders/raider/portrait_raider_generic_1.dds"
+				"gfx/leaders/raider/portrait_raider_generic_2.dds"
+				"gfx/leaders/raider/portrait_raider_generic_3.dds"
+				"gfx/leaders/raider/portrait_raider_generic_4.dds"
+				"gfx/leaders/raider/portrait_raider_generic_5.dds"
+				"gfx/leaders/raider/portrait_raider_generic_6.dds"
+				"gfx/leaders/raider/portrait_raider_generic_7.dds"
+				"gfx/leaders/raider/portrait_raider_generic_8.dds"
+				"gfx/leaders/raider/portrait_raider_generic_9.dds"
+				"gfx/leaders/raider/portrait_raider_generic_10.dds"
+				"gfx/leaders/raider/portrait_raider_generic_11.dds"
+				"gfx/leaders/raider/portrait_raider_generic_12.dds"
+				"gfx/leaders/raider/portrait_raider_generic_13.dds"
+				"gfx/leaders/raider/portrait_raider_generic_15.dds"
+			}
+			female = {
+				"gfx/leaders/raider/portrait_raider_generic_14.dds"
+				"gfx/leaders/raider/portrait_raider_generic_16.dds"
+			}
+		}
+		people = {
+			male = {
+				"gfx/leaders/raider/portrait_raider_generic_1.dds"
+				"gfx/leaders/raider/portrait_raider_generic_2.dds"
+				"gfx/leaders/raider/portrait_raider_generic_3.dds"
+				"gfx/leaders/raider/portrait_raider_generic_4.dds"
+				"gfx/leaders/raider/portrait_raider_generic_5.dds"
+				"gfx/leaders/raider/portrait_raider_generic_6.dds"
+				"gfx/leaders/raider/portrait_raider_generic_7.dds"
+				"gfx/leaders/raider/portrait_raider_generic_8.dds"
+				"gfx/leaders/raider/portrait_raider_generic_9.dds"
+				"gfx/leaders/raider/portrait_raider_generic_10.dds"
+				"gfx/leaders/raider/portrait_raider_generic_11.dds"
+				"gfx/leaders/raider/portrait_raider_generic_12.dds"
+				"gfx/leaders/raider/portrait_raider_generic_13.dds"
+				"gfx/leaders/raider/portrait_raider_generic_15.dds"
+			}
+			female = {
+				"gfx/leaders/raider/portrait_raider_generic_14.dds"
+				"gfx/leaders/raider/portrait_raider_generic_16.dds"
+			}
+		}
+		ruler = {
+			male = {
+				"gfx/leaders/raider/portrait_raider_generic_1.dds"
+				"gfx/leaders/raider/portrait_raider_generic_2.dds"
+				"gfx/leaders/raider/portrait_raider_generic_3.dds"
+				"gfx/leaders/raider/portrait_raider_generic_4.dds"
+				"gfx/leaders/raider/portrait_raider_generic_5.dds"
+				"gfx/leaders/raider/portrait_raider_generic_6.dds"
+				"gfx/leaders/raider/portrait_raider_generic_7.dds"
+				"gfx/leaders/raider/portrait_raider_generic_8.dds"
+				"gfx/leaders/raider/portrait_raider_generic_9.dds"
+				"gfx/leaders/raider/portrait_raider_generic_10.dds"
+				"gfx/leaders/raider/portrait_raider_generic_11.dds"
+				"gfx/leaders/raider/portrait_raider_generic_12.dds"
+				"gfx/leaders/raider/portrait_raider_generic_13.dds"
+				"gfx/leaders/raider/portrait_raider_generic_15.dds"
+			}
+			female = {
+				"gfx/leaders/raider/portrait_raider_generic_14.dds"
+				"gfx/leaders/raider/portrait_raider_generic_16.dds"
+			}
+		}
+		elites = {
+			male = {
+				"gfx/leaders/raider/portrait_raider_generic_1.dds"
+				"gfx/leaders/raider/portrait_raider_generic_2.dds"
+				"gfx/leaders/raider/portrait_raider_generic_3.dds"
+				"gfx/leaders/raider/portrait_raider_generic_4.dds"
+				"gfx/leaders/raider/portrait_raider_generic_5.dds"
+				"gfx/leaders/raider/portrait_raider_generic_6.dds"
+				"gfx/leaders/raider/portrait_raider_generic_7.dds"
+				"gfx/leaders/raider/portrait_raider_generic_8.dds"
+				"gfx/leaders/raider/portrait_raider_generic_9.dds"
+				"gfx/leaders/raider/portrait_raider_generic_10.dds"
+				"gfx/leaders/raider/portrait_raider_generic_11.dds"
+				"gfx/leaders/raider/portrait_raider_generic_12.dds"
+				"gfx/leaders/raider/portrait_raider_generic_13.dds"
+				"gfx/leaders/raider/portrait_raider_generic_15.dds"
+			}
+			female = {
+				"gfx/leaders/raider/portrait_raider_generic_14.dds"
+				"gfx/leaders/raider/portrait_raider_generic_16.dds"
+			}
+		}
+	}
+	army = {
+		male = {
+				"gfx/leaders/raider/portrait_raider_generic_1.dds"
+				"gfx/leaders/raider/portrait_raider_generic_2.dds"
+				"gfx/leaders/raider/portrait_raider_generic_3.dds"
+				"gfx/leaders/raider/portrait_raider_generic_4.dds"
+				"gfx/leaders/raider/portrait_raider_generic_5.dds"
+				"gfx/leaders/raider/portrait_raider_generic_6.dds"
+				"gfx/leaders/raider/portrait_raider_generic_7.dds"
+				"gfx/leaders/raider/portrait_raider_generic_8.dds"
+				"gfx/leaders/raider/portrait_raider_generic_9.dds"
+				"gfx/leaders/raider/portrait_raider_generic_10.dds"
+				"gfx/leaders/raider/portrait_raider_generic_11.dds"
+				"gfx/leaders/raider/portrait_raider_generic_12.dds"
+				"gfx/leaders/raider/portrait_raider_generic_13.dds"
+				"gfx/leaders/raider/portrait_raider_generic_15.dds"
+			}
+			female = {
+				"gfx/leaders/raider/portrait_raider_generic_14.dds"
+				"gfx/leaders/raider/portrait_raider_generic_16.dds"
+			}
+	}
+	navy = {
+		male = {
+				"gfx/leaders/raider/portrait_raider_generic_1.dds"
+				"gfx/leaders/raider/portrait_raider_generic_2.dds"
+				"gfx/leaders/raider/portrait_raider_generic_3.dds"
+				"gfx/leaders/raider/portrait_raider_generic_4.dds"
+				"gfx/leaders/raider/portrait_raider_generic_5.dds"
+				"gfx/leaders/raider/portrait_raider_generic_6.dds"
+				"gfx/leaders/raider/portrait_raider_generic_7.dds"
+				"gfx/leaders/raider/portrait_raider_generic_8.dds"
+				"gfx/leaders/raider/portrait_raider_generic_9.dds"
+				"gfx/leaders/raider/portrait_raider_generic_10.dds"
+				"gfx/leaders/raider/portrait_raider_generic_11.dds"
+				"gfx/leaders/raider/portrait_raider_generic_12.dds"
+				"gfx/leaders/raider/portrait_raider_generic_13.dds"
+				"gfx/leaders/raider/portrait_raider_generic_15.dds"
+			}
+		female = {
+				"gfx/leaders/raider/portrait_raider_generic_14.dds"
+				"gfx/leaders/raider/portrait_raider_generic_16.dds"
+			}
+	}
+}

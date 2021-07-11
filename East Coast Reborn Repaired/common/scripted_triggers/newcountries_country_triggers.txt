@@ -98,6 +98,7 @@ is_raider_nation = {
 		original_tag = AAB
 		original_tag = AAF
 		original_tag = AUB
+		original_tag = NUK
 		has_country_flag = is_raider_nation
 	}
 	NOT = { has_country_flag = not_a_raider_nation }
