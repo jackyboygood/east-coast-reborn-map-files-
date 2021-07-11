@@ -310,6 +310,27 @@
   NUE_event.9.d:0 "Your main fleet reached Yucatan and began the invasion of the island. Our troops encountered fierce resistance, with the battle lasting several hours. Our better military technology and superior organization gave us a clear advantage, but it was not without a high cost. When the battle was over, it was difficult to distinguish between our dead and the enemy's. We were too self-confident and paid dearly for it."
   NUE_event.9.a:0 "We won the battle, but not the war."
 
+  # PIT
+  PIT_event.1.t:0 "History of the Pitt"
+  PIT_event.1.d:0 "The Pre-War city of Pittsburgh, Pennsylvania was a town built around the mining and refining of metals. The city was not targeted during the Great War, but the situation in Pittsburgh quickly became one of the worst in the Wasteland. The city underwent a more gradual radiation as nuclear fallout poisoned the water supply. The entire population of the city underwent a mutation unlike any other. Generation after generation, the residents of Pittsburgh grew more grotesque: children were born with growths and rudimentary limbs. Soon, the evaporation of contaminated water changed Pittsburgh's sky: the clouds turned red and the wind brought sandstorms. The desolate and hopeless atmosphere turned the residents of Pittsburgh into monsters. They were ruthless and violent, with some turning to cannibalism. Those who completely lost their minds became known as trogs: creatures incapable of speech and only focused on the consumtion of human meat."
+  PIT_event.1.a:0 "Now I know why they call it the PIT_event..."
+
+  PIT_event.2.t:0 "The Scourge"
+  PIT_event.2.d:0 "In 2255, en route to Washington from West Coast, a Brotherhood squad commanded by Owen Lyons passed through PIT_event. There they witnessed the epidemic raging in the city. Lyons decided that the merciful thing to do was destroy all the hostile population: cannibals, savages, raiders and trogs alike. The squad was given the task of picking up any valuable equipment that could be carried away. The clearing of the city took place without any problems, the losses among the soldiers of the Brotherhood were minimal, with only one Initiate being lost - Ishmael Ashur. For unknown reasons, an explosion occurred while Initiate Ashur was clearing a building, causing him to fall to a lower level. The Brotherhood assumed him to be dead but never could find his corpse."
+  PIT_event.2.a:0 "Death would have been a mercy"
+
+  PIT_event.3.t:0 "Ashur's Ascent"
+  PIT_event.3.d:0 "Ashur awoke to find himself in an old steelmill surrounded by the survivors of the Brotherhood Scourge. The Brotherhood of Steel was long gone, leaving behind piles of bodies. However, the people of the steelmill were joyous; many of the victims of the Scourge were the most violent and deranged denizens of the PIT_event. Convinced that the Power Armor-clad Ashur was a god sent to save them, Paladin Ashur was quickly appointed their leader. Ashur himself decided to stay in the city and protect these people, and Ashur's knowledge and organizational skills allowed the city to flourish. Ashur did what he could to teach the citizens of the Pitt empathy and kindness. Despite this, over time,  disease still turned into a pressing problem for the people of the Pitt, and citizens alone could not keep society running. Gradually and reductantly, Ashur introduced slavery to PIT_event. Although it went against his values, he knew it was the only way his people would survive. With his empire secured, Ashur turned to the biggest issue the Pitt faced: the spreading of "Troglodyte Degeneraction Contagion", or TDC. The disease was twisting his people into flesh-hungry cannibals, and without a cure, his people would be at risk."
+  PIT_event.3.a:0 "Ashur will lead us to a brighter future"
+
+  PIT_event.4.t:0 "Marie"
+  PIT_event.4.d:0 "Lord Ashur, good news! Your wife, Sandra, has given birth to a baby girl. However, TDC has been known to spread rapidly in infants, and the chance that Marie survives..."
+  PIT_event.4.a:0 "You will do whatever it takes to keep that child alive!"
+
+  PIT_event.5.t:0 "New Hope"
+  PIT_event.5.d:0 "Tracking their daughter's health, Sandra and Ashur noticed that their child showed no sign of TDC. Over time, the parents came to the conclusion that their daughter has a natural immunity to mutations, could potentially be used to protect against TDC"
+  PIT_event.5.a:0 "Perhaps this is our long-awaited salvation?"
+
   # SBS
   SBS_event.1.t:0 "Ferry to New York"
   SBS_event.1.d:0 "Elder Lyons has decided to assemble a division to go to New York. He has commissioned a ferry to transfer our expeditionary forces to New York along the river. The journey to New York was largely uneventful, but as we approached the docks, our boat hit another sunken ship and quickly started taking on water. Most of our forces escaped the ship, but we are now stranded in New York."

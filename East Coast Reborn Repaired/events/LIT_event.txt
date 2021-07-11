@@ -1,4 +1,4 @@
-﻿add_namespace = detievent
+﻿add_namespace = LIT_event
 
 country_event = {
 	id = LIT_event.1

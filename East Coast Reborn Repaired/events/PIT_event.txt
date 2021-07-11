@@ -1,48 +1,48 @@
-add_namespace = Pitt
+add_namespace = PIT_event
 
 country_event = {
-	id = Pitt.1
-	title = Pitt.1.t
-	desc = Pitt.1.d
+	id = PIT_event.1
+	title = PIT_event.1.t
+	desc = PIT_event.1.d
 	picture = GFX_event_pitt
 
 	is_triggered_only = yes
 
 	option = {
-		name = Pitt.1.a		
+		name = PIT_event.1.a		
 	}
 }
 
 country_event = {
-	id = Pitt.2
-	title = Pitt.2.t
-	desc = Pitt.2.d
+	id = PIT_event.2
+	title = PIT_event.2.t
+	desc = PIT_event.2.d
 	picture = GFX_event_pitsbur
 
 	is_triggered_only = yes
 
 	option = {
-		name = Pitt.2.a		
+		name = PIT_event.2.a		
 	}
 }
 
 country_event = {
-	id = Pitt.3
-	title = Pitt.3.t
-	desc = Pitt.3.d
+	id = PIT_event.3
+	title = PIT_event.3.t
+	desc = PIT_event.3.d
 	picture = GFX_event_ashur
 
 	is_triggered_only = yes
 
 	option = {
-		name = Pitt.3.a		
+		name = PIT_event.3.a		
 	}
 }
 
 country_event = {
-	id = Pitt.4
-	title = Pitt.4.t
-	desc = Pitt.4.d
+	id = PIT_event.4
+	title = PIT_event.4.t
+	desc = PIT_event.4.d
 	picture = GFX_event_marie
 
 	fire_only_once = yes
@@ -57,35 +57,21 @@ country_event = {
 	}
 	
 	option = {
-		name = Pitt.4.a	
+		name = PIT_event.4.a	
         set_country_flag = PIT_marie_1		
 	}
 }
 
 country_event = {
-	id = Pitt.5
-	title = Pitt.5.t
-	desc = Pitt.5.d
+	id = PIT_event.5
+	title = PIT_event.5.t
+	desc = PIT_event.5.d
 	picture = GFX_event_marie
 
 	is_triggered_only = yes
 
 	option = {
-		name = Pitt.5.a	
+		name = PIT_event.5.a	
 		custom_effect_tooltip = vactina	
-	}
-}
-
-country_event = {
-	id = Pitt.6
-	title = Pitt.6.t
-	desc = Pitt.6.d
-	picture = GFX_event_Ashur_speach
-
-	is_triggered_only = yes
-
-	option = {
-		name = Pitt.6.a	
-        #load_focus_tree = Pitsburg_reformed		
 	}
 }
