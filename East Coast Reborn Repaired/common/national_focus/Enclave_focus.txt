@@ -258,7 +258,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_16
 		icon = GFX_goal_ESP_Autumn
 		ai_will_do = { factor = 25 } 
-		cost = 45
+		cost = 30
 		relative_position_id = Enclavesp_3
 		prerequisite = {
 			focus = Enclavesp_3
@@ -288,7 +288,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_17
 		icon = GFX_goal_ESP_Eden
 		relative_position_id = Enclavesp_3
-		cost = 45
+		cost = 30
 		prerequisite = {
 			focus = Enclavesp_3
 		}
@@ -322,7 +322,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 45
+		cost = 30
 
 		ai_will_do = {
 			factor = 90
@@ -406,7 +406,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 45
+		cost = 30
 
 		ai_will_do = {
 			factor = 8
@@ -501,7 +501,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_24
-		icon = GFX_goal_ESP_Autumn_Mobilisation
+		icon = GFX_goal_ESP_Autumn_mobilisation
 		prerequisite = { focus = Enclavesp_20 }
 		relative_position_id = Enclavesp_20
 		x = 3
@@ -558,7 +558,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_26
 		icon = GFX_goal_ESP_Autumn_Election
 		relative_position_id = Enclavesp_16
-		cost = 45
+		cost = 30
 		prerequisite = {
 			focus = Enclavesp_16
 		}
@@ -1269,10 +1269,9 @@ focus = {#Expedition - to Mariposa
 		focus = Enclavesp_87
 		}
 		available = {
-			1070 = { is_controlled_by = ESP } # NAVARRO
-			988 = { is_controlled_by = ESP } # NAVARRO
-			1001 = { is_controlled_by = ESP } # NAVARRO
-			1022 = { is_controlled_by = ESP } # NAVARRO
+			1070 = { is_controlled_by = ESP } 
+			988 = { is_controlled_by = ESP } 
+			1001 = { is_controlled_by = ESP } 
 		}
 		relative_position_id = Enclavesp_21
 		x = 0
