@@ -1,0 +1,27 @@
+state={
+	id=1077
+	name="Crater of Atom"
+	resources = {
+		
+	}
+	history={
+		owner = DAT
+		add_core_of = DAT
+
+		victory_points = {
+			1284 25
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	provinces={
+		12669 12668 1284
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}

@@ -1,0 +1,28 @@
+state={
+	id=1078
+	name="South Massachusetts"
+	resources = {
+		water = 4
+		energy = 2
+		metal = 4
+	}
+	history={
+		owner = STR
+		add_core_of = STR
+
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	provinces={
+		12657 12652 12656 12658
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}

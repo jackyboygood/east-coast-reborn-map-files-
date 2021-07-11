@@ -1,0 +1,27 @@
+state={
+	id=1072
+	name="Coast Guard Pier"
+	resources = {
+		metal = 2
+		water = 4
+	}
+	history={
+		owner = STR
+		add_core_of = STR
+
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+	}
+	provinces={
+		1315 1307 1310 1303 13192
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

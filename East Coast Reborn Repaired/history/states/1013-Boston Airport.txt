@@ -11,7 +11,7 @@ state={
 		add_core_of = BSS
 
 		victory_points = {
-			1013 25
+			13193 25
 		}
 		buildings = {
 			infrastructure = 3
@@ -21,7 +21,7 @@ state={
 		}
 	}
 	provinces={
-		1340 1355 1368 1375 12647 12648 13193
+		1355 13193 12647 1368 1375
 	}
 	manpower=8000
 	buildings_max_level_factor=1.000

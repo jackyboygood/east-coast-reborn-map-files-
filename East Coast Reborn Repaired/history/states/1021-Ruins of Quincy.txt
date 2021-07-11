@@ -2,7 +2,7 @@ state={
 	id=1021
 	name="Ruins of Quincy"
 	resources = {
-		metal = 16
+		metal = 8
 		water = 4
 		circuitry = 4
 	
@@ -12,17 +12,17 @@ state={
 		add_core_of = STR
 
 		victory_points = {
-			12678 25
+			12653 10
 		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 4
+			arms_factory = 3
 			industrial_complex = 1
 
 		}
 	}
 	provinces={
-		1251 1275 12671 12672 12673 12674 12675 12676 12677 12678 
+		1273 12651 12653 12654 12655 
 	}
 	manpower=10000
 	buildings_max_level_factor=1.000

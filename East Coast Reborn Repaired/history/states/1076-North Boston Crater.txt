@@ -1,0 +1,22 @@
+state={
+	id=1076
+	name="North Boston Crater"
+	resources = {
+		
+	}
+	history={
+		owner = DAT
+		add_core_of = DAT
+
+		victory_points = {
+		}
+		buildings = {
+		}
+	}
+	provinces={
+		12659 12661 12667
+	}
+	manpower=500
+	buildings_max_level_factor=0.500
+	state_category = rural 
+}

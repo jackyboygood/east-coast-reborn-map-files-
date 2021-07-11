@@ -13,7 +13,7 @@ state={
 		add_core_of = DAY
 
 		victory_points = {
-			1338 25
+			1331 25
 		}
 		buildings = {
 			infrastructure = 6
@@ -23,7 +23,7 @@ state={
 		}
 	}
 	provinces={
-		1315 1325 1331 1337 1338 1339 1345 1349 1353 
+		1337 1331 1321 1326
 	}
 	manpower=35000
 	buildings_max_level_factor=1.000

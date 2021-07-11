@@ -1,0 +1,22 @@
+state={
+	id=1074
+	name="East Boston Crater"
+	resources = {
+		
+	}
+	history={
+		owner = DAT
+		add_core_of = DAT
+
+		victory_points = {
+		}
+		buildings = {
+		}
+	}
+	provinces={
+		12666 12670 12660 12665 1302
+	}
+	manpower=500
+	buildings_max_level_factor=0.500
+	state_category = rural 
+}

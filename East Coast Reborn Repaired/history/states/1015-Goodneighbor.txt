@@ -1,0 +1,30 @@
+state={
+	id=1015
+	name="Goodneighbor"
+	resources = {
+		metal = 12
+		energy = 6
+		circuitry = 4
+		
+	}
+	history={
+		owner = DOB
+		add_core_of = DOB
+
+		victory_points = {
+			12648 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 4
+
+		}
+	}
+	provinces={
+		1332 1339 1340 12648
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category = city
+}

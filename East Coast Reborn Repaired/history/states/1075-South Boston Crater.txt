@@ -1,0 +1,22 @@
+state={
+	id=1075
+	name="South Boston Crater"
+	resources = {
+		
+	}
+	history={
+		owner = DAT
+		add_core_of = DAT
+
+		victory_points = {
+		}
+		buildings = {
+		}
+	}
+	provinces={
+		12664 12663 12662
+	}
+	manpower=500
+	buildings_max_level_factor=0.500
+	state_category = rural 
+}

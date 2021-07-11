@@ -1,0 +1,26 @@
+state={
+	id=1051
+	name="East Massachusetts"
+	resources = {
+		
+	}
+	history={
+		owner = STR
+		add_core_of = STR
+
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	provinces={
+		12649 12650 1252
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}

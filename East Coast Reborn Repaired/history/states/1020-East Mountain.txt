@@ -4,8 +4,8 @@ state={
 	resources = {
 	}
 	history={
-		owner = DAT
-		add_core_of = DAT
+		owner = CES
+		add_core_of = CES
 
 		victory_points = {
 			12988 5

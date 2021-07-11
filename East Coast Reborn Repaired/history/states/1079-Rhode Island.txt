@@ -1,0 +1,27 @@
+state={
+	id=1079
+	name="Rhode Island"
+	resources = {
+		water = 6
+		metal = 3
+	}
+	history={
+		owner = STR
+		add_core_of = STR
+
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	provinces={
+		12677 12673 12676 12678 12674 12675 1251
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}

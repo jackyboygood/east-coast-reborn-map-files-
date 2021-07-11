@@ -1,0 +1,31 @@
+state={
+	id=1050
+	name="Connecticut"
+	resources = {
+		metal = 8
+		water = 10
+		energy = 8
+		circuitry = 8
+	
+	}
+	history={
+		owner = CES
+		add_core_of = CES
+
+		victory_points = {
+			12683 25
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 5
+
+		}
+	}
+	provinces={
+		1276 12685 12684 12683 12682 12681 12680 12679
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}
