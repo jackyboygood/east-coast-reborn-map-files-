@@ -974,7 +974,7 @@ country_event = {
 		add_manpower = 350
 		LIT = { 
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.1 }
+				country_event = { days = 2 id = LIT_event.1 }
 			}
 		}
 		hidden_effect = {
@@ -1002,7 +1002,7 @@ country_event = {
 		}
         LIT = { 
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.4 }
+				country_event = { days = 2 id = LIT_event.4 }
 			}
 			declare_war_on = {
 				type = annex_everything
@@ -1023,7 +1023,7 @@ country_event = {
 		}
 		LIT = { 
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.4 }
+				country_event = { days = 2 id = LIT_event.4 }
 			}
 			declare_war_on = {
 				type = annex_everything
