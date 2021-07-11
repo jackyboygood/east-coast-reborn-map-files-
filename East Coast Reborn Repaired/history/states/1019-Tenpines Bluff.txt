@@ -1,0 +1,25 @@
+state={
+	id=1019
+	name="Tenpines Bluff"
+	resources = {
+	
+	}
+	history={
+		owner = DJA
+		add_core_of = DJA
+
+		victory_points = {
+			12630 5
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+	}
+	provinces={
+		12643 12630 1373
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

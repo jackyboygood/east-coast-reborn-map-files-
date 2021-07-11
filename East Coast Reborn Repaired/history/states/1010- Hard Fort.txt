@@ -1,0 +1,25 @@
+state={
+	id=1010
+	name="Hard Fort"
+	resources = {
+		metal = 2
+	}
+	history={
+		owner = DJA
+		add_core_of = DJA
+
+		victory_points = {
+			12634 25
+		}
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	provinces={
+		12631 12632 12633 12634 
+	}
+	manpower=4500
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

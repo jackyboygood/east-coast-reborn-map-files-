@@ -1,0 +1,26 @@
+state={
+	id=963
+	name="North Witch"
+	resources = {
+		
+	}
+	history={
+		owner = CES
+		add_core_of = CES
+
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	provinces={
+		1250 12989 12990 12991 12992 12987 12988
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category = rural 
+}

@@ -1,0 +1,25 @@
+state={
+	id=1080
+	name="Greentop Nursery"
+	resources = {
+		water = 2
+	}
+	history={
+		owner = MEN
+		add_core_of = MEN
+
+		victory_points = {
+			12644 5
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+	}
+	provinces={
+		12644 12641 12639
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

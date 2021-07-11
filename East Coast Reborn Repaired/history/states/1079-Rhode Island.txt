@@ -6,8 +6,8 @@ state={
 		metal = 3
 	}
 	history={
-		owner = STR
-		add_core_of = STR
+		owner = CES
+		add_core_of = CES
 
 		victory_points = {
 		}

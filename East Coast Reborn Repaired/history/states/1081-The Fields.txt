@@ -1,0 +1,24 @@
+state={
+	id=1081
+	name="The Fields"
+	resources = {
+		water = 2
+	}
+	history={
+		owner = RIJ
+		add_core_of = RIJ
+
+		victory_points = {
+		}
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+	}
+	provinces={
+		12686 1344 12691 1333
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

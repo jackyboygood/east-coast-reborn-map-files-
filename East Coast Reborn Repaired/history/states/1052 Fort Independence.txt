@@ -13,7 +13,7 @@ state={
 		add_core_of = RSD
 
 		victory_points = {
-			1252 25
+			13196 25
 		}
 		buildings = {
 			infrastructure = 6

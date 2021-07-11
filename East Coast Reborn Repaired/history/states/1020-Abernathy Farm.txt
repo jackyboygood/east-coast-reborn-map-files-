@@ -1,0 +1,25 @@
+state={
+	id=1020
+	name="Abernathy Farm"
+	resources = {
+		water = 2
+	}
+	history={
+		owner = MEN
+		add_core_of = MEN
+
+		victory_points = {
+			12629 5
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+	}
+	provinces={
+		12629 12621 1378 12628
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

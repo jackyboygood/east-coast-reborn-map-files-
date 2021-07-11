@@ -10,7 +10,7 @@ state={
 		add_core_of = KOV
 
 		victory_points = {
-			12641 25
+			12642 25
 		}
 		buildings = {
 			infrastructure = 3
@@ -24,9 +24,9 @@ state={
 		}
 	}
 	provinces={
-		1398 12638 12639 12640 12641 12642 12643 12644 12645 12646 
+		1398 12638 12640 12642 12645 12646 
 	}
-	manpower=8000
+	manpower=7000
 	buildings_max_level_factor=1.000
 	state_category = town
 }
