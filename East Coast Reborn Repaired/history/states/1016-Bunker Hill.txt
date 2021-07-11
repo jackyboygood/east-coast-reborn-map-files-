@@ -1,6 +1,6 @@
 state={
 	id=1016
-	name="Bunker Hill"
+	name="The Institute"
 	resources = {
 		composites = 8
 		water = 10
