@@ -720,7 +720,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Minitmen_25
 			focus = Minitmen_26
-			focus = Minitmen_27
 		}
 		x = -6
 		y = 1
@@ -755,9 +754,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Minitmen_24
 			focus = Minitmen_26
-			focus = Minitmen_27
 		}
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = Minitmen_23
 		available = {
@@ -790,9 +788,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Minitmen_24
 			focus = Minitmen_25
-			focus = Minitmen_27
 		}
-		x = 2
+		x = 6
 		y = 1
 		relative_position_id = Minitmen_23
 		available = {
@@ -807,41 +804,6 @@ focus_tree = {
 			}
 			add_political_power = 60
 			add_ideas = blackminitmenidea
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_26 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = Minitmen_27
-		text = Minitmen_27
-		icon = GFX_goal_Men_usa1
-		cost = 60
-		prerequisite = {
-			focus = Minitmen_23
-		}
-		mutually_exclusive = {
-			focus = Minitmen_24
-			focus = Minitmen_25
-			focus = Minitmen_26
-		}
-		x = 6
-		y = 1
-		relative_position_id = Minitmen_23
-		available = {
-			has_country_leader = {
-				id = 2003
-			}
-		}
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_26 entered"
-			}
-			add_political_power = 60
-			add_ideas = UsSupport
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_26 exited"
@@ -987,185 +949,6 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Minitmen_31 exited"
 			}
-		}
-	}
-	
-	focus = {
-		id = Minitmen_32
-		icon = GFX_goal_Army_deportament
-		relative_position_id = Minitmen_27
-		cost = 60
-		prerequisite = {
-			focus = Minitmen_27
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
-			}
-			add_tech_bonus = { 
-			bonus = 0.5 
-			uses = 2 
-			category = cat_land_doctrine }
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = Minitmen_33
-		icon = GFX_goal_Army_deportament1
-		prerequisite = { focus = Minitmen_32 }
-		relative_position_id = Minitmen_32
-		x = 0
-		y = 1
-
-		cost = 60
-
-		ai_will_do = {
-			factor = 8
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_manpower = 2500
-			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 1000 producer = MEN }
-			add_ideas = NaborUs
-		}
-	}
-	
-	focus = {
-		id = Minitmen_34
-		icon = GFX_goal_generic_military_industry_focus
-		prerequisite = { focus = Minitmen_33 }
-		relative_position_id = Minitmen_33
-		cost = 60
-		x = 0
-		y = 1
-		available = {
-			has_completed_focus = Minitmen_33
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {
-					has_completed_focus = Minitmen_33
-				}
-			}
-		}
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_34 entered"
-			}
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 2
-				category = industry
-			}
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_34 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = Minitmen_35
-		icon = GFX_goal_Dobrososedstva1
-		cost = 45
-		prerequisite = { focus = Minitmen_34 }
-		relative_position_id = Minitmen_34
-		x = 0
-		y = 1
-
-		ai_will_do = {
-			factor = 8
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			country_event = {
-				id = MEN_event.11
-		    }
-		}
-	}
-	
-	focus = {
-		id = Minitmen_36
-		icon = GFX_goal_Attack_on_usa
-		prerequisite = { focus = Minitmen_35 }
-		relative_position_id = Minitmen_35
-		x = 0
-		y = 1
-		
-
-
-		cost = 45
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			has_full_control_of_state = 923
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-        RIJ = {
-				ROOT = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
-			  }
-		}
 		}
 	}
 	
@@ -1535,7 +1318,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		relative_position_id = Minitmen_47
 		ai_will_do = { factor = 100 } 
-		cost = 60
+		cost = 30
 		prerequisite = {focus = Minitmen_47}
 		x = -2
 		y = 1
@@ -1548,6 +1331,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Minitmen_48 entered"
 			}
 			1012 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1566,7 +1350,7 @@ focus_tree = {
 		icon = GFX_goal_Poselenie
 		relative_position_id = Minitmen_47
 		ai_will_do = { factor = 89 } 
-		cost = 60
+		cost = 30
 		prerequisite = {
 			focus = Minitmen_47
 		}
@@ -1581,7 +1365,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Minitmen_49 entered"
 			}
 			1012 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1603,7 +1387,7 @@ focus_tree = {
 		relative_position_id = Minitmen_47
 		x = 0
 		y = 1
-		cost = 60
+		cost = 30
 		completion_reward = {
 			add_political_power = 50
 			1012 = {
@@ -1901,89 +1685,6 @@ focus_tree = {
 
 		available = {
           STR = { exists = no }
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = BSS
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = USD
-			}
-		}
-	}
-	
-	focus = {
-		id = Minitmen_59
-		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_36 }
-		relative_position_id = Minitmen_36
-		x = 0
-		y = 1
-	
-		cost = 45
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-          RIJ = { exists = no }
-		}
-
-		bypass = {
-			has_full_control_of_state = 919
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-        STR = {
-				ROOT = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
-			  }
-		}
-		}
-	}
-	
-	focus = {
-		id = Minitmen_60
-		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_59 }
-		relative_position_id = Minitmen_59
-		x = 0
-		y = 1
-		
-		will_lead_to_war_with = BSS
-
-		cost = 45
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-         STR = { exists = no }
 		}
 
 		bypass = {
