@@ -11,6 +11,7 @@ state={
 	history={
 		owner = TEN
 		add_core_of = TEN
+		add_claim_by = ROY
 
 		victory_points = {
 			 12480 25
@@ -18,13 +19,13 @@ state={
 		buildings = {
 			infrastructure = 8
 			arms_factory = 2
-			industrial_complex = 6
+			industrial_complex = 4
 
 		}
 	}
 
 	provinces={
-		12476 12477 12478 12479 12480 12481 12482 12483 12484 12485 12486 12487 
+		12476 12477 12479 12480 12481 12482 12483 12484 12485 12486 12478
 	}
 	manpower=12000
 	buildings_max_level_factor=1.000
