@@ -1,4 +1,4 @@
-﻿capital = 930
+﻿capital = 1014
 oob = "DAY_2275"
 
 set_technology = {

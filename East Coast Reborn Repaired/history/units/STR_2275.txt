@@ -22,49 +22,49 @@ division_template = {
 units = {
 	division {
 			name = "'Thunder' Company"
-			location = 1273
+			location = 12653
 			division_template = "Стрелки"
 			start_experience_factor = 1.0
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "'Thunder' Company"
-			location = 1273
+			location = 12653
 			division_template = "Стрелки"
 			start_experience_factor = 0.10
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Coer Border Patrol"
-			location = 1273
+			location = 12671
 			division_template = "Стрелки"
 			start_experience_factor = 0.10
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Joso Settlement-Garrison"
-			location = 1273
+			location = 12671
 			division_template = "Стрелки"
 			start_experience_factor = 0.10
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Northlands Watchmen"
-			location =  1273
+			location =  1307
 			division_template = "Стрелки"
 			start_experience_factor = 0.10
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Northlands Watchmen"
-			location =  1273
+			location =  1307
 			division_template = "Стрелки"
 			start_experience_factor = 0.10
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Northlands Watchmen"
-			location =  1273
+			location =  1307
 			division_template = "Стрелки"
 			start_experience_factor = 0.10
 			start_equipment_factor = 1.0

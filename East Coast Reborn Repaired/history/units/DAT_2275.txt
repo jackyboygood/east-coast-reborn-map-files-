@@ -23,35 +23,35 @@ division_template = {
 units = {
 	division {
 		name = "Childrens Of Atom"
-		location = 1250
+		location = 1284
 		division_template = "Childrens Of Atom"
 		start_experience_factor = 0.9
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Childrens Of Atom"
-		location = 1250
+		location = 1284
 		division_template = "Childrens Of Atom"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Childrens Of Atom"
-		location = 1250
+		location = 1284
 		division_template = "Childrens Of Atom"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Childrens Of Atom"
-		location = 1250
+		location = 1284
 		division_template = "Childrens Of Atom"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Childrens Of Atom"
-		location = 1250
+		location = 1284
 		division_template = "Childrens Of Atom"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0

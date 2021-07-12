@@ -1,4 +1,4 @@
-﻿capital = 922
+﻿capital = 1071
 oob = "USD_2275"
 
 set_technology = {

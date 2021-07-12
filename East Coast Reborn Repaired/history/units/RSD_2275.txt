@@ -11,28 +11,28 @@
 units = {
 	division {
 		name = "Kenneth's Boys"
-		location = 1252
+		location = 13196
 		division_template = "Болотники"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1252
+		location = 13196
 		division_template = "Болотники"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1252
+		location = 13196
 		division_template = "Болотники"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1252
+		location = 13196
 		division_template = "Болотники"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0

@@ -27,7 +27,7 @@ units = {
 
 	division {
 		name = "Синты Первого Поколения"
-		location = 1284
+		location = 1353
 		division_template = "Синты Первого Поколения"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7
@@ -35,7 +35,7 @@ units = {
 	
 	division {
 		name = "Синты Первого Поколения"
-		location = 1284
+		location = 1353
 		division_template = "Синты Первого Поколения"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7
@@ -43,7 +43,7 @@ units = {
 	
 	division {
 		name = "Синты Первого Поколения"
-		location = 1284
+		location = 1353
 		division_template = "Синты Первого Поколения"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7
@@ -51,7 +51,7 @@ units = {
 	
 	division {
 		name = "Синты Первого Поколения"
-		location = 1284
+		location = 1353
 		division_template = "Андроиды"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7
@@ -59,7 +59,7 @@ units = {
 	
 	division {
 		name = "Синты Первого Поколения"
-		location = 1284
+		location = 1353
 		division_template = "Андроиды"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7
@@ -67,7 +67,7 @@ units = {
 	
 	division {
 		name = "Синты Первого Поколения"
-		location = 1284
+		location = 1353
 		division_template = "Андроиды"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.7

@@ -1,4 +1,4 @@
-﻿capital = 963
+﻿capital = 1077
 oob = "DAT_2275"
 
 set_technology = {

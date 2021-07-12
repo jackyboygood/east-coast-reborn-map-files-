@@ -1,4 +1,4 @@
-﻿capital = 920
+﻿capital = 1016
 
 oob = "INS_2275"
 
@@ -119,6 +119,7 @@ add_ideas = {
 	bunkerblues
 	closed_economy
 	sinth_command_from_afar
+	funded_militia_conscription
 }
 
 set_research_slots = 4

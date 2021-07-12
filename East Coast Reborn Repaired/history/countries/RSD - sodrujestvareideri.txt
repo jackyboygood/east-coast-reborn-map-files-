@@ -1,4 +1,4 @@
-﻿capital = 917
+﻿capital = 1052
 oob = "RSD_2275"
 
 set_technology = {

@@ -30,35 +30,35 @@ division_template = {
 units = {
 	division {
 		name = "Охрана Убежища 81"
-		location = 1276
+		location = 1325
 		division_template = "Охрана Убежища 81"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Охрана Убежища 81"
-		location = 1276
+		location = 1325
 		division_template = "Охрана Убежища 81"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Охрана Убежища 81"
-		location = 1276
+		location = 1325
 		division_template = "Охрана Убежища 81"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Shafters"
-		location = 1276
+		location = 1325
 		division_template = "Robo-Security"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 division {
 		name = "Whistler's Nightmare"
-		location = 1276
+		location = 1325
 		division_template = "Robo-Security"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

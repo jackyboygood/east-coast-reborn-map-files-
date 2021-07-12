@@ -1,4 +1,4 @@
-﻿capital = 931
+﻿capital = 1017
 oob = "BSM_2275"
 
 set_technology = {

@@ -3,6 +3,7 @@ state={
 	name="The Institute"
 	resources = {
 		composites = 8
+		metal = 12
 		water = 10
 		energy = 12
 		circuitry = 8
@@ -13,7 +14,7 @@ state={
 		add_core_of = INS
 
 		victory_points = {
-			12671 25
+			1353 25
 		}
 		buildings = {
 			infrastructure = 8
@@ -26,6 +27,6 @@ state={
 		1353 1349 12696 1364 12697
 	}
 	manpower=6000
-	buildings_max_level_factor=1.000
-	state_category = town 
+	buildings_max_level_factor=2.000
+	state_category = large_city 
 }

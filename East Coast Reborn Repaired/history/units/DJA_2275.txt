@@ -15,35 +15,35 @@ division_template = {
 units = {
 	division {
 		name = "Kenneth's Boys"
-		location = 1373
+		location = 12636
 		division_template = "Рейдеры"
 		start_experience_factor = 0.0
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Bridge Trolls"
-		location = 1373
+		location = 12636
 		division_template = "Рейдеры"
 		start_experience_factor = 0.0
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Hell's Skullfuckers"
-		location = 1373
+		location = 12636
 		division_template = "Рейдеры"
 		start_experience_factor = 0.0
 		start_equipment_factor = 1.0
 	}
 	division {
 		name = "Shafters"
-		location = 1373
+		location = 12636
 		division_template = "Рейдеры"
 		start_experience_factor = 0.0
 		start_equipment_factor = 1.0
 	}
 division {
 		name = "Whistler's Nightmare"
-		location = 1373
+		location = 12636
 		division_template = "Рейдеры"
 		start_experience_factor = 0.0
 		start_equipment_factor = 1.0

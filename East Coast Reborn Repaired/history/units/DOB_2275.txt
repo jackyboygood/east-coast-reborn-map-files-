@@ -20,21 +20,21 @@ division_template = {
 units = {
 	division {
 			name = "'Thunder' Company"
-			location = 1326
+			location = 12648
 			division_template = "Охрана Добрососедства"
 			start_experience_factor = 0.5
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Coer Border Patrol"
-			location = 1326
+			location = 12648
 			division_template = "Охрана Добрососедства"
 			start_experience_factor = 0.15
 			start_equipment_factor = 1.0
 		}
 	division {
 			name = "Northlands Watchmen"
-			location =  1326
+			location =  12648
 			division_template = "Охрана Добрососедства"
 			start_experience_factor = 0.16
 			start_equipment_factor = 1.0
