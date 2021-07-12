@@ -503,6 +503,50 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12289;12238;sea;5957;-1;-1;-1;-1;;Texas River Crossings
 5255;2975;sea;5860;-1;-1;-1;-1;;Texas River Crossings
 2749;2977;sea;5860;-1;-1;-1;-1;;Texas River Crossings
+12857;12782;sea;142;-1;-1;-1;-1;;Canada Crossing 1
+12782;12783;sea;142;-1;-1;-1;-1;;Canada Crossing 2
+12783;12784;sea;142;-1;-1;-1;-1;;Canada Crossing 3
+12784;12779;sea;142;-1;-1;-1;-1;;Canada Crossing 4
+12779;12854;sea;142;-1;-1;-1;-1;;Canada Crossing 5
+12780;12784;sea;142;-1;-1;-1;-1;;Canada Crossing 6
+12972;1299;sea;6012;-1;-1;-1;-1;;Canada Crossing 7
+1299;12971;sea;6011;-1;-1;-1;-1;;Canada Crossing 8
+1377;1272;sea;6013;-1;-1;-1;-1;;Canada Crossing 9
+8672;1194;sea;6010;-1;-1;-1;-1;;Canada Crossing 10
+1165;8710;sea;6006;-1;-1;-1;-1;;Canada Crossing 11
+8737;1048;sea;6004;-1;-1;-1;-1;;Canada Crossing 12
+12810;12828;sea;6208;-1;-1;-1;-1;;Canada Crossing 13
+12819;12829;sea;6209;-1;-1;-1;-1;;Canada Crossing 14
+12880;12821;sea;6207;-1;-1;-1;-1;;Canada Crossing 15
+12931;12808;sea;6206;-1;-1;-1;-1;;Canada Crossing 16
+12904;8703;sea;6204;-1;-1;-1;-1;;Canada Crossing 17
+1457;12802;sea;6205;-1;-1;-1;-1;;Canada Crossing 18
+8648;8687;sea;6190;-1;-1;-1;-1;;Canada Crossing 19
+1429;1314;sea;6189;-1;-1;-1;-1;;Canada Crossing 20
+8867;1075;sea;6022;-1;-1;-1;-1;;Canada Crossing 21
+12381;1121;sea;6249;-1;-1;-1;-1;;Capital wasteland 1
+1124;1133;sea;6248;-1;-1;-1;-1;;Capital wasteland 2
+1118;1122;sea;6248;-1;-1;-1;-1;;Capital wasteland 3
+1110;1114;sea;6248;-1;-1;-1;-1;;Capital wasteland 4
+1099;1107;sea;6248;-1;-1;-1;-1;;Capital wasteland 5
+8719;1158;sea;6034;-1;-1;-1;-1;;Capital wasteland 6
+12737;12736;sea;6029;-1;-1;-1;-1;;Capital wasteland 7
+12708;1185;sea;6029;-1;-1;-1;-1;;Capital wasteland 8
+12715;1196;sea;6030;-1;-1;-1;-1;;Capital wasteland 9
+8683;1218;sea;6033;-1;-1;-1;-1;;Capital wasteland 10
+8682;1229;sea;6253;-1;-1;-1;-1;;Capital wasteland 11
+1144;1155;sea;6251;-1;-1;-1;-1;;Capital wasteland 12
+12749;12766;sea;6252;-1;-1;-1;-1;;Capital wasteland 13
+1236;1229;sea;6255;-1;-1;-1;-1;;Capital wasteland 14
+1180;1172;sea;6258;-1;-1;-1;-1;;Capital wasteland 15
+12606;12587;sea;6262;-1;-1;-1;-1;;New York Wasteland 1
+1306;8725;sea;6263;-1;-1;-1;-1;;New York Wasteland 2
+8707;12686;sea;6271;-1;-1;-1;-1;;Commowealth 1 
+1380;12620;sea;6272;-1;-1;-1;-1;;Commownealth 2 
+
+
+
+
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1
