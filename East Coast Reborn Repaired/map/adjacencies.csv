@@ -543,10 +543,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1306;8725;sea;6263;-1;-1;-1;-1;;New York Wasteland 2
 8707;12686;sea;6271;-1;-1;-1;-1;;Commowealth 1 
 1380;12620;sea;6272;-1;-1;-1;-1;;Commownealth 2 
-
-
-
-
+1353;12647;sea;13191;-1;-1;-1;-1;;Boston River Crossings
+1353;1339;sea;13191;-1;-1;-1;-1;;Boston River Crossings
+1349;1337;sea;13191;-1;-1;-1;-1;;Boston River Crossings
+1325;1324;sea;13191;-1;-1;-1;-1;;Boston River Crossings
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1
