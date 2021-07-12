@@ -97,6 +97,8 @@ set_rule = { can_join_factions = no }
 set_convoys = 60
 set_country_flag = is_brotherhood_nation
 set_country_flag = is_brotherhood_nation_proper
+#set_country_flag = manpower_laws_hidden
+set_country_flag = army_wages_disabled
 
 set_politics = {
 	ruling_party = intellectuals
@@ -111,10 +113,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	officer_law_military_academy
-	training_law_military_academy
+    outsider_law_volunteers
 	paladins
-	outsider_law_none
 	bunkerblues
 }
 

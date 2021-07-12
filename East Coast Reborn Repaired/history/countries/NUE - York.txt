@@ -50,6 +50,7 @@ set_stability = 0.6
 set_war_support = 0.2
 set_rule = { can_join_factions = no }
 set_convoys = 60
+set_country_flag = is_settler_nation
 
 set_truce = {
 	target = KRO

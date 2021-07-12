@@ -1,6 +1,6 @@
 # For Determining Nation Categories in Script
 # EX: National focuses, technologies etc.
-is_tribal_nation = {
+is_tribal_nation_allowed_block = {
 	OR = {
 		original_tag = ANT
 		original_tag = BPT
@@ -51,11 +51,25 @@ is_tribal_nation = {
 		original_tag = GUR
 		original_tag = AAQ
 		has_country_flag = is_tribal_nation
+		is_dynamic_civil_war_tag = yes
 	}
-	NOT = { has_country_flag = not_a_tribal_nation }
 }
 
-is_raider_nation = {
+is_tribal_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_tribal_nation_tt
+		has_country_flag = is_tribal_nation
+	}
+}
+
+is_not_tribal_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_tribal_nation_tt
+		is_tribal_nation = no
+	}
+}
+
+is_raider_nation_allowed_block = {
 	OR = {
 		original_tag = BLP
 		original_tag = BAS
@@ -100,10 +114,23 @@ is_raider_nation = {
 		original_tag = AUB
 		has_country_flag = is_raider_nation
 	}
-	NOT = { has_country_flag = not_a_raider_nation }
 }
 
-is_settler_nation = {
+is_raider_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_raider_nation_tt
+		has_country_flag = is_raider_nation
+	}
+}
+
+is_not_raider_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_raider_nation_tt
+		is_raider_nation = no
+	}
+}
+
+is_settler_nation_allowed_block = {
 	OR = {
 		original_tag = ARR
 		original_tag = ASH
@@ -171,21 +198,60 @@ is_settler_nation = {
 		original_tag = DAT
 		original_tag = AUA
 		original_tag = ESC
+		original_tag = USP
+		original_tag = LIT
+		original_tag = INS
+		original_tag = NUE
+		original_tag = PIT
+		original_tag = ESP
 		
 	has_country_flag = is_settler_nation
 	}
-	NOT = { has_country_flag = not_a_settler_nation }
 }
 
-is_mormon = {
-	OR = {
-		original_tag = NCN
-		has_country_flag = is_mormon
-}
-	NOT = { has_country_flag = not_a_mormon_nation }
+is_settler_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_settler_nation_tt
+		has_country_flag = is_settler_nation
+	}
 }
 
-is_super_mutant = {
+is_not_settler_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_settler_nation_tt
+		is_settler_nation = no
+	}
+}
+
+is_mormon_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_mormon_nation_tt
+		has_country_flag = is_mormon_nation
+	}
+}
+
+is_not_mormon_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_mormon_nation_tt
+		is_mormon_nation = no
+	}
+}
+
+is_psyker_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_psyker_nation_tt
+		has_country_flag = is_psyker_nation
+	}
+}
+
+is_not_psyker_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_psyker_nation_tt
+		is_psyker_nation = no
+	}
+}
+
+is_super_mutant_nation_allowed_block = {
 	OR = {
 		original_tag = TRL
 		original_tag = VSU
@@ -193,20 +259,54 @@ is_super_mutant = {
 		original_tag = BSM
 		has_country_flag = is_super_mutant
 	}
-		NOT = { has_country_flag = not_a_super_mutant_nation }
+}
+
+is_super_mutant_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_super_mutant_nation_tt
+		has_country_flag = is_super_mutant_nation
 	}
 }
 
-is_ghoul_nation = {
+is_not_super_mutant_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_super_mutant_nation_tt
+		is_super_mutant_nation = no
+	}
+}
+
+is_ghoul_nation_allowed_block = {
 	OR = {
 		original_tag = TOC
 		original_tag = ROY
 		original_tag = MAM
+		original_tag = SOV
 		has_country_flag = is_ghoul_nation
 	}
-	NOT = { has_country_flag = not_a_ghoul_nation }
 }
+
+is_ghoul_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_ghoul_nation_tt
+		has_country_flag = is_ghoul_nation
+	}
+}
+
+is_not_ghoul_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_ghoul_nation_tt
+		is_ghoul_nation = no
+	}
+}
+
 is_brotherhood_nation = {
+	if = {
+		limit = { has_global_flag = country_flags_initialized }
+		custom_trigger_tooltip = {
+			tooltip = is_brotherhood_nation_tt
+			has_country_flag = is_brotherhood_nation
+		}
+	}
 	OR = {
 		original_tag = BOS
 		original_tag = MOJ
@@ -216,7 +316,51 @@ is_brotherhood_nation = {
 		original_tag = NBS
 		original_tag = BSS
 		original_tag = SBS
+		original_tag = IBS
 		has_country_flag = is_brotherhood_nation
 	}
 	NOT = { has_country_flag = not_a_brotherhood_nation }
+}
+
+is_brotherhood_nation_proper = {
+	custom_trigger_tooltip = {
+		tooltip = is_brotherhood_nation_tt
+		has_country_flag = is_brotherhood_nation_proper
+	}
+}
+is_not_brotherhood_nation = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_brotherhood_nation_tt
+		is_brotherhood_nation = no
+	}
+}
+
+### Checks if THIS is mutually neutral with PREV
+is_neutral_country = {
+	custom_trigger_tooltip = {
+		NOT = {
+			is_subject_of = PREV
+			is_in_faction_with = PREV
+			has_military_access_to = PREV
+			gives_military_access_to = PREV
+			has_war_with = PREV
+			is_justifying_wargoal_against = PREV
+			has_wargoal_against = PREV
+			PREV = {
+				OR = {
+					is_justifying_wargoal_against = PREV
+					is_guaranteed_by = PREV
+					is_subject_of = PREV
+					has_wargoal_against = PREV
+				}
+			}
+		}
+		tooltip = is_neutral_country_tt
+	}
+}
+
+is_dynamic_civil_war_tag = {
+	OR = {
+		original_tag = D07
+	}
 }
