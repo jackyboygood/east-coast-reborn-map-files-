@@ -14,17 +14,16 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		create_country_leader = {
-	       name = "Colonel Otthem"
-	       desc = ""
-		   id = 5556
-	       picture = "gfx/leaders/ESP/Portrait_Enclave_polkovnik.dds"
-	       expire = "3000.1.1"
-	       ideology = militarist_technocracy
-		   traits = {
-		      drill_sargeant
-	        }
-        }
+    set_politics = {
+			       parties = {
+				          ruler = { popularity = 70}
+				          elites = { popularity = 20 }
+				          people = { popularity = 5 }
+				          intellectuals = { popularity = 5 }
+			        }
+			       ruling_party = ruler
+			       elections_allowed = no
+				   }
 	}
 }
 	
