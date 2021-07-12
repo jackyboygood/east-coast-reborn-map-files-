@@ -1540,6 +1540,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		available = {
+			controls_state = 1011
 			controls_state = 1012
 		}
 		completion_reward = {
@@ -1573,6 +1574,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		available = {
+			controls_state = 1011
 			controls_state = 1012
 		}
 		completion_reward = {
@@ -1658,7 +1660,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    1011 = { add_core_of = MEN }
 			create_wargoal = {
 				type = annex_everything
 				target = KOV

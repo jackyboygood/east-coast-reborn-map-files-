@@ -1,0 +1,31 @@
+state={
+	id=1052
+	name="The Castle"
+	resources = {
+		metal = 8
+		water = 16
+		energy = 8
+		circuitry = 8
+	
+	}
+	history = {
+		owner = RSD
+		add_core_of = RSD
+
+		victory_points = {
+			13196 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 5
+			industrial_complex = 3
+
+		}
+	}
+	provinces={
+		13196 1312 1295
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category = town 
+}

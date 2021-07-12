@@ -1668,23 +1668,24 @@ focus_tree = {
 		ai_will_do = { factor = 100 } 
 		relative_position_id = institut_58
 		available = {
-		    	 963 = { is_controlled_by = INS } 
-				 1008 = { is_controlled_by = INS } 
-				 1009 = { is_controlled_by = INS } 
-				 1010 = { is_controlled_by = INS } 
-				 1011 = { is_controlled_by = INS } 
-				 1012 = { is_controlled_by = INS } 
-				 1013 = { is_controlled_by = INS } 
-				 1014 = { is_controlled_by = INS } 
-				 1015 = { is_controlled_by = INS } 
-				 1016 = { is_controlled_by = INS } 
-				 1017 = { is_controlled_by = INS } 
-				 1018 = { is_controlled_by = INS } 
-				 1021 = { is_controlled_by = INS } 
-				 1050 = { is_controlled_by = INS } 
-				 1051 = { is_controlled_by = INS } 
-				 1052 = { is_controlled_by = INS } 
-				 1053 = { is_controlled_by = INS } 
+				1008 = { is_controlled_by = INS } 
+				1009 = { is_controlled_by = INS } 
+				1010 = { is_controlled_by = INS } 
+				1011 = { is_controlled_by = INS } 
+				1012 = { is_controlled_by = INS } 
+				1013 = { is_controlled_by = INS } 
+				1014 = { is_controlled_by = INS } 
+				1015 = { is_controlled_by = INS } 
+				1016 = { is_controlled_by = INS } 
+				1017 = { is_controlled_by = INS } 
+				1018 = { is_controlled_by = INS }
+				1019 = { is_controlled_by = INS }
+				1020 = { is_controlled_by = INS }
+				1021 = { is_controlled_by = INS } 
+				1051 = { is_controlled_by = INS } 
+				1052 = { is_controlled_by = INS } 
+				1053 = { is_controlled_by = INS } 
+				1077 = { is_controlled_by = INS } 
 		}
 		x = 0
 		y = 2
