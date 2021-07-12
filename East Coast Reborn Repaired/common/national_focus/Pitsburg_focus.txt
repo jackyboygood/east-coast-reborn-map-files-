@@ -42,7 +42,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Pitsburg_1 entered"
 			}
 			add_manpower = 2000
-			country_event = { id = Pitt.1 }
+			country_event = { id = PIT_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Pitsburg_1 exited"
@@ -85,7 +85,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Pitsburg_2 entered"
 			}
-			country_event = { id = Pitt.2 }
+			country_event = { id = PIT_event.2 }
 			load_oob = "PIT_2275"
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -129,7 +129,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Pitsburg_3 entered"
 			}
-			country_event = { id = Pitt.3 }
+			country_event = { id = PIT_event.3 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Pitsburg_3 exited"
@@ -635,7 +635,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Pitsburg_pervie_opity entered"
 			}
-			country_event = { id = Pitt.5 }
+			country_event = { id = PIT_event.5 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Pitsburg_pervie_opity exited"

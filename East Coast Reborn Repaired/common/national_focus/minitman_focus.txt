@@ -26,7 +26,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.1
+				id = MEN_event.1
 		    }
 		}
 	}
@@ -76,7 +76,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.2
+				id = MEN_event.2
 		    }
 		}
 	}
@@ -171,7 +171,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.3
+				id = MEN_event.3
 		    }
 		}
 	}
@@ -611,7 +611,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.4
+				id = MEN_event.4
 		    }
 		}
 	}
@@ -658,7 +658,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] Minitmen_22 entered"
 			}
 			country_event = {
-				id = Minitmeni.5
+				id = MEN_event.5
 			}
 			hidden_effect = {
 			       country_event = { days = 3 id = newsfallout.9 }
@@ -919,7 +919,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.6
+				id = MEN_event.6
 		    }
 		}
 	}
@@ -1123,7 +1123,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.11
+				id = MEN_event.11
 		    }
 		}
 	}
@@ -1381,7 +1381,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.12
+				id = MEN_event.12
 		    }
 		}
 	}
@@ -1421,7 +1421,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.13
+				id = MEN_event.13
 		    }
 		}
 	}
@@ -1525,7 +1525,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.14
+				id = MEN_event.14
 		    }
 		}
 	}
@@ -1719,7 +1719,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Minitmeni.17
+				id = MEN_event.17
 		    }
 		}
 	}

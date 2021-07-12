@@ -1,15 +1,15 @@
-﻿add_namespace = devievent
+﻿add_namespace = DEV_event
 
 country_event = {
-	id = devievent.1
-	title = devievent.1.t
-	desc = devievent.1.d
+	id = DEV_event.1
+	title = DEV_event.1.t
+	desc = DEV_event.1.d
 	picture = GFX_event_generic_settlement_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.1.a
+		name = DEV_event.1.a
 		add_manpower = 1000
 		999 = {
 			add_building_construction = {
@@ -20,7 +20,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = devievent.1.b
+		name = DEV_event.1.b
 		add_manpower = 500
 		999 = {
 			add_building_construction = {
@@ -31,7 +31,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = devievent.1.c
+		name = DEV_event.1.c
 
 		add_manpower = 350
 		999 = {
@@ -45,21 +45,21 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.2
-	title = devievent.2.t
-	desc = devievent.2.d
+	id = DEV_event.2
+	title = DEV_event.2.t
+	desc = DEV_event.2.d
 	picture = GFX_event_generic_settlement_2
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.2.a
+		name = DEV_event.2.a
 
 		add_ideas = deyvi1idea
 	}
 
 	option = {
-		name = devievent.2.b #With Old World Science#
+		name = DEV_event.2.b #With Old World Science#
 
 		add_ideas = deyvi2idea
 		random_owned_controlled_state = {
@@ -83,22 +83,22 @@ country_event = {
 	}
 
 	option = {
-		name = devievent.2.c #With Mercenaries#
+		name = DEV_event.2.c #With Mercenaries#
 
 		add_ideas = deyvi3idea
 	}
 }
 
 country_event = {
-	id = devievent.3
-	title = devievent.3.t
-	desc = devievent.3.d
+	id = DEV_event.3
+	title = DEV_event.3.t
+	desc = DEV_event.3.d
 	picture = GFX_event_generic_settlement_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.3.a
+		name = DEV_event.3.a
 		add_ideas = deyvi13idea
 		999 = {
 				set_state_name = "kindbob"
@@ -106,7 +106,7 @@ country_event = {
 		hidden_effect = { set_cosmetic_tag = Bobcountry_ruler }
 	}
 	option = {
-		name = devievent.3.b
+		name = DEV_event.3.b
 		add_ideas = deyvi14idea
 		999 = {
 				set_state_name = "bobatopia"
@@ -114,7 +114,7 @@ country_event = {
 		hidden_effect = { set_cosmetic_tag = Bobcountry_intellectuals }
 	}
 	option = {
-		name = devievent.3.c
+		name = DEV_event.3.c
 		add_ideas = deyvi15idea
 		999 = {
 				set_state_name = "respubob"
@@ -124,9 +124,9 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.4
-	title = devievent.4.t
-	desc = devievent.4.d
+	id = DEV_event.4
+	title = DEV_event.4.t
+	desc = DEV_event.4.d
 	picture = GFX_event_canadda14
 
 	fire_only_once = yes
@@ -142,7 +142,7 @@ country_event = {
 	}
 
 	option = {
-		name = devievent.4.a
+		name = DEV_event.4.a
         set_country_flag = Bob
 		hidden_effect = { set_cosmetic_tag = Bobcountry_elites }
         set_politics = {
@@ -164,14 +164,14 @@ country_event = {
         }
 	}
 	option = {
-		name = devievent.4.b
+		name = DEV_event.4.b
 		ai_chance = {
 			factor = 1000
 		}
         set_country_flag = Deyv
 	}
 	option = {
-		name = devievent.4.c
+		name = DEV_event.4.c
         set_country_flag = Rose
 		create_country_leader = {
 	       name = "Rose"
@@ -185,18 +185,18 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.5
-	title = devievent.5.t
-	desc = devievent.5.d
+	id = DEV_event.5
+	title = DEV_event.5.t
+	desc = DEV_event.5.d
 	picture = GFX_event_generic_settlement_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.5.a
+		name = DEV_event.5.a
 		ESC = { 
 		    country_event = {
-				id = devievent.6
+				id = DEV_event.6
 		    }
 		}
 		add_to_faction = ESC
@@ -204,15 +204,15 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.6
-	title = devievent.6.t
-	desc = devievent.6.d
+	id = DEV_event.6
+	title = DEV_event.6.t
+	desc = DEV_event.6.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.6.a
+		name = DEV_event.6.a
 		set_politics = {
 			ruling_party = people
 			elections_allowed = yes
@@ -227,22 +227,22 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.7
-	title = devievent.7.t
-	desc = devievent.7.d
+	id = DEV_event.7
+	title = DEV_event.7.t
+	desc = DEV_event.7.d
 	picture = GFX_event_generic_settlement_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.7.a
+		name = DEV_event.7.a
 		add_political_power = -180
 		add_stability = -0.25
 		add_war_support = 0.02
 		add_equipment_to_stockpile = { type = motorbike_equipment_1 amount = -100 producer = DEV }
 		BAS = { 
 		    country_event = {
-				id = devievent.6
+				id = DEV_event.6
 		    }
 		}
 		add_to_faction = BAS
@@ -250,15 +250,15 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.8
-	title = devievent.8.t
-	desc = devievent.8.d
+	id = DEV_event.8
+	title = DEV_event.8.t
+	desc = DEV_event.8.d
 	picture = GFX_event_newyorkbrothe1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.8.a
+		name = DEV_event.8.a
 		add_equipment_to_stockpile = { type = motorbike_equipment_1 amount = 100 producer = DEV }
 		set_politics = {
 			ruling_party = people
@@ -274,34 +274,34 @@ country_event = {
 }
 
 country_event = {
-	id = devievent.9
-	title = devievent.9.t
-	desc = devievent.9.d
+	id = DEV_event.9
+	title = DEV_event.9.t
+	desc = DEV_event.9.d
 	picture = GFX_event_generic_settlement_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.9.a
+		name = DEV_event.9.a
 		add_to_faction = GUA
 	}
 }
 
 country_event = {
-	id = devievent.10
-	title = devievent.10.t
-	desc = devievent.10.d
+	id = DEV_event.10
+	title = DEV_event.10.t
+	desc = DEV_event.10.d
 	picture = GFX_event_generic_settlement_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = devievent.10.a
+		name = DEV_event.10.a
 		add_to_faction = IST
 	}
 	
 	option = {
-		name = devievent.10.b
+		name = DEV_event.10.b
 		add_stability = -0.3
 	}
 }

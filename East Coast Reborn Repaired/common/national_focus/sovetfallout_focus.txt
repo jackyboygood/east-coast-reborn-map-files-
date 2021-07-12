@@ -20,7 +20,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_1 entered"
 			}
-			country_event = { id = Sovk.1 }
+			country_event = { id = SOV_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_1 exited"
@@ -41,7 +41,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_2 entered"
 			}
-			country_event = { id = Sovk.2 }
+			country_event = { id = SOV_event.2 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_2 exited"
@@ -86,7 +86,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_4 entered"
 			}
-			country_event = { id = Sovk.3 }
+			country_event = { id = SOV_event.3 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_4 exited"
@@ -417,7 +417,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Sovk.4
+				id = SOV_event.4
 		    }
 		}
 	}
@@ -546,7 +546,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Sovk.5
+				id = SOV_event.5
 		    }
 		}
 	}
@@ -825,7 +825,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Sovk.6
+				id = SOV_event.6
 		    }
 		}
 	}
@@ -1053,7 +1053,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = Sovk.7
+				id = SOV_event.7
 		    }
 		}
 	}

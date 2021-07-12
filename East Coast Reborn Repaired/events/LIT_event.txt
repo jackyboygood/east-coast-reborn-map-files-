@@ -1,15 +1,15 @@
-﻿add_namespace = detievent
+﻿add_namespace = LIT_event
 
 country_event = {
-	id = detievent.1
-	title = detievent.1.t
-	desc = detievent.1.d
+	id = LIT_event.1
+	title = LIT_event.1.t
+	desc = LIT_event.1.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.1.a
+		name = LIT_event.1.a
 		ai_chance = { 
 			factor = 25 
 		}
@@ -18,51 +18,51 @@ country_event = {
 		USP = { 
 			add_to_faction = LIT
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.2 }
+				country_event = { days = 2 id = LIT_event.2 }
 			}
 		}
 	}
 	option = {
-		name = detievent.1.b
+		name = LIT_event.1.b
 		add_manpower = -100
 		USP = { 
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.3 }
+				country_event = { days = 2 id = LIT_event.3 }
 			}
 		}
 		
 		ESP = { 
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.7 }
+				country_event = { days = 2 id = LIT_event.7 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = detievent.2
-	title = detievent.2.t
-	desc = detievent.2.d
+	id = LIT_event.2
+	title = LIT_event.2.t
+	desc = LIT_event.2.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.2.a
+		name = LIT_event.2.a
 		add_manpower = 100
 	}
 }
 
 country_event = {
-	id = detievent.3
-	title = detievent.3.t
-	desc = detievent.3.d
+	id = LIT_event.3
+	title = LIT_event.3.t
+	desc = LIT_event.3.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.3.a
+		name = LIT_event.3.a
 		create_wargoal = {
 				type = annex_everything
 				target = LIT
@@ -71,19 +71,19 @@ country_event = {
 }
 
 country_event = {
-	id = detievent.4
-	title = detievent.4.t
-	desc = detievent.4.d
+	id = LIT_event.4
+	title = LIT_event.4.t
+	desc = LIT_event.4.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.4.a
+		name = LIT_event.4.a
 		add_manpower = 100
 		ESP = { 
 			hidden_effect = {
-				country_event = { days = 2 id = detievent.7 }
+				country_event = { days = 2 id = LIT_event.7 }
 			}
 		}
 		every_country = {
@@ -112,45 +112,45 @@ country_event = {
 }
 
 country_event = {
-	id = detievent.5
-	title = detievent.5.t
-	desc = detievent.5.d
+	id = LIT_event.5
+	title = LIT_event.5.t
+	desc = LIT_event.5.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.5.a
+		name = LIT_event.5.a
 		add_resource = { type = water amount = 8 state = 986 }
 		add_manpower = 600
 	}
 	option = {
-		name = detievent.5.b
+		name = LIT_event.5.b
 		add_resource = { type = fuel amount = 8 state = 986 }
 		add_manpower = 600
 	}
 	option = {
-		name = detievent.5.c
+		name = LIT_event.5.c
         add_manpower = 500
 		add_resource = { type = metal amount = 8 state = 986 }
 	}
 }
 
 country_event = {
-	id = detievent.6
-	title = detievent.6.t
-	desc = detievent.6.d
+	id = LIT_event.6
+	title = LIT_event.6.t
+	desc = LIT_event.6.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.6.a
+		name = LIT_event.6.a
 		custom_effect_tooltip = litlerobot_tt
 		load_oob = litlrobot_2275
 	}
 	option = {
-		name = detievent.6.b
+		name = LIT_event.6.b
 		custom_effect_tooltip = motorslitle_tt
 		set_technology = {
 			bike_tech_1 = 1
@@ -158,48 +158,48 @@ country_event = {
 		load_oob = litmotoris_2275
 	}
 	option = {
-		name = detievent.6.c
+		name = LIT_event.6.c
 		custom_effect_tooltip = infantrylitle_tt
 		load_oob = litinfant_2275
 	}
 }
 
 country_event = {
-	id = detievent.7
-	title = detievent.7.t
-	desc = detievent.7.d
+	id = LIT_event.7
+	title = LIT_event.7.t
+	desc = LIT_event.7.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.7.a
+		name = LIT_event.7.a
 		ai_chance = { 
 			factor = 100 
 		}
 		add_manpower = -250
 		LIT = { 
 			hidden_effect = {
-				country_event = { days = 1 id = detievent.8 }
+				country_event = { days = 1 id = LIT_event.8 }
 			}
 		}
 	}
 	option = {
-		name = detievent.7.b
+		name = LIT_event.7.b
 		add_manpower = 500
 	}
 }
 
 country_event = {
-	id = detievent.8
-	title = detievent.8.t
-	desc = detievent.8.d
+	id = LIT_event.8
+	title = LIT_event.8.t
+	desc = LIT_event.8.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.8.a
+		name = LIT_event.8.a
 		ai_chance = { 
 			factor = 100 
 		}
@@ -207,19 +207,19 @@ country_event = {
 		add_manpower = -250
 		ESP = { 
 			hidden_effect = {
-				country_event = { days = 1 id = detievent.9 }
+				country_event = { days = 1 id = LIT_event.2 }
 			}
 		}
 	}
 	option = {
-		name = detievent.8.b
+		name = LIT_event.8.b
 		ai_chance = { 
 			factor = 100 
 		}
         set_country_flag = otkaz_ot_vseh
 		ESP = { 
 			hidden_effect = {
-				country_event = { days = 1 id = detievent.10 }
+				country_event = { days = 1 id = LIT_event.3 }
 			}
 		}
 		every_country = {
@@ -248,47 +248,9 @@ country_event = {
 }
 
 country_event = {
-	id = detievent.9
-	title = detievent.9.t
-	desc = detievent.9.d
-	picture = GFX_event_detkievent
-
-	is_triggered_only = yes
-
-	option = {
-		name = detievent.9.a
-		set_country_flag = detkipodenclave
-		set_autonomy = { target = LIT autonomy_state = autonomy_puppet }
-		LIT = { 
-		   create_country_leader = {
-	       name = "Mayor MacCready"
-	       desc = ""
-	       picture = "gfx/leaders/LIT/enclave_mak_kridi.dds"
-	       expire = "3000.1.1"
-	       ideology = militarist_technocracy
-           }
-		}
-	}
-}
-
-country_event = {
-	id = detievent.10
-	title = detievent.10.t
-	desc = detievent.10.d
-	picture = GFX_event_detkievent
-
-	is_triggered_only = yes
-
-	option = {
-		name = detievent.10.a
-		add_manpower = 120
-	}
-}
-
-country_event = {
-	id = detievent.12
-	title = detievent.12.t
-	desc = detievent.12.d
+	id = LIT_event.12
+	title = LIT_event.12.t
+	desc = LIT_event.12.d
 	picture = GFX_event_canadda14
 
 	fire_only_once = yes
@@ -304,29 +266,29 @@ country_event = {
 	}
 
 	option = {
-		name = detievent.12.a
+		name = LIT_event.12.a
 		add_political_power = 50
 		add_manpower = 120
 		transfer_state = 984
 		LIT = { 
 			hidden_effect = {
-				country_event = { days = 1 id = detievent.13 }
+				country_event = { days = 1 id = LIT_event.13 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = detievent.13
-	title = detievent.13.t
-	desc = detievent.13.d
+	id = LIT_event.13
+	title = LIT_event.13.t
+	desc = LIT_event.13.d
 	picture = GFX_event_canadda14
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = detievent.13.a
+		name = LIT_event.13.a
 		add_political_power = 50
 		add_manpower = 250
 		transfer_state = 984
@@ -335,16 +297,16 @@ country_event = {
 }
 
 country_event = {
-	id = detievent.14
-	title = detievent.14.t
-	desc = detievent.14.d
+	id = LIT_event.14
+	title = LIT_event.14.t
+	desc = LIT_event.14.d
 	picture = GFX_event_canadda14
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = detievent.14.a
+		name = LIT_event.14.a
 		add_political_power = 50
 		add_manpower = 500
 		create_country_leader = {
@@ -357,7 +319,7 @@ country_event = {
         }
 	}
 	option = {
-		name = detievent.14.b
+		name = LIT_event.14.b
 		add_political_power = 50
 		add_manpower = 500
 		create_country_leader = {
@@ -372,16 +334,16 @@ country_event = {
 }
 
 country_event = {
-	id = detievent.15
-	title = detievent.15.t
-	desc = detievent.15.d
+	id = LIT_event.15
+	title = LIT_event.enc_war.t
+	desc = LIT_event.enc_war.d
 	picture = GFX_event_canadda14
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = detievent.15.a
+		name = LIT_event.enc_war.a
 		ai_chance = { 
 			factor = 25
 		}
@@ -413,22 +375,22 @@ country_event = {
 	    ai_chance = { 
 			factor = 25
 		}
-		name = detievent.15.b
+		name = LIT_event.enc_war.b
 		add_manpower = 100
 	}
 }
 
 country_event = {
-	id = detievent.16
-	title = detievent.16.t
-	desc = detievent.16.d
+	id = LIT_event.16
+	title = LIT_event.enc_war.t
+	desc = LIT_event.enc_war.d
 	picture = GFX_event_canadda14
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = detievent.16.a
+		name = LIT_event.enc_war.a
 		ai_chance = { 
 			factor = 25
 		}
@@ -460,22 +422,22 @@ country_event = {
 	    ai_chance = { 
 			factor = 25
 		}
-		name = detievent.16.b
+		name = LIT_event.enc_war.b
 		add_manpower = 100
 	}
 }
 
 country_event = {
-	id = detievent.17
-	title = detievent.17.t
-	desc = detievent.17.d
+	id = LIT_event.17
+	title = LIT_event.enc_war.t
+	desc = LIT_event.enc_war.d
 	picture = GFX_event_canadda14
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = detievent.17.a
+		name = LIT_event.enc_war.a
 		ai_chance = { 
 			factor = 25
 		}
@@ -507,22 +469,22 @@ country_event = {
 	    ai_chance = { 
 			factor = 25
 		}
-		name = detievent.17.b
+		name = LIT_event.enc_war.b
 		add_manpower = 100
 	}
 }
 
 country_event = {
-	id = detievent.18
-	title = detievent.18.t
-	desc = detievent.18.d
+	id = LIT_event.18
+	title = LIT_event.enc_war.t
+	desc = LIT_event.enc_war.d
 	picture = GFX_event_detkievent1
 
 	is_triggered_only = yes
 
 
 	option = {
-		name = detievent.18.a
+		name = LIT_event.enc_war.a
 		ai_chance = { 
 			factor = 25
 		}
@@ -554,15 +516,15 @@ country_event = {
 	    ai_chance = { 
 			factor = 25
 		}
-		name = detievent.18.b
+		name = LIT_event.enc_war.b
 		add_manpower = 100
 	}
 }
 
 country_event = {
-	id = detievent.19
-	title = detievent.19.t
-	desc = detievent.19.d
+	id = LIT_event.19
+	title = LIT_event.19.t
+	desc = LIT_event.19.d
 	picture = GFX_event_detkievent1
 
 	fire_only_once = yes
@@ -582,7 +544,7 @@ country_event = {
 	}
 
 	option = {
-		name = detievent.19.a
+		name = LIT_event.19.a
         every_country = {
 				limit = {
 					OR = {
@@ -606,7 +568,7 @@ country_event = {
 	    }
 	}
 	option = {
-		name = detievent.19.b
+		name = LIT_event.19.b
         every_country = {
 				limit = {
 					OR = {
@@ -631,15 +593,15 @@ country_event = {
 }
 
 country_event = {
-	id = detievent.11
-	title = detievent.11.t
-	desc = detievent.11.d
+	id = LIT_event.11
+	title = LIT_event.11.t
+	desc = LIT_event.11.d
 	picture = GFX_event_detkievent
 
 	is_triggered_only = yes
 
 	option = {
-		name = detievent.11.a
+		name = LIT_event.11.a
 		set_capital = 986
 			start_civil_war = {
 				ruling_party = elites

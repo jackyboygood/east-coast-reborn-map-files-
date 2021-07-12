@@ -21,7 +21,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
 			}
-			country_event = { id = inst.1 }
+			country_event = { id = INS_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
@@ -306,7 +306,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = inst.2
+				id = INS_event.2
 		    }
 		}
 	}
@@ -371,7 +371,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = inst.3
+				id = INS_event.3
 		    }
 		}
 	}
@@ -572,7 +572,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = inst.4
+				id = INS_event.4
 		    }
 		}
 	}

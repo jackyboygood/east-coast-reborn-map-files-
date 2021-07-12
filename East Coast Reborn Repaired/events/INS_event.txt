@@ -1,15 +1,15 @@
-﻿add_namespace = inst
+﻿add_namespace = INS_event
 
 country_event = {
-	id = inst.1
-	title = inst.1.t
-	desc = inst.1.d
+	id = INS_event.1
+	title = INS_event.1.t
+	desc = INS_event.1.d
 	picture = GFX_event_institute
 
 	is_triggered_only = yes
 
 	option = {
-		name = inst.1.a
+		name = INS_event.1.a
 		add_manpower = 1200
 		1016 = {
 			add_building_construction = {
@@ -20,7 +20,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = inst.1.b
+		name = INS_event.1.b
 		add_manpower = 750
 		1016 = {
 			add_building_construction = {
@@ -31,7 +31,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = inst.1.c
+		name = INS_event.1.c
 
 		add_manpower = 400
 		1016 = {
@@ -45,15 +45,15 @@ country_event = {
 }
 
 country_event = {
-	id = inst.2
-	title = inst.2.t
-	desc = inst.2.d
+	id = INS_event.2
+	title = INS_event.2.t
+	desc = INS_event.2.d
 	picture = GFX_event_institute1
 
 	is_triggered_only = yes
 
 	option = {
-		name = inst.2.a
+		name = INS_event.2.a
 		DOB = { 
 			create_wargoal = {
 				type = annex_everything
@@ -65,15 +65,15 @@ country_event = {
 }
 
 country_event = {
-	id = inst.3
-	title = inst.3.t
-	desc = inst.3.d
+	id = INS_event.3
+	title = INS_event.3.t
+	desc = INS_event.3.d
 	picture = GFX_event_institute2
 
 	is_triggered_only = yes
 
 	option = {
-		name = inst.3.a
+		name = INS_event.3.a
 		    add_manpower = -250	
 			set_autonomy = { target = DAY autonomy_state = autonomy_puppet }
 			DAY = { 
@@ -96,9 +96,9 @@ country_event = {
 }
 
 country_event = {
-	id = inst.4
-	title = inst.4.t
-	desc = inst.4.d
+	id = INS_event.4
+	title = INS_event.4.t
+	desc = INS_event.4.d
 	picture = GFX_event_minitman8
 
 	is_triggered_only = yes
@@ -108,7 +108,7 @@ country_event = {
 	}
 
 	option = {
-		name = inst.4.a		
+		name = INS_event.4.a		
 		1017 = {
 			if = {
 				limit = { is_owned_by = BSM }
@@ -128,7 +128,7 @@ country_event = {
 		add_stability = 0.05		
 	}
 	option = {
-		name = inst.4.b
+		name = INS_event.4.b
 		    set_autonomy = { target = BSM autonomy_state = autonomy_puppet }	
 		    add_manpower = 350
 	        BSM = { 
@@ -144,5 +144,18 @@ country_event = {
 			       elections_allowed = no
 		    }
 		}
+	}
+}
+
+country_event = {
+	id = INS_event.5
+	title = INS_event.5.t
+	desc = INS_event.5.d
+	picture = GFX_event_bosarrives
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = INS_event.5.a
 	}
 }

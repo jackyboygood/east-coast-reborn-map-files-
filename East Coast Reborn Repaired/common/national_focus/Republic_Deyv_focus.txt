@@ -56,7 +56,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.1
+				id = DEV_event.1
 		    }
 		}
 	}
@@ -95,7 +95,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.2
+				id = DEV_event.2
 		    }
 		}
 	}
@@ -995,7 +995,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.3
+				id = DEV_event.3
 		    }
 		}
 	}
@@ -1451,7 +1451,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.5
+				id = DEV_event.5
 		    }
 		}
 	}
@@ -1490,7 +1490,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.7
+				id = DEV_event.7
 		    }
 		}
 	}
@@ -1529,7 +1529,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.9
+				id = DEV_event.9
 		    }
 		}
 	}
@@ -1656,7 +1656,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				id = devievent.10
+				id = DEV_event.10
 		    }
 		}
 	}

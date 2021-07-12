@@ -16,7 +16,7 @@ focus_tree = {
 		x = 14
 		y = 0
 		completion_reward = {
-			country_event = { id = detievent.5 }
+			country_event = { id = LIT_event.5 }
 		}
 	}
 	
@@ -29,7 +29,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			country_event = { id = detievent.6 }
+			country_event = { id = LIT_event.6 }
 		}
 	}
 	
@@ -1944,7 +1944,7 @@ focus_tree = {
 				localization = lamplayt_88
 			}
 			hidden_effect = {
-				country_event = { days = 150 id = detievent.11 }
+				country_event = { days = 150 id = LIT_event.11 }
 			}
 		}
 	}
@@ -2177,7 +2177,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-		   country_event = { id = detievent.14 }
+		   country_event = { id = LIT_event.14 }
 		}
 	}
 	
@@ -2790,22 +2790,22 @@ focus_tree = {
 			custom_effect_tooltip = predlojdeyvsous_tt
 			IBS = { 
 			    hidden_effect = {
-				     country_event = { days = 1 id = detievent.15 }
+				     country_event = { days = 1 id = LIT_event.15 }
 			    }
 		    }
 			DEV = { 
 			    hidden_effect = {
-				     country_event = { days = 1 id = detievent.16 }
+				     country_event = { days = 1 id = LIT_event.16 }
 			    }
 		    }
 			DIK = { 
 			    hidden_effect = {
-				     country_event = { days = 1 id = detievent.17 }
+				     country_event = { days = 1 id = LIT_event.17 }
 			    }
 		    }
 			MIN = { 
 			    hidden_effect = {
-				     country_event = { days = 1 id = detievent.18 }
+				     country_event = { days = 1 id = LIT_event.18 }
 			    }
 		    }
 		}
