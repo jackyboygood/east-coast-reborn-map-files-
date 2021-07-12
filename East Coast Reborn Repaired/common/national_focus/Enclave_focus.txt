@@ -562,6 +562,9 @@ focus = {#Expedition - to Mariposa
 		prerequisite = {
 			focus = Enclavesp_16
 		}
+		available = {
+             ruler > 0.5
+		}
 		x = 0
 		y = 1
 		completion_reward = {

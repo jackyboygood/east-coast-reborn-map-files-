@@ -1,0 +1,13 @@
+
+ESP = {
+	operative = {
+		female = {
+		"gfx/leaders/ESP/operatives/female_1.dds"
+		"gfx/leaders/ESP/operatives/female_2.dds"
+		}
+		male = {
+		"gfx/leaders/ESP/operatives/male_1.dds"
+		"gfx/leaders/ESP/operatives/male_2.dds"
+		}
+	}
+}

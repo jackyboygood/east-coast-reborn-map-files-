@@ -57,7 +57,7 @@ focus_tree = {
 		icon = GFX_goal_dett3
 		prerequisite = { focus = lamplayt_3 }
 		relative_position_id = lamplayt_3
-		cost = 60
+		cost = 30
 		x = -8
 		y = 1
 		completion_reward = {
@@ -71,7 +71,7 @@ focus_tree = {
 		icon = GFX_goal_dett4
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 45
+		cost = 30
 		x = -4
 		y = 1
 		completion_reward = {
@@ -84,7 +84,7 @@ focus_tree = {
 		icon = GFX_goal_dett5
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 45
+		cost = 30
 		x = 0
 		y = 1
 		completion_reward = {
@@ -97,7 +97,7 @@ focus_tree = {
 		icon = GFX_goal_dett6
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 45
+		cost = 30
 		x = 4
 		y = 1
 		completion_reward = {
@@ -110,7 +110,7 @@ focus_tree = {
 		icon = GFX_goal_dett7
 		prerequisite = { focus = lamplayt_5 }
 		relative_position_id = lamplayt_5
-		cost = 45
+		cost = 30
 		x = -1
 		y = 1
 		completion_reward = {
@@ -123,7 +123,7 @@ focus_tree = {
 		icon = GFX_goal_dett8
 		prerequisite = { focus = lamplayt_5 }
 		relative_position_id = lamplayt_5
-		cost = 45
+		cost = 30
 		x = 1
 		y = 1
 		completion_reward = {
@@ -136,7 +136,7 @@ focus_tree = {
 		icon = GFX_goal_dett9
 		prerequisite = { focus = lamplayt_6 }
 		relative_position_id = lamplayt_6
-		cost = 45
+		cost = 30
 		x = -1
 		y = 1
 		completion_reward = {
@@ -149,7 +149,7 @@ focus_tree = {
 		icon = GFX_goal_dett10
 		prerequisite = { focus = lamplayt_6 }
 		relative_position_id = lamplayt_6
-		cost = 45
+		cost = 30
 		x = 1
 		y = 1
 		completion_reward = {
@@ -162,7 +162,7 @@ focus_tree = {
 		icon = GFX_goal_dett
 		prerequisite = { focus = lamplayt_3 }
 		relative_position_id = lamplayt_3
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -175,7 +175,7 @@ focus_tree = {
 		icon = GFX_goal_brahmin_cart
 		prerequisite = { focus = lamplayt_12 }
 		relative_position_id = lamplayt_12
-		cost = 60
+		cost = 45
 		ai_will_do = { factor = 25 }
 		x = -1
 		y = 1
@@ -195,7 +195,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		prerequisite = { focus = lamplayt_12 }
 		relative_position_id = lamplayt_12
-		cost = 60
+		cost = 45
 		x = 1
 		y = 1
 		completion_reward = {
@@ -216,7 +216,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_3 }
 		relative_position_id = lamplayt_3
 		ai_will_do = { factor = 100 }
-		cost = 60
+		cost = 45
 		x = 8
 		y = 1
 		completion_reward = {
@@ -252,7 +252,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 25 }
 		relative_position_id = lamplayt_13
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -270,7 +270,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_16 }
 		relative_position_id = lamplayt_16
 		ai_will_do = { factor = 25 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -294,7 +294,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -311,7 +311,7 @@ focus_tree = {
 		icon = GFX_goal_generic_slums_focus
 		prerequisite = { focus = lamplayt_18 }
 		relative_position_id = lamplayt_18
-		cost = 60
+		cost = 45
 		ai_will_do = { factor = 25 }
 		x = 0
 		y = 1
@@ -336,7 +336,7 @@ focus_tree = {
 			date > 2278.1.1
 		}
 		ai_will_do = { factor = 25 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -356,7 +356,7 @@ focus_tree = {
 		available = {
 			date > 2276.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -374,7 +374,7 @@ focus_tree = {
 		icon = GFX_goal_generic_land_doctrines_focus
 		prerequisite = { focus = lamplayt_21 }
 		relative_position_id = lamplayt_21
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -390,7 +390,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -411,7 +411,7 @@ focus_tree = {
 		icon = GFX_goal_NCR_Blast_from_the_Past
 		prerequisite = { focus = lamplayt_23 }
 		relative_position_id = lamplayt_23
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -433,7 +433,7 @@ focus_tree = {
 		available = {
 			date > 2278.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -448,7 +448,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_25 }
 		prerequisite = { focus = lamplayt_46 }
 		relative_position_id = lamplayt_20
-		cost = 60
+		cost = 45
 		x = 2
 		y = 1
 		completion_reward = {
@@ -469,7 +469,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lamplayt_30
 		}
-		cost = 60
+		cost = 45
 		x = -2
 		y = 1
 		completion_reward = {
@@ -486,7 +486,7 @@ focus_tree = {
          date > 2276.5.15
 		}
 		ai_will_do = { factor = 25 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -503,7 +503,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.20
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -524,7 +524,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_15 }
 		relative_position_id = lamplayt_15
 		ai_will_do = { factor = 25 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -545,7 +545,7 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_30 }
 		relative_position_id = lamplayt_30
 		ai_will_do = { factor = 25 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -563,9 +563,9 @@ focus_tree = {
 		relative_position_id = lamplayt_31
 		ai_will_do = { factor = 25 }
 		available = {
-			date > 2278.1.1
+			date > 2277.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -584,7 +584,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lamplayt_36
 		}
-		cost = 60
+		cost = 45
 		x = 2
 		y = 1
 		completion_reward = {
@@ -597,14 +597,14 @@ focus_tree = {
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = { focus = lamplayt_33 }
 		relative_position_id = lamplayt_33
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
 			add_equipment_to_stockpile = {
-			type = support_robot_equipment_1
+			type = support_robot_handy_equipment
 			amount = 500
-			producer = LIT
+			producer = USA
 		    }
 		}
 	}
@@ -614,7 +614,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_industry_focus
 		prerequisite = { focus = lamplayt_34 }
 		relative_position_id = lamplayt_34
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -638,7 +638,7 @@ focus_tree = {
 			focus = lamplayt_33
 		}
 		ai_will_do = { factor = 25 }
-		cost = 60
+		cost = 45
 		x = 4
 		y = 1
 		completion_reward = {
@@ -653,7 +653,7 @@ focus_tree = {
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = { focus = lamplayt_36 }
 		relative_position_id = lamplayt_36
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -668,9 +668,9 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_37 }
 		relative_position_id = lamplayt_37
 		available = {
-         date > 2278.1.1
+         date > 2277.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -686,7 +686,7 @@ focus_tree = {
 		available = {
 		 has_country_flag = resvedvernulis
 		}
-		cost = 45
+		cost = 30
 		x = -1
 		y = 1
 		completion_reward = {
@@ -702,7 +702,7 @@ focus_tree = {
 		available = {
 		 has_country_flag = resvedvernulis
 		}
-		cost = 45
+		cost = 30
 		x = 1
 		y = 1
 		completion_reward = {
@@ -713,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_41
 		icon = GFX_goal_cap_and_cash
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = lamplayt_12
 		}
@@ -769,7 +769,7 @@ focus_tree = {
 		available = {
 			date > 2276.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -780,7 +780,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_43
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = lamplayt_42
 		}
@@ -836,7 +836,7 @@ focus_tree = {
 		available = {
 			date > 2277.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -850,7 +850,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_45
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = lamplayt_44
 		}
@@ -906,7 +906,7 @@ focus_tree = {
 		available = {
 			date > 2278.1.1
 		}
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1204,7 +1204,7 @@ focus_tree = {
 		icon = GFX_goal_dett21
 		prerequisite = { focus = lamplayt_47 }
 		relative_position_id = lamplayt_47
-		ai_will_do = { factor = 1 }
+		#ai_will_do = { factor = 50 }
 		mutually_exclusive = {
 			focus = lamplayt_48
 		}
@@ -1390,7 +1390,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 45
+		cost = 30
 		x = 0
 		y = 2
 		completion_reward = {
@@ -1407,7 +1407,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 45
+		cost = 30
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1424,7 +1424,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 45
+		cost = 30
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1442,7 +1442,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 45
+		cost = 30
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1460,7 +1460,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 45
+		cost = 30
 		x = 1	
 		y = 1
 		completion_reward = {
@@ -1478,7 +1478,7 @@ focus_tree = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
 		}
-		cost = 45
+		cost = 30
 		x = 3
 		y = 1
 		completion_reward = {
@@ -2863,6 +2863,7 @@ focus_tree = {
 		cost = 45
 		completion_reward = {
 			add_political_power = 150
+			transfer_state = 1004
 		}
 	}
 	

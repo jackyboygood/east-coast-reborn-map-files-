@@ -218,7 +218,7 @@ focus_tree = {
 		relative_position_id = Minitmen_5
 		x = -3
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_political_power = 50
 			1009 = {
@@ -244,7 +244,7 @@ focus_tree = {
 		relative_position_id = Minitmen_7
 		x = 0
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 600 producer = ERB }
 			add_resource = { type = advanced amount = 10 state = 1008 }
@@ -260,7 +260,7 @@ focus_tree = {
 		relative_position_id = Minitmen_8
 		x = 2
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_tech_bonus = {
 				ahead_reduction = 0.5
@@ -284,7 +284,7 @@ focus_tree = {
 		relative_position_id = Minitmen_8
 		x = -2
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -307,14 +307,14 @@ focus_tree = {
 			amount = 500 
 			producer = USA }
 		}
-		cost = 60
+		cost = 45
 	}
 	
 	focus = {
 		id = Minitmen_12
 		icon = GFX_goal_generic_military_industry_focus
 		relative_position_id = Minitmen_11
-		cost = 60
+		cost = 45
 		prerequisite = {focus = Minitmen_9}
 		prerequisite = {focus = Minitmen_10}
 		prerequisite = {focus = Minitmen_11}
@@ -347,7 +347,7 @@ focus_tree = {
 		icon = GFX_goal_generic_focus_magazine_gunsandbullets_take_aim
 		relative_position_id = Minitmen_5
 		ai_will_do = { factor = 95 } 
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_5
 		}
@@ -378,7 +378,7 @@ focus_tree = {
 		relative_position_id = Minitmen_13
 		x = 2
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_manpower = 1500
 		}
@@ -388,7 +388,7 @@ focus_tree = {
 		id = Minitmen_15
 		icon = GFX_goal_NCR_Blast_from_the_Past
 		relative_position_id = Minitmen_13
-		cost = 60
+		cost = 45
 		available = {
 		1052 = { is_controlled_by = MEN } 
 		}
@@ -420,7 +420,7 @@ focus_tree = {
 		id = Minitmen_16
 		icon = GFX_goal_MEN_1
 		relative_position_id = Minitmen_13
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_13
 		}
@@ -441,7 +441,7 @@ focus_tree = {
 	
 	focus = {
 		id = Minitmen_17
-		cost = 60
+		cost = 45
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = {focus = Minitmen_16}
 		prerequisite = {focus = Minitmen_15}
@@ -463,7 +463,7 @@ focus_tree = {
 		id = Minitmen_18
 		icon = GFX_goal_generic_food_focus
 		relative_position_id = Minitmen_16
-		cost = 60
+		cost = 45
 		x = -1
 		y = 1
         prerequisite = {focus = Minitmen_16}
@@ -713,7 +713,7 @@ focus_tree = {
 		id = Minitmen_24
 		text = Minitmen_24
 		icon = GFX_goal_Men_rules1
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -747,7 +747,7 @@ focus_tree = {
 		id = Minitmen_25
 		text = Minitmen_25
 		icon = GFX_goal_Men_intelegents1
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -781,7 +781,7 @@ focus_tree = {
 		id = Minitmen_26
 		text = Minitmen_26
 		icon = GFX_goal_Men_elite1
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_23
 		}
@@ -815,7 +815,7 @@ focus_tree = {
 		id = Minitmen_28
 		icon = GFX_goal_Poselenie
 		relative_position_id = Minitmen_24
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_24
 		}
@@ -851,7 +851,7 @@ focus_tree = {
 		icon = GFX_goal_generic_automatron_splash
 		relative_position_id = Minitmen_28
 		prerequisite = { focus = Minitmen_28 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 
@@ -890,7 +890,7 @@ focus_tree = {
 		id = Minitmen_30
 		icon = GFX_goal_MEN_1
 		relative_position_id = Minitmen_29
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_29
 		}
@@ -917,7 +917,7 @@ focus_tree = {
 		id = Minitmen_31
 		icon = GFX_goal_generic_building_focus
 		relative_position_id = Minitmen_56
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Minitmen_56
 		}
@@ -960,7 +960,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
@@ -1035,7 +1035,7 @@ focus_tree = {
 		x = 0	
 		y = 1
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 60			
@@ -1069,7 +1069,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = Minitmen_39 }
 		relative_position_id = Minitmen_39
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 
@@ -1138,7 +1138,7 @@ focus_tree = {
 		icon = GFX_goal_MEN_2
 		relative_position_id = Minitmen_25
 		prerequisite = { focus = Minitmen_25 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 
@@ -1174,7 +1174,7 @@ focus_tree = {
 		icon = GFX_goal_MEN_3
 		relative_position_id = Minitmen_42
 		prerequisite = { focus = Minitmen_42 }
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 
@@ -1217,7 +1217,7 @@ focus_tree = {
 		relative_position_id = Minitmen_43
 		x = 0
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -1282,7 +1282,7 @@ focus_tree = {
 		icon = GFX_goal_Minutamen2
 		prerequisite = { focus = Minitmen_46 }
 		relative_position_id = Minitmen_46
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 
@@ -1477,7 +1477,7 @@ focus_tree = {
 		icon = GFX_goal_Minutamen4
 		prerequisite = { focus = Minitmen_51 }
 		relative_position_id = Minitmen_51
-		cost = 60
+		cost = 45
 		x = 0
 		y = 1
 

@@ -128,6 +128,19 @@ create_country_leader  = {
 	}
 }
 
+create_country_leader  = {
+	name = "Colonel Autumn"
+	id = 5556
+	picture = "gfx/leaders/ESP/Portrait_Enclave_polkovnik.dds"
+	expire = "3000.1.1"
+	ideology = military_government
+	traits = {
+      drill_sargeant
+	}
+}
+
+
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
