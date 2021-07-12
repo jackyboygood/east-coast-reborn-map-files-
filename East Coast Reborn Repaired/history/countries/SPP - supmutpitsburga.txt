@@ -1,4 +1,4 @@
-﻿capital = 716
+﻿capital = 1005
 oob = "SPP_2275"
 
 set_technology = {
