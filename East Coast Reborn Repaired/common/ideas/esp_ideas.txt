@@ -17,7 +17,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				elites_drift = 0.30
+				ruler_drift = 0.30
 				conscription = 0.02
 			}
 		}
