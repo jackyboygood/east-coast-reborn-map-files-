@@ -1358,7 +1358,7 @@ spriteTypes = {
 	
 	SpriteType = {
 	name = "GFX_goal_SBS_exp_Inst"
-	texturefile = "gfx/interface/goals/SBS/SBS_exp_INS_event.dds"		
+	texturefile = "gfx/interface/goals/SBS/SBS_exp_Inst.dds"		
 	}
 	
 	SpriteType = {
@@ -1738,6 +1738,65 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Chad"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Chad.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Mutants"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Mutants.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Slavers"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Slavers.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Rangers"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Rangers.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Slaves"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Slaves.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Slave_Collars"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Slave_Collars.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_mobilisation"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_mobilisation.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Oasis"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Oasis.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Outcasts"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Outcasts.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Farmers"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Farmers.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_York"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_York.dds"		
+	}
+	
+	
+	
+	
+	
+	SpriteType = {
 	name = "GFX_goal_ESP_Eden_Mutant"
 	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Mutant.dds"		
 	}
@@ -1752,4 +1811,46 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Rangers.dds"		
 	}
 	######ESP#######
+	
+	
+	
+	
+	#####SPP######
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Horde"
+	texturefile = "gfx/interface/goals/SPP/SPH_Horde.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Supplies"
+	texturefile = "gfx/interface/goals/SPP/SPH_Supplies.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Germantown"
+	texturefile = "gfx/interface/goals/SPP/SPH_Germantown.dds"		
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SPH_Fear"
+	texturefile = "gfx/interface/goals/SPP/SPH_Fear.dds"		
+	}
+
+	SpriteType = {
+	name = "GFX_goal_SPH_Convert"
+	texturefile = "gfx/interface/goals/SPP/SPH_Convert.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Shephard"
+	texturefile = "gfx/interface/goals/SPP/SPH_Shephard.dds"		
+	}	
+
+	
+	#####SPP#####
+	
+	
+	
+	
 }

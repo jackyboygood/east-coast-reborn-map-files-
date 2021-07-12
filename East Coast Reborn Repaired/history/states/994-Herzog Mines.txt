@@ -6,16 +6,15 @@ state={
 		metal = 8
 	}
 	history={
-		owner = POI
-		add_core_of = POI
+		owner = DEE
+		add_core_of = DEE
 
 		victory_points = {
 			12514 5
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 
 		}
 	}

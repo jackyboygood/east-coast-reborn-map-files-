@@ -43,14 +43,14 @@ division_template = {
 units = {
 	division {
 		name = "1st Navarro Veterans"
-		location = 10212
+		location = 12405
 		division_template = "10w PA Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}	
 	division {
 		name = "Enclave Auxiliaries"
-		location = 10212
+		location = 12405
 		division_template = "10w PA Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
