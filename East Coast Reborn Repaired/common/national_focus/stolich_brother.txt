@@ -549,14 +549,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		    976 = { add_core_of = SBS }
 			create_wargoal = {
 				type = annex_everything
 				target = VSU
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = SEV
 			}
 		}
 	}
@@ -572,9 +567,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		available = {
-		SEV = {
-		exists = no
-		}
 		VSU = {
 		exists = no
 		}
@@ -605,9 +597,6 @@ focus_tree = {
 		y = 1
 		
 		available = {
-		SEV = {
-		exists = no
-		}
 		VSU = {
 		exists = no
 		}
@@ -1586,7 +1575,7 @@ focus_tree = {
 
 	focus = {
 		id = adams_base
-		icon = GFX_goal_enc_verti
+		icon = GFX_goal_BOS_vertibird_schematics
 		relative_position_id = Stolibrother_21
 		prerequisite = {
 			focus = Stolibrother_21

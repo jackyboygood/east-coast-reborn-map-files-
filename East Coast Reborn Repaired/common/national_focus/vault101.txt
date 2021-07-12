@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = USP
 		}
 	}
@@ -478,8 +478,10 @@ focus_tree = {
 				}
 			}
 	    }
-	country_event = { id = newsfallout.26 }
 	set_country_flag = enclave_war	
+	hidden_effect = {
+	country_event = { id = newsfallout.26 }
+	}
 	}
 	
 	}
@@ -550,8 +552,10 @@ focus_tree = {
 			}
 			
 	    }
-		country_event = { id = newsfallout.26 }
-		set_country_flag = enclave_war
+	    set_country_flag = enclave_war
+		hidden_effect = {
+		country_event = { days = 1 id = newsfallout.26 }
+		}
 	}
 }
 	
@@ -804,53 +808,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_42
-		icon = GFX_goal_generic_recruitment_focus
-		prerequisite = { focus = vault101_51 }
-		relative_position_id = vault101_41
-		x = 2
-		y = 3
-
-		cost = 45
-
-		ai_will_do = {
-			factor = 8
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		    POI = { 
-		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
-			}
-			GRI = { 
-		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
-			}
-			KEL = { 
-		          add_opinion_modifier = { target = USP modifier = uspandpointlookout }
-			}
-			add_political_power = -200
-			add_manpower = 300
-			add_opinion_modifier = { target = POI modifier = uspandpointlookout }
-			add_opinion_modifier = { target = GRI modifier = uspandpointlookout }
-			add_opinion_modifier = { target = KEL modifier = uspandpointlookout }
-		}
-	}
-	
-	focus = {
 		id = vault101_43
 		icon = GFX_goal_USP_Default
 		relative_position_id = vault101_41
@@ -909,111 +866,6 @@ focus_tree = {
 			add_ideas = vault101buch
             LIT = {
 				set_country_flag = amatabej
-			}
-		}
-	}
-	
-	focus = {
-		id = vault101_45
-		icon = GFX_goal_megatonna22
-		cost = 45
-        prerequisite = {
-		focus = vault101_42
-		}
-		x = 0
-		y = 1
-		relative_position_id = vault101_42
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_45 entered"
-			}
-			army_experience = 20
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_45 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = vault101_46
-		icon = GFX_goal_megatonna27
-		cost = 45
-		prerequisite = {
-			focus = vault101_45
-		}
-		x = 0
-		y = 1
-		available = {
-			GRI = { exists = yes }
-			has_war = no
-		}
-		relative_position_id = vault101_45
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_46 entered"
-			}
-			add_to_faction = GRI
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_46 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = vault101_47
-		icon = GFX_goal_megatonna25
-		cost = 45
-		prerequisite = {
-			focus = vault101_45
-		}
-		x = -2
-		y = 1
-		available = {
-			POI = { exists = yes }
-			has_war = no
-		}
-		
-		relative_position_id = vault101_45
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_47 entered"
-			}
-			add_to_faction = POI
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_47 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = vault101_48
-		icon = GFX_goal_megatonna26
-		cost = 45
-		prerequisite = {
-			focus = vault101_45
-		}
-		x = 2
-		y = 1
-		available = {
-			RAB = { exists = yes }
-			has_war = no
-		}
-		relative_position_id = vault101_45
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_48 entered"
-			}
-			add_to_faction = RAB
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_48 exited"
 			}
 		}
 	}
@@ -1243,7 +1095,7 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_56
-		icon = GFX_goal_generic_fuel_focus
+		icon = GFX_goal_USP_Butch_Trolling
 		relative_position_id = vault101_51
 		cost = 45
 		prerequisite = {
@@ -1252,13 +1104,13 @@ focus_tree = {
 		bypass = {
             has_full_control_of_state = 1023
 		}
-		x = -2
+		x = 0
 		y = 1
 
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 1023 # Carson City
+						has_full_control_of_state = 1023 
 				}
 				USP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1269,14 +1121,14 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_57
-		icon = GFX_goal_generic_fuel_focus
+		icon = GFX_goal_USP_Butch_Trolling
 		prerequisite = {
 			focus = vault101_56
 		}
 		relative_position_id = vault101_56
 		cost = 45
 		bypass = {
-            has_full_control_of_state = 999
+            has_full_control_of_state = 1022
 		}
 		x = -1
 		y = 1
@@ -1284,7 +1136,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 999 # Carson City
+						has_full_control_of_state = 1022 # Carson City
 				}
 				USP = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1295,14 +1147,14 @@ focus_tree = {
 	
 	focus = {
 		id = vault101_58
-		icon = GFX_goal_generic_fuel_focus
+		icon = GFX_goal_USP_Butch_Trolling
 		prerequisite = {
 			focus = vault101_56
 		}
 		relative_position_id = vault101_56
 		cost = 45
 		bypass = {
-            has_full_control_of_state = 716
+            has_full_control_of_state = 986
 		}
 		x = 1
 		y = 1
@@ -1310,7 +1162,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 716 # Carson City
+						has_full_control_of_state = 986 # Carson City
 				}
 				USP = {
 						create_wargoal = { type = annex_everything target = PREV }
