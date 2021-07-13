@@ -573,6 +573,15 @@ focus_tree = {
 			}
 			add_political_power = 100
 			if = {
+	           limit = {
+		         has_dlc = "La Resistance"
+	            }
+	            create_intelligence_agency = {
+		        name = "All-American Extraordinary Commission"
+		        icon = "GFX_intelligence_agency_logo_cheka"
+	           }
+            }
+			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Sovetinfallout_20 exited"
 			}
@@ -1007,7 +1016,9 @@ focus_tree = {
 		icon = GFX_goal_SOV_Commie_Capital
 		prerequisite = { focus = Sovetinfallout_30 }
 		available = {
-		1064 = { is_controlled_by = SOV } 
+			AAG = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
 		}
 		ai_will_do = { factor = 12 } 
 		relative_position_id = Sovetinfallout_30
@@ -1018,6 +1029,11 @@ focus_tree = {
 			set_capital = 1064
 			1064 = {
 				set_state_name = "New_Rossia"
+			}
+			AAG = {
+				ROOT = {
+					core_owned_states_of_prev = yes
+				}
 			}
 		}
 	}
