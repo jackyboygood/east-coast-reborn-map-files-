@@ -1,26 +1,20 @@
-#formable_nations = {
-#
-#	icon = generic_formable_nations
-#
-#}
+
+form_sneed_category = {
+
+	icon = GFX_decision_chuck
+
+	picture =  GFX_decision_Sneed_flag
+}
 
 form_stolichusa_category = {
 
 	icon = generic_formable_nations
 
-	picture = GFX_decision_Usaeast
+	picture =  GFX_decision_Usaeast
 
 }
 
 form_canadian_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_Canadaob
-
-}
-
-form_sneed_category = {
 
 	icon = generic_formable_nations
 

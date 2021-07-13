@@ -167,7 +167,7 @@ form_canadian_category = {
 form_sneed_category = {
 
 form_SNEED = {
-    icon = generic_form_nation
+    icon = GFX_decision_chuck
 	allowed = {
 			original_tag = AAD
 
@@ -240,10 +240,6 @@ form_SNEED = {
 			 
 
 }
-
-
-
-
 }
 
 

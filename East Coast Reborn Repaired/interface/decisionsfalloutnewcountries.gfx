@@ -13,5 +13,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/Canadaob.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_decision_Sneed_flag"
+		texturefile = "gfx/interface/decisions/Sneed_flag.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_chuck"
+		texturefile = "gfx/interface/decisions/chuck.dds"
+	}
+	
 	
 }

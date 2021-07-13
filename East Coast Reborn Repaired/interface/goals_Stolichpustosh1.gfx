@@ -1,21 +1,6 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
-
-	SpriteType = {
-	name = "GFX_goal_support_president"
-	texturefile = "gfx/interface/goals/support_president.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_support_polkovnik"
-	texturefile = "gfx/interface/goals/support_polkovnik.dds"			
-	}	
-
-    SpriteType = {
-	name = "GFX_goal_support_layons"
-	texturefile = "gfx/interface/goals/support_layons.dds"			
-	}
 	
     SpriteType = {
 	name = "GFX_goal_sbs_scientist"
@@ -503,31 +488,6 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-	name = "GFX_goal_Enclave12"
-	texturefile = "gfx/interface/goals/Enclave12.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_Enclave13"
-	texturefile = "gfx/interface/goals/Enclave13.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_Enclave14"
-	texturefile = "gfx/interface/goals/Enclave14.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_Enclave15"
-	texturefile = "gfx/interface/goals/Enclave15.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall17"
-	texturefile = "gfx/interface/goals/sovetinfall17.dds"			
-	}
-	
-	SpriteType = {
 	name = "GFX_goal_Enclave16"
 	texturefile = "gfx/interface/goals/Enclave16.dds"			
 	}
@@ -576,147 +536,7 @@ spriteTypes = {
 	name = "GFX_goal_institut27"
 	texturefile = "gfx/interface/goals/institut27.dds"			
 	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa"
-	texturefile = "gfx/interface/goals/canadaaa.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa1"
-	texturefile = "gfx/interface/goals/canadaaa1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa2"
-	texturefile = "gfx/interface/goals/canadaaa2.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa3"
-	texturefile = "gfx/interface/goals/canadaaa3.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa4"
-	texturefile = "gfx/interface/goals/canadaaa4.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa5"
-	texturefile = "gfx/interface/goals/canadaaa5.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa6"
-	texturefile = "gfx/interface/goals/canadaaa6.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa7"
-	texturefile = "gfx/interface/goals/canadaaa7.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa8"
-	texturefile = "gfx/interface/goals/canadaaa8.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa9"
-	texturefile = "gfx/interface/goals/canadaaa9.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa10"
-	texturefile = "gfx/interface/goals/canadaaa10.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa11"
-	texturefile = "gfx/interface/goals/canadaaa11.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa12"
-	texturefile = "gfx/interface/goals/canadaaa12.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa13"
-	texturefile = "gfx/interface/goals/canadaaa13.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa14"
-	texturefile = "gfx/interface/goals/canadaaa14.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa15"
-	texturefile = "gfx/interface/goals/canadaaa15.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa16"
-	texturefile = "gfx/interface/goals/canadaaa16.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa17"
-	texturefile = "gfx/interface/goals/canadaaa17.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa18"
-	texturefile = "gfx/interface/goals/canadaaa18.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa19"
-	texturefile = "gfx/interface/goals/canadaaa19.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa20"
-	texturefile = "gfx/interface/goals/canadaaa20.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa21"
-	texturefile = "gfx/interface/goals/canadaaa21.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa22"
-	texturefile = "gfx/interface/goals/canadaaa22.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa23"
-	texturefile = "gfx/interface/goals/canadaaa23.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa24"
-	texturefile = "gfx/interface/goals/canadaaa24.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall19"
-	texturefile = "gfx/interface/goals/sovetinfall19.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_sovetinfall20"
-	texturefile = "gfx/interface/goals/sovetinfall20.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_canadaaa25"
-	texturefile = "gfx/interface/goals/canadaaa25.dds"			
-	}
-	
+
 	SpriteType = {
 	name = "GFX_goal_institut28"
 	texturefile = "gfx/interface/goals/institut28.dds"			
@@ -735,71 +555,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_institut31"
 	texturefile = "gfx/interface/goals/institut31.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa1"
-	texturefile = "gfx/interface/goals/nukawogoa1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa2"
-	texturefile = "gfx/interface/goals/nukawogoa2.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa3"
-	texturefile = "gfx/interface/goals/nukawogoa3.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa4"
-	texturefile = "gfx/interface/goals/nukawogoa4.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa5"
-	texturefile = "gfx/interface/goals/nukawogoa5.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa6"
-	texturefile = "gfx/interface/goals/nukawogoa6.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa7"
-	texturefile = "gfx/interface/goals/nukawogoa7.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa8"
-	texturefile = "gfx/interface/goals/nukawogoa8.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa9"
-	texturefile = "gfx/interface/goals/nukawogoa9.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa10"
-	texturefile = "gfx/interface/goals/nukawogoa10.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa11"
-	texturefile = "gfx/interface/goals/nukawogoa11.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa12"
-	texturefile = "gfx/interface/goals/nukawogoa12.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_nukawogoa13"
-	texturefile = "gfx/interface/goals/nukawogoa13.dds"			
 	}
 	
 	SpriteType = {
@@ -1810,6 +1565,16 @@ spriteTypes = {
 	name = "GFX_goal_ESP_Eden_Rangers"
 	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Rangers.dds"		
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden_FEV"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden_FEV.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden_RAB"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden_RAB.dds"		
+	}
 	######ESP#######
 	
 	
@@ -1846,7 +1611,74 @@ spriteTypes = {
 	name = "GFX_goal_SPH_Shephard"
 	texturefile = "gfx/interface/goals/SPP/SPH_Shephard.dds"		
 	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_FEV"
+	texturefile = "gfx/interface/goals/SPP/SPH_FEV.dds"		
+	}
 
+	SpriteType = {
+	name = "GFX_goal_SPH_Enclave"
+	texturefile = "gfx/interface/goals/SPP/SPH_Enclave.dds"		
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_War"
+	texturefile = "gfx/interface/goals/SPP/SPH_War.dds"		
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Weirdos"
+	texturefile = "gfx/interface/goals/SPP/SPH_Weirdos.dds"		
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_SPH_Fort"
+	texturefile = "gfx/interface/goals/SPP/SPH_Fort.dds"		
+	}		
+
+	SpriteType = {
+	name = "GFX_goal_SPH_Germantown_Fun"
+	texturefile = "gfx/interface/goals/SPP/SPH_Germantown_Fun.dds"		
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Human_Slaves"
+	texturefile = "gfx/interface/goals/SPP/SPH_Human_Slaves.dds"		
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_SPH_Slaves_Work"
+	texturefile = "gfx/interface/goals/SPP/SPH_Slaves_Work.dds"		
+	}	
+
+	SpriteType = {
+	name = "GFX_goal_SPH_Mutants_Work"
+	texturefile = "gfx/interface/goals/SPP/SPH_Mutants_Work.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Mutants_Arm"
+	texturefile = "gfx/interface/goals/SPP/SPH_Mutants_Arm.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Mutants_War"
+	texturefile = "gfx/interface/goals/SPP/SPH_Mutants_War.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Slaves_Road"
+	texturefile = "gfx/interface/goals/SPP/SPH_Slaves_Road.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_SPH_Slaves_Workshop"
+	texturefile = "gfx/interface/goals/SPP/SPH_Slaves_Workshop.dds"		
+	}
+	
+	
+	
 	
 	#####SPP#####
 	

@@ -11,6 +11,11 @@
  form_sovet_category_desc:0 "During the great war, our country maintained friendly relations with the United States, but the world has changed. Many countries have emerged in the United States that are ready to destroy us...."
  form_Sovetin:0 "It's Time to Accept the New Order"
  
+ form_sneed_category:0 "Form Sneedclave"
+ form_sneed_category_desc:0 "Glory! Glory! To the Sneedclave!\nGlory! Glory! To the Sneedclave!\nGlory! Glory!To the Sneedclave!\nOur truth is marching on."
+ form_SNEED:0 "Form Sneedclave"
+ 
+ 
  ESP_cloning: "Experiments with Clones"
  AAE_cloning: "Experiments with Clones"
  
