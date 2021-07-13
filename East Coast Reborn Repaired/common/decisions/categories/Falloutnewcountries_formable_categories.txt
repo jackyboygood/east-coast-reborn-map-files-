@@ -20,11 +20,11 @@ form_canadian_category = {
 
 }
 
-form_sovet_category = {
+form_sneed_category = {
 
 	icon = generic_formable_nations
 
-	picture = GFX_decision_Usaeast
+	picture = GFX_decision_Canadaob
 
 }
 

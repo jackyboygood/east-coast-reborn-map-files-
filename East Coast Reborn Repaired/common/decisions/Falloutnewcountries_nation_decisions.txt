@@ -95,7 +95,6 @@ form_canadian_category = {
 			OR = {
 				original_tag = AAI
 				original_tag = AAF
-				original_tag = AAD
 				original_tag = AAG
 				original_tag = RON
 				original_tag = AAA
@@ -120,7 +119,6 @@ form_canadian_category = {
 			OR = {
 				original_tag = AAI
 				original_tag = AAF
-				original_tag = AAD
 				original_tag = AAG
 				original_tag = RON
 				original_tag = AAA
@@ -166,63 +164,91 @@ form_canadian_category = {
 	}
 }
 
-form_sovet_category
+form_sneed_category = {
 
-    form_Sovetin = {
+form_SNEED = {
+    icon = generic_form_nation
+	allowed = {
+			original_tag = AAD
 
-		icon = generic_form_nation
-
-		allowed = {
-			OR = {
-				original_tag = SOV
-			}
-
-		}
-
-		available = {
+		     }
+	available = {
 			is_subject = no
-				controls_state = 878
-				controls_state = 876
-				controls_state = 887
-				controls_state = 888
-				controls_state = 867
-				controls_state = 874
-				controls_state = 716
+				controls_state = 1047
+				controls_state = 1046
+				controls_state = 1058
+				controls_state = 720
+				controls_state = 1034
+				controls_state = 1062
+				controls_state = 1059
+				controls_state = 1061
+				controls_state = 722
+				controls_state = 1060
+				controls_state = 970
+				controls_state = 1045
+				controls_state = 1063
+				controls_state = 1064
+				controls_state = 1065
+				controls_state = 721
+				controls_state = 1066
 		}
 
-		visible = {
+	visible = {
 			OR = {
-				original_tag = SOV
+				original_tag = AAD
 			}
-			NOT = { has_global_flag = form_scandinavia_flag3 }
+			NOT = { has_global_flag = form_sneed }
 		}
-
 		complete_effect = {
-			set_cosmetic_tag = SOV_USA
-			# Denmark / European Mainland
-			hidden_effect = {
-				878 = { add_core_of = ROOT }
-				876 = { add_core_of = ROOT }
-				887 = { add_core_of = ROOT }
-				888 = { add_core_of = ROOT }
-				867 = { add_core_of = ROOT }
-				874 = { add_core_of = ROOT }
-				716 = { add_core_of = ROOT }
-			}
-			hidden_effect = {
-				set_global_flag = form_scandinavia_flag3
-			}
-		}
-
+		    set_cosmetic_tag = Sneed
+		     hidden_effect = {
+				1047 = { add_core_of = ROOT }
+				1046 = { add_core_of = ROOT }
+				1058 = { add_core_of = ROOT }
+				720 = { add_core_of = ROOT }
+				1034 = { add_core_of = ROOT }
+				1062 = { add_core_of = ROOT }
+				1059 = { add_core_of = ROOT }
+				1061 = { add_core_of = ROOT }
+				722 = { add_core_of = ROOT }
+				1060 = { add_core_of = ROOT }
+				970 = { add_core_of = ROOT }
+				1045 = { add_core_of = ROOT }
+				1063 = { add_core_of = ROOT }
+				1064 = { add_core_of = ROOT }
+				1065 = { add_core_of = ROOT }
+				721 = { add_core_of = ROOT }
+				1066 = { add_core_of = ROOT }
+				set_research_slots = 4
+		      set_technology = {
+			   infantry_tech_level_scientific = 1
+		       power_armour_tech_level_tribal = 1
+	           power_armour_tech_level_settler = 1
+	           power_armour_tech_level_scientific = 1
+			   support_tech_level_scientific = 1
+			   air_tech_level_settler = 1
+	           air_tech_level_scientific = 1
+	 		}
+				}
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
-	}
+		
+		
+		
+		}
+			 
+
 }
+
+
+
+
+}
+
+
+
+
 
 ESP_cloning = {
 	cloning_project = {

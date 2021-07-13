@@ -12,3 +12,8 @@ ESP_navada = {
 	color = rgb { 67 123 237 } # base game blue
 	color_ui = rgb { 255 255 255 }
 }
+
+Sneed = {
+	color = rgb { 0 10 124 } 
+	color_ui = rgb { 255 255 255 }
+}
