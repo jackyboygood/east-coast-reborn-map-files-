@@ -5,7 +5,7 @@
  Enclaveedem:0 "Support For John Henry Eden"
  Enclaveedem_desc:0 "Most members of the Enclave are backing president Eden"
  ESP_infighting:0 "Infighting"
- ESP_infighting_desc0 "A division is starting to show itself within the Enclave. If not resolved soon it could lead to its downfall."
+ ESP_infighting_desc:0 "A division is starting to show itself within the Enclave. If not resolved soon it could lead to its downfall."
  Militari_leader:0 "Full Mobilization"
  Militari_leader_desc:0 "If we are too take back America, we must have every man, woman, and child doing their part."
  ESP_slave_labour:0 "Slave Labour"
