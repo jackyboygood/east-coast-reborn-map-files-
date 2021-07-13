@@ -533,10 +533,11 @@ focus_tree = {
 				limit = {
 					OR = {
 						tag = USP
-						tag = SBS
 						tag = RIV
+						tag = SBS
 					}
 				}
+				add_ideas = lone_wanderer
 				every_country = {
 					limit = {
 						NOT = { tag = PREV }
@@ -776,7 +777,7 @@ focus_tree = {
 			focus = vault101_34
 		} 
 		cost = 45
-		completion_reward = {add_ideas = ENC_slave_labour}
+		completion_reward = {add_ideas = ESP_slave_labour}
 		
  } 
  

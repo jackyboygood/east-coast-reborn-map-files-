@@ -74,3 +74,26 @@ ideas = {
 				}
 			}
 		}
+		
+		lone_wanderer = {
+			picture = Lone_wanderer
+			available = {
+		       ESP = {exists = yes}
+	        }
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			    army_morale_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.2
+			}
+		}
+		
+}

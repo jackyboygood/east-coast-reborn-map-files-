@@ -126,7 +126,7 @@ country_event = {
 	}
 	option = {
 		name = LIT_event.5.b
-		add_resource = { type = fuel amount = 8 state = 986 }
+		add_resource = { type = energy amount = 8 state = 986 }
 		add_manpower = 600
 	}
 	option = {
@@ -643,7 +643,6 @@ country_event = {
 			set_stability = 0.5
 			load_oob = "lit_makkridi_civilwar"
 			set_war_support = 0.5
-		}
 		add_stability = -0.25
 		random_other_country = {
 			limit = {
@@ -680,4 +679,3 @@ country_event = {
 		}
 	}
 	}
-}

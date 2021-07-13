@@ -1,8 +1,4 @@
 spriteTypes = {
-		spriteType = { #GFX_idea_dad
-			name = "GFX_idea_dad"
-			texturefile = "gfx/interface/ideas/dad.dds"
-		}
 
         spriteType = { #GFX_idea_supportpresidenticon
 			name = "GFX_idea_supportpresidenticon"
@@ -509,5 +505,26 @@ spriteTypes = {
 		
 		
 		########ESP#####
+		
+		
+		
+		######USP######
+		
+		spriteType = { #GFX_idea_dad
+			name = "GFX_idea_James"
+			texturefile = "gfx/interface/ideas/USP/James.dds"
+		}
+		
+		spriteType = { #GFX_idea_dad
+			name = "GFX_idea_lone_wanderer"
+			texturefile = "gfx/interface/ideas/USP/Lone_wanderer.dds"
+		}
+		
+		
+		
+		
+		
+		
+		#######USP######
 		
 }
