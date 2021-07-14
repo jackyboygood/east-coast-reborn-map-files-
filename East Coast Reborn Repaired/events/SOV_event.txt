@@ -60,7 +60,6 @@ country_event = {
 			add_state_population = no
 			}
 		}
-	}
 }
 
 country_event = {
