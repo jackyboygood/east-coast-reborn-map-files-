@@ -11,3 +11,15 @@ ESP = {
 		}
 	}
 }
+
+SOV = {
+	operative = {
+		female = {
+		}
+		male = {
+		"gfx/leaders/SOV/operatives/male_1.dds"
+		"gfx/leaders/SOV/operatives/male_2.dds"
+		"gfx/leaders/SOV/operatives/male_3.dds"
+		}
+	}
+}
