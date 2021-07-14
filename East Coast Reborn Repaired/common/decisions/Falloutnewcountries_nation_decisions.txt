@@ -194,8 +194,9 @@ form_SNEED = {
 		}
 
 	visible = {
-			OR = {
+			AND = {
 				original_tag = AAD
+				has_global_flag = OWB_wild_wasteland_enabled_global_flag
 			}
 			NOT = { has_global_flag = form_sneed }
 		}
