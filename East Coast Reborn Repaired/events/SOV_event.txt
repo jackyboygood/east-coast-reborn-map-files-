@@ -115,7 +115,7 @@ country_event = {
 			intellectuals = 20
 		}
 		1066 = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 4
 		}
 	}
 }
