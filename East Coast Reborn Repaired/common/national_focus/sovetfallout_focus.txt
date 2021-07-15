@@ -246,7 +246,7 @@ focus_tree = {
 		y = 1
 		cost = 45
 		completion_reward = {
-			add_research_slot = -1
+			add_ideas = drunkscience
 		}
 	}
 	
@@ -399,8 +399,10 @@ focus_tree = {
 
 		available = {
              AAG = { 
-			      ruler > 0.34
+			      people > 0.82
+				  has_stability <0.3
 			}
+			
 		}
 
 		bypass = {
@@ -576,9 +578,11 @@ focus_tree = {
 	           limit = {
 		         has_dlc = "La Resistance"
 	            }
+				hidden_effect = {
 	            create_intelligence_agency = {
 		        name = "All-American Extraordinary Commission"
 		        icon = "GFX_intelligence_agency_logo_cheka"
+				}
 	           }
             }
 			if = {
