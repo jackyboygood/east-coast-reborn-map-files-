@@ -120,7 +120,7 @@ add_ideas = {
 add_opinion_modifier = { target = TRL modifier = boshatesmutants }
 add_opinion_modifier = { target = WBH modifier = boshateswashingtonstatebos }
 add_opinion_modifier = { target = MEN modifier = torgovieoperacii }
-add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
+add_opinion_modifier = { target = DIA modifier = torgovieoperacii }
 add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
 
 set_research_slots = 3

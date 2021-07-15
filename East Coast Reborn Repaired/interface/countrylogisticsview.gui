@@ -612,7 +612,7 @@ guiTypes = {
 			name = "btn_days"
 			position = {x=77 y=39}
 			quadTextureSprite ="GFX_chart_history_level_button"
-			buttonText = "LINECHART_DETAILS_DAYS"
+			buttonText = "LINECHART_DETAILS_DIAS"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
@@ -715,7 +715,7 @@ guiTypes = {
 			name = "x_axis_type"
 			position = { x = 104 y = 233 }
 			font = "hoi_18mbs"
-			text = "LINECHART_DETAILS_DAYS"
+			text = "LINECHART_DETAILS_DIAS"
 			maxWidth = 180
 			maxHeight = 30
 			format = center
@@ -866,7 +866,7 @@ guiTypes = {
 			name = "btn_days"
 			position = {x=77 y=69}
 			quadTextureSprite ="GFX_chart_history_level_button"
-			buttonText = "LINECHART_DETAILS_DAYS"
+			buttonText = "LINECHART_DETAILS_DIAS"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
@@ -959,7 +959,7 @@ guiTypes = {
 			name = "x_axis_type"
 			position = { x = 104 y = 263 }
 			font = "hoi_18mbs"
-			text = "LINECHART_DETAILS_DAYS"
+			text = "LINECHART_DETAILS_DIAS"
 			maxWidth = 180
 			maxHeight = 30
 			format = center

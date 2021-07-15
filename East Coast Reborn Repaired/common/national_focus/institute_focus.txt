@@ -190,7 +190,7 @@ focus_tree = {
 			MEN = { 
 		    add_manpower = -100	
 			}
-			DAY = { 
+			DIA = { 
 		    add_manpower = -100	
 			}
 			STR = { 
@@ -217,7 +217,7 @@ focus_tree = {
 		cost = 45
 		available = {
 			has_completed_focus = institut_25
-			1014 = { is_owned_and_controlled_by = DAY }
+			1014 = { is_owned_and_controlled_by = DIA }
 		}
 		prerequisite = {
 			focus = institut_8
@@ -254,7 +254,7 @@ focus_tree = {
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		available = {
-           1015 = { is_owned_and_controlled_by = DAY }
+           1015 = { is_owned_and_controlled_by = DIA }
 		}
 		prerequisite = {
 			focus = institut_9
@@ -263,11 +263,11 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			DAY = { 
+			DIA = { 
 		          add_opinion_modifier = { target = INS modifier = daymondcitygoodforinstitut }
 			}
 			add_political_power = 30
-			add_opinion_modifier = { target = DAY modifier = daymondcitygoodforinstitut }
+			add_opinion_modifier = { target = DIA modifier = daymondcitygoodforinstitut }
 		}
 	}
 	
@@ -288,7 +288,7 @@ focus_tree = {
 		}
 
 		available = {
-           1014 = { is_owned_and_controlled_by = DAY }
+           1014 = { is_owned_and_controlled_by = DIA }
 		}
 
 		bypass = {
@@ -334,7 +334,7 @@ focus_tree = {
 			INS = { 
 		          transfer_state = 1015
 			}
-			DAY = { 
+			DIA = { 
 		          add_political_power = -100
 			}
 		}
@@ -354,7 +354,7 @@ focus_tree = {
 		ai_will_do = { factor = 30 } 
 
 		available = {
-           1014 = { is_owned_and_controlled_by = DAY }
+           1014 = { is_owned_and_controlled_by = DIA }
 		}
 
 		bypass = {

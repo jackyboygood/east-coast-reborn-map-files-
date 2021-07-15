@@ -68,7 +68,7 @@ set_popularities = {
 
 add_ideas = {}
 
-add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
+add_opinion_modifier = { target = DIA modifier = torgovieoperacii }
 
 create_country_leader  = {
 	name = "Mayor Hancock"

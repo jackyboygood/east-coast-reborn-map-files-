@@ -1912,7 +1912,7 @@ STR = {
 	}
 }
 
-DAY = {
+DIA = {
 	political = {
 		intellectuals = {
 			male = {

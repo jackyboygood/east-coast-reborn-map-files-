@@ -74,7 +74,7 @@ add_ideas = {
 }
 
 add_opinion_modifier = { target = INS modifier = torgovieoperacii }
-add_opinion_modifier = { target = DAY modifier = torgovieoperacii }
+add_opinion_modifier = { target = DIA modifier = torgovieoperacii }
 add_opinion_modifier = { target = REC modifier = torgovieoperacii }
 add_opinion_modifier = { target = DOB modifier = torgovieoperacii }
 add_opinion_modifier = { target = RSD modifier = lubiteliprirodi }

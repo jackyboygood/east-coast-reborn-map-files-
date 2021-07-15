@@ -1,5 +1,5 @@
 ﻿capital = 930
-oob = "DAY_2275"
+oob = "DIA_2275"
 
 set_technology = {
     infantry_tech_level_tribal = 1
@@ -79,7 +79,7 @@ add_opinion_modifier = { target = BSS modifier = torgovieoperacii }
 create_country_leader  = {
 	name = "Mayor McDonough"
 	desc = ""
-	picture = "gfx/leaders/DAY/daymondcitymar.dds"
+	picture = "gfx/leaders/DIA/daymondcitymar.dds"
 	expire = "3000.1.1"
 	ideology = town_hall_democracy
 	traits = {
@@ -90,7 +90,7 @@ create_country_leader  = {
 create_country_leader  = {
 	name = "McDonough Synth"
 	desc = ""
-	picture = "gfx/leaders/DAY/makdonahsinth.dds"
+	picture = "gfx/leaders/DIA/makdonahsinth.dds"
 	expire = "3000.1.1"
 	ideology = technocracy
 	traits = {}
@@ -99,7 +99,7 @@ create_country_leader  = {
 
 create_corps_commander = {
 	name = "Captain Guard of Diamond City"
-	portrait_path = "gfx/leaders/DAY/diamond-city-swat.dds"
+	portrait_path = "gfx/leaders/DIA/diamond-city-swat.dds"
 	skill = 3
 	traits = {}
 	attack_skill = 1
