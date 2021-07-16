@@ -1560,6 +1560,8 @@ spriteTypes = {
 	name = "GFX_goal_ESP_Eden_RAB"
 	texturefile = "gfx/interface/goals/ESP/ESP_Eden_RAB.dds"		
 	}
+	
+	
 	######ESP#######
 	
 	
@@ -1662,12 +1664,90 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/SPP/SPH_Slaves_Workshop.dds"		
 	}
 	
+	SpriteType = {
+	name = "GFX_goal_SPH_Victory"
+	texturefile = "gfx/interface/goals/SPP/SPH_Victory.dds"		
+	}
 	
+	SpriteType = {
+	name = "GFX_goal_SPH_Shephard_Fist"
+	texturefile = "gfx/interface/goals/SPP/SPH_Shephard_Fist.dds"		
+	}
 	
 	
 	#####SPP#####
 	
 	
 	
+	
+	
+	
+	#####IBS######
+	
+	
+	SpriteType = {
+	name = "GFX_goal_IBS_Last_Bastion"
+	texturefile = "gfx/interface/goals/IBS/IBS_Last_Bastion.dds"		
+	}
+	
+	
+	
+	######IBS#####
+	
+	
+	
+	
+	######DEV######
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_drills"
+	texturefile = "gfx/interface/goals/DEV/DEV_drills.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_saluting"
+	texturefile = "gfx/interface/goals/DEV/DEV_saluting.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Tom"
+	texturefile = "gfx/interface/goals/DEV/DEV_Tom.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bill"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bill.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Stevie"
+	texturefile = "gfx/interface/goals/DEV/DEV_Stevie.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Enclave"
+	texturefile = "gfx/interface/goals/DEV/DEV_Enclave.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_DEV_Easton"
+	texturefile = "gfx/interface/goals/DEV/DEV_Easton.dds"		
+	}
+	
+	######DEV######
+	
+	
+	
+	
+	
+	######INS######
+	
+	SpriteType = {
+	name = "GFX_goal_INS_Yrk"
+	texturefile = "gfx/interface/goals/INS/INS_Yrk.dds"		
+	}
+	
+	
+	#####INS#####
 	
 }

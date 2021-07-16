@@ -1191,7 +1191,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#Purity - FEV experiments
 		id = Enclavesp_51
-		icon = GFX_goal_new_bio_med_gel_experiments
+		icon = GFX_goal_ESP_Eden_FEV
 		prerequisite = {
 			focus = Enclavesp_18
 		}
@@ -1554,7 +1554,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_78
-		icon = GFX_goal_enc_fort
+		icon = GFX_goal_ESP_Eden_RAB
 		prerequisite = { focus = Enclavesp_27 }
 		relative_position_id = Enclavesp_27
 		x = 0
