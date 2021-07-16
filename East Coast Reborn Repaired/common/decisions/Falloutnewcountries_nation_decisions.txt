@@ -165,35 +165,33 @@ form_canadian_category = {
 }
 
 form_sneed_category = {
-
-form_SNEED = {
-    icon = GFX_decision_chuck
-	allowed = {
+	form_SNEED = {
+		icon = GFX_decision_chuck
+		allowed = {
 			original_tag = AAD
-
-		     }
-	available = {
+		}
+		available = {
 			is_subject = no
-				controls_state = 1047
-				controls_state = 1046
-				controls_state = 1058
-				controls_state = 720
-				controls_state = 1034
-				controls_state = 1062
-				controls_state = 1059
-				controls_state = 1061
-				controls_state = 722
-				controls_state = 1060
-				controls_state = 970
-				controls_state = 1045
-				controls_state = 1063
-				controls_state = 1064
-				controls_state = 1065
-				controls_state = 721
-				controls_state = 1066
+			controls_state = 1047
+			controls_state = 1046
+			controls_state = 1058
+			controls_state = 720
+			controls_state = 1034
+			controls_state = 1062
+			controls_state = 1059
+			controls_state = 1061
+			controls_state = 722
+			controls_state = 1060
+			controls_state = 970
+			controls_state = 1045
+			controls_state = 1063
+			controls_state = 1064
+			controls_state = 1065
+			controls_state = 721
+			controls_state = 1066
 		}
 
-	visible = {
+		visible = {
 			AND = {
 				original_tag = AAD
 				has_global_flag = OWB_wild_wasteland_enabled_global_flag
@@ -201,8 +199,8 @@ form_SNEED = {
 			NOT = { has_global_flag = form_sneed }
 		}
 		complete_effect = {
-		    set_cosmetic_tag = Sneed
-		     hidden_effect = {
+			set_cosmetic_tag = Sneed
+			hidden_effect = {
 				1047 = { add_core_of = ROOT }
 				1046 = { add_core_of = ROOT }
 				1058 = { add_core_of = ROOT }
@@ -221,26 +219,21 @@ form_SNEED = {
 				721 = { add_core_of = ROOT }
 				1066 = { add_core_of = ROOT }
 				set_research_slots = 4
-		      set_technology = {
-			   infantry_tech_level_scientific = 1
-		       power_armour_tech_level_tribal = 1
-	           power_armour_tech_level_settler = 1
-	           power_armour_tech_level_scientific = 1
-			   support_tech_level_scientific = 1
-			   air_tech_level_settler = 1
-	           air_tech_level_scientific = 1
-	 		}
+				set_technology = {
+					infantry_tech_level_scientific = 1
+					power_armour_tech_level_tribal = 1
+					power_armour_tech_level_settler = 1
+					power_armour_tech_level_scientific = 1
+					support_tech_level_scientific = 1
+					air_tech_level_settler = 1
+					air_tech_level_scientific = 1
 				}
+			}
+		}
 		ai_will_do = {
 			factor = 200
 		}
-		
-		
-		
-		}
-			 
-
-}
+	}
 }
 
 
@@ -248,7 +241,7 @@ form_SNEED = {
 
 
 ESP_cloning = {
-	cloning_project = {
+	ESP_cloning_project = {
 		icon = decision_enc_cloning
 		cost = 50
 		
@@ -284,7 +277,7 @@ ESP_cloning = {
 			}			
 		}
 	}
-	cloning_experiment = {
+	ESP_cloning_experiment = {
 		icon = decision_enc_cloning
 		cost = 50
 		
@@ -387,7 +380,7 @@ ESP_cloning = {
 			}			
 		}
 	}	
-	build_cloning_facility = {
+	ESP_build_cloning_facility = {
 		icon = generic_construction
 		cost = 200
 		
@@ -425,7 +418,7 @@ ESP_cloning = {
 }
 
 AAE_cloning = {
-	cloning_project = {
+	AAE_cloning_project = {
 		icon = decision_enc_cloning
 		cost = 50
 		
@@ -461,7 +454,7 @@ AAE_cloning = {
 			}			
 		}
 	}
-	cloning_experiment = {
+	AAE_cloning_experiment = {
 		icon = decision_enc_cloning
 		cost = 50
 		
@@ -564,7 +557,7 @@ AAE_cloning = {
 			}			
 		}
 	}	
-	build_cloning_facility = {
+	AAE_build_cloning_facility = {
 		icon = generic_construction
 		cost = 200
 		

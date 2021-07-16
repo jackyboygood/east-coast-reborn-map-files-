@@ -1184,7 +1184,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_45
+		id = Deyv_60
 		icon = GFX_goal_blackminitman
 		ai_will_do = { factor = 1 }
 		cost = 45

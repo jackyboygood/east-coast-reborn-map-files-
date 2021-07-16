@@ -512,6 +512,43 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = Minitmen_19
+		icon = GFX_goal_VLT_all_clear
+		prerequisite = { focus = Minitmen_6 }
+		relative_position_id = Minitmen_6
+		cost = 45
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+		has_completed_focus = Minitmen_16
+		1051 = { is_controlled_by = MEN } 
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = {
+				id = MEN_event.4
+		    }
+		}
+	}
 	
 	focus = {
 		id = Minitmen_20
@@ -575,43 +612,6 @@ focus_tree = {
 						type = take_core_state
 				    }
 			    }
-		    }
-		}
-	}
-	
-	focus = {
-		id = Minitmen_19
-		icon = GFX_goal_VLT_all_clear
-		prerequisite = { focus = Minitmen_6 }
-		relative_position_id = Minitmen_6
-		cost = 45
-		x = 0
-		y = 1
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-		has_completed_focus = Minitmen_16
-		1051 = { is_controlled_by = MEN } 
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			country_event = {
-				id = MEN_event.4
 		    }
 		}
 	}
@@ -910,6 +910,43 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
 			}
+		}
+	}
+
+	focus = {
+		id = Minitmen_56
+		icon = GFX_goal_blackminitman
+		prerequisite = { focus = Minitmen_30 }
+		relative_position_id = Minitmen_30
+		x = 0
+		y = 1
+		
+		will_lead_to_war_with = STR
+
+		cost = 45
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		bypass = {
+			has_full_control_of_state = 1021
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		STR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			  }
+		}
 		}
 	}
 	
@@ -1587,43 +1624,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_56
-		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_30 }
-		relative_position_id = Minitmen_30
-		x = 0
-		y = 1
-		
-		will_lead_to_war_with = STR
-
-		cost = 45
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		bypass = {
-			has_full_control_of_state = 1021
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		STR = {
-				ROOT = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
-			  }
-		}
-		}
-	}
-	
-	focus = {
 		id = Minitmen_57
 		icon = GFX_goal_blackminitman
 		prerequisite = { focus = Minitmen_45 }
@@ -1751,3 +1751,4 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+}

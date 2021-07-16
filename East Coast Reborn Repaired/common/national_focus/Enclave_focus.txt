@@ -397,6 +397,34 @@ focus = {#Expedition - to Mariposa
 			}
 		}
 	}
+
+	focus = {
+		id = Enclavesp_26
+		icon = GFX_goal_ESP_Autumn_Election
+		relative_position_id = Enclavesp_16
+		cost = 30
+		prerequisite = {
+			focus = Enclavesp_16
+		}
+		available = {
+             ruler > 0.5
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Enclavesp_26 entered"
+			}
+			country_event = {
+				id = ENC_event.4
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] Enclavesp_26 exited"
+			}
+		}
+	}
 	
 	focus = {
 		id = Enclavesp_20
@@ -552,34 +580,6 @@ focus = {#Expedition - to Mariposa
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 700 producer = ESP }
 		}
 		cost = 8.8
-	}
-	
-	focus = {
-		id = Enclavesp_26
-		icon = GFX_goal_ESP_Autumn_Election
-		relative_position_id = Enclavesp_16
-		cost = 30
-		prerequisite = {
-			focus = Enclavesp_16
-		}
-		available = {
-             ruler > 0.5
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Enclavesp_26 entered"
-			}
-			country_event = {
-				id = ENC_event.4
-			}
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Enclavesp_26 exited"
-			}
-		}
 	}
 	
 	focus = {
@@ -1311,6 +1311,30 @@ focus = {#Expedition - to Mariposa
 			}
 		}
 	}
+
+	focus = {
+		id = Enclavesp_79
+		icon = GFX_goal_Project_Purity
+		ai_will_do = { factor = 1000 } 
+		relative_position_id = Enclavesp_55
+		prerequisite = {
+			focus = Enclavesp_55
+		}
+		available = {
+            SBS = { exists = no }
+			USP = { exists = no }
+   
+		}
+		x = 0
+		y = 1
+		
+		cost = 45
+		completion_reward = {
+	        1070 = { add_core_of = ESP }
+			975 = { add_core_of = ESP }
+			add_ideas = cleanoperation
+		}
+	}
 	
 	focus = {
 		id = Enclavesp_56
@@ -1525,6 +1549,42 @@ focus = {#Expedition - to Mariposa
 						create_wargoal = { type = annex_everything target = PREV }
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = Enclavesp_78
+		icon = GFX_goal_enc_fort
+		prerequisite = { focus = Enclavesp_27 }
+		relative_position_id = Enclavesp_27
+		x = 0
+		y = 1
+
+		cost = 45
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		available = {
+		date > 2278.1.1
+		RAB = { exists = yes }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_autonomy = { target = RAB autonomy_state = autonomy_puppet }
 		}
 	}
 	
@@ -2202,7 +2262,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-          num_of_controlled_states = 80
+          	num_of_controlled_states > 79
 		}
 
 		bypass = {
@@ -2257,66 +2317,6 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_to_faction = DAD
-		}
-	}
-	
-	focus = {
-		id = Enclavesp_78
-		icon = GFX_goal_enc_fort
-		prerequisite = { focus = Enclavesp_27 }
-		relative_position_id = Enclavesp_27
-		x = 0
-		y = 1
-
-		cost = 45
-
-		ai_will_do = {
-			factor = 1000
-		}
-
-		available = {
-		date > 2278.1.1
-		RAB = { exists = yes }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_autonomy = { target = RAB autonomy_state = autonomy_puppet }
-		}
-	}
-	
-	focus = {
-		id = Enclavesp_79
-		icon = GFX_goal_Project_Purity
-		ai_will_do = { factor = 1000 } 
-		relative_position_id = Enclavesp_55
-		prerequisite = {
-			focus = Enclavesp_55
-		}
-		available = {
-            SBS = { exists = no }
-			USP = { exists = no }
-   
-		}
-		x = 0
-		y = 1
-		
-		cost = 45
-		completion_reward = {
-	        1070 = { add_core_of = ESP }
-			975 = { add_core_of = ESP }
-			add_ideas = cleanoperation
 		}
 	}
 	
@@ -2649,5 +2649,5 @@ focus = {#Expedition - to Mariposa
 			set_autonomy = { target = RAB autonomy_state = autonomy_puppet }
 		}
 	}
-
+}
 	

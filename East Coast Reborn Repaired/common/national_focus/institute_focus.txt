@@ -1224,7 +1224,9 @@ focus_tree = {
 		icon = GFX_goal_institut27
 		relative_position_id = institut_43
 		prerequisite = { focus = institut_43 }
-		date < 2278.1.1
+		available = {
+			date < 2278.1.1
+		}
 		x = 0
 		y = 1
 		

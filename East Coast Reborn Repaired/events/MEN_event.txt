@@ -468,7 +468,7 @@ country_event = {
 	option = {
 		name = MEN_event.19.a
 		ai_chance = 100
-		BSS = {
+		SBS = {
 			add_to_faction = MEN
 		}
 	}
