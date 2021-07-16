@@ -6090,7 +6090,7 @@ SOV = {
 	}
 }
 
-BAG = {
+WIT = {
 	political = {
 		intellectuals = {
 			male = {

@@ -1656,18 +1656,18 @@ focus_tree = {
 		y = 2
 		cost = 45
 		completion_reward = {
-		   430 = { add_core_of = BAG }
-		   209 = { add_core_of = BAG }
-		   374 = { add_core_of = BAG }
-		   405 = { add_core_of = BAG }
-		   256 = { add_core_of = BAG }
-		   385 = { add_core_of = BAG }
-		   465 = { add_core_of = BAG }
-		   #release = BAG
+		   430 = { add_core_of = WIT }
+		   209 = { add_core_of = WIT }
+		   374 = { add_core_of = WIT }
+		   405 = { add_core_of = WIT }
+		   256 = { add_core_of = WIT }
+		   385 = { add_core_of = WIT }
+		   465 = { add_core_of = WIT }
+		   #release = WIT
 		   create_faction = institualien
-		   add_to_faction = BAG
-		   set_autonomy = { target = BAG autonomy_state = autonomy_puppet }	
-		   BAG = { 
+		   add_to_faction = WIT
+		   set_autonomy = { target = WIT autonomy_state = autonomy_puppet }	
+		   WIT = { 
 		       transfer_state = 465
 			   transfer_state = 385
 			   transfer_state = 256
@@ -1675,7 +1675,7 @@ focus_tree = {
 			   add_political_power = 1400
 		       add_manpower = 15000
 			   hidden_effect = {
-			    load_oob = BAG_2275
+			    load_oob = WIT_2275
 			   }
 		    }
 		}
@@ -1695,7 +1695,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = -5500
-			BAG = { 
+			WIT = { 
 		    add_manpower = 5500	
 			}
 		}
@@ -1728,7 +1728,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = support_robot_handy_equipment amount = -1500 producer = INS }
 			add_equipment_to_stockpile = { type = support_robot_protectron_equipment_2 amount = -600 producer = INS }
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -6000 producer = INS }
-			BAG = { 
+			WIT = { 
 		    add_equipment_to_stockpile = { type = support_robot_handy_equipment amount = 1500 producer = INS }
 			add_equipment_to_stockpile = { type = support_robot_protectron_equipment_2 amount = 600 producer = INS }	
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 6000 producer = INS }
@@ -1752,7 +1752,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			BAG = { 
+			WIT = { 
 		    add_ideas = pohishenieludeyinstitute
 			add_ideas = sinth1generic
 			add_ideas = newsupermutantv
