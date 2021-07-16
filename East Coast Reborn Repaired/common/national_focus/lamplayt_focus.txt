@@ -1162,17 +1162,26 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			set_autonomy = { target = AUA autonomy_state = autonomy_puppet }
-			add_opinion_modifier = { target = AUA modifier = spasenierijey }
+			set_autonomy = {
+				target = AUA
+				autonomy_state = autonomy_puppet
+			}
+			add_opinion_modifier = {
+				target = AUA
+				modifier = spasenierijey
+			}
 			AUA = { 
-		          add_opinion_modifier = { target = LIT modifier = spasenierijey }
-				  create_country_leader = {
-	              name = "Redhead"
-	              desc = ""
-	              picture = "gfx/leaders/AUA/Portrait_redhead.dds"
-	              expire = "3000.1.1"
-	              ideology = ideocracy
-                }
+				add_opinion_modifier = { 
+					target = LIT
+					modifier = spasenierijey
+				}
+				create_country_leader = {
+					name = "Redhead"
+					desc = ""
+					picture = "gfx/leaders/AUA/Portrait_redhead.dds"
+					expire = "3000.1.1"
+					ideology = ideocracy
+				}
 			}
 		}
 	}
@@ -1766,9 +1775,15 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			AUB = { 
-		          add_opinion_modifier = { target = LIT modifier = annexcanadaaa }
+		        add_opinion_modifier = { 
+					target = LIT
+					modifier = annexcanadaaa
+				}
 			}
-			add_opinion_modifier = { target = AUB modifier = annexcanadaaa }
+			add_opinion_modifier = {
+				target = AUB
+				modifier = annexcanadaaa
+			}
 		}
 	}
 	
@@ -2295,8 +2310,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = lamplayt_93
-			focus = lamplayt_103
-			
+			focus = lamplayt_107
 		}
 		ai_will_do = { factor = 30 }
 		cost = 45
@@ -2368,6 +2382,7 @@ focus_tree = {
 		available = {
 
 		}
+
 		ai_will_do = { factor = 30 }
 		cost = 45
 		x = 0
@@ -2486,8 +2501,8 @@ focus_tree = {
 		prerequisite = { focus = lamplayt_92 }
 
         mutually_exclusive = {
-		focus = lamplayt_100
-		focus = lamplayt_93
+			focus = lamplayt_100
+			focus = lamplayt_93
 		}
 		
         available = {
@@ -3203,5 +3218,4 @@ focus_tree = {
 		   add_manpower = 2000
 		}
 	}
-	
-
+}

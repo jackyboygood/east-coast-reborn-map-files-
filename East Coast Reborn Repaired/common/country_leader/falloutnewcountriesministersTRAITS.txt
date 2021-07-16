@@ -155,8 +155,8 @@ leader_traits = {
 	
 	agitator = {
 		random = no
-		enemy_partisan_effect = -0.25
-		partisan_effect = 0.25
+		own_operative_capture_chance_factor = -0.25
+		enemy_operative_capture_chance_factor = 0.25
 		political_power_gain = 0.5
 		ai_will_do = {
 			factor = 1
@@ -508,7 +508,7 @@ leader_traits = {
 	
 	obertsister = {
 		random = no
-		ai_focus_attack_factor = 0.205
+		ai_focus_aggressive_factor = 0.205
 		army_defence_factor = 0.02
 		production_speed_bunker_factor = 0.15
 		ai_will_do = {

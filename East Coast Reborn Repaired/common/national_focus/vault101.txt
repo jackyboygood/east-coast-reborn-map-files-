@@ -592,6 +592,31 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = vault101_44
+		icon = GFX_goal_USP_Choice_Butch
+		cost = 45
+		prerequisite = {
+		focus = vault101_33
+		}
+		available = {
+			has_country_leader = {
+				id = 5678
+				ruling_only = yes
+				name = "Butch Deloria"
+			}
+		}
+		x = 5
+		y = 1
+		relative_position_id = vault101_33
+		completion_reward = {
+			add_ideas = vault101buch
+            LIT = {
+				set_country_flag = amatabej
+			}
+		}
+	}
 	
 	focus = {
 		id = vault101_34
@@ -633,8 +658,33 @@ focus_tree = {
 		}
 		cost = 45
  }
+
+	focus = {
+		id = vault101_52
+		icon = GFX_goal_USP_Amata
+		cost = 45
+		prerequisite = {
+		focus = vault101_33
+		}
+		available = {
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
+		}
+		x = -5
+		y = 1
+		relative_position_id = vault101_33
+		completion_reward = {
+			add_ideas = amatast
+			LIT = {
+				set_country_flag = buchisgnan
+			}
+		}
+	}
  
- focus = {
+ 	focus = {
 		id = vault101_35
 		icon = GFX_goal_USP_Builder
 		relative_position_id = vault101_52
@@ -847,31 +897,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_44
-		icon = GFX_goal_USP_Choice_Butch
-		cost = 45
-		prerequisite = {
-		focus = vault101_33
-		}
-		available = {
-			has_country_leader = {
-				id = 5678
-				ruling_only = yes
-				name = "Butch Deloria"
-			}
-		}
-		x = 5
-		y = 1
-		relative_position_id = vault101_33
-		completion_reward = {
-			add_ideas = vault101buch
-            LIT = {
-				set_country_flag = amatabej
-			}
-		}
-	}
-	
-	focus = {
 		id = vault101_49
 		icon = GFX_goal_USP_Tunnel_Snakes_Rule
 		cost = 45
@@ -987,31 +1012,6 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = SBS
-			}
-		}
-	}
-	
-	focus = {
-		id = vault101_52
-		icon = GFX_goal_USP_Amata
-		cost = 45
-		prerequisite = {
-		focus = vault101_33
-		}
-		available = {
-			has_country_leader = {
-				id = 5677
-				ruling_only = yes
-				name = "Amata Almadovar"
-			}
-		}
-		x = -5
-		y = 1
-		relative_position_id = vault101_33
-		completion_reward = {
-			add_ideas = amatast
-			LIT = {
-				set_country_flag = buchisgnan
 			}
 		}
 	}

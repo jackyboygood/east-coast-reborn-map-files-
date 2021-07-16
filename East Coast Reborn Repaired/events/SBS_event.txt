@@ -305,7 +305,10 @@ country_event = {
 	
 	option = {
 		name = SBS_event.12.a		
-		remove_country_flag = shephard_uprising
+		set_country_flag = {
+			flag = shephard_uprising
+			value = 0
+		}
 		add_stability = 0.10
 		add_war_support = 0.10
 		add_ideas = SBS_maxson_stories

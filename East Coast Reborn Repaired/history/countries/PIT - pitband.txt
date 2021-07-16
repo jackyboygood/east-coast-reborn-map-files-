@@ -57,7 +57,7 @@ set_technology = {
 set_stability = 0.65
 set_war_support = 0.45
 set_convoys = 0
-set_country_flag = is_settler_nation
+set_country_flag = is_raider_nation
 
 set_politics = {
 	ruling_party = elites

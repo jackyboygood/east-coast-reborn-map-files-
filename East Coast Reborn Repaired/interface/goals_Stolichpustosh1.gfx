@@ -18,11 +18,6 @@ spriteTypes = {
 	}
 
     SpriteType = {
-	name = "GFX_goal_militarifederacia1"
-	texturefile = "gfx/interface/goals/militarifederacia1.dds"			
-	}
-
-    SpriteType = {
 	name = "GFX_goal_generalnewyork1"
 	texturefile = "gfx/interface/goals/generalnewyork1.dds"			
 	}			
@@ -170,11 +165,6 @@ spriteTypes = {
     SpriteType = {
 	name = "GFX_goal_megatonna10"
 	texturefile = "gfx/interface/goals/megatonna10.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna11"
-	texturefile = "gfx/interface/goals/megatonna11.dds"			
 	}
 
     SpriteType = {
@@ -480,11 +470,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_Minutamen4"
 	texturefile = "gfx/interface/goals/Minutamen4.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_Enclave11"
-	texturefile = "gfx/interface/goals/Enclave11.dds"			
 	}
 	
 	SpriteType = {
