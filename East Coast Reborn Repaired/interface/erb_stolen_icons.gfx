@@ -1,0 +1,106 @@
+spriteTypes = {
+    SpriteType = {#enc_radio
+        name = "GFX_goal_enc_radio"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_radio.dds"
+    }
+
+    SpriteType = {#enc_power_armor_focus
+        name = "GFX_goal_enc_power_armor_focus"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_power_armor_focus.dds"
+    } 
+
+    SpriteType = {#enc_laser_weapons
+        name = "GFX_goal_enc_laser_weapons"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_laser_weapons.dds"
+    }
+
+    SpriteType = {#enc_army_doctrine
+        name = "GFX_goal_enc_army_doctrine"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_army_doctrine.dds"
+    } 
+
+    SpriteType = {#enc_air_production
+        name = "GFX_goal_enc_air_production"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_air_production.dds"
+    }
+
+    SpriteType = {#enc_para
+        name = "GFX_goal_enc_para"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_para.dds"
+    } 
+
+    SpriteType = {#enc_small_arms
+        name = "GFX_goal_enc_small_arms"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_small_arms.dds"
+    }
+
+    SpriteType = {#enc_planning
+        name = "GFX_goal_enc_planning"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_planning.dds"
+    }
+
+    SpriteType = {#enc_position_armies
+        name = "GFX_goal_enc_position_armies"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_position_armies.dds"
+    } 
+
+    SpriteType = {#enc_fighter
+        name = "GFX_goal_enc_fighter"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_fighter.dds"
+    } 
+
+    SpriteType = {#enc_research
+        name = "GFX_goal_enc_research"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_research.dds"
+    } 
+
+    SpriteType = {#enc_super_soldier
+        name = "GFX_goal_enc_super_soldier"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_super_soldier.dds"
+    } 
+
+    SpriteType = {#enc_cloning
+        name = "GFX_goal_enc_cloning"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_cloning.dds"
+    } 
+
+    SpriteType = {#enc_troop
+        name = "GFX_goal_enc_troop"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_troop.dds"
+    } 
+
+    SpriteType = {#enc_fort
+        name = "GFX_goal_enc_fort"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_fort.dds"
+    } 
+
+    SpriteType = {#enc_troop_call
+        name = "GFX_goal_enc_troop_call"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_troop_call.dds"
+    } 
+
+    SpriteType = {#enc_veterans_call
+        name = "GFX_goal_enc_veterans_call"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_veterans_call.dds"
+    } 
+
+    SpriteType = {#enc_verti
+        name = "GFX_goal_enc_verti"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_verti.dds"
+    } 
+
+    SpriteType = {#enc_scientists
+        name = "GFX_goal_enc_scientists"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_scientists.dds"
+    } 
+
+    SpriteType = {#enc_anti_ncr
+        name = "GFX_goal_enc_anti_ncr"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_anti_ncr.dds"
+    } 
+
+    SpriteType = {#enc_advanced_fighter
+        name = "GFX_goal_enc_advanced_fighter"
+        texturefile = "gfx/interface/goals/ERB_stolen/enc_advanced_fighter.dds"
+    } 
+}

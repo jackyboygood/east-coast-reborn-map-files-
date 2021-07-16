@@ -1,7 +1,6 @@
 version="dev"
 dependencies={
 	"Old World Blues"
-	"Enclave Reborn"
 }
 tags={
 	"Alternative History"

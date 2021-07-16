@@ -1126,7 +1126,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = Enclavesp_47
-		icon = GFX_goal_enc_radio_2
+		icon = GFX_goal_enc_radio
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = Enclavesp_46 }
 		relative_position_id = Enclavesp_46 
