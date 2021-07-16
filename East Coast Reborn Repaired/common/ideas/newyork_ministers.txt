@@ -53,7 +53,7 @@ cultural_advisor = {
 			}
 		}
 		
-		alice_mclafferty = {
+		liz_hazel = {
 
 				picture = alice_mclafferty_advisor
 

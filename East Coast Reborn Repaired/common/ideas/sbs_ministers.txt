@@ -1,7 +1,7 @@
 ideas = {
 	army_chief = {
 
-		head_paladin_richardson = {
+		head_paladin_walters = {
 			picture = SBS_generic4
 
 			allowed = {
@@ -22,7 +22,7 @@ ideas = {
 		}
 
 
-		paladin_myers = {
+		paladin_wolfe = {
 			picture = SBS_generic6
 
 			allowed = {
@@ -46,7 +46,7 @@ ideas = {
 
 	high_command = {
 
-		scribe_perez = {
+		scribe_adams = {
 			picture = SBS_generic2
 
 			allowed = {
@@ -62,7 +62,7 @@ ideas = {
 			}
 		}
 
-		paladin_moore = {
+		paladin_reyes = {
 			picture = SBS_generic1
 
 			allowed = {
@@ -78,7 +78,7 @@ ideas = {
 			}
 		}
 
-		knight_watson = {
+		knight_madine = {
 			picture = SBS_generic5
 
 			allowed = {
@@ -94,7 +94,7 @@ ideas = {
 			}
 		}
 
-		scout_davies = {
+		scout_wessex = {
 			picture = SBS_generic4
 
 			allowed = {
@@ -114,7 +114,7 @@ ideas = {
 	}
 
 	cultural_advisor = {
-		knight_simmons = {
+		knight_canmore = {
 
 			picture = SBS_generic7
 
@@ -131,7 +131,7 @@ ideas = {
 			}
 		}
 
-		scribe_dyson = {
+		scribe_hanover = {
 
 			picture = SBS_generic10
 
@@ -148,7 +148,7 @@ ideas = {
 			}
 		}
 
-		paladin_myers_advisor = {
+		paladin_wolfe_advisor = {
 
 			picture = SBS_generic8
 
@@ -165,7 +165,7 @@ ideas = {
 			}
 		}
 
-		journeyman_fritz = {
+		journeyman_mercia = {
 
 			picture = SBS_generic9
 
