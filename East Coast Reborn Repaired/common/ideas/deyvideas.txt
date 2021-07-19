@@ -202,9 +202,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.1
-				MONTHLY_POPULATION = 0.02
-				non_core_manpower = 0.05
+				political_power_gain = 0.15
+				MONTHLY_POPULATION = 0.05
+				non_core_manpower = 0.15
 			}
 		}
 		
@@ -223,9 +223,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				supply_consumption_factor = -0.08
+				MONTHLY_POPULATION = 0.15
 				local_resources_factor = 0.05
-				industry_free_repair_factor = 0.05
+				exodus_national_appeal = 0.2
 			}
 		}
 		
@@ -244,9 +244,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.15
+				war_support_factor = -0.1
 				political_power_gain = 0.02
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
 				production_speed_arms_factory_factor = -0.2
 			}
 		}
@@ -337,8 +338,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.01
+				stability_factor = -0.05
+				war_support_factor = 0.1
 				political_power_gain = 0.01
                 send_volunteer_size = 4
+				conscription = 0.10
 			}
 		}
