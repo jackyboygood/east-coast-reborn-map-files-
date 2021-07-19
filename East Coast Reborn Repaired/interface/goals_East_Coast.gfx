@@ -951,6 +951,16 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/USP/USP_All_Good.dds"		
 	}
 	
+	SpriteType = {
+	name = "GFX_goal_USP_112"
+	texturefile = "gfx/interface/goals/USP/USP_112.dds"		
+	}
+	
+   SpriteType = {
+	name = "GFX_goal_USP_Gary"
+	texturefile = "gfx/interface/goals/USP/USP_Gary.dds"		
+	}
+	
 	######USP#####
 	
 	
@@ -1733,6 +1743,103 @@ spriteTypes = {
 	name = "GFX_goal_DEV_Easton"
 	texturefile = "gfx/interface/goals/DEV/DEV_Easton.dds"		
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Rosie"
+	texturefile = "gfx/interface/goals/DEV/DEV_Rosie.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_DEV_Rosie_Delaware"
+	texturefile = "gfx/interface/goals/DEV/DEV_Rosie_Delaware.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Rosie_Family"
+	texturefile = "gfx/interface/goals/DEV/DEV_Rosie_Family.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Rosie_Science"
+	texturefile = "gfx/interface/goals/DEV/DEV_Rosie_Family.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Rosie_Science"
+	texturefile = "gfx/interface/goals/DEV/DEV_Rosie_Science.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bob"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bob.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bob_Museum"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bob_Museum.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bob_Museum"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bob_Museum.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bob_Tom"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bob_Tom.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bob_Bill"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bob_Bill.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Bob_West"
+	texturefile = "gfx/interface/goals/DEV/DEV_Bob_West.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Delaware"
+	texturefile = "gfx/interface/goals/DEV/DEV_Delaware.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Dave"
+	texturefile = "gfx/interface/goals/DEV/DEV_Dave.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_DEV_Dave_Rules"
+	texturefile = "gfx/interface/goals/DEV/DEV_Dave_Rules.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Dave_Diplomatic"
+	texturefile = "gfx/interface/goals/DEV/DEV_Dave_Diplomatic.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_DEV_Dave_Tom"
+	texturefile = "gfx/interface/goals/DEV/DEV_Dave_Tom.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Dave_Family"
+	texturefile = "gfx/interface/goals/DEV/DEV_Dave_Family.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Dave_Delaware"
+	texturefile = "gfx/interface/goals/DEV/DEV_Dave_Delaware.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_DEV_Democracy"
+	texturefile = "gfx/interface/goals/DEV/DEV_Democracy.dds"		
+	}
+	
+	
 	
 	######DEV######
 	
