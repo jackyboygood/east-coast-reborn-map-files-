@@ -99,18 +99,9 @@ create_country_leader = {
 	ideology = benevolent_dictatorship			
 	traits = {
 	  well_liked_leader
+	  stout_defender
 	}
 }		
-create_country_leader = {
-	name = "Sole Survivor"
-	id = 2003
-	desc = ""
-	picture = "gfx/leaders/MEN/usavihodec.dds"
-	expire = "3000.1.1"
-	ideology = town_hall_democracy			
-	traits = {}
- }
-
 
 create_corps_commander = {
 	name = "Colonel Jane"

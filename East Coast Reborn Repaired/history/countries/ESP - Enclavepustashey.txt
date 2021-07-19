@@ -80,6 +80,11 @@ set_country_flag = enclave_nation
 set_country_flag = is_settler_nation
 set_country_flag = economic_laws_hidden
 set_country_flag = no_mutants_allowed
+set_country_flag = no_generic_advisor
+set_country_flag = no_generic_chief
+set_country_flag = no_generic_political_advisors
+set_country_flag = no_generic_high_command
+set_country_flag = no_generic_theorists
 
 set_popularities = {
 	people = 20
