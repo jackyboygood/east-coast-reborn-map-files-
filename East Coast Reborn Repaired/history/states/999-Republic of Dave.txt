@@ -2,7 +2,7 @@ state={
 	id=999
 	name="Republic of Dave"
 	resources = {
-		metal = 2
+		metal = 13
 		water = 2
 		energy = 4
 	}
@@ -11,12 +11,12 @@ state={
 		add_core_of = DEV
 
 		victory_points = {
-			12355 25
+			12355 15
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
 
 		}
 	}
@@ -26,7 +26,7 @@ state={
 	provinces={
 		1113 1129 1137 1140 1144 1152 1167 12353 12354 12355 
 	}
-	manpower=4000
+	manpower=8500
 	buildings_max_level_factor=1.000
 	state_category = town
 }

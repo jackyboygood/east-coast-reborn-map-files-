@@ -12,7 +12,7 @@ state={
 		add_core_of = BAS
 
 		victory_points = {
-			12756 25
+			12756 15
 		}
 		buildings = {
 			infrastructure = 7
@@ -24,7 +24,7 @@ state={
 	provinces={
 		1188 12750 12751 12752 12753 12754 12755 12756 12757 12758 12759 12760 12761 12762 12763 
 	}
-	manpower=25000
+	manpower=8500
 	buildings_max_level_factor=1.000
 	state_category = large_city
 }

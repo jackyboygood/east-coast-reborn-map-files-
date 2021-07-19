@@ -10,7 +10,7 @@ state={
 		add_core_of = RAR
 
 		victory_points = {
-			12377 15
+			12377 5
 		}
 		buildings = {
 			infrastructure = 5

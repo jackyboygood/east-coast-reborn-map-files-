@@ -13,7 +13,7 @@ state={
 		add_core_of = RAR
 
 		victory_points = {
-			1132 25
+			1132 10
 		}
 		buildings = {
 			infrastructure = 6
@@ -26,7 +26,7 @@ state={
 	provinces={
 		1127 1132 1136 
 	}
-	manpower=10000
+	manpower=5500
 	buildings_max_level_factor=1.000
 	state_category = town
 }

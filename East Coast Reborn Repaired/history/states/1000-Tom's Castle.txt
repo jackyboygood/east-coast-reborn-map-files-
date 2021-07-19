@@ -11,7 +11,7 @@ state={
 		add_core_of = ESC
 
 		victory_points = {
-			12746 25
+			12746 15
 		}
 		buildings = {
 			infrastructure = 6
