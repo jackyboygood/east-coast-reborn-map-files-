@@ -1,0 +1,2125 @@
+focus_tree = {
+	id = raider_generic
+	country =  {
+		base = 0
+		modifier =  {
+		OR = {
+			is_raider_nation_focus_tree = yes
+			tag = SPP
+			}
+			add = 10
+		}
+	}
+	default = no
+
+	focus = {
+		id = origin_of_the_gang
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 7
+		x = 11
+		y = 0
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] origin_of_the_gang entered"
+			}
+			country_event = {
+				id = nf_raider.0
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] origin_of_the_gang exited"
+			}
+		}
+	}
+	focus = {
+		id = gang_lifestyle
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 7
+		prerequisite = {
+			focus = origin_of_the_gang
+		}
+		x = 11
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gang_lifestyle entered"
+			}
+			country_event = {
+				id = nf_raider.1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gang_lifestyle exited"
+			}
+		}
+	}
+	focus = {
+		id = gang_ambitions
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 7
+		prerequisite = {
+			focus = gang_lifestyle
+		}
+		x = 11
+		y = 2
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gang_ambitions entered"
+			}
+			country_event = {
+				id = nf_raider.2
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gang_ambitions exited"
+			}
+		}
+	}
+	focus = {
+		id = new_leadership
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 60
+		prerequisite = {
+			focus = gang_ambitions
+		}
+		x = 3
+		y = 3
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] new_leadership entered"
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] new_leadership exited"
+			}
+		}
+	}
+	focus = {
+		id = the_sadists
+		icon = GFX_goal_support_fascism
+		cost = 60
+		prerequisite = {
+			focus = new_leadership
+		}
+		mutually_exclusive = {
+			focus = the_eggheads
+			focus = the_grunts
+			focus = the_boss
+		}
+		x = 0
+		y = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = elites
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_sadists entered"
+			}
+			add_political_power = 60
+			add_ideas = raider_sadists
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_sadists exited"
+			}
+		}
+	}
+	focus = {
+		id = the_eggheads
+		icon = GFX_focus_research
+		cost = 60
+		prerequisite = {
+			focus = new_leadership
+		}
+		mutually_exclusive = {
+			focus = the_sadists
+			focus = the_grunts
+			focus = the_boss
+		}
+		x = 2
+		y = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = intellectuals
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_eggheads entered"
+			}
+			add_political_power = 60
+			add_ideas = raider_eggheads
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_eggheads exited"
+			}
+		}
+	}
+	focus = {
+		id = the_grunts
+		icon = GFX_goal_support_democracy
+		cost = 60
+		prerequisite = {
+			focus = new_leadership
+		}
+		mutually_exclusive = {
+			focus = the_sadists
+			focus = the_eggheads
+			focus = the_boss
+		}
+		x = 4
+		y = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = people
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_grunts entered"
+			}
+			add_political_power = 60
+			add_ideas = raider_grunts
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_grunts exited"
+			}
+		}
+	}
+	focus = {
+		id = the_boss
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 60
+		prerequisite = {
+			focus = new_leadership
+		}
+		mutually_exclusive = {
+			focus = the_sadists
+			focus = the_eggheads
+			focus = the_grunts
+		}
+		x = 6
+		y = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = ruler
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_boss entered"
+			}
+			add_political_power = 60
+			add_ideas = raider_boss
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_boss exited"
+			}
+		}
+	}
+	focus = {
+		id = improve_the_hideout
+		icon = GFX_goal_generic_slums_focus
+		cost = 60
+		prerequisite = {
+			focus = gang_ambitions
+		}
+		x = 10
+		y = 3
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] improve_the_hideout entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] improve_the_hideout exited"
+			}
+		}
+	}
+	focus = {
+		id = cruel_heartland
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 60
+		prerequisite = {
+			focus = improve_the_hideout
+		}
+		x = 8
+		y = 4
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] cruel_heartland entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] cruel_heartland exited"
+			}
+		}
+	}
+	focus = {
+		id = incorporate_slavers
+		icon = GFX_goal_generic_recruitment_focus
+		cost = 60
+		prerequisite = {
+			focus = gang_ambitions
+		}
+		x = 12
+		y = 3
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] incorporate_slavers entered"
+			}
+			add_manpower = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] incorporate_slavers exited"
+			}
+		}
+	}
+	focus = {
+		id = slave_labour
+		icon = GFX_goal_generic_recruitment_focus
+		cost = 60
+		prerequisite = {
+			focus = incorporate_slavers
+		}
+		x = 12
+		y = 4
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slave_labour entered"
+			}
+			add_ideas = slave_labour1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slave_labour exited"
+			}
+		}
+	}
+	focus = {
+		id = forced_labour
+		icon = GFX_goal_NCR_Industrialcomplex
+		cost = 60
+		prerequisite = {
+			focus = slave_labour
+		}
+		x = 12
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] forced_labour entered"
+			}
+			swap_ideas = {
+				add_idea = forced_labour1
+				remove_idea = slave_labour1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] forced_labour exited"
+			}
+		}
+	}
+	focus = {
+		id = slave_scientists
+		icon = GFX_focus_research
+		cost = 60
+		prerequisite = {
+			focus = forced_labour
+		}
+		x = 12
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slave_scientists entered"
+			}
+			add_research_slot = 1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slave_scientists exited"
+			}
+		}
+	}
+	focus = {
+		id = slave_researchers
+		icon = GFX_focus_rocketry
+		cost = 60
+		prerequisite = {
+			focus = slave_scientists
+		}
+		x = 12
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slave_researchers entered"
+			}
+			swap_ideas = {
+				add_idea = slave_researchers1
+				remove_idea = forced_labour1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slave_researchers exited"
+			}
+		}
+	}
+	focus = {
+		id = new_age_weaponry
+		icon = GFX_goal_generic_laser_muskets_focus
+		cost = 60
+		prerequisite = {
+			focus = slave_researchers
+		}
+		x = 11
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] new_age_weaponry entered"
+			}
+			add_ideas = raider_new_age_weaponry
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] new_age_weaponry exited"
+			}
+		}
+	}
+	focus = {
+		id = turn_the_lights_on
+		icon = GFX_goal_generic_electricity_focus
+		cost = 60
+		prerequisite = {
+			focus = slave_researchers
+		}
+		x = 13
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] turn_the_lights_on entered"
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = energy
+					amount = 8
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] turn_the_lights_on exited"
+			}
+		}
+	}
+	focus = {
+		id = terminals_for_all
+		icon = GFX_goal_BOS_generic_research
+		cost = 60
+		prerequisite = {
+			focus = turn_the_lights_on
+		}
+		x = 13
+		y = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] terminals_for_all entered"
+			}
+			swap_ideas = {
+				add_idea = raider_terminals_for_all
+				remove_idea = slave_researchers1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] terminals_for_all exited"
+			}
+		}
+	}
+	focus = {
+		id = raider_computer_logs
+		icon = GFX_goal_generic_data_focus
+		cost = 60
+		prerequisite = {
+			focus = terminals_for_all
+		}
+		x = 13
+		y = 11
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] raider_computer_logs entered"
+			}
+			swap_ideas = {
+				add_idea = raider_raider_computer_logs
+				remove_idea = raider_terminals_for_all
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] raider_computer_logs exited"
+			}
+		}
+	}
+	focus = {
+		id = encourage_slavers
+		icon = GFX_goal_CES_slaves
+		cost = 60
+		prerequisite = {
+			focus = incorporate_slavers
+		}
+		x = 14
+		y = 4
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] encourage_slavers entered"
+			}
+			add_manpower = 500
+			add_stability = -0.05
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] encourage_slavers exited"
+			}
+		}
+	}
+	focus = {
+		id = establish_the_slave_trade
+		icon = GFX_goal_generic_recruitment_focus
+		cost = 60
+		prerequisite = {
+			focus = encourage_slavers
+		}
+		x = 14
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] establish_the_slave_trade entered"
+			}
+			set_temp_variable = { caps_to_add = 100 }
+			add_caps = yes
+			add_manpower = 500
+			add_stability = -0.1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] establish_the_slave_trade exited"
+			}
+		}
+	}
+	focus = {
+		id = drug_dealers
+		icon = GFX_goal_generic_supplies_focus
+		cost = 60
+		prerequisite = {
+			focus = forced_labour
+		}
+		x = 14
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] drug_dealers entered"
+			}
+			add_tech_bonus = {
+				name = drugdealers_bonus
+				bonus = 0.5
+				uses = 1
+				category = support_medical_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] drug_dealers exited"
+			}
+		}
+	}
+	focus = {
+		id = raid_workshops
+		icon = GFX_goal_CES_workshop
+		cost = 60
+		prerequisite = {
+			focus = drug_dealers
+		}
+		x = 14
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] raid_workshops entered"
+			}
+			set_temp_variable = { caps_to_add = 100 }
+			add_caps = yes
+			add_ideas = raider_raid_workshops
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] raid_workshops exited"
+			}
+		}
+	}
+	focus = {
+		id = supply_stashes
+		icon = GFX_goal_generic_food_focus
+		cost = 60
+		prerequisite = {
+			focus = raid_workshops
+		}
+		x = 14
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] supply_stashes entered"
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = water
+					amount = 4
+				}
+				add_resource = {
+					type = metal
+					amount = 6
+				}
+			}
+			set_temp_variable = { caps_to_add = 250 }
+			add_caps = yes
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] supply_stashes exited"
+			}
+		}
+	}
+	focus = {
+		id = a_weapon_to_surpass_the_other_gang
+		icon = GFX_goal_generic_t45d_power_armour_focus
+		cost = 60
+		prerequisite = {
+			focus = turn_the_lights_on
+		}
+		available = {
+			has_tech = weight_support_frame_pa_tech_2
+		}
+		x = 15
+		y = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] a_weapon_to_surpass_the_other_gang entered"
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 1
+				category = power_armor_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] a_weapon_to_surpass_the_other_gang exited"
+			}
+		}
+	}
+	focus = {
+		id = convert_metal_armour
+		icon = GFX_goal_generic_t51b_power_armour_focus
+		cost = 60
+		prerequisite = {
+			focus = a_weapon_to_surpass_the_other_gang
+		}
+		available = {
+			has_tech = stripped_pa_tech
+		}
+		x = 15
+		y = 11
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] convert_metal_armour entered"
+			}
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment_1
+				amount = 250
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] convert_metal_armour exited"
+			}
+		}
+	}
+	focus = {
+		id = industrial_interest
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 60
+		prerequisite = {
+			focus = encourage_slavers
+		}
+		x = 16
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] industrial_interest entered"
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] industrial_interest exited"
+			}
+		}
+	}
+	focus = {
+		id = hideout_expansion
+		icon = GFX_goal_generic_data_focus
+		cost = 60
+		prerequisite = {
+			focus = industrial_interest
+		}
+		x = 16
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] hideout_expansion entered"
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] hideout_expansion exited"
+			}
+		}
+	}
+	focus = {
+		id = slaver_settlement
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 60
+		prerequisite = {
+			focus = hideout_expansion
+		}
+		x = 16
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slaver_settlement entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] slaver_settlement exited"
+			}
+		}
+	}
+	focus = {
+		id = doped_soldiers
+		icon = GFX_goal_generic_war_focus
+		cost = 60
+		prerequisite = {
+			focus = gang_ambitions
+		}
+		x = 21
+		y = 3
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] doped_soldiers entered"
+			}
+			add_ideas = raider_doped_soldiers
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] doped_soldiers exited"
+			}
+		}
+	}
+	focus = {
+		id = lightning_raids
+		icon = GFX_goal_generic_electricity_focus
+		cost = 60
+		prerequisite = {
+			focus = doped_soldiers
+		}
+		x = 20
+		y = 4
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] lightning_raids entered"
+			}
+			swap_ideas = {
+				add_idea = raider_lightning_raids
+				remove_idea = raider_doped_soldiers
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] lightning_raids exited"
+			}
+		}
+	}
+	focus = {
+		id = blood_soaked_gender_equality
+		icon = GFX_goal_generic_recruitment_focus
+		cost = 60
+		prerequisite = {
+			focus = lightning_raids
+		}
+		x = 20
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] blood_soaked_gender_equality entered"
+			}
+			swap_ideas = {
+				add_idea = raider_gender_equality
+				remove_idea = raider_lightning_raids
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] blood_soaked_gender_equality exited"
+			}
+		}
+	}
+	focus = {
+		id = take_what_you_need
+		icon = GFX_goal_generic_supplies_focus
+		cost = 60
+		prerequisite = {
+			focus = blood_soaked_gender_equality
+		}
+		x = 20
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] take_what_you_need entered"
+			}
+			swap_ideas = {
+				add_idea = raider_take_what_you_need
+				remove_idea = raider_gender_equality
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] take_what_you_need exited"
+			}
+		}
+	}
+	focus = {
+		id = expand_the_garage
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 60
+		prerequisite = {
+			focus = take_what_you_need
+		}
+		x = 20
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] expand_the_garage entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] expand_the_garage exited"
+			}
+		}
+	}
+	focus = {
+		id = chop_shop_shimmy
+		icon = GFX_goal_generic_army_motorized
+		cost = 60
+		prerequisite = {
+			focus = expand_the_garage
+		}
+		x = 17
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] chop_shop_shimmy entered"
+			}
+			add_tech_bonus = {
+				name = raider_vehicle_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] chop_shop_shimmy exited"
+			}
+		}
+	}
+	focus = {
+		id = kings_of_the_roads
+		icon = GFX_goal_generic_army_motorized
+		cost = 60
+		prerequisite = {
+			focus = expand_the_garage
+		}
+		mutually_exclusive = {
+			focus = call_in_the_warboys
+		}
+		x = 19
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] kings_of_the_roads entered"
+			}
+			add_tech_bonus = {
+				name = raider_bike_bonus
+				bonus = 0.5
+				uses = 1
+				category = bike_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] kings_of_the_roads exited"
+			}
+		}
+	}
+	focus = {
+		id = custom_rides
+		icon = GFX_goal_generic_production
+		cost = 60
+		prerequisite = {
+			focus = kings_of_the_roads
+		}
+		x = 19
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] custom_rides entered"
+			}
+			add_ideas = raider_custom_rides
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] custom_rides exited"
+			}
+		}
+	}
+	focus = {
+		id = call_in_the_warboys
+		icon = GFX_goal_NCR_Shock_Companies
+		cost = 60
+		prerequisite = {
+			focus = expand_the_garage
+		}
+		mutually_exclusive = {
+			focus = kings_of_the_roads
+		}
+		x = 21
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] call_in_the_warboys entered"
+			}
+			add_tech_bonus = {
+				name = raider_apc_bonus
+				bonus = 0.5
+				uses = 1
+				category = apc_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] call_in_the_warboys exited"
+			}
+		}
+	}
+	focus = {
+		id = metal_boxes
+		icon = GFX_goal_generic_production
+		cost = 60
+		prerequisite = {
+			focus = call_in_the_warboys
+		}
+		x = 21
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] metal_boxes entered"
+			}
+			add_ideas = raider_metal_boxes
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] metal_boxes exited"
+			}
+		}
+	}
+	focus = {
+		id = roaring_machines
+		icon = GFX_goal_NCR_Mechanized_Core
+		cost = 60
+		prerequisite = {
+			focus = custom_rides
+			focus = metal_boxes
+		}
+		x = 20
+		y = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] roaring_machines entered"
+			}
+			add_ideas = raider_roaring_machines
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] roaring_machines exited"
+			}
+		}
+	}
+	focus = {
+		id = prove_yourself
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 60
+		prerequisite = {
+			focus = doped_soldiers
+		}
+		x = 22
+		y = 4
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] prove_yourself entered"
+			}
+			add_ideas = raider_prove_yourself
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] prove_yourself exited"
+			}
+		}
+	}
+	focus = {
+		id = brutal_hazing
+		icon = GFX_goal_generic_pipe_weapons_focus
+		cost = 60
+		prerequisite = {
+			focus = lightning_raids
+		}
+		x = 22
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] brutal_hazing entered"
+			}
+			add_ideas = raider_brutal_hazing
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] brutal_hazing exited"
+			}
+		}
+	}
+	focus = {
+		id = recruit_them_young
+		icon = GFX_goal_generic_recruitment_focus
+		cost = 60
+		prerequisite = {
+			focus = blood_soaked_gender_equality
+		}
+		x = 22
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] recruit_them_young entered"
+			}
+			add_ideas = raider_recruit_them_young
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] recruit_them_young exited"
+			}
+		}
+	}
+	focus = {
+		id = preparing_for_total_war
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 60
+		prerequisite = {
+			focus = the_sadists
+		}
+		x = 0
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] preparing_for_total_war entered"
+			}
+			add_ideas = preparing_for_total_war1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] preparing_for_total_war exited"
+			}
+		}
+	}
+	focus = {
+		id = critical_thinking
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 60
+		prerequisite = {
+			focus = the_eggheads
+		}
+		x = 2
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] critical_thinking entered"
+			}
+			add_ideas = critical_thinking1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] critical_thinking exited"
+			}
+		}
+	}
+	focus = {
+		id = gangland_diplomacy
+		icon = GFX_goal_generic_generic_diplomatic_focus
+		cost = 60
+		prerequisite = {
+			focus = the_grunts
+		}
+		x = 4
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gangland_diplomacy entered"
+			}
+			add_stability = 0.075
+			add_war_support = 0.05
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gangland_diplomacy exited"
+			}
+		}
+	}
+	focus = {
+		id = dont_question_the_boss
+		icon = GFX_goal_generic_demand_territory
+		cost = 60
+		prerequisite = {
+			focus = the_boss
+		}
+		x = 6
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] dont_question_the_boss entered"
+			}
+			add_ideas = raider_dont_question_the_boss
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] dont_question_the_boss exited"
+			}
+		}
+	}
+	focus = {
+		id = draconian_recovery_methods
+		icon = GFX_goal_generic_ammo_boxes_focus
+		cost = 60
+		prerequisite = {
+			focus = preparing_for_total_war
+		}
+		x = 0
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] draconian_recovery_methods entered"
+			}
+			swap_ideas = {
+				add_idea = draconian_recovery_methods1
+				remove_idea = preparing_for_total_war1
+			}
+			set_politics = { ruling_party = elites elections_allowed = no }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] draconian_recovery_methods exited"
+			}
+		}
+	}
+	focus = {
+		id = master_plan
+		icon = GFX_goal_generic_position_armies
+		cost = 60
+		prerequisite = {
+			focus = critical_thinking
+		}
+		x = 2
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] master_plan entered"
+			}
+			swap_ideas = {
+				add_idea = master_plan1
+				remove_idea = critical_thinking1
+			}
+			set_politics = { ruling_party = intellectuals elections_allowed = no }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] master_plan exited"
+			}
+		}
+	}
+	focus = {
+		id = everyone_works
+		icon = GFX_goal_generic_building_focus
+		cost = 60
+		prerequisite = {
+			focus = gangland_diplomacy
+		}
+		x = 4
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] everyone_works entered"
+			}
+			add_ideas = raider_everyone_works
+			set_politics = { ruling_party = people elections_allowed = no }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] everyone_works exited"
+			}
+		}
+
+	}
+	focus = {
+		id = iron_grip
+		icon = GFX_focus_generic_self_management
+		cost = 60
+		prerequisite = {
+			focus = dont_question_the_boss
+		}
+		x = 6
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] iron_grip entered"
+			}
+			swap_ideas = {
+				add_idea = iron_grip1
+				remove_idea = raider_dont_question_the_boss
+			}
+			set_politics = { ruling_party = ruler elections_allowed = no }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] iron_grip exited"
+			}
+		}
+	}
+	focus = {
+		id = skulls_on_sticks
+		icon = GFX_goal_generic_secret_weapon
+		cost = 60
+		prerequisite = {
+			focus = improve_the_hideout
+		}
+		x = 10
+		y = 4
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] skulls_on_sticks entered"
+			}
+			add_war_support = 0.05
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] skulls_on_sticks exited"
+			}
+		}
+	}
+	focus = {
+		id = territorial_reinforcement
+		icon = GFX_goal_generic_walls_focus
+		cost = 60
+		prerequisite = {
+			focus = cruel_heartland
+		}
+		x = 8
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] territorial_reinforcement entered"
+			}
+			add_ideas = territorial_reinforcement1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] territorial_reinforcement exited"
+			}
+		}
+	}
+	focus = {
+		id = terrorise_the_locals
+		icon = GFX_goal_generic_attack_allies
+		cost = 60
+		prerequisite = {
+			focus = skulls_on_sticks
+		}
+		x = 10
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] terrorise_the_locals entered"
+			}
+			add_war_support = 0.05
+			add_political_power = 40
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] terrorise_the_locals exited"
+			}
+		}
+	}
+	focus = {
+		id = raider_headquarters
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 60
+		prerequisite = {
+			focus = terrorise_the_locals
+		}
+		x = 10
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] raider_headquarters entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] raider_headquarters exited"
+			}
+		}
+	}
+	focus = {
+		id = territoriality
+		icon = GFX_goal_generic_small_arms
+		cost = 60
+		prerequisite = {
+			focus = raider_headquarters
+		}
+		x = 10
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] territoriality entered"
+			}
+			add_ideas = territoriality_idea
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] territoriality exited"
+			}
+		}
+	}
+	focus = {
+		id = manifest_destiny
+		icon = GFX_goal_generic_war_focus
+		cost = 60
+		prerequisite = {
+			focus = territoriality
+		}
+		x = 10
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] manifest_destiny entered"
+			}
+			swap_ideas = {
+				add_idea = raider_manifest_destiny
+				remove_idea = territoriality_idea
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] manifest_destiny exited"
+			}
+		}
+	}
+	focus = {
+		id = we_never_die
+		icon = GFX_goal_generic_bunkers_focus
+		cost = 60
+		prerequisite = {
+			focus = territoriality
+		}
+		x = 8
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] we_never_die entered"
+			}
+			add_ideas = raider_we_never_die
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] we_never_die exited"
+			}
+		}
+	}
+	focus = {
+		id = guns_with_legs
+		icon = GFX_goal_generic_advanced_firearms_focus
+		cost = 60
+		prerequisite = {
+			focus = new_age_weaponry
+		}
+		x = 11
+		y = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] guns_with_legs entered"
+			}
+			add_tech_bonus = {
+				name = raider_robot_bonus
+				bonus = 0.5
+				uses = 1
+				category = robotics_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] guns_with_legs exited"
+			}
+		}
+	}
+	focus = {
+		id = find_the_good_stuff
+		icon = GFX_goal_generic_electronics_focus
+		cost = 60
+		prerequisite = {
+			focus = guns_with_legs
+		}
+		x = 11
+		y = 11
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] find_the_good_stuff entered"
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = circuitry
+					amount = 5
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] find_the_good_stuff exited"
+			}
+		}
+	}
+	focus = {
+		id = shitty_robots
+		icon = GFX_goal_generic_robots_focus
+		cost = 60
+		prerequisite = {
+			focus = find_the_good_stuff
+		}
+		x = 11
+		y = 12
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] shitty_robots entered"
+			}
+			swap_ideas = {
+				add_idea = raider_shitty_robots
+				remove_idea = raider_new_age_weaponry
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] shitty_robots exited"
+			}
+		}
+	}
+	focus = {
+		id = taking_the_best
+		icon = GFX_goal_generic_advanced_technology_focus
+		cost = 60
+		prerequisite = {
+			focus = raider_computer_logs
+		}
+		x = 13
+		y = 12
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] taking_the_best entered"
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = advanced
+					amount = 5
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] taking_the_best exited"
+			}
+		}
+	}
+	focus = {
+		id = power_armor_familiarity
+		icon = GFX_goal_generic_t45d_power_armour_focus
+		cost = 60
+		prerequisite = {
+			focus = convert_metal_armour
+		}
+		x = 15
+		y = 12
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] power_armor_familiarity entered"
+			}
+			add_ideas = raider_power_armour_familiarity
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] power_armor_familiarity exited"
+			}
+		}
+	}
+	focus = {
+		id = business_booms
+		icon = GFX_goal_generic_army_artillery2
+		cost = 60
+		prerequisite = {
+			focus = take_what_you_need
+		}
+		x = 23
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] business_booms entered"
+			}
+			add_tech_bonus = {
+				name = raider_explosives_bonus
+				bonus = 0.75
+				uses = 1
+				category = support_demolitions_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] business_booms exited"
+			}
+		}
+	}
+	focus = {
+		id = short_fused_engineers
+		icon = GFX_goal_generic_electricity_focus
+		cost = 60
+		prerequisite = {
+			focus = business_booms
+		}
+		x = 23
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] short_fused_engineers entered"
+			}
+			add_ideas = raider_engineers
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] short_fused_engineers exited"
+			}
+		}
+	}
+	focus = {
+		id = gear_head_slaves
+		icon = GFX_goal_generic_production2
+		cost = 60
+		prerequisite = {
+			focus = chop_shop_shimmy
+		}
+		x = 17
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gear_head_slaves entered"
+			}
+			add_ideas = raider_gearhead_slaves
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] gear_head_slaves exited"
+			}
+		}
+	}
+	focus = {
+		id = an_explosion_in_understanding
+		icon = GFX_goal_NCR_Blast_from_the_Past
+		cost = 60
+		prerequisite = {
+			focus = short_fused_engineers
+		}
+		available = {
+			OR = {
+				has_tech = explosive_demolitions_weaponry_tech_2
+				has_tech = flamer_demolitions_weaponry_tech_2
+			}
+		}
+		x = 23
+		y = 9
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] an_explosion_in_understanding entered"
+			}
+			if = {
+				limit = {
+					has_tech = flamer_demolitions_weaponry_tech_2
+				}
+				set_technology = {
+					flamer_demolitions_weaponry_tech_3 = 1
+				}
+			}
+			if = {
+				limit = {
+					has_tech = explosive_demolitions_weaponry_tech_2
+				}
+				set_technology = {
+					explosive_demolitions_weaponry_tech_3 = 1
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] an_explosion_in_understanding exited"
+			}
+		}
+	}
+	focus = {
+		id = the_magnum_opus
+		icon = GFX_goal_NCR_The_Tip_of_the_Spear
+		cost = 60
+		prerequisite = {
+			focus = gear_head_slaves
+		}
+		x = 17
+		y = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_magnum_opus entered"
+			}
+			add_tech_bonus = {
+				name = raider_tank_bonus
+				bonus = 0.5
+				uses = 1
+				category = tank_tech_category
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] the_magnum_opus exited"
+			}
+		}
+	}
+	### Starting Flow
+	focus = {
+		id = starting_the_flow
+		icon = GFX_goal_generic_sledgehammers
+		cost = 60
+		prerequisite = {
+			#focus = gear_head_slaves
+		}
+		available = {
+			has_completed_focus = gang_ambitions
+		}
+		x = 3
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = caps_raider_nf_idea_1
+			custom_effect_tooltip = unlock_deicision_caps_caps_tributize_neighbor
+		}
+
+	}
+	### Paying the Boys
+	focus = {
+		id = paying_the_boys
+		icon = GFX_goal_bottlecap
+		cost = 60
+		prerequisite = {
+			focus = starting_the_flow
+		}
+		mutually_exclusive = {
+			focus = beer_bonuses
+		}
+
+		relative_position_id = starting_the_flow
+		x = -1
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = caps_raider_nf_idea_1
+				add_idea = caps_raider_nf_idea_2
+			}
+		}
+	}
+	### Beer Bonuses
+	focus = {
+		id = beer_bonuses
+		icon = GFX_goal_generic_honey
+		cost = 60
+		prerequisite = {
+			focus = starting_the_flow
+		}
+		mutually_exclusive = {
+			focus = paying_the_boys
+		}
+		relative_position_id = starting_the_flow
+		x = 1
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = caps_raider_nf_idea_1
+				add_idea = caps_raider_nf_idea_3
+			}
+		}
+	}
+	### Deal you can't refuse
+	focus = {
+		id = unrefusable_deal
+		icon = GFX_goal_pal_vc_turn_around
+		cost = 60
+		prerequisite = {
+			focus = paying_the_boys
+			focus = beer_bonuses
+		}
+		relative_position_id = beer_bonuses
+		x = -1
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = caps_raider_nf_idea_4_h
+			set_temp_variable = { caps_to_add = 150 }
+			add_caps = yes
+			custom_effect_tooltip = unlock_deicision_caps_raider_minor_state
+		}
+	}
+	### Victory Hits
+	focus = {
+		id = victory_hits
+		icon = GFX_goal_NCR_The_Tip_of_the_Spear
+		cost = 60
+		prerequisite = {
+			focus = beer_bonuses
+		}
+		relative_position_id = beer_bonuses
+		x = 1
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			add_country_leader_trait = caps_raider_victory_hit_trait
+		}
+	}
+	### Underground Routes
+	focus = {
+		id = controlling_routes
+		icon = GFX_goal_VEG_Economic_Miracle
+		cost = 60
+		prerequisite = {
+			focus = unrefusable_deal
+		}
+		mutually_exclusive = {
+			focus = art_of_sack
+		}
+		relative_position_id = unrefusable_deal
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = caps_raider_nf_idea_3
+						has_idea = caps_raider_nf_idea_1
+					}
+				}
+				swap_ideas = {
+					remove_idea = caps_raider_nf_idea_3
+					add_idea = caps_raider_nf_idea_3_6
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = caps_raider_nf_idea_2
+						always = yes
+					}
+				}
+				swap_ideas = {
+					remove_idea = caps_raider_nf_idea_2
+					add_idea = caps_raider_nf_idea_2_6
+				}
+			}
+		}
+	}
+	### Art of the Sack
+	focus = {
+		id = art_of_sack
+		icon = GFX_generic_gold_bars
+		cost = 60
+		prerequisite = {
+			focus = unrefusable_deal
+		}
+		mutually_exclusive = {
+			focus = controlling_routes
+		}
+		relative_position_id = unrefusable_deal
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = caps_raider_nf_idea_3
+						has_idea = caps_raider_nf_idea_1
+					}
+				}
+				swap_ideas = {
+					remove_idea = caps_raider_nf_idea_3
+					add_idea = caps_raider_nf_idea_3_7
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_idea = caps_raider_nf_idea_2
+						always = yes
+					}
+				}
+				swap_ideas = {
+					remove_idea = caps_raider_nf_idea_2
+					add_idea = caps_raider_nf_idea_2_7
+				}
+			}
+			custom_effect_tooltip = unlock_decision_caps_raider_basic_pilfer
+		}
+
+	}
+	### Kingpins
+	focus = {
+		id = kingpins
+		icon = GFX_goal_NEW_Calling_in_the_Family
+		cost = 60
+		prerequisite = {
+			focus = controlling_routes
+			focus = art_of_sack
+		}
+		relative_position_id = controlling_routes
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { state_controlled_nodes^num > 0 }
+				any_of_scopes = {
+					array = state_controlled_nodes
+					check_variable = { node_level > 5 }
+				}
+				tooltip = caps_kingping_available_tt
+			}
+		}
+		completion_reward = {
+			add_country_leader_trait = caps_raider_kingpin_trait
+		}
+	}
+}

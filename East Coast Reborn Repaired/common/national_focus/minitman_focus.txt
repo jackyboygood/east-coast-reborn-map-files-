@@ -191,6 +191,7 @@ focus_tree = {
 		}
 
 		available = {
+		has_full_control_of_state = 1010
 		}
 
 		bypass = {
@@ -1306,6 +1307,9 @@ focus_tree = {
 		prerequisite = { focus = Minitmen_5 }
 		ai_will_do = { factor = 100 } 
 		relative_position_id = Minitmen_5
+		available = {
+		has_full_control_of_state = 1010
+		}
 		x = 8
 		y = 1
 		cost = 45
@@ -1550,6 +1554,7 @@ focus_tree = {
 		icon =GFX_goal_Senkchuary
 		prerequisite = { focus = Minitmen_52 }
 		available = {
+		    1011 = { is_controlled_by = MEN } 
 			1051 = { is_controlled_by = MEN } 
 		}
 		ai_will_do = { factor = 100 } 

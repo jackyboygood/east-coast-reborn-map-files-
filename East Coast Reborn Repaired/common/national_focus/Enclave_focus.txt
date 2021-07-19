@@ -12,12 +12,13 @@ focus_tree = {
 		id = Enclavesp_1 
 		icon = GFX_goal_ESP_Start_1
 		ai_will_do = { factor = 1 }
-		x = -8
-		y = 0 
+		x = 16
+		y = 1
 		cost = 7
 		completion_reward = {
-			add_ideas = ENC_radio
+			#add_ideas = ENC_radio
 			989 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = radar_station
 					level = 2
@@ -40,7 +41,6 @@ focus = {#Expedition - to Mariposa
 		cost = 7
 		completion_reward = {
 			add_political_power = 45
-			custom_effect_tooltip = enc_expedition_mariposa_tt
 		}
 		
  }
@@ -49,9 +49,9 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_3
 		icon = GFX_goal_ESP_Start_3
 		prerequisite = { focus = Enclavesp_2 }
-		#relative_position_id = Enclavesp_1
-		x = -8
-		y = 2
+		relative_position_id = Enclavesp_2
+		x = 0
+		y = 1
 
 		cost = 7
 
@@ -70,7 +70,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_political_power = 30
-			add_manpower = 570
+			add_manpower = 321
 		}
 	}
 	
@@ -82,10 +82,11 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_3
 		x = -14
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_political_power = 100
 			989 = {
+			    add_extra_state_shared_building_slots = 5
 				add_building_construction = { 
 					type = infrastructure 
 					level = 4
@@ -103,11 +104,11 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_4
 		x = -2
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 		    add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = ESP }
 			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 100 producer = ESP }
-			add_stability = 0.2
+			#add_stability = 0.2
 			1003 = { #black rock
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = { 
@@ -127,7 +128,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_4
 		x = 0
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 600 producer = ESP }
 			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 400 producer = ESP }
@@ -144,7 +145,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_4
 		x = 2
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_tech_bonus = {
 				ahead_reduction = 0.2
@@ -169,7 +170,7 @@ focus = {#Expedition - to Mariposa
 		relative_position_id = Enclavesp_4
 		x = 0
 		y = 2
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_stability = 0.1
 			989 = { #black rock
@@ -213,52 +214,19 @@ focus = {#Expedition - to Mariposa
 		prerequisite = {focus = Enclavesp_8}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = Enclavesp_8
-		x = 2
+		x = 0
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
 	
-	focus = {#SIERRA - 2- PA
-		id = Enclavesp_10
-		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = {focus = Enclavesp_8}
-		mutually_exclusive = {focus = Enclavesp_11}
-		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_8
-		x = -2
-		y = 1
-		cost = 60
-		completion_reward = {
-			add_ideas = ENC_PA_production
-		}
-	}
-	
-	focus = {#SIERRA - 2- weapons
-		id = Enclavesp_11
-		icon = GFX_goal_enc_laser_weapons
-		prerequisite = {focus = Enclavesp_8}
-		mutually_exclusive = {focus = Enclavesp_10}
-		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_8
-		x = 0
-		y = 1
-		cost = 60
-		completion_reward = {
-			set_technology = { plasma_weaponry = 1 }
-			add_ideas = ENC_energy_production
-		}
-	}
-	
-
- 
  focus = {
 		id = Enclavesp_16
 		icon = GFX_goal_ESP_Autumn
 		ai_will_do = { factor = 25 } 
-		cost = 30
+		cost = 20
 		relative_position_id = Enclavesp_3
 		prerequisite = {
 			focus = Enclavesp_3
@@ -288,7 +256,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_17
 		icon = GFX_goal_ESP_Eden
 		relative_position_id = Enclavesp_3
-		cost = 30
+		cost = 20
 		prerequisite = {
 			focus = Enclavesp_3
 		}
@@ -402,7 +370,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_26
 		icon = GFX_goal_ESP_Autumn_Election
 		relative_position_id = Enclavesp_16
-		cost = 30
+		cost = 20
 		prerequisite = {
 			focus = Enclavesp_16
 		}
@@ -434,7 +402,7 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 1
 
-		cost = 30
+		cost = 20
 
 		ai_will_do = {
 			factor = 8
@@ -465,6 +433,7 @@ focus = {#Expedition - to Mariposa
 				remove_ideas = ENC_infighting_2
 			}
 			else = {
+			    add_manpower = -173
 				remove_ideas = ESP_infighting
 			}
 		}
@@ -559,7 +528,7 @@ focus = {#Expedition - to Mariposa
 
 		completion_reward = {
 			add_political_power = 100
-			add_manpower = 4000
+			add_manpower = 1323
 			add_ideas = Militari_leader
 		}
 	}
@@ -624,7 +593,7 @@ focus = {#Expedition - to Mariposa
 		id = Enclavesp_28
 		icon = GFX_goal_Enclave
 		cost = 45
-		relative_position_id = Enclavesp_11
+		relative_position_id = Enclavesp_9
 		x = 0
 		y = 3
 
@@ -989,7 +958,7 @@ focus = {#Expedition - to Mariposa
 		y = 1
 		prerequisite = { focus = Enclavesp_38}
 		available = {
-				716 = { is_controlled_by = ESP} # The Warren
+				1005 = { is_controlled_by = ESP} # The Warren
 		}
 		completion_reward = {swap_ideas = {remove_idea = ESP_slave_labour_collars add_idea = ESP_slave_labour_mutants}}
 
