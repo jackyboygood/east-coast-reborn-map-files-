@@ -17,3 +17,13 @@ Sneed = {
 	color = rgb { 0 10 124 } 
 	color_ui = rgb { 255 255 255 }
 }
+
+Shepard_Horde = {
+    color = rgb { 149 97 181 }
+    color_ui = rgb { 149 97 181 }
+}
+
+GER_REP = {
+    color = { 176 175 188 }
+	color_ui = rgb { 176 175 188 }
+}
