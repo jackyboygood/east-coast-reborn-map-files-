@@ -1,0 +1,13 @@
+is_gerrepublic_state = {
+	OR = {
+		state = 982
+		state = 983
+		state = 984
+		state = 990
+		state = 991
+		state = 992
+		state = 993
+		state = 1022
+	}
+}
+

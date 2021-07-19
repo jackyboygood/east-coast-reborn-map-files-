@@ -1,0 +1,38 @@
+on_actions = {
+
+# ROOT is winner, FROM is loser
+
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = RAB
+							tag = ROY
+							tag = TEN
+							tag = AUB
+							tag = AUA
+						}
+						AUC = {
+							is_in_faction_with = SPP
+						}
+					}
+					ROOT = {
+						tag = SPP
+					}
+				}
+				ROOT = {
+					every_owned_state = {
+						limit = {
+							is_gerrepublic_state = yes
+						}
+						AUC = {
+						transfer_state = PREV
+					    }
+					}
+				}
+			}
+		}
+	}
+}
