@@ -5,7 +5,7 @@ ideas = {
 cultural_advisor = {
 
 		luci_doctor = {
-                cost = 300
+                cost = 100
 			picture = detki
 
 			allowed = {
@@ -21,7 +21,7 @@ cultural_advisor = {
 		
 		djozev_uchitel = {
 
-                cost = 200
+                cost = 100
 				picture = detki5
 
 				allowed = {
@@ -48,7 +48,7 @@ cultural_advisor = {
 economic_advisor = {
         ecler_detka = {
 
-                cost = 250
+                cost = 100
 				picture = detki1
 
 				allowed = {
@@ -103,7 +103,7 @@ economic_advisor = {
 	high_command = {
         princes_detki = {
 			picture = detki2
-            cost = 150
+            cost = 100
 			allowed = {
 				original_tag = LIT
 			}
@@ -118,7 +118,7 @@ economic_advisor = {
 		
 		detskaya_policia = {
 			picture = detki3
-            cost = 150
+            cost = 100
 			allowed = {
 				original_tag = LIT
 			}
@@ -163,7 +163,7 @@ economic_advisor = {
 
 		pobrakishka = {
 			
-			cost = 300
+			cost = 100
 			picture = detki4
 			
 			allowed = {
@@ -183,7 +183,7 @@ economic_advisor = {
 	army_chief = {
         sammylitl = {
 			picture = detki7
-            cost = 180
+            cost = 100
 			allowed = {
 				original_tag = LIT
 			}
