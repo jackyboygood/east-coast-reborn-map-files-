@@ -71,7 +71,7 @@ focus_tree = {
 		icon = GFX_goal_dett4
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 30
+		cost = 20
 		x = -4
 		y = 1
 		completion_reward = {
@@ -84,7 +84,7 @@ focus_tree = {
 		icon = GFX_goal_dett5
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 30
+		cost = 20
 		x = 0
 		y = 1
 		completion_reward = {
@@ -97,7 +97,7 @@ focus_tree = {
 		icon = GFX_goal_dett6
 		prerequisite = { focus = lamplayt_4 }
 		relative_position_id = lamplayt_4
-		cost = 30
+		cost = 20
 		x = 4
 		y = 1
 		completion_reward = {
@@ -110,7 +110,7 @@ focus_tree = {
 		icon = GFX_goal_dett7
 		prerequisite = { focus = lamplayt_5 }
 		relative_position_id = lamplayt_5
-		cost = 30
+		cost = 20
 		x = -1
 		y = 1
 		completion_reward = {
@@ -123,7 +123,7 @@ focus_tree = {
 		icon = GFX_goal_dett8
 		prerequisite = { focus = lamplayt_5 }
 		relative_position_id = lamplayt_5
-		cost = 30
+		cost = 20
 		x = 1
 		y = 1
 		completion_reward = {
@@ -136,7 +136,7 @@ focus_tree = {
 		icon = GFX_goal_dett9
 		prerequisite = { focus = lamplayt_6 }
 		relative_position_id = lamplayt_6
-		cost = 30
+		cost = 20
 		x = -1
 		y = 1
 		completion_reward = {
@@ -149,7 +149,7 @@ focus_tree = {
 		icon = GFX_goal_dett10
 		prerequisite = { focus = lamplayt_6 }
 		relative_position_id = lamplayt_6
-		cost = 30
+		cost = 20
 		x = 1
 		y = 1
 		completion_reward = {
@@ -443,7 +443,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_26
-		icon = GFX_goal_sovetinfall
+		icon = GFX_goal_religion_flag
 		prerequisite = { focus = lamplayt_20 }
 		prerequisite = { focus = lamplayt_25 }
 		prerequisite = { focus = lamplayt_46 }
@@ -686,7 +686,7 @@ focus_tree = {
 		available = {
 		 has_country_flag = resvedvernulis
 		}
-		cost = 30
+		cost = 20
 		x = -1
 		y = 1
 		completion_reward = {
@@ -702,7 +702,7 @@ focus_tree = {
 		available = {
 		 has_country_flag = resvedvernulis
 		}
-		cost = 30
+		cost = 20
 		x = 1
 		y = 1
 		completion_reward = {
@@ -926,7 +926,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 50 }
 		cost = 45
-		x = 1
+		x = 2
 		y = 2
 		completion_reward = {
 		    add_political_power = 100
@@ -944,7 +944,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lamplayt_58
 		}
-		ai_will_do = { factor = 50 }
+		#ai_will_do = { factor = 50 }
 		cost = 45
 		x = 0
 		y = 1
@@ -979,7 +979,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_50
-		icon = GFX_goal_canadaaa7
+		icon = GFX_goal_SBS_int_Lamplight
 		prerequisite = { focus = lamplayt_49 }
 		relative_position_id = lamplayt_49
 		cost = 45
@@ -1032,9 +1032,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lamplayt_58
 		}
-		ai_will_do = { factor = 1 }
+		#ai_will_do = { factor = 1 }
 		cost = 45
-		x = -3
+		x = -4
 		y = 1
 		completion_reward = {
 		    AUC = { 
@@ -1060,14 +1060,12 @@ focus_tree = {
 				limit = {
 					OR = {
 						tag = AUC
-						tag = LIT
 					}
 				}
 				every_country = {
 					limit = {
 						NOT = { tag = PREV }
 						OR = {
-							tag = AUC
 						    tag = LIT
 						}
 						NOT = { has_war_with = PREV }
@@ -1090,8 +1088,8 @@ focus_tree = {
 		    997 = {
 			is_controlled_by = LIT
 			}
-			date > 2277.1.1
-			AUC = { exists = yes }
+			date > 2277.6.1
+			AUC = { exists = no }
 		}
 		ai_will_do = { factor = 30 }
 		cost = 45
@@ -1103,14 +1101,12 @@ focus_tree = {
 				limit = {
 					OR = {
 						tag = AUA
-						tag = LIT
 					}
 				}
 				every_country = {
 					limit = {
 						NOT = { tag = PREV }
 						OR = {
-							tag = AUA
 						    tag = LIT
 						}
 						NOT = { has_war_with = PREV }
@@ -1133,7 +1129,7 @@ focus_tree = {
 		    997 = {
 			is_controlled_by = LIT
 			}
-			date < 2277.1.1
+			date < 2277.6.1
 			AUC = { exists = no }
 		}
 		ai_will_do = { factor = 30 }
@@ -1159,7 +1155,7 @@ focus_tree = {
          has_country_flag = spasenierijey
 		}
 		cost = 45
-		x = 0
+		x = 1
 		y = 1
 		completion_reward = {
 			set_autonomy = {
@@ -1199,7 +1195,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 30 }
 		cost = 45
-		x = -2
+		x = -1
 		y = 1
 		completion_reward = {
 		    annex_country = { target = AUA transfer_troops = yes }
@@ -1224,7 +1220,7 @@ focus_tree = {
 			
 		}
 		cost = 45
-		x = 3
+		x = 4
 		y = 1
 		completion_reward = {
 			add_timed_idea = {
@@ -1497,7 +1493,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_69
-		icon = GFX_goal_enc_vac
+		icon = GFX_goal_ENC_vac
 		relative_position_id = lamplayt_67
 		available = {
          has_country_flag = detkipodenclave
@@ -1513,7 +1509,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_70
-		icon = GFX_goal_enc_new_capital
+		icon = GFX_goal_enc_laser_weapons
 		relative_position_id = lamplayt_69
 		prerequisite = { focus = lamplayt_69 }
 		available = {
@@ -1591,30 +1587,13 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			add_ideas = enc_scientists
-		}
-	}
-	
-	focus = {
-		id = lamplayt_74
-		icon = GFX_goal_enc_experiments
-		relative_position_id = lamplayt_73
-		prerequisite = { focus = lamplayt_73 }
-		available = {
-         has_country_flag = detkipodenclave
-		 ESP = { exists = yes }
-		}
-		cost = 45
-		x = 0
-		y = 1
-		completion_reward = {
 			add_research_slot = 2
 		}
 	}
 	
 	focus = {
 		id = lamplayt_75
-		icon = GFX_goal_enc_para_2
+		icon = GFX_goal_enc_small_arms
 		relative_position_id = lamplayt_69
 		prerequisite = { focus = lamplayt_69 }
 		available = {
@@ -1632,7 +1611,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_76
-		icon = GFX_goal_enc_army_doctrine
+		icon = GFX_goal_enc_radio
 		relative_position_id = lamplayt_75
 		prerequisite = { focus = lamplayt_75 }
 		available = {
@@ -1654,7 +1633,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_77
-		icon = GFX_goal_enc_integrate_officers
+		icon = GFX_goal_ESP_Start_3
 		relative_position_id = lamplayt_76
 		prerequisite = { focus = lamplayt_76 }	
 		available = {
@@ -1665,13 +1644,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_ideas = ENC_officers
+			add_ideas = ESP_officers_local_2
 		}
 	}
 	
 	focus = {
 		id = lamplayt_78
-		icon = GFX_goal_shield_enc_wip
+		icon = GFX_goal_enc_army_doctrine
 		relative_position_id = lamplayt_77
 		prerequisite = { focus = lamplayt_77 }	
 		available = {
@@ -1682,7 +1661,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_ideas = ENC_purist
+			#add_ideas = ENC_purist
 			add_war_support = 0.1
 			add_political_power = 100
 		}
@@ -1690,7 +1669,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_79
-		icon = GFX_goal_enc_segregation
+		icon = GFX_goal_generic_focus_magazine_robcofun_wastelad
 		relative_position_id = lamplayt_78
 		prerequisite = { focus = lamplayt_78 }
         mutually_exclusive = {
@@ -1699,7 +1678,8 @@ focus_tree = {
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
-		 date > 2282.1.1
+		 SBS = { exists = no}
+		 date > 2279.1.1
 		}
 		ai_will_do = { factor = 1 }
 		cost = 45
@@ -1715,7 +1695,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_80
-		icon = GFX_goal_enc_empower_congress
+		icon = GFX_goal_ENC_fallen_america
 		relative_position_id = lamplayt_78
 		prerequisite = { focus = lamplayt_78 }
 		mutually_exclusive = {
@@ -1725,7 +1705,8 @@ focus_tree = {
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
-		 date > 2282.1.1
+		 SBS = { exists = no}
+		 date > 2279.1.1
 		}
 		cost = 45
 		x = 1
@@ -1739,11 +1720,19 @@ focus_tree = {
 		id = lamplayt_81
 		icon = GFX_goal_generic_advanced_technology_focus
 		relative_position_id = lamplayt_51
-		prerequisite = { focus = lamplayt_51 focus = lamplayt_56 focus = lamplayt_57 focus = lamplayt_61 focus = lamplayt_62 focus = lamplayt_54 }
+		prerequisite = { 
+		focus = lamplayt_51 
+		focus = lamplayt_54
+		focus = lamplayt_56 
+		focus = lamplayt_57 
+		focus = lamplayt_61 
+		focus = lamplayt_62 
+		}
 		ai_will_do = { factor = 50 }
 		available = {
-         date > 2277.1.1
+         date > 2277.6.1
 		}
+
 		cost = 45
 		x = 0
 		y = 2
@@ -1874,7 +1863,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_86
-		icon = GFX_goal_enc_purge_officers
+		icon = GFX_goal_generic_bb_gun
 		relative_position_id = lamplayt_79	
 		prerequisite = { focus = lamplayt_79 }
 		available = {
@@ -1885,18 +1874,18 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-		    add_political_power = 150
-			add_manpower = 1000
+		    add_political_power = -150
+			add_manpower = -133
 			add_autonomy_ratio = {
 				value = 0.15
-				localization = lamplayt_86
+				#localization = lamplayt_86
 			}
 		}
 	}
 	
 	focus = {
 		id = lamplayt_87
-		icon = GFX_goal_enc_armed_militias
+		icon = GFX_goal_generic_freedom
 		relative_position_id = lamplayt_86
 		prerequisite = { focus = lamplayt_86 }
 		available = {
@@ -1907,10 +1896,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_autonomy_ratio = {
-				value = 70
-				localization = lamplayt_87
-			}
+		set_autonomy = {
+           target = LIT
+           autonomy_state = autonomy_free
+        }
 			create_country_leader = {
 	        name = "Queen"
 	        desc = ""
@@ -1943,7 +1932,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_88
-		icon = GFX_goal_enc_police_officer
+		icon = GFX_goal_ESP_Autumn_Purge
 		relative_position_id = lamplayt_80	
 		prerequisite = { focus = lamplayt_80 }
 		available = {
@@ -1966,7 +1955,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_89
-		icon = GFX_goal_enc_education_civilian
+		icon = GFX_goal_SBS_Wasteland_Prop
 		relative_position_id = lamplayt_88	
 		prerequisite = { focus = lamplayt_88 }
 		available = {
@@ -2017,7 +2006,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_92
-		icon = GFX_goal_enc_judiciary_nevada
+		icon = GFX_goal_generic_creature_bald_eagle
 		relative_position_id = lamplayt_26
 		available = {
 		has_country_flag = resvedvernulis
@@ -2033,7 +2022,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_93
-		icon = GFX_goal_enc_reform_forced_deal_dark
+		icon = GFX_KHA_focus_hang
 		relative_position_id = lamplayt_92
 		prerequisite = { focus = lamplayt_92 }
 		available = {
@@ -2068,7 +2057,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_94
-		icon = GFX_goal_enc_subsidized_lives
+		icon = GFX_goal_generic_bloody_sacrifice
 		relative_position_id = lamplayt_93
 		prerequisite = { focus = lamplayt_93 }
 		available = {
@@ -2088,7 +2077,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_95
-		icon = GFX_goal_enc_fruits_of_their_labors
+		icon = GFX_KHA_focus_support_orange
 		relative_position_id = lamplayt_94
 		prerequisite = { focus = lamplayt_94 }
 		available = {
@@ -2181,7 +2170,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_96
-		icon = GFX_goal_enc_nevada_assembly
+		icon = GFX_goal_generic_land_doctrines_focus
 		relative_position_id = lamplayt_95
 		prerequisite = { focus = lamplayt_95 }
 		available = {
@@ -2198,7 +2187,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_97
-		icon = GFX_goal_enc_first_citizens
+		icon = GFX_KHA_focus_army_1
 		relative_position_id = lamplayt_96
 		prerequisite = { focus = lamplayt_96 }
 		available = {
@@ -2244,14 +2233,14 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
-			883 = {
+			990 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 2
 					instant_build = yes 
 				}
 			}
-			884 = {
+			998 = {
 				add_building_construction = { 
 					type = infrastructure 
 					level = 2
@@ -2275,16 +2264,10 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 		   TEN = { 
-		          set_popularities = {
-			          parties = {
-				          ruler = { popularity = 10 }
-				          elites = { popularity = 10 }
-				          people = { popularity = 60 }
-				          intellectuals = { popularity = 20 }
-			        }
-			       ruling_party = people
-			       elections_allowed = yes
-				   }
+	       set_politics = {
+				ruling_party = people
+				elections_allowed = no
+			}
 				  create_country_leader = {
 	              name = "Mortimer Rufus"
 	              desc = ""
@@ -2300,7 +2283,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_100
-		icon = GFX_goal_enc_first_citizens
+		icon = GFX_goal_generic_flamer_focus
 		relative_position_id = lamplayt_92
 		prerequisite = { focus = lamplayt_92 }
 		available = {
@@ -2317,7 +2300,8 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-		   add_war_support = 0.4
+		   add_stability = -0.2
+		   add_war_support = 0.35
 		}
 	}
 	
@@ -2471,16 +2455,10 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 		   TEN = { 
-		         set_popularities = {
-			          parties = {
-				          ruler = { popularity = 50 }
-				          elites = { popularity = 20 }
-				          people = { popularity = 10 }
-				          intellectuals = { popularity = 20 }
-			        }
-			       ruling_party = ruler
-			       elections_allowed = no
-				   }
+	       set_politics = {
+				ruling_party = ruler
+				elections_allowed = no
+			}
 				  create_country_leader = {
 	              name = "Mortimer Rufus"
 	              desc = ""
@@ -2648,7 +2626,7 @@ focus_tree = {
 	
 	focus = {
 		id = lamplayt_114
-		icon = GFX_goal_enc_experiments
+		icon = GFX_KHA_focus_research_focus
 		relative_position_id = lamplayt_106
 		prerequisite = { focus = lamplayt_106 focus = lamplayt_99 focus = lamplayt_113 }
 		available = {
@@ -2671,10 +2649,10 @@ focus_tree = {
 			ESP = { exists = yes }
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = lamplayt_74
+		relative_position_id = lamplayt_73
 		x = -1
 		y = 1
-		prerequisite = { focus = lamplayt_74}
+		prerequisite = { focus = lamplayt_73}
 		mutually_exclusive = { focus = lamplayt_116 }
 		completion_reward = {
 			add_ideas = ESP_FEV_soldiers
@@ -2690,8 +2668,8 @@ focus_tree = {
 			has_country_flag = bigcheloverk1
 			ESP = { exists = yes }
 		}
-		prerequisite = { focus = lamplayt_74 }
-		relative_position_id = lamplayt_74
+		prerequisite = { focus = lamplayt_73 }
+		relative_position_id = lamplayt_73
 		mutually_exclusive = { focus = lamplayt_115 }
 		x = 1
 		y = 1
@@ -2723,7 +2701,7 @@ focus_tree = {
 	
 	focus = {#Cloning
 		id = lamplayt_118
-		icon = GFX_goal_enc_management
+		icon = GFX_goal_brahmin_cart
 		ai_will_do = { factor = 1 }
 		available = {
 			ESP = { exists = no }
@@ -2736,17 +2714,17 @@ focus_tree = {
 		completion_reward = {
 			1003 = { add_core_of = LIT }
 			989 = { add_core_of = LIT }
-			#888 = { add_core_of = LIT }
+			1025 = { add_core_of = LIT }
 			988 = { add_core_of = LIT }
 			987 = { add_core_of = LIT }
 			985 = { add_core_of = LIT }
-			#881 = { add_core_of = LIT }
+			1024 = { add_core_of = LIT }
 		}
 	}
 	
 	focus = {#Cloning
 		id = lamplayt_119
-		icon = GFX_goal_enc_management
+		icon = GFX_goal_ENC_construction_usa
 		ai_will_do = { factor = 1 }
 		available = {
 			ESP = { exists = yes }
@@ -2792,7 +2770,7 @@ focus_tree = {
 	focus = {
 		id = lamplayt_121
 		icon = GFX_goal_dett2
-		cost = 145
+		cost = 45
 		available = {
           has_country_flag = otkaz_ot_vseh
 		  has_completed_focus = lamplayt_113
@@ -2867,13 +2845,13 @@ focus_tree = {
 	
 	focus = {#Cloning
 		id = lamplayt_124
-		icon = GFX_goal_enc_management
+		icon = GFX_KHA_focus_remain_neutral
 		ai_will_do = { factor = 1000 }
 		available = {
            has_country_flag = soglasievaultsouls
 		}
 		relative_position_id = lamplayt_36
-		x = 4
+		x = 6
 		y = -1
 		cost = 45
 		completion_reward = {
@@ -3079,7 +3057,7 @@ focus_tree = {
 		relative_position_id = lamplayt_129
 		available = {
            ESP = { exists = no }
-           has_country_flag = soglasievaultsouls	   
+           has_country_flag = soglasievaultsouls		   
 		}
 		x = 0
 		y = 3
@@ -3199,23 +3177,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = vault101buch
-		}
-	}
-	
-	focus = {
-		id = lamplayt_141
-		icon = GFX_goal_NCN_Blessed_Are_The_Merciful
-		relative_position_id = lamplayt_115
-		prerequisite = { focus = lamplayt_115 focus = lamplayt_116 }
-		available = {
-
-		}
-		ai_will_do = { factor = 30 }
-		cost = 60
-		x = 1
-		y = 1
-		completion_reward = {
-		   add_manpower = 2000
 		}
 	}
 }

@@ -399,8 +399,8 @@ focus_tree = {
 
 		available = {
              AAG = { 
-			      people > 0.82
-				  has_stability <0.3
+			      people > 0.85
+				  has_stability <0.45
 			}
 			
 		}
