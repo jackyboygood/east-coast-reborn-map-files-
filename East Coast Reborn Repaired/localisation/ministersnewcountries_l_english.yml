@@ -1,180 +1,155 @@
 ﻿l_english:
- jeremy: "Jeremiah"
- jeremy_desc: "Jeremy was once a resident of Diamond City where he worked and who did not cross the road, but once his institute abducted and offered him a deal for which he agreed, since that time Jeremy has worked for the Institute."
- jeremy_engineer: "Engineer"
- 
- Tony: "Tony"
- Tony_desc: "Tony is not much different from other residents of the institute."
- Tony_technician: "Technician"
- 
- doctor_folcret: "Dean Volkert"
- doctor_folcret_desc: "Dean Volkert has been working at the institute since he was very young, he read a lot of books and now there is practically nothing that he wouldn’t know how to treat."
- din_folcret: "Chief Doctor"
- 
- doctor_le_institute: "Dr. Li"
- doctor_le_institute_desc: "Dr. Li, 58, is one of the heads of the Institute’s Higher Systems Department and is involved in the development of synths.."
- peaceful_lee: "Head of Development"
- 
- nachalnikohraniinsta: "Matyu Mrazik"
- inst_security: "Head of the Security Institute"
- 
- erik_kraus: "Eric Kraus"
- instesoteric_engineer: "Isoteric engineer"
- 
- stenly_armstrong: "Stanley Armstrong"
- stenly_armstrong_desc: "Stanley was a friend of Asylum 101's family, which puts our board in doubt, but we need his skills.."
- 
- officer_gomes: "Officer Gomez"
- vault101_leadersecurity: "Head of Vault Security 101"
- 
- officer_teylor: "Officer Taylor"
- officer_teylor_desc: "Officer Taylor is one of the oldest and most experienced asylum guards 101, we have something to learn from him.."
- vault101_security: "Vault Security 101"
- 
- alien_mack: "Alen Mak"
- alien_mack_desc: "Alen Mak believes that it is necessary to lock asylum 101 and not to let in not any outsiders, he openly advocates his ideas, which prevents a stable situation in the asylum 101."
- decorated_vault101: "Angry Resident"
- 
- butch: "Buch deloria"
- butch_desc: "Butch, for a long time he has been wrapping up asylum in 101, but the guards have never caught him hot ... his stealth skills might be useful to us."
- butch_bandit: "Leader of the Tunnel Serpents"
- 
- gloriamack: "Gloria Mac"
- gloriamack_desc: "Gloria Mac, the first beauty of the asylum 101, everyone thought that she could not achieve anything, and would seek only her beauty, but she surprised everyone when she decided to become a scientist, and quite successful."
- gloria_scienties: "Scientist"
- 
- mather_merfi: "Mother murphy"
- mather_merfi_desc: "Mother Murphy is a strange woman, but she easily calms a lot of people.."
- shaman_merfi: "Predictor"
- 
- independen: "Fort Independence"
- independen_desc: "Finally, we regained Fort Independence, now, having opened Radio Liberty, we could invite people into our ranks."
- fort_independens: "Fort"
- 
- struges: "Struges"
- 
- polkovnik_sanders: "Colonel Sanders"
- Sanders_polkovnik: "Top management"
- 
- Meri_djayn: "Mary jane"
- agitator: "Agitator"
- 
- minitman_shou: "Ronnie shaw"
- 
- diplomatman: "Mr Schulz"
- diplomatman_desc: "The Federation does not infringe upon the rights of Gulified citizens, which is why the Federation managed to get the famous diplomat of the past."
- consul_newyork: "Consul"
- 
- administ: "Resolving Questions"
- administration_president: "Administration of the President"
- 
- marmontgenera: "Anthony Marmont"
- General_mar: "Generalissimo"
- 
- keyt_uolker: "Kate walker"
- General_keyt: "Generalissimo"
- 
- soldier1: "Maximum Fast Soldier Training"
- Soldier_federation: "Federation Soldiers"
- 
- soldier2: "Most Difficult Marines Training"
- marines_federation: "Federation Marines"
- 
- soldier3: "Mister X"
- soldier3_desc: "Эthis spy is so good that almost nothing is known about him, but anonymously, he gives us very important information"
- spy_newyork: "Spy"
- 
- naval_manufacturer_newyork: "Manhattan Naval Port"
- newyork_port: "Designer Ships"
- 
- red_reyser: "Red Racer"
- newyork_razrab: "New York Development Department"
- 
- president_air: "Catherine Matgomery"
- president_air_desc: "Our president, a real heroine, she does not want to sit in her warm armchair and goes into battle in the place of this as the vanguard of our air force"
- president_air_chief: "President Commander-in-Chief of the Air Force"
- 
- mechanik_nueyork: "Protectron"
- engineer_nueyork: "Lewis O'Hara"
- polkovnik_Bishop: "Colonel Bishop"
- 
-  sinth_manufacturer: "Department of Synthesis"
- 
- biolog_otdel: "Department of Biology"
- 
- otdel_orujia: "Department of Higher Systems"
- 
- general_atommik: "Brothers lewis and clark"
- 
- weapon_company: "Armory Company"
- 
- sinth_attack_protocols: "Offensive Protocol"
- sinth_defensive_protocols: "Defensive Protocol"
- sinth_unorthodox_protocols: "Prewar Protocol"
- 
- besposh_trait: "Merciless"
- Kellog: "Kellogg"
- 
- mechanik_vault: "Protectron"
- mechanik_newyork: "Protectron"
- red_reyser1: "Red-Racer"
- spyonnewyork: "Mister Х"
- 
-sargeant_dornan51: "Lieutenant Jonathan"
-sargeant_dornan51_desc: "Lieutenant Jonathan, also known as Sergeant of Chicago. Lieutenant Jonathan is one of Chicago's best Lieutenant and when the order came to advance to Raven Rock, Lieutenant Jonathan did not ask too many questions and just proceeded to the task."
-benjamin_curling51: "Alexey Gavrilov"
-benjamin_curling51_desc: "Alexei Gavrilov followed in the footsteps of his father, a well-known Enclave scientist who served forty years ago in the US Chemical Corps. United States, which provided him and his family a safe haven."
-felix_grayson51: "Ted Winston"
-col_wilkins51: "Col. M.S. Maer"
-norman_wood51: "Lieutenant Smith Myers"
-dr_henry51: "Dr. Henry"
-ESP_arcade_gannon51: "Dr. Janus"
-enc_offensive51: "Colonel Otem"
-enc_paratroopers51: "Sergeant Tom"
-army_chief_loyalist51: "Major Craig"
-enc_air_combat51: "Captain Sanders"
-clayton_schultz51: "Simon Vanhutten"
-enc_bomber_guy51: "Major Tedson"
-enc_fighter_guy51: "Daimond craig"
-air_chief_ground_support_3_guy51: "Lee Everett"
-army_entrenchment_3_guy51: "Robert O'Hara"
-ENC_PA_quanitity51: "Department of quantitative PA"
-ENC_PA_quality51: "Department of quality PA"
-enclave_naval_manufacturer51: "Department of Marine Studies"
-enclave_light_aircraft_manufacturer51: "Fighter Development Department"
-enclave_medium_aircraft_manufacturer51: "Department of rotor wing development"
-enclave_plasma_equipment_manufacturer51: "Plasma Weapons Development Department"
-enclave_tesla_equipment_manufacturer51: "Department of weapons development Tesla"
-enclave_industrial_concern51: "US Chemical Corps"
-enclave_electronics_concern51: "Atomic Energy Commission"
+  jeremy: "Jeremy"
+  jeremy_desc: "Jeremy was a resident of Diamond City when the Institute abducted him. The Institute has given him a new purpse, which he now relucantly accepts."
+  jeremy_engineer: "Engineer"
 
-head_paladin_richardson51: "Paladin Richardson"
-paladin_myers51: "Paladin Myers"
-universal_sinth: "Universal Sint"
-fafax: "X-01-B"
-paper_reporter: "Diamond City Journalist"
-paperre: "Piper Wright"
-codsvord1: "Codesworth"
+  Tony: "Tony"
+  Tony_desc: "Tony is not much different from other residents of the Institute."
+  Tony_technician: "Technician"
 
-general_atommikk11: "Brothers lewis and clark"
-enclave_plasma_equipment_manufacturkker51: "Plasma Weapons Development Department"
-soldierrr13: "Mister X"
-soldierrr13_desc: "This spy is so good that almost nothing is known about him, but anonymously he gives us very important information."
-mechanik_nueyork151: "Protectron"
-felix_grayson151: "Felix Harrison"
-red_reyser11: "Red-Racer"
-_PA_quanitity51: "Branch count PA"
-usaprezidenteastcoastenclave: "President of the U.S.A"
+  doctor_folcret: "Dean Volkert"
+  doctor_folcret_desc: "Dean Volkert has been working at the Institute since he was very young. Having read every medical book he can get his hands on, there is practically nothing that he wouldn’t know how to treat."
+  din_folcret: "Chief Doctor"
 
-head_paladin_walters: "Head Paladin Walters"
-paladin_wolfe: "Paladin Wolfe"
-scribe_adams: "Scribe Adams"
-paladin_reyes: "Paladin Reyes"
-knight_madine: "Knight Madine"
-scout_wessex: "Scout Wessex"
-knight_canmore: "Knight Canmore"
-scribe_hanover: "Scribe Hanover"
-paladin_wolfe_advisor: "Paladin Wolfe"
-journeyman_mercia: "Journeyman Mercia"
+  doctor_le_institute: "Dr. Li"
+  doctor_le_institute_desc: "Dr. Li, 58, is one of the heads of the Institute’s Higher Systems Department and is involved in the development of synths."
+  peaceful_lee: "Head of Development"
 
-liz_hazel: "Liz Hazel"
+  nachalnikohraniinsta: "Matyu Mrazik"
+  inst_security: "Head of the Security in the Institute"
+
+  erik_kraus: "Eric Kraus"
+  instesoteric_engineer: "Isoteric Engineer"
+
+  stenly_armstrong: "Stanley Armstrong"
+  stenly_armstrong_desc: "Stanley started in the government because he was a friend of the Lone Wanderer, which makes us doubt his qualifications a bit, but we need his skills..."
+
+  officer_gomes: "Officer Gomez"
+  vault101_leadersecurity: "Head of Vault 101 Security"
+
+  officer_teylor: "Officer Taylor"
+  officer_teylor_desc: "Officer Taylor is one of the oldest and most experienced Vault 101 Guards. We have a lot to learn from him."
+  vault101_security: "Vault 101 Security"
+
+  alien_mack: "Allen Mack"
+  alien_mack_desc: "Allen Mack believes we should lock Vault 101 and let in no outsiders. His complaints are threatening the stability of Vault 101."
+  decorated_vault101: "Angry Resident"
+
+  butch: "Butch Deloria"
+  butch_desc: "Much to Securities anger, Butch has been sneaking around Vault 101 and causing ruckus for years... his stealth skills might be useful to us."
+  butch_bandit: "Leader of the Tunnel Snakes"
+
+  gloriamack: "Gloria Mack"
+  gloriamack_desc: "Gloria Mack: beautiful, calming, and brilliant. What can't she do?"
+  gloria_scienties: "Scientist"
+
+  mather_merfi: "Mama Murphy"
+  mather_merfi_desc: "Mama Murphy is a strange woman, but her presence sooths the people."
+  shaman_merfi: "Predictor"
+
+  independen: "Fort Independence"
+  independen_desc: "Finally, we regained Fort Independence and opened Radio Liberty. The Commonwealth's trust in us is rising."
+  fort_independens: "Fort"
+
+  struges: "Struges"
+
+  polkovnik_sanders: "Colonel Sanders"
+  Sanders_polkovnik: "Top Management"
+
+  Meri_djayn: "Mary Jane"
+  agitator: "Agitator"
+
+  minitman_shou: "Ronnie Shaw"
+
+  diplomatman: "Mr Schulz"
+  diplomatman_desc: "The Federation does not infringe upon the rights of Ghoulified citizens, which is why the Federation managed to get the famous diplomat of the past."
+  consul_newyork: "Diplomat"
+
+  administ: "Resolving Questions"
+  administration_president: "Administration of the President"
+
+  marmontgenera: "Anthony Marmont"
+  General_mar: "Colonel"
+
+  keyt_uolker: "Kate Walker"
+  General_keyt: "Colonel"
+
+  soldier1: "Rapid Soldier Training"
+  Soldier_federation: "Federation Soldiers"
+
+  soldier2: "Rigorous Marine Training"
+  marines_federation: "Federation Marines"
+
+  soldier3: "Mister X"
+  soldier3_desc: "This spy is so good that almost nothing is known about him, but anonymously, he gives us very important information"
+  spy_newyork: "Spy"
+
+  naval_manufacturer_newyork: "Manhattan Naval Port"
+  newyork_port: "Design Ships"
+
+  red_reyser: "Red Racer"
+  newyork_razrab: "New York Development Department"
+
+  president_air: "Catherine Matgomery"
+  president_air_desc: "Our president, a real heroine, refuses to sit and lead from an office, instead choosing to lead our Air Force"
+  president_air_chief: "President Commander-in-Chief of the Air Force"
+
+  engineer_nueyork: "Lewis O'Hara"
+  polkovnik_Bishop: "Colonel Bishop"
+
+  weapon_company: "Armory Company"
+
+  sinth_attack_protocols: "Offensive Protocol"
+  sinth_defensive_protocols: "Defensive Protocol"
+  sinth_unorthodox_protocols: "Prewar Protocol"
+
+  besposh_trait: "Merciless"
+  Kellog: "Kellogg"
+
+  mechanik_vault: "Protectron"
+  mechanik_newyork: "Protectron"
+  red_reyser1: "Red-Racer"
+  spyonnewyork: "Mister Х"
+
+  sargeant_dornan51: "Lieutenant Jonathan"
+  sargeant_dornan51_desc: "Lieutenant Jonathan is also known as Sergeant of Chicago. When the order came down to advance into Raven Rock, Lieutenant Jonathan asked no questions."
+
+  benjamin_curling51: "Alexey Gavrilov"
+  benjamin_curling51_desc: "Alexei Gavrilov followed in the footsteps of his father, a well-known Enclave scientist who served forty years ago in the US Chemical Corps. The United States in exchange provided him and his family a safe haven."
+
+  felix_grayson51: "Ted Winston"
+  col_wilkins51: "Col. M.S. Maer"
+  norman_wood51: "Lieutenant Smith Myers"
+  dr_henry51: "Dr. Henry"
+  ESP_arcade_gannon51: "Dr. Janus"
+  enc_offensive51: "Colonel Autumn"
+  enc_paratroopers51: "Sergeant Tom"
+  army_chief_loyalist51: "Major Craig"
+  enc_air_combat51: "Captain Sanders"
+  clayton_schultz51: "Simon Vanhutten"
+  enc_bomber_guy51: "Major Tedson"
+  enc_fighter_guy51: "Daimond Craig"
+  air_chief_ground_support_3_guy51: "Lee Everett"
+  army_entrenchment_3_guy51: "Robert O'Hara"
+
+  universal_sinth: "Universal Sint"
+  fafax: "X-01-B"
+  paper_reporter: "Diamond City Journalist"
+  paperre: "Piper Wright"
+  codsvord1: "Codesworth"
+
+  _PA_quanitity51: "Branch count PA"
+  usaprezidenteastcoastenclave: "President of the U.S.A"
+
+  head_paladin_walters: "Head Paladin Walters"
+  paladin_wolfe: "Paladin Wolfe"
+  scribe_adams: "Scribe Adams"
+  paladin_reyes: "Paladin Reyes"
+  knight_madine: "Knight Madine"
+  scout_wessex: "Scout Wessex"
+  knight_canmore: "Knight Canmore"
+  scribe_hanover: "Scribe Hanover"
+  paladin_wolfe_advisor: "Paladin Wolfe"
+  journeyman_mercia: "Journeyman Mercia"
+
+  liz_hazel: "Liz Hazel"
