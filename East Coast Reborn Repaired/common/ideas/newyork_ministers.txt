@@ -73,7 +73,7 @@ army_chief = {
         marmontgenera = {
 			picture = advisor_newyork2
             cost = 300
-			available = { has_completed_focus = newyork_12 }
+			available = { has_completed_focus = NUE_focus_12 }
 			allowed = {
 				original_tag = NUE
 			}
@@ -87,7 +87,7 @@ army_chief = {
 		keyt_uolker = {
 			picture = advisor_newyork3
             cost = 250
-			available = { has_completed_focus = newyork_13 }
+			available = { has_completed_focus = NUE_focus_13 }
 			allowed = {
 				original_tag = NUE
 			}
@@ -115,7 +115,7 @@ high_command = {
 		soldier2 = {
 			picture = advisor_newyork5
             cost = 250
-			available = { has_completed_focus = newyork_21 }
+			available = { has_completed_focus = NUE_focus_21 }
 			allowed = {
 				original_tag = NUE
 			}

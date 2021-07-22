@@ -10,7 +10,7 @@ focus_tree = {
 	
 	default = no
 	focus = {
-		id = newyork_1
+		id = NUE_focus_1
 		icon = GFX_goal_NUE_default
 		cost = 7
 		x = 16
@@ -18,23 +18,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 entered"
 			}
 			country_event = { id = NUE_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_2
+		id = NUE_focus_2
 		icon = GFX_goal_NUE_default
 		x = 0
 		y = 1
-		prerequisite = { focus = newyork_1 }
-		relative_position_id = newyork_1 
+		prerequisite = { focus = NUE_focus_1 }
+		relative_position_id = NUE_focus_1 
 		cost = 7
 
 		ai_will_do = {
@@ -65,32 +65,32 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_3
+		id = NUE_focus_3
 		icon = GFX_goal_NUE_default
-		relative_position_id = newyork_2 
+		relative_position_id = NUE_focus_2 
 		cost = 7
 		prerequisite = {
-			focus = newyork_2
+			focus = NUE_focus_2
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_3 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_3 entered"
 			}
 			country_event = { id = NUE_event.3 } # The Malpais Legate
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_3 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_3 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_4
+		id = NUE_focus_4
 		icon = GFX_goal_NUE_manhattan_true
-		relative_position_id = newyork_3
+		relative_position_id = NUE_focus_3
 		cost = 45
 		x = -5
 		y = 1
@@ -98,13 +98,13 @@ focus_tree = {
 			1041 = { is_owned_and_controlled_by = ROOT }
 		}
 		prerequisite = {
-	    focus = newyork_3
+	    focus = NUE_focus_3
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_4 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_4 entered"
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -114,44 +114,44 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_4 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_4 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_5
+		id = NUE_focus_5
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		relative_position_id = newyork_4
+		relative_position_id = NUE_focus_4
 		cost = 45
 		available = {
 			1041 = { is_owned_and_controlled_by = ROOT }
 		}
 		prerequisite = {
-			focus = newyork_4
+			focus = NUE_focus_4
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_5 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_5 entered"
 			}
 			country_event = { id = NUE_event.4 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_5 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_5 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_6
+		id = NUE_focus_6
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		relative_position_id = newyork_4
+		relative_position_id = NUE_focus_4
 		cost = 45
 		prerequisite = {
-			focus = newyork_4
+			focus = NUE_focus_4
 		}
 		x = 2
 		y = 1
@@ -179,11 +179,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_7
+		id = NUE_focus_7
 		icon = GFX_goal_doroga
-		prerequisite = { focus = newyork_5 }
+		prerequisite = { focus = NUE_focus_5 }
 		ai_will_do = { factor = 1 } 
-		relative_position_id = newyork_5
+		relative_position_id = NUE_focus_5
 		x = 0
 		y = 1
 		cost = 45
@@ -227,12 +227,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_8
+		id = NUE_focus_8
 		icon = GFX_goal_generic_airbases_focus
-		relative_position_id = newyork_4
+		relative_position_id = NUE_focus_4
 		cost = 45
 		prerequisite = {
-			focus = newyork_4
+			focus = NUE_focus_4
 		}
 		x = -2
 		y = 1
@@ -242,7 +242,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_8 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_8 entered"
 			}
 			1035 = {
 				add_building_construction = {
@@ -259,18 +259,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_8 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_8 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_9
+		id = NUE_focus_9
 		icon = GFX_goal_generic_building_focus
-		relative_position_id = newyork_7
+		relative_position_id = NUE_focus_7
 		cost = 45
 		prerequisite = {
-			focus = newyork_7
+			focus = NUE_focus_7
 		}
 		x = 0
 		y = 1
@@ -280,7 +280,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_9 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_9 entered"
 			}
 			1041 = {
 				add_resource = {
@@ -294,18 +294,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_9 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_9 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_10
+		id = NUE_focus_10
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = newyork_6
+		relative_position_id = NUE_focus_6
 		cost = 45
 		prerequisite = {
-			focus = newyork_6
+			focus = NUE_focus_6
 		}
 		x = 0
 		y = 1
@@ -315,7 +315,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_10 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_10 entered"
 			}
 			1041 = {
 				add_extra_state_shared_building_slots = 3
@@ -327,22 +327,22 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_10 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_10 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_11
+		id = NUE_focus_11
 		icon = GFX_goal_NUE_training
-		relative_position_id = newyork_3
+		relative_position_id = NUE_focus_3
 		cost = 45
 		prerequisite = {
-		focus = newyork_3
+		focus = NUE_focus_3
 		}
 		available = {
-			has_completed_focus = newyork_4
-			has_completed_focus = newyork_26
+			has_completed_focus = NUE_focus_4
+			has_completed_focus = NUE_focus_26
 		}
 		ai_will_do = { factor = 100 }
 		x = 5
@@ -350,88 +350,88 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_11 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_11 entered"
 			}
 			army_experience = 35
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_11 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_11 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_12
+		id = NUE_focus_12
 		icon = GFX_goal_NUE_training_marmont
-		relative_position_id = newyork_11
+		relative_position_id = NUE_focus_11
 		cost = 45
 		prerequisite = {
-			focus = newyork_11
+			focus = NUE_focus_11
 		}
 		available = {
-			has_completed_focus = newyork_11
+			has_completed_focus = NUE_focus_11
 		}
 		mutually_exclusive = {
-			focus = newyork_13
+			focus = NUE_focus_13
 		}
 		x = -2
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_12 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_12 entered"
 			}
 			add_ideas = marmontarmy
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_12 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_12 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_13
+		id = NUE_focus_13
 		icon = GFX_goal_NUE_training_Kate
-		relative_position_id = newyork_11
+		relative_position_id = NUE_focus_11
 		cost = 45
 		prerequisite = {
-			focus = newyork_11
+			focus = NUE_focus_11
 		}
 		available = {
-			has_completed_focus = newyork_11
+			has_completed_focus = NUE_focus_11
 		}
 		mutually_exclusive = {
-			focus = newyork_12
+			focus = NUE_focus_12
 		}
 		x = 2
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_13 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_13 entered"
 			}
 			add_ideas = bigkeyt
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_13 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_13 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_14
+		id = NUE_focus_14
 		icon = GFX_goal_NCR_Blast_from_the_Past
-		relative_position_id = newyork_12
+		relative_position_id = NUE_focus_12
 		cost = 45
 		prerequisite = {
-			focus = newyork_12
+			focus = NUE_focus_12
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_14 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_14 entered"
 			}
 			add_tech_bonus = {
 				name = explosive_bonus
@@ -442,25 +442,25 @@ focus_tree = {
 			add_ideas = blastfromthepast
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_14 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_14 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_15
+		id = NUE_focus_15
 		icon = GFX_goal_NCR_Army_of_Mobility
-		relative_position_id = newyork_14
+		relative_position_id = NUE_focus_14
 		cost = 45
 		prerequisite = {
-			focus = newyork_14
+			focus = NUE_focus_14
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_15 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_15 entered"
 			}
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -471,111 +471,111 @@ focus_tree = {
 			add_ideas = mobilearmy
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_15 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_15 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_16
+		id = NUE_focus_16
 		icon = GFX_goal_NCR_The_Tip_of_the_Spear
-		relative_position_id = newyork_15
+		relative_position_id = NUE_focus_15
 		cost = 45
 		prerequisite = {
-			focus = newyork_15
+			focus = NUE_focus_15
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_16 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_16 entered"
 			}
 			add_ideas = speartip
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_16 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_16 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_17
+		id = NUE_focus_17
 		icon = GFX_goal_NCR_Infantry_Drills
-		relative_position_id = newyork_13
+		relative_position_id = NUE_focus_13
 		cost = 45
 		prerequisite = {
-			focus = newyork_13
+			focus = NUE_focus_13
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_17 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_17 entered"
 			}
 				set_technology = { ncr_jim_drills = 1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_17 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_17 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_18
+		id = NUE_focus_18
 		icon = GFX_goal_NCR_Military_March
-		relative_position_id = newyork_17
+		relative_position_id = NUE_focus_17
 		cost = 45
 		prerequisite = {
-			focus = newyork_17
+			focus = NUE_focus_17
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_18 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_18 entered"
 			}
 			add_ideas = ncrmarch
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_18 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_18 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_19
+		id = NUE_focus_19
 		icon = GFX_goal_NCR_Big_Jim_Draft
-		relative_position_id = newyork_18
+		relative_position_id = NUE_focus_18
 		cost = 45
 		prerequisite = {
-			focus = newyork_18
+			focus = NUE_focus_18
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_19 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_19 entered"
 			}
 			add_ideas = keytraft
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_19 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_19 exited"
 			}
 		}
 	}
 	
     focus = {
-		id = newyork_20
+		id = NUE_focus_20
 		icon = GFX_goal_NUE_Terror
-		relative_position_id = newyork_3
+		relative_position_id = NUE_focus_3
 		cost = 45
 		available = {
-        has_completed_focus = newyork_11
-		has_completed_focus = newyork_30
+        has_completed_focus = NUE_focus_11
+		has_completed_focus = NUE_focus_30
 		}
 		ai_will_do = {
 			factor = 150
@@ -594,12 +594,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_21
+		id = NUE_focus_21
 		icon = GFX_goal_NUE_marines_coming_up
-		relative_position_id = newyork_20
+		relative_position_id = NUE_focus_20
 		cost = 45
 		prerequisite = {
-			focus = newyork_20
+			focus = NUE_focus_20
 		}
 		mutually_exclusive = {
 
@@ -615,7 +615,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_21 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_21 entered"
 			}
 			add_political_power = 25
 			add_opinion_modifier = { target = BOK modifier = deployedrangers }
@@ -632,22 +632,22 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_21 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_21 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_22
+		id = NUE_focus_22
 		icon = GFX_goal_NUE_Operation_free
-		relative_position_id = newyork_21
+		relative_position_id = NUE_focus_21
 		cost = 45
 		bypass = {
 			BOK = { exists = no }
 			BOK = { is_subject_of = NUE}
 		}
 		prerequisite = {
-			focus = newyork_21
+			focus = NUE_focus_21
 		}
 		ai_will_do = {
 			factor = 150
@@ -669,7 +669,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_22 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_22 entered"
 			}
 			if = {
 				limit = { BOK = { exists = yes }}
@@ -712,17 +712,17 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_22 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_22 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_23 
+		id = NUE_focus_23 
 		icon = GFX_goal_NUE_Radio
-		relative_position_id = newyork_3
+		relative_position_id = NUE_focus_3
 		prerequisite = {
-			focus = newyork_3
+			focus = NUE_focus_3
 		}
 		ai_will_do = { factor = 100 }
 		x = -10
@@ -744,11 +744,11 @@ focus_tree = {
 }
 
     focus = {#SIERRA - 2- The lab
-		id = newyork_24
+		id = NUE_focus_24
 		icon = GFX_goal_generic_data_focus
-		prerequisite = {focus = newyork_23}
+		prerequisite = {focus = NUE_focus_23}
 		ai_will_do = { factor = 100 }
-		relative_position_id = newyork_23
+		relative_position_id = NUE_focus_23
 		x = -1
 		y = 1
 		cost = 45
@@ -758,11 +758,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_25
+		id = NUE_focus_25
 		icon = GFX_goal_generic_cities_focus
-		prerequisite = {focus = newyork_23}
+		prerequisite = {focus = NUE_focus_23}
 		ai_will_do = { factor = 100 } 
-		relative_position_id = newyork_23
+		relative_position_id = NUE_focus_23
 		x = 1
 		y = 1
 		cost = 45
@@ -777,13 +777,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_26
+		id = NUE_focus_26
 		icon = GFX_goal_generic_focus_magazine_gunsandbullets_lasers
-		relative_position_id = newyork_24
+		relative_position_id = NUE_focus_24
 		cost = 45
 		prerequisite = {
-			focus = newyork_24
-			focus = newyork_25
+			focus = NUE_focus_24
+			focus = NUE_focus_25
 		}
 		ai_will_do = { factor = 100 }
 		x = 1
@@ -792,22 +792,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_26 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_26 entered"
 			}
 			add_tech_bonus = { bonus = 0.3 uses = 2 category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_26 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_26 exited"
 			}
 		}
 	}
 	
 	focus = {#SIERRA - 2- The lab
-		id = newyork_27
+		id = NUE_focus_27
 		icon = GFX_goal_generic_terminal_2
-		prerequisite = {focus = newyork_26}
+		prerequisite = {focus = NUE_focus_26}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = newyork_26
+		relative_position_id = NUE_focus_26
 		x = -1
 		y = 1
 		cost = 45
@@ -817,11 +817,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_28
+		id = NUE_focus_28
 		icon = GFX_goal_generic_emote_help
-		prerequisite = {focus = newyork_26}
+		prerequisite = {focus = NUE_focus_26}
 		ai_will_do = { factor = 200 } 
-		relative_position_id = newyork_26
+		relative_position_id = NUE_focus_26
 		x = 1
 		y = 1
 		cost = 45
@@ -831,15 +831,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_29
+		id = NUE_focus_29
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { 
-		focus = newyork_28 
+		focus = NUE_focus_28 
 		}
 		prerequisite = { 
-		focus = newyork_27
+		focus = NUE_focus_27
 		}
-		relative_position_id = newyork_28
+		relative_position_id = NUE_focus_28
 		x = -1
 		y = 1
 		
@@ -852,7 +852,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = newyork_31
+			has_completed_focus = NUE_focus_31
 			MAM = { exists = no }
             KEN = { exists = no } 			
 		}
@@ -882,13 +882,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_30
+		id = NUE_focus_30
 		icon = GFX_goal_NUE_training_large
 		prerequisite = {
-		focus = newyork_16
-		focus = newyork_19}
+		focus = NUE_focus_16
+		focus = NUE_focus_19}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = newyork_11
+		relative_position_id = NUE_focus_11
 		x = 0
 		y = 5
 		cost = 45
@@ -898,12 +898,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_31
+		id = NUE_focus_31
 		icon = GFX_goal_NUE_marines_attack
-		relative_position_id = newyork_22
+		relative_position_id = NUE_focus_22
 		cost = 45
 		prerequisite = {
-			focus = newyork_22
+			focus = NUE_focus_22
 		}
 		bypass = {
 			KEN = { exists = no }
@@ -934,7 +934,7 @@ focus_tree = {
 			1040 = { add_core_of = NUE }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_31 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_31 entered"
 			}
 			if = {
 				limit = { KEN = { exists = yes }}
@@ -977,17 +977,17 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_31 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_31 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_32
+		id = NUE_focus_32
 		icon = GFX_goal_enc_verti
-		prerequisite = {focus = newyork_8}
+		prerequisite = {focus = NUE_focus_8}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = newyork_8
+		relative_position_id = NUE_focus_8
 		x = 0
 		y = 1
 		cost = 45
@@ -998,14 +998,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = newyork_33
+		id = NUE_focus_33
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = {focus = newyork_11}
+		prerequisite = {focus = NUE_focus_11}
 		available = {
-		has_completed_focus = newyork_21
+		has_completed_focus = NUE_focus_21
 		}
 		ai_will_do = { factor = 500 } 
-		relative_position_id = newyork_11
+		relative_position_id = NUE_focus_11
 		x =0
 		y = 2
 		cost = 45
@@ -1015,13 +1015,13 @@ focus_tree = {
 	}
 	
 focus = {
-		id = newyork_34
+		id = NUE_focus_34
 		icon = GFX_goal_NUE_ENC
-		relative_position_id = newyork_31
+		relative_position_id = NUE_focus_31
 		cost = 14
 		ai_will_do = { factor = 100 }
 		prerequisite = {
-		focus = newyork_56
+		focus = NUE_focus_56
 		}
 		available = {
 			date > 2279.1.1
@@ -1034,24 +1034,24 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 entered"
 			}
 			country_event = { id = NUE_event.5 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_35
+		id = NUE_focus_35
 		icon = GFX_goal_NUE_BOS
-		relative_position_id = newyork_31
+		relative_position_id = NUE_focus_31
 		cost = 14
 		ai_will_do = { factor = 100 } 
 		prerequisite = {
-		focus = newyork_56
+		focus = NUE_focus_56
 		}
 		available = {
 			date > 2279.1.1
@@ -1064,21 +1064,21 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 entered"
 			}
 			country_event = { id = NUE_event.6 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_36
+		id = NUE_focus_36
 		icon = GFX_goal_NUE_ENC_Kill
-		prerequisite = { focus = newyork_34 }
-		relative_position_id = newyork_34
+		prerequisite = { focus = NUE_focus_34 }
+		relative_position_id = NUE_focus_34
 		x = 0
 		y = 1
 		
@@ -1124,10 +1124,10 @@ focus = {
 	}
 	
 	focus = {
-		id = newyork_37
+		id = NUE_focus_37
 		icon = GFX_goal_NUE_BOS_Kill
-		prerequisite = { focus = newyork_35 }
-		relative_position_id = newyork_35
+		prerequisite = { focus = NUE_focus_35 }
+		relative_position_id = NUE_focus_35
 		x = 0
 		y = 1
 		
@@ -1171,19 +1171,408 @@ focus = {
 	
 	
 	
+<<<<<<< HEAD
 	
+=======
+	focus = {
+		id = NUE_focus_39
+		icon = GFX_goal_New_york1
+		relative_position_id = NUE_focus_31
+		ai_will_do = { factor = 100 } 
+		available = {
+			date > 2280.1.1
+			ESP = { exists = no}
+			has_country_flag = kuba
+		}
+		cost = 45
+		x = 0
+		y = 6
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 entered"
+			}
+			country_event = { id = NUE_event.7 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 exited"
+			}
+		}
+	}
 	
 	focus = {
-		id = newyork_52
-		icon = GFX_goal_generic_naval_doctrines_focus
-		prerequisite = {
-		focus = newyork_3
+		id = NUE_focus_40
+		icon = GFX_goal_enc_verti
+		prerequisite = {focus = NUE_focus_39}
+		ai_will_do = { factor = 100 } 
+		relative_position_id = NUE_focus_39
+		x = 0
+		y = 1
+		cost = 30.0
+		completion_reward = {
+			add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = USA }
+			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 100 producer = USA }
+			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 500 producer = USA }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 500 producer = USA }	
 		}
+	}
+	
+	focus = {
+		id = NUE_focus_41
+		icon = GFX_goal_New_york2
+		relative_position_id = NUE_focus_40
+		prerequisite = {focus = NUE_focus_40}
+		ai_will_do = { factor = 100 } 
+		cost = 8
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_41 entered"
+			}
+			country_event = { id = NUE_event.8 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_41 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_42
+		icon = GFX_goal_New_york3
+		relative_position_id = NUE_focus_41
+		prerequisite = {focus = NUE_focus_41}
+		ai_will_do = { factor = 100 } 
+		cost = 45
+		x = 0
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_42 entered"
+			}
+			country_event = { id = NUE_event.9 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_42 exited"
+			}
+			hidden_effect = {
+				country_event = { days = 1 id = newsfallout.19 }	
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_43
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		relative_position_id = NUE_focus_41
+		cost = 45
+		ai_will_do = { factor = 1 } 
+		prerequisite = {
+			focus = NUE_focus_41
+		}
+		x = 2
+		y = 0
 		available = {
-			has_completed_focus = newyork_21
+			controls_state = 865
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_43 entered"
+			}
+			865 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_43 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_44
+		icon = GFX_goal_generic_airbases_focus
+		relative_position_id = NUE_focus_41
+		ai_will_do = { factor = 1 } 
+		cost = 45
+		prerequisite = {
+			focus = NUE_focus_41
+		}
+		x = -2
+		y = 0
+		available = {
+			790 = { is_owned_and_controlled_by = ROOT }
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_8 entered"
+			}
+			790 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_8 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_45
+		icon =GFX_goal_doroga
+		prerequisite = { focus = NUE_focus_44 }
+		available = {
+			790 = { is_owned_and_controlled_by = ROOT }
+			865 = { is_owned_and_controlled_by = ROOT }
+			788 = { is_owned_and_controlled_by = ROOT }
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = newyork_4
+		relative_position_id = NUE_focus_44
+		x = 0
+		y = 1
+		cost = 45
+		completion_reward = {
+			add_political_power = 50
+			865 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 3
+					instant_build = yes 
+				}
+			}
+			790 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 3
+					instant_build = yes 
+				}
+			}
+			788 = {
+				add_building_construction = { 
+					type = infrastructure 
+					level = 3
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_46
+		icon = GFX_goal_Cub
+		prerequisite = {focus = NUE_focus_43}
+		available = {
+			860 = { is_owned_and_controlled_by = ROOT }
+		}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = NUE_focus_43
+		x = 0
+		y = 1
+		cost = 45
+		completion_reward = {
+			add_manpower = 1000
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_47
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = NUE_focus_42 }
+		ai_will_do = { factor = 250 } 
+		x = 0
+		y = 1
+		relative_position_id = NUE_focus_42
+		cost = 5
+		available = {
+			NUE = { controls_state = 788 }
+			NUE = { controls_state = 865 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 10
+			788 = {
+				add_building_construction = { type = bunker province = 10926 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10775 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10783 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9325 level = 3 instant_build = yes }
+			}
+			865 = {
+				add_building_construction = { type = bunker province = 9308 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10774 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10769 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 10772 level = 3 instant_build = yes }
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_48
+		icon = GFX_goal_generic_building_focus
+		relative_position_id = NUE_focus_47
+		cost = 45
+		ai_will_do = { factor = 250 } 
+		prerequisite = {
+			focus = NUE_focus_47
+		}
+		x = 0
+		y = 1
+		available = {
+			controls_state = 865
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_9 entered"
+			}
+			865 = {
+				add_resource = {
+					type = metal
+					amount = 8
+				}
+				add_resource = {
+					type = energy
+					amount = 15
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] NUE_focus_9 exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_49
+		icon = GFX_goal_Cub
+		prerequisite = {focus = NUE_focus_48}
+		ai_will_do = { factor = 250 } 
+		available = {
+			790 = { is_owned_and_controlled_by = ROOT }
+		}
+		relative_position_id = NUE_focus_48
+		x = -2
+		y = 1
+		cost = 45
+		completion_reward = {
+			add_manpower = 500
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_50
+		icon = GFX_goal_Cub1
+		prerequisite = { focus = NUE_focus_48 }
+		ai_will_do = { factor = 250 }
+		relative_position_id = NUE_focus_48
+		x = 2
+		y = 1
+		cost = 45
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = NUE_focus_51
+		icon = GFX_goal_New_york3
+		prerequisite = { focus = NUE_focus_50 }
+		prerequisite = { focus = NUE_focus_49 }
+		relative_position_id = NUE_focus_50
+		x = -2
+		y = 1
+		
+		will_lead_to_war_with = ITZ
+
+		cost = 45
+
+		ai_will_do = {
+			factor = 250
+		}
+
+		available = {
+			NOT = {
+				is_in_faction_with = ITZ
+			}
+			ITZ = { exists = yes }
+		}
+
+		bypass = {
+			ITZ = { exists = no }
+			ITZ = { is_subject_of = NUE}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = ITZ
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+							tag = NUE
+						}
+						NOT = { has_war_with = PREV }
+					}
+					declare_war_on = {
+						target = PREV
+						type = take_core_state
+				    }
+			    }
+		    }
+		}
+	}
+>>>>>>> NUE focus loc
+	
+	focus = {
+		id = NUE_focus_52
+		icon = GFX_goal_generic_naval_doctrines_focus
+		prerequisite = {
+		focus = NUE_focus_3
+		}
+		available = {
+			has_completed_focus = NUE_focus_21
+		}
+		ai_will_do = { factor = 1 } 
+		relative_position_id = NUE_focus_4
 		x = 15
 		y = 0
 		cost = 45
@@ -1193,12 +1582,12 @@ focus = {
 	}
 	
 	focus = {
-		id = newyork_53
+		id = NUE_focus_53
 		icon = GFX_goal_generic_harbours_focus
-		relative_position_id = newyork_52
+		relative_position_id = NUE_focus_52
 		cost = 45
 		prerequisite = {
-			focus = newyork_52
+			focus = NUE_focus_52
 		}
 		x = 0
 		y = 1
@@ -1219,12 +1608,12 @@ focus = {
 	}
 	
 	focus = {
-		id = newyork_54
+		id = NUE_focus_54
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 45
-		relative_position_id = newyork_53
+		relative_position_id = NUE_focus_53
 		prerequisite = {
-			focus = newyork_53
+			focus = NUE_focus_53
 		}
 		x = -1
 		y = 1
@@ -1232,23 +1621,23 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_54 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_54 entered"
 			}
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_light_hull_tech_category }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_54 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_54 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_55
+		id = NUE_focus_55
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 45
-		relative_position_id = newyork_53
+		relative_position_id = NUE_focus_53
 		prerequisite = {
-			focus = newyork_53
+			focus = NUE_focus_53
 		}
 		x = 1
 		y = 1
@@ -1256,22 +1645,22 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_55 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_55 entered"
 			}
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_heavy_hull_tech_category }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_55 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_55 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = newyork_56
+		id = NUE_focus_56
 		icon = GFX_goal_NUE_manhattan
-		relative_position_id = newyork_31
+		relative_position_id = NUE_focus_31
 		prerequisite = {
-			focus = newyork_31
+			focus = NUE_focus_31
 		}
 		x = 0
 		y = 1
@@ -1306,5 +1695,4 @@ focus = {
 			create_faction = "federationpact"
 		}
 	}
-	
 	

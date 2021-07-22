@@ -895,9 +895,9 @@ bookmarks = {
 				ideas = {
 				}
 				focuses = {
-				newyork_30
-				newyork_20
-				newyork_39
+				NUE_focus_30
+				NUE_focus_20
+				NUE_focus_39
 				}
 			}
 			

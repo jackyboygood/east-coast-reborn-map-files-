@@ -19,12 +19,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 entered"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 entered"
 			}
 			country_event = { id = INS_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] newyork_1 exited"
+				log = "[GetDateText]: [Root.GetName] NUE_focus_1 exited"
 			}
 		}
 	}
