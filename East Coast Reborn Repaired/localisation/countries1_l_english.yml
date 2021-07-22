@@ -988,6 +988,33 @@
   rosi_human_DEF: "The Republic of Rosie"
   rosi_human_ADJ: "Rosie's"
 
+  # SBS
+  EBR_people: "The Eastern Brotherhood"
+  EBR_people_DEF: "The Eastern Brotherhood of Steel"
+  EBR_people_ADJ: "Brotherhood"
+  EBR_ruler: "The Eastern Brotherhood"
+  EBR_ruler_DEF: "The Eastern Brotherhood of Steel"
+  EBR_ruler_ADJ: "Brotherhood"
+  EBR_intellectuals: "The Eastern Brotherhood"
+  EBR_intellectuals_DEF: "The Eastern Brotherhood of Steel"
+  EBR_intellectuals_ADJ: "Brotherhood"
+  EBR_elites: "The Eastern Brotherhood"
+  EBR_elites_DEF: "The Eastern Brotherhood of Steel"
+  EBR_elites_ADJ: "Brotherhood"
+
+  MEN_BOS_people: "Knights of the Commonwealth"
+  MEN_BOS_people_DEF: "Knights of the Commonwealth"
+  MEN_BOS_people_ADJ: "Knights"
+  MEN_BOS_ruler: "Knights of the Commonwealth"
+  MEN_BOS_ruler_DEF: "Knights of the Commonwealth"
+  MEN_BOS_ruler_ADJ: "Knights"
+  MEN_BOS_intellectuals: "Knights of the Commonwealth"
+  MEN_BOS_intellectuals_DEF: "Knights of the Commonwealth"
+  MEN_BOS_intellectuals_ADJ: "Knights"
+  MEN_BOS_elites: "Knights of the Commonwealth"
+  MEN_BOS_elites_DEF: "Knights of the Commonwealth"
+  MEN_BOS_elites_ADJ: "Knights"
+
   # Formables
   Canada_ruler: "New Canada"
   Canada_ruler_DEF: "New Canada"

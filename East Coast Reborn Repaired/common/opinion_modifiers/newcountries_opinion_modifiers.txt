@@ -22,10 +22,6 @@ opinion_modifiers = {
 		value = -100
 	}
 	
-	uspandpointlookout = { #special used for civil wars that are on hold and blocks faction stuff
-		value = 45
-	}
-	
 	spivanievictorii = { #special used for civil wars that are on hold and blocks faction stuff
 		value = 50
 	}
@@ -54,26 +50,6 @@ opinion_modifiers = {
 		value = 40
 	}
 	
-	poder = { #special used for civil wars that are on hold and blocks faction stuff
-		value = 10
-	}
-	
-	poder1 = { #special used for civil wars that are on hold and blocks faction stuff
-		value = 10
-	}
-	
-	vrag = { #special used for civil wars that are on hold and blocks faction stuff
-		value = -40
-	}
-	
-	rexprinaldogovor = { #special used for civil wars that are on hold and blocks faction stuff
-		value = 35
-	}
-	
-	rexneprinaldogovor = { #special used for civil wars that are on hold and blocks faction stuff
-		value = -75
-	}
-	
 	kornidetskie = { #special used for civil wars that are on hold and blocks faction stuff
 		value = 40
 	}
@@ -88,10 +64,6 @@ opinion_modifiers = {
 	
 	layonsanddetki = { #special used for civil wars that are on hold and blocks faction stuff
 		value = 100
-	}
-	
-	tumanmir = { #special used for civil wars that are on hold and blocks faction stuff
-		value = 70
 	}
 	
 	deyv-nevouet = { #special used for civil wars that are on hold and blocks faction stuff

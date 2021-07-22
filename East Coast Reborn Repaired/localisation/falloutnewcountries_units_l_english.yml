@@ -1,26 +1,25 @@
 ﻿l_english:
-
- Tree_mutant_infantry: "Trees  Infantry"
- Tree_mutant_infantry_short: "Trees  Infantry."
- Tree_mutant_infantry_desc: "Trees  Infantry Uses all that they will fall under the arm, they are known for the fact that they can easily raise a cobblestone and dust them into the enemy."
- 
- 
- Bolotniks_infantry: "Bolotniks"
- Bolotniks_infantry_short: "Bolotniks"
- Bolotniks_infantry_desc: "Bolotniks,no one knows exactly what pre-war animal they came from, but about 50 years ago they came out of the great ocean and began to capture the territory, one of these was Fort independence."
- 
- libertipraym: "Liberty Prime"
- libertipraym_short: "Liberty Prime"
- libertipraym_desc: "Your people were finally able to launch Liberty Prime, the Destroyer of Communism.."
- 
- detivoini: "Children's Infantry"
- detivoini_short: "Children's Infantry"
- detivoini_desc: "Most naughty fighters that only there is in Little Lamplight"
- 
- wariors: "Warriors"
- wariors_short: "Warriors"
- wariors_desc: "Warriors armed with spears and other melee weapons"
- 
- archers: "Archers"
- archers_short: "Archers"
- archers_desc: "Archers, armed with bows and arrows"
+  Tree_mutant_infantry: "Tree Infantry"
+  Tree_mutant_infantry_short: "Tree Infantry."
+  Tree_mutant_infantry_desc: "A tree is strong, stable, and unmovable. These living trees are fierce warriors."
+  
+  
+  Bolotniks_infantry: "Castle Mireluks"
+  Bolotniks_infantry_short: "Castle Mireluks"
+  Bolotniks_infantry_desc: "These special Mireluks rose from the sea 50 years ago and drove the Minutemen out of their HQ. Now they terrorize the Commonwealth"
+  
+  libertipraym: "Liberty Prime"
+  libertipraym_short: "Liberty Prime"
+  libertipraym_desc: "Your people were finally able to launch Liberty Prime, the Destroyer of Communism."
+  
+  detivoini: "Child Soldiers"
+  detivoini_short: "Child Soldiers"
+  detivoini_desc: "Only the biggest bullies become warriors for Little Lamplight"
+  
+  wariors: "Warriors"
+  wariors_short: "Warriors"
+  wariors_desc: "Warriors armed with spears and other melee weapons"
+  
+  archers: "Archers"
+  archers_short: "Archers"
+  archers_desc: "Archers, armed with bows and arrows"
