@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Pitsburg_focus
+	id = PIT_focus_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Pitsburg_1
+		id = PIT_focus_1
 		icon = GFX_goal_generic_ideological_fury_focus
 		x = 8
 		y = 0
@@ -39,22 +39,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_1 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_1 entered"
 			}
 			add_manpower = 2000
 			country_event = { id = PIT_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_1 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_1 exited"
 			}
 	    }
 	}
 	
 	focus = {
-		id = Pitsburg_2
+		id = PIT_focus_2
 		icon = GFX_goal_generic_ideological_fury_focus
-		prerequisite = { focus = Pitsburg_1 }
-		relative_position_id = Pitsburg_1
+		prerequisite = { focus = PIT_focus_1 }
+		relative_position_id = PIT_focus_1
 		x = 0
 		y = 1
 
@@ -83,22 +83,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_2 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_2 entered"
 			}
 			country_event = { id = PIT_event.2 }
 			load_oob = "PIT_2275"
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_2 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_2 exited"
 			}
 	    }
 	}
 	
 	focus = {
-		id = Pitsburg_3
+		id = PIT_focus_3
 		icon = GFX_goal_generic_ideological_fury_focus
-		prerequisite = { focus = Pitsburg_2 }
-		relative_position_id = Pitsburg_2
+		prerequisite = { focus = PIT_focus_2 }
+		relative_position_id = PIT_focus_2
 		x = 0	
 		y = 1
 
@@ -127,26 +127,26 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_3 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_3 entered"
 			}
 			country_event = { id = PIT_event.3 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_3 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_3 exited"
 			}
 	    }
 	}
 	
 	focus = {
-		id = Pitsburg_4
+		id = PIT_focus_4
 		icon = GFX_goal_CES_workshop
-		relative_position_id = Pitsburg_3
+		relative_position_id = PIT_focus_3
 		cost = 60
 		x = -3
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_3
+			focus = PIT_focus_3
 		}
 		available = {
 			1055= {
@@ -156,7 +156,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_4 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_4 entered"
 			}
 			1055= {
 				add_extra_state_shared_building_slots = 1
@@ -167,28 +167,28 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_4 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_4 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_5
+		id = PIT_focus_5
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = Pitsburg_3 }
-		relative_position_id = Pitsburg_3
+		prerequisite = { focus = PIT_focus_3 }
+		relative_position_id = PIT_focus_3
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_3
+			focus = PIT_focus_3
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_5 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_5 entered"
 			}
 			swap_ideas = {
 				add_idea = cast_system_1
@@ -196,16 +196,16 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_5 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_5 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_6
+		id = PIT_focus_6
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = Pitsburg_5 }
-		relative_position_id = Pitsburg_5
+		prerequisite = { focus = PIT_focus_5 }
+		relative_position_id = PIT_focus_5
 		x = 0
 		y = 1
 		
@@ -253,15 +253,15 @@ focus_tree = {
 	}
 
     focus = {
-		id = Pitsburg_7
+		id = PIT_focus_7
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = Pitsburg_4
+		relative_position_id = PIT_focus_4
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_4
+			focus = PIT_focus_4
 		}
 		available = {
 			1055 = { is_owned_and_controlled_by = ROOT }
@@ -269,7 +269,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_4 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_4 entered"
 			}
 			1055 = {
 				add_extra_state_shared_building_slots = 2
@@ -280,21 +280,21 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_4 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_4 exited"
 			}
 		}
 	}
 
 	focus = {
-		id = Pitsburg_8
+		id = PIT_focus_8
 		icon = GFX_goal_generic_food_focus
-		relative_position_id = Pitsburg_6
+		relative_position_id = PIT_focus_6
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_6
+			focus = PIT_focus_6
 		}
 		available = {
 			1055 = { is_owned_and_controlled_by = ROOT }
@@ -304,7 +304,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_8 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_8 entered"
 			}
 			1055 = {
 				add_manpower = 250
@@ -335,28 +335,28 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_8 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_8 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_9
+		id = PIT_focus_9
 		icon = GFX_goal_BRK_drums_of_war
-		relative_position_id = Pitsburg_3
+		relative_position_id = PIT_focus_3
 		cost = 60
 		x = 3
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_3
+			focus = PIT_focus_3
 		}
 
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_9 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_9 entered"
 			}
 			add_tech_bonus = {
 				bonus = 0.6
@@ -365,79 +365,79 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_9 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_9 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pittsburg_power_armor
+		id = PIT_focus_power_armor
 		icon = GFX_goal_generic_t45d_power_armour_focus
-		relative_position_id = Pitsburg_9
+		relative_position_id = PIT_focus_9
 		cost = 60
 		x = 2
 		y = 1
 		
 		prerequisite = {
-			focus = Pitsburg_9
+			focus = PIT_focus_9
 		}
 		available_if_capitulated = yes
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pittsburg_power_armor entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_power_armor entered"
 			}
 			set_technology = {
 				stripped_pa_tech = 1
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pittsburg_power_armor exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_power_armor exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_10
+		id = PIT_focus_10
 		icon = GFX_goal_BRK_war
-		relative_position_id = Pitsburg_9
+		relative_position_id = PIT_focus_9
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_9
+			focus = PIT_focus_9
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_10 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_10 entered"
 			}
 			add_war_support = 0.1
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_10 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_10 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_11
+		id = PIT_focus_11
 		icon = GFX_goal_generic_recruitment_focus
-		relative_position_id = Pitsburg_8
+		relative_position_id = PIT_focus_8
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_8
+			focus = PIT_focus_8
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_11 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_11 entered"
 			}
 			1055= {
 				add_resource = {
@@ -447,42 +447,42 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_11 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_11 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_12
+		id = PIT_focus_12
 		icon = GFX_goal_CES_slaves
-		relative_position_id = Pitsburg_10
+		relative_position_id = PIT_focus_10
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_10
+			focus = PIT_focus_10
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_12 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_12 entered"
 			}
 			add_political_power = 25
 			add_manpower = 500
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_12 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_12 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_13
+		id = PIT_focus_13
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = Pitsburg_12 }
-		relative_position_id = Pitsburg_12
+		prerequisite = { focus = PIT_focus_12 }
+		relative_position_id = PIT_focus_12
 		x = 0
 		y = 1
 		
@@ -530,10 +530,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Pitsburg_14
+		id = PIT_focus_14
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = Pitsburg_7 }
-		relative_position_id = Pitsburg_7
+		prerequisite = { focus = PIT_focus_7 }
+		relative_position_id = PIT_focus_7
 		cost = 60
 		x = 0
 		y = 1
@@ -541,21 +541,21 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_14 entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_14 entered"
 			}
 			add_research_slot = 1
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_14 exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_14 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_15
+		id = PIT_focus_15
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = Pitsburg_14 }
-		relative_position_id = Pitsburg_14
+		prerequisite = { focus = PIT_focus_14 }
+		relative_position_id = PIT_focus_14
 		x = 0
 		y = 1
 		
@@ -603,7 +603,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Pitsburg_pervie_opity
+		id = PIT_focus_pervie_opity
 		icon = GFX_goal_generic_ideological_fury_focus
 		x = 15
 		y = 0
@@ -633,72 +633,72 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_pervie_opity entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_pervie_opity entered"
 			}
 			country_event = { id = PIT_event.5 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_pervie_opity exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_pervie_opity exited"
 			}
 	    }
 	}
 	
 	focus = {
-		id = Pitsburg_opits
+		id = PIT_focus_opits
 		icon = GFX_goal_generic_scientific_exchange
-		relative_position_id = Pitsburg_pervie_opity
+		relative_position_id = PIT_focus_pervie_opity
 		cost = 60
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_pervie_opity
+			focus = PIT_focus_pervie_opity
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_opits entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_opits entered"
 			}
 			add_political_power = 100
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_opits exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_opits exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_vactination
+		id = PIT_focus_vactination
 		icon = GFX_goal_NEW_bio_med_gel_experiments
-		relative_position_id = Pitsburg_opits
+		relative_position_id = PIT_focus_opits
 		cost = 17.2
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Pitsburg_opits
+			focus = PIT_focus_opits
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_opits entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_opits entered"
 			}
 			remove_ideas = trogs
 			add_war_support = 0.05
 			add_stability = 0.05
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_opits exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_opits exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Pitsburg_otmena
+		id = PIT_focus_otmena
 		icon = GFX_goal_support_democracy
-		relative_position_id = Pitsburg_vactination
+		relative_position_id = PIT_focus_vactination
 		x = 0
 		y = 1
 
@@ -709,7 +709,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = Pitsburg_vactination
+			focus = PIT_focus_vactination
 		}
 
 		
@@ -725,7 +725,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_otmena entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_otmena entered"
 			}
 		
 			if = {
@@ -740,16 +740,16 @@ focus_tree = {
 			add_stability = 0.05
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_otmena exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_otmena exited"
 			}
 	    }
 	}
 	
 	focus = {
-		id = Pitsburg_reform_army
+		id = PIT_focus_reform_army
 		icon = GFX_focus_chi_army_reform
-		prerequisite = { focus = Pitsburg_otmena }
-		relative_position_id = Pitsburg_otmena
+		prerequisite = { focus = PIT_focus_otmena }
+		relative_position_id = PIT_focus_otmena
 		x = 0
 		y = 1
 
@@ -778,13 +778,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_reform_army entered"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_reform_army entered"
 			}
 			load_oob = "PIT_reform"
 			delete_unit_template_and_units = { division_template = "Ashur's Raiders" }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Pitsburg_reform_army exited"
+				log = "[GetDateText]: [Root.GetName] PIT_focus_reform_army exited"
 			}
 	    }
 	}
