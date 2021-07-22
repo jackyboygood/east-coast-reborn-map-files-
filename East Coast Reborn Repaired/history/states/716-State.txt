@@ -6,8 +6,8 @@ state={
 		metal = 16
 	}
 	history={
-		owner = SPP
-		add_core_of = SPP
+		owner = BAS
+		add_core_of = BAS
 
 		victory_points = {
 			 1186 5
