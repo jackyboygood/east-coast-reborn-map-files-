@@ -70,7 +70,7 @@ set_popularities = {
 }
 
 add_ideas = {
-   ESP_slave_labour
+   ESP_slave_labour_collars
    nokillchildren
 }
 
