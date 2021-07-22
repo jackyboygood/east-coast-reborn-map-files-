@@ -18,16 +18,6 @@ spriteTypes = {
 	}
 
     SpriteType = {
-	name = "GFX_goal_generalnewyork1"
-	texturefile = "gfx/interface/goals/generalnewyork1.dds"			
-	}			
-	
-	SpriteType = {
-	name = "GFX_goal_generalnewyork2"
-	texturefile = "gfx/interface/goals/generalnewyork2.dds"			
-	}
-
-    SpriteType = {
 	name = "GFX_goal_Men_usa1"
 	texturefile = "gfx/interface/goals/Men_usa1.dds"			
 	}		
@@ -108,81 +98,6 @@ spriteTypes = {
 	}
 
     SpriteType = {
-	name = "GFX_goal_new_yorkmarines"
-	texturefile = "gfx/interface/goals/new_yorkmarines.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna"
-	texturefile = "gfx/interface/goals/megatonna.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna1"
-	texturefile = "gfx/interface/goals/megatonna1.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna2"
-	texturefile = "gfx/interface/goals/megatonna2.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna3"
-	texturefile = "gfx/interface/goals/megatonna3.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna4"
-	texturefile = "gfx/interface/goals/megatonna4.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna5"
-	texturefile = "gfx/interface/goals/megatonna5.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna6"
-	texturefile = "gfx/interface/goals/megatonna6.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna7"
-	texturefile = "gfx/interface/goals/megatonna7.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna8"
-	texturefile = "gfx/interface/goals/megatonna8.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna9"
-	texturefile = "gfx/interface/goals/megatonna9.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna10"
-	texturefile = "gfx/interface/goals/megatonna10.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna12"
-	texturefile = "gfx/interface/goals/megatonna12.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna13"
-	texturefile = "gfx/interface/goals/megatonna13.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna14"
-	texturefile = "gfx/interface/goals/megatonna14.dds"			
-	}
-
-    SpriteType = {
 	name = "GFX_goal_Encv"
 	texturefile = "gfx/interface/goals/Encv.dds"			
 	}
@@ -200,11 +115,6 @@ spriteTypes = {
     SpriteType = {
 	name = "GFX_goal_MEN_4"
 	texturefile = "gfx/interface/goals/MEN_4.dds"			
-	}
-
-    SpriteType = {
-	name = "GFX_goal_megatonna15"
-	texturefile = "gfx/interface/goals/megatonna15.dds"			
 	}
 
     SpriteType = {
@@ -290,26 +200,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_Enclave10"
 	texturefile = "gfx/interface/goals/Enclave10.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_New_york1"
-	texturefile = "gfx/interface/goals/New_york1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_newyork_radio_1"
-	texturefile = "gfx/interface/goals/newyork_radio_1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_New_york2"
-	texturefile = "gfx/interface/goals/New_york2.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_New_york3"
-	texturefile = "gfx/interface/goals/New_york3.dds"			
 	}
 	
 	SpriteType = {
@@ -715,141 +605,6 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_dett34"
 	texturefile = "gfx/interface/goals/dett34.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa"
-	texturefile = "gfx/interface/goals/farhargoa.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa1"
-	texturefile = "gfx/interface/goals/farhargoa1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa2"
-	texturefile = "gfx/interface/goals/farhargoa2.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa3"
-	texturefile = "gfx/interface/goals/farhargoa3.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa4"
-	texturefile = "gfx/interface/goals/farhargoa4.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa5"
-	texturefile = "gfx/interface/goals/farhargoa5.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa6"
-	texturefile = "gfx/interface/goals/farhargoa6.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa7"
-	texturefile = "gfx/interface/goals/farhargoa7.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa8"
-	texturefile = "gfx/interface/goals/farhargoa8.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa9"
-	texturefile = "gfx/interface/goals/farhargoa9.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa10"
-	texturefile = "gfx/interface/goals/farhargoa10.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa11"
-	texturefile = "gfx/interface/goals/farhargoa11.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa12"
-	texturefile = "gfx/interface/goals/farhargoa12.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa13"
-	texturefile = "gfx/interface/goals/farhargoa13.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa14"
-	texturefile = "gfx/interface/goals/farhargoa14.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa15"
-	texturefile = "gfx/interface/goals/farhargoa15.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa16"
-	texturefile = "gfx/interface/goals/farhargoa16.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa17"
-	texturefile = "gfx/interface/goals/farhargoa17.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_farhargoa18"
-	texturefile = "gfx/interface/goals/farhargoa18.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_deyvgeneralss"
-	texturefile = "gfx/interface/goals/deyvgeneralss.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_bobgeneralss"
-	texturefile = "gfx/interface/goals/bobgeneralss.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_dave"
-	texturefile = "gfx/interface/goals/dave.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_dave1"
-	texturefile = "gfx/interface/goals/dave1.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_dave2"
-	texturefile = "gfx/interface/goals/dave2.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_dave3"
-	texturefile = "gfx/interface/goals/dave3.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_dave4"
-	texturefile = "gfx/interface/goals/dave4.dds"			
-	}
-	
-	SpriteType = {
-	name = "GFX_goal_dave5"
-	texturefile = "gfx/interface/goals/dave5.dds"			
 	}
 	
 	######MEN#######
@@ -1540,6 +1295,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_goal_ESP_Autumn_York"
 	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_York.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Autumn_RAB"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_RAB.dds"		
 	}
 	
 	
