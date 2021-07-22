@@ -13,7 +13,7 @@
 
 units = {
 	division {
-		name = "Mariposa Remnants"
+		name = "Vault 87 Mutants"
 		location = 12405
 		division_template = "Super Mutant Battlegroup"
 		start_experience_factor = 0.6

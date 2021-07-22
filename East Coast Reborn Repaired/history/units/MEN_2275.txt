@@ -28,6 +28,14 @@ units = {
 		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 	}
+	
+	division {
+		name = "Garvey Division"
+		location = 1378
+		division_template = "Minutemen Remnants"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
 
 	division {
 		name = "Settlers Volunteers"

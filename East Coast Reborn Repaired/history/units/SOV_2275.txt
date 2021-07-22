@@ -46,6 +46,14 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
 	}
+	
+	division {
+		name = "Russian Security"
+		location = 12781
+		division_template = "Red Army"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
 }
 
 ##### Starting Production #####
