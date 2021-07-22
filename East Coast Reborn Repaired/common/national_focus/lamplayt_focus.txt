@@ -2041,16 +2041,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			986 = {
-			add_manpower = -350
-		    }
-			882 = {
-			add_manpower = -50
-		    }
-			883 = {
-			add_manpower = -156
-		    }
-			884 = {
-			add_manpower = -31
+			add_manpower = -1531
 		    }
 		}
 	}

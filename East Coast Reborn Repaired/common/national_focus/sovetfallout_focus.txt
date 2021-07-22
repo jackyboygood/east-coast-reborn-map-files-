@@ -850,7 +850,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = Sovetinfallout_21
 		}
-		cost = 60
+		cost = 45
 		x = 6
 		y = 1
 
@@ -871,7 +871,7 @@ focus_tree = {
 		id = Sovetinfallout_32
 		icon = GFX_goal_generic_fortify_city
 		relative_position_id = Sovetinfallout_31
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_31
 		}
@@ -904,7 +904,7 @@ focus_tree = {
 		id = Sovetinfallout_33
 		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = Sovetinfallout_31
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_31
 		}
@@ -937,7 +937,7 @@ focus_tree = {
 		id = Sovetinfallout_34
 		icon = GFX_goal_generic_airbases_focus
 		relative_position_id = Sovetinfallout_33
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_33
 		}
@@ -989,7 +989,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 producer = SOV }
 		}
-		cost = 60
+		cost = 45
 	}
 	
 	focus = {
@@ -1009,7 +1009,7 @@ focus_tree = {
 		relative_position_id = Sovetinfallout_33
 		x = 1
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			add_equipment_to_stockpile = { type = power_armor_equipment amount = 500 producer = USA }
 		}
@@ -1028,7 +1028,7 @@ focus_tree = {
 		relative_position_id = Sovetinfallout_30
 		x = 0
 		y = 1
-		cost = 60
+		cost = 45
 		completion_reward = {
 			set_capital = 1064
 			1064 = {
@@ -1045,7 +1045,7 @@ focus_tree = {
 		focus = {
 		id = Sovetinfallout_38
 		icon = GFX_goal_SOV_Commie_Expedition
-		cost = 60
+		cost = 45
 		prerequisite = { focus = Sovetinfallout_37 }
 		relative_position_id = Sovetinfallout_37
 		x = 0
@@ -1089,7 +1089,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = Sovetinfallout_6
 		}
-		cost = 60
+		cost = 45
 		x = -7
 		y = 2
 
@@ -1123,14 +1123,14 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 producer = SOV }
 		}
-		cost = 60
+		cost = 45
 	}
 	
 	focus = {
 		id = Sovetinfallout_41
 		icon = GFX_goal_generic_fortify_city
 		relative_position_id = Sovetinfallout_39
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_39
 		}
@@ -1163,7 +1163,7 @@ focus_tree = {
 		id = Sovetinfallout_42
 		icon = GFX_goal_generic_construct_civilian
 		relative_position_id = Sovetinfallout_41
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_41
 		}
@@ -1199,7 +1199,7 @@ focus_tree = {
 		id = Sovetinfallout_43
 		icon = GFX_goal_SOV_Drunkyard_Delirium
 		relative_position_id = Sovetinfallout_19
-		cost = 60
+		cost = 45
 		prerequisite = {
 			focus = Sovetinfallout_19
 		}
@@ -1229,7 +1229,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 1
@@ -1267,7 +1267,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 1
@@ -1311,7 +1311,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAD
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1347,7 +1347,6 @@ focus_tree = {
 		available = {
 			1056 = { is_controlled_by = SOV } # NAVARRO
 			1057 = { is_controlled_by = SOV } # NAVARRO
-			has_completed_focus = Sovetinfallout_45
 		}
 		prerequisite = {
 		focus = Sovetinfallout_45
@@ -1358,7 +1357,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAJ
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1402,7 +1401,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 1
@@ -1442,7 +1441,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 1
@@ -1465,6 +1464,10 @@ focus_tree = {
 
 		completion_reward = {
 			1047 = { add_core_of = SOV }
+			set_technology = {
+			power_armour_tech_level_settler = 1
+	        power_armour_tech_level_scientific = 1
+			}
 		}
 	}
 	
@@ -1483,7 +1486,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAJ
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1530,7 +1533,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAJ
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1574,7 +1577,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = AAD
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1599,10 +1602,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = AAD
-			}
+		annex_country = { target = AAD transfer_troops = no }
+		1057 = { add_core_of = SOV }
 		}
 	}
 	
@@ -1618,7 +1619,7 @@ focus_tree = {
 		
 		will_lead_to_war_with = RON
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 90
@@ -1644,10 +1645,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = RON
-			}
+			annex_country = { target = RON transfer_troops = no }
+		    1058 = { add_core_of = SOV }
 		}
 	}
 	
