@@ -73,11 +73,7 @@ country_event = {
 			}
 				add_resource = {
 				type = water
-				amount = 6
-			}
-			add_resource = {
-				type = composites
-				amount = 6
+				amount = 4
 			}
 		}
 	}
@@ -162,6 +158,22 @@ country_event = {
 	       expire = "3000.1.1"
 	       ideology = benevolent_dictatorship
         }
+		hidden_effect = {
+		ESC = {
+		load_oob = DEV_2275
+	    create_corps_commander = {
+	    name = "Commander Dave"
+	    portrait_path = "gfx/leaders/DEV/Dave.dds"
+	    skill = 3
+	    traits = {}
+	    attack_skill = 2
+	    defense_skill = 4
+	    planning_skill = 2
+	    logistics_skill = 2
+    
+        }
+		}
+		}
 	}
 	option = {
 		name = DEV_event.4.b

@@ -249,24 +249,21 @@ country_event = {
 	option = {
 		name = SBS_event.11.a		
 		set_country_flag = shephard_uprising
-		
 		SPP = {
-			transfer_state = 1002
-			transfer_state = 716
+            set_cosmetic_tag = Shepard_Horde
+			}
+			
+		
+		hidden_effect = {
+		SPP = {
+		    load_focus_tree = { tree = shephard_horde_focus keep_completed = no } 
+		    add_manpower = 2000
+		    transfer_state = 1002
 			transfer_state = 1005
 			transfer_state = 1001
 			set_state_controller = 1002
 			set_state_controller = 1001
 			set_state_controller = 1005
-			set_state_controller = 716
-			add_manpower = 2000
-			}
-			
-		1002 = { add_core_of = SPP }
-		1005 = { add_core_of = SPP }
-		
-		hidden_effect = {
-		SPP = {
 			load_oob = SPP_2275_war
 			load_oob = SPP_2275_war
 			load_oob = SPP_2275_war
@@ -288,6 +285,48 @@ country_event = {
 		add_equipment_to_stockpile = { type = fireteam_equipment amount = 400 producer = USA }
 		}
 		}
+	}
+	
+	
+	option = {
+	name = SBS_event.11.b
+	set_country_flag = shephard_uprising
+	SPP = {
+            set_cosmetic_tag = Shepard_Horde
+		  }
+	SPP = {change_tag_from = ROOT}
+    hidden_effect = {
+		SPP = {
+		    load_focus_tree = { tree = shephard_horde_focus keep_completed = no } 
+		    add_manpower = 2000
+		    transfer_state = 1002
+			transfer_state = 1005
+			transfer_state = 1001
+			set_state_controller = 1002
+			set_state_controller = 1001
+			set_state_controller = 1005
+			load_oob = SPP_2275_war
+			load_oob = SPP_2275_war
+			load_oob = SPP_2275_war
+			declare_war_on = {
+				target = SBS
+				type = annex_everything
+			}
+			create_country_leader  = {
+	        name = "Shephard"
+	        desc = ""
+	        picture = "gfx/leaders/SPP/Shephard.dds"
+	        expire = "3000.1.1"
+	        ideology = warlordship
+	        traits = {
+	        }
+        }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 800 producer = USA }
+		add_equipment_to_stockpile = { type = anti_tank_equipment amount = 400 producer = USA }
+		add_equipment_to_stockpile = { type = fireteam_equipment amount = 400 producer = USA }
+		}
+		}
+	
 	}
 }
 

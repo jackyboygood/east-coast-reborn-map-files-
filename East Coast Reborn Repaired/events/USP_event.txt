@@ -244,8 +244,7 @@ country_event = {
         ai_chance = { 
 			factor = 100 
 		}
-		USP = { transfer_state = 1025}
-        1025 = { add_core_of = USP }				
+	    add_war_support = 0.15			
 		hidden_effect = { #Meeting Raider
 			country_event = { days = 45 id = USP_event.9 }
 		}
