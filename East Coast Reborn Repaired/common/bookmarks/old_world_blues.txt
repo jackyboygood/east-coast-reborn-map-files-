@@ -845,8 +845,8 @@ bookmarks = {
 				ESP_infighting
 				}
 				focuses = {
-				Enclavesp_17
-				Enclavesp_16
+				ESP_focus_17
+				ESP_focus_16
 				}
 			}
 			

@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Enclavesp_1 
+		id = ESP_focus_1 
 		icon = GFX_goal_ESP_Start_1
 		ai_will_do = { factor = 1 }
 		x = 16
@@ -31,11 +31,11 @@ focus_tree = {
 }
 
 focus = {#Expedition - to Mariposa
-		id = Enclavesp_2
+		id = ESP_focus_2
 		icon = GFX_goal_ESP_Start_2
 		ai_will_do = { factor = 1 } 
-		prerequisite = { focus = Enclavesp_1 }
-		relative_position_id = Enclavesp_1 
+		prerequisite = { focus = ESP_focus_1 }
+		relative_position_id = ESP_focus_1 
 		x = 0
 		y = 1
 		cost = 7
@@ -46,10 +46,10 @@ focus = {#Expedition - to Mariposa
  }
  
  focus = {
-		id = Enclavesp_3
+		id = ESP_focus_3
 		icon = GFX_goal_ESP_Start_3
-		prerequisite = { focus = Enclavesp_2 }
-		relative_position_id = Enclavesp_2
+		prerequisite = { focus = ESP_focus_2 }
+		relative_position_id = ESP_focus_2
 		x = 0
 		y = 1
 
@@ -75,11 +75,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_4
+		id = ESP_focus_4
 		icon =GFX_goal_generic_walls_focus
-		prerequisite = { focus = Enclavesp_3 }
+		prerequisite = { focus = ESP_focus_3 }
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_3
+		relative_position_id = ESP_focus_3
 		x = -14
 		y = 1
 		cost = 45
@@ -97,11 +97,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#SIERRA - Our Base of Operations
-		id = Enclavesp_5
+		id = ESP_focus_5
 		icon = GFX_goal_BOS_vertibird_schematics
-		prerequisite = {focus = Enclavesp_4}
+		prerequisite = {focus = ESP_focus_4}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_4
+		relative_position_id = ESP_focus_4
 		x = -2
 		y = 1
 		cost = 45
@@ -121,11 +121,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#SIERRA - Excevate the lower departments
-		id = Enclavesp_6
+		id = ESP_focus_6
 		icon = GFX_goal_generic_construction2
-		prerequisite = {focus = Enclavesp_4}
+		prerequisite = {focus = ESP_focus_4}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_4
+		relative_position_id = ESP_focus_4
 		x = 0
 		y = 1
 		cost = 45
@@ -138,11 +138,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#SIERRA - The Archives
-		id = Enclavesp_7
+		id = ESP_focus_7
 		icon = GFX_goal_generic_data_focus
-		prerequisite = {focus = Enclavesp_4}
+		prerequisite = {focus = ESP_focus_4}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_4
+		relative_position_id = ESP_focus_4
 		x = 2
 		y = 1
 		cost = 45
@@ -161,13 +161,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#SIERRA - Our Base of Operations
-		id = Enclavesp_8
+		id = ESP_focus_8
 		icon = GFX_goal_generic_BOS_focus_surface_outposts
-		prerequisite = {focus = Enclavesp_7}
-		prerequisite = {focus = Enclavesp_6}
-		prerequisite = {focus = Enclavesp_5}
+		prerequisite = {focus = ESP_focus_7}
+		prerequisite = {focus = ESP_focus_6}
+		prerequisite = {focus = ESP_focus_5}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_4
+		relative_position_id = ESP_focus_4
 		x = 0
 		y = 2
 		cost = 45
@@ -209,11 +209,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#SIERRA - 2- The lab
-		id = Enclavesp_9
+		id = ESP_focus_9
 		icon = GFX_goal_NEW_the_old_world
-		prerequisite = {focus = Enclavesp_8}
+		prerequisite = {focus = ESP_focus_8}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_8
+		relative_position_id = ESP_focus_8
 		x = 0
 		y = 1
 		cost = 45
@@ -223,16 +223,16 @@ focus = {#Expedition - to Mariposa
 	}
 	
  focus = {
-		id = Enclavesp_16
+		id = ESP_focus_16
 		icon = GFX_goal_ESP_Autumn
 		ai_will_do = { factor = 25 } 
 		cost = 20
-		relative_position_id = Enclavesp_3
+		relative_position_id = ESP_focus_3
 		prerequisite = {
-			focus = Enclavesp_3
+			focus = ESP_focus_3
 		}
 		mutually_exclusive = {
-			focus = Enclavesp_17
+			focus = ESP_focus_17
 		}
 		x = -5
 		y = 1
@@ -240,28 +240,28 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Enclavesp_16 entered"
+				log = "[GetDateText]: [Root.GetName] ESP_focus_16 entered"
 			}
 			add_political_power = 60
 			add_ideas = EnclavePolkovnik
 			add_war_support = 0.2
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Enclavesp_16 exited"
+				log = "[GetDateText]: [Root.GetName] ESP_focus_16 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Enclavesp_17
+		id = ESP_focus_17
 		icon = GFX_goal_ESP_Eden
-		relative_position_id = Enclavesp_3
+		relative_position_id = ESP_focus_3
 		cost = 20
 		prerequisite = {
-			focus = Enclavesp_3
+			focus = ESP_focus_3
 		}
 		mutually_exclusive = {
-			focus = Enclavesp_16
+			focus = ESP_focus_16
 		}
 		x = 4
 		y = 1
@@ -283,10 +283,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	 focus = {
-		id = Enclavesp_18
+		id = ESP_focus_18
 		icon = GFX_goal_ESP_Eden_Crisis
-		prerequisite = { focus = Enclavesp_17 }
-		relative_position_id = Enclavesp_17
+		prerequisite = { focus = ESP_focus_17 }
+		relative_position_id = ESP_focus_17
 		x = 0
 		y = 1
 
@@ -326,10 +326,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_19
+		id = ESP_focus_19
 		icon = GFX_goal_ESP_Eden_Rangers
-		prerequisite = { focus = Enclavesp_18 }
-		relative_position_id = Enclavesp_18
+		prerequisite = { focus = ESP_focus_18 }
+		relative_position_id = ESP_focus_18
 		x = 0
 		y = 1
 		
@@ -367,12 +367,12 @@ focus = {#Expedition - to Mariposa
 	}
 
 	focus = {
-		id = Enclavesp_26
+		id = ESP_focus_26
 		icon = GFX_goal_ESP_Autumn_Election
-		relative_position_id = Enclavesp_16
+		relative_position_id = ESP_focus_16
 		cost = 20
 		prerequisite = {
-			focus = Enclavesp_16
+			focus = ESP_focus_16
 		}
 		available = {
              ruler > 0.5
@@ -382,23 +382,23 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Enclavesp_26 entered"
+				log = "[GetDateText]: [Root.GetName] ESP_focus_26 entered"
 			}
 			country_event = {
 				id = ENC_event.4
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Enclavesp_26 exited"
+				log = "[GetDateText]: [Root.GetName] ESP_focus_26 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Enclavesp_20
+		id = ESP_focus_20
 		icon = GFX_goal_ESP_Autumn_Purge
-		prerequisite = { focus = Enclavesp_26 }
-		relative_position_id = Enclavesp_26
+		prerequisite = { focus = ESP_focus_26 }
+		relative_position_id = ESP_focus_26
 		x = 0
 		y = 1
 
@@ -440,12 +440,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
     focus = {
-		id = Enclavesp_21
+		id = ESP_focus_21
 		icon = GFX_goal_ESP_Autumn_Mutants
-		prerequisite = { focus = Enclavesp_20 }
+		prerequisite = { focus = ESP_focus_20 }
 		x = 0
 		y = 1
-		relative_position_id = Enclavesp_20
+		relative_position_id = ESP_focus_20
 		will_lead_to_war_with = SPP
 		cost = 45
 
@@ -477,7 +477,7 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#Purity - ANT - resourceful
-		id = Enclavesp_22
+		id = ESP_focus_22
 		icon = GFX_goal_generic_supplies_focus
 		available = {
 			1001 = { is_controlled_by = ESP } #do we actually own it right now?
@@ -485,10 +485,10 @@ focus = {#Expedition - to Mariposa
 		ai_will_do = {
 			factor = 150
 		}
-		relative_position_id = Enclavesp_19
+		relative_position_id = ESP_focus_19
 		x = 0
 		y = 1
-		prerequisite = { focus = Enclavesp_19}
+		prerequisite = { focus = ESP_focus_19}
 		completion_reward = {
 			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 250 producer = ESP }
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 250 producer = ESP }
@@ -497,10 +497,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_24
+		id = ESP_focus_24
 		icon = GFX_goal_ESP_Autumn_mobilisation
-		prerequisite = { focus = Enclavesp_20 }
-		relative_position_id = Enclavesp_20
+		prerequisite = { focus = ESP_focus_20 }
+		relative_position_id = ESP_focus_20
 		x = 3
 		y = 1
 
@@ -534,16 +534,16 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#Purity - ANT - resourceful
-		id = Enclavesp_25
+		id = ESP_focus_25
 		icon = GFX_goal_generic_supplies_focus
 		available = {
 			989 = { is_controlled_by = ESP } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = Enclavesp_24
+		relative_position_id = ESP_focus_24
 		x = 0
 		y = 1
-		prerequisite = { focus = Enclavesp_24}
+		prerequisite = { focus = ESP_focus_24}
 		completion_reward = {
 			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 500 producer = ESP }
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 700 producer = ESP }
@@ -552,12 +552,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_27
+		id = ESP_focus_27
 		icon = GFX_goal_ESP_Eden_Mutant
 		cost = 45
-		relative_position_id = Enclavesp_22
+		relative_position_id = ESP_focus_22
 		prerequisite = {
-			focus = Enclavesp_22
+			focus = ESP_focus_22
 		}
 		x = 0
 		y = 1
@@ -590,10 +590,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_28
+		id = ESP_focus_28
 		icon = GFX_goal_Enclave
 		cost = 45
-		relative_position_id = Enclavesp_9
+		relative_position_id = ESP_focus_9
 		x = 0
 		y = 3
 
@@ -602,7 +602,7 @@ focus = {#Expedition - to Mariposa
 		}
 
 		available = {
-		has_completed_focus = Enclavesp_5
+		has_completed_focus = ESP_focus_5
 		}
 
 		bypass = {
@@ -625,13 +625,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_29
+		id = ESP_focus_29
 		icon = GFX_goal_Enclave1
 		cost = 45
 		prerequisite = {
-			focus = Enclavesp_28
+			focus = ESP_focus_28
 		}
-		relative_position_id = Enclavesp_28
+		relative_position_id = ESP_focus_28
 		x = -2
 		y = 1
 
@@ -663,13 +663,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_30
+		id = ESP_focus_30
 		icon = GFX_goal_Enclave2
 		cost = 45
 		prerequisite = {
-			focus = Enclavesp_28
+			focus = ESP_focus_28
 		}
-		relative_position_id = Enclavesp_28
+		relative_position_id = ESP_focus_28
 		x = 2
 		y = 1
 
@@ -701,13 +701,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_31
+		id = ESP_focus_31
 		icon = GFX_goal_Enclave3
 		cost = 45
 		prerequisite = {
-			focus = Enclavesp_28
+			focus = ESP_focus_28
 		}
-		relative_position_id = Enclavesp_28
+		relative_position_id = ESP_focus_28
 		x = 0
 		y = 1
 
@@ -739,13 +739,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_32
+		id = ESP_focus_32
 		icon = GFX_goal_Enclave4
 		cost = 45
-		prerequisite = { focus = Enclavesp_29 }
-		prerequisite = { focus = Enclavesp_30 }
-		prerequisite = { focus = Enclavesp_31 }
-		relative_position_id = Enclavesp_31
+		prerequisite = { focus = ESP_focus_29 }
+		prerequisite = { focus = ESP_focus_30 }
+		prerequisite = { focus = ESP_focus_31 }
+		relative_position_id = ESP_focus_31
 		x = 0
 		y = 1
 
@@ -777,11 +777,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_33
+		id = ESP_focus_33
 		icon = GFX_goal_Enclave5
 		cost = 45
-		prerequisite = { focus = Enclavesp_32 }
-		relative_position_id = Enclavesp_32
+		prerequisite = { focus = ESP_focus_32 }
+		relative_position_id = ESP_focus_32
 		x = -1
 		y = 1
 
@@ -813,11 +813,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_34
+		id = ESP_focus_34
 		icon = GFX_goal_Enclave6
 		cost = 45
-		prerequisite = { focus = Enclavesp_32 }
-		relative_position_id = Enclavesp_32
+		prerequisite = { focus = ESP_focus_32 }
+		relative_position_id = ESP_focus_32
 		x = 1
 		y = 1
 
@@ -849,12 +849,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_35
+		id = ESP_focus_35
 		icon = GFX_goal_Enclave7
 		cost = 45
-		prerequisite = { focus = Enclavesp_33 }
-		prerequisite = { focus = Enclavesp_34 }
-		relative_position_id = Enclavesp_33
+		prerequisite = { focus = ESP_focus_33 }
+		prerequisite = { focus = ESP_focus_34 }
+		relative_position_id = ESP_focus_33
 		x = 1
 		y = 1
 
@@ -886,11 +886,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_36
+		id = ESP_focus_36
 		icon = GFX_goal_Enclave8
 		cost = 45
-		prerequisite = { focus = Enclavesp_35 }
-		relative_position_id = Enclavesp_35
+		prerequisite = { focus = ESP_focus_35 }
+		relative_position_id = ESP_focus_35
 		x = 0
 		y = 1
 
@@ -922,13 +922,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_37
+		id = ESP_focus_37
 		icon = GFX_goal_ESP_Autumn_Slaves
 		ai_will_do = { factor = 1 } 
 		prerequisite = {
-			focus = Enclavesp_20
+			focus = ESP_focus_20
 		}
-		relative_position_id = Enclavesp_20
+		relative_position_id = ESP_focus_20
 		x = -3
 		y = 1
 		cost = 60
@@ -937,26 +937,26 @@ focus = {#Expedition - to Mariposa
     } 
  
  focus = {
-		id = Enclavesp_38
+		id = ESP_focus_38
 		icon = GFX_goal_ESP_Autumn_Slave_Collars
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_37
+		relative_position_id = ESP_focus_37
 		x = 0
 		y = 1
-		prerequisite = { focus = Enclavesp_37}
+		prerequisite = { focus = ESP_focus_37}
 		completion_reward = {swap_ideas = {remove_idea = ESP_slave_labour add_idea = ESP_slave_labour_collars}}
 		cost = 60
 		
     }
 	
 	focus = {
-		id = Enclavesp_39
+		id = ESP_focus_39
 		icon = GFX_goal_ESP_Supermutant_Slave
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_38
+		relative_position_id = ESP_focus_38
 		x = 0
 		y = 1
-		prerequisite = { focus = Enclavesp_38}
+		prerequisite = { focus = ESP_focus_38}
 		available = {
 				1005 = { is_controlled_by = ESP} # The Warren
 		}
@@ -966,13 +966,13 @@ focus = {#Expedition - to Mariposa
     }
  
     focus = {
-		id = Enclavesp_40
+		id = ESP_focus_40
 		icon = GFX_goal_enc_army_doctrine
 		ai_will_do = { factor = 1 }
 		prerequisite = {
-		focus = Enclavesp_3	
+		focus = ESP_focus_3	
 		}
-		relative_position_id = Enclavesp_3
+		relative_position_id = ESP_focus_3
 		x = 14
 		y = 1
 		cost = 7
@@ -987,15 +987,15 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# STRIKE TEAMS
-		id = Enclavesp_41
+		id = ESP_focus_41
 		icon = GFX_goal_ESP_Autumn_Chad
 		available = {
-			has_completed_focus = Enclavesp_16
+			has_completed_focus = ESP_focus_16
 		}
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_40 }
-		mutually_exclusive = { focus = Enclavesp_46 }
-		relative_position_id = Enclavesp_40
+		prerequisite = { focus = ESP_focus_40 }
+		mutually_exclusive = { focus = ESP_focus_46 }
+		relative_position_id = ESP_focus_40
 		x = -2
 		y = 1
 		cost = 45
@@ -1005,12 +1005,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# STRIKE TEAMS - VERTIBIRD FOCUS
-		id = Enclavesp_42
+		id = ESP_focus_42
 		icon = GFX_goal_enc_air_production
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_41 }
-		mutually_exclusive = { focus = Enclavesp_44 }
-		relative_position_id = Enclavesp_41
+		prerequisite = { focus = ESP_focus_41 }
+		mutually_exclusive = { focus = ESP_focus_44 }
+		relative_position_id = ESP_focus_41
 		x = -1
 		y = 1
 		cost = 45
@@ -1020,11 +1020,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# STRIKE TEAMS - DROP TRAINING
-		id = Enclavesp_43
+		id = ESP_focus_43
 		icon = GFX_goal_enc_para
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_42 }
-		relative_position_id = Enclavesp_42
+		prerequisite = { focus = ESP_focus_42 }
+		relative_position_id = ESP_focus_42
 		x = 0
 		y = 1
 		cost = 45
@@ -1037,12 +1037,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# STRIKE TEAMS - GROUND
-		id = Enclavesp_44
+		id = ESP_focus_44
 		icon = GFX_goal_enc_small_arms
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_41 }
-		relative_position_id = Enclavesp_41
-		mutually_exclusive = { focus = Enclavesp_42 }
+		prerequisite = { focus = ESP_focus_41 }
+		relative_position_id = ESP_focus_41
+		mutually_exclusive = { focus = ESP_focus_42 }
 		x = 1
 		y = 1
 		cost = 45
@@ -1055,11 +1055,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# STRIKE TEAMS - rapid planning
-		id = Enclavesp_45
+		id = ESP_focus_45
 		icon = GFX_goal_enc_planning
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_44 }
-		relative_position_id = Enclavesp_44
+		prerequisite = { focus = ESP_focus_44 }
+		relative_position_id = ESP_focus_44
 		x = 0 
 		y = 1
 		cost = 45
@@ -1072,15 +1072,15 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# ARMY REFORM
-		id = Enclavesp_46
+		id = ESP_focus_46
 		icon = GFX_goal_ESP_Eden
 		ai_will_do = { factor = 1 }
 		available = {
-			has_completed_focus = Enclavesp_17
+			has_completed_focus = ESP_focus_17
 		}
-		prerequisite = { focus = Enclavesp_40 }
-		mutually_exclusive = { focus = Enclavesp_41 }
-		relative_position_id = Enclavesp_40
+		prerequisite = { focus = ESP_focus_40 }
+		mutually_exclusive = { focus = ESP_focus_41 }
+		relative_position_id = ESP_focus_40
 		x = 2
 		y = 1
 		cost = 45
@@ -1094,12 +1094,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_47
+		id = ESP_focus_47
 		icon = GFX_goal_enc_radio
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_46 }
-		relative_position_id = Enclavesp_46 
-		mutually_exclusive = { focus = Enclavesp_49 }
+		prerequisite = { focus = ESP_focus_46 }
+		relative_position_id = ESP_focus_46 
+		mutually_exclusive = { focus = ESP_focus_49 }
 		x = -1
 		y = 1  
 		cost = 45
@@ -1112,11 +1112,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# ARMY REFORM COMMAND 2
-		id = Enclavesp_48
+		id = ESP_focus_48
 		icon = GFX_goal_enc_position_armies
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_47 }
-		relative_position_id = Enclavesp_47
+		prerequisite = { focus = ESP_focus_47 }
+		relative_position_id = ESP_focus_47
 		x = 0
 		y = 1
 		cost = 45
@@ -1129,12 +1129,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# ARMY REFORM - FIGHTER
-		id = Enclavesp_49
+		id = ESP_focus_49
 		icon = GFX_goal_enc_fighter
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_46 }
-		relative_position_id = Enclavesp_46
-		mutually_exclusive = { focus = Enclavesp_47 }
+		prerequisite = { focus = ESP_focus_46 }
+		relative_position_id = ESP_focus_46
+		mutually_exclusive = { focus = ESP_focus_47 }
 		x = 1 
 		y = 1
 		cost = 45
@@ -1145,11 +1145,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {# ARMY REFORM - FIGHTER FOCUS 2
-		id = Enclavesp_50
+		id = ESP_focus_50
 		icon = GFX_goal_enc_advanced_fighter 
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = Enclavesp_49 }
-		relative_position_id = Enclavesp_49
+		prerequisite = { focus = ESP_focus_49 }
+		relative_position_id = ESP_focus_49
 		x = 0
 		y = 1
 		cost = 45
@@ -1159,13 +1159,13 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#Purity - FEV experiments
-		id = Enclavesp_51
+		id = ESP_focus_51
 		icon = GFX_goal_ESP_Eden_FEV
 		prerequisite = {
-			focus = Enclavesp_18
+			focus = ESP_focus_18
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_17
+		relative_position_id = ESP_focus_17
 		x = 3
 		y = 2
 		cost = 60
@@ -1175,11 +1175,11 @@ focus = {#Expedition - to Mariposa
     }
 	
 	focus = {#SIERRA - 2- Intensify efforts
-		id = Enclavesp_52
+		id = ESP_focus_52
 		icon = GFX_goal_enc_research
-		prerequisite = { focus = Enclavesp_51 }
+		prerequisite = { focus = ESP_focus_51 }
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_51
+		relative_position_id = ESP_focus_51
 		x = 0
 		y = 1
 		cost = 45
@@ -1190,17 +1190,17 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {#Purity - Human improvement
-		id = Enclavesp_53
+		id = ESP_focus_53
 		icon = GFX_goal_enc_super_soldier
 		available = {
             1070 = { is_controlled_by = ESP } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Enclavesp_52
+		relative_position_id = ESP_focus_52
 		x = -1
 		y = 1
-		prerequisite = { focus = Enclavesp_52}
-		mutually_exclusive = { focus = Enclavesp_54 }
+		prerequisite = { focus = ESP_focus_52}
+		mutually_exclusive = { focus = ESP_focus_54 }
 		completion_reward = {
 			add_ideas = ESP_FEV_soldiers
 			LIT = { 
@@ -1211,15 +1211,15 @@ focus = {#Expedition - to Mariposa
     }
 	
 	focus = {#Cloning
-		id = Enclavesp_54
+		id = ESP_focus_54
 		icon = GFX_goal_enc_cloning
 		ai_will_do = { factor = 1 }
 		available = {
 			1070 = { is_controlled_by = ESP } # NAVARRO
 		}
-		prerequisite = { focus = Enclavesp_52 }
-		relative_position_id = Enclavesp_52
-		mutually_exclusive = { focus = Enclavesp_53 }
+		prerequisite = { focus = ESP_focus_52 }
+		relative_position_id = ESP_focus_52
+		mutually_exclusive = { focus = ESP_focus_53 }
 		x = 1
 		y = 1
 		cost = 60
@@ -1232,20 +1232,20 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_55
+		id = ESP_focus_55
 		icon = GFX_goal_ESP_Autumn_Chad
 		prerequisite = {
-		focus = Enclavesp_86
+		focus = ESP_focus_86
 		}
 		prerequisite = {
-		focus = Enclavesp_87
+		focus = ESP_focus_87
 		}
 		available = {
 			1070 = { is_controlled_by = ESP } 
 			988 = { is_controlled_by = ESP } 
 			1001 = { is_controlled_by = ESP } 
 		}
-		relative_position_id = Enclavesp_21
+		relative_position_id = ESP_focus_21
 		x = 0
 		y = 2
 		
@@ -1282,12 +1282,12 @@ focus = {#Expedition - to Mariposa
 	}
 
 	focus = {
-		id = Enclavesp_79
+		id = ESP_focus_79
 		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1000 } 
-		relative_position_id = Enclavesp_55
+		relative_position_id = ESP_focus_55
 		prerequisite = {
-			focus = Enclavesp_55
+			focus = ESP_focus_55
 		}
 		available = {
             SBS = { exists = no }
@@ -1306,10 +1306,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_56
+		id = ESP_focus_56
 		icon = GFX_goal_ESP_Autumn_Oasis
-		relative_position_id = Enclavesp_55
-		prerequisite = { focus = Enclavesp_79 }
+		relative_position_id = ESP_focus_55
+		prerequisite = { focus = ESP_focus_79 }
 		x = -2
 		y = 2
 		
@@ -1351,12 +1351,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_57
+		id = ESP_focus_57
 		icon = GFX_goal_ESP_Autumn_Outcasts
 		available = {
 		}
-		relative_position_id = Enclavesp_55
-		prerequisite = { focus = Enclavesp_79 }
+		relative_position_id = ESP_focus_55
+		prerequisite = { focus = ESP_focus_79 }
 		x = 2
 		y = 2
 		
@@ -1399,14 +1399,14 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_58
+		id = ESP_focus_58
 		icon = GFX_goal_ESP_Autumn_Farmers
 		available = {
 			981 = { is_controlled_by = ESP } # NAVARRO
 			1023 = { is_controlled_by = ESP } # NAVARRO
 		}
-		relative_position_id = Enclavesp_79
-		prerequisite = { focus = Enclavesp_79 }
+		relative_position_id = ESP_focus_79
+		prerequisite = { focus = ESP_focus_79 }
 		x = 0
 		y = 1
 		
@@ -1470,7 +1470,7 @@ focus = {#Expedition - to Mariposa
 	
 	
 	focus = {
-		id = Enclavesp_59
+		id = ESP_focus_59
 		icon = GFX_goal_ESP_Autumn_York
 		available = {
 			981 = { is_controlled_by = ESP } 
@@ -1482,10 +1482,10 @@ focus = {#Expedition - to Mariposa
 			is_neighbor_of = ESP
 			}			
 		}
-		relative_position_id = Enclavesp_55
-		prerequisite = { focus = Enclavesp_58 }
-		prerequisite = { focus = Enclavesp_57 }
-		prerequisite = { focus = Enclavesp_56 }
+		relative_position_id = ESP_focus_55
+		prerequisite = { focus = ESP_focus_58 }
+		prerequisite = { focus = ESP_focus_57 }
+		prerequisite = { focus = ESP_focus_56 }
 		x = 0
 		y = 3
 		
@@ -1522,10 +1522,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_78
+		id = ESP_focus_78
 		icon = GFX_goal_ESP_Eden_RAB
-		prerequisite = { focus = Enclavesp_27 }
-		relative_position_id = Enclavesp_27
+		prerequisite = { focus = ESP_focus_27 }
+		relative_position_id = ESP_focus_27
 		x = 0
 		y = 1
 
@@ -1558,11 +1558,11 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_60
+		id = ESP_focus_60
 		icon = GFX_goal_Enclave16
-		relative_position_id = Enclavesp_78
+		relative_position_id = ESP_focus_78
 		prerequisite= {
-		focus = Enclavesp_78
+		focus = ESP_focus_78
 		}
 		x = 0
 		y = 1
@@ -1599,10 +1599,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_61
+		id = ESP_focus_61
 		icon = GFX_goal_enc_troop_call
-		prerequisite = { focus = Enclavesp_60 }
-		relative_position_id = Enclavesp_60
+		prerequisite = { focus = ESP_focus_60 }
+		relative_position_id = ESP_focus_60
 		x = 0
 		y = 1
 
@@ -1660,10 +1660,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 		focus = {
-		id = Enclavesp_62
+		id = ESP_focus_62
 		icon = GFX_goal_Enclave17
-		prerequisite = { focus = Enclavesp_61 }
-		relative_position_id = Enclavesp_61
+		prerequisite = { focus = ESP_focus_61 }
+		relative_position_id = ESP_focus_61
 		x = 0
 		y = 1
 
@@ -1699,10 +1699,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_63
+		id = ESP_focus_63
 		icon = GFX_goal_Enclave22
-		prerequisite = { focus = Enclavesp_62 }
-		relative_position_id = Enclavesp_62
+		prerequisite = { focus = ESP_focus_62 }
+		relative_position_id = ESP_focus_62
 		x = -2
 		y = 1
 
@@ -1741,10 +1741,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_64
+		id = ESP_focus_64
 		icon = GFX_goal_Enclave21
-		prerequisite = { focus = Enclavesp_62 }
-		relative_position_id = Enclavesp_62
+		prerequisite = { focus = ESP_focus_62 }
+		relative_position_id = ESP_focus_62
 		x = 0
 		y = 1
 
@@ -1784,10 +1784,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_65
+		id = ESP_focus_65
 		icon = GFX_goal_Enclave20
-		prerequisite = { focus = Enclavesp_62 }
-		relative_position_id = Enclavesp_62
+		prerequisite = { focus = ESP_focus_62 }
+		relative_position_id = ESP_focus_62
 		x = 2
 		y = 1
 
@@ -1830,12 +1830,12 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_66
+		id = ESP_focus_66
 		icon = GFX_goal_Enclave18
-		prerequisite = { focus = Enclavesp_64 }
-		prerequisite = { focus = Enclavesp_65 }
-		prerequisite = { focus = Enclavesp_63 }
-		relative_position_id = Enclavesp_64
+		prerequisite = { focus = ESP_focus_64 }
+		prerequisite = { focus = ESP_focus_65 }
+		prerequisite = { focus = ESP_focus_63 }
+		relative_position_id = ESP_focus_64
 		x = 0
 		y = 1
 
@@ -1901,15 +1901,15 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_67
+		id = ESP_focus_67
 		icon = GFX_goal_Enclave19
-		relative_position_id = Enclavesp_66
+		relative_position_id = ESP_focus_66
 		cost = 45
 		available = {
            1041 = { is_owned_and_controlled_by = NUE }
 		}
 		prerequisite = {
-			focus = Enclavesp_66
+			focus = ESP_focus_66
 		}
 		x = 0
 		y = 1
@@ -1925,9 +1925,9 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_68
+		id = ESP_focus_68
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = Enclavesp_40
+		relative_position_id = ESP_focus_40
 		x = 0
 		y = 5
 
@@ -1961,10 +1961,10 @@ focus = {#Expedition - to Mariposa
 	}
 				
 	focus = {
-		id = Enclavesp_69
+		id = ESP_focus_69
 		icon = GFX_goal_enc_fort
-		prerequisite = { focus = Enclavesp_68 }
-		relative_position_id = Enclavesp_68
+		prerequisite = { focus = ESP_focus_68 }
+		relative_position_id = ESP_focus_68
 		x = -2
 		y = 1
 
@@ -2000,10 +2000,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_70
+		id = ESP_focus_70
 		icon = GFX_goal_enc_troop_call
-		prerequisite = { focus = Enclavesp_68 }
-		relative_position_id = Enclavesp_68
+		prerequisite = { focus = ESP_focus_68 }
+		relative_position_id = ESP_focus_68
 		x = 0
 		y = 1
 
@@ -2038,9 +2038,9 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_72
+		id = ESP_focus_72
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_59
+		relative_position_id = ESP_focus_59
 		x = 0
 		y = 2
 
@@ -2082,10 +2082,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_73
+		id = ESP_focus_73
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_72
-		prerequisite = { focus = Enclavesp_72 }
+		relative_position_id = ESP_focus_72
+		prerequisite = { focus = ESP_focus_72 }
 		x = -2
 		y = 1
 
@@ -2124,10 +2124,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_74
+		id = ESP_focus_74
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_72
-		prerequisite = { focus = Enclavesp_72 }
+		relative_position_id = ESP_focus_72
+		prerequisite = { focus = ESP_focus_72 }
 		x = 2
 		y = 1
 
@@ -2166,10 +2166,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_75
+		id = ESP_focus_75
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_72
-		prerequisite = { focus = Enclavesp_72 }
+		relative_position_id = ESP_focus_72
+		prerequisite = { focus = ESP_focus_72 }
 		x = 0
 		y = 1
 
@@ -2208,20 +2208,20 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_76
+		id = ESP_focus_76
 		icon = GFX_goal_Enclave17
-		relative_position_id = Enclavesp_72
+		relative_position_id = ESP_focus_72
 		x = 0
 		y = 4
 		
 		prerequisite = {
-		focus = Enclavesp_83
+		focus = ESP_focus_83
 		}
 		prerequisite = {
-		focus = Enclavesp_84
+		focus = ESP_focus_84
 		}
 		prerequisite = {
-		focus = Enclavesp_85
+		focus = ESP_focus_85
 		}
 
 		cost = 60
@@ -2252,10 +2252,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_77
+		id = ESP_focus_77
 		icon = GFX_goal_enc_fort
-		prerequisite = { focus = Enclavesp_68 }
-		relative_position_id = Enclavesp_68
+		prerequisite = { focus = ESP_focus_68 }
+		relative_position_id = ESP_focus_68
 		x = 2
 		y = 1
 
@@ -2290,10 +2290,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_80
+		id = ESP_focus_80
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_73
-		prerequisite = { focus = Enclavesp_73 }
+		relative_position_id = ESP_focus_73
+		prerequisite = { focus = ESP_focus_73 }
 		x = 0
 		y = 1
 
@@ -2335,10 +2335,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_81
+		id = ESP_focus_81
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_75
-		prerequisite = { focus = Enclavesp_75 }
+		relative_position_id = ESP_focus_75
+		prerequisite = { focus = ESP_focus_75 }
 		x = 0
 		y = 1
 
@@ -2377,10 +2377,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_82
+		id = ESP_focus_82
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_74
-		prerequisite = { focus = Enclavesp_74 }
+		relative_position_id = ESP_focus_74
+		prerequisite = { focus = ESP_focus_74 }
 		x = 0
 		y = 1
 
@@ -2419,10 +2419,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_83
+		id = ESP_focus_83
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_80
-		prerequisite = { focus = Enclavesp_80 }
+		relative_position_id = ESP_focus_80
+		prerequisite = { focus = ESP_focus_80 }
 		x = 0
 		y = 1
 
@@ -2461,10 +2461,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_84
+		id = ESP_focus_84
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_81
-		prerequisite = { focus = Enclavesp_81 }
+		relative_position_id = ESP_focus_81
+		prerequisite = { focus = ESP_focus_81 }
 		x = 0
 		y = 1
 
@@ -2503,10 +2503,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_85
+		id = ESP_focus_85
 		icon = GFX_goal_enc_veterans_call
-		relative_position_id = Enclavesp_82
-		prerequisite = { focus = Enclavesp_82 }
+		relative_position_id = ESP_focus_82
+		prerequisite = { focus = ESP_focus_82 }
 		x = 0
 		y = 1
 
@@ -2545,10 +2545,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_86
+		id = ESP_focus_86
 		icon = GFX_goal_ESP_Autumn_Rangers
-		prerequisite = { focus = Enclavesp_21 }
-		relative_position_id = Enclavesp_21
+		prerequisite = { focus = ESP_focus_21 }
+		relative_position_id = ESP_focus_21
 		x = 1
 		y = 1
 		
@@ -2584,10 +2584,10 @@ focus = {#Expedition - to Mariposa
 	}
 	
 	focus = {
-		id = Enclavesp_87
+		id = ESP_focus_87
 		icon = GFX_goal_ESP_Autumn_Slavers
-		prerequisite = { focus = Enclavesp_21 }
-		relative_position_id = Enclavesp_21
+		prerequisite = { focus = ESP_focus_21 }
+		relative_position_id = ESP_focus_21
 		x = -1
 		y = 1
 
