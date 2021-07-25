@@ -57,7 +57,7 @@ country_event = {
 		add_ideas = crimserv
 		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 1 id = news_event_ec.1 }
 		}
 	}
 	option = {
@@ -65,7 +65,7 @@ country_event = {
 		add_ideas = crimslaves
 		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 1 id = news_event_ec.1 }
 		}
 	}
 	option = {
@@ -73,7 +73,7 @@ country_event = {
 		add_ideas = crimwar
 		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 1 id = news_event_ec.1 }
 		}
 	}
 	option = {
@@ -81,7 +81,7 @@ country_event = {
 		add_ideas = crimkill
 		add_ideas = James_Escape
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.1 }
+			country_event = { days = 1 id = news_event_ec.1 }
 		}
 	}
 }
@@ -472,7 +472,7 @@ country_event = {
 		name = USP_event.20.a
 		add_political_power = 70
 		hidden_effect = {
-			country_event = { days = 45 id = newsfallout.5 }
+			country_event = { days = 45 id = news_event_ec.5 }
 	        country_event = { days = 45 id = USP_event.21 }
 		}
 	}
@@ -887,7 +887,7 @@ country_event = {
 		    add_manpower = 500
 			hidden_effect = {
 				load_oob = enclavememori
-				country_event = { days = 3 id = newsfallout.2 }
+				country_event = { days = 3 id = news_event_ec.2 }
 		    }				
 		}
 	    country_event = { days = 45 id = USP_event.45 }
@@ -1142,7 +1142,7 @@ country_event = {
 		    add_manpower = 150
 			hidden_effect = {
 				load_oob = enclavememori_vault87
-				country_event = { days = 3 id = newsfallout.3 }
+				country_event = { days = 3 id = news_event_ec.3 }
 			}	
 		}
 		hidden_effect = {
@@ -1238,7 +1238,7 @@ country_event = {
 			add_political_power = 100
 		    add_manpower = 1000
 			hidden_effect = {
-				country_event = { days = 45 id = newsfallout.11 }	
+				country_event = { days = 45 id = news_event_ec.11 }	
 			}
 		}
 		set_country_flag = ready_for_battle

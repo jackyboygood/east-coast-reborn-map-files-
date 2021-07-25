@@ -1,5 +1,5 @@
 focus_tree = {
-	id = PIT_focus_focus
+	id = PIT_focus
 	country = {
 		factor = 0
 		modifier = {

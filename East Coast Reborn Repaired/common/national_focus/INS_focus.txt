@@ -1,5 +1,5 @@
 focus_tree = {
-	id = institut
+	id = INS_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = institut_1
+		id = INS_focus_1
 		icon = GFX_goal_institut
 		ai_will_do = { factor = 1 } 
 		cost = 7
@@ -30,11 +30,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_2
+		id = INS_focus_2
 		icon = GFX_goal_institut1
-		relative_position_id = institut_1
+		relative_position_id = INS_focus_1
 		prerequisite = {
-			focus = institut_1
+			focus = INS_focus_1
 		}
 		cost = 7
 		x = 0
@@ -46,7 +46,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_2 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_2 entered"
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -56,17 +56,17 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_2 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_2 exited"
 			}
 		}
 	}
 	
 	focus = {#SIERRA - 2- The lab
-		id = institut_3
+		id = INS_focus_3
 		icon = GFX_goal_NEW_the_old_world
-		prerequisite = {focus = institut_2}
+		prerequisite = {focus = INS_focus_2}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_2
+		relative_position_id = INS_focus_2
 		x = 0
 		y = 1
 		cost = 14
@@ -76,11 +76,11 @@ focus_tree = {
 	}
 	
 	focus = {#SIERRA - 2- The lab
-		id = institut_4
+		id = INS_focus_4
 		icon = GFX_goal_institut2
-		prerequisite = {focus = institut_3}
+		prerequisite = {focus = INS_focus_3}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_3
+		relative_position_id = INS_focus_3
 		x = 0
 		y = 1
 		cost = 60
@@ -90,13 +90,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_5
+		id = INS_focus_5
 		icon = GFX_goal_institut3
 		ai_will_do = { factor = 10 } 
-		relative_position_id = institut_3
+		relative_position_id = INS_focus_3
 		cost = 60
 		prerequisite = {
-			focus = institut_3
+			focus = INS_focus_3
 		}
 		x = -6
 		y = 1
@@ -104,7 +104,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_5 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_5 entered"
 			}
 			add_tech_bonus = { 
 			bonus = 0.2 
@@ -113,19 +113,19 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_5 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_5 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_6
+		id = INS_focus_6
 		icon = GFX_goal_institut4
-		relative_position_id = institut_3
+		relative_position_id = INS_focus_3
 		cost = 30	
 		ai_will_do = { factor = 15 } 
 		prerequisite = {
-			focus = institut_3
+			focus = INS_focus_3
 		}
 		x = 6
 		y = 1
@@ -133,24 +133,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_6 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_6 entered"
 			}
 			army_experience = 10
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_6 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_6 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_7
+		id = INS_focus_7
 		icon = GFX_goal_institut5
 		ai_will_do = { factor = 15 } 
-		relative_position_id = institut_6
+		relative_position_id = INS_focus_6
 		cost = 45
 		prerequisite = {
-			focus = institut_6
+			focus = INS_focus_6
 		}
 		x = -2
 		y = 1
@@ -158,24 +158,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_7 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_7 entered"
 			}
 			add_political_power = 50
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_7 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_7 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_8
+		id = INS_focus_8
 		icon = GFX_goal_institut6
-		relative_position_id = institut_7
+		relative_position_id = INS_focus_7
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_7
+			focus = INS_focus_7
 		}
 		x = 0
 		y = 1
@@ -183,7 +183,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_8 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_8 entered"
 			}
 			add_ideas = pohishenieludeyinstitute
 			add_manpower = 400
@@ -201,26 +201,26 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_8 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_8 exited"
 			}
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.20 }	
+				country_event = { days = 1 id = news_event_ec.20 }	
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_9
+		id = INS_focus_9
 		icon = GFX_goal_institut7
-		relative_position_id = institut_8
+		relative_position_id = INS_focus_8
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		available = {
-			has_completed_focus = institut_25
+			has_completed_focus = INS_focus_25
 			1014 = { is_owned_and_controlled_by = DIA }
 		}
 		prerequisite = {
-			focus = institut_8
+			focus = INS_focus_8
 		}
 		x = 0
 		y = 1
@@ -248,16 +248,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_10
+		id = INS_focus_10
 		icon = GFX_goal_institut8
-		relative_position_id = institut_9
+		relative_position_id = INS_focus_9
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		available = {
            1015 = { is_owned_and_controlled_by = DIA }
 		}
 		prerequisite = {
-			focus = institut_9
+			focus = INS_focus_9
 		}
 		x = 0
 		y = 1
@@ -272,13 +272,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_11
+		id = INS_focus_11
 		icon = GFX_goal_institut9
 		ai_will_do = { factor = 15 } 
 		cost = 45
-		relative_position_id = institut_10
+		relative_position_id = INS_focus_10
 		prerequisite = {
-			focus = institut_10
+			focus = INS_focus_10
 		}
 		x = 0
 		y = 1
@@ -312,9 +312,9 @@ focus_tree = {
 	}
 
     focus = {
-		id = institut_12
+		id = INS_focus_12
 		icon = GFX_goal_institut10
-		relative_position_id = institut_11
+		relative_position_id = INS_focus_11
 		cost = 45
 		ai_will_do = { factor = 15 } 
 		available = {
@@ -324,7 +324,7 @@ focus_tree = {
 
 		}
 		prerequisite = {
-			focus = institut_11
+			focus = INS_focus_11
 		}
 		x = 0
 		y = 1
@@ -341,12 +341,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_13
+		id = INS_focus_13
 		icon = GFX_goal_institut11
 		cost = 45
-		relative_position_id = institut_12
+		relative_position_id = INS_focus_12
 		prerequisite = {
-			focus = institut_12
+			focus = INS_focus_12
 		}
 		x = 0
 		y = 1
@@ -377,13 +377,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_14
+		id = INS_focus_14
 		icon = GFX_goal_institut5
-		relative_position_id = institut_6
+		relative_position_id = INS_focus_6
 		ai_will_do = { factor = 9 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_6
+			focus = INS_focus_6
 		}
 		x = 2
 		y = 1
@@ -391,24 +391,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_14 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_14 entered"
 			}
 			add_political_power = 50
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_14 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_14 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_15
+		id = INS_focus_15
 		icon = GFX_goal_institut12
-		relative_position_id = institut_14
+		relative_position_id = INS_focus_14
 		ai_will_do = { factor = 9 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_14
+			focus = INS_focus_14
 		}
 		x = 0
 		y = 1
@@ -416,25 +416,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_15 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_15 entered"
 			}
 			add_ideas = pohisheniemutantovinstitute
 			add_manpower = 400
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_15 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_15 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_16
+		id = INS_focus_16
 		icon =  GFX_goal_institut13
-		relative_position_id = institut_15
+		relative_position_id = INS_focus_15
 		cost = 45
 		ai_will_do = { factor = 9 } 
 		prerequisite = {
-			focus = institut_15
+			focus = INS_focus_15
 		}
 		x = 0
 		y = 1
@@ -442,27 +442,27 @@ focus_tree = {
 		completion_reward = {
 		    if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_16 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_16 entered"
 			}
 		    add_ideas = newsupermutantv
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_16 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_16 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_17
+		id = INS_focus_17
 		icon = GFX_goal_institut14
-		relative_position_id = institut_16
+		relative_position_id = INS_focus_16
 		ai_will_do = { factor = 9 } 
 		available = {
-			has_completed_focus = institut_25
+			has_completed_focus = INS_focus_25
 		}
 		cost = 45
 		prerequisite = {
-			focus = institut_16
+			focus = INS_focus_16
 		}
 		bypass = {
 
@@ -493,16 +493,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_18
+		id = INS_focus_18
 		icon = GFX_goal_institut15
-		relative_position_id = institut_17
+		relative_position_id = INS_focus_17
 		ai_will_do = { factor = 9 } 
 		cost = 45
 		available = {
 			1017 = { is_owned_and_controlled_by = BSM }
 		}
 		prerequisite = {
-			focus = institut_17
+			focus = INS_focus_17
 		}
 		bypass = {
 			BSM = { exists = no }
@@ -521,12 +521,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_19
+		id = INS_focus_19
 		icon = GFX_goal_institut16
-		relative_position_id = institut_18
+		relative_position_id = INS_focus_18
 		cost = 45
 		prerequisite = {
-			focus = institut_18
+			focus = INS_focus_18
 		}
 		x = 0
 		y = 1
@@ -538,12 +538,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_20
+		id = INS_focus_20
 		icon = GFX_goal_institut17
 		cost = 45
-		relative_position_id = institut_19
+		relative_position_id = INS_focus_19
 		prerequisite = {
-			focus = institut_19
+			focus = INS_focus_19
 		}
 		x = 0
 		y = 1
@@ -578,13 +578,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_21
+		id = INS_focus_21
 		icon = GFX_goal_institut18
 		ai_will_do = { factor = 25 } 
 		cost = 45
-		relative_position_id = institut_5
+		relative_position_id = INS_focus_5
 		prerequisite = {
-			focus = institut_5
+			focus = INS_focus_5
 		}
 		x = 0
 		y = 2
@@ -596,13 +596,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_22
+		id = INS_focus_22
 		icon = GFX_goal_institut19
-		relative_position_id = institut_21
+		relative_position_id = INS_focus_21
 		ai_will_do = { factor = 25 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_21
+			focus = INS_focus_21
 		}
 		x = -2
 		y = 1
@@ -611,7 +611,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_22 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_22 entered"
 			}
 			1016 = {
 				add_extra_state_shared_building_slots = 1
@@ -623,19 +623,19 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_22 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_22 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_23
+		id = INS_focus_23
 		icon = GFX_goal_institut20
 		ai_will_do = { factor = 25 } 
-		relative_position_id = institut_21
+		relative_position_id = INS_focus_21
 		cost = 45
 		prerequisite = {
-			focus = institut_21
+			focus = INS_focus_21
 		}
 		x = 2
 		y = 1
@@ -644,7 +644,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_22 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_22 entered"
 			}
 			1016 = {
 				add_extra_state_shared_building_slots = 1
@@ -656,22 +656,22 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_22 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_22 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_24
+		id = INS_focus_24
 		icon = GFX_goal_institut21
-		relative_position_id = institut_23
+		relative_position_id = INS_focus_23
 		ai_will_do = { factor = 25 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_22
+			focus = INS_focus_22
 		}
 		prerequisite = {
-			focus = institut_23
+			focus = INS_focus_23
 		}
 		x = -2
 		y = 1
@@ -691,60 +691,60 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_25
+		id = INS_focus_25
 		icon = GFX_goal_institut22
-		relative_position_id = institut_24
+		relative_position_id = INS_focus_24
 		ai_will_do = { factor = 25 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_24
+			focus = INS_focus_24
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_25 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_25 entered"
 			}
 			add_ideas = sinth2generic
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_25 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_25 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_26
+		id = INS_focus_26
 		icon = GFX_goal_institut23
 		cost = 45
-		relative_position_id = institut_25
+		relative_position_id = INS_focus_25
 		prerequisite = {
-			focus = institut_25
+			focus = INS_focus_25
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_26 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_26 entered"
 			}
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = INS_idea_backhand_support_idea
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_26 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_26 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_27
+		id = INS_focus_27
 		icon = GFX_goal_institut24
-		relative_position_id = institut_25
+		relative_position_id = INS_focus_25
 		cost = 45
 		prerequisite = {
-			focus = institut_25
+			focus = INS_focus_25
 		}
 		x = 2
 		y = 1
@@ -752,7 +752,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_27 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_27 entered"
 			}
 			add_tech_bonus = { 
 			bonus = 0.5 
@@ -760,21 +760,21 @@ focus_tree = {
 			category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_27 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_27 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_28
+		id = INS_focus_28
 		icon = GFX_goal_institut25
 		available = {
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = institut_25
+		relative_position_id = INS_focus_25
 		x = -2
 		y = 1
-		prerequisite = { focus = institut_25 }
+		prerequisite = { focus = INS_focus_25 }
 		completion_reward = {
 			add_equipment_to_stockpile = { type = support_robot_handy_equipment amount = 1500 producer = USA }
 			add_equipment_to_stockpile = { type = support_robot_protectron_equipment_2 amount = 600 producer = USA }
@@ -783,11 +783,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_29
+		id = INS_focus_29
 		icon = GFX_goal_doroga
-		prerequisite = { focus = institut_4 }
+		prerequisite = { focus = INS_focus_4 }
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_4
+		relative_position_id = INS_focus_4
 		x = -1
 		y = 1
 		cost = 45
@@ -804,12 +804,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_30
+		id = INS_focus_30
 		icon = GFX_goal_generic_building_focus
-		relative_position_id = institut_4
+		relative_position_id = INS_focus_4
 		cost = 45
 		prerequisite = {
-			focus = institut_4
+			focus = INS_focus_4
 		}
 		x = 1
 		y = 1
@@ -819,7 +819,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_30 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_30 entered"
 			}
 			1016 = {
 				add_resource = {
@@ -829,21 +829,21 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_30 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_30 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_31
+		id = INS_focus_31
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = institut_29
+		relative_position_id = INS_focus_29
 		cost = 45
 		prerequisite = {
-			focus = institut_29
+			focus = INS_focus_29
 		}
 		prerequisite = {
-			focus = institut_30
+			focus = INS_focus_30
 		}
 		x = 0
 		y = 1
@@ -853,7 +853,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_31 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_31 entered"
 			}
 			1015 = {
 				add_extra_state_shared_building_slots = 1
@@ -865,18 +865,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_31 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_31 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_32
+		id = INS_focus_32
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = institut_31
+		relative_position_id = INS_focus_31
 		cost = 45
 		prerequisite = {
-			focus = institut_31
+			focus = INS_focus_31
 		}
 		x = 0
 		y = 1
@@ -886,7 +886,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_32 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_32 entered"
 			}
 			1015 = {
 				add_extra_state_shared_building_slots = 1
@@ -898,21 +898,21 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_32 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_32 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_33
+		id = INS_focus_33
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = institut_30
+		relative_position_id = INS_focus_30
 		cost = 45
 		prerequisite = {
-			focus = institut_29
+			focus = INS_focus_29
 		}
 		prerequisite = {
-			focus = institut_30
+			focus = INS_focus_30
 		}
 		x = 0
 		y = 1
@@ -922,7 +922,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_33 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_33 entered"
 			}
 			1017 = {
 				add_extra_state_shared_building_slots = 1
@@ -934,18 +934,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_33 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_33 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_34
+		id = INS_focus_34
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = institut_33
+		relative_position_id = INS_focus_33
 		cost = 45
 		prerequisite = {
-			focus = institut_33
+			focus = INS_focus_33
 		}
 		x = 0
 		y = 1
@@ -955,7 +955,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_34 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_34 entered"
 			}
 			1017 = {
 				add_extra_state_shared_building_slots = 1
@@ -967,18 +967,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_34 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_34 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_35
+		id = INS_focus_35
 		icon = GFX_goal_BOS_scourge_focus
-		relative_position_id = institut_3
+		relative_position_id = INS_focus_3
 		cost = 45
 		prerequisite = {
-			focus = institut_3
+			focus = INS_focus_3
 		}
 		x = -10
 		y = 1
@@ -986,23 +986,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_35 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_35 entered"
 			}
 			air_experience = 25
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_35 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_35 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_36
+		id = INS_focus_36
 		icon = GFX_goal_generic_airplane
 		cost = 45
-		relative_position_id = institut_35
+		relative_position_id = INS_focus_35
 		prerequisite = {
-			focus = institut_35
+			focus = INS_focus_35
 		}
 		x = -1
 		y = 1
@@ -1010,23 +1010,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_36 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_36 entered"
 			}
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_air_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_36 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_36 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_37
+		id = INS_focus_37
 		icon = GFX_goal_generic_airbases_focus
-		relative_position_id = institut_35
+		relative_position_id = INS_focus_35
 		cost = 45
 		prerequisite = {
-			focus = institut_35
+			focus = INS_focus_35
 		}
 		x = 1
 		y = 1
@@ -1036,7 +1036,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_37 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_37 entered"
 			}
 			1016 = {
 				add_building_construction = {
@@ -1047,21 +1047,21 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_37 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_37 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_38
+		id = INS_focus_38
 		icon = GFX_goal_generic_air_doctrines_focus
 		cost = 45
-		relative_position_id = institut_37
+		relative_position_id = INS_focus_37
 		prerequisite = {
-			focus = institut_37
+			focus = INS_focus_37
 		}
 		prerequisite = {
-			focus = institut_36
+			focus = INS_focus_36
 		}
 		x = -1
 		y = 1
@@ -1069,23 +1069,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_38 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_38 entered"
 			}
 			add_ideas = genericbosaerialsupermacy
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_38 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_38 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_39
+		id = INS_focus_39
 		icon = GFX_goal_institut5
-		relative_position_id = institut_6
+		relative_position_id = INS_focus_6
 		cost = 45
 		prerequisite = {
-			focus = institut_6
+			focus = INS_focus_6
 		}
 		available = {
 			1009 = { is_owned_and_controlled_by = MEN }
@@ -1100,26 +1100,26 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_39 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_39 entered"
 			}
 			add_political_power = 50
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_39 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_39 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_40
+		id = INS_focus_40
 		icon = GFX_goal_institut15
-		relative_position_id = institut_39
+		relative_position_id = INS_focus_39
 		cost = 45
 		available = {
 			1009 = { is_owned_and_controlled_by = MEN }
 		}
 		prerequisite = {
-			focus = institut_39
+			focus = INS_focus_39
 		}
 		bypass = {
 			MEN = { exists = no }
@@ -1138,13 +1138,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_41
+		id = INS_focus_41
 		icon = GFX_goal_institut26
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_26
+		relative_position_id = INS_focus_26
 		x = 0
 		y = 1
-		prerequisite = { focus = institut_26 }
+		prerequisite = { focus = INS_focus_26 }
 		available = {
 			1016 = { is_owned_and_controlled_by = INS }
 		}
@@ -1158,15 +1158,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_42
+		id = INS_focus_42
 		icon = GFX_goal_institut7
-		relative_position_id = institut_40
+		relative_position_id = INS_focus_40
 		cost = 45
 		available = {
          MEN = { exists = yes }
 		}
 		prerequisite = {
-			focus = institut_40
+			focus = INS_focus_40
 		}
 		x = 0
 		y = 1
@@ -1194,16 +1194,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_43
+		id = INS_focus_43
 		icon = GFX_goal_generic_supplies_focus
 		available = {
 			1052 = { is_owned_and_controlled_by = MEN }
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = institut_42
+		relative_position_id = INS_focus_42
 		x = 0
 		y = 1
-		prerequisite = { focus = institut_42 }
+		prerequisite = { focus = INS_focus_42 }
 		completion_reward = {
 			add_equipment_to_stockpile = { 
 			type = power_armor_equipment_1
@@ -1220,10 +1220,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_44
+		id = INS_focus_44
 		icon = GFX_goal_institut27
-		relative_position_id = institut_43
-		prerequisite = { focus = institut_43 }
+		relative_position_id = INS_focus_43
+		prerequisite = { focus = INS_focus_43 }
 		available = {
 			date < 2278.1.1
 		}
@@ -1272,9 +1272,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_45
+		id = INS_focus_45
 		icon = GFX_goal_institut11
-		relative_position_id = institut_32
+		relative_position_id = INS_focus_32
 		x = 0
 		y = 2
 		
@@ -1291,9 +1291,9 @@ focus_tree = {
 				is_in_faction_with = STR
 			}
 			STR = { exists = yes }
-			has_completed_focus = institut_41
-			has_completed_focus = institut_8
-			has_completed_focus = institut_16
+			has_completed_focus = INS_focus_41
+			has_completed_focus = INS_focus_8
+			has_completed_focus = INS_focus_16
 			date > 2278.2.1
 		}
 		
@@ -1319,9 +1319,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_46
+		id = INS_focus_46
 		icon = GFX_goal_institut11
-		relative_position_id = institut_34
+		relative_position_id = INS_focus_34
 		x = 0
 		y = 2
 		
@@ -1338,9 +1338,9 @@ focus_tree = {
 				is_in_faction_with = BSS
 			}
 			BSS = { exists = yes }
-			has_completed_focus = institut_41
-			has_completed_focus = institut_8
-			has_completed_focus = institut_16
+			has_completed_focus = INS_focus_41
+			has_completed_focus = INS_focus_8
+			has_completed_focus = INS_focus_16
 			date > 2278.2.1
 		}
 
@@ -1367,10 +1367,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_47
+		id = INS_focus_47
 		icon = GFX_goal_institut11
-		relative_position_id = institut_45
-		prerequisite = { focus = institut_45 }
+		relative_position_id = INS_focus_45
+		prerequisite = { focus = INS_focus_45 }
 		x = 0
 		y = 2
 		
@@ -1387,9 +1387,9 @@ focus_tree = {
 				is_in_faction_with = RIJ
 			}
 			RIJ = { exists = yes }
-			has_completed_focus = institut_41
-			has_completed_focus = institut_8
-			has_completed_focus = institut_16
+			has_completed_focus = INS_focus_41
+			has_completed_focus = INS_focus_8
+			has_completed_focus = INS_focus_16
 		}
 
 		bypass = {
@@ -1415,10 +1415,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_48
+		id = INS_focus_48
 		icon = GFX_goal_institut11
-		relative_position_id = institut_46
-		prerequisite = { focus = institut_46 }
+		relative_position_id = INS_focus_46
+		prerequisite = { focus = INS_focus_46 }
 		x = 0
 		y = 2
 		
@@ -1435,9 +1435,9 @@ focus_tree = {
 				is_in_faction_with = KOV
 			}
 			KOV = { exists = yes }
-			has_completed_focus = institut_41
-			has_completed_focus = institut_8
-			has_completed_focus = institut_16
+			has_completed_focus = INS_focus_41
+			has_completed_focus = INS_focus_8
+			has_completed_focus = INS_focus_16
 		}
 
 		bypass = {
@@ -1464,11 +1464,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_49
+		id = INS_focus_49
 		icon = GFX_goal_Enclave11
-		relative_position_id = institut_48
-		prerequisite = { focus = institut_48 }
-		prerequisite = { focus = institut_47 }
+		relative_position_id = INS_focus_48
+		prerequisite = { focus = INS_focus_48 }
+		prerequisite = { focus = INS_focus_47 }
 		x = -1
 		y = 1
 		
@@ -1512,11 +1512,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_52
+		id = INS_focus_52
 		icon = GFX_goal_NEW_the_old_world
-		prerequisite = {focus = institut_3}
+		prerequisite = {focus = INS_focus_3}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_35
+		relative_position_id = INS_focus_35
 		x = -5
 		y = 0
 		cost = 45
@@ -1528,11 +1528,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_53
+		id = INS_focus_53
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = {focus = institut_52}
+		prerequisite = {focus = INS_focus_52}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_52
+		relative_position_id = INS_focus_52
 		x = -2
 		y = 1
 		cost = 45
@@ -1545,11 +1545,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_54
+		id = INS_focus_54
 		icon = GFX_goal_generic_BOS_focus_flight_academy
-		prerequisite = {focus = institut_52}
+		prerequisite = {focus = INS_focus_52}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_52
+		relative_position_id = INS_focus_52
 		x = 0
 		y = 1
 		cost = 45
@@ -1562,11 +1562,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_55
+		id = INS_focus_55
 		icon = GFX_goal_generic_electricity_focus
-		prerequisite = {focus = institut_52}
+		prerequisite = {focus = INS_focus_52}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_52
+		relative_position_id = INS_focus_52
 		x = 2
 		y = 1
 		cost = 45
@@ -1576,13 +1576,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_56
+		id = INS_focus_56
 		icon = GFX_goal_institut18
-		prerequisite = {focus = institut_54}
-		prerequisite = {focus = institut_53}
-		prerequisite = {focus = institut_55}
+		prerequisite = {focus = INS_focus_54}
+		prerequisite = {focus = INS_focus_53}
+		prerequisite = {focus = INS_focus_55}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_54
+		relative_position_id = INS_focus_54
 		x = -1
 		y = 1
 		cost = 45
@@ -1595,13 +1595,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_57
+		id = INS_focus_57
 		icon = GFX_goal_generic_land_doctrines_focus
-		prerequisite = {focus = institut_54}
-		prerequisite = {focus = institut_53}
-		prerequisite = {focus = institut_55}
+		prerequisite = {focus = INS_focus_54}
+		prerequisite = {focus = INS_focus_53}
+		prerequisite = {focus = INS_focus_55}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_54
+		relative_position_id = INS_focus_54
 		x = 1
 		y = 1
 		cost = 45
@@ -1614,12 +1614,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_58
+		id = INS_focus_58
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = {focus = institut_56}
-		prerequisite = {focus = institut_57}
+		prerequisite = {focus = INS_focus_56}
+		prerequisite = {focus = INS_focus_57}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = institut_56
+		relative_position_id = INS_focus_56
 		x = 1
 		y = 1
 		cost = 45
@@ -1632,10 +1632,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_59
+		id = INS_focus_59
 		icon = GFX_goal_institut7
 		ai_will_do = { factor = 100 } 
-		relative_position_id = institut_58
+		relative_position_id = INS_focus_58
 		available = {
 		    	 963 = { is_controlled_by = INS } 
 				 1008 = { is_controlled_by = INS } 
@@ -1684,13 +1684,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_60
+		id = INS_focus_60
 		icon = GFX_goal_institut6
-		relative_position_id = institut_59
+		relative_position_id = INS_focus_59
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_59
+			focus = INS_focus_59
 		}
 		x = -1
 		y = 1
@@ -1704,13 +1704,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_61
+		id = INS_focus_61
 		icon = GFX_goal_institut6
-		relative_position_id = institut_59
+		relative_position_id = INS_focus_59
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_59
+			focus = INS_focus_59
 		}
 		available = {
 			has_equipment = {
@@ -1739,16 +1739,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_62
+		id = INS_focus_62
 		icon = GFX_goal_institut6
-		relative_position_id = institut_60
+		relative_position_id = INS_focus_60
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_60
+			focus = INS_focus_60
 		}
 		prerequisite = {
-			focus = institut_61
+			focus = INS_focus_61
 		}
 		x = 1
 		y = 1
@@ -1764,16 +1764,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_63
+		id = INS_focus_63
 		icon = GFX_goal_institut11
 		ai_will_do = { factor = 1 }
 		available = { has_war_support > 0.20 }
-		prerequisite = { focus = institut_62 }
+		prerequisite = { focus = INS_focus_62 }
 		bypass = {
 			has_full_control_of_state = 374
 			has_full_control_of_state = 209
 		}	
-		relative_position_id = institut_62
+		relative_position_id = INS_focus_62
 		x = 0
 		y = 1
 		cost = 45
@@ -1790,9 +1790,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_64
+		id = INS_focus_64
 		icon = GFX_goal_institut30
-		relative_position_id = institut_44
+		relative_position_id = INS_focus_44
 		x = 0
 		y = 2
 
@@ -1824,10 +1824,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_65
+		id = INS_focus_65
 		icon = GFX_goal_institut28
-		relative_position_id = institut_64
-		prerequisite = { focus = institut_64 }
+		relative_position_id = INS_focus_64
+		prerequisite = { focus = INS_focus_64 }
 		x = 0
 		y = 1
 
@@ -1861,13 +1861,13 @@ focus_tree = {
 	
 	
 	focus = {
-		id = institut_67
+		id = INS_focus_67
 		icon = GFX_goal_institut26
-		relative_position_id = institut_41
+		relative_position_id = INS_focus_41
 		ai_will_do = { factor = 9 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_41
+			focus = INS_focus_41
 		}
 		x = 0
 		y = 1
@@ -1875,27 +1875,27 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_67 entered"
+				log = "[GetDateText]: [Root.GetName] INS_focus_67 entered"
 			}
 			add_manpower = 3000
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] institut_67 exited"
+				log = "[GetDateText]: [Root.GetName] INS_focus_67 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = institut_68
+		id = INS_focus_68
 		icon = GFX_goal_attack_legion
-		relative_position_id = institut_63
+		relative_position_id = INS_focus_63
 		available = {
 			is_neighbor_of = CES
 		}
 		ai_will_do = { factor = 9 } 
 		cost = 45
 		prerequisite = {
-			focus = institut_63
+			focus = INS_focus_63
 		}
 		x = -1
 		y = 1
@@ -1909,16 +1909,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = institut_69
+		id = INS_focus_69
 		icon = GFX_goal_enc_anti_ncr
-		relative_position_id = institut_63
+		relative_position_id = INS_focus_63
 		ai_will_do = { factor = 9 }
         available = {
 			is_neighbor_of = NCR
 		}		
 		cost = 45
 		prerequisite = {
-			focus = institut_63
+			focus = INS_focus_63
 		}
 		x = 1
 		y = 1

@@ -2,19 +2,19 @@
 # News Events
 ###########################
 
-add_namespace = newsfallout
+add_namespace = news_event_ec
 
 news_event = {
-	id = newsfallout.1
-	title = newsfallout.1.t
+	id = news_event_ec.1
+	title = news_event_ec.1.t
 	desc = {
-		text = newsfallout.1.d
+		text = news_event_ec.1.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.1.d.b
+		text = news_event_ec.1.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -30,28 +30,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.1.a
+		name = news_event_ec.1.a
 		trigger = { 
 			NOT = { TAG = USP }
 		}
 	}
 	option = {
-		name = newsfallout.1.b
+		name = news_event_ec.1.b
 		trigger = { TAG = USP }
 	}
 }
 
 news_event = {
-	id = newsfallout.2
-	title = newsfallout.2.t
+	id = news_event_ec.2
+	title = news_event_ec.2.t
 	desc = {
-		text = newsfallout.2.d
+		text = news_event_ec.2.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.2.d.b
+		text = news_event_ec.2.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -67,28 +67,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.2.a
+		name = news_event_ec.2.a
 		trigger = { 
 			NOT = { TAG = USP }
 		}
 	}
 	option = {
-		name = newsfallout.2.b
+		name = news_event_ec.2.b
 		trigger = { TAG = USP }
 	}
 }
 
 news_event = {
-	id = newsfallout.3
-	title = newsfallout.3.t
+	id = news_event_ec.3
+	title = news_event_ec.3.t
 	desc = {
-		text = newsfallout.3.d
+		text = news_event_ec.3.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.3.d.b
+		text = news_event_ec.3.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -104,28 +104,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.3.a
+		name = news_event_ec.3.a
 		trigger = { 
 			NOT = { TAG = ESP }
 		}
 	}
 	option = {
-		name = newsfallout.3.b
+		name = news_event_ec.3.b
 		trigger = { TAG = ESP }
 	}
 }
 
 news_event = {
-	id = newsfallout.4
-	title = newsfallout.4.t
+	id = news_event_ec.4
+	title = news_event_ec.4.t
 	desc = {
-		text = newsfallout.4.d
+		text = news_event_ec.4.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.4.d.b
+		text = news_event_ec.4.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -141,28 +141,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.4.a
+		name = news_event_ec.4.a
 		trigger = { 
 			NOT = { TAG = ESP }
 		}
 	}
 	option = {
-		name = newsfallout.4.b
+		name = news_event_ec.4.b
 		trigger = { TAG = ESP }
 	}
 }
 
 news_event = {
-	id = newsfallout.5
-	title = newsfallout.5.t
+	id = news_event_ec.5
+	title = news_event_ec.5.t
 	desc = {
-		text = newsfallout.5.d
+		text = news_event_ec.5.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.5.d.b
+		text = news_event_ec.5.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -178,28 +178,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.5.a
+		name = news_event_ec.5.a
 		trigger = { 
 			NOT = { TAG = SPP }
 		}
 	}
 	option = {
-		name = newsfallout.5.b
+		name = news_event_ec.5.b
 		trigger = { TAG = SPP }
 	}
 }
 
 news_event = {
-	id = newsfallout.6
-	title = newsfallout.6.t
+	id = news_event_ec.6
+	title = news_event_ec.6.t
 	desc = {
-		text = newsfallout.6.d
+		text = news_event_ec.6.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.6.d.b
+		text = news_event_ec.6.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -215,28 +215,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.6.a
+		name = news_event_ec.6.a
 		trigger = { 
 			NOT = { TAG = NUE }
 		}
 	}
 	option = {
-		name = newsfallout.6.b
+		name = news_event_ec.6.b
 		trigger = { TAG = NUE }
 	}
 }
 
 news_event = {
-	id = newsfallout.8
-	title = newsfallout.8.t
+	id = news_event_ec.8
+	title = news_event_ec.8.t
 	desc = {
-		text = newsfallout.8.d
+		text = news_event_ec.8.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.8.d.b
+		text = news_event_ec.8.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -252,28 +252,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.8.a
+		name = news_event_ec.8.a
 		trigger = { 
 			NOT = { TAG = MEN }
 		}
 	}
 	option = {
-		name = newsfallout.8.b
+		name = news_event_ec.8.b
 		trigger = { TAG = MEN }
 	}
 }
 
 news_event = {
-	id = newsfallout.9
-	title = newsfallout.9.t
+	id = news_event_ec.9
+	title = news_event_ec.9.t
 	desc = {
-		text = newsfallout.9.d
+		text = news_event_ec.9.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.9.d.b
+		text = news_event_ec.9.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -289,28 +289,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.9.a
+		name = news_event_ec.9.a
 		trigger = { 
 			NOT = { TAG = MEN }
 		}
 	}
 	option = {
-		name = newsfallout.9.b
+		name = news_event_ec.9.b
 		trigger = { TAG = MEN }
 	}
 }
 
 news_event = {
-	id = newsfallout.10
-	title = newsfallout.10.t
+	id = news_event_ec.10
+	title = news_event_ec.10.t
 	desc = {
-		text = newsfallout.10.d
+		text = news_event_ec.10.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.10.d.b
+		text = news_event_ec.10.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -326,28 +326,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.10.a
+		name = news_event_ec.10.a
 		trigger = { 
 			NOT = { TAG = MEN }
 		}
 	}
 	option = {
-		name = newsfallout.10.b
+		name = news_event_ec.10.b
 		trigger = { TAG = MEN }
 	}
 }
 
 news_event = {
-	id = newsfallout.11
-	title = newsfallout.11.t
+	id = news_event_ec.11
+	title = news_event_ec.11.t
 	desc = {
-		text = newsfallout.11.d
+		text = news_event_ec.11.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.11.d.b
+		text = news_event_ec.11.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -363,28 +363,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.11.a
+		name = news_event_ec.11.a
 		trigger = { 
 			NOT = { TAG = USP }
 		}
 	}
 	option = {
-		name = newsfallout.11.b
+		name = news_event_ec.11.b
 		trigger = { TAG = USP }
 	}
 }
 
 news_event = {
-	id = newsfallout.13
-	title = newsfallout.13.t
+	id = news_event_ec.13
+	title = news_event_ec.13.t
 	desc = {
-		text = newsfallout.13.d
+		text = news_event_ec.13.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.13.d.b
+		text = news_event_ec.13.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -400,33 +400,33 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.13.a
+		name = news_event_ec.13.a
 		trigger = { 
 			NOT = { TAG = ESP }
 			NOT = { TAG = NUE }
 		}
 	}
 	option = {
-		name = newsfallout.13.b
+		name = news_event_ec.13.b
 		trigger = { TAG = ESP }
 	}
 	option = {
-		name = newsfallout.13.f
+		name = news_event_ec.13.f
 		trigger = { TAG = NUE }
 	}
 }
 
 news_event = {
-	id = newsfallout.14
-	title = newsfallout.14.t
+	id = news_event_ec.14
+	title = news_event_ec.14.t
 	desc = {
-		text = newsfallout.14.d
+		text = news_event_ec.14.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.14.d.b
+		text = news_event_ec.14.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -442,33 +442,33 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.14.a
+		name = news_event_ec.14.a
 		trigger = { 
 			NOT = { TAG = ESP }
 			NOT = { TAG = NUE }
 		}
 	}
 	option = {
-		name = newsfallout.14.b
+		name = news_event_ec.14.b
 		trigger = { TAG = ESP }
 	}
 	option = {
-		name = newsfallout.14.f
+		name = news_event_ec.14.f
 		trigger = { TAG = PIT }
 	}
 }
 
 news_event = {
-	id = newsfallout.15
-	title = newsfallout.15.t
+	id = news_event_ec.15
+	title = news_event_ec.15.t
 	desc = {
-		text = newsfallout.15.d
+		text = news_event_ec.15.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.15.d.b
+		text = news_event_ec.15.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -484,33 +484,33 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.15.a
+		name = news_event_ec.15.a
 		trigger = { 
 			NOT = { TAG = SBS }
 			NOT = { TAG = NUE }
 		}
 	}
 	option = {
-		name = newsfallout.15.b
+		name = news_event_ec.15.b
 		trigger = { TAG = SBS }
 	}
 	option = {
-		name = newsfallout.15.f
+		name = news_event_ec.15.f
 		trigger = { TAG = NUE }
 	}
 }
 
 news_event = {
-	id = newsfallout.16
-	title = newsfallout.16.t
+	id = news_event_ec.16
+	title = news_event_ec.16.t
 	desc = {
-		text = newsfallout.16.d
+		text = news_event_ec.16.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.16.d.b
+		text = news_event_ec.16.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -526,33 +526,33 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.16.a
+		name = news_event_ec.16.a
 		trigger = { 
 			NOT = { TAG = SBS }
 			NOT = { TAG = ESP }
 		}
 	}
 	option = {
-		name = newsfallout.16.b
+		name = news_event_ec.16.b
 		trigger = { TAG = SBS }
 	}
 	option = {
-		name = newsfallout.16.f
+		name = news_event_ec.16.f
 		trigger = { TAG = ESP }
 	}
 }
 
 news_event = {
-	id = newsfallout.17
-	title = newsfallout.17.t
+	id = news_event_ec.17
+	title = news_event_ec.17.t
 	desc = {
-		text = newsfallout.17.d
+		text = news_event_ec.17.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.17.d.b
+		text = news_event_ec.17.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -568,30 +568,30 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.17.a
+		name = news_event_ec.17.a
 		trigger = { 
 			NOT = { TAG = ESP }
 			NOT = { TAG = SBS }
 		}
 	}
 	option = {
-		name = newsfallout.17.b
+		name = news_event_ec.17.b
 		trigger = { TAG = ESP }
 		trigger = { TAG = SBS }
 	}
 }
 
 news_event = {
-	id = newsfallout.18
-	title = newsfallout.18.t
+	id = news_event_ec.18
+	title = news_event_ec.18.t
 	desc = {
-		text = newsfallout.18.d
+		text = news_event_ec.18.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.18.d.b
+		text = news_event_ec.18.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -607,28 +607,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.18.a
+		name = news_event_ec.18.a
 		trigger = { 
 			NOT = { TAG = NUE }
 		}
 	}
 	option = {
-		name = newsfallout.18.b
+		name = news_event_ec.18.b
 		trigger = { TAG = NUE }
 	}
 }
 
 news_event = {
-	id = newsfallout.19
-	title = newsfallout.19.t
+	id = news_event_ec.19
+	title = news_event_ec.19.t
 	desc = {
-		text = newsfallout.19.d
+		text = news_event_ec.19.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.19.d.b
+		text = news_event_ec.19.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -644,28 +644,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.19.a
+		name = news_event_ec.19.a
 		trigger = { 
 			NOT = { TAG = NUE }
 		}
 	}
 	option = {
-		name = newsfallout.19.b
+		name = news_event_ec.19.b
 		trigger = { TAG = NUE }
 	}
 }
 
 news_event = {
-	id = newsfallout.20
-	title = newsfallout.20.t
+	id = news_event_ec.20
+	title = news_event_ec.20.t
 	desc = {
-		text = newsfallout.20.d
+		text = news_event_ec.20.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.20.d.b
+		text = news_event_ec.20.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -681,28 +681,28 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.20.a
+		name = news_event_ec.20.a
 		trigger = { 
 			NOT = { TAG = INS }
 		}
 	}
 	option = {
-		name = newsfallout.20.b
+		name = news_event_ec.20.b
 		trigger = { TAG = INS }
 	}
 }
 
 news_event = {
-	id = newsfallout.21
-	title = newsfallout.21.t
+	id = news_event_ec.21
+	title = news_event_ec.21.t
 	desc = {
-		text = newsfallout.21.d
+		text = news_event_ec.21.d
 		trigger = {
 			NOT = { has_global_flag = GER_civil_war_end }
 		}
 	}
 	desc = {
-		text = newsfallout.21.d.b
+		text = news_event_ec.21.d.b
 		trigger = {
 			has_global_flag = GER_civil_war_end
 		}
@@ -718,23 +718,23 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.21.a
+		name = news_event_ec.21.a
 		trigger = { 
 			NOT = { TAG = INS }
 		}
 	}
 	option = {
-		name = newsfallout.21.b
+		name = news_event_ec.21.b
 		trigger = { TAG = INS }
 	}
 }
 
 news_event = {
-	id = newsfallout.26
-	title = newsfallout.26.t
+	id = news_event_ec.26
+	title = news_event_ec.26.t
 	is_triggered_only = yes
 	desc = {
-		text = newsfallout.26.d
+		text = news_event_ec.26.d
 		trigger = {
 		USP = {
 		has_country_flag = enclave_war
@@ -748,7 +748,7 @@ news_event = {
 	is_triggered_only = yes
 		
 	option = {
-		name = newsfallout.26.a
+		name = news_event_ec.26.a
 		trigger = { 
 			NOT = { tag = SBS 
 			        tag = RIV 
@@ -759,7 +759,7 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.26.b
+		name = news_event_ec.26.b
 		trigger = {
 		  OR = {
 			tag = SBS 
@@ -773,7 +773,7 @@ news_event = {
 	}
 	
 	option = {
-		name = newsfallout.26.c
+		name = news_event_ec.26.c
 		trigger = { TAG = ESP }
 		hidden effect = {
 		scoped_sound_effect = we_are_at_war

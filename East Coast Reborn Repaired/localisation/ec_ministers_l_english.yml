@@ -25,11 +25,11 @@
   stenly_armstrong_desc: "Stanley started in the government because he was a friend of the Lone Wanderer, which makes us doubt his qualifications a bit, but we need his skills..."
 
   officer_gomes: "Officer Gomez"
-  vault101_leadersecurity: "Head of Vault 101 Security"
+  USP_focus_leadersecurity: "Head of Vault 101 Security"
 
   officer_teylor: "Officer Taylor"
   officer_teylor_desc: "Officer Taylor is one of the oldest and most experienced Vault 101 Guards. We have a lot to learn from him."
-  vault101_security: "Vault 101 Security"
+  USP_focus_security: "Vault 101 Security"
 
   alien_mack: "Allen Mack"
   alien_mack_desc: "Allen Mack believes we should lock Vault 101 and let in no outsiders. His complaints are threatening the stability of Vault 101."

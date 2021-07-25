@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Sovet_focus
+	id = SOV_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = Sovetinfallout_1
+		id = SOV_focus_1
 		icon = GFX_goal_SOV_Start_1
 		cost = 7
 		x = 14
@@ -18,44 +18,44 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_1 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_1 entered"
 			}
 			country_event = { id = SOV_event.1 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_1 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_1 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_2
+		id = SOV_focus_2
 		icon = GFX_goal_SOV_Start_2
-		prerequisite = { focus = Sovetinfallout_1 }
-		relative_position_id = Sovetinfallout_1 
+		prerequisite = { focus = SOV_focus_1 }
+		relative_position_id = SOV_focus_1 
 		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_2 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_2 entered"
 			}
 			country_event = { id = SOV_event.2 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_2 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_2 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_3
+		id = SOV_focus_3
 		icon = GFX_goal_SOV_Start_3
-		relative_position_id = Sovetinfallout_2
+		relative_position_id = SOV_focus_2
 		cost = 7
 		prerequisite = {
-			focus = Sovetinfallout_2
+			focus = SOV_focus_2
 		}
 		x = 0
 		y = 1
@@ -63,41 +63,41 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_3 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_3 entered"
 			}
 			add_tech_bonus = { bonus = 0.5 uses = 2 category = industry }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_3 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_3 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_4
+		id = SOV_focus_4
 		icon = GFX_goal_SOV_Start_4
-		prerequisite = { focus = Sovetinfallout_3 }
-		relative_position_id = Sovetinfallout_3
+		prerequisite = { focus = SOV_focus_3 }
+		relative_position_id = SOV_focus_3
 		cost = 7
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_4 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_4 entered"
 			}
 			country_event = { id = SOV_event.3 }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_4 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_4 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_5
+		id = SOV_focus_5
 		icon = GFX_goal_SOV_Drunkyard
-		relative_position_id = Sovetinfallout_4
+		relative_position_id = SOV_focus_4
 		available = {
 			has_country_leader = {
 				id = 5800
@@ -112,23 +112,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_3 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_3 entered"
 			}
 			add_political_power = 100
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_3 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_3 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_6
+		id = SOV_focus_6
 		icon = GFX_goal_SOV_Drunkyard_Pro_Drink
-		relative_position_id = Sovetinfallout_5
+		relative_position_id = SOV_focus_5
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_5
+			focus = SOV_focus_5
 		}
 		x = 0
 		y = 1
@@ -136,22 +136,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_6 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_6 entered"
 			}
 			add_ideas = Alkogol_company
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_6 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_6 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_7
+		id = SOV_focus_7
 		icon = GFX_goal_SOV_Drunkyard_Army
-		relative_position_id = Sovetinfallout_6
+		relative_position_id = SOV_focus_6
 		prerequisite = {
-			focus = Sovetinfallout_6
+			focus = SOV_focus_6
 		}
 		cost = 45
 		x = -3
@@ -159,23 +159,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_7 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_7 entered"
 			}
 			army_experience = 10
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_7 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_7 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_8
+		id = SOV_focus_8
 		icon = GFX_goal_SOV_Drunkyard_Pivo
-		relative_position_id = Sovetinfallout_6
+		relative_position_id = SOV_focus_6
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_6
+			focus = SOV_focus_6
 		}
 		x = -1
 		y = 1
@@ -185,7 +185,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_9 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_9 entered"
 			}
 			1066 = {
 			    add_extra_state_shared_building_slots = 3
@@ -197,18 +197,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_9 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_9 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_9
+		id = SOV_focus_9
 		icon = GFX_goal_SOV_Drunkyard_Bottle
-		relative_position_id = Sovetinfallout_6
+		relative_position_id = SOV_focus_6
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_6
+			focus = SOV_focus_6
 		}
 		x = 1
 		y = 1
@@ -237,11 +237,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_10
+		id = SOV_focus_10
 		icon = GFX_goal_SOV_Drunkyard_Science
-		prerequisite = {focus = Sovetinfallout_6}
+		prerequisite = {focus = SOV_focus_6}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Sovetinfallout_6
+		relative_position_id = SOV_focus_6
 		x = 3
 		y = 1
 		cost = 45
@@ -251,92 +251,92 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_11
+		id = SOV_focus_11
 		icon = GFX_goal_SOV_Drunkyard_Science_Work
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_10
+			focus = SOV_focus_10
 		}
 		prerequisite = {
-			focus = Sovetinfallout_9
+			focus = SOV_focus_9
 		}
 		prerequisite = {
-			focus = Sovetinfallout_8
+			focus = SOV_focus_8
 		}
 		prerequisite = {
-			focus = Sovetinfallout_7
+			focus = SOV_focus_7
 		}
 		x = -1
 		y = 1
-		relative_position_id = Sovetinfallout_10
+		relative_position_id = SOV_focus_10
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_11 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_11 entered"
 			}
 			add_ideas = alkoholhim
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_11 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_11 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_12
+		id = SOV_focus_12
 		icon = GFX_goal_SOV_Drunkyard_FREE
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_10
+			focus = SOV_focus_10
 		}
 		prerequisite = {
-			focus = Sovetinfallout_9
+			focus = SOV_focus_9
 		}
 		prerequisite = {
-			focus = Sovetinfallout_8
+			focus = SOV_focus_8
 		}
 		prerequisite = {
-			focus = Sovetinfallout_7
+			focus = SOV_focus_7
 		}
 		x = -1
 		y = 1
-		relative_position_id = Sovetinfallout_9
+		relative_position_id = SOV_focus_9
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_12 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_12 entered"
 			}
 			add_ideas = alkoholforslujba
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_12 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_12 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_13
+		id = SOV_focus_13
 		icon = GFX_goal_SOV_Drunkyard_Science_Sober
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_10
+			focus = SOV_focus_10
 		}
 		prerequisite = {
-			focus = Sovetinfallout_9
+			focus = SOV_focus_9
 		}
 		prerequisite = {
-			focus = Sovetinfallout_8
+			focus = SOV_focus_8
 		}
 		prerequisite = {
-			focus = Sovetinfallout_7
+			focus = SOV_focus_7
 		}
 		x = -1
 		y = 1
-		relative_position_id = Sovetinfallout_8
+		relative_position_id = SOV_focus_8
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_13 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_13 entered"
 			}
 			add_tech_bonus = {
 				name = vault_weapons
@@ -346,15 +346,15 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_13 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_13 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_14
+		id = SOV_focus_14
 		icon = GFX_goal_SOV_Drunkyard_Victoria
-		relative_position_id = Sovetinfallout_12
+		relative_position_id = SOV_focus_12
 		cost = 45
 		available = {
 			
@@ -363,13 +363,13 @@ focus_tree = {
 			
 		}
 		prerequisite = {
-			focus = Sovetinfallout_11
+			focus = SOV_focus_11
 		}
 		prerequisite = {
-			focus = Sovetinfallout_12
+			focus = SOV_focus_12
 		}
 		prerequisite = {
-			focus = Sovetinfallout_13
+			focus = SOV_focus_13
 		}
 		x = 0
 		y = 1
@@ -385,11 +385,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_15
+		id = SOV_focus_15
 		icon = GFX_goal_SOV_Drunkyard_Will_People
 		cost = 45
-		prerequisite = { focus = Sovetinfallout_14 }
-		relative_position_id = Sovetinfallout_14
+		prerequisite = { focus = SOV_focus_14 }
+		relative_position_id = SOV_focus_14
 		x = 0
 		y = 1
 
@@ -425,26 +425,26 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_16
+		id = SOV_focus_16
 		icon = GFX_goal_SOV_Drunkyard_Soldier
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_15
+			focus = SOV_focus_15
 		}
 		x = -2
 		y = 1
-		relative_position_id = Sovetinfallout_15
+		relative_position_id = SOV_focus_15
 		completion_reward = {
 			add_manpower = 1200
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_17
+		id = SOV_focus_17
 		icon = GFX_goal_SOV_Drunkyard_Mil
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_15
+			focus = SOV_focus_15
 		}
 		available = {
 			1064 = { is_owned_and_controlled_by = ROOT }
@@ -452,7 +452,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = Sovetinfallout_15
+		relative_position_id = SOV_focus_15
 		completion_reward = {
 			1064 = {
 			    add_extra_state_shared_building_slots = 2
@@ -474,11 +474,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id =  Sovetinfallout_18
+		id =  SOV_focus_18
 		icon = GFX_goal_SOV_Drunkyard_Civ
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_15
+			focus = SOV_focus_15
 		}
 		available = {
 			1064 = { is_owned_and_controlled_by = ROOT }
@@ -486,11 +486,11 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		relative_position_id = Sovetinfallout_15
+		relative_position_id = SOV_focus_15
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_18 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_18 entered"
 			}
 			1064 = {
 				add_extra_state_shared_building_slots = 2
@@ -510,19 +510,19 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_18 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_18 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_19
+		id = SOV_focus_19
 		icon = GFX_goal_SOV_Drunkyard_Battle
 		cost = 45
-		prerequisite = { focus = Sovetinfallout_17 }
-		prerequisite = { focus = Sovetinfallout_18 }
-		prerequisite = { focus = Sovetinfallout_16 }
-		relative_position_id = Sovetinfallout_17
+		prerequisite = { focus = SOV_focus_17 }
+		prerequisite = { focus = SOV_focus_18 }
+		prerequisite = { focus = SOV_focus_16 }
+		relative_position_id = SOV_focus_17
 		x = 0
 		y = 1
 
@@ -554,9 +554,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_20
+		id = SOV_focus_20
 		icon = GFX_goal_SOV_Commie
-		relative_position_id = Sovetinfallout_4
+		relative_position_id = SOV_focus_4
 		available = {
 			has_country_leader = {
 				id = 5808
@@ -571,7 +571,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_20 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_20 entered"
 			}
 			add_political_power = 100
 			if = {
@@ -587,18 +587,18 @@ focus_tree = {
             }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_20 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_20 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_21
+		id = SOV_focus_21
 		icon = GFX_goal_SOV_Commie_Anti_Drink
-		relative_position_id = Sovetinfallout_20
+		relative_position_id = SOV_focus_20
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_20
+			focus = SOV_focus_20
 		}
 		x = 0
 		y = 1
@@ -606,22 +606,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_20 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_20 entered"
 			}
 			add_ideas = antiAlkogol_company
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_20 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_20 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_22
+		id = SOV_focus_22
 		icon = GFX_goal_SOV_Commie_Army
-		relative_position_id = Sovetinfallout_21
+		relative_position_id = SOV_focus_21
 		prerequisite = {
-			focus = Sovetinfallout_21
+			focus = SOV_focus_21
 		}
 		cost = 45
 		x = -3
@@ -629,28 +629,28 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_22 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_22 entered"
 			}
 			army_experience = 25
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_22 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_22 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id =  Sovetinfallout_23
+		id =  SOV_focus_23
 		icon = GFX_goal_SOV_Commie_Work
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_21
+			focus = SOV_focus_21
 		}
 		available = {
 		}
 		x = -1
 		y = 1
-		relative_position_id = Sovetinfallout_21
+		relative_position_id = SOV_focus_21
 		completion_reward = {
 		    add_political_power = 100
 			add_ideas = tuneadci	
@@ -658,22 +658,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id =  Sovetinfallout_24
+		id =  SOV_focus_24
 		icon = GFX_goal_SOV_Commie_Industry
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_21
+			focus = SOV_focus_21
 		}
 		available = {
 
 		}
 		x = 1
 		y = 1
-		relative_position_id = Sovetinfallout_21
+		relative_position_id = SOV_focus_21
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_24 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_24 entered"
 			}
 			1066 = {
 				add_extra_state_shared_building_slots = 4
@@ -685,28 +685,28 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_24 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_24 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id =  Sovetinfallout_25
+		id =  SOV_focus_25
 		icon = GFX_goal_SOV_Commie_Moryaki
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_21
+			focus = SOV_focus_21
 		}
 		available = {
 
 		}
 		x = 3
 		y = 1
-		relative_position_id = Sovetinfallout_21
+		relative_position_id = SOV_focus_21
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_24 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_24 entered"
 			}
 			1066 = {
 			    add_extra_state_shared_building_slots = 3
@@ -718,32 +718,32 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_24 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_24 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id =  Sovetinfallout_26
+		id =  SOV_focus_26
 		icon = GFX_goal_SOV_Commie_Flag
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_22
+			focus = SOV_focus_22
 		}
 		prerequisite = {
-			focus = Sovetinfallout_23
+			focus = SOV_focus_23
 		}
 		prerequisite = {
-			focus = Sovetinfallout_24
+			focus = SOV_focus_24
 		}
 		prerequisite = {
-			focus = Sovetinfallout_25
+			focus = SOV_focus_25
 		}
 		available = {
 		}
 		x = 3
 		y = 1
-		relative_position_id = Sovetinfallout_22
+		relative_position_id = SOV_focus_22
 		completion_reward = {
 		    add_political_power = 150	
 			add_stability = 0.15
@@ -751,9 +751,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_27
+		id = SOV_focus_27
 		icon = GFX_goal_SOV_Commie_Restoration
-		relative_position_id = Sovetinfallout_26
+		relative_position_id = SOV_focus_26
 		cost = 45
 		available = {
 			AAG = { exists = yes }
@@ -762,7 +762,7 @@ focus_tree = {
 			AAG = { exists = no }
 		}
 		prerequisite = {
-			focus = Sovetinfallout_26
+			focus = SOV_focus_26
 		}
 		x = 0
 		y = 1
@@ -776,11 +776,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_28
+		id = SOV_focus_28
 		icon = GFX_goal_SOV_Commie_Secret
-		prerequisite = {focus = Sovetinfallout_27}
+		prerequisite = {focus = SOV_focus_27}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Sovetinfallout_27
+		relative_position_id = SOV_focus_27
 		x = 1
 		y = 1
 		cost = 45
@@ -791,11 +791,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_29
+		id = SOV_focus_29
 		icon = GFX_goal_SOV_Commie_Secret
-		prerequisite = {focus = Sovetinfallout_27}
+		prerequisite = {focus = SOV_focus_27}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Sovetinfallout_27
+		relative_position_id = SOV_focus_27
 		x = -1
 		y = 1
 		cost = 45
@@ -807,12 +807,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_30
+		id = SOV_focus_30
 		icon = GFX_goal_SOV_Commie_Vic
 		cost = 45
-		prerequisite = { focus = Sovetinfallout_28 }
-		prerequisite = { focus = Sovetinfallout_29 }
-		relative_position_id = Sovetinfallout_29
+		prerequisite = { focus = SOV_focus_28 }
+		prerequisite = { focus = SOV_focus_29 }
+		relative_position_id = SOV_focus_29
 		x = 1
 		y = 1
 
@@ -844,11 +844,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_31
+		id = SOV_focus_31
 		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = Sovetinfallout_21
+		relative_position_id = SOV_focus_21
 		available = {
-			has_completed_focus = Sovetinfallout_21
+			has_completed_focus = SOV_focus_21
 		}
 		cost = 45
 		x = 6
@@ -857,23 +857,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_32 entered"
 			}
 			add_political_power = 150
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_32 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_32
+		id = SOV_focus_32
 		icon = GFX_goal_generic_fortify_city
-		relative_position_id = Sovetinfallout_31
+		relative_position_id = SOV_focus_31
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_31
+			focus = SOV_focus_31
 		}
 		x = -1
 		y = 1
@@ -883,7 +883,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_32 entered"
 			}
 			1066 = {
 			    add_extra_state_shared_building_slots = 3
@@ -895,18 +895,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_32 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_33
+		id = SOV_focus_33
 		icon = GFX_goal_generic_construct_civilian
-		relative_position_id = Sovetinfallout_31
+		relative_position_id = SOV_focus_31
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_31
+			focus = SOV_focus_31
 		}
 		x = 1
 		y = 1
@@ -916,7 +916,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_33 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_33 entered"
 			}
 			1066 = {
 				add_extra_state_shared_building_slots = 2
@@ -928,32 +928,32 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_33 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_33 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_34
+		id = SOV_focus_34
 		icon = GFX_goal_generic_airbases_focus
-		relative_position_id = Sovetinfallout_33
+		relative_position_id = SOV_focus_33
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_33
+			focus = SOV_focus_33
 		}
 		prerequisite = {
-			focus = Sovetinfallout_32
+			focus = SOV_focus_32
 		}
 		x = -1
 		y = 1
 		available = {
 			1066 = { is_owned_and_controlled_by = SOV }
-			has_completed_focus = Sovetinfallout_28
+			has_completed_focus = SOV_focus_28
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_34 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_34 entered"
 			}
 			1066 = {
 				add_building_construction = {
@@ -965,25 +965,25 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_34 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_34 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_35
+		id = SOV_focus_35
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = {
-			focus = Sovetinfallout_33
+			focus = SOV_focus_33
 		}
 		prerequisite = {
-			focus = Sovetinfallout_32
+			focus = SOV_focus_32
 		}
 		available = {
 			1066 = { is_controlled_by = SOV } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = Sovetinfallout_33
+		relative_position_id = SOV_focus_33
 		x = -3
 		y = 1
 		completion_reward = {
@@ -993,20 +993,20 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_36
+		id = SOV_focus_36
 		icon = GFX_goal_generic_supplies_focus
 		available = {
 			1066 = { is_owned_and_controlled_by = SOV }
-			has_completed_focus = Sovetinfallout_29
+			has_completed_focus = SOV_focus_29
 		}
 		prerequisite = {
-			focus = Sovetinfallout_33
+			focus = SOV_focus_33
 		}
 		prerequisite = {
-			focus = Sovetinfallout_32
+			focus = SOV_focus_32
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Sovetinfallout_33
+		relative_position_id = SOV_focus_33
 		x = 1
 		y = 1
 		cost = 45
@@ -1016,16 +1016,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_37
+		id = SOV_focus_37
 		icon = GFX_goal_SOV_Commie_Capital
-		prerequisite = { focus = Sovetinfallout_30 }
+		prerequisite = { focus = SOV_focus_30 }
 		available = {
 			AAG = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
 		ai_will_do = { factor = 12 } 
-		relative_position_id = Sovetinfallout_30
+		relative_position_id = SOV_focus_30
 		x = 0
 		y = 1
 		cost = 45
@@ -1043,11 +1043,11 @@ focus_tree = {
 	}
 	
 		focus = {
-		id = Sovetinfallout_38
+		id = SOV_focus_38
 		icon = GFX_goal_SOV_Commie_Expedition
 		cost = 45
-		prerequisite = { focus = Sovetinfallout_37 }
-		relative_position_id = Sovetinfallout_37
+		prerequisite = { focus = SOV_focus_37 }
+		relative_position_id = SOV_focus_37
 		x = 0
 		y = 1
 
@@ -1079,15 +1079,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_39
+		id = SOV_focus_39
 		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = Sovetinfallout_5
-		#prerequisite = { focus = Sovetinfallout_5 }
+		relative_position_id = SOV_focus_5
+		#prerequisite = { focus = SOV_focus_5 }
 		ai_will_do = {
 			factor = 50
 		}
 		available = {
-			has_completed_focus = Sovetinfallout_6
+			has_completed_focus = SOV_focus_6
 		}
 		cost = 45
 		x = -7
@@ -1096,28 +1096,28 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_32 entered"
 			}
 			add_political_power = 150
 			add_manpower = 3000
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_32 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_32 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_40
+		id = SOV_focus_40
 		icon = GFX_goal_generic_supplies_focus
 		prerequisite = {
-			focus = Sovetinfallout_39
+			focus = SOV_focus_39
 		}
 		available = {
 			1066 = { is_controlled_by = SOV } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = Sovetinfallout_39
+		relative_position_id = SOV_focus_39
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1127,12 +1127,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_41
+		id = SOV_focus_41
 		icon = GFX_goal_generic_fortify_city
-		relative_position_id = Sovetinfallout_39
+		relative_position_id = SOV_focus_39
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_39
+			focus = SOV_focus_39
 		}
 		x = 1
 		y = 1
@@ -1142,7 +1142,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_40 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_40 entered"
 			}
 			1066 = {
 			    add_extra_state_shared_building_slots = 4
@@ -1154,21 +1154,21 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_40 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_40 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_42
+		id = SOV_focus_42
 		icon = GFX_goal_generic_construct_civilian
-		relative_position_id = Sovetinfallout_41
+		relative_position_id = SOV_focus_41
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_41
+			focus = SOV_focus_41
 		}
 		prerequisite = {
-			focus = Sovetinfallout_40
+			focus = SOV_focus_40
 		}
 		x = -1
 		y = 1
@@ -1178,7 +1178,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_33 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_33 entered"
 			}
 			1066 = {
 				add_extra_state_shared_building_slots = 3
@@ -1190,18 +1190,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_33 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_33 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_43
+		id = SOV_focus_43
 		icon = GFX_goal_SOV_Drunkyard_Delirium
-		relative_position_id = Sovetinfallout_19
+		relative_position_id = SOV_focus_19
 		cost = 45
 		prerequisite = {
-			focus = Sovetinfallout_19
+			focus = SOV_focus_19
 		}
 		x = 0
 		y = 1
@@ -1209,22 +1209,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_42 entered"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_42 entered"
 			}
 			add_ideas = belogorachka
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Sovetinfallout_42 exited"
+				log = "[GetDateText]: [Root.GetName] SOV_focus_42 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Sovetinfallout_44
+		id = SOV_focus_44
 		icon = GFX_goal_SOV_Drunkyard_Faction
-		relative_position_id = Sovetinfallout_19
+		relative_position_id = SOV_focus_19
 		prerequisite = {
-			focus = Sovetinfallout_43
+			focus = SOV_focus_43
 		}
 		x = 0
 		y = 2
@@ -1258,11 +1258,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_45
+		id = SOV_focus_45
 		icon = GFX_goal_SOV_Commie_Faction
-		relative_position_id = Sovetinfallout_38
+		relative_position_id = SOV_focus_38
 		prerequisite = {
-			focus = Sovetinfallout_38
+			focus = SOV_focus_38
 		}
 		x = 0
 		y = 1
@@ -1296,16 +1296,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_46
+		id = SOV_focus_46
 		icon = GFX_goal_SOV_Commie_Restoration
 		available = {
 			1061 = { is_controlled_by = SOV } # NAVARRO
 			1062 = { is_controlled_by = SOV } # NAVARRO
 		}
 		prerequisite = {
-		focus = Sovetinfallout_45
+		focus = SOV_focus_45
 		}
-		relative_position_id = Sovetinfallout_45
+		relative_position_id = SOV_focus_45
 		x = -1
 		y = 1
 		
@@ -1342,16 +1342,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_47
+		id = SOV_focus_47
 		icon = GFX_goal_SOV_Commie_Restoration
 		available = {
 			1056 = { is_controlled_by = SOV } # NAVARRO
 			1057 = { is_controlled_by = SOV } # NAVARRO
 		}
 		prerequisite = {
-		focus = Sovetinfallout_45
+		focus = SOV_focus_45
 		}
-		relative_position_id = Sovetinfallout_46
+		relative_position_id = SOV_focus_46
 		x = 2
 		y = 0
 		
@@ -1392,11 +1392,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_48
+		id = SOV_focus_48
 		icon = GFX_goal_SOV_Commie_Secret
-		relative_position_id = Sovetinfallout_46
+		relative_position_id = SOV_focus_46
 		prerequisite = {
-			focus = Sovetinfallout_46
+			focus = SOV_focus_46
 		}
 		x = 0
 		y = 1
@@ -1432,11 +1432,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_49
+		id = SOV_focus_49
 		icon = GFX_goal_SOV_Commie_Secret
-		relative_position_id = Sovetinfallout_47
+		relative_position_id = SOV_focus_47
 		prerequisite = {
-			focus = Sovetinfallout_47
+			focus = SOV_focus_47
 		}
 		x = 0
 		y = 1
@@ -1475,11 +1475,11 @@ focus_tree = {
 	
 	
 	focus = {
-		id = Sovetinfallout_51
+		id = SOV_focus_51
 		icon = GFX_goal_SOV_Drunkyard_Battle
-		relative_position_id = Sovetinfallout_43
+		relative_position_id = SOV_focus_43
 		prerequisite = {
-			focus = Sovetinfallout_43
+			focus = SOV_focus_43
 		}
 		x = 0
 		y = 1
@@ -1522,11 +1522,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_52
+		id = SOV_focus_52
 		icon = GFX_goal_SOV_Drunkyard_Battle
-		relative_position_id = Sovetinfallout_51
+		relative_position_id = SOV_focus_51
 		prerequisite = {
-			focus = Sovetinfallout_51
+			focus = SOV_focus_51
 		}
 		x = 0
 		y = 1
@@ -1566,11 +1566,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_53
+		id = SOV_focus_53
 		icon = GFX_goal_SOV_Drunkyard_Battle
-		relative_position_id = Sovetinfallout_51
+		relative_position_id = SOV_focus_51
 		prerequisite = {
-			focus = Sovetinfallout_51
+			focus = SOV_focus_51
 		}
 		x = -2
 		y = 1
@@ -1608,11 +1608,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Sovetinfallout_54
+		id = SOV_focus_54
 		icon = GFX_goal_SOV_Drunkyard_Battle
-		relative_position_id = Sovetinfallout_51
+		relative_position_id = SOV_focus_51
 		prerequisite = {
-			focus = Sovetinfallout_51
+			focus = SOV_focus_51
 		}
 		x = 2
 		y = 1

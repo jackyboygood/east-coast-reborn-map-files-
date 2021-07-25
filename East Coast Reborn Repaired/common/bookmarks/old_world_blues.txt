@@ -832,8 +832,8 @@ bookmarks = {
 				bunkerblues
 				}
 				focuses = {
-				Stolibrother_17
-				Stolibrother_36
+				SBS_focus_17
+				SBS_focus_36
 				elder_maxon
 				}
 			}
@@ -858,9 +858,9 @@ bookmarks = {
 	            utopia
 				}
 				focuses = {
-				vault101_15
-				vault101_52
-				vault101_44
+				USP_focus_15
+				USP_focus_52
+				USP_focus_44
 				}
 			}
 			
@@ -870,9 +870,9 @@ bookmarks = {
 				ideas = {
 				}
 				focuses = {
-				Minitmen_19
-				Minitmen_51
-				Minitmen_23
+				MEN_focus_19
+				MEN_focus_51
+				MEN_focus_23
 				}
 			}
 			
@@ -883,9 +883,9 @@ bookmarks = {
 		        sinth_command_from_afar 
 				}
 				focuses = {
-				institut_6
-				institut_5
-				institut_19
+				INS_focus_6
+				INS_focus_5
+				INS_focus_19
 				}
 			}
 			
@@ -909,9 +909,9 @@ bookmarks = {
                 detskoepravlenie
 				}
 				focuses = {
-				lamplayt_12
-				lamplayt_124
-				lamplayt_69
+				LIT_focus_12
+				LIT_focus_124
+				LIT_focus_69
 				}
 			}
 			
@@ -922,9 +922,9 @@ bookmarks = {
 				ideas = {
 				}
 				focuses = {
-				Deyv_39
-				Deyv_31 
-				Deyv_40
+				DEV_focus_39
+				DEV_focus_31 
+				DEV_focus_40
 				}
 			}
 			
@@ -935,9 +935,9 @@ bookmarks = {
 				ideas = {
 				}
 				focuses = {
-				Sovetinfallout_1
-				Sovetinfallout_5
-				Sovetinfallout_20
+				SOV_focus_1
+				SOV_focus_5
+				SOV_focus_20
 				}
 			}
 			

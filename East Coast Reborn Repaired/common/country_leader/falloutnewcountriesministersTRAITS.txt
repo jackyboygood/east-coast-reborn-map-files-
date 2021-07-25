@@ -66,7 +66,7 @@ leader_traits = {
 		}
 	}
 	
-	vault101_leadersecurity = {
+	USP_focus_leadersecurity = {
 		sprite = 14
 		experience_gain_army = 0.12
 		conscription = 0.05
@@ -76,7 +76,7 @@ leader_traits = {
 		}
 	}
 	
-	vault101_security = {
+	USP_focus_security = {
 		random = no
 		equipment_bonus = {
 			laser_equipment = {

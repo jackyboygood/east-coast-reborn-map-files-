@@ -43,7 +43,7 @@ country_event = {
 			add_political_power = 200
 		    add_manpower = -750
 			hidden_effect = {
-				country_event = { days = 3 id = newsfallout.4 }	
+				country_event = { days = 3 id = news_event_ec.4 }	
 			}
 		}
 	}
@@ -55,7 +55,7 @@ country_event = {
 			add_political_power = -50
 		    add_manpower = -220
 			hidden_effect = {
-				country_event = { days = 3 id = newsfallout.4 }	
+				country_event = { days = 3 id = news_event_ec.4 }	
 			}
 		}
 	}
@@ -78,7 +78,7 @@ country_event = {
 		    add_manpower = 500
 			hidden_effect = {
 			    load_oob = ENY_2275
-				country_event = { days = 7 id = newsfallout.13 }	
+				country_event = { days = 7 id = news_event_ec.13 }	
 			}
 		}
 	}
@@ -200,7 +200,7 @@ country_event = {
 			add_political_power = 100
 		    add_manpower = 1500
 			hidden_effect = {
-				country_event = { days = 7 id = newsfallout.14 }	
+				country_event = { days = 7 id = news_event_ec.14 }	
 				
 			}
 		}

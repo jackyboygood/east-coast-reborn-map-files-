@@ -1,5 +1,5 @@
 focus_tree = {
-	id = stolich_brother
+	id = SBS_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_1
+		id = SBS_focus_1
 		icon = GFX_goal_SBS_GNR
 		x = 15
 		y = 1
@@ -21,10 +21,10 @@ focus_tree = {
     }
 
     focus = {
-		id = Stolibrother_2
+		id = SBS_focus_2
 		icon = GFX_goal_SBS_Wasteland_Prop
-		prerequisite = { focus = Stolibrother_1 }
-		relative_position_id = Stolibrother_1
+		prerequisite = { focus = SBS_focus_1 }
+		relative_position_id = SBS_focus_1
 		x = 0
 		y = 1
 		cost = 7
@@ -47,10 +47,10 @@ focus_tree = {
 	
 	
 	focus = {
-		id = Stolibrother_3
+		id = SBS_focus_3
 		icon = GFX_goal_SBS_Shooting
-		prerequisite = { focus = Stolibrother_2 }
-		relative_position_id = Stolibrother_2
+		prerequisite = { focus = SBS_focus_2 }
+		relative_position_id = SBS_focus_2
 		x = 0
 		y = 1
 		
@@ -91,12 +91,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_4
+		id = SBS_focus_4
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
-		relative_position_id = Stolibrother_3
+		relative_position_id = SBS_focus_3
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_3
+			focus = SBS_focus_3
 		}
 		x = -8
 		y = 1
@@ -104,23 +104,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_4 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_4 entered"
 			}
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_4 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_4 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_5
+		id = SBS_focus_5
 		icon = GFX_goal_generic_metal_focus
-		relative_position_id = Stolibrother_4
+		relative_position_id = SBS_focus_4
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_4
+			focus = SBS_focus_4
 		}
 		x = -2
 		y = 1
@@ -128,25 +128,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_5 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_5 entered"
 			}
 			capital_scope = {
 				add_resource = { type = metal amount = 10 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_5 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_5 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_6
+		id = SBS_focus_6
 		icon = GFX_goal_generic_electricity_focus
-		relative_position_id = Stolibrother_4
+		relative_position_id = SBS_focus_4
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_4
+			focus = SBS_focus_4
 		}
 		x = 0
 		y = 1
@@ -154,25 +154,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_6 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_6 entered"
 			}
 			capital_scope = {
 				add_resource = { type = energy amount = 10 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_6 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_6 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_7
+		id = SBS_focus_7
 		icon = GFX_goal_generic_electronics_focus
-		relative_position_id = Stolibrother_4
+		relative_position_id = SBS_focus_4
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_4
+			focus = SBS_focus_4
 		}
 		x = 2
 		y = 1
@@ -180,31 +180,31 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_7 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_7 entered"
 			}
 			capital_scope = {
 				add_resource = { type = circuitry amount = 10 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_7 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_7 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_8
+		id = SBS_focus_8
 		icon = GFX_goal_generic_advanced_technology_focus
-		relative_position_id = Stolibrother_5
+		relative_position_id = SBS_focus_5
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_5
+			focus = SBS_focus_5
 		}
 		prerequisite = {
-			focus = Stolibrother_6
+			focus = SBS_focus_6
 		}
 		prerequisite = {
-			focus = Stolibrother_7
+			focus = SBS_focus_7
 		}
 		x = 0
 		y = 1
@@ -212,31 +212,31 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_8 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_8 entered"
 			}
 			capital_scope = {
 				add_resource = { type = advanced amount = 6 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_8 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_8 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_9
+		id = SBS_focus_9
 		icon = GFX_goal_generic_fuel_focus
-		relative_position_id = Stolibrother_7
+		relative_position_id = SBS_focus_7
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_5
+			focus = SBS_focus_5
 		}
 		prerequisite = {
-			focus = Stolibrother_6
+			focus = SBS_focus_6
 		}
 		prerequisite = {
-			focus = Stolibrother_7
+			focus = SBS_focus_7
 		}
 		x = 0
 		y = 1
@@ -244,25 +244,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_9 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_9 entered"
 			}
 			capital_scope = {
 				add_resource = { type = energy amount = 8 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_9 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_9 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_10
+		id = SBS_focus_10
 		icon = GFX_goal_generic_BOS_focus_combined_operations
-		relative_position_id = Stolibrother_3
+		relative_position_id = SBS_focus_3
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_3
+			focus = SBS_focus_3
 		}
 		x = 8
 		y = 1
@@ -270,23 +270,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_10 entered"
 			}
 			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_10 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_11
+		id = SBS_focus_11
 		icon = GFX_goal_generic_BOS_focus_t45d_production
-		relative_position_id = Stolibrother_10
+		relative_position_id = SBS_focus_10
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_10
+			focus = SBS_focus_10
 		}
 		x = -1
 		y = 1
@@ -294,23 +294,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_11 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_11 entered"
 			}
 			add_ideas = genericbossteellegions
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_11 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_11 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_12
+		id = SBS_focus_12
 		icon = GFX_goal_generic_power_armour_raider_3
-		relative_position_id = Stolibrother_10
+		relative_position_id = SBS_focus_10
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_10
+			focus = SBS_focus_10
 		}
 		x = 1
 		y = 1
@@ -318,23 +318,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_12 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_12 entered"
 			}
 			add_manpower = 500
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_12 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_12 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_13
+		id = SBS_focus_13
 		icon = GFX_goal_generic_BoS_diplomatic_focus
-		relative_position_id = Stolibrother_11
+		relative_position_id = SBS_focus_11
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_11
+			focus = SBS_focus_11
 		}
 		x = 0
 		y = 1
@@ -342,23 +342,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_13 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_13 entered"
 			}
 			add_manpower = 210
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_13 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_13 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_14
+		id = SBS_focus_14
 		icon = GFX_goal_generic_f76_player
-		relative_position_id = Stolibrother_12
+		relative_position_id = SBS_focus_12
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_12
+			focus = SBS_focus_12
 		}
 		x = 0
 		y = 1
@@ -366,23 +366,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_14 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_14 entered"
 			}
 			add_ideas = genericbosfleshbeforesteel
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_14 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_14 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_15
+		id = SBS_focus_15
 		icon = GFX_goal_generic_BOS_focus_t45d_production
-		relative_position_id = Stolibrother_13
+		relative_position_id = SBS_focus_13
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_13
+			focus = SBS_focus_13
 		}
 		x = 0
 		y = 1
@@ -390,7 +390,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_15 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_15 entered"
 			}
 			
 			add_equipment_to_stockpile = {
@@ -401,18 +401,18 @@ focus_tree = {
 			
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_15 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_15 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_16
+		id = SBS_focus_16
 		icon = GFX_goal_generic_common_firearms_focus
-		relative_position_id = Stolibrother_14
+		relative_position_id = SBS_focus_14
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_14
+			focus = SBS_focus_14
 		}
 		x = 0
 		y = 1
@@ -420,7 +420,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_16 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_16 entered"
 			}
 			add_equipment_to_stockpile = {
 				type = energy_equipment_2
@@ -459,16 +459,16 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_16 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_16 exited"
 			}
 		}
 	}
 	
     focus = {
-		id = Stolibrother_17
+		id = SBS_focus_17
 		icon = GFX_goal_SBS_Elder_Lyons
-		prerequisite = { focus = Stolibrother_3 }
-		relative_position_id = Stolibrother_3
+		prerequisite = { focus = SBS_focus_3 }
+		relative_position_id = SBS_focus_3
 		x = 0
 		y = 1
 
@@ -503,12 +503,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_18
+		id = SBS_focus_18
 		icon = GFX_goal_sbs_scientist
-		prerequisite = {focus = Stolibrother_8}
-		prerequisite = {focus = Stolibrother_9}
+		prerequisite = {focus = SBS_focus_8}
+		prerequisite = {focus = SBS_focus_9}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Stolibrother_8
+		relative_position_id = SBS_focus_8
 		x = 2
 		y = 1
 		cost = 45
@@ -518,10 +518,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_19
+		id = SBS_focus_19
 		icon = GFX_goal_SBS_Mutant
-		prerequisite = { focus = Stolibrother_17 }
-		relative_position_id = Stolibrother_17
+		prerequisite = { focus = SBS_focus_17 }
+		relative_position_id = SBS_focus_17
 		x = 0
 		y = 1
 		
@@ -562,12 +562,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_20
+		id = SBS_focus_20
 		icon = GFX_goal_SBS_Wasteland_Help
-		relative_position_id = Stolibrother_19
+		relative_position_id = SBS_focus_19
 		cost = 60
 		prerequisite = {
-			focus = Stolibrother_19
+			focus = SBS_focus_19
 		}
 		x = -1
 		y = 1
@@ -583,23 +583,23 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_20 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_20 entered"
 			}
 			add_ideas = mojave_help
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_20 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_20 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_21
+		id = SBS_focus_21
 		icon = GFX_goal_generic_BOS_focus_t51b_production
-		relative_position_id = Stolibrother_19
+		relative_position_id = SBS_focus_19
 		cost = 60
 		prerequisite = {
-			focus = Stolibrother_19
+			focus = SBS_focus_19
 		}
 		x = 1
 		y = 1
@@ -616,24 +616,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_21 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_21 entered"
 			}
 			add_stability = 0.1
 			add_war_support = 0.1
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_21 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_21 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Stolibrother_22
+		id = SBS_focus_22
 		icon = GFX_goal_Newyorkbroth1
 		cost = 45
 		available = {
 		}
-		relative_position_id = Stolibrother_4
+		relative_position_id = SBS_focus_4
 		x = 0
 		y = 5
 		
@@ -642,7 +642,7 @@ focus_tree = {
 		}
 
 		available = {
-		has_completed_focus = Stolibrother_17
+		has_completed_focus = SBS_focus_17
 		}
 
 
@@ -666,12 +666,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_23
+		id = SBS_focus_23
 		icon = GFX_goal_Newyorkbroth
-		relative_position_id = Stolibrother_22
+		relative_position_id = SBS_focus_22
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_22
+			focus = SBS_focus_22
 		}
 		available = {
 		1036 = { is_controlled_by = NBS } #do we actually own it right now?
@@ -692,12 +692,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_24
+		id = SBS_focus_24
 		icon = GFX_goal_Newyorkbroth2
-		relative_position_id = Stolibrother_22
+		relative_position_id = SBS_focus_22
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_22
+			focus = SBS_focus_22
 		}
 		available = {
 		1036 = { is_controlled_by = NBS } #do we actually own it right now?
@@ -719,12 +719,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_25
+		id = SBS_focus_25
 		icon = GFX_goal_Newyorkbroth3
-		relative_position_id = Stolibrother_22
+		relative_position_id = SBS_focus_22
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_22
+			focus = SBS_focus_22
 		}
 		available = {
 		1036 = { is_controlled_by = NBS } #do we actually own it right now?
@@ -743,19 +743,19 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_26
+		id = SBS_focus_26
 		icon = GFX_goal_Newyorkbroth4
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_23
+			focus = SBS_focus_23
 		}
 		prerequisite = {
-			focus = Stolibrother_24
+			focus = SBS_focus_24
 		}
 		prerequisite = {
-			focus = Stolibrother_25
+			focus = SBS_focus_25
 		}
-		relative_position_id = Stolibrother_24
+		relative_position_id = SBS_focus_24
 		x = 0
 		y = 1
 
@@ -788,13 +788,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_27
+		id = SBS_focus_27
 		icon = GFX_goal_Newyorkbroth5
 		cost = 45
 		prerequisite = {
-			focus = Stolibrother_26
+			focus = SBS_focus_26
 		}
-		relative_position_id = Stolibrother_26
+		relative_position_id = SBS_focus_26
 		x = 0
 		y = 1
 
@@ -828,11 +828,11 @@ focus_tree = {
 	
 	
 	focus = {
-		id = Stolibrother_36
+		id = SBS_focus_36
 		icon = GFX_goal_SBS_Liberty_Prime
-		relative_position_id = Stolibrother_19
+		relative_position_id = SBS_focus_19
 	    prerequisite = {
-			focus = Stolibrother_19
+			focus = SBS_focus_19
 		}
 		available = {
 		  974 = { is_controlled_by = ESP }
@@ -885,14 +885,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_37
+		id = SBS_focus_37
 		icon = GFX_goal_SBS_Trust
-		relative_position_id = Stolibrother_19
+		relative_position_id = SBS_focus_19
 		x = -3
 		y = 2
 		
 	    prerequisite = {
-			focus = Stolibrother_36
+			focus = SBS_focus_36
 		}
 
 		cost = 70
@@ -926,11 +926,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_38
+		id = SBS_focus_38
 		icon = GFX_goal_SBS_Mutant_2
-		relative_position_id = Stolibrother_19
+		relative_position_id = SBS_focus_19
 		prerequisite = {
-			focus = Stolibrother_19
+			focus = SBS_focus_19
 		}
 		x = 3
 		y = 1
@@ -972,11 +972,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Stolibrother_39
+		id = SBS_focus_39
 		icon = GFX_goal_SBS_Pitt
-		relative_position_id = Stolibrother_38
+		relative_position_id = SBS_focus_38
 		prerequisite = {
-			focus = Stolibrother_38
+			focus = SBS_focus_38
 		}
 		x = 0
 		y = 1
@@ -1019,15 +1019,15 @@ focus_tree = {
 	
 	
 	focus = {
-		id = Stolibrother_45
+		id = SBS_focus_45
 		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1000 } 
-		relative_position_id = Stolibrother_20
+		relative_position_id = SBS_focus_20
 		prerequisite = {
-			focus = Stolibrother_20
+			focus = SBS_focus_20
 		}		
 		prerequisite = {
-			focus = Stolibrother_21
+			focus = SBS_focus_21
 		}
 		available = {
            ESP = { exists = no }
@@ -1053,7 +1053,7 @@ focus_tree = {
  focus = {
 		id = elder_sarah
 		icon = GFX_goal_SBS_Elder_Sarah
-		relative_position_id = Stolibrother_17
+		relative_position_id = SBS_focus_17
 		prerequisite = { 
 		}
 		x = 0
@@ -1588,12 +1588,12 @@ focus_tree = {
 	focus = {
 		id = adams_base
 		icon = GFX_goal_BOS_vertibird_schematics
-		relative_position_id = Stolibrother_21
+		relative_position_id = SBS_focus_21
 		prerequisite = {
-			focus = Stolibrother_21
+			focus = SBS_focus_21
 		}
 		prerequisite = {
-			focus = Stolibrother_20
+			focus = SBS_focus_20
 		}
 		
 		x = 0
@@ -1678,7 +1678,7 @@ focus_tree = {
 	focus = {
 		id = boston_expedition
 		icon = GFX_goal_SBS_exp_Boston
-		relative_position_id = Stolibrother_10
+		relative_position_id = SBS_focus_10
 		prerequisite = {
 		}
 		

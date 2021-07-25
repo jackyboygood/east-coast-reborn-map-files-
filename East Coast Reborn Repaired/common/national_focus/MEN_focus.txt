@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Minitmen
+	id = MEN_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = Minitmen_1
+		id = MEN_focus_1
 		icon = GFX_goal_MEN_strt
 		cost = 7
 		x = 15
@@ -32,10 +32,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_2
+		id = MEN_focus_2
 		icon = GFX_goal_MEN_strt
-		prerequisite = { focus = Minitmen_1 }
-		relative_position_id = Minitmen_1
+		prerequisite = { focus = MEN_focus_1 }
+		relative_position_id = MEN_focus_1
 		x = 0
 		y = 1
 
@@ -54,10 +54,10 @@ focus_tree = {
 	}
 	
     focus = {
-		id = Minitmen_3
+		id = MEN_focus_3
 		icon = GFX_goal_MEN_strt
-		prerequisite = { focus = Minitmen_2 }
-		relative_position_id = Minitmen_2
+		prerequisite = { focus = MEN_focus_2 }
+		relative_position_id = MEN_focus_2
 		x = 0
 		y = 1
 		cost = 7.0
@@ -82,10 +82,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_4
+		id = MEN_focus_4
 		icon = GFX_goal_MEN_strt
-		prerequisite = { focus = Minitmen_3 }
-		relative_position_id = Minitmen_3
+		prerequisite = { focus = MEN_focus_3 }
+		relative_position_id = MEN_focus_3
 		x = 0
 		y = 1
 		
@@ -145,10 +145,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_5
+		id = MEN_focus_5
 		icon = GFX_goal_Minutamen1
-		prerequisite = { focus = Minitmen_4 }
-		relative_position_id = Minitmen_4
+		prerequisite = { focus = MEN_focus_4 }
+		relative_position_id = MEN_focus_4
 		cost = 20
 		x = 0
 		y = 1
@@ -177,10 +177,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_6
+		id = MEN_focus_6
 		icon = GFX_goal_generic_western
-		prerequisite = { focus = Minitmen_5 }
-		relative_position_id = Minitmen_5
+		prerequisite = { focus = MEN_focus_5 }
+		relative_position_id = MEN_focus_5
 		x = 3
 		y = 1
 
@@ -212,11 +212,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_7
+		id = MEN_focus_7
 		icon =GFX_goal_Senkchuary
-		prerequisite = { focus = Minitmen_5 }
+		prerequisite = { focus = MEN_focus_5 }
 		ai_will_do = { factor = 98 } 
-		relative_position_id = Minitmen_5
+		relative_position_id = MEN_focus_5
 		x = -3
 		y = 1
 		cost = 45
@@ -238,11 +238,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_8
+		id = MEN_focus_8
 		icon = GFX_goal_generic_construction2
-		prerequisite = {focus = Minitmen_7}
+		prerequisite = {focus = MEN_focus_7}
 		ai_will_do = { factor = 98 } 
-		relative_position_id = Minitmen_7
+		relative_position_id = MEN_focus_7
 		x = 0
 		y = 1
 		cost = 45
@@ -254,11 +254,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_9
+		id = MEN_focus_9
 		icon = GFX_goal_generic_data_focus
-		prerequisite = {focus = Minitmen_8}
+		prerequisite = {focus = MEN_focus_8}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Minitmen_8
+		relative_position_id = MEN_focus_8
 		x = 2
 		y = 1
 		cost = 45
@@ -278,11 +278,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_10
+		id = MEN_focus_10
 		icon = GFX_goal_ENC_science_reform
-		prerequisite = {focus = Minitmen_8}
+		prerequisite = {focus = MEN_focus_8}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Minitmen_8
+		relative_position_id = MEN_focus_8
 		x = -2
 		y = 1
 		cost = 45
@@ -292,14 +292,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_11
+		id = MEN_focus_11
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = {focus = Minitmen_8}
+		prerequisite = {focus = MEN_focus_8}
 		available = {
 			1010 = { is_controlled_by = MEN } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = Minitmen_8
+		relative_position_id = MEN_focus_8
 		x = 0
 		y = 1
 		completion_reward = {
@@ -312,13 +312,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_12
+		id = MEN_focus_12
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = Minitmen_11
+		relative_position_id = MEN_focus_11
 		cost = 45
-		prerequisite = {focus = Minitmen_9}
-		prerequisite = {focus = Minitmen_10}
-		prerequisite = {focus = Minitmen_11}
+		prerequisite = {focus = MEN_focus_9}
+		prerequisite = {focus = MEN_focus_10}
+		prerequisite = {focus = MEN_focus_11}
 		x = 0
 		y = 1
 		available = {
@@ -327,7 +327,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_12 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_12 entered"
 			}
 			1009 = {
 				add_building_construction = {
@@ -338,19 +338,19 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_12 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_12 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_13
+		id = MEN_focus_13
 		icon = GFX_goal_generic_focus_magazine_gunsandbullets_take_aim
-		relative_position_id = Minitmen_5
+		relative_position_id = MEN_focus_5
 		ai_will_do = { factor = 95 } 
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_5
+			focus = MEN_focus_5
 		}
 		x = -9
 		y = 1
@@ -358,7 +358,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_13 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_13 entered"
 			}
 			add_tech_bonus = { 
 			bonus = 0.3 
@@ -366,17 +366,17 @@ focus_tree = {
 			category = cat_land_doctrine }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_13 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_13 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_14
+		id = MEN_focus_14
 		icon = GFX_goal_brahmin_cart
-		prerequisite = {focus = Minitmen_13}
+		prerequisite = {focus = MEN_focus_13}
 		ai_will_do = { factor = 95 } 
-		relative_position_id = Minitmen_13
+		relative_position_id = MEN_focus_13
 		x = 2
 		y = 1
 		cost = 45
@@ -386,22 +386,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_15
+		id = MEN_focus_15
 		icon = GFX_goal_NCR_Blast_from_the_Past
-		relative_position_id = Minitmen_13
+		relative_position_id = MEN_focus_13
 		cost = 45
 		available = {
 		1052 = { is_controlled_by = MEN } 
 		}
 		prerequisite = {
-			focus = Minitmen_13
+			focus = MEN_focus_13
 		}
 		x = -2
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_15 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_15 entered"
 			}
 			add_tech_bonus = {
 				name = explosive_bonus
@@ -412,46 +412,46 @@ focus_tree = {
 			add_ideas = blastfromthepast
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_15 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_15 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_16
+		id = MEN_focus_16
 		icon = GFX_goal_MEN_1
-		relative_position_id = Minitmen_13
+		relative_position_id = MEN_focus_13
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_13
+			focus = MEN_focus_13
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_16 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_16 entered"
 			}
-			add_ideas = minitmen_protect
+			add_ideas = MEN_focus_protect
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_16 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_16 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_17
+		id = MEN_focus_17
 		cost = 45
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = {focus = Minitmen_16}
-		prerequisite = {focus = Minitmen_15}
-		prerequisite = {focus = Minitmen_14}
+		prerequisite = {focus = MEN_focus_16}
+		prerequisite = {focus = MEN_focus_15}
+		prerequisite = {focus = MEN_focus_14}
 		available = {
 			1052 = { is_controlled_by = MEN } #do we actually own it right now?
 		}
 		ai_will_do = { factor = 1 }
-		relative_position_id = Minitmen_16
+		relative_position_id = MEN_focus_16
 		x = 1
 		y = 1
 		completion_reward = {
@@ -461,15 +461,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_18
+		id = MEN_focus_18
 		icon = GFX_goal_generic_food_focus
-		relative_position_id = Minitmen_16
+		relative_position_id = MEN_focus_16
 		cost = 45
 		x = -1
 		y = 1
-        prerequisite = {focus = Minitmen_16}
-		prerequisite = {focus = Minitmen_15}
-		prerequisite = {focus = Minitmen_14}
+        prerequisite = {focus = MEN_focus_16}
+		prerequisite = {focus = MEN_focus_15}
+		prerequisite = {focus = MEN_focus_14}
 		available = {
 			1051 = { is_owned_and_controlled_by = ROOT }
 			1021 = { is_owned_and_controlled_by = ROOT }
@@ -478,7 +478,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_18 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_18 entered"
 			}
 			1021 = {
 				add_manpower = 250
@@ -509,16 +509,16 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_18 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_18 exited"
 			}
 		}
 	}
 
 	focus = {
-		id = Minitmen_19
+		id = MEN_focus_19
 		icon = GFX_goal_VLT_all_clear
-		prerequisite = { focus = Minitmen_6 }
-		relative_position_id = Minitmen_6
+		prerequisite = { focus = MEN_focus_6 }
+		relative_position_id = MEN_focus_6
 		cost = 45
 		x = 0
 		y = 1
@@ -528,7 +528,7 @@ focus_tree = {
 		}
 
 		available = {
-		has_completed_focus = Minitmen_16
+		has_completed_focus = MEN_focus_16
 		1051 = { is_controlled_by = MEN } 
 		}
 
@@ -552,10 +552,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_20
+		id = MEN_focus_20
 		icon = GFX_goal_fortindependens
-		prerequisite = { focus = Minitmen_19 }
-		relative_position_id = Minitmen_19
+		prerequisite = { focus = MEN_focus_19 }
+		relative_position_id = MEN_focus_19
 		x = 0
 		y = 1
 		
@@ -618,63 +618,63 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_21
+		id = MEN_focus_21
 		icon = GFX_goal_generic_land_doctrines_focus
 		cost = 7
 		x = 17
 		y = 4
 		prerequisite = {
-		focus = Minitmen_4
+		focus = MEN_focus_4
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_10 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_10 entered"
 			}
 			army_experience = 25
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_10 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_10 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_22
+		id = MEN_focus_22
 		icon = GFX_goal_generic_vault_survival
-		relative_position_id = Minitmen_20
+		relative_position_id = MEN_focus_20
 		cost = 20
 		available = {
 		date > 2278.1.1	
-		has_completed_focus = Minitmen_54
+		has_completed_focus = MEN_focus_54
 		}
 		prerequisite = {
-			focus = Minitmen_20
+			focus = MEN_focus_20
 		}
 		x = 0
 		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_22 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_22 entered"
 			}
 			country_event = {
 				id = MEN_event.5
 			}
 			hidden_effect = {
-			       country_event = { days = 3 id = newsfallout.9 }
+			       country_event = { days = 3 id = news_event_ec.9 }
 		    }
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_22 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_22 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_23
+		id = MEN_focus_23
 		icon = GFX_goal_MEN_strt
-		relative_position_id = Minitmen_12
+		relative_position_id = MEN_focus_12
 		x = 0
 		y = 2
 
@@ -685,7 +685,7 @@ focus_tree = {
 		}
 
 		available = {
-        has_completed_focus = Minitmen_22
+        has_completed_focus = MEN_focus_22
 		}
 
 		bypass = {
@@ -711,20 +711,20 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_24
-		text = Minitmen_24
+		id = MEN_focus_24
+		text = MEN_focus_24
 		icon = GFX_goal_Men_rules1
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_23
+			focus = MEN_focus_23
 		}
 		mutually_exclusive = {
-			focus = Minitmen_25
-			focus = Minitmen_26
+			focus = MEN_focus_25
+			focus = MEN_focus_26
 		}
 		x = -6
 		y = 1
-		relative_position_id = Minitmen_23
+		relative_position_id = MEN_focus_23
 		available = {
 			has_country_leader = {
 				id = 2002
@@ -733,32 +733,32 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_24 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_24 entered"
 			}
 			add_political_power = 60
 			add_ideas = prestonnew
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_24 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_24 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_25
-		text = Minitmen_25
+		id = MEN_focus_25
+		text = MEN_focus_25
 		icon = GFX_goal_Men_intelegents1
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_23
+			focus = MEN_focus_23
 		}
 		mutually_exclusive = {
-			focus = Minitmen_24
-			focus = Minitmen_26
+			focus = MEN_focus_24
+			focus = MEN_focus_26
 		}
 		x = 0
 		y = 1
-		relative_position_id = Minitmen_23
+		relative_position_id = MEN_focus_23
 		available = {
 			has_country_leader = {
 				id = 2001
@@ -767,32 +767,32 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_25 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_25 entered"
 			}
 			add_political_power = 60
 			add_ideas = oldways
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_25 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_25 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_26
-		text = Minitmen_26
+		id = MEN_focus_26
+		text = MEN_focus_26
 		icon = GFX_goal_Men_elite1
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_23
+			focus = MEN_focus_23
 		}
 		mutually_exclusive = {
-			focus = Minitmen_24
-			focus = Minitmen_25
+			focus = MEN_focus_24
+			focus = MEN_focus_25
 		}
 		x = 6
 		y = 1
-		relative_position_id = Minitmen_23
+		relative_position_id = MEN_focus_23
 		available = {
 			has_country_leader = {
 				id = 2000
@@ -801,24 +801,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_26 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_26 entered"
 			}
 			add_political_power = 60
 			add_ideas = blackminitmenidea
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_26 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_26 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_28
+		id = MEN_focus_28
 		icon = GFX_goal_Poselenie
-		relative_position_id = Minitmen_24
+		relative_position_id = MEN_focus_24
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_24
+			focus = MEN_focus_24
 		}
 		x = 0
 		y = 1
@@ -848,10 +848,10 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = Minitmen_29
+		id = MEN_focus_29
 		icon = GFX_goal_generic_automatron_splash
-		relative_position_id = Minitmen_28
-		prerequisite = { focus = Minitmen_28 }
+		relative_position_id = MEN_focus_28
+		prerequisite = { focus = MEN_focus_28 }
 		cost = 45
 		x = 0
 		y = 1
@@ -888,12 +888,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_30
+		id = MEN_focus_30
 		icon = GFX_goal_MEN_1
-		relative_position_id = Minitmen_29
+		relative_position_id = MEN_focus_29
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_29
+			focus = MEN_focus_29
 		}
 		x = 0
 		y = 1
@@ -901,7 +901,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_10 entered"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_10 entered"
 			}
 			add_tech_bonus = { 
 			bonus = 0.4 
@@ -909,16 +909,16 @@ focus_tree = {
 			category = cat_grand_army}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Stolibrother_10 exited"
+				log = "[GetDateText]: [Root.GetName] SBS_focus_10 exited"
 			}
 		}
 	}
 
 	focus = {
-		id = Minitmen_56
+		id = MEN_focus_56
 		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_30 }
-		relative_position_id = Minitmen_30
+		prerequisite = { focus = MEN_focus_30 }
+		relative_position_id = MEN_focus_30
 		x = 0
 		y = 1
 		
@@ -952,12 +952,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_31
+		id = MEN_focus_31
 		icon = GFX_goal_generic_building_focus
-		relative_position_id = Minitmen_56
+		relative_position_id = MEN_focus_56
 		cost = 45
 		prerequisite = {
-			focus = Minitmen_56
+			focus = MEN_focus_56
 		}
 		x = 0
 		y = 1
@@ -967,7 +967,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_31 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_31 entered"
 			}
 			1021 = {
 				add_resource = {
@@ -985,16 +985,16 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_31 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_31 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_37
+		id = MEN_focus_37
 		icon = GFX_goal_generic_recruitment_focus
-		prerequisite = { focus = Minitmen_26 }
-		relative_position_id = Minitmen_26
+		prerequisite = { focus = MEN_focus_26 }
+		relative_position_id = MEN_focus_26
 		x = 0
 		y = 1
 
@@ -1026,10 +1026,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_38
+		id = MEN_focus_38
 		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_37 }
-		relative_position_id = Minitmen_37
+		prerequisite = { focus = MEN_focus_37 }
+		relative_position_id = MEN_focus_37
 		x = 0
 		y = 1
 		
@@ -1066,10 +1066,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_39
+		id = MEN_focus_39
 		icon = GFX_goal_generic_slave_collars
-		prerequisite = { focus = Minitmen_38 }
-		relative_position_id = Minitmen_38
+		prerequisite = { focus = MEN_focus_38 }
+		relative_position_id = MEN_focus_38
 		x = 0	
 		y = 1
 
@@ -1103,22 +1103,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_40
+		id = MEN_focus_40
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = Minitmen_39 }
-		relative_position_id = Minitmen_39
+		prerequisite = { focus = MEN_focus_39 }
+		relative_position_id = MEN_focus_39
 		cost = 45
 		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = Minitmen_39
+			focus = MEN_focus_39
 		}
 
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_40 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_40 entered"
 			}
 			swap_ideas = {
 				add_idea = brk_slave_1
@@ -1126,16 +1126,16 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_40 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_40 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_41
+		id = MEN_focus_41
 		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_40 }
-		relative_position_id = Minitmen_40
+		prerequisite = { focus = MEN_focus_40 }
+		relative_position_id = MEN_focus_40
 		x = 0
 		y = 1
 
@@ -1172,10 +1172,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_42
+		id = MEN_focus_42
 		icon = GFX_goal_MEN_2
-		relative_position_id = Minitmen_25
-		prerequisite = { focus = Minitmen_25 }
+		relative_position_id = MEN_focus_25
+		prerequisite = { focus = MEN_focus_25 }
 		cost = 45
 		x = 0
 		y = 1
@@ -1208,10 +1208,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_43
+		id = MEN_focus_43
 		icon = GFX_goal_MEN_3
-		relative_position_id = Minitmen_42
-		prerequisite = { focus = Minitmen_42 }
+		relative_position_id = MEN_focus_42
+		prerequisite = { focus = MEN_focus_42 }
 		cost = 45
 		x = 0
 		y = 1
@@ -1248,11 +1248,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_44
+		id = MEN_focus_44
 		icon = GFX_goal_sbs_scientist
-		prerequisite = {focus = Minitmen_43}
+		prerequisite = {focus = MEN_focus_43}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Minitmen_43
+		relative_position_id = MEN_focus_43
 		x = 0
 		y = 1
 		cost = 45
@@ -1262,10 +1262,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_45
+		id = MEN_focus_45
 		icon = GFX_goal_MEN_4
-		prerequisite = { focus = Minitmen_44 }
-		relative_position_id = Minitmen_44
+		prerequisite = { focus = MEN_focus_44 }
+		relative_position_id = MEN_focus_44
 		x = 0
 		y = 1
 		
@@ -1302,11 +1302,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_46
+		id = MEN_focus_46
 		icon = GFX_goal_Minutamen3
-		prerequisite = { focus = Minitmen_5 }
+		prerequisite = { focus = MEN_focus_5 }
 		ai_will_do = { factor = 100 } 
-		relative_position_id = Minitmen_5
+		relative_position_id = MEN_focus_5
 		available = {
 		has_full_control_of_state = 1010
 		}
@@ -1319,10 +1319,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_47
+		id = MEN_focus_47
 		icon = GFX_goal_Minutamen2
-		prerequisite = { focus = Minitmen_46 }
-		relative_position_id = Minitmen_46
+		prerequisite = { focus = MEN_focus_46 }
+		relative_position_id = MEN_focus_46
 		cost = 45
 		x = 0
 		y = 1
@@ -1355,12 +1355,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_48
+		id = MEN_focus_48
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = Minitmen_47
+		relative_position_id = MEN_focus_47
 		ai_will_do = { factor = 100 } 
 		cost = 30
-		prerequisite = {focus = Minitmen_47}
+		prerequisite = {focus = MEN_focus_47}
 		x = -2
 		y = 1
 		available = {
@@ -1369,7 +1369,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_48 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_48 entered"
 			}
 			1012 = {
 			    add_extra_state_shared_building_slots = 2
@@ -1381,19 +1381,19 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_48 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_48 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_49
+		id = MEN_focus_49
 		icon = GFX_goal_Poselenie
-		relative_position_id = Minitmen_47
+		relative_position_id = MEN_focus_47
 		ai_will_do = { factor = 89 } 
 		cost = 30
 		prerequisite = {
-			focus = Minitmen_47
+			focus = MEN_focus_47
 		}
 		x = 2
 		y = 1
@@ -1403,7 +1403,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_49 entered"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_49 entered"
 			}
 			1012 = {
 				add_extra_state_shared_building_slots = 2
@@ -1415,17 +1415,17 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] Minitmen_49 exited"
+				log = "[GetDateText]: [Root.GetName] MEN_focus_49 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = Minitmen_50
+		id = MEN_focus_50
 		icon = GFX_goal_doroga
-		prerequisite = { focus = Minitmen_47 }
+		prerequisite = { focus = MEN_focus_47 }
 		ai_will_do = { factor = 88 } 
-		relative_position_id = Minitmen_47
+		relative_position_id = MEN_focus_47
 		x = 0
 		y = 1
 		cost = 30
@@ -1449,12 +1449,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_51
+		id = MEN_focus_51
 		icon = GFX_goal_konkord
-		prerequisite = { focus = Minitmen_50 }
-		prerequisite = { focus = Minitmen_49 }
-		prerequisite = { focus = Minitmen_48 }
-		relative_position_id = Minitmen_50
+		prerequisite = { focus = MEN_focus_50 }
+		prerequisite = { focus = MEN_focus_49 }
+		prerequisite = { focus = MEN_focus_48 }
+		relative_position_id = MEN_focus_50
 		x = 0
 		y = 1
 		
@@ -1514,10 +1514,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_52
+		id = MEN_focus_52
 		icon = GFX_goal_Minutamen4
-		prerequisite = { focus = Minitmen_51 }
-		relative_position_id = Minitmen_51
+		prerequisite = { focus = MEN_focus_51 }
+		relative_position_id = MEN_focus_51
 		cost = 45
 		x = 0
 		y = 1
@@ -1550,15 +1550,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_53
+		id = MEN_focus_53
 		icon =GFX_goal_Senkchuary
-		prerequisite = { focus = Minitmen_52 }
+		prerequisite = { focus = MEN_focus_52 }
 		available = {
 		    1011 = { is_controlled_by = MEN } 
 			1051 = { is_controlled_by = MEN } 
 		}
 		ai_will_do = { factor = 100 } 
-		relative_position_id = Minitmen_52
+		relative_position_id = MEN_focus_52
 		x = -1
 		y = 1
 		cost = 45
@@ -1573,14 +1573,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_54
+		id = MEN_focus_54
 		icon = GFX_goal_fortindependens
-		prerequisite = { focus = Minitmen_52 }
+		prerequisite = { focus = MEN_focus_52 }
 		available = {
 		1052 = { is_controlled_by = MEN } 
 		}
 		ai_will_do = { factor = 12 } 
-		relative_position_id = Minitmen_52
+		relative_position_id = MEN_focus_52
 		x = 1
 		y = 1
 		cost = 45
@@ -1591,11 +1591,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_55
+		id = MEN_focus_55
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = Minitmen_22
+		relative_position_id = MEN_focus_22
 		prerequisite = {
-			focus = Minitmen_22
+			focus = MEN_focus_22
 		}
 		x = 0
 		y = 1
@@ -1629,10 +1629,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_57
+		id = MEN_focus_57
 		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_45 }
-		relative_position_id = Minitmen_45
+		prerequisite = { focus = MEN_focus_45 }
+		relative_position_id = MEN_focus_45
 		x = 0
 		y = 1
 		
@@ -1673,10 +1673,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_58
+		id = MEN_focus_58
 		icon = GFX_goal_blackminitman
-		prerequisite = { focus = Minitmen_41 }
-		relative_position_id = Minitmen_41
+		prerequisite = { focus = MEN_focus_41 }
+		relative_position_id = MEN_focus_41
 		x = 0
 		y = 1
 		
@@ -1717,9 +1717,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Minitmen_61
+		id = MEN_focus_61
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = Minitmen_53
+		relative_position_id = MEN_focus_53
 		x = 1
 		y = 1
 

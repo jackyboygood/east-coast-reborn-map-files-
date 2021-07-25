@@ -1,5 +1,5 @@
 focus_tree = {
-	id = lamplayt_focus
+	id = LIT_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = lamplayt_1
+		id = LIT_focus_1
 		icon = GFX_goal_dett2
 		cost = 7
 		x = 14
@@ -21,10 +21,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_2
+		id = LIT_focus_2
 		icon = GFX_goal_dett1
-		prerequisite = { focus = lamplayt_1 }
-		relative_position_id = lamplayt_1
+		prerequisite = { focus = LIT_focus_1 }
+		relative_position_id = LIT_focus_1
 		cost = 7
 		x = 0
 		y = 1
@@ -34,10 +34,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_3
+		id = LIT_focus_3
 		icon = GFX_goal_dett
-		prerequisite = { focus = lamplayt_2 }
-		relative_position_id = lamplayt_2
+		prerequisite = { focus = LIT_focus_2 }
+		relative_position_id = LIT_focus_2
 		cost = 7
 		x = 0
 		y = 1
@@ -53,10 +53,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_4
+		id = LIT_focus_4
 		icon = GFX_goal_dett3
-		prerequisite = { focus = lamplayt_3 }
-		relative_position_id = lamplayt_3
+		prerequisite = { focus = LIT_focus_3 }
+		relative_position_id = LIT_focus_3
 		cost = 30
 		x = -8
 		y = 1
@@ -67,10 +67,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_5
+		id = LIT_focus_5
 		icon = GFX_goal_dett4
-		prerequisite = { focus = lamplayt_4 }
-		relative_position_id = lamplayt_4
+		prerequisite = { focus = LIT_focus_4 }
+		relative_position_id = LIT_focus_4
 		cost = 20
 		x = -4
 		y = 1
@@ -80,10 +80,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_6
+		id = LIT_focus_6
 		icon = GFX_goal_dett5
-		prerequisite = { focus = lamplayt_4 }
-		relative_position_id = lamplayt_4
+		prerequisite = { focus = LIT_focus_4 }
+		relative_position_id = LIT_focus_4
 		cost = 20
 		x = 0
 		y = 1
@@ -93,10 +93,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_7
+		id = LIT_focus_7
 		icon = GFX_goal_dett6
-		prerequisite = { focus = lamplayt_4 }
-		relative_position_id = lamplayt_4
+		prerequisite = { focus = LIT_focus_4 }
+		relative_position_id = LIT_focus_4
 		cost = 20
 		x = 4
 		y = 1
@@ -106,10 +106,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_8
+		id = LIT_focus_8
 		icon = GFX_goal_dett7
-		prerequisite = { focus = lamplayt_5 }
-		relative_position_id = lamplayt_5
+		prerequisite = { focus = LIT_focus_5 }
+		relative_position_id = LIT_focus_5
 		cost = 20
 		x = -1
 		y = 1
@@ -119,10 +119,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_9
+		id = LIT_focus_9
 		icon = GFX_goal_dett8
-		prerequisite = { focus = lamplayt_5 }
-		relative_position_id = lamplayt_5
+		prerequisite = { focus = LIT_focus_5 }
+		relative_position_id = LIT_focus_5
 		cost = 20
 		x = 1
 		y = 1
@@ -132,10 +132,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_10
+		id = LIT_focus_10
 		icon = GFX_goal_dett9
-		prerequisite = { focus = lamplayt_6 }
-		relative_position_id = lamplayt_6
+		prerequisite = { focus = LIT_focus_6 }
+		relative_position_id = LIT_focus_6
 		cost = 20
 		x = -1
 		y = 1
@@ -145,10 +145,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_11
+		id = LIT_focus_11
 		icon = GFX_goal_dett10
-		prerequisite = { focus = lamplayt_6 }
-		relative_position_id = lamplayt_6
+		prerequisite = { focus = LIT_focus_6 }
+		relative_position_id = LIT_focus_6
 		cost = 20
 		x = 1
 		y = 1
@@ -158,10 +158,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_12
+		id = LIT_focus_12
 		icon = GFX_goal_dett
-		prerequisite = { focus = lamplayt_3 }
-		relative_position_id = lamplayt_3
+		prerequisite = { focus = LIT_focus_3 }
+		relative_position_id = LIT_focus_3
 		cost = 45
 		x = 0
 		y = 1
@@ -171,10 +171,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_13
+		id = LIT_focus_13
 		icon = GFX_goal_brahmin_cart
-		prerequisite = { focus = lamplayt_12 }
-		relative_position_id = lamplayt_12
+		prerequisite = { focus = LIT_focus_12 }
+		relative_position_id = LIT_focus_12
 		cost = 45
 		ai_will_do = { factor = 25 }
 		x = -1
@@ -191,10 +191,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_14
+		id = LIT_focus_14
 		icon = GFX_goal_generic_military_industry_focus
-		prerequisite = { focus = lamplayt_12 }
-		relative_position_id = lamplayt_12
+		prerequisite = { focus = LIT_focus_12 }
+		relative_position_id = LIT_focus_12
 		cost = 45
 		x = 1
 		y = 1
@@ -211,10 +211,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_15
+		id = LIT_focus_15
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = { focus = lamplayt_3 }
-		relative_position_id = lamplayt_3
+		prerequisite = { focus = LIT_focus_3 }
+		relative_position_id = LIT_focus_3
 		ai_will_do = { factor = 100 }
 		cost = 45
 		x = 8
@@ -244,14 +244,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_16
+		id = LIT_focus_16
 		icon = GFX_goal_dett11
-		prerequisite = { focus = lamplayt_13 }
+		prerequisite = { focus = LIT_focus_13 }
 		available = {
 			date > 2276.1.1
 		}
 		ai_will_do = { factor = 25 }
-		relative_position_id = lamplayt_13
+		relative_position_id = LIT_focus_13
 		cost = 45
 		x = 0
 		y = 1
@@ -265,10 +265,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_17
+		id = LIT_focus_17
 		icon = GFX_goal_generic_slums_focus
-		prerequisite = { focus = lamplayt_16 }
-		relative_position_id = lamplayt_16
+		prerequisite = { focus = LIT_focus_16 }
+		relative_position_id = LIT_focus_16
 		ai_will_do = { factor = 25 }
 		cost = 45
 		x = 0
@@ -286,10 +286,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_18
+		id = LIT_focus_18
 		icon = GFX_goal_dett12
-		prerequisite = { focus = lamplayt_17 }
-		relative_position_id = lamplayt_17
+		prerequisite = { focus = LIT_focus_17 }
+		relative_position_id = LIT_focus_17
 		ai_will_do = { factor = 25 }
 		available = {
 			date > 2277.1.1
@@ -307,10 +307,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_19
+		id = LIT_focus_19
 		icon = GFX_goal_generic_slums_focus
-		prerequisite = { focus = lamplayt_18 }
-		relative_position_id = lamplayt_18
+		prerequisite = { focus = LIT_focus_18 }
+		relative_position_id = LIT_focus_18
 		cost = 45
 		ai_will_do = { factor = 25 }
 		x = 0
@@ -328,10 +328,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_20
+		id = LIT_focus_20
 		icon = GFX_goal_dett13
-		prerequisite = { focus = lamplayt_19 }
-		relative_position_id = lamplayt_19
+		prerequisite = { focus = LIT_focus_19 }
+		relative_position_id = LIT_focus_19
 		available = {
 			date > 2278.1.1
 		}
@@ -349,10 +349,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_21
+		id = LIT_focus_21
 		icon = GFX_goal_generic_focus_magazine_gunsandbullets_gun_laws
-		prerequisite = { focus = lamplayt_14 }
-		relative_position_id = lamplayt_14
+		prerequisite = { focus = LIT_focus_14 }
+		relative_position_id = LIT_focus_14
 		available = {
 			date > 2276.1.1
 		}
@@ -370,10 +370,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_22
+		id = LIT_focus_22
 		icon = GFX_goal_generic_land_doctrines_focus
-		prerequisite = { focus = lamplayt_21 }
-		relative_position_id = lamplayt_21
+		prerequisite = { focus = LIT_focus_21 }
+		relative_position_id = LIT_focus_21
 		cost = 45
 		x = 0
 		y = 1
@@ -383,10 +383,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_23
+		id = LIT_focus_23
 		icon = GFX_goal_generic_airbases_focus
-		prerequisite = { focus = lamplayt_22 }
-		relative_position_id = lamplayt_22
+		prerequisite = { focus = LIT_focus_22 }
+		relative_position_id = LIT_focus_22
 		available = {
 			date > 2277.1.1
 		}
@@ -407,10 +407,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_24
+		id = LIT_focus_24
 		icon = GFX_goal_NCR_Blast_from_the_Past
-		prerequisite = { focus = lamplayt_23 }
-		relative_position_id = lamplayt_23
+		prerequisite = { focus = LIT_focus_23 }
+		relative_position_id = LIT_focus_23
 		cost = 45
 		x = 0
 		y = 1
@@ -426,10 +426,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_25
+		id = LIT_focus_25
 		icon = GFX_goal_generic_spartan_legacy
-		prerequisite = { focus = lamplayt_24 }
-		relative_position_id = lamplayt_24
+		prerequisite = { focus = LIT_focus_24 }
+		relative_position_id = LIT_focus_24
 		available = {
 			date > 2278.1.1
 		}
@@ -442,12 +442,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_26
+		id = LIT_focus_26
 		icon = GFX_goal_religion_flag
-		prerequisite = { focus = lamplayt_20 }
-		prerequisite = { focus = lamplayt_25 }
-		prerequisite = { focus = lamplayt_46 }
-		relative_position_id = lamplayt_20
+		prerequisite = { focus = LIT_focus_20 }
+		prerequisite = { focus = LIT_focus_25 }
+		prerequisite = { focus = LIT_focus_46 }
+		relative_position_id = LIT_focus_20
 		cost = 45
 		x = 2
 		y = 1
@@ -461,13 +461,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_27
+		id = LIT_focus_27
 		icon = GFX_goal_generic_laser_muskets_focus
-		prerequisite = { focus = lamplayt_15 }
-		relative_position_id = lamplayt_15
+		prerequisite = { focus = LIT_focus_15 }
+		relative_position_id = LIT_focus_15
 		ai_will_do = { factor = 25 }
 		mutually_exclusive = {
-			focus = lamplayt_30
+			focus = LIT_focus_30
 		}
 		cost = 45
 		x = -2
@@ -478,10 +478,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_28
+		id = LIT_focus_28
 		icon = GFX_goal_generic_focus_magazine_gunsandbullets_take_aim
-		prerequisite = { focus = lamplayt_27 }
-		relative_position_id = lamplayt_27
+		prerequisite = { focus = LIT_focus_27 }
+		relative_position_id = LIT_focus_27
 		available = {
          date > 2276.5.15
 		}
@@ -495,10 +495,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_29
+		id = LIT_focus_29
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = { focus = lamplayt_28 }
-		relative_position_id = lamplayt_28
+		prerequisite = { focus = LIT_focus_28 }
+		relative_position_id = LIT_focus_28
 		ai_will_do = { factor = 25 }
 		available = {
 			date > 2277.1.20
@@ -516,13 +516,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_30
+		id = LIT_focus_30
 		icon = GFX_goal_generic_laser_muskets_focus
 		mutually_exclusive = {
-			focus = lamplayt_27
+			focus = LIT_focus_27
 		}
-		prerequisite = { focus = lamplayt_15 }
-		relative_position_id = lamplayt_15
+		prerequisite = { focus = LIT_focus_15 }
+		relative_position_id = LIT_focus_15
 		ai_will_do = { factor = 25 }
 		cost = 45
 		x = 0
@@ -540,10 +540,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_31
+		id = LIT_focus_31
 		icon = GFX_goal_generic_laser_muskets_focus
-		prerequisite = { focus = lamplayt_30 }
-		relative_position_id = lamplayt_30
+		prerequisite = { focus = LIT_focus_30 }
+		relative_position_id = LIT_focus_30
 		ai_will_do = { factor = 25 }
 		cost = 45
 		x = 0
@@ -557,10 +557,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_32
+		id = LIT_focus_32
 		icon = GFX_goal_generic_laser_muskets_focus
-		prerequisite = { focus = lamplayt_31 }
-		relative_position_id = lamplayt_31
+		prerequisite = { focus = LIT_focus_31 }
+		relative_position_id = LIT_focus_31
 		ai_will_do = { factor = 25 }
 		available = {
 			date > 2277.1.1
@@ -574,15 +574,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_33
+		id = LIT_focus_33
 		icon = GFX_goal_generic_robots_focus
-		prerequisite = { focus = lamplayt_15 }
-		relative_position_id = lamplayt_15
+		prerequisite = { focus = LIT_focus_15 }
+		relative_position_id = LIT_focus_15
 		available = {
          date > 2277.1.1
 		}
 		mutually_exclusive = {
-			focus = lamplayt_36
+			focus = LIT_focus_36
 		}
 		cost = 45
 		x = 2
@@ -593,10 +593,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_34
+		id = LIT_focus_34
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = { focus = lamplayt_33 }
-		relative_position_id = lamplayt_33
+		prerequisite = { focus = LIT_focus_33 }
+		relative_position_id = LIT_focus_33
 		cost = 45
 		x = 0
 		y = 1
@@ -610,10 +610,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_35
+		id = LIT_focus_35
 		icon = GFX_goal_generic_military_industry_focus
-		prerequisite = { focus = lamplayt_34 }
-		relative_position_id = lamplayt_34
+		prerequisite = { focus = LIT_focus_34 }
+		relative_position_id = LIT_focus_34
 		cost = 45
 		x = 0
 		y = 1
@@ -630,12 +630,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_36
+		id = LIT_focus_36
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = lamplayt_15 }
-		relative_position_id = lamplayt_15
+		prerequisite = { focus = LIT_focus_15 }
+		relative_position_id = LIT_focus_15
 		mutually_exclusive = {
-			focus = lamplayt_33
+			focus = LIT_focus_33
 		}
 		ai_will_do = { factor = 25 }
 		cost = 45
@@ -649,10 +649,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_37
+		id = LIT_focus_37
 		icon = GFX_goal_generic_supplies_focus
-		prerequisite = { focus = lamplayt_36 }
-		relative_position_id = lamplayt_36
+		prerequisite = { focus = LIT_focus_36 }
+		relative_position_id = LIT_focus_36
 		cost = 45
 		x = 0
 		y = 1
@@ -663,10 +663,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_38
+		id = LIT_focus_38
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = lamplayt_37 }
-		relative_position_id = lamplayt_37
+		prerequisite = { focus = LIT_focus_37 }
+		relative_position_id = LIT_focus_37
 		available = {
          date > 2277.1.1
 		}
@@ -679,10 +679,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_39
+		id = LIT_focus_39
 		icon = GFX_goal_dett14
-		prerequisite = { focus = lamplayt_7 }
-		relative_position_id = lamplayt_7
+		prerequisite = { focus = LIT_focus_7 }
+		relative_position_id = LIT_focus_7
 		available = {
 		 has_country_flag = resvedvernulis
 		}
@@ -695,10 +695,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_40
+		id = LIT_focus_40
 		icon = GFX_goal_dett15
-		prerequisite = { focus = lamplayt_7 }
-		relative_position_id = lamplayt_7
+		prerequisite = { focus = LIT_focus_7 }
+		relative_position_id = LIT_focus_7
 		available = {
 		 has_country_flag = resvedvernulis
 		}
@@ -711,13 +711,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_41
+		id = LIT_focus_41
 		icon = GFX_goal_cap_and_cash
 		cost = 45
 		prerequisite = {
-			focus = lamplayt_12
+			focus = LIT_focus_12
 		}
-		relative_position_id = lamplayt_12
+		relative_position_id = LIT_focus_12
 		x = 3
 		y = 1
 		available_if_capitulated = yes
@@ -762,10 +762,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_42
+		id = LIT_focus_42
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = lamplayt_41 }
-		relative_position_id = lamplayt_41
+		prerequisite = { focus = LIT_focus_41 }
+		relative_position_id = LIT_focus_41
 		available = {
 			date > 2276.1.1
 		}
@@ -778,13 +778,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_43
+		id = LIT_focus_43
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		cost = 45
 		prerequisite = {
-			focus = lamplayt_42
+			focus = LIT_focus_42
 		}
-		relative_position_id = lamplayt_42
+		relative_position_id = LIT_focus_42
 		x = 0
 		y = 1
 		available_if_capitulated = yes
@@ -829,10 +829,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_44
+		id = LIT_focus_44
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = lamplayt_43 }
-		relative_position_id = lamplayt_43
+		prerequisite = { focus = LIT_focus_43 }
+		relative_position_id = LIT_focus_43
 		available = {
 			date > 2277.1.1
 		}
@@ -848,13 +848,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_45
+		id = LIT_focus_45
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		cost = 45
 		prerequisite = {
-			focus = lamplayt_44
+			focus = LIT_focus_44
 		}
-		relative_position_id = lamplayt_44
+		relative_position_id = LIT_focus_44
 		x = 0
 		y = 1
 		available_if_capitulated = yes
@@ -899,10 +899,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_46
+		id = LIT_focus_46
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = lamplayt_45 }
-		relative_position_id = lamplayt_45
+		prerequisite = { focus = LIT_focus_45 }
+		relative_position_id = LIT_focus_45
 		available = {
 			date > 2278.1.1
 		}
@@ -918,9 +918,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_47
+		id = LIT_focus_47
 		icon = GFX_goal_dett20
-		relative_position_id = lamplayt_32
+		relative_position_id = LIT_focus_32
 		available = {
 			date > 2276.1.1
 		}
@@ -934,15 +934,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_48
+		id = LIT_focus_48
 		icon = GFX_goal_tripartite_pact
-		relative_position_id = lamplayt_47
-		prerequisite = { focus = lamplayt_47 }
+		relative_position_id = LIT_focus_47
+		prerequisite = { focus = LIT_focus_47 }
 		mutually_exclusive = {
-			focus = lamplayt_52
+			focus = LIT_focus_52
 		}
 		mutually_exclusive = {
-			focus = lamplayt_58
+			focus = LIT_focus_58
 		}
 		#ai_will_do = { factor = 50 }
 		cost = 45
@@ -957,10 +957,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_49
+		id = LIT_focus_49
 		icon = GFX_goal_doroga
-		prerequisite = { focus = lamplayt_48 }
-		relative_position_id = lamplayt_48
+		prerequisite = { focus = LIT_focus_48 }
+		relative_position_id = LIT_focus_48
 		ai_will_do = { factor = 100 }
 		cost = 45
 		x = 0
@@ -978,10 +978,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_50
+		id = LIT_focus_50
 		icon = GFX_goal_SBS_int_Lamplight
-		prerequisite = { focus = lamplayt_49 }
-		relative_position_id = lamplayt_49
+		prerequisite = { focus = LIT_focus_49 }
+		relative_position_id = LIT_focus_49
 		cost = 45
 		ai_will_do = { factor = 100 }
 		x = 0
@@ -1003,10 +1003,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_51
+		id = LIT_focus_51
 		icon = GFX_goal_dett23
-		prerequisite = { focus = lamplayt_50 }
-		relative_position_id = lamplayt_50
+		prerequisite = { focus = LIT_focus_50 }
+		relative_position_id = LIT_focus_50
 		ai_will_do = { factor = 100 }
 		cost = 45
 		x = 0
@@ -1022,15 +1022,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_52
+		id = LIT_focus_52
 		icon = GFX_goal_generic_ideological_fury_focus
-		relative_position_id = lamplayt_47
-		prerequisite = { focus = lamplayt_47 }
+		relative_position_id = LIT_focus_47
+		prerequisite = { focus = LIT_focus_47 }
 		mutually_exclusive = {
-			focus = lamplayt_48
+			focus = LIT_focus_48
 		}
 		mutually_exclusive = {
-			focus = lamplayt_58
+			focus = LIT_focus_58
 		}
 		#ai_will_do = { factor = 1 }
 		cost = 45
@@ -1045,10 +1045,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_53
+		id = LIT_focus_53
 		icon = GFX_goal_generic_war_focus
-		relative_position_id = lamplayt_52
-		prerequisite = { focus = lamplayt_52 }
+		relative_position_id = LIT_focus_52
+		prerequisite = { focus = LIT_focus_52 }
 		ai_will_do = { factor = 30 }
 		cost = 45
 		x = 0
@@ -1080,10 +1080,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_54
+		id = LIT_focus_54
 		icon = GFX_goal_dett24
-		prerequisite = { focus = lamplayt_53 }
-		relative_position_id = lamplayt_53
+		prerequisite = { focus = LIT_focus_53 }
+		relative_position_id = LIT_focus_53
 		available = {
 		    997 = {
 			is_controlled_by = LIT
@@ -1121,10 +1121,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_55
+		id = LIT_focus_55
 		icon = GFX_goal_dett25
-		relative_position_id = lamplayt_53
-		prerequisite = { focus = lamplayt_53 }
+		relative_position_id = LIT_focus_53
+		prerequisite = { focus = LIT_focus_53 }
 		available = {
 		    997 = {
 			is_controlled_by = LIT
@@ -1143,12 +1143,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_56
+		id = LIT_focus_56
 		icon = GFX_goal_dett26
-		relative_position_id = lamplayt_55
-		prerequisite = { focus = lamplayt_55 }
+		relative_position_id = LIT_focus_55
+		prerequisite = { focus = LIT_focus_55 }
 		mutually_exclusive = {
-			focus = lamplayt_57
+			focus = LIT_focus_57
 		}
 		ai_will_do = { factor = 30 }
 		available = {
@@ -1183,12 +1183,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_57
+		id = LIT_focus_57
 		icon = GFX_focus_generic_self_management
-		relative_position_id = lamplayt_55
-		prerequisite = { focus = lamplayt_55 }
+		relative_position_id = LIT_focus_55
+		prerequisite = { focus = LIT_focus_55 }
 		mutually_exclusive = {
-			focus = lamplayt_56
+			focus = LIT_focus_56
 		}
 		available = {
          has_country_flag = spasenierijey
@@ -1205,16 +1205,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_58
+		id = LIT_focus_58
 		icon = GFX_goal_dett21
-		prerequisite = { focus = lamplayt_47 }
-		relative_position_id = lamplayt_47
+		prerequisite = { focus = LIT_focus_47 }
+		relative_position_id = LIT_focus_47
 		#ai_will_do = { factor = 50 }
 		mutually_exclusive = {
-			focus = lamplayt_48
+			focus = LIT_focus_48
 		}
 		mutually_exclusive = {
-			focus = lamplayt_52
+			focus = LIT_focus_52
 		}
 		available = {
 			
@@ -1231,14 +1231,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_59
+		id = LIT_focus_59
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		cost = 45
 		ai_will_do = { factor = 30 }
 		prerequisite = {
-			focus = lamplayt_58
+			focus = LIT_focus_58
 		}
-		relative_position_id = lamplayt_58
+		relative_position_id = LIT_focus_58
 		x = 0
 		y = 1
 		available_if_capitulated = yes
@@ -1288,11 +1288,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_60
+		id = LIT_focus_60
 		icon = GFX_goal_dett21
 		ai_will_do = { factor = 30 }
-		relative_position_id = lamplayt_59
-		prerequisite = { focus = lamplayt_59 }
+		relative_position_id = LIT_focus_59
+		prerequisite = { focus = LIT_focus_59 }
 		cost = 45
 		x = 0
 		y = 1
@@ -1305,11 +1305,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_61
+		id = LIT_focus_61
 		icon = GFX_goal_dett22
 		ai_will_do = { factor = 30 }
-		prerequisite = { focus = lamplayt_60 }
-		relative_position_id = lamplayt_60
+		prerequisite = { focus = LIT_focus_60 }
+		relative_position_id = LIT_focus_60
 		available = {
 
 		}
@@ -1347,11 +1347,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_62
+		id = LIT_focus_62
 		icon = GFX_goal_dett30
 		ai_will_do = { factor = 100 }
-		relative_position_id = lamplayt_60
-		prerequisite = { focus = lamplayt_60 }
+		relative_position_id = LIT_focus_60
+		prerequisite = { focus = LIT_focus_60 }
 		available = {
 			AUC = { exists = no }
 			AUA = { exists = no }
@@ -1388,9 +1388,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_63
+		id = LIT_focus_63
 		icon = GFX_goal_dett16
-		relative_position_id = lamplayt_6
+		relative_position_id = LIT_focus_6
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1404,10 +1404,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_64
+		id = LIT_focus_64
 		icon = GFX_goal_dett17
-		relative_position_id = lamplayt_63
-		prerequisite = { focus = lamplayt_63 }
+		relative_position_id = LIT_focus_63
+		prerequisite = { focus = LIT_focus_63 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1421,10 +1421,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_65
+		id = LIT_focus_65
 		icon = GFX_goal_dett18
-		relative_position_id = lamplayt_63
-		prerequisite = { focus = lamplayt_63 }
+		relative_position_id = LIT_focus_63
+		prerequisite = { focus = LIT_focus_63 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1438,11 +1438,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_66
+		id = LIT_focus_66
 		icon = GFX_goal_dett19
-		relative_position_id = lamplayt_64
-		prerequisite = { focus = lamplayt_64 }
-		prerequisite = { focus = lamplayt_65 }
+		relative_position_id = LIT_focus_64
+		prerequisite = { focus = LIT_focus_64 }
+		prerequisite = { focus = LIT_focus_65 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1456,11 +1456,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_67
+		id = LIT_focus_67
 		icon = GFX_goal_dett19
-		relative_position_id = lamplayt_64
-		prerequisite = { focus = lamplayt_64 }
-		prerequisite = { focus = lamplayt_65 }
+		relative_position_id = LIT_focus_64
+		prerequisite = { focus = LIT_focus_64 }
+		prerequisite = { focus = LIT_focus_65 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1474,11 +1474,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_68
+		id = LIT_focus_68
 		icon = GFX_goal_dett19
-		relative_position_id = lamplayt_64
-		prerequisite = { focus = lamplayt_64 }
-		prerequisite = { focus = lamplayt_65 }
+		relative_position_id = LIT_focus_64
+		prerequisite = { focus = LIT_focus_64 }
+		prerequisite = { focus = LIT_focus_65 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1492,9 +1492,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_69
+		id = LIT_focus_69
 		icon = GFX_goal_ENC_vac
-		relative_position_id = lamplayt_67
+		relative_position_id = LIT_focus_67
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1508,10 +1508,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_70
+		id = LIT_focus_70
 		icon = GFX_goal_enc_laser_weapons
-		relative_position_id = lamplayt_69
-		prerequisite = { focus = lamplayt_69 }
+		relative_position_id = LIT_focus_69
+		prerequisite = { focus = LIT_focus_69 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1535,12 +1535,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_71
+		id = LIT_focus_71
 		icon = GFX_goal_enc_power_armor_focus
-		relative_position_id = lamplayt_70
-		prerequisite = { focus = lamplayt_70 }
+		relative_position_id = LIT_focus_70
+		prerequisite = { focus = LIT_focus_70 }
 		mutually_exclusive = {
-			focus = lamplayt_72
+			focus = LIT_focus_72
 		}
 		available = {
          has_country_flag = detkipodenclave
@@ -1555,12 +1555,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_72
+		id = LIT_focus_72
 		icon = GFX_goal_enc_power_armor_focus
-		relative_position_id = lamplayt_70
-		prerequisite = { focus = lamplayt_70 }
+		relative_position_id = LIT_focus_70
+		prerequisite = { focus = LIT_focus_70 }
 		mutually_exclusive = {
-			focus = lamplayt_71
+			focus = LIT_focus_71
 		}
 		available = {
          has_country_flag = detkipodenclave
@@ -1575,10 +1575,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_73
+		id = LIT_focus_73
 		icon = GFX_goal_enc_scientists
-		relative_position_id = lamplayt_72
-		prerequisite = { focus = lamplayt_72 focus = lamplayt_71 }	
+		relative_position_id = LIT_focus_72
+		prerequisite = { focus = LIT_focus_72 focus = LIT_focus_71 }	
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1592,10 +1592,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_75
+		id = LIT_focus_75
 		icon = GFX_goal_enc_small_arms
-		relative_position_id = lamplayt_69
-		prerequisite = { focus = lamplayt_69 }
+		relative_position_id = LIT_focus_69
+		prerequisite = { focus = LIT_focus_69 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1610,10 +1610,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_76
+		id = LIT_focus_76
 		icon = GFX_goal_enc_radio
-		relative_position_id = lamplayt_75
-		prerequisite = { focus = lamplayt_75 }
+		relative_position_id = LIT_focus_75
+		prerequisite = { focus = LIT_focus_75 }
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1632,10 +1632,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_77
+		id = LIT_focus_77
 		icon = GFX_goal_ESP_Start_3
-		relative_position_id = lamplayt_76
-		prerequisite = { focus = lamplayt_76 }	
+		relative_position_id = LIT_focus_76
+		prerequisite = { focus = LIT_focus_76 }	
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1649,10 +1649,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_78
+		id = LIT_focus_78
 		icon = GFX_goal_enc_army_doctrine
-		relative_position_id = lamplayt_77
-		prerequisite = { focus = lamplayt_77 }	
+		relative_position_id = LIT_focus_77
+		prerequisite = { focus = LIT_focus_77 }	
 		available = {
          has_country_flag = detkipodenclave
 		 ESP = { exists = yes }
@@ -1668,12 +1668,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_79
+		id = LIT_focus_79
 		icon = GFX_goal_generic_focus_magazine_robcofun_wastelad
-		relative_position_id = lamplayt_78
-		prerequisite = { focus = lamplayt_78 }
+		relative_position_id = LIT_focus_78
+		prerequisite = { focus = LIT_focus_78 }
         mutually_exclusive = {
-			focus = lamplayt_80
+			focus = LIT_focus_80
 		}		
 		available = {
          has_country_flag = detkipodenclave
@@ -1688,18 +1688,18 @@ focus_tree = {
 		completion_reward = {
 			add_autonomy_ratio = {
 				value = 0.1
-				localization = lamplayt_79
+				localization = LIT_focus_79
 			}
 		}
 	}
 	
 	focus = {
-		id = lamplayt_80
+		id = LIT_focus_80
 		icon = GFX_goal_ENC_fallen_america
-		relative_position_id = lamplayt_78
-		prerequisite = { focus = lamplayt_78 }
+		relative_position_id = LIT_focus_78
+		prerequisite = { focus = LIT_focus_78 }
 		mutually_exclusive = {
-			focus = lamplayt_79
+			focus = LIT_focus_79
 		}
 		ai_will_do = { factor = 1 }
 		available = {
@@ -1717,16 +1717,16 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_81
+		id = LIT_focus_81
 		icon = GFX_goal_generic_advanced_technology_focus
-		relative_position_id = lamplayt_51
+		relative_position_id = LIT_focus_51
 		prerequisite = { 
-		focus = lamplayt_51 
-		focus = lamplayt_54
-		focus = lamplayt_56 
-		focus = lamplayt_57 
-		focus = lamplayt_61 
-		focus = lamplayt_62 
+		focus = LIT_focus_51 
+		focus = LIT_focus_54
+		focus = LIT_focus_56 
+		focus = LIT_focus_57 
+		focus = LIT_focus_61 
+		focus = LIT_focus_62 
 		}
 		ai_will_do = { factor = 50 }
 		available = {
@@ -1751,10 +1751,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = lamplayt_82
+		id = LIT_focus_82
 		icon = GFX_goal_dett29
-		relative_position_id = lamplayt_81
-		prerequisite = { focus = lamplayt_81 }
+		relative_position_id = LIT_focus_81
+		prerequisite = { focus = LIT_focus_81 }
 		ai_will_do = { factor = 50 }
 		available = {
 
@@ -1777,10 +1777,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_83
+		id = LIT_focus_83
 		icon = GFX_goal_generic_building_focus
-		relative_position_id = lamplayt_90
-		prerequisite = { focus = lamplayt_90 }
+		relative_position_id = LIT_focus_90
+		prerequisite = { focus = LIT_focus_90 }
 		ai_will_do = { factor = 50 }
 		available = {
 
@@ -1815,10 +1815,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_84
+		id = LIT_focus_84
 		icon = GFX_goal_dett28
-		relative_position_id = lamplayt_81
-		prerequisite = { focus = lamplayt_81 }
+		relative_position_id = LIT_focus_81
+		prerequisite = { focus = LIT_focus_81 }
 		available = {
 
 		}
@@ -1831,10 +1831,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_85
+		id = LIT_focus_85
 		icon = GFX_goal_dett27
-		relative_position_id = lamplayt_84
-		prerequisite = { focus = lamplayt_84 }
+		relative_position_id = LIT_focus_84
+		prerequisite = { focus = LIT_focus_84 }
 		available = {
 
 		}
@@ -1862,10 +1862,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_86
+		id = LIT_focus_86
 		icon = GFX_goal_generic_bb_gun
-		relative_position_id = lamplayt_79	
-		prerequisite = { focus = lamplayt_79 }
+		relative_position_id = LIT_focus_79	
+		prerequisite = { focus = LIT_focus_79 }
 		available = {
 		 ESP = { exists = yes }
 		}
@@ -1878,16 +1878,16 @@ focus_tree = {
 			add_manpower = -133
 			add_autonomy_ratio = {
 				value = 0.15
-				#localization = lamplayt_86
+				#localization = LIT_focus_86
 			}
 		}
 	}
 	
 	focus = {
-		id = lamplayt_87
+		id = LIT_focus_87
 		icon = GFX_goal_generic_freedom
-		relative_position_id = lamplayt_86
-		prerequisite = { focus = lamplayt_86 }
+		relative_position_id = LIT_focus_86
+		prerequisite = { focus = LIT_focus_86 }
 		available = {
 		 ESP = { exists = yes }
 		}
@@ -1931,10 +1931,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_88
+		id = LIT_focus_88
 		icon = GFX_goal_ESP_Autumn_Purge
-		relative_position_id = lamplayt_80	
-		prerequisite = { focus = lamplayt_80 }
+		relative_position_id = LIT_focus_80	
+		prerequisite = { focus = LIT_focus_80 }
 		available = {
 		 ESP = { exists = yes }
 		}
@@ -1945,7 +1945,7 @@ focus_tree = {
 		completion_reward = {
 			add_autonomy_ratio = {
 				value = -0.15
-				localization = lamplayt_88
+				localization = LIT_focus_88
 			}
 			hidden_effect = {
 				country_event = { days = 150 id = LIT_event.11 }
@@ -1954,10 +1954,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_89
+		id = LIT_focus_89
 		icon = GFX_goal_SBS_Wasteland_Prop
-		relative_position_id = lamplayt_88	
-		prerequisite = { focus = lamplayt_88 }
+		relative_position_id = LIT_focus_88	
+		prerequisite = { focus = LIT_focus_88 }
 		available = {
 		 ESP = { exists = yes }
 		}
@@ -1973,10 +1973,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_90
+		id = LIT_focus_90
 		icon = GFX_goal_NCN_Blessed_Are_The_Merciful
-		relative_position_id = lamplayt_82	
-		prerequisite = { focus = lamplayt_82 }
+		relative_position_id = LIT_focus_82	
+		prerequisite = { focus = LIT_focus_82 }
 		available = {
 		}
 		ai_will_do = { factor = 50 }
@@ -1989,10 +1989,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_91
+		id = LIT_focus_91
 		icon = GFX_goal_generic_focus_magazine_aat_sniper
-		relative_position_id = lamplayt_83	
-		prerequisite = { focus = lamplayt_83 }
+		relative_position_id = LIT_focus_83	
+		prerequisite = { focus = LIT_focus_83 }
 		available = {
 		}
 		ai_will_do = { factor = 1 }
@@ -2005,9 +2005,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_92
+		id = LIT_focus_92
 		icon = GFX_goal_generic_creature_bald_eagle
-		relative_position_id = lamplayt_26
+		relative_position_id = LIT_focus_26
 		available = {
 		has_country_flag = resvedvernulis
 		}
@@ -2021,18 +2021,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_93
+		id = LIT_focus_93
 		icon = GFX_KHA_focus_hang
-		relative_position_id = lamplayt_92
-		prerequisite = { focus = lamplayt_92 }
+		relative_position_id = LIT_focus_92
+		prerequisite = { focus = LIT_focus_92 }
 		available = {
           has_country_flag = otkaz_ot_vseh
 		  date > 2279.1.1
-		  has_completed_focus = lamplayt_62
+		  has_completed_focus = LIT_focus_62
 		}
 		mutually_exclusive = {
-			focus = lamplayt_100
-			focus = lamplayt_107
+			focus = LIT_focus_100
+			focus = LIT_focus_107
 			
 		}
 		ai_will_do = { factor = 30 }
@@ -2047,10 +2047,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_94
+		id = LIT_focus_94
 		icon = GFX_goal_generic_bloody_sacrifice
-		relative_position_id = lamplayt_93
-		prerequisite = { focus = lamplayt_93 }
+		relative_position_id = LIT_focus_93
+		prerequisite = { focus = LIT_focus_93 }
 		available = {
 
 		}
@@ -2067,10 +2067,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_95
+		id = LIT_focus_95
 		icon = GFX_KHA_focus_support_orange
-		relative_position_id = lamplayt_94
-		prerequisite = { focus = lamplayt_94 }
+		relative_position_id = LIT_focus_94
+		prerequisite = { focus = LIT_focus_94 }
 		available = {
 
 		}
@@ -2160,10 +2160,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_96
+		id = LIT_focus_96
 		icon = GFX_goal_generic_land_doctrines_focus
-		relative_position_id = lamplayt_95
-		prerequisite = { focus = lamplayt_95 }
+		relative_position_id = LIT_focus_95
+		prerequisite = { focus = LIT_focus_95 }
 		available = {
 
 		}
@@ -2177,10 +2177,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_97
+		id = LIT_focus_97
 		icon = GFX_KHA_focus_army_1
-		relative_position_id = lamplayt_96
-		prerequisite = { focus = lamplayt_96 }
+		relative_position_id = LIT_focus_96
+		prerequisite = { focus = LIT_focus_96 }
 		available = {
 
 		}
@@ -2194,10 +2194,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_98
+		id = LIT_focus_98
 		icon = GFX_goal_NEW_new_world_old_ideas
-		relative_position_id = lamplayt_97
-		prerequisite = { focus = lamplayt_97 }
+		relative_position_id = LIT_focus_97
+		prerequisite = { focus = LIT_focus_97 }
 		available = {
            has_full_control_of_state = 986
 		   has_full_control_of_state = 997
@@ -2242,10 +2242,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_99
+		id = LIT_focus_99
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = lamplayt_98
-		prerequisite = { focus = lamplayt_98 }
+		relative_position_id = LIT_focus_98
+		prerequisite = { focus = LIT_focus_98 }
 		available = {
           TEN = { exists = yes }
 		}
@@ -2273,18 +2273,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_100
+		id = LIT_focus_100
 		icon = GFX_goal_generic_flamer_focus
-		relative_position_id = lamplayt_92
-		prerequisite = { focus = lamplayt_92 }
+		relative_position_id = LIT_focus_92
+		prerequisite = { focus = LIT_focus_92 }
 		available = {
           has_country_flag = otkaz_ot_vseh
 		  date > 2279.1.1
-		  has_completed_focus = lamplayt_62
+		  has_completed_focus = LIT_focus_62
 		}
 		mutually_exclusive = {
-			focus = lamplayt_93
-			focus = lamplayt_107
+			focus = LIT_focus_93
+			focus = LIT_focus_107
 		}
 		ai_will_do = { factor = 30 }
 		cost = 45
@@ -2297,10 +2297,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_101
+		id = LIT_focus_101
 		icon = GFX_goal_NCN_Blessed_Are_The_Merciful
-		relative_position_id = lamplayt_100
-		prerequisite = { focus = lamplayt_100 }
+		relative_position_id = LIT_focus_100
+		prerequisite = { focus = LIT_focus_100 }
 		available = {
 
 		}
@@ -2314,10 +2314,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_102
+		id = LIT_focus_102
 		icon = GFX_goal_dett32
-		relative_position_id = lamplayt_101
-		prerequisite = { focus = lamplayt_101 }
+		relative_position_id = LIT_focus_101
+		prerequisite = { focus = LIT_focus_101 }
 		available = {
 
 		}
@@ -2350,10 +2350,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_103
+		id = LIT_focus_103
 		icon = GFX_goal_dett34
-		relative_position_id = lamplayt_102
-		prerequisite = { focus = lamplayt_102 }
+		relative_position_id = LIT_focus_102
+		prerequisite = { focus = LIT_focus_102 }
 		available = {
 
 		}
@@ -2368,10 +2368,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_104
+		id = LIT_focus_104
 		icon = GFX_goal_generic_slums_focus
-		relative_position_id = lamplayt_103
-		prerequisite = { focus = lamplayt_103 }
+		relative_position_id = LIT_focus_103
+		prerequisite = { focus = LIT_focus_103 }
 		available = {
 
 		}
@@ -2401,10 +2401,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_105
+		id = LIT_focus_105
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = lamplayt_104
-		prerequisite = { focus = lamplayt_104 }
+		relative_position_id = LIT_focus_104
+		prerequisite = { focus = LIT_focus_104 }
 		available = {
 
 		}
@@ -2433,10 +2433,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_106
+		id = LIT_focus_106
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = lamplayt_105
-		prerequisite = { focus = lamplayt_105 }
+		relative_position_id = LIT_focus_105
+		prerequisite = { focus = LIT_focus_105 }
 		available = {
           TEN = { exists = yes }
 		}
@@ -2464,14 +2464,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_107
+		id = LIT_focus_107
 		icon = GFX_goal_dett
-		relative_position_id = lamplayt_92
-		prerequisite = { focus = lamplayt_92 }
+		relative_position_id = LIT_focus_92
+		prerequisite = { focus = LIT_focus_92 }
 
         mutually_exclusive = {
-			focus = lamplayt_100
-			focus = lamplayt_93
+			focus = LIT_focus_100
+			focus = LIT_focus_93
 		}
 		
         available = {
@@ -2487,10 +2487,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_108
+		id = LIT_focus_108
 		icon = GFX_goal_dett33
-		relative_position_id = lamplayt_107
-		prerequisite = { focus = lamplayt_107 }
+		relative_position_id = LIT_focus_107
+		prerequisite = { focus = LIT_focus_107 }
 		available = {
 		intellectuals > 0.53
 
@@ -2505,10 +2505,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_109
+		id = LIT_focus_109
 		icon = GFX_goal_dett31
-		relative_position_id = lamplayt_108
-		prerequisite = { focus = lamplayt_108 }
+		relative_position_id = LIT_focus_108
+		prerequisite = { focus = LIT_focus_108 }
 		available = {
 
 		}
@@ -2526,10 +2526,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_110
+		id = LIT_focus_110
 		icon = GFX_goal_dett31
-		relative_position_id = lamplayt_109
-		prerequisite = { focus = lamplayt_109 }
+		relative_position_id = LIT_focus_109
+		prerequisite = { focus = LIT_focus_109 }
 		available = {
 
 		}
@@ -2554,10 +2554,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_111
+		id = LIT_focus_111
 		icon = GFX_goal_dett31
-		relative_position_id = lamplayt_110
-		prerequisite = { focus = lamplayt_110 }
+		relative_position_id = LIT_focus_110
+		prerequisite = { focus = LIT_focus_110 }
 		available = {
 
 		}
@@ -2578,10 +2578,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_112
+		id = LIT_focus_112
 		icon = GFX_goal_dett31
-		relative_position_id = lamplayt_111
-		prerequisite = { focus = lamplayt_111 }
+		relative_position_id = LIT_focus_111
+		prerequisite = { focus = LIT_focus_111 }
 		available = {
 
 		}
@@ -2597,13 +2597,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_113
+		id = LIT_focus_113
 		icon = GFX_focus_generic_little_entente
-		relative_position_id = lamplayt_112
-		prerequisite = { focus = lamplayt_112 }
+		relative_position_id = LIT_focus_112
+		prerequisite = { focus = LIT_focus_112 }
 		available = {
 		  has_country_flag = otkaz_ot_vseh
-		  has_completed_focus = lamplayt_62
+		  has_completed_focus = LIT_focus_62
 		}
 		ai_will_do = { factor = 30 }
 		cost = 45
@@ -2616,10 +2616,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_114
+		id = LIT_focus_114
 		icon = GFX_KHA_focus_research_focus
-		relative_position_id = lamplayt_106
-		prerequisite = { focus = lamplayt_106 focus = lamplayt_99 focus = lamplayt_113 }
+		relative_position_id = LIT_focus_106
+		prerequisite = { focus = LIT_focus_106 focus = LIT_focus_99 focus = LIT_focus_113 }
 		available = {
           has_country_flag = otkaz_ot_vseh
 		  date > 2278.1.1
@@ -2633,18 +2633,18 @@ focus_tree = {
 	}
 	
 	focus = {#Purity - Human improvement
-		id = lamplayt_115
+		id = LIT_focus_115
 		icon = GFX_goal_enc_super_soldier
 		available = {
             has_country_flag = bigcheloverk
 			ESP = { exists = yes }
 		}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = lamplayt_73
+		relative_position_id = LIT_focus_73
 		x = -1
 		y = 1
-		prerequisite = { focus = lamplayt_73}
-		mutually_exclusive = { focus = lamplayt_116 }
+		prerequisite = { focus = LIT_focus_73}
+		mutually_exclusive = { focus = LIT_focus_116 }
 		completion_reward = {
 			add_ideas = ESP_FEV_soldiers
 		}
@@ -2652,16 +2652,16 @@ focus_tree = {
     }
 	
 	focus = {#Cloning
-		id = lamplayt_116
+		id = LIT_focus_116
 		icon = GFX_goal_enc_cloning
 		ai_will_do = { factor = 1 }
 		available = {
 			has_country_flag = bigcheloverk1
 			ESP = { exists = yes }
 		}
-		prerequisite = { focus = lamplayt_73 }
-		relative_position_id = lamplayt_73
-		mutually_exclusive = { focus = lamplayt_115 }
+		prerequisite = { focus = LIT_focus_73 }
+		relative_position_id = LIT_focus_73
+		mutually_exclusive = { focus = LIT_focus_115 }
 		x = 1
 		y = 1
 		cost = 45
@@ -2671,14 +2671,14 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_117
+		id = LIT_focus_117
 		icon = GFX_goal_Enclave17
 		ai_will_do = { factor = 1 }
 		available = {
 			ESP = { exists = no }
 		}
-		prerequisite = { focus = lamplayt_87 }
-		relative_position_id = lamplayt_87
+		prerequisite = { focus = LIT_focus_87 }
+		relative_position_id = LIT_focus_87
 		x = 0
 		y = 1
 		cost = 45
@@ -2691,14 +2691,14 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_118
+		id = LIT_focus_118
 		icon = GFX_goal_brahmin_cart
 		ai_will_do = { factor = 1 }
 		available = {
 			ESP = { exists = no }
 		}
-		prerequisite = { focus = lamplayt_117 }
-		relative_position_id = lamplayt_117
+		prerequisite = { focus = LIT_focus_117 }
+		relative_position_id = LIT_focus_117
 		x = 0
 		y = 1
 		cost = 45
@@ -2714,7 +2714,7 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_119
+		id = LIT_focus_119
 		icon = GFX_goal_ENC_construction_usa
 		ai_will_do = { factor = 1 }
 		available = {
@@ -2722,8 +2722,8 @@ focus_tree = {
 			SBS = {  exists = no }
 			USP = {  exists = no }
 		}
-		prerequisite = { focus = lamplayt_89 }
-		relative_position_id = lamplayt_89
+		prerequisite = { focus = LIT_focus_89 }
+		relative_position_id = LIT_focus_89
 		x = 0
 		y = 1
 		cost = 45
@@ -2740,14 +2740,14 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_120
+		id = LIT_focus_120
 		icon = GFX_goal_Enclave17
 		ai_will_do = { factor = 1 }
 		available = {
 			ESP = { exists = yes }
 		}
-		prerequisite = { focus = lamplayt_119 }
-		relative_position_id = lamplayt_119
+		prerequisite = { focus = LIT_focus_119 }
+		relative_position_id = LIT_focus_119
 		x = 0
 		y = 1
 		cost = 45
@@ -2759,15 +2759,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_121
+		id = LIT_focus_121
 		icon = GFX_goal_dett2
 		cost = 45
 		available = {
           has_country_flag = otkaz_ot_vseh
-		  has_completed_focus = lamplayt_113
+		  has_completed_focus = LIT_focus_113
 		}
-		prerequisite = { focus = lamplayt_113 }
-		relative_position_id = lamplayt_113
+		prerequisite = { focus = LIT_focus_113 }
+		relative_position_id = LIT_focus_113
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2796,14 +2796,14 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_122
+		id = LIT_focus_122
 		icon = GFX_goal_generic_food_focus
 		ai_will_do = { factor = 1 }
 		available = {
 
 		}
-		prerequisite = { focus = lamplayt_85 }
-		relative_position_id = lamplayt_85
+		prerequisite = { focus = LIT_focus_85 }
+		relative_position_id = LIT_focus_85
 		x = 0
 		y = 1
 		cost = 60
@@ -2818,14 +2818,14 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_123
+		id = LIT_focus_123
 		icon = GFX_goal_generic_data_focus
 		ai_will_do = { factor = 1 }
 		available = {
 
 		}
-		prerequisite = { focus = lamplayt_122 }
-		relative_position_id = lamplayt_122
+		prerequisite = { focus = LIT_focus_122 }
+		relative_position_id = LIT_focus_122
 		x = 0
 		y = 1
 		cost = 60
@@ -2835,13 +2835,13 @@ focus_tree = {
 	}
 	
 	focus = {#Cloning
-		id = lamplayt_124
+		id = LIT_focus_124
 		icon = GFX_KHA_focus_remain_neutral
 		ai_will_do = { factor = 1000 }
 		available = {
            has_country_flag = soglasievaultsouls
 		}
-		relative_position_id = lamplayt_36
+		relative_position_id = LIT_focus_36
 		x = 6
 		y = -1
 		cost = 45
@@ -2852,10 +2852,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_125
+		id = LIT_focus_125
 		icon = GFX_goal_generic_slums_focus
-		relative_position_id = lamplayt_124
-		prerequisite = { focus = lamplayt_124 }
+		relative_position_id = LIT_focus_124
+		prerequisite = { focus = LIT_focus_124 }
 		available = {
 
 		}
@@ -2876,10 +2876,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_126
+		id = LIT_focus_126
 		icon = GFX_goal_generic_military_industry_focus
-		relative_position_id = lamplayt_124
-		prerequisite = { focus = lamplayt_124 }
+		relative_position_id = LIT_focus_124
+		prerequisite = { focus = LIT_focus_124 }
 		available = {
 
 		}
@@ -2900,10 +2900,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_127
+		id = LIT_focus_127
 		icon = GFX_goal_dett31
-		relative_position_id = lamplayt_124
-		prerequisite = { focus = lamplayt_124 }
+		relative_position_id = LIT_focus_124
+		prerequisite = { focus = LIT_focus_124 }
 		available = {
 
 		}
@@ -2923,10 +2923,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_128
+		id = LIT_focus_128
 		icon = GFX_goal_SBS_Elder_Lyons
-		relative_position_id = lamplayt_127
-		prerequisite = { focus = lamplayt_127 }
+		relative_position_id = LIT_focus_127
+		prerequisite = { focus = LIT_focus_127 }
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
@@ -2944,15 +2944,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_129
+		id = LIT_focus_129
 		icon = GFX_goal_generic_medal
 		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
 		}
-		relative_position_id = lamplayt_128
-		prerequisite = { focus = lamplayt_128 }
+		relative_position_id = LIT_focus_128
+		prerequisite = { focus = LIT_focus_128 }
 		x = 0
 		y = 1
 
@@ -2965,15 +2965,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_130
+		id = LIT_focus_130
 		icon = GFX_goal_generic_f76_player3
 		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
 		}
-		relative_position_id = lamplayt_129
-		prerequisite = { focus = lamplayt_129 }
+		relative_position_id = LIT_focus_129
+		prerequisite = { focus = LIT_focus_129 }
 		x = 1
 		y = 1
 
@@ -2983,15 +2983,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_131
+		id = LIT_focus_131
 		icon = GFX_goal_generic_BoS_diplomatic_focus
 		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
 		}
-		relative_position_id = lamplayt_129
-		prerequisite = { focus = lamplayt_129 }
+		relative_position_id = LIT_focus_129
+		prerequisite = { focus = LIT_focus_129 }
 		x = -1
 		y = 1
 
@@ -3001,15 +3001,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_132
+		id = LIT_focus_132
 		icon = GFX_goal_generic_power_armor_blue
 		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
 		}
-		relative_position_id = lamplayt_130
-		prerequisite = { focus = lamplayt_130 }
+		relative_position_id = LIT_focus_130
+		prerequisite = { focus = LIT_focus_130 }
 		x = 0
 		y = 1
 
@@ -3019,15 +3019,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_133
+		id = LIT_focus_133
 		icon = GFX_goal_generic_BOS_focus_t45d_production
 		cost = 45
 		available = {
            ESP = { exists = no }
 		   SBS = { exists = yes }
 		}
-		relative_position_id = lamplayt_131
-		prerequisite = { focus = lamplayt_131 }
+		relative_position_id = LIT_focus_131
+		prerequisite = { focus = LIT_focus_131 }
 		x = 0
 		y = 1
 
@@ -3042,10 +3042,10 @@ focus_tree = {
 	
 	
 	focus = {
-		id = lamplayt_135
+		id = LIT_focus_135
 		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1 } 
-		relative_position_id = lamplayt_129
+		relative_position_id = LIT_focus_129
 		available = {
            ESP = { exists = no }
            has_country_flag = soglasievaultsouls		   
@@ -3059,15 +3059,15 @@ focus_tree = {
  }
  
     focus = {
-		id = lamplayt_136
+		id = LIT_focus_136
 		icon = GFX_goal_generic_land_doctrines_focus
 		cost = 45
 		available = {
 		   has_country_flag = soglasievaultsouls	   
            ESP = { exists = no }
 		}
-		relative_position_id = lamplayt_135
-		prerequisite = { focus = lamplayt_135 }
+		relative_position_id = LIT_focus_135
+		prerequisite = { focus = LIT_focus_135 }
 		x = 0
 		y = 1
 
@@ -3078,7 +3078,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_137
+		id = LIT_focus_137
 		icon = GFX_goal_generic_robots_focus
 		cost = 45
 		available = {
@@ -3086,8 +3086,8 @@ focus_tree = {
            ESP = { exists = no }
 		   USP = { exists = yes }
 		}
-		relative_position_id = lamplayt_135
-		prerequisite = { focus = lamplayt_135 }
+		relative_position_id = LIT_focus_135
+		prerequisite = { focus = LIT_focus_135 }
 		x = -2
 		y = 1
 
@@ -3105,7 +3105,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_138
+		id = LIT_focus_138
 		icon = GFX_goal_generic_ammo_boxes_focus
 		cost = 45
 		available = {
@@ -3113,8 +3113,8 @@ focus_tree = {
            ESP = { exists = no }
 		   USP = { exists = yes }
 		}
-		relative_position_id = lamplayt_135
-		prerequisite = { focus = lamplayt_135 }
+		relative_position_id = LIT_focus_135
+		prerequisite = { focus = LIT_focus_135 }
 		x = 2
 		y = 1
 
@@ -3124,7 +3124,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_139
+		id = LIT_focus_139
 		icon = GFX_goal_USP_Amata
 		cost = 45
 		available = {
@@ -3132,12 +3132,12 @@ focus_tree = {
            ESP = { exists = no }
 		   USP = { exists = yes }
 		}
-		relative_position_id = lamplayt_137
-		prerequisite = { focus = lamplayt_136 }
-		prerequisite = { focus = lamplayt_137 }
-		prerequisite = { focus = lamplayt_138 }
+		relative_position_id = LIT_focus_137
+		prerequisite = { focus = LIT_focus_136 }
+		prerequisite = { focus = LIT_focus_137 }
+		prerequisite = { focus = LIT_focus_138 }
 		mutually_exclusive = {
-			focus = lamplayt_140
+			focus = LIT_focus_140
 		}
 		x = 1
 		y = 1
@@ -3148,7 +3148,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = lamplayt_140
+		id = LIT_focus_140
 		icon = GFX_goal_USP_Choice_Butch
 		cost = 45
 		available = {
@@ -3156,12 +3156,12 @@ focus_tree = {
            ESP = { exists = no }
 		   USP = { exists = yes }
 		}
-		relative_position_id = lamplayt_138
-		prerequisite = { focus = lamplayt_136 }
-		prerequisite = { focus = lamplayt_137 }
-		prerequisite = { focus = lamplayt_138 }
+		relative_position_id = LIT_focus_138
+		prerequisite = { focus = LIT_focus_136 }
+		prerequisite = { focus = LIT_focus_137 }
+		prerequisite = { focus = LIT_focus_138 }
 		mutually_exclusive = {
-			focus = lamplayt_139
+			focus = LIT_focus_139
 		}
 		x = -1
 		y = 1

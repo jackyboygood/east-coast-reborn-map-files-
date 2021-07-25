@@ -11,7 +11,7 @@ cultural_advisor = {
 			allowed = {
 				original_tag = LIT
 			}
-			available = { has_completed_focus = lamplayt_6 }
+			available = { has_completed_focus = LIT_focus_6 }
 			traits = { detskiy_vrach }
 
 			ai_will_do = {
@@ -28,7 +28,7 @@ cultural_advisor = {
 					original_tag = LIT
 				}
 				
-				available = { has_completed_focus = lamplayt_11 }
+				available = { has_completed_focus = LIT_focus_11 }
 
 				traits = { uchitel }
 
@@ -54,7 +54,7 @@ economic_advisor = {
 				allowed = {
 					original_tag = LIT
 				}
-				available = { has_completed_focus = lamplayt_5 }
+				available = { has_completed_focus = LIT_focus_5 }
 
 				traits = { torgash_edi_litl }
 
@@ -70,7 +70,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 			
-			available = { has_completed_focus = lamplayt_63 }
+			available = { has_completed_focus = LIT_focus_63 }
 			
 			traits = {
 				suppressor
@@ -86,7 +86,7 @@ economic_advisor = {
 			allowed = {
 				tag = LIT 
 			}
-			available = { has_completed_focus = lamplayt_64 }
+			available = { has_completed_focus = LIT_focus_64 }
 			traits = {
 				enc_disliked_pragmatist  
 			}
@@ -108,7 +108,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 			
-			available = { has_completed_focus = lamplayt_8 }
+			available = { has_completed_focus = LIT_focus_8 }
 			traits = { princeskfa }
 
 			ai_will_do = {
@@ -123,7 +123,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 			
-			available = { has_completed_focus = lamplayt_9 }
+			available = { has_completed_focus = LIT_focus_9 }
 			traits = { littl_police }
 
 			ai_will_do = {
@@ -138,7 +138,7 @@ economic_advisor = {
 			}				
 			traits = { air_chief_ground_support_3 }
 			
-			available = { has_completed_focus = lamplayt_67 }
+			available = { has_completed_focus = LIT_focus_67 }
 			
 			ai_will_do = {
 				factor = 50
@@ -150,7 +150,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 
-            available = { has_completed_focus = lamplayt_68 }			
+            available = { has_completed_focus = LIT_focus_68 }			
 			traits = { army_entrenchment_3 }
 			
 			ai_will_do = {
@@ -170,7 +170,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 			
-			available = { has_completed_focus = lamplayt_7 }
+			available = { has_completed_focus = LIT_focus_7 }
 
 			traits = { littl_sturmoviki }
 			
@@ -188,7 +188,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 			
-			available = { has_completed_focus = lamplayt_39 }
+			available = { has_completed_focus = LIT_focus_39 }
 			
 			traits = { besumniy_strelok}
 
@@ -205,7 +205,7 @@ economic_advisor = {
 				original_tag = LIT
 			}
 			
-			available = { has_completed_focus = lamplayt_65 }
+			available = { has_completed_focus = LIT_focus_65 }
 			
 			research_bonus = {
 				cat_grand_army = 0.10
@@ -225,7 +225,7 @@ economic_advisor = {
 				original_tag = ESP
 			}
 			
-			available = { has_completed_focus = lamplayt_66 }
+			available = { has_completed_focus = LIT_focus_66 }
 			
 
 			

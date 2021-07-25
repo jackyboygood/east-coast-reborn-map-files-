@@ -17,7 +17,7 @@ country_event = {
 		name = MEN_event.1.a		
 		custom_effect_tooltip = MEN_event.1.a_tt
 		hidden_effect = {
-			country_event = { days = 3 id = newsfallout.8 }
+			country_event = { days = 3 id = news_event_ec.8 }
 		}
 	}
 }
@@ -359,7 +359,7 @@ country_event = {
 		power_armour_tech_level_settler = 1
 		}
 		hidden_effect = {
-			country_event = { days = 1 id = newsfallout.10 }
+			country_event = { days = 1 id = news_event_ec.10 }
 		}
 	}
 }

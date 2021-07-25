@@ -62,7 +62,7 @@ research_advisor = {
 			allowed = {
 				original_tag = USP
 			}
-			traits = { vault101_leadersecurity }
+			traits = { USP_focus_leadersecurity }
 			ai_will_do = {
 				factor = 10
 			}
@@ -77,7 +77,7 @@ high_command = {
 			allowed = {
 				original_tag = USP
 			}
-			traits = { vault101_security }
+			traits = { USP_focus_security }
 			ai_will_do = {
 				factor = 10
 			}

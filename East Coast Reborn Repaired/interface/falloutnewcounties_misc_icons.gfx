@@ -61,8 +61,8 @@ spriteTypes = {
 		}
 
         spriteType = { 
-			name = "GFX_idea_minitmen_protect"
-			texturefile = "gfx/interface/ideas/minitmen_protect.dds"
+			name = "GFX_idea_MEN_focus_protect"
+			texturefile = "gfx/interface/ideas/MEN_focus_protect.dds"
 		}
 
         spriteType = { 

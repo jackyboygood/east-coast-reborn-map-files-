@@ -1,5 +1,5 @@
 focus_tree = {
-	id = vault101
+	id = USP_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = vault101_1
+		id = USP_focus_1
 		icon = GFX_goal_VLT_all_clear
 		cost = 1.00
 		x = 15
@@ -44,12 +44,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = vault101_2
+		id = USP_focus_2
 		icon = GFX_goal_VLT_crim
 		x = 0
 		y = 1
-		prerequisite = { focus = vault101_1 }
-		relative_position_id = vault101_1 
+		prerequisite = { focus = USP_focus_1 }
+		relative_position_id = USP_focus_1 
 		cost = 7
 
 		ai_will_do = {
@@ -79,12 +79,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = vault101_3
+		id = USP_focus_3
 		icon = GFX_goal_VLT_crim
 		x = 0
 		y = 1
-		prerequisite = { focus = vault101_2 }
-		relative_position_id = vault101_2 
+		prerequisite = { focus = USP_focus_2 }
+		relative_position_id = USP_focus_2 
 		cost = 7
 
 		ai_will_do = {
@@ -115,22 +115,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_4
+		id = USP_focus_4
 		icon = GFX_goal_generic_cities_focus
 		cost = 60
 		prerequisite = {
-			focus = vault101_3
+			focus = USP_focus_3
 		}
 		available = {
 			988 = { is_owned_and_controlled_by = ROOT }
 		}
 		x = -10
 		y = 1
-		relative_position_id = vault101_3
+		relative_position_id = USP_focus_3
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_4 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_4 entered"
 			}
 			988 = {
 				add_extra_state_shared_building_slots = 3
@@ -142,51 +142,51 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_4 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_4 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_5
+		id = USP_focus_5
 		icon = GFX_goal_generic_ammo_boxes_focus
 		cost = 60
 		prerequisite = {
-			focus = vault101_4
+			focus = USP_focus_4
 		}
 		x = -2
 		y = 1
-		relative_position_id = vault101_4
+		relative_position_id = USP_focus_4
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_5 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_5 entered"
 			}
 			add_ideas = vaultmedreg
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_5 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_5 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_6
+		id = USP_focus_6
 		icon = GFX_goal_generic_military_industry_focus
 		cost = 60
 		prerequisite = {
-			focus = vault101_4
+			focus = USP_focus_4
 		}
 		available = {
 			987= { is_owned_and_controlled_by = ROOT }
 		}
 		x = 2
 		y = 1
-		relative_position_id = vault101_4
+		relative_position_id = USP_focus_4
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_6 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_6 entered"
 			}
 			987= {
 				add_extra_state_shared_building_slots = 3
@@ -198,77 +198,77 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_6 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_6 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_7
+		id = USP_focus_7
 		icon = GFX_focus_generic_little_entente
 		cost = 60
 		prerequisite = {
-			focus = vault101_5
+			focus = USP_focus_5
 		}
 		x = 0
 		y = 1
-		relative_position_id = vault101_5
+		relative_position_id = USP_focus_5
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_7 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_7 entered"
 			}
 			add_ideas = courtyarddraft
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_7 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_7 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_8
+		id = USP_focus_8
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 60
 		prerequisite = {
-			focus = vault101_6
+			focus = USP_focus_6
 		}
 		x = 0
 		y = 1
-		relative_position_id = vault101_6
+		relative_position_id = USP_focus_6
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_8 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_8 entered"
 			}
 			add_ideas = milsecurity
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_8 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_8 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_9
+		id = USP_focus_9
 		icon = GFX_goal_generic_robots_focus
 		cost = 60
 		prerequisite = {
-			focus = vault101_7
+			focus = USP_focus_7
 		}
 		prerequisite = {
-			focus = vault101_8
+			focus = USP_focus_8
 		}
 		available = {
 			988 = { is_owned_and_controlled_by = ROOT }
 		}
 		x = 2
 		y = 1
-		relative_position_id = vault101_7
+		relative_position_id = USP_focus_7
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_9 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_9 entered"
 			}
 			988 = {
 				add_extra_state_shared_building_slots = 3
@@ -281,51 +281,51 @@ focus_tree = {
 			add_ideas = vault_robosec
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_9 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_9 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_10
+		id = USP_focus_10
 		text = vault_sec
 		icon = GFX_goal_generic_land_doctrines_focus
 		cost = 60
 		prerequisite = {
-			focus = vault101_3
+			focus = USP_focus_3
 		}
 		x = 10
 		y = 1
-		relative_position_id = vault101_3
+		relative_position_id = USP_focus_3
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_10 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_10 entered"
 			}
 			army_experience = 20
 			add_manpower = 250
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_10 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_10 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_11
+		id = USP_focus_11
 		text = vault_garage
 		icon = GFX_goal_generic_army_motorized
 		cost = 60
 		prerequisite = {
-			focus = vault101_10
+			focus = USP_focus_10
 		}
 		x = -2
 		y = 1
-		relative_position_id = vault101_10
+		relative_position_id = USP_focus_10
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_11 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_11 entered"
 			}
 			add_tech_bonus = {
 				name = vault_garage
@@ -335,26 +335,26 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_11 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_11 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_12
+		id = USP_focus_12
 		text = vault_arm_guard
 		icon = GFX_goal_generic_common_energy_weapons_focus
 		cost = 60
 		prerequisite = {
-			focus = vault101_10
+			focus = USP_focus_10
 		}
 		x = 0
 		y = 1
-		relative_position_id = vault101_10
+		relative_position_id = USP_focus_10
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_12 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_12 entered"
 			}
 			add_tech_bonus = {
 				name = vault_weapons
@@ -364,26 +364,26 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_12 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_12 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_13
+		id = USP_focus_13
 		text = vault_robot
 		icon = GFX_goal_generic_production2
 		cost = 60
 		prerequisite = {
-			focus = vault101_10
+			focus = USP_focus_10
 		}
 		x = 2
 		y = 1
-		relative_position_id = vault101_10
+		relative_position_id = USP_focus_10
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_13 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_13 entered"
 			}
 			add_tech_bonus = {
 				name = vault_robotics
@@ -393,18 +393,18 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_13 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_13 exited"
 			}
 		}
 	}
 
 	
 	focus = {
-		id = vault101_15
+		id = USP_focus_15
 		icon = GFX_goal_USP_Megaton
-		relative_position_id = vault101_3
+		relative_position_id = USP_focus_3
 		prerequisite = {
-			focus = vault101_3
+			focus = USP_focus_3
 		}
 		cost = 45
 		x = 0
@@ -431,12 +431,12 @@ focus_tree = {
 
 	
 	focus = {
-	id = vault101_31
+	id = USP_focus_31
 	icon = GFX_goal_USP_god_bless
-    prerequisite = { focus = vault101_15}
-	relative_position_id = vault101_15
+    prerequisite = { focus = USP_focus_15}
+	relative_position_id = USP_focus_15
 	mutually_exclusive = {
-	focus = vault101_32
+	focus = USP_focus_32
 	}
 	available = {
 		NOT = {
@@ -480,7 +480,7 @@ focus_tree = {
 	    }
 	set_country_flag = enclave_war	
 	hidden_effect = {
-	country_event = { id = newsfallout.26 }
+	country_event = { id = news_event_ec.26 }
 	}
 	}
 	
@@ -488,11 +488,11 @@ focus_tree = {
 	
 
 	focus = {
-		id = vault101_32
+		id = USP_focus_32
 		icon = GFX_goal_VLT_all_clear
-		prerequisite = { focus = vault101_15}
-		relative_position_id = vault101_15
-		mutually_exclusive = { focus = vault101_31 }
+		prerequisite = { focus = USP_focus_15}
+		relative_position_id = USP_focus_15
+		mutually_exclusive = { focus = USP_focus_31 }
 		x = -1
 		y = 1
 		
@@ -555,22 +555,22 @@ focus_tree = {
 	    }
 	    set_country_flag = enclave_war
 		hidden_effect = {
-		country_event = { days = 1 id = newsfallout.26 }
+		country_event = { days = 1 id = news_event_ec.26 }
 		}
 	}
 }
 	
 	focus = {
-		id = vault101_33
+		id = USP_focus_33
 		icon = GFX_goal_USP_Choice
-		relative_position_id = vault101_32
+		relative_position_id = USP_focus_32
 		available = {
 			ESP = { exists = no }
 			has_war = no
 		}
 		prerequisite = {
-		focus = vault101_32
-		focus = vault101_31
+		focus = USP_focus_32
+		focus = USP_focus_31
 		}
 		cost = 45
 		bypass = {
@@ -581,24 +581,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_33 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_33 entered"
 			}
 			country_event = {
 				id = USP_event.63
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_33 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_33 exited"
 			}
 		}
 	}
 
 	focus = {
-		id = vault101_44
+		id = USP_focus_44
 		icon = GFX_goal_USP_Choice_Butch
 		cost = 45
 		prerequisite = {
-		focus = vault101_33
+		focus = USP_focus_33
 		}
 		available = {
 			has_country_leader = {
@@ -609,7 +609,7 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-		relative_position_id = vault101_33
+		relative_position_id = USP_focus_33
 		completion_reward = {
 			add_ideas = vault101buch
             LIT = {
@@ -619,9 +619,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_34
+		id = USP_focus_34
 		icon = GFX_goal_USP_Butch_Trolling
-		relative_position_id = vault101_44
+		relative_position_id = USP_focus_44
 		available = {
 			has_country_leader = {
 				id = 5678
@@ -630,7 +630,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-		focus = vault101_44
+		focus = USP_focus_44
 		}
 		ai_will_do = { factor = 1 } 
 		x = 0
@@ -660,11 +660,11 @@ focus_tree = {
  }
 
 	focus = {
-		id = vault101_52
+		id = USP_focus_52
 		icon = GFX_goal_USP_Amata
 		cost = 45
 		prerequisite = {
-		focus = vault101_33
+		focus = USP_focus_33
 		}
 		available = {
 			has_country_leader = {
@@ -675,7 +675,7 @@ focus_tree = {
 		}
 		x = -5
 		y = 1
-		relative_position_id = vault101_33
+		relative_position_id = USP_focus_33
 		completion_reward = {
 			add_ideas = amatast
 			LIT = {
@@ -685,12 +685,12 @@ focus_tree = {
 	}
  
  	focus = {
-		id = vault101_35
+		id = USP_focus_35
 		icon = GFX_goal_USP_Builder
-		relative_position_id = vault101_52
+		relative_position_id = USP_focus_52
 		cost = 45
 		prerequisite = {
-        focus = vault101_52
+        focus = USP_focus_52
 		}
 		x = 0
 		y = 1
@@ -704,7 +704,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_35 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_35 entered"
 			}
 			every_owned_state = {
 				limit = {
@@ -718,17 +718,17 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_35 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_35 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_36
+		id = USP_focus_36
 		icon = GFX_goal_USP_Builder_2
-		prerequisite = { focus = vault101_35 }
+		prerequisite = { focus = USP_focus_35 }
 		ai_will_do = { factor = 1 } 
-		relative_position_id = vault101_35
+		relative_position_id = USP_focus_35
 		x = -2
 		y = 1
 		cost = 45
@@ -748,11 +748,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_37
+		id = USP_focus_37
 		icon = GFX_goal_USP_Boy_Smart
-		prerequisite = {focus = vault101_35}
+		prerequisite = {focus = USP_focus_35}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = vault101_35
+		relative_position_id = USP_focus_35
 		available = {
 			985 = { is_controlled_by = USP } #do we actually own it right now?
 		}
@@ -768,12 +768,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_38
+		id = USP_focus_38
 		icon = GFX_goal_USP_Boy_Smart_2
-		relative_position_id = vault101_35
+		relative_position_id = USP_focus_35
 		cost = 45
 		prerequisite = {
-			focus = vault101_35
+			focus = USP_focus_35
 		}
 		x = 2
 		y = 1
@@ -783,7 +783,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_38 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_38 entered"
 			}
 			987 = {
 				add_resource = {
@@ -793,21 +793,21 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_38 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_38 exited"
 			}
 		}
 	}
 	
 	focus = {#Purity - VLT - purify
-		id = vault101_39
+		id = USP_focus_39
 		icon = GFX_goal_USP_All_Good
 		ai_will_do = { factor = 1 } 
-		relative_position_id = vault101_35
+		relative_position_id = USP_focus_35
 		x = 0
 		y = 2
-		prerequisite = { focus = vault101_36}	
-		prerequisite = { focus = vault101_37}
-		prerequisite = { focus = vault101_38}	
+		prerequisite = { focus = USP_focus_36}	
+		prerequisite = { focus = USP_focus_37}
+		prerequisite = { focus = USP_focus_38}	
 		completion_reward = {
 			add_stability = 0.15
 			add_war_support = -0.10
@@ -817,14 +817,14 @@ focus_tree = {
  }
  
     focus = {
-		id = vault101_40
+		id = USP_focus_40
 		icon = GFX_goal_USP_Slave
 		ai_will_do = { factor = 1 } 
-		relative_position_id = vault101_34
+		relative_position_id = USP_focus_34
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = vault101_34
+			focus = USP_focus_34
 		} 
 		cost = 45
 		completion_reward = {add_ideas = ESP_slave_labour}
@@ -832,11 +832,11 @@ focus_tree = {
  } 
  
     focus = {
-		id = vault101_41
+		id = USP_focus_41
 		icon = GFX_goal_USP_Civil_War
-		relative_position_id = vault101_40
+		relative_position_id = USP_focus_40
         prerequisite = {
-			focus = vault101_40
+			focus = USP_focus_40
 		} 
 		available = {
 			is_puppet = no
@@ -859,12 +859,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_43
+		id = USP_focus_43
 		icon = GFX_goal_USP_Default
-		relative_position_id = vault101_41
+		relative_position_id = USP_focus_41
 		cost = 45
 		prerequisite = {
-			focus = vault101_41
+			focus = USP_focus_41
 		}
 		x = 2
 		y = 1
@@ -874,7 +874,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_43 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_43 entered"
 			}
 			988 = {
 				add_building_construction = {
@@ -891,44 +891,44 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_43 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_43 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_49
+		id = USP_focus_49
 		icon = GFX_goal_USP_Tunnel_Snakes_Rule
 		cost = 45
 		prerequisite = {
-			focus = vault101_41
+			focus = USP_focus_41
 		}
 		available = {
 		has_war = no
 		}
 		x = 0
 		y = 1
-		relative_position_id = vault101_41
+		relative_position_id = USP_focus_41
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_49 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_49 entered"
 			}
 			add_stability = 0.15
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_49 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_49 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_50
+		id = USP_focus_50
 		icon = GFX_goal_USP_Tunnel_Snakes
-		relative_position_id = vault101_41
+		relative_position_id = USP_focus_41
 		cost = 45
         prerequisite={
-		focus = vault101_41
+		focus = USP_focus_41
 		}
 		x = -2
 		y = 1
@@ -965,19 +965,19 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_51
+		id = USP_focus_51
 		icon = GFX_goal_USP_No_BOS
-		relative_position_id = vault101_44
+		relative_position_id = USP_focus_44
 		x = 0
 		y = 5
 		prerequisite = {
-		focus = vault101_49
+		focus = USP_focus_49
 		}
 		prerequisite = {
-		focus = vault101_43
+		focus = USP_focus_43
 		}
 		prerequisite = {
-		focus = vault101_50
+		focus = USP_focus_50
 		}
 		
 		will_lead_to_war_with = SBS
@@ -1017,11 +1017,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_53
+		id = USP_focus_53
 		icon = GFX_goal_generic_metal_focus
-		relative_position_id = vault101_39
+		relative_position_id = USP_focus_39
 		prerequisite = {
-		focus = vault101_39
+		focus = USP_focus_39
 		}
 		cost = 60
 		x = -2
@@ -1030,25 +1030,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_53 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_53 entered"
 			}
 			capital_scope = {
 				add_resource = { type = metal amount = 15 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_53 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_53 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_54
+		id = USP_focus_54
 		icon = GFX_goal_generic_advanced_technology_focus
-		relative_position_id = vault101_39
+		relative_position_id = USP_focus_39
 		cost = 60
 		prerequisite = {
-        focus = vault101_39
+        focus = USP_focus_39
 		}
 		x = 0
 		y = 1
@@ -1056,25 +1056,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_54 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_54 entered"
 			}
 			capital_scope = {
 				add_resource = { type = advanced amount = 12 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_54 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_54 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_55
+		id = USP_focus_55
 		icon = GFX_goal_generic_fuel_focus
-		relative_position_id = vault101_39
+		relative_position_id = USP_focus_39
 		cost = 60
 		prerequisite = {
-		focus = vault101_39
+		focus = USP_focus_39
 		}
 		x = 2
 		y = 1
@@ -1082,25 +1082,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_55 entered"
+				log = "[GetDateText]: [Root.GetName] USP_focus_55 entered"
 			}
 			capital_scope = {
 				add_resource = { type = energy amount = 12 }
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] vault101_55 exited"
+				log = "[GetDateText]: [Root.GetName] USP_focus_55 exited"
 			}
 		}
 	}
 	
 	focus = {
-		id = vault101_56
+		id = USP_focus_56
 		icon = GFX_goal_USP_Butch_Trolling
-		relative_position_id = vault101_51
+		relative_position_id = USP_focus_51
 		cost = 45
 		prerequisite = {
-		focus = vault101_51
+		focus = USP_focus_51
 		}
 		bypass = {
             has_full_control_of_state = 1023
@@ -1121,12 +1121,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_57
+		id = USP_focus_57
 		icon = GFX_goal_USP_Butch_Trolling
 		prerequisite = {
-			focus = vault101_56
+			focus = USP_focus_56
 		}
-		relative_position_id = vault101_56
+		relative_position_id = USP_focus_56
 		cost = 45
 		bypass = {
             has_full_control_of_state = 1022
@@ -1147,12 +1147,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = vault101_58
+		id = USP_focus_58
 		icon = GFX_goal_USP_Butch_Trolling
 		prerequisite = {
-			focus = vault101_56
+			focus = USP_focus_56
 		}
-		relative_position_id = vault101_56
+		relative_position_id = USP_focus_56
 		cost = 45
 		bypass = {
             has_full_control_of_state = 986

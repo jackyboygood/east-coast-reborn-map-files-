@@ -1,5 +1,5 @@
 focus_tree = {
-	id = new_newyork
+	id = NUE_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -588,7 +588,7 @@ focus_tree = {
 			add_war_support = 0.1
 			add_stability = -0.1
 			hidden_effect = {
-			       country_event = { days = 3 id = newsfallout.6 }
+			       country_event = { days = 3 id = news_event_ec.6 }
 		    }
 		}
 	}
@@ -1118,7 +1118,7 @@ focus = {
 				target = ENY
 			}
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.18 }	
+				country_event = { days = 1 id = news_event_ec.18 }	
 			}
 		}
 	}
@@ -1164,7 +1164,7 @@ focus = {
 				target = NBS
 			}
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.18 }	
+				country_event = { days = 1 id = news_event_ec.18 }	
 			}
 		}
 	}
@@ -1259,7 +1259,7 @@ focus = {
 				log = "[GetDateText]: [Root.GetName] NUE_focus_42 exited"
 			}
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.19 }	
+				country_event = { days = 1 id = news_event_ec.19 }	
 			}
 		}
 	}

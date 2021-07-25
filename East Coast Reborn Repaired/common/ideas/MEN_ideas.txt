@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 	
-	    minitmen_protect = {
+	    MEN_focus_protect = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -9,13 +9,13 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = minitmen_protect
+			picture = MEN_focus_protect
 			modifier = {
 				drift_defence_factor = 0.05
 				stability_factor = 0.08
 			}
 		}
-		minitmen_drift = {
+		MEN_focus_drift = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {

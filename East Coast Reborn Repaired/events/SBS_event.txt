@@ -17,7 +17,7 @@ country_event = {
 		    add_manpower = -80
 			hidden_effect = {
 			    load_oob = NBS_2265
-				country_event = { days = 2 id = newsfallout.15 }	
+				country_event = { days = 2 id = news_event_ec.15 }	
 			}
 		}
 	}
@@ -38,7 +38,7 @@ country_event = {
 			add_political_power = 50
 		    add_manpower = 500
 			hidden_effect = {
-				country_event = { days = 2 id = newsfallout.16 }	
+				country_event = { days = 2 id = news_event_ec.16 }	
 			}
 		}
 	}
@@ -60,7 +60,7 @@ country_event = {
 				target = ENY
 			}
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.17 }	
+				country_event = { days = 1 id = news_event_ec.17 }	
 			}
 		}
 	}

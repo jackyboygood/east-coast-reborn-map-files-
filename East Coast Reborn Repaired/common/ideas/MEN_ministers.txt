@@ -59,7 +59,7 @@ research_advisor = {
         independen = {
 		    cost = 600
 			picture = advisor_minitman1
-            available = { has_completed_focus = Minitmen_20 }
+            available = { has_completed_focus = MEN_focus_20 }
 			allowed = {
 				original_tag = MEN
 			}

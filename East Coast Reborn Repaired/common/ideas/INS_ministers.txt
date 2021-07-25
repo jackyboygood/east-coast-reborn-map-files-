@@ -6,7 +6,7 @@ cultural_advisor = {
 				picture = advisor_insitut2
 
 				allowed = { original_tag = INS }
-				available = { has_completed_focus = institut_25 }
+				available = { has_completed_focus = INS_focus_25 }
 
 				traits = { peaceful_lee }
 
@@ -23,7 +23,7 @@ cultural_advisor = {
 				original_tag = INS
 			}
 			available =	{
-				has_completed_focus = institut_13
+				has_completed_focus = INS_focus_13
 			}
 			traits = { din_folcret }
 
@@ -106,7 +106,7 @@ high_command = {
 				original_tag = INS
 			}
 			available =	{
-				has_completed_focus = institut_67
+				has_completed_focus = INS_focus_67
 			}
 			traits = { universal_sinth }
 

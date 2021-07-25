@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Deyv_focus
+	id = DEV_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_1 
+		id = DEV_focus_1 
 		icon = GFX_goal_DEV_Dave_Rules
 		x = 17
 		y = 0
@@ -27,12 +27,12 @@ focus_tree = {
     }
 	
 	focus = {
-		id = Deyv_2
+		id = DEV_focus_2
 		icon = GFX_goal_DEV_Dave_Rules
 		cost = 7
-		relative_position_id = Deyv_1 
+		relative_position_id = DEV_focus_1 
 		prerequisite = {
-			focus = Deyv_1 
+			focus = DEV_focus_1 
 		}
 		x = 0
 		y = 1
@@ -53,12 +53,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_3
+		id = DEV_focus_3
 		icon = GFX_goal_SBS_GNR
 		cost = 7
-		relative_position_id = Deyv_2 
+		relative_position_id = DEV_focus_2 
 		prerequisite = {
-			focus = Deyv_2 
+			focus = DEV_focus_2 
 		}
 		x = 0
 		y = 1
@@ -82,12 +82,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_4
+		id = DEV_focus_4
 		icon = GFX_goal_generic_slums_focus
 		cost = 35
-		relative_position_id = Deyv_3 
+		relative_position_id = DEV_focus_3 
 		prerequisite = {
-			focus = Deyv_24
+			focus = DEV_focus_24
 		}
 		x = -9
 		y = 2
@@ -143,13 +143,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_5
+		id = DEV_focus_5
 		icon = GFX_goal_generic_advanced_technology_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_4
+			focus = DEV_focus_4
 		}
-		relative_position_id = Deyv_4 
+		relative_position_id = DEV_focus_4 
 		x = -2
 		y = 1
 		completion_reward = {
@@ -166,13 +166,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_6
+		id = DEV_focus_6
 		icon = GFX_goal_generic_advanced_technology_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_5
+			focus = DEV_focus_5
 		}
-		relative_position_id = Deyv_5
+		relative_position_id = DEV_focus_5
 		x = 0
 		y = 1
 		completion_reward = {
@@ -190,13 +190,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_7
+		id = DEV_focus_7
 		icon = GFX_goal_generic_military_industry_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_4
+			focus = DEV_focus_4
 		}
-		relative_position_id = Deyv_4
+		relative_position_id = DEV_focus_4
 		x = 2
 		y = 1
 		completion_reward = {
@@ -242,13 +242,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_8
+		id = DEV_focus_8
 		icon = GFX_goal_generic_supplies_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_7
+			focus = DEV_focus_7
 		}
-		relative_position_id = Deyv_7
+		relative_position_id = DEV_focus_7
 		x = 0
 		y = 1
 		completion_reward = {
@@ -283,13 +283,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_9
+		id = DEV_focus_9
 		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 35
 		prerequisite = {
-			focus = Deyv_6
+			focus = DEV_focus_6
 		}
-		relative_position_id = Deyv_6
+		relative_position_id = DEV_focus_6
 		x = 0
 		y = 1
 		completion_reward = {
@@ -307,13 +307,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_10
+		id = DEV_focus_10
 		icon = GFX_goal_generic_bunkers_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_8
+			focus = DEV_focus_8
 		}
-		relative_position_id = Deyv_8
+		relative_position_id = DEV_focus_8
 		x = 0
 		y = 1
 		completion_reward = {
@@ -327,11 +327,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_11
+		id = DEV_focus_11
 		icon = GFX_goal_DEV_saluting
-		relative_position_id = Deyv_3
+		relative_position_id = DEV_focus_3
 		prerequisite = {
-			focus = Deyv_3
+			focus = DEV_focus_3
 		}
 		cost = 35
 		available = {
@@ -346,18 +346,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_12
+		id = DEV_focus_12
 		icon = GFX_goal_DEV_Dave
-		relative_position_id = Deyv_11
+		relative_position_id = DEV_focus_11
 		cost = 35
 		prerequisite = {
-			focus = Deyv_11
+			focus = DEV_focus_11
 		}
 		available = {
 			
 		}
 		mutually_exclusive = {
-			focus = Deyv_13
+			focus = DEV_focus_13
 		}
 		x = -2
 		y = 1
@@ -367,18 +367,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_13
+		id = DEV_focus_13
 		icon = GFX_goal_DEV_Bob
-		relative_position_id = Deyv_11
+		relative_position_id = DEV_focus_11
 		cost = 35
 		prerequisite = {
-			focus = Deyv_11
+			focus = DEV_focus_11
 		}
 		available = {
 			
 		}
 		mutually_exclusive = {
-			focus = Deyv_12
+			focus = DEV_focus_12
 		}
 		x = 2
 		y = 1
@@ -388,12 +388,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_14
+		id = DEV_focus_14
 		icon = GFX_goal_NCR_Blast_from_the_Past
-		relative_position_id = Deyv_12
+		relative_position_id = DEV_focus_12
 		cost = 35
 		prerequisite = {
-			focus = Deyv_12
+			focus = DEV_focus_12
 		}
 		x = 0
 		y = 1
@@ -409,12 +409,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_15
+		id = DEV_focus_15
 		icon = GFX_goal_NCR_Army_of_Mobility
-		relative_position_id = Deyv_14
+		relative_position_id = DEV_focus_14
 		cost = 35
 		prerequisite = {
-			focus = Deyv_14
+			focus = DEV_focus_14
 		}
 		x = 0
 		y = 1
@@ -430,12 +430,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_16
+		id = DEV_focus_16
 		icon = GFX_goal_NCR_The_Tip_of_the_Spear
-		relative_position_id = Deyv_15
+		relative_position_id = DEV_focus_15
 		cost = 35
 		prerequisite = {
-			focus = Deyv_15
+			focus = DEV_focus_15
 		}
 		x = 0
 		y = 1
@@ -445,12 +445,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_17
+		id = DEV_focus_17
 		icon = GFX_goal_NCR_Infantry_Drills
-		relative_position_id = Deyv_13
+		relative_position_id = DEV_focus_13
 		cost = 35
 		prerequisite = {
-			focus = Deyv_13
+			focus = DEV_focus_13
 		}
 		x = 0
 		y = 1
@@ -463,12 +463,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_18
+		id = DEV_focus_18
 		icon = GFX_goal_DEV_saluting
-		relative_position_id = Deyv_17
+		relative_position_id = DEV_focus_17
 		cost = 35
 		prerequisite = {
-			focus = Deyv_17
+			focus = DEV_focus_17
 		}
 		x = 0
 		y = 1
@@ -478,12 +478,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_19
+		id = DEV_focus_19
 		icon = GFX_goal_NCR_Big_Jim_Draft
-		relative_position_id = Deyv_18
+		relative_position_id = DEV_focus_18
 		cost = 35
 		prerequisite = {
-			focus = Deyv_18
+			focus = DEV_focus_18
 		}
 		x = 0
 		y = 1
@@ -493,11 +493,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_20
+		id = DEV_focus_20
 		icon = GFX_goal_tribal_generic
-		prerequisite = {focus = Deyv_19 focus = Deyv_16}
+		prerequisite = {focus = DEV_focus_19 focus = DEV_focus_16}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Deyv_19
+		relative_position_id = DEV_focus_19
 		x = -2
 		y = 1
 		cost = 35
@@ -507,12 +507,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_24
+		id = DEV_focus_24
 		icon = GFX_goal_NCR_The_Boneyard
 		prerequisite = {
-			focus = Deyv_3
+			focus = DEV_focus_3
 		}
-		relative_position_id = Deyv_3
+		relative_position_id = DEV_focus_3
 		cost = 35
 		x = -9
 		y = 1
@@ -530,10 +530,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_25
+		id = DEV_focus_25
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = Deyv_4 }
-		relative_position_id = Deyv_4
+		prerequisite = { focus = DEV_focus_4 }
+		relative_position_id = DEV_focus_4
 		available = {
 		}
 		cost = 35
@@ -545,13 +545,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_26
+		id = DEV_focus_26
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_25
+			focus = DEV_focus_25
 		}
-		relative_position_id = Deyv_25
+		relative_position_id = DEV_focus_25
 		x = 0
 		y = 1
 		available_if_capitulated = yes
@@ -596,10 +596,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_27
+		id = DEV_focus_27
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = Deyv_26 }
-		relative_position_id = Deyv_26
+		prerequisite = { focus = DEV_focus_26 }
+		relative_position_id = DEV_focus_26
 		available = {
 		}
 		cost = 35
@@ -614,13 +614,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_28
+		id = DEV_focus_28
 		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		cost = 35
 		prerequisite = {
-			focus = Deyv_27
+			focus = DEV_focus_27
 		}
-		relative_position_id = Deyv_27
+		relative_position_id = DEV_focus_27
 		x = 0
 		y = 1
 		available_if_capitulated = yes
@@ -665,10 +665,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_29
+		id = DEV_focus_29
 		icon = GFX_goal_enc_power_armor_focus
-		prerequisite = { focus = Deyv_28 }
-		relative_position_id = Deyv_28
+		prerequisite = { focus = DEV_focus_28 }
+		relative_position_id = DEV_focus_28
 		available = {
 		}
 		cost = 35
@@ -683,11 +683,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_30
+		id = DEV_focus_30
 		icon = GFX_goal_DEV_Democracy
-		prerequisite = { focus = Deyv_3 }
+		prerequisite = { focus = DEV_focus_3 }
 		ai_will_do = { factor = 1 } 
-		relative_position_id = Deyv_3
+		relative_position_id = DEV_focus_3
 		x = 0
 		y = 1
 		cost = 35
@@ -697,23 +697,23 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_31
+		id = DEV_focus_31
 		icon = GFX_goal_DEV_Dave
 		ai_will_do = { factor = 80 }
 		available = {
 			has_country_flag = Deyv
 		}
 		mutually_exclusive = {
-			focus = Deyv_39
+			focus = DEV_focus_39
 		}
 		mutually_exclusive = {
-			focus = Deyv_40
+			focus = DEV_focus_40
 		}
 		cost = 35
 		prerequisite = {
-			focus = Deyv_30
+			focus = DEV_focus_30
 		}
-		relative_position_id = Deyv_30 
+		relative_position_id = DEV_focus_30 
 		x = 0
 		y = 1
 		completion_reward = {
@@ -722,14 +722,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_32
+		id = DEV_focus_32
 		icon = GFX_goal_DEV_Dave_Rules
 		ai_will_do = { factor = 80 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_31
+			focus = DEV_focus_31
 		}
-		relative_position_id = Deyv_31 
+		relative_position_id = DEV_focus_31 
 		x = 0
 		y = 1
 		completion_reward = {
@@ -738,14 +738,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_33
+		id = DEV_focus_33
 		icon = GFX_goal_DEV_Dave_Diplomatic
 		ai_will_do = { factor = 80 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_32
+			focus = DEV_focus_32
 		}
-		relative_position_id = Deyv_32 
+		relative_position_id = DEV_focus_32 
 		x = 0
 		y = 1
 		completion_reward = {
@@ -773,14 +773,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_34
+		id = DEV_focus_34
 		icon = GFX_goal_DEV_Dave_Tom
 		ai_will_do = { factor = 80 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_33
+			focus = DEV_focus_33
 		}
-		relative_position_id = Deyv_33 
+		relative_position_id = DEV_focus_33 
 		x = 0
 		y = 1
 		completion_reward = {
@@ -792,7 +792,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_35
+		id = DEV_focus_35
 		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -800,12 +800,12 @@ focus_tree = {
 			date > 2277.1.1
 		}
 		prerequisite = {
-			focus = Deyv_34
+			focus = DEV_focus_34
 		}
 		mutually_exclusive = {
-			focus = Deyv_36
+			focus = DEV_focus_36
 		}
-		relative_position_id = Deyv_34
+		relative_position_id = DEV_focus_34
 		x = -1
 		y = 1
 		completion_reward = {
@@ -816,7 +816,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_36
+		id = DEV_focus_36
 		icon = GFX_goal_DEV_Dave_Family
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -824,12 +824,12 @@ focus_tree = {
 			date > 2277.1.1
 		}
 		prerequisite = {
-			focus = Deyv_34
+			focus = DEV_focus_34
 		}
 		mutually_exclusive = {
-			focus = Deyv_35
+			focus = DEV_focus_35
 		}
-		relative_position_id = Deyv_34
+		relative_position_id = DEV_focus_34
 		x = 1
 		y = 1
 		completion_reward = {
@@ -841,15 +841,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_37
+		id = DEV_focus_37
 		icon = GFX_goal_DEV_Dave_Delaware
 		ai_will_do = { factor = 25 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_36
-			focus = Deyv_35
+			focus = DEV_focus_36
+			focus = DEV_focus_35
 		}
-		relative_position_id = Deyv_36
+		relative_position_id = DEV_focus_36
 		x = 0
 		y = 1
 		completion_reward = {
@@ -861,17 +861,17 @@ focus_tree = {
 		}
 	
 	focus = {
-		id = Deyv_38
+		id = DEV_focus_38
 		icon = GFX_goal_Project_Purity
 		ai_will_do = { factor = 1000 } 
-		relative_position_id = Deyv_35
+		relative_position_id = DEV_focus_35
 		prerequisite = {
-			focus = Deyv_35
+			focus = DEV_focus_35
 		}
 		available = {
            ESP = { exists = no }
 		   SBS = {
-		   has_completed_focus = Stolibrother_45
+		   has_completed_focus = SBS_focus_45
 		   }
    
 		}
@@ -884,18 +884,18 @@ focus_tree = {
  }
  
  focus = {
-		id = Deyv_39
+		id = DEV_focus_39
 		icon = GFX_goal_DEV_Bob
 		cost = 35
-		relative_position_id = Deyv_30 
+		relative_position_id = DEV_focus_30 
 		prerequisite = {
-			focus = Deyv_30 
+			focus = DEV_focus_30 
 		}
 		mutually_exclusive = {
-			focus = Deyv_40
+			focus = DEV_focus_40
 		}
 		mutually_exclusive = {
-			focus = Deyv_31
+			focus = DEV_focus_31
 		}
 		x = -4
 		y = 1
@@ -929,18 +929,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_40
+		id = DEV_focus_40
 		icon = GFX_goal_DEV_Rosie
 		ai_will_do = { factor = 1000 } 
-		relative_position_id = Deyv_30
+		relative_position_id = DEV_focus_30
 		prerequisite = {
-			focus = Deyv_30
+			focus = DEV_focus_30
 		}
 		mutually_exclusive = {
-			focus = Deyv_39
+			focus = DEV_focus_39
 		}
 		mutually_exclusive = {
-			focus = Deyv_31
+			focus = DEV_focus_31
 		}
 		available = {
 			has_country_flag = Rose
@@ -954,17 +954,17 @@ focus_tree = {
  }
  
  focus = {
-		id = Deyv_41
+		id = DEV_focus_41
 		icon = GFX_goal_DEV_Bob_Museum
 		ai_will_do = { factor = 1 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_39
+			focus = DEV_focus_39
 		}
 		available = {
-		has_completed_focus = Deyv_6
+		has_completed_focus = DEV_focus_6
 		}
-		relative_position_id = Deyv_39 
+		relative_position_id = DEV_focus_39 
 		x = 0
 		y = 1
 		completion_reward = {
@@ -976,17 +976,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_42
+		id = DEV_focus_42
 		icon = GFX_goal_DEV_Bob_Tom
 		ai_will_do = { factor = 1 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_41
+			focus = DEV_focus_41
 		}
 		available = {
 		
 		}
-		relative_position_id = Deyv_41 
+		relative_position_id = DEV_focus_41 
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1015,20 +1015,20 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_43
+		id = DEV_focus_43
 		icon = GFX_goal_DEV_Bob_Bill
 		ai_will_do = { factor = 1 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_48
+			focus = DEV_focus_48
 		}
 		prerequisite = {
-			focus = Deyv_49
+			focus = DEV_focus_49
 		}
 		available = {
 		 date > 2277.1.1
 		}
-		relative_position_id = Deyv_42
+		relative_position_id = DEV_focus_42
 		x = 0
 		y = 3
 		completion_reward = {
@@ -1058,17 +1058,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_44
+		id = DEV_focus_44
 		icon = GFX_goal_DEV_Bob_West
 		ai_will_do = { factor = 1 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_52
+			focus = DEV_focus_52
 		}
 		available = {
 		 date > 2277.5.1
 		}
-		relative_position_id = Deyv_52
+		relative_position_id = DEV_focus_52
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1099,17 +1099,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_60
+		id = DEV_focus_60
 		icon = GFX_goal_DEV_Delaware
 		ai_will_do = { factor = 1 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_52
+			focus = DEV_focus_52
 		}
 		available = {
 		 date > 2278.1.1
 		}
-		relative_position_id = Deyv_52
+		relative_position_id = DEV_focus_52
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1138,7 +1138,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_46
+		id = DEV_focus_46
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -1147,9 +1147,9 @@ focus_tree = {
 			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
-			focus = Deyv_42
+			focus = DEV_focus_42
 		}
-		relative_position_id = Deyv_42
+		relative_position_id = DEV_focus_42
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1158,7 +1158,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_48
+		id = DEV_focus_48
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -1166,9 +1166,9 @@ focus_tree = {
 			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
-			focus = Deyv_46
+			focus = DEV_focus_46
 		}
-		relative_position_id = Deyv_46
+		relative_position_id = DEV_focus_46
 		x = 1
 		y = 1
 		completion_reward = {
@@ -1177,7 +1177,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_49
+		id = DEV_focus_49
 		icon = GFX_goal_generic_slums_focus
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -1185,9 +1185,9 @@ focus_tree = {
 			1000 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
-			focus = Deyv_46
+			focus = DEV_focus_46
 		}
-		relative_position_id = Deyv_46
+		relative_position_id = DEV_focus_46
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1203,7 +1203,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_52
+		id = DEV_focus_52
 		icon = GFX_goal_generic_supplies_focus
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -1211,9 +1211,9 @@ focus_tree = {
 			1006 = { is_controlled_by = DEV }
 		}
 		prerequisite = {
-			focus = Deyv_43
+			focus = DEV_focus_43
 		}
-		relative_position_id = Deyv_43
+		relative_position_id = DEV_focus_43
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1222,7 +1222,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_53
+		id = DEV_focus_53
 		icon = GFX_goal_DEV_Rosie_Family
 		ai_will_do = { factor = 25 }
 		cost = 35
@@ -1230,9 +1230,9 @@ focus_tree = {
 			date > 2276.1.1
 		}
 		prerequisite = {
-			focus = Deyv_40
+			focus = DEV_focus_40
 		}
-		relative_position_id = Deyv_40
+		relative_position_id = DEV_focus_40
 		x = 0
 		y = 1
 		completion_reward = {
@@ -1259,12 +1259,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_54
+		id = DEV_focus_54
 		icon = GFX_goal_DEV_Tom
 		cost = 35
-		relative_position_id = Deyv_53
+		relative_position_id = DEV_focus_53
 		prerequisite = {
-			focus = Deyv_53 
+			focus = DEV_focus_53 
 		}
 		x = -2
 		y = 1
@@ -1298,12 +1298,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_55
+		id = DEV_focus_55
 		icon = GFX_goal_DEV_Bill
 		cost = 35
-		relative_position_id = Deyv_53
+		relative_position_id = DEV_focus_53
 		prerequisite = {
-			focus = Deyv_53 
+			focus = DEV_focus_53 
 		}
 		x = 0
 		y = 1
@@ -1337,12 +1337,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_56
+		id = DEV_focus_56
 		icon = GFX_goal_DEV_Stevie
 		cost = 35
-		relative_position_id = Deyv_53
+		relative_position_id = DEV_focus_53
 		prerequisite = {
-			focus = Deyv_53 
+			focus = DEV_focus_53 
 		}
 		x = 2
 		y = 1
@@ -1376,18 +1376,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_57
+		id = DEV_focus_57
 		icon = GFX_goal_DEV_Rosie_Science
 		cost = 35
-		relative_position_id = Deyv_55
+		relative_position_id = DEV_focus_55
 		prerequisite = {
-			focus = Deyv_54
+			focus = DEV_focus_54
 		}
 		prerequisite = {
-			focus = Deyv_55 
+			focus = DEV_focus_55 
 		}
 		prerequisite = {
-			focus = Deyv_56 
+			focus = DEV_focus_56 
 		}
 		x = 0
 		y = 1
@@ -1406,18 +1406,18 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_58
+		id = DEV_focus_58
 		icon = GFX_goal_DEV_Enclave
 		ai_will_do = { factor = 25 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_57
+			focus = DEV_focus_57
 		}
 		available = {
 			date > 2277.8.1
 			SBS = { exists = no }
 		}
-		relative_position_id = Deyv_57
+		relative_position_id = DEV_focus_57
 		x = -1
 		y = 1
 		completion_reward = {
@@ -1451,12 +1451,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_59
+		id = DEV_focus_59
 		icon = GFX_goal_DEV_Easton
 		cost = 35
-		relative_position_id = Deyv_57
+		relative_position_id = DEV_focus_57
 		prerequisite = {
-			focus = Deyv_57
+			focus = DEV_focus_57
 		}
 		x = 1
 		y = 1
@@ -1490,17 +1490,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Deyv_45
+		id = DEV_focus_45
 		icon = GFX_goal_DEV_Rosie_Delaware
 		ai_will_do = { factor = 25 }
 		cost = 35
 		prerequisite = {
-			focus = Deyv_59
+			focus = DEV_focus_59
 		}
 		available = {
 
 		}
-		relative_position_id = Deyv_59
+		relative_position_id = DEV_focus_59
 		x = 0
 		y = 1
 		completion_reward = {

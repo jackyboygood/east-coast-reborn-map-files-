@@ -89,7 +89,7 @@ country_event = {
 			       elections_allowed = no
 		    }
 			hidden_effect = {
-				country_event = { days = 1 id = newsfallout.21 }	
+				country_event = { days = 1 id = news_event_ec.21 }	
 			}
 		}
 	}
