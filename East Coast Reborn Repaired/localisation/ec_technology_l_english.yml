@@ -1,0 +1,102 @@
+﻿l_english:
+  # INS
+  INS_light_robot_equipment_1:0 "Prototype Synth"
+  INS_light_robot_equipment_1_short:0 "Prototype Synth"
+  INS_light_robot_equipment_1_desc:0 "This humanoid robot can accomplish many of the simple tasks that humans can and have been trained to operate weapons."
+
+  INS_light_robot_equipment_2:0 "1st Generation Synth"
+  INS_light_robot_equipment_2_short:0 "Gen 1 Synth"
+  INS_light_robot_equipment_2_desc:0 "Using the data collected from field tests, these Synths are better combatants than the prototypes."
+
+  INS_medium_robot_equipment_1:0 "2nd Generation Synth"
+  INS_medium_robot_equipment_1_short:0 "Gen 2 Synth"
+  INS_medium_robot_equipment_1_desc:0 "This humanoid robots can blend seamlessly into the other organic life of the Commonwealth, hiding amongst the humans while remaining a deadly combatants."
+
+  INS_medium_robot_equipment_2:0 "Armored Synth"
+  INS_medium_robot_equipment_2_short:0 "Armored Synth"
+  INS_medium_robot_equipment_2_desc:0 "Titanium endoskeletons and stronger synthetic skin make the Armored Synth an unstoppable killing machine."
+
+  INS_heavy_robot_equipment_1:0 "3rd Generation Synth""
+  INS_heavy_robot_equipment_1_short:0 "Gen 3 Synth"
+  INS_heavy_robot_equipment_1_desc:0 "These are indistinguishable from humans without slicing them open, plus upgraded sensors make them hyperaware in battle. The Gen 3 Synth is all but unstoppable."
+
+  INS_heavy_robot_equipment_2:0 "Synth Courser"
+  INS_heavy_robot_equipment_2_short:0 "Synth Courser"
+  INS_heavy_robot_equipment_2_desc:0 "No expense was spared in the final iteration of the synth courser. Capable of dropping scores of human soldiers, a single synth courser is the ultimate combat unit"
+
+  INS_ballistic_equipment_1:0 "Institute Pistol"
+  INS_ballistic_equipment_1_short:0 "Institute Pistol"
+
+  INS_energy_equipment_1:0 "Institute Rifle"
+  INS_energy_equipment_1_short:0 "Institute Rifle"
+
+  INS_leather_armour:0 "Aviation Helmet"
+  INS_leather_armour_short:0 "Aviation Helmet"
+  INS_leather_armour_desc:0 "Although it might not be combat-tested, these Pre-War aviation helmets protect against many toxins and heavy blows to the head."
+
+  INS_metal_armour:0 "Synth Armor"
+  INS_metal_armour_short:0 "Synth Armor"
+  INS_metal_armour_desc:0 "The scraps from the synth construction process are more than enough armor to protect our synths once crafted into wearable pieces."
+
+  INS_combat_armour:0 "Synth Armor Mk II"
+  INS_combat_armour_short:0 "Synth Armor Mk II"
+  INS_combat_armour_desc:0 "Now with a dedicated manufacturing process and flexible parts, the synth armor has become some of the best armor in the Commonwealth."
+
+  INS_power_armour_t51b:0 "Power Armor X-01"
+  INS_power_armour_t51b_short:0 "Power Armor X-01"
+
+  # NUE
+  NUE_ballistic_equipment_1:0 "Colt 1911"
+  NUE_ballistic_equipment_1_short:0 "Colt 1911"
+
+  NUE_ballistic_equipment_2:0 "Service Rifle"
+  NUE_ballistic_equipment_2_short:0 "Service Rifle"
+  NUE_ballistic_equipment_2_desc:0 "Standard weapons of the Pre-War United States, repaired to a functional condition."
+
+  NUE_leather_armour:0 "Radiation Suit"
+  NUE_leather_armour_short:0 "Radiation Suit"
+  NUE_leather_armour_desc:0 "The metropolitan area is full of Pre-War Hazmat Suits, and although they don't stop a bullet, they do protect against the toxins and diseases of the Wasteland."
+
+  NUE_metal_armour:0 "Wetsuit"
+  NUE_metal_armour_short:0 "Wetsuit"
+  NUE_metal_armour_desc:0 "The suits are capable of entering deep water and protecting our soldiers during aquatic invasions."
+
+  NUE_combat_armour:0 "Marine Armor"
+  NUE_combat_armour_short:0 "Marine Armor"
+
+  NUE_advanced_combat_armour:0 "Federation Marine Standard Armor"
+  NUE_advanced_combat_armour_short:0 "Federation Marine Standard Armor"
+
+  # SOV
+  SOV_ballistic_equipment_1:0 "AK-47"
+  SOV_ballistic_equipment_1_short:0 "AK-47"
+
+  SOV_ballistic_equipment_2:0 "TKB-408"
+  SOV_ballistic_equipment_2_short:0 "TKB-408"
+  SOV_ballistic_equipment_2_desc:0 "This weapon was designed to be state of the art before the bombs fell. No better time to test it than the present!"
+
+  SOV_standard_weaponry_tech:0 "SVT-40"
+  SOV_standard_weaponry_tech_short:0 "SVT-40"
+
+  SOV_leather_armour:0 "Soviet Peaked Cap"
+  SOV_leather_armour_desc:0 "Normal, Soviet cap, does not give any bonuses. But it does look cool!"
+
+  SOV_metal_armour:0 "Old Soviet Army Uniform"
+  SOV_metal_armour_desc:0 "There are hundreds of old Soviet army uniforms buried in the back of the bunker. They might not protect much, but they raise morale!"
+
+  SOV_combat_armour:0 "Army Hat With Ear Flaps"
+
+  SOV_advanced_combat_armour:0 "Advanced Soviet Armor"
+
+  SOV_power_armour:0 "Soviet Power Armor"
+
+  SOV_power_armour_t51b:0 "'Planet Crusher' Power Armor"
+  SOV_power_armour_t51b_short:0 "This armor was never manufactured, but the Pre-War designs promise unstoppable power."
+
+  SOV_light_robot_equipment_1:0 "'Star' Robot"
+  SOV_light_robot_equipment_1_short:0 "'Star' Robot"
+  SOV_light_robot_equipment_1_desc:0 "Old, old Soviet robot, almost not worth fixing up."
+
+  SOV_heavy_robot_equipment_2:0 "'Storm' Robot"
+  SOV_heavy_robot_equipment_2_short:0 "'Storm' Robot"
+  SOV_heavy_robot_equipment_2_desc:0 "By reconfiguring our old 'Star' robots with new parts, we can actually turn them into capable combat units."
