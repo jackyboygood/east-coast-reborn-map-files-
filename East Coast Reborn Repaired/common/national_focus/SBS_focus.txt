@@ -67,8 +67,10 @@ focus_tree = {
 		}
 
 		bypass = {
+		OR = {
 			UBS = { exists = no }
 			UBS = { is_subject_of = SBS}
+		}
 		}
 
 		cancel_if_invalid = yes
@@ -92,13 +94,13 @@ focus_tree = {
 	
 	focus = {
 		id = SBS_focus_4
-		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		icon = GFX_goal_BOS_generic_industrial 
 		relative_position_id = SBS_focus_3
 		cost = 45
 		prerequisite = {
 			focus = SBS_focus_3
 		}
-		x = -8
+		x = -7
 		y = 1
 
 		completion_reward = {
@@ -195,7 +197,7 @@ focus_tree = {
 	focus = {
 		id = SBS_focus_8
 		icon = GFX_goal_generic_advanced_technology_focus
-		relative_position_id = SBS_focus_5
+		relative_position_id = SBS_focus_6
 		cost = 45
 		prerequisite = {
 			focus = SBS_focus_5
@@ -225,46 +227,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SBS_focus_9
-		icon = GFX_goal_generic_fuel_focus
-		relative_position_id = SBS_focus_7
-		cost = 45
-		prerequisite = {
-			focus = SBS_focus_5
-		}
-		prerequisite = {
-			focus = SBS_focus_6
-		}
-		prerequisite = {
-			focus = SBS_focus_7
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] SBS_focus_9 entered"
-			}
-			capital_scope = {
-				add_resource = { type = energy amount = 8 }
-			}
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] SBS_focus_9 exited"
-			}
-		}
-	}
-	
-	focus = {
 		id = SBS_focus_10
-		icon = GFX_goal_generic_BOS_focus_combined_operations
+		icon = GFX_goal_BOS_generic_infantry
 		relative_position_id = SBS_focus_3
 		cost = 45
 		prerequisite = {
 			focus = SBS_focus_3
 		}
-		x = 8
+		x = 7
 		y = 1
 
 		completion_reward = {
@@ -282,7 +252,7 @@ focus_tree = {
 	
 	focus = {
 		id = SBS_focus_11
-		icon = GFX_goal_generic_BOS_focus_t45d_production
+		icon = GFX_goal_BOS_victory_or_death
 		relative_position_id = SBS_focus_10
 		cost = 45
 		prerequisite = {
@@ -505,12 +475,12 @@ focus_tree = {
 	focus = {
 		id = SBS_focus_18
 		icon = GFX_goal_sbs_scientist
-		prerequisite = {focus = SBS_focus_8}
-		prerequisite = {focus = SBS_focus_9}
+		prerequisite = {focus = sbs_arm_foundries}
+		prerequisite = {focus = sbs_civilian_workshops}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = SBS_focus_8
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		cost = 45
 		completion_reward = {
 			add_research_slot = 1
@@ -541,8 +511,10 @@ focus_tree = {
 		}
 
 		bypass = {
+		 OR = {
 			VSU = { exists = no }
 			VSU = { is_subject_of = SBS}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -635,7 +607,7 @@ focus_tree = {
 		}
 		relative_position_id = SBS_focus_4
 		x = 0
-		y = 5
+		y = 6
 		
 		ai_will_do = {
 			factor = 80
@@ -832,7 +804,10 @@ focus_tree = {
 		icon = GFX_goal_SBS_Liberty_Prime
 		relative_position_id = SBS_focus_19
 	    prerequisite = {
-			focus = SBS_focus_19
+			focus = SBS_focus_20
+		}
+		prerequisite = {
+			focus = SBS_focus_21
 		}
 		available = {
 		  974 = { is_controlled_by = ESP }
@@ -846,8 +821,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 500
 		}
-		x = -3
-		y = 1
+		x = 0
+		y = 2
 		
 		completion_reward = {
 			if = {
@@ -881,47 +856,6 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] veg_firstbatch exited"
 			}
-		}
-	}
-	
-	focus = {
-		id = SBS_focus_37
-		icon = GFX_goal_SBS_Trust
-		relative_position_id = SBS_focus_19
-		x = -3
-		y = 2
-		
-	    prerequisite = {
-			focus = SBS_focus_36
-		}
-
-		cost = 70
-
-		ai_will_do = {
-			factor = 8
-		}
-
-		available = {
-		ESP = { exists = no }
-		USP = { exists = no }
-		LIT = { exists = no }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = "stolichaliens"
 		}
 	}
 	
@@ -962,7 +896,7 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 716 # Carson City
+						has_full_control_of_state = 1005 # Carson City
 				}
 				SBS = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -974,11 +908,11 @@ focus_tree = {
 	focus = {
 		id = SBS_focus_39
 		icon = GFX_goal_SBS_Pitt
-		relative_position_id = SBS_focus_38
+		relative_position_id = SBS_focus_19
 		prerequisite = {
-			focus = SBS_focus_38
+			focus = SBS_focus_19
 		}
-		x = 0
+		x = -3
 		y = 1
 		
 
@@ -990,7 +924,7 @@ focus_tree = {
 
 		available = {
 			ESP = { exists = no }
-			has_full_control_of_state = 716
+			has_completed_focus = elder_maxon
 		}
 
 		bypass = {
@@ -1024,11 +958,8 @@ focus_tree = {
 		ai_will_do = { factor = 1000 } 
 		relative_position_id = SBS_focus_20
 		prerequisite = {
-			focus = SBS_focus_20
+			focus = SBS_focus_36
 		}		
-		prerequisite = {
-			focus = SBS_focus_21
-		}
 		available = {
            ESP = { exists = no }
 		   RIV = {
@@ -1037,7 +968,7 @@ focus_tree = {
    
 		}
 		x = 0
-		y = 1
+		y = 2
 		completion_reward = {
 			add_ideas = cleanoperation
 			RIV = {
@@ -1057,7 +988,7 @@ focus_tree = {
 		prerequisite = { 
 		}
 		x = 0
-		y = 5
+		y = 6
 		
 		cost = 14
 		
@@ -1115,8 +1046,10 @@ focus_tree = {
 			976 = { add_core_of = SBS }
 			977 = { add_core_of = SBS }
 			978 = { add_core_of = SBS }
+			979 = { add_core_of = SBS }
+			1001 = { add_core_of = SBS }
 			hidden_effect = {
-					country_event = { days = 30 id = SBS_event.10 }
+					country_event = { days = 15 id = SBS_event.10 }
 			}
 		}
 	}
@@ -1148,7 +1081,7 @@ focus_tree = {
 			hidden_effect = {
 					country_event = { days = 15 id = SBS_event.11 }
 			}
-			add_manpower = -3000
+			add_manpower = -1351
 			add_political_power = -50
 			add_stability = 0.10
 			add_equipment_to_stockpile = { type = energy_equipment_1 amount = -1000 }
@@ -1190,7 +1123,7 @@ focus_tree = {
 	
 	focus = {
 		id = dave_integration
-		icon = GFX_goal_SBS_int_Dave
+		icon = GFX_goal_DEV_Dave_Diplomatic
 		relative_position_id = elder_maxon
 		prerequisite = {
 			focus = elder_maxon
@@ -1287,13 +1220,14 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+		    add_stability = 0.1
 			annex_country = { target = IBS transfer_troops = yes }
 			1023 = { add_core_of = SBS }
 		}
 	}
 	
 	focus = {
-		id = river_city_integration
+		id = rivet_city_integration
 		icon = GFX_goal_SBS_int_River
 		relative_position_id = elder_maxon
 		prerequisite = {
@@ -1323,6 +1257,30 @@ focus_tree = {
 		completion_reward = {
 			annex_country = { target = RIV transfer_troops = yes }
 			975 = { add_core_of = SBS }
+			create_corps_commander = {
+				name = "Knight Danse"
+				portrait_path = "gfx/leaders/SBS/danse.dds"
+				skill = 1
+				id = 1003
+				traits = {
+				}
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+
+			create_corps_commander = {
+				name = "Knight Cutler"
+				portrait_path = "gfx/leaders/SBS/Knight_Cutler.dds"
+				skill = 1
+				traits = {
+				}
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
 		}
 	}
 	
@@ -1378,7 +1336,7 @@ focus_tree = {
 			focus = reintegrate_outcasts
 		}
 		prerequisite = {
-			focus = river_city_integration
+			focus = rivet_city_integration
 		}
 		prerequisite = {
 			focus = dave_integration
@@ -1406,11 +1364,31 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-           	SBS = {
-				create_wargoal = { type = annex_everything target = AUB }
-				create_wargoal = { type = annex_everything target = TEN }
-				create_wargoal = { type = annex_everything target = ROY }
-			 }
+				every_country = {
+				limit = {
+					OR = {
+						tag = TEN
+						tag = AUA
+						tag = TEN
+						tag = AUB
+						tag = RAB
+						tag = ROY
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+						    tag = SBS
+						}
+						NOT = { has_war_with = PREV }
+					}
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+				    }
+			    }
+		    }
 		}
 	}
 	
@@ -1419,7 +1397,7 @@ focus_tree = {
 		icon = GFX_goal_SBS_int_Harold
 		relative_position_id = elder_maxon
 		prerequisite = {
-			focus = river_city_integration
+			focus = rivet_city_integration
 		}
 		prerequisite = {
 			focus = reintegrate_outcasts
@@ -1481,6 +1459,7 @@ focus_tree = {
 		}
 		
 		available = {
+		has_war = no
 		has_full_control_of_state = 993
 		has_full_control_of_state = 992
 		has_full_control_of_state = 982
@@ -1491,15 +1470,15 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			974 = { add_core_of = SBS }
-			979 = { add_core_of = SBS }
-			1001 = { add_core_of = SBS }
-			1003 = { add_core_of = SBS }
-			989 = { add_core_of = SBS }
-			1025 = { add_core_of = SBS }
-			987 = { add_core_of = SBS }
-			988 = { add_core_of = SBS }
-			985 = { add_core_of = SBS }
+		every_state = {
+		    limit = {
+			is_capital_wasteland_state = yes
+			}
+			add_core_of = SBS
+		}
+			hidden_effect = {
+			country_event = { days = 14 id = SBS_event.20 } 
+			}
 		}
 	}
 	
@@ -1529,30 +1508,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_manpower = 3000
-			create_field_marshal = {
-				name = "Paladin Danse"
-				portrait_path = "gfx/leaders/SBS/danse.dds"
-				skill = 5
-				id = 1003
-				traits = {
-				}
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
-			}
-
-			create_corps_commander = {
-				name = "Lancer Captain Kells"
-				portrait_path = "gfx/leaders/SBS/kells.dds"
-				skill = 2
-				traits = {
-				}
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 2
-			}
 		}
 	}
 	
@@ -1581,7 +1536,11 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-		set_cosmetic_tag = EBR				
+		set_cosmetic_tag = EBR		
+        create_faction = "stolichaliens"
+        set_rule = {
+          can_send_volunteers = yes
+        } 		
 		}
 	}
 
@@ -1590,14 +1549,11 @@ focus_tree = {
 		icon = GFX_goal_BOS_vertibird_schematics
 		relative_position_id = SBS_focus_21
 		prerequisite = {
-			focus = SBS_focus_21
-		}
-		prerequisite = {
-			focus = SBS_focus_20
+			focus = SBS_focus_36
 		}
 		
 		x = 0
-		y = 1
+		y = 2
 		
 		cost = 60
 		
@@ -1634,6 +1590,10 @@ focus_tree = {
 		relative_position_id = unify_dc	
 		x = 0
 		y = 2
+		
+		available = {
+		has_country_flag = institute_exists
+		}
 		
 		cost = 30
 		
@@ -1683,7 +1643,7 @@ focus_tree = {
 		}
 		
 		x = 0
-		y = 5
+		y = 6
 		
 		cost = 14
 		
@@ -1709,6 +1669,7 @@ focus_tree = {
 				country_event = SBS_event.14
 			}
 			1013 = { add_core_of = BSS }
+			add_to_faction = BSS
 			hidden_effect = {
 				INS = {
 					country_event = INS_event.5
@@ -1716,6 +1677,9 @@ focus_tree = {
 				MEN = {
 					country_event = Minitmeni.18
 				}
+				set_rule = {
+                  can_be_called_to_war = no
+                }
 			}
 		hidden_effect = {
 		BSS = {
@@ -1768,10 +1732,13 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+		  BSS = {
 			create_wargoal = {
 				type = annex_everything
 				target = BSM
 			}
+			1017 = {add_core_of = BSS}
+		  }
 		}
 	}
 	
@@ -1797,6 +1764,9 @@ focus_tree = {
 		}
 
 		available = {
+		BSS = {
+		has_full_control_of_state = 1017
+        }
 		}
 		
 		bypass = {
@@ -1834,6 +1804,9 @@ focus_tree = {
 		}
 
 		available = {
+		BSS = {
+		has_full_control_of_state = 1017
+        }
 		}
 		
 		bypass = {
@@ -1846,6 +1819,9 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+		1010 = {add_core_of = BSS}
+		1009 = {add_core_of = BSS}
+		1008 = {add_core_of = BSS}
 		 BSS = {
 			create_wargoal = {
 				type = annex_everything
@@ -1878,7 +1854,7 @@ focus_tree = {
 		
 		available = {
 		BSS = {
-		has_full_control_of_state = 1017
+        has_war = no	
         }		
 		}
 		
@@ -1974,6 +1950,7 @@ focus_tree = {
 		
 		available = {
 		has_full_control_of_state = 1016
+		INS = {exists = no}
 		}
 		
 		cancel_if_invalid = yes
@@ -1983,6 +1960,10 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			add_ideas = SBS_boston_scribes
+			BSS = {
+			add_research_slot = 1
+			add_ideas = SBS_boston_scribes
+			}
 		}
 	}
 	
@@ -2017,6 +1998,7 @@ focus_tree = {
 		available_if_capitulated = no
 			
 		completion_reward = {
+		add_to_faction = MEN
         MEN = {
 		   annex_country = { target = BSS transfer_troops = yes }
 		   set_cosmetic_tag = MEN_BOS
@@ -2029,7 +2011,33 @@ focus_tree = {
 			ideology = technocracy
 		   }
 		   }
-		   }
+		 every_country = {
+				limit = {
+					OR = {
+						tag = DAT
+						tag = STR
+						tag = USD
+						tag = RSD
+						tag = RIJ
+						tag = KOV
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+						    tag = MEN
+						}
+						NOT = { has_war_with = PREV }
+					}
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+				    }
+			    }
+		 }
+		   
+		}
 		hidden_effect = {
 	    retire_country_leader = yes
 		create_country_leader = {
@@ -2047,7 +2055,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = leave_danse
 		icon = GFX_goal_SBS_exp_Danse
 		relative_position_id = study_new_tech
@@ -2082,7 +2090,36 @@ focus_tree = {
 			picture = "danse_leader.dds"
 			expire = "4000.1.1"
 			ideology = technocracy
-		   }   
+		   }  
+		 every_country = {
+				limit = {
+					OR = {
+						tag = DAT
+						tag = STR
+						tag = USD
+						tag = RSD
+						tag = RIJ
+						tag = KOV
+						tag = DIA
+						tag = DOB
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						OR = {
+						    tag = BSS
+						}
+						NOT = { has_war_with = PREV }
+					}
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+				    }
+			    }
+		 }
+
+		   
 		}
 		hidden_effect = {
 		remove_unit_leader = 1003
@@ -2101,9 +2138,134 @@ focus_tree = {
 		}
 		}
 		}
-	}
 
+	focus = {
+		id = sbs_arm_foundries
+		icon = GFX_goal_generic_common_energy_weapons_focus
+		cost = 45
+		prerequisite = {
+			focus = SBS_focus_8
+		}
+		relative_position_id = SBS_focus_6
+		
+		x = -1
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] sbs_arm_foundries entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] sbs_arm_foundries exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = sbs_civilian_workshops
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 45
+		relative_position_id = SBS_focus_8
+		prerequisite = {
+			focus = SBS_focus_8
+		}
+		x = 1
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] shared_bos_civilian_workshops entered"
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] shared_bos_civilian_workshops exited"
+			}
+		}
+	}
+	
+	focus = {
+		id = sbs_combined_operations
+		icon = GFX_goal_generic_BOS_focus_combined_operations
+		cost = 45
+		relative_position_id = SBS_focus_10
+		prerequisite = {
+			focus = SBS_focus_15
+		}
+		prerequisite = {
+			focus = SBS_focus_16
+		}
+		x = 0
+		y = 4
+
+		completion_reward = {
+			add_ideas = genericboscombinedoperations
+		}
+	}
 	
 	
 	
+}
 	

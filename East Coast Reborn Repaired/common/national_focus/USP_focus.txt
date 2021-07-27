@@ -4,7 +4,10 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 100
+			OR = {
 			tag = USP
+			tag = D07
+			}
 		}
 	}
 	default = no
@@ -26,7 +29,11 @@ focus_tree = {
 		}
 
 		bypass = {
-
+		has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+		}
 		}
 
 		cancel_if_invalid = yes
@@ -61,7 +68,11 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -96,7 +107,11 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -288,7 +303,6 @@ focus_tree = {
 	
 	focus = {
 		id = USP_focus_10
-		text = vault_sec
 		icon = GFX_goal_generic_land_doctrines_focus
 		cost = 60
 		prerequisite = {
@@ -313,7 +327,6 @@ focus_tree = {
 	
 	focus = {
 		id = USP_focus_11
-		text = vault_garage
 		icon = GFX_goal_generic_army_motorized
 		cost = 60
 		prerequisite = {
@@ -342,7 +355,6 @@ focus_tree = {
 	
 	focus = {
 		id = USP_focus_12
-		text = vault_arm_guard
 		icon = GFX_goal_generic_common_energy_weapons_focus
 		cost = 60
 		prerequisite = {
@@ -371,7 +383,7 @@ focus_tree = {
 	
 	focus = {
 		id = USP_focus_13
-		text = vault_robot
+		#text = vault_robot
 		icon = GFX_goal_generic_production2
 		cost = 60
 		prerequisite = {
@@ -409,6 +421,14 @@ focus_tree = {
 		cost = 45
 		x = 0
 		y = 1
+		
+		bypass = {
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
+		}
 
 		ai_will_do = {
 			factor = 8
@@ -452,8 +472,15 @@ focus_tree = {
 	cost = 45
 	
 	bypass = {
+	    OR = {
 			SBS = { exists = no }
 			SBS = { is_subject_of = USP}
+			has_country_leader = {
+			id = 5677
+			ruling_only = yes
+			name = "Amata Almadovar"
+		    }
+		}
 	}
 	
 	completion_reward = {
@@ -516,8 +543,15 @@ focus_tree = {
 		}
 
 		bypass = {
+		OR = {
 			ESP = { exists = no }
 			ESP = { is_subject_of = USP}
+			has_country_leader = {
+				id = 5677
+				ruling_only = yes
+				name = "Amata Almadovar"
+			}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -574,7 +608,14 @@ focus_tree = {
 		}
 		cost = 45
 		bypass = {
+		OR = {
 		has_country_flag = enclave_enjoyer
+		has_country_leader = {
+			id = 5677
+			ruling_only = yes
+			name = "Amata Almadovar"
+		}
+		}
 		}
 		x = 1
 		y = 1
@@ -611,7 +652,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = USP_focus_33
 		completion_reward = {
-			add_ideas = vault101buch
+			add_ideas = USP_focusbuch
             LIT = {
 				set_country_flag = amatabej
 			}
@@ -866,7 +907,7 @@ focus_tree = {
 		prerequisite = {
 			focus = USP_focus_41
 		}
-		x = 2
+		x = 1
 		y = 1
 		available = {
 			988 = { is_owned_and_controlled_by = ROOT }
@@ -877,6 +918,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] USP_focus_43 entered"
 			}
 			988 = {
+			    add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -887,37 +929,10 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 1
 			}
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] USP_focus_43 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = USP_focus_49
-		icon = GFX_goal_USP_Tunnel_Snakes_Rule
-		cost = 45
-		prerequisite = {
-			focus = USP_focus_41
-		}
-		available = {
-		has_war = no
-		}
-		x = 0
-		y = 1
-		relative_position_id = USP_focus_41
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] USP_focus_49 entered"
-			}
-			add_stability = 0.15
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] USP_focus_49 exited"
 			}
 		}
 	}
@@ -930,7 +945,7 @@ focus_tree = {
         prerequisite={
 		focus = USP_focus_41
 		}
-		x = -2
+		x = -1
 		y = 1
 
 		completion_reward = {
@@ -979,8 +994,6 @@ focus_tree = {
 		prerequisite = {
 		focus = USP_focus_50
 		}
-		
-		will_lead_to_war_with = SBS
 
 		cost = 45
 
@@ -989,15 +1002,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				is_in_faction_with = SBS
-			}
-			SBS = { exists = yes }
-		}
-
-		bypass = {
-			SBS = { exists = no }
-			SBS = { is_subject_of = USP }
+           has_war = no
 		}
 
 		cancel_if_invalid = yes
@@ -1009,10 +1014,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SBS
+		every_state = {
+		    limit = {
+			is_capital_wasteland_state = yes
 			}
+			add_claim_by = USP
+		}
 		}
 	}
 	
@@ -1094,83 +1101,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = USP_focus_56
-		icon = GFX_goal_USP_Butch_Trolling
-		relative_position_id = USP_focus_51
-		cost = 45
-		prerequisite = {
-		focus = USP_focus_51
-		}
-		bypass = {
-            has_full_control_of_state = 1023
-		}
-		x = 0
-		y = 1
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 1023 
-				}
-				USP = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = USP_focus_57
-		icon = GFX_goal_USP_Butch_Trolling
-		prerequisite = {
-			focus = USP_focus_56
-		}
-		relative_position_id = USP_focus_56
-		cost = 45
-		bypass = {
-            has_full_control_of_state = 1022
-		}
-		x = -1
-		y = 1
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 1022 # Carson City
-				}
-				USP = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = USP_focus_58
-		icon = GFX_goal_USP_Butch_Trolling
-		prerequisite = {
-			focus = USP_focus_56
-		}
-		relative_position_id = USP_focus_56
-		cost = 45
-		bypass = {
-            has_full_control_of_state = 986
-		}
-		x = 1
-		y = 1
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 986 # Carson City
-				}
-				USP = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
-		}
-	}
 	
 
 	
