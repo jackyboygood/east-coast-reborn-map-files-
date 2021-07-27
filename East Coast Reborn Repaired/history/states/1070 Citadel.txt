@@ -2,12 +2,11 @@ state={
 	id=1070
 	name="Citadel"
 	resources = {
-		metal = 8
-		composites = 3
+		metal = 6
+		composites = 1
 		water = 4
-		energy = 8
-		circuitry = 8
-		advanced = 4
+		energy = 5
+		circuitry = 3
 	}
 	history={
 		owner = SBS
@@ -17,7 +16,7 @@ state={
 			1110 25
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 3
 

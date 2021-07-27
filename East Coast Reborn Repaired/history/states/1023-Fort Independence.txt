@@ -8,11 +8,11 @@ state={
 		
 	}
 	history={
-		owner = IBS
-		add_core_of = IBS
+		owner = UBS
+		add_core_of = UBS
 
 		victory_points = {
-			12474 25
+			12474 15
 		}
 		buildings = {
 			infrastructure = 6
