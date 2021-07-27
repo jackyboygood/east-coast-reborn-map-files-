@@ -735,11 +735,6 @@ news_event = {
 	is_triggered_only = yes
 	desc = {
 		text = news_event_ec.26.d
-		trigger = {
-		USP = {
-		has_country_flag = enclave_war
-		}
-		}
 	}
 	picture = GFX_event_capital_bos_enc_war
 	
