@@ -11,3 +11,45 @@ is_gerrepublic_state = {
 	}
 }
 
+is_capital_wasteland_state = {
+	OR = {
+	    state = 716
+	    state = 973
+		state = 974
+		state = 975
+		state = 976
+	    state = 977
+	    state = 978
+		state = 979
+	    state = 980
+		state = 981
+		state = 982
+		state = 983
+		state = 984
+		state = 985
+		state = 986
+		state = 987
+	    state = 988
+		state = 989
+		state = 990
+		state = 991
+		state = 992
+		state = 993
+		state = 997
+		state = 998
+		state = 999
+		state = 1000
+		state = 1001
+		state = 1002
+		state = 1003
+		state = 1004
+		state = 1005
+		state = 1006
+		state = 1022
+		state = 1023
+		state = 1024
+		state = 1025
+		state = 1054
+		state = 1070
+	}
+}
