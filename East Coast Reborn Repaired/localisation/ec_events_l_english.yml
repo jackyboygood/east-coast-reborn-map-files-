@@ -402,6 +402,22 @@
   SBS_event.17.d:0 "A battalion of Power Armor-clad warriors have marched into our territory demanding that we hand over our advanced technology and comply with Brotherhood protocols."
   SBS_event.17.a:0 "We have no choice but to surrender"
   SBS_event.17.b:0 "We must reject these invaders!"
+  
+  SBS_event.18.t:0 "Confrontation with Casdin"
+  SBS_event.18.d:0 "Elder Lyons ignored Henry Kasdin's requests for weeks to recover technology from Fort Independence, a pre-war scientific military base. In their recent conversation, Kasdin even burst out shouting, saying that the brothers for many years of being in the Capital Wasteland are no longer able to bear the fact that Lyons has forgotten the main mission of the brotherhood and instead spends time saving locals from supermutants. In response to the words of an angry brother, Lyons said:"
+  SBS_event.18.a:0 "'I'm doing what I think is right.'"
+  
+  SBS_event.19.t:0 "A Schism in the Brotherhood"
+  SBS_event.19.d:0 "The accumulating tension in the Brotherhood led to the fact that many brothers under the command of Henry Kasdin refused to obey the "traitor" Lyons and left the Citadel, taking with them most of our weapons, equipment and all our power armor gauntlets. \nThe so-called "Outcasts" chose Fort Independence as their base."
+  SBS_event.19.a:0 "The tragedy for the Brotherhood"
+  
+  SBS_event.20.t:0 "The Commonwealth Boogeyman"
+  SBS_event.20.d:0 "Recently, we have heard a lot of rumors about the "Institute", a high-tech organization located in the Commonwealth. These rumors cause concern to Maxon and the top management, and therefore it was decided to send a Gladius Reconnaissance Squad to the Commonwealth with Paladin Danse at the head to investigate these rumors."
+  SBS_event.20.a:0 "Good luck to you, Danse"
+  
+  SBS_event.21.t:0 "Report from Danse"
+  SBS_event.21.d:0 "Recently, we received a report from Dans, in which he reported on the heavy losses of the Recon Squad Gladius during the reconnaissance of the area. But the most important thing in his report was that thanks to the help of a local resident, the existence of the Institute in the Commonwealth was confirmed. After reading the report, Maxon immediately ordered Prydwen to be prepared for departure to the Commonwealth in order to eliminate the threat of the Institute."
+  SBS_event.21.a:0 "Good job, Paladin"
 
   # SOV
   SOV_event.1.t:0 "A Difficult Relationship"
