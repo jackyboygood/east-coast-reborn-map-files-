@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_renc_death_robot"
+		textureFile = "gfx/interface/traits/renc_death_robot.dds"
+	}
+}

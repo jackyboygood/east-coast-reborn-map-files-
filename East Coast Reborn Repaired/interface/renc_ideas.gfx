@@ -1,0 +1,7 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_renc_repriming_liberty"
+		texturefile = "gfx/interface/ideas/renc_repriming_liberty.dds"
+	}
+}

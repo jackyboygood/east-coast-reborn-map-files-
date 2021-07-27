@@ -476,13 +476,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_event_1vault101"
-		texturefile = "gfx/event_pictures/1vault101.dds"
+		name = "GFX_event_1USP_focus"
+		texturefile = "gfx/event_pictures/1USP_focus.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_event_2vault101"
-		texturefile = "gfx/event_pictures/2vault101.dds"
+		name = "GFX_event_2USP_focus"
+		texturefile = "gfx/event_pictures/2USP_focus.dds"
 	}
 	
 	spriteType = {
@@ -796,7 +796,25 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/bos_boston.dds"
 	}
 
+	spriteType = {
+		name = "GFX_event_bos_casdin"
+		texturefile = "gfx/event_pictures/bos_casdin.dds"
+	}
 	
+	spriteType = {
+		name = "GFX_event_bos_outcasts"
+		texturefile = "gfx/event_pictures/bos_outcasts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_bos_danse_report"
+		texturefile = "gfx/event_pictures/bos_danse_report.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_bos_danse_report_base"
+		texturefile = "gfx/event_pictures/bos_danse_report_base.dds"
+	}
 	
 	
 	

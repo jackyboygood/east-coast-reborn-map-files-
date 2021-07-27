@@ -471,13 +471,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_event_1vault101"
-		texturefile = "gfx/interface/1vault101.dds"
+		name = "GFX_event_1USP_focus"
+		texturefile = "gfx/interface/1USP_focus.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_event_2vault101"
-		texturefile = "gfx/interface/2vault101.dds"
+		name = "GFX_event_2USP_focus"
+		texturefile = "gfx/interface/2USP_focus.dds"
 	}
 	
 	spriteType = {

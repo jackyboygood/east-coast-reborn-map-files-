@@ -1379,7 +1379,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_goal_INS_focus_shine"
+		name = "GFX_goal_institut_shine"
 		texturefile = "gfx/interface/goals/institut.dds"	
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2277,38 +2277,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_Minutamen4_shine"
 		texturefile = "gfx/interface/goals/Minutamen4.dds"	
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_continuous_non_factory_construct.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_continuous_non_factory_construct.dds"			
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-	
-	SpriteType = {
-		name = "GFX_goal_Enclave11_shine"
-		texturefile = "gfx/interface/goals/Enclave11.dds"	
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_continuous_non_factory_construct.dds"			
@@ -7281,37 +7249,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_goal_ESP_Supermutant_Slave_shine"
-		texturefile = "gfx/interface/goals/ESP/ESP_Supermutant_Slave.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ESP/ESP_Supermutant_Slave.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ESP/ESP_Supermutant_Slave.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
 		name = "GFX_goal_ESP_Eden_shine"
 		texturefile = "gfx/interface/goals/ESP/ESP_Eden.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -7564,7 +7501,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Mutants.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ESP/ESP_Autumn_Mutants.dds"
+			animationmaskfile = "gfx/interface/goals/ESP/ESP_Autumn_Mutant.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -7872,7 +7809,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_goal_ESP_Eden_Mutant_shine"
-		texturefile = "gfx/interface/goals/ESP/ESP_Eden_Mutants.dds"
+		texturefile = "gfx/interface/goals/ESP/ESP_Eden_Mutant.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/ESP/ESP_Eden_Mutant.dds"
@@ -7919,37 +7856,6 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/ESP/ESP_Eden_Crisis.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
-		name = "GFX_goal_ESP_Eden_Slavers_shine"
-		texturefile = "gfx/interface/goals/ESP/ESP_Eden_Slavers.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ESP/ESP_Eden_Slavers.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ESP/ESP_Eden_Slavers.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
