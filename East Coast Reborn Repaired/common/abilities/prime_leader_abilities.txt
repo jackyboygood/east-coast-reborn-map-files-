@@ -1,0 +1,43 @@
+ability = {
+	renc_eye_lasers = {
+		name = RENC_ABILITY_EYE_LASERS
+		desc = RENC_ABILITY_EYE_LASERS_DESC
+
+		sound_effect = use_fatman_sound
+
+		type = army_leader
+		cost = 0.50
+		allowed = {
+			NOT = { has_trait = exhausted_order_trait}
+			is_leading_army_group = no
+			has_ability = renc_eye_lasers
+			OWNER = {
+			NOT = { has_idea = renc_liberty_prime }
+			}
+		}
+		duration = 168
+
+		one_time_effect = {
+			add_timed_unit_leader_trait = {
+				trait = exhausted_order_trait
+				days = 20
+			}
+			add_temporary_buff_to_units = {
+				combat_offense = 1
+				combat_breakthrough = 1
+				org_damage_multiplier = -0.5
+				str_damage_multiplier = -0.90
+				cannot_retreat_while_attacking = 1.0
+
+				days = 30
+				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+			}
+			OWNER = {
+				add_timed_idea = {
+					idea = renc_liberty_prime
+					days = 60
+				}
+			}
+		}
+	}
+}
