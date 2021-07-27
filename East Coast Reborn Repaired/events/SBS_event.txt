@@ -469,3 +469,120 @@ country_event = {
 		
 	}
 }
+}
+
+country_event = {
+	id = SBS_event.18
+	title = SBS_event.18.t
+	desc = SBS_event.18.d
+	picture = GFX_event_bos_casdin
+	fire_only_once = yes
+	#is_triggered_only = yes
+	
+	trigger = {
+        tag = SBS
+        date = 2275.12.1
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = SBS_event.18.a
+		add_stability = -0.1
+		add_political_power = -150
+		hidden_effect = {
+		country_event = { days = 30 id =  SBS_event.19 }	
+		}
+	}
+}
+
+country_event = {
+	id = SBS_event.19
+	title = SBS_event.19.t
+	desc = SBS_event.19.d
+	picture = GFX_event_bos_outcasts
+	is_triggered_only = yes
+
+	option = {
+		name = SBS_event.19.a
+		add_political_power = -100
+		add_stability = -0.2
+		add_manpower = -935
+		1070 = {
+			set_temp_variable = {
+					pop_add = -4054
+				}
+			add_state_population = no
+			}
+		delete_unit_template_and_units = {
+		division_template = "Knights Veterans"
+		division_template = "Brotherhood Veterans"
+		}
+		delete_unit_template_and_units = {
+		division_template = "Knights Veterans"
+		}
+		add_opinion_modifier = { target = IBS modifier = outcasts }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -800 producer = SBS }
+		add_equipment_to_stockpile = { type = power_armor_equipment amount = -300 producer = SBS }
+		add_equipment_to_stockpile = { type = fireteam_equipment_1 amount = -300 producer = SBS }
+        add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = -300 producer = SBS }
+		
+        IBS = {
+		transfer_state = 1023
+		1023 = { add_core_of = IBS }
+		add_manpower = 935
+		1023 = {
+			set_temp_variable = {
+					pop_add = 4054
+				}
+			add_state_population = yes
+			}
+		add_opinion_modifier = { target = SBS modifier = outcasts }
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 800 producer = SBS }
+		add_equipment_to_stockpile = { type = power_armor_equipment amount = 300 producer = SBS }
+		add_equipment_to_stockpile = { type = fireteam_equipment_1 amount = 300 producer = SBS }
+        add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 300 producer = SBS }
+		hidden_effect = {
+		load_oob = IBS_2275
+		add_equipment_to_stockpile = { type = support_robot_scrap_equipment amount = 400 producer = IBS }
+        add_equipment_to_stockpile = { type = fireteam_equipment_1 amount = 300 producer = SBS }
+        add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 300 producer = SBS }
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SBS_event.20
+	title = SBS_event.20.t
+	desc = SBS_event.20.d
+	picture = GFX_event_bos_danse_report
+	is_triggered_only = yes
+
+	option = {
+		name = SBS_event.20.a
+        remove_unit_leader = 1003
+       	hidden_effect = {
+		   country_event = { days = 45 id = SBS_event.21 } 
+		}
+	}
+}
+
+country_event = {
+	id = SBS_event.21
+	title = SBS_event.21.t
+	desc = SBS_event.21.d
+	picture = GFX_event_bos_danse_report_base
+	is_triggered_only = yes
+
+	option = {
+		name = SBS_event.21.a
+        add_political_power = 100
+        set_country_flag = institute_exists
+	}
+}
+
+
