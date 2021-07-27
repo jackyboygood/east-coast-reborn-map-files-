@@ -82,4 +82,8 @@ opinion_modifiers = {
 		value = 120
 	}
 	
+	outcasts = {#Outcasts 
+		value = -100
+	}
+	
 }
