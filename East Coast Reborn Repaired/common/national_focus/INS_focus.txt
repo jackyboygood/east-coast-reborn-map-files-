@@ -15,7 +15,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 } 
 		cost = 7
 		x = 16
-		y = 0
+		y = 1
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -81,7 +81,7 @@ focus_tree = {
 		prerequisite = {focus = INS_focus_3}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = INS_focus_3
-		x = 0
+		x = -5
 		y = 1
 		cost = 60
 		completion_reward = {
@@ -98,7 +98,7 @@ focus_tree = {
 		prerequisite = {
 			focus = INS_focus_3
 		}
-		x = -6
+		x = 0
 		y = 1
 
 		completion_reward = {
@@ -289,6 +289,7 @@ focus_tree = {
 
 		available = {
            1014 = { is_owned_and_controlled_by = DIA }
+		   has_completed_focus = INS_focus_25
 		}
 
 		bypass = {
@@ -318,7 +319,10 @@ focus_tree = {
 		cost = 45
 		ai_will_do = { factor = 15 } 
 		available = {
-			
+		DIA = {
+		exists = yes
+		has_full_control_of_state = 1015
+		}	
 		}
 		bypass = {
 
@@ -418,7 +422,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] INS_focus_15 entered"
 			}
-			add_ideas = pohisheniemutantovinstitute
+			#add_ideas = pohisheniemutantovinstitute
 			add_manpower = 400
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -505,8 +509,10 @@ focus_tree = {
 			focus = INS_focus_17
 		}
 		bypass = {
+		OR = {
 			BSM = { exists = no }
 			BSM = { is_subject_of = INS}
+		}
 		}
 		x = 0
 		y = 1
@@ -532,7 +538,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			add_war_support = 0.1
+		    add_political_power = 50
 			add_stability = 0.1
 		}
 	}
@@ -587,7 +593,7 @@ focus_tree = {
 			focus = INS_focus_5
 		}
 		x = 0
-		y = 2
+		y = 1
 		available = {
 		}
 		completion_reward = {
@@ -604,7 +610,7 @@ focus_tree = {
 		prerequisite = {
 			focus = INS_focus_21
 		}
-		x = -2
+		x = -1
 		y = 1
 		available = {
 		}
@@ -614,7 +620,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] INS_focus_22 entered"
 			}
 			1016 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -637,7 +643,7 @@ focus_tree = {
 		prerequisite = {
 			focus = INS_focus_21
 		}
-		x = 2
+		x = 1
 		y = 1
 		available = {
 		}
@@ -647,10 +653,10 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] INS_focus_22 entered"
 			}
 			1016 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -664,7 +670,7 @@ focus_tree = {
 	focus = {
 		id = INS_focus_24
 		icon = GFX_goal_institut21
-		relative_position_id = INS_focus_23
+		relative_position_id = INS_focus_21
 		ai_will_do = { factor = 25 } 
 		cost = 45
 		prerequisite = {
@@ -673,15 +679,15 @@ focus_tree = {
 		prerequisite = {
 			focus = INS_focus_23
 		}
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] veg_firstbatch entered"
 			}
 			add_manpower = 250
-			custom_effect_tooltip = load_inst1pokolen
+			custom_effect_tooltip = inst1pokolen_tt
 			hidden_effect = { load_oob = inst1pokolen }
 			if = {
 				limit = { has_global_flag = debug_logs }
@@ -769,6 +775,7 @@ focus_tree = {
 		id = INS_focus_28
 		icon = GFX_goal_institut25
 		available = {
+		has_war = yes
 		}
 		ai_will_do = { factor = 1 }
 		relative_position_id = INS_focus_25
@@ -856,7 +863,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] INS_focus_31 entered"
 			}
 			1015 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -878,7 +885,7 @@ focus_tree = {
 		prerequisite = {
 			focus = INS_focus_31
 		}
-		x = 0
+		x = -1
 		y = 1
 		available = {
 			1015 = { is_owned_and_controlled_by = INS }
@@ -889,7 +896,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] INS_focus_32 entered"
 			}
 			1015 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -925,7 +932,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] INS_focus_33 entered"
 			}
 			1017 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -947,7 +954,7 @@ focus_tree = {
 		prerequisite = {
 			focus = INS_focus_33
 		}
-		x = 0
+		x = 1
 		y = 1
 		available = {
 			1017 = { is_owned_and_controlled_by = INS }
@@ -958,7 +965,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] INS_focus_34 entered"
 			}
 			1017 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -977,6 +984,9 @@ focus_tree = {
 		icon = GFX_goal_BOS_scourge_focus
 		relative_position_id = INS_focus_3
 		cost = 45
+		available = {
+		date > 2278.2.1
+		}
 		prerequisite = {
 			focus = INS_focus_3
 		}
@@ -988,7 +998,7 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] INS_focus_35 entered"
 			}
-			air_experience = 25
+			army_experience = 25
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] INS_focus_35 exited"
@@ -997,48 +1007,28 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = INS_focus_36
-		icon = GFX_goal_generic_airplane
-		cost = 45
-		relative_position_id = INS_focus_35
-		prerequisite = {
-			focus = INS_focus_35
-		}
-		x = -1
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] INS_focus_36 entered"
-			}
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_air_doctrine }
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] INS_focus_36 exited"
-			}
-		}
-	}
-	
-	focus = {
 		id = INS_focus_37
 		icon = GFX_goal_generic_airbases_focus
-		relative_position_id = INS_focus_35
+		relative_position_id = INS_focus_4
 		cost = 45
 		prerequisite = {
-			focus = INS_focus_35
+			focus = INS_focus_31
 		}
-		x = 1
-		y = 1
+		prerequisite = {
+			focus = INS_focus_33
+		}
+		x = 0
+		y = 3
 		available = {
-			1016 = { is_owned_and_controlled_by = INS }
+			1013 = { is_owned_and_controlled_by = INS }
 		}
 		completion_reward = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] INS_focus_37 entered"
 			}
-			1016 = {
+			1013 = {
+			    add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -1048,33 +1038,6 @@ focus_tree = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] INS_focus_37 exited"
-			}
-		}
-	}
-	
-	focus = {
-		id = INS_focus_38
-		icon = GFX_goal_generic_air_doctrines_focus
-		cost = 45
-		relative_position_id = INS_focus_37
-		prerequisite = {
-			focus = INS_focus_37
-		}
-		prerequisite = {
-			focus = INS_focus_36
-		}
-		x = -1
-		y = 1
-
-		completion_reward = {
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] INS_focus_38 entered"
-			}
-			add_ideas = genericbosaerialsupermacy
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] INS_focus_38 exited"
 			}
 		}
 	}
@@ -1122,17 +1085,19 @@ focus_tree = {
 			focus = INS_focus_39
 		}
 		bypass = {
+		OR = {
 			MEN = { exists = no }
 			MEN = { is_subject_of = INS}
+			}
 		}
 		x = 0
 		y = 1
 
 		completion_reward = {
+		    add_political_power = -150
 			MEN = { 
 		          add_opinion_modifier = { target = INS modifier = institutandminitman }
 			}
-			add_political_power = 30
 			add_opinion_modifier = { target = MEN modifier = institutandminitman }
 		}
 	}
@@ -1205,16 +1170,19 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = INS_focus_42 }
 		completion_reward = {
+			MEN = {
 			add_equipment_to_stockpile = { 
-			type = power_armor_equipment_1
-			amount = 250 
-			producer = USA
+			type = infantry_equipment
+			amount = -800
+			producer = MEN
+			}
 			}
 			add_equipment_to_stockpile = { 
-			type = energy_equipment_1
-			amount = 1000
-			producer = USA
+			type = infantry_equipment
+			amount = 800
+			producer = MEN
 			}
+
 		}
 		cost = 45
 	}
@@ -1225,7 +1193,7 @@ focus_tree = {
 		relative_position_id = INS_focus_43
 		prerequisite = { focus = INS_focus_43 }
 		available = {
-			date < 2278.1.1
+			date > 2278.1.1
 		}
 		x = 0
 		y = 1
@@ -1251,8 +1219,10 @@ focus_tree = {
 		}
 
 		bypass = {
+		OR = {
 			MEN = { exists = no }
 			MEN = { is_subject_of = INS}
+		     }
 		}
 
 		cancel_if_invalid = yes
@@ -1274,11 +1244,14 @@ focus_tree = {
 	focus = {
 		id = INS_focus_45
 		icon = GFX_goal_institut11
-		relative_position_id = INS_focus_32
-		x = 0
-		y = 2
-		
+		relative_position_id = INS_focus_35
+		x = -1
+		y = 1
 		will_lead_to_war_with = STR
+
+        prerequisite = {
+		focus = INS_focus_35
+		}
 
 		cost = 45
 
@@ -1294,12 +1267,10 @@ focus_tree = {
 			has_completed_focus = INS_focus_41
 			has_completed_focus = INS_focus_8
 			has_completed_focus = INS_focus_16
-			date > 2278.2.1
 		}
 		
 		bypass = {
-			MEN = { exists = no }
-			MEN = { is_subject_of = INS}
+			STR = { exists = no }
 		}
 
 		cancel_if_invalid = yes
@@ -1315,19 +1286,24 @@ focus_tree = {
 				type = annex_everything
 				target = STR
 			}
+			1021 = { add_core_of = INS }
 		}
 	}
 	
 	focus = {
 		id = INS_focus_46
 		icon = GFX_goal_institut11
-		relative_position_id = INS_focus_34
-		x = 0
-		y = 2
+		relative_position_id = INS_focus_35
+		x = 1
+		y = 1
 		
 		will_lead_to_war_with = BSS
 
 		cost = 45
+		
+		prerequisite = {
+		focus = INS_focus_35
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -1341,12 +1317,10 @@ focus_tree = {
 			has_completed_focus = INS_focus_41
 			has_completed_focus = INS_focus_8
 			has_completed_focus = INS_focus_16
-			date > 2278.2.1
 		}
 
 		bypass = {
-			BSS = { exists = no }
-			BSS = { is_subject_of = INS}
+			SBS = { exists = no }
 		}
 
 		cancel_if_invalid = yes
@@ -1372,7 +1346,7 @@ focus_tree = {
 		relative_position_id = INS_focus_45
 		prerequisite = { focus = INS_focus_45 }
 		x = 0
-		y = 2
+		y = 1
 		
 		will_lead_to_war_with = RIJ
 
@@ -1392,9 +1366,11 @@ focus_tree = {
 			has_completed_focus = INS_focus_16
 		}
 
-		bypass = {
+		bypass = { 
+		OR = {
 			RIJ = { exists = no }
 			RIJ = { is_subject_of = INS}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1420,10 +1396,11 @@ focus_tree = {
 		relative_position_id = INS_focus_46
 		prerequisite = { focus = INS_focus_46 }
 		x = 0
-		y = 2
+		y = 1
 		
-		will_lead_to_war_with = KOV
-
+		will_lead_to_war_with = USD
+        will_lead_to_war_with = DAT
+		
 		cost = 45
 
 		ai_will_do = {
@@ -1432,17 +1409,19 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				is_in_faction_with = KOV
+				is_in_faction_with = USD
+				is_in_faction_with = DAT
 			}
-			KOV = { exists = yes }
+			USD = { exists = yes }
+			DAT = { exists = yes }
 			has_completed_focus = INS_focus_41
 			has_completed_focus = INS_focus_8
 			has_completed_focus = INS_focus_16
 		}
 
 		bypass = {
-			KOV = { exists = no }
-			KOV = { is_subject_of = INS}
+			USD = { exists = no }
+			DAT = { exists = no }
 		}
 
 		cancel_if_invalid = yes
@@ -1454,18 +1433,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		    1012 = { add_core_of = INS }
-			1011 = { add_core_of = INS }
+		    1050 = { add_core_of = INS }
+			963 = { add_core_of = INS }
 			create_wargoal = {
 				type = annex_everything
-				target = KOV
+				target = USD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DAT
 			}
 		}
 	}
 	
 	focus = {
 		id = INS_focus_49
-		icon = GFX_goal_Enclave11
+		icon = GFX_goal_INS_Yrk
 		relative_position_id = INS_focus_48
 		prerequisite = { focus = INS_focus_48 }
 		prerequisite = { focus = INS_focus_47 }
@@ -1491,8 +1474,10 @@ focus_tree = {
 		}
 
 		bypass = {
+		OR = {
 			NUE = { exists = no }
 			NUE = { is_subject_of = INS}
+		}
 		}
 
 		cancel_if_invalid = yes
@@ -1516,14 +1501,13 @@ focus_tree = {
 		icon = GFX_goal_NEW_the_old_world
 		prerequisite = {focus = INS_focus_3}
 		ai_will_do = { factor = 1 } 
-		relative_position_id = INS_focus_35
-		x = -5
-		y = 0
+		relative_position_id = INS_focus_3
+		x = 12
+		y = 1
 		cost = 45
 		completion_reward = {
-		    set_technology = {
-			stripped_pa_tech = 1
-			}
+		 add_political_power = 50
+         add_stability = 0.1
 		}
 	}
 	
@@ -1635,7 +1619,7 @@ focus_tree = {
 		id = INS_focus_59
 		icon = GFX_goal_institut7
 		ai_will_do = { factor = 100 } 
-		relative_position_id = INS_focus_58
+		relative_position_id = INS_focus_49
 		available = {
 		    	 963 = { is_controlled_by = INS } 
 				 1008 = { is_controlled_by = INS } 
@@ -1655,7 +1639,7 @@ focus_tree = {
 				 1052 = { is_controlled_by = INS } 
 		}
 		x = 0
-		y = 2
+		y = 1
 		cost = 45
 		completion_reward = {
 		   430 = { add_core_of = WIT }
@@ -1688,6 +1672,9 @@ focus_tree = {
 		icon = GFX_goal_institut6
 		relative_position_id = INS_focus_59
 		ai_will_do = { factor = 15 } 
+		available = {
+		has_manpower > 5500
+		}
 		cost = 45
 		prerequisite = {
 			focus = INS_focus_59
@@ -1757,7 +1744,6 @@ focus_tree = {
 			WIT = { 
 		    add_ideas = pohishenieludeyinstitute
 			add_ideas = sinth1generic
-			add_ideas = newsupermutantv
 			add_ideas = sinth2generic
 			}
 		}
@@ -1780,7 +1766,16 @@ focus_tree = {
 		completion_reward = {
 			every_other_country = {
 				limit = {
-						has_full_control_of_state = 374 # Carson City
+				     OR = {
+						has_full_control_of_state = 374
+						has_full_control_of_state = 453 
+						has_full_control_of_state = 510
+						has_full_control_of_state = 390
+						has_full_control_of_state = 524
+						has_full_control_of_state = 568
+						has_full_control_of_state = 572
+						has_full_control_of_state = 525
+						}
 				}
 				INS = {
 						create_wargoal = { type = annex_everything target = PREV }
@@ -1837,8 +1832,12 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-		controls_state = 1005
+		available = { 
+		has_completed_focus = INS_focus_20
+		OR = {
+		controls_state = 1017
+		BSM = { is_subject_of = INS}
+		}
 		}
 
 		bypass = {

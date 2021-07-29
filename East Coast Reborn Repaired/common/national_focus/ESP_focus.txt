@@ -98,7 +98,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#SIERRA - Our Base of Operations
 		id = ESP_focus_5
-		icon = GFX_goal_BOS_vertibird_schematics
+		icon = GFX_goal_ESP_Vertibird
 		prerequisite = {focus = ESP_focus_4}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = ESP_focus_4
@@ -122,7 +122,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#SIERRA - Excevate the lower departments
 		id = ESP_focus_6
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_ESP_Raven_Rock_Arsenal
 		prerequisite = {focus = ESP_focus_4}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = ESP_focus_4
@@ -2209,7 +2209,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = ESP_focus_76
-		icon = GFX_goal_Enclave17
+		icon = GFX_goal_ESP_God_Bless
 		relative_position_id = ESP_focus_72
 		x = 0
 		y = 4

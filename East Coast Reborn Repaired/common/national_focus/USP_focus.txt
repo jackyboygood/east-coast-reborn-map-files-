@@ -652,7 +652,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = USP_focus_33
 		completion_reward = {
-			add_ideas = USP_focusbuch
+			add_ideas = vault101buch
             LIT = {
 				set_country_flag = amatabej
 			}
