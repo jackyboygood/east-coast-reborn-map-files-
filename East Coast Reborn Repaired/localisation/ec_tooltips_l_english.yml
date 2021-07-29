@@ -23,3 +23,6 @@
   Bob:0 "Bob wins the election"
   Deyv:0 "Dave wins the election"
   Rose:0 "Rosie wins the election"
+  institute_exists:0 "The Institute really exists"
+  ready_for_battle:0 "We are ready for war"
+  enclave_enjoyer:0 "Lone Wanderer sided with the Enclave"
