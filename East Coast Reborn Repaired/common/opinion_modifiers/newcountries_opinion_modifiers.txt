@@ -86,4 +86,8 @@ opinion_modifiers = {
 		value = -100
 	}
 	
+	bitterEnemies = {
+	    value = -100
+	}
+	
 }
