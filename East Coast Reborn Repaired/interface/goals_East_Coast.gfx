@@ -1202,6 +1202,21 @@ spriteTypes = {
 	
 	######ESP#######
 	
+	SpriteType = {
+	name = "GFX_goal_ESP_Vertibird"
+	texturefile = "gfx/interface/goals/ESP/ESP_Vertibird.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Raven_Rock_Arsenal"
+	texturefile = "gfx/interface/goals/ESP/ESP_Raven_Rock_Arsenal.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_God_Bless"
+	texturefile = "gfx/interface/goals/ESP/ESP_God_Bless.dds"		
+	}
+	
     SpriteType = {
 	name = "GFX_goal_ESP_Supermutant_Slave"
 	texturefile = "gfx/interface/goals/ESP/ESP_Supermutant_Slave.dds"		
@@ -1231,6 +1246,8 @@ spriteTypes = {
 	name = "GFX_goal_ESP_Start_3"
 	texturefile = "gfx/interface/goals/ESP/ESP_Start_3.dds"		
 	}
+	
+	
 	
 	SpriteType = {
 	name = "GFX_goal_ESP_Autumn_Election"
