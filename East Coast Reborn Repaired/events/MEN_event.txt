@@ -476,7 +476,7 @@ country_event = {
 		name = MEN_event.19.b
 		
 		SBS = {
-			country_event = 16
+			country_event = SBS_event.16
 		}
 	}		
 }
@@ -495,11 +495,12 @@ country_event = {
 			relation = non_aggression_pact
 			active = yes
 	}
+	}
 	option = {
 		name = MEN_event.20.b
 		
 		SBS = {
-			country_event = 16
+			country_event = SBS_event.16
 		}
 	}
 }
