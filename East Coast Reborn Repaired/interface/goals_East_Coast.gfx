@@ -1213,6 +1213,31 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+	name = "GFX_goal_ESP_Science"
+	texturefile = "gfx/interface/goals/ESP/ESP_Science.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Fortifications"
+	texturefile = "gfx/interface/goals/ESP/ESP_Fortifications.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Raven_Rock"
+	texturefile = "gfx/interface/goals/ESP/ESP_Raven_Rock.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ESP_Prewar_Science"
+	texturefile = "gfx/interface/goals/ESP/ESP_Prewar_Science.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_ESP_Autumn_Supplies"
+	texturefile = "gfx/interface/goals/ESP/ESP_Autumn_Supplies.dds"		
+	}
+	
+	SpriteType = {
 	name = "GFX_goal_ESP_God_Bless"
 	texturefile = "gfx/interface/goals/ESP/ESP_God_Bless.dds"		
 	}
@@ -1625,6 +1650,21 @@ spriteTypes = {
 	
 	
 	######INS######
+	
+	SpriteType = {
+	name = "GFX_goal_INS_Inside"
+	texturefile = "gfx/interface/goals/INS/INS_Inside.dds"		
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_INS_Development"
+	texturefile = "gfx/interface/goals/INS/INS_Development.dds"		
+	}
+	
+    SpriteType = {
+	name = "GFX_goal_INS_Science"
+	texturefile = "gfx/interface/goals/INS/INS_Science.dds"		
+	}
 	
 	SpriteType = {
 	name = "GFX_goal_INS_Yrk"
