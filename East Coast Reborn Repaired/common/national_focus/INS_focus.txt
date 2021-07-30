@@ -11,7 +11,7 @@ focus_tree = {
 	
 	focus = {
 		id = INS_focus_1
-		icon = GFX_goal_institut
+		icon = GFX_goal_INS_Inside
 		ai_will_do = { factor = 1 } 
 		cost = 7
 		x = 16
@@ -31,7 +31,7 @@ focus_tree = {
 	
 	focus = {
 		id = INS_focus_2
-		icon = GFX_goal_institut1
+		icon = GFX_goal_INS_Development
 		relative_position_id = INS_focus_1
 		prerequisite = {
 			focus = INS_focus_1
@@ -63,7 +63,7 @@ focus_tree = {
 	
 	focus = {#SIERRA - 2- The lab
 		id = INS_focus_3
-		icon = GFX_goal_NEW_the_old_world
+		icon = GFX_goal_INS_Science
 		prerequisite = {focus = INS_focus_2}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = INS_focus_2
