@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "10w PA Division"
+	name = "PA Infantry"
 	regiments = {
 		power_armour = { x = 0 y = 0 }
 		power_armour = { x = 0 y = 1 }
@@ -21,59 +21,79 @@ division_template = {
 	}
 }
 
-# division_template = {
-	# name = "Mech Test"
-	# regiments = {
-		# motorized = { x = 0 y = 0 }
-	# }
-# }
-# division_template = {
-	# name = "Robot Test"
-	# regiments = {
-		# light_robot = { x = 0 y = 0 }
-	# }
-# }
-# division_template = {
-	# name = "Tank Test"
-	# regiments = {
-		# medium_armor = { x = 0 y = 0 }
-	# }
-# }
+division_template = {
+	name = "Presidential Guard"
+	regiments = {
+		support_robot = { x = 0 y = 0 }
+		support_robot = { x = 0 y = 1 }
+		support_robot = { x = 0 y = 2 }
+		combat_robot = { x = 1 y = 0 }
+		combat_robot = { x = 1 y = 1 }
+		combat_robot = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Mister Gutsies Division"
+	regiments = {
+		support_robot = { x = 0 y = 0 }
+		support_robot = { x = 0 y = 1 }
+		support_robot = { x = 1 y = 0 }
+		support_robot = { x = 1 y = 1 }
+		support_robot = { x = 2 y = 0 }
+		support_robot = { x = 2 y = 1 }
+	}
+}
+
 
 units = {
 	division {
-		name = "1st Navarro Veterans"
+		name = "1st PA Regiment"
 		location = 1148
-		division_template = "10w PA Division"
+		division_template = "PA Infantry"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}	
+	
 	division {
-		name = "2nd Navarro Veterans"
+		name = "2nd PA Regiment"
 		location = 1148
-		division_template = "10w PA Division"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}	
-	division {
-		name = "Enclave Remnants"
-		location = 1148
-		division_template = "10w PA Division"
+		division_template = "PA Infantry"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
-	}	
-	division {
-		name = "Enclave Remnants"
-		location = 1148
-		division_template = "10w PA Division"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
 	}
-	division {
+	
+    division {
 		name = "1st Enclave Auxiliaries"
 		location = 1148
 		division_template = "Enclave Auxiliaries"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	division {
+		name = "Presidential Guard"
+		location = 1148
+		division_template = "Presidential Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division {
+		name = "1st Steel Division"
+		location = 1148
+		division_template = "Mister Gutsies Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division {
+		name = "2nd Steel Division"
+		location = 1148
+		division_template = "Mister Gutsies Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	
+	
 }

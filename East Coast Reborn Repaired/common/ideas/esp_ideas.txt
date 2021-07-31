@@ -286,6 +286,7 @@ ideas = {
 			}
 		}
 		
+		
 		ESP_slave_labour_collars = {
 			picture = slave_collars
 			allowed = {
@@ -327,7 +328,98 @@ ideas = {
 			}
 		}
 		
+		ESP_american_steel = {
+			picture = generic_eyebot
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.15
+				max_planning = 0.08
+				country_resource_metal = 4
+				country_resource_composites = 4
+			}
+			equipment_bonus = {
+				support_robot_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				combat_robot_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		ESP_american_steel_2 = {
+			picture = generic_armor
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.15
+				max_planning = 0.08
+				training_time_factor = -0.15
+				country_resource_metal = 10
+				country_resource_composites = 10
+			}
+			equipment_bonus = {
+				support_robot_equipment = {
+					build_cost_ic = -0.2
+					soft_attack = 0.1
+					defense = 0.1
+					instant = yes
+				}
+				combat_robot_equipment = {
+					build_cost_ic = -0.2
+					soft_attack = 0.1
+					defense = 0.1
+					instant = yes
+				}
+			}
+		}
 		
 		
+		ESP_american_blood_1 = {
+			picture = chi_army_corruption
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				conscription = 0.03
+				#country_resource_water = 3
+			}
+		}
+		
+		ESP_american_blood_2 = {
+			picture = chi_army_corruption3
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				conscription = 0.06
+				training_time_army_factor = -0.1
+				non_core_manpower = 0.1
+			}
+		}
+
+		ESP_verti_production = {
+			picture = generic_air_research
+			removal_cost = -1
+			equipment_bonus = {
+				cas_equipment = {
+					build_cost_ic = -0.20
+					instant = yes
+				}
+				transport_plane_equipment = {
+					build_cost_ic = -0.20
+					instant = yes
+				}
+			}
+		}
 	}
 }

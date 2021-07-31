@@ -76,7 +76,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {
 		id = ESP_focus_4
-		icon =GFX_goal_generic_walls_focus
+		icon = GFX_goal_ESP_Raven_Rock
 		prerequisite = { focus = ESP_focus_3 }
 		ai_will_do = { factor = 1 } 
 		relative_position_id = ESP_focus_3
@@ -139,7 +139,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#SIERRA - The Archives
 		id = ESP_focus_7
-		icon = GFX_goal_generic_data_focus
+		icon = GFX_goal_ESP_Prewar_Science
 		prerequisite = {focus = ESP_focus_4}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = ESP_focus_4
@@ -162,7 +162,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#SIERRA - Our Base of Operations
 		id = ESP_focus_8
-		icon = GFX_goal_generic_BOS_focus_surface_outposts
+		icon = GFX_goal_ESP_Fortifications
 		prerequisite = {focus = ESP_focus_7}
 		prerequisite = {focus = ESP_focus_6}
 		prerequisite = {focus = ESP_focus_5}
@@ -210,7 +210,7 @@ focus = {#Expedition - to Mariposa
 	
 	focus = {#SIERRA - 2- The lab
 		id = ESP_focus_9
-		icon = GFX_goal_NEW_the_old_world
+		icon = GFX_goal_ESP_Science
 		prerequisite = {focus = ESP_focus_8}
 		ai_will_do = { factor = 1 } 
 		relative_position_id = ESP_focus_8
@@ -245,6 +245,15 @@ focus = {#Expedition - to Mariposa
 			add_political_power = 60
 			add_ideas = EnclavePolkovnik
 			add_war_support = 0.2
+			hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Mister Gutsies Division"
+		    }
+						
+			delete_unit_template_and_units = {
+				division_template = "Presidential Guard"
+		    }
+			}
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] ESP_focus_16 exited"
@@ -275,6 +284,15 @@ focus = {#Expedition - to Mariposa
 			add_political_power = 60
 			add_ideas = Enclaveedem
 			add_stability = 0.2
+			hidden_effect = {
+			delete_unit_template_and_units = {
+		        division_template = "Enclave Auxiliaries"
+		    }
+					
+			delete_unit_template_and_units = {
+		        division_template = "PA Infantry"
+		    }
+			}
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] the_sadists exited"
@@ -408,34 +426,13 @@ focus = {#Expedition - to Mariposa
 			factor = 8
 		}
 
-		available = {
-		   
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
+		
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = ENC_infighting_2
-				}
-				remove_ideas = ENC_infighting_2
-			}
-			else = {
-			    add_manpower = -173
+			    add_manpower = -532
 				remove_ideas = ESP_infighting
-			}
 		}
 	}
 	
@@ -476,7 +473,7 @@ focus = {#Expedition - to Mariposa
 		}
 	}
 	
-	focus = {#Purity - ANT - resourceful
+	focus = {
 		id = ESP_focus_22
 		icon = GFX_goal_generic_supplies_focus
 		available = {
@@ -490,8 +487,8 @@ focus = {#Expedition - to Mariposa
 		y = 1
 		prerequisite = { focus = ESP_focus_19}
 		completion_reward = {
-			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 250 producer = ESP }
-			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 250 producer = ESP }
+		    add_equipment_to_stockpile = { type = support_robot_handy_equipment amount = 800 producer = USA }
+			add_equipment_to_stockpile = { type = support_robot_protectron_equipment_2 amount = 450 producer = USA }	
 		}
 		cost = 45
 	}
@@ -533,9 +530,9 @@ focus = {#Expedition - to Mariposa
 		}
 	}
 	
-	focus = {#Purity - ANT - resourceful
+	focus = {
 		id = ESP_focus_25
-		icon = GFX_goal_generic_supplies_focus
+		icon = GFX_goal_ESP_Autumn_Supplies
 		available = {
 			989 = { is_controlled_by = ESP } #do we actually own it right now?
 		}
@@ -986,7 +983,7 @@ focus = {#Expedition - to Mariposa
 		}
 	}
 	
-	focus = {# STRIKE TEAMS
+	focus = {
 		id = ESP_focus_41
 		icon = GFX_goal_ESP_Autumn_Chad
 		available = {
@@ -996,32 +993,35 @@ focus = {#Expedition - to Mariposa
 		prerequisite = { focus = ESP_focus_40 }
 		mutually_exclusive = { focus = ESP_focus_46 }
 		relative_position_id = ESP_focus_40
-		x = -2
+		x = -3
 		y = 1
-		cost = 45
+		cost = 20
 		completion_reward = {
-			add_ideas = ENC_strike_teams
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cat_grand_army
+			}
 		}
 	}
 	
-	focus = {# STRIKE TEAMS - VERTIBIRD FOCUS
+	focus = {
 		id = ESP_focus_42
-		icon = GFX_goal_enc_air_production
+		icon = GFX_goal_BOS_wasteland_conscription
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = ESP_focus_41 }
-		mutually_exclusive = { focus = ESP_focus_44 }
 		relative_position_id = ESP_focus_41
-		x = -1
+		x = 0
 		y = 1
 		cost = 45
 		completion_reward = {
-			add_ideas = ENC_verti_production
+			add_ideas = ESP_american_blood_1
 		}
 	}
 	
-	focus = {# STRIKE TEAMS - DROP TRAINING
+	focus = {
 		id = ESP_focus_43
-		icon = GFX_goal_enc_para
+		icon = GFX_goal_ESP_Raven_Rock_Arsenal
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = ESP_focus_42 }
 		relative_position_id = ESP_focus_42
@@ -1029,49 +1029,73 @@ focus = {#Expedition - to Mariposa
 		y = 1
 		cost = 45
 		completion_reward = {
-			swap_ideas = { 
-				add_idea = ENC_drop_training 
-				remove_idea = ENC_strike_teams 
-			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_tech_category
+		}
 		}
 	}
 	
-	focus = {# STRIKE TEAMS - GROUND
+	focus = {
 		id = ESP_focus_44
-		icon = GFX_goal_enc_small_arms
+		icon = GFX_goal_ESP_Vertibird
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = ESP_focus_41 }
+		prerequisite = { focus = ESP_focus_42 }
 		relative_position_id = ESP_focus_41
-		mutually_exclusive = { focus = ESP_focus_42 }
-		x = 1
-		y = 1
+		x = -2
+		y = 2
 		cost = 45
 		completion_reward = {
-			swap_ideas = { 
-				remove_idea = ENC_officers
-				add_idea = ESP_officers_local
-			}
+           add_ideas = ESP_verti_production
 		}
 	}
 	
-	focus = {# STRIKE TEAMS - rapid planning
+	focus = {
 		id = ESP_focus_45
-		icon = GFX_goal_enc_planning
+		icon = GFX_goal_ENC_construction_usa
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = ESP_focus_44 }
-		relative_position_id = ESP_focus_44
-		x = 0 
+		prerequisite = { focus = ESP_focus_42 }
+		relative_position_id = ESP_focus_42
+		x = 2
 		y = 1
 		cost = 45
 		completion_reward = { 
-			swap_ideas = {
-				remove_idea = ESP_officers_local
-				add_idea = ESP_officers_local_2
-			}
+		add_stability = 0.15
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+	   add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 		}
 	}
 	
-	focus = {# ARMY REFORM
+	focus = {
+		id = ESP_American_Patriots
+		icon = GFX_goal_ESP_Autumn_mobilisation
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = ESP_focus_43 }
+		prerequisite = { focus = ESP_focus_44 }
+		prerequisite = { focus = ESP_focus_45 }
+		relative_position_id = ESP_focus_42
+		x = 0
+		y = 2
+		cost = 45
+		completion_reward = { 
+		#add_stability = 0.1
+		swap_ideas = {
+		   remove_idea = ESP_american_blood_1
+		   add_idea = ESP_american_blood_2
+		}
+
+		}
+	}
+	
+	
+	focus = {# ARMY REFORM EDEN
 		id = ESP_focus_46
 		icon = GFX_goal_ESP_Eden
 		ai_will_do = { factor = 1 }
@@ -1081,80 +1105,102 @@ focus = {#Expedition - to Mariposa
 		prerequisite = { focus = ESP_focus_40 }
 		mutually_exclusive = { focus = ESP_focus_41 }
 		relative_position_id = ESP_focus_40
-		x = 2
+		x = 3
 		y = 1
-		cost = 45
+		cost = 20
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.3
+				bonus = 0.5
 				uses = 2
-				category = cat_land_doctrine 
+				category = cat_automated_warfare
 			}
 		}
 	}
 	
 	focus = {
 		id = ESP_focus_47
-		icon = GFX_goal_enc_radio
+		icon = GFX_goal_ENC_eyebot_reform
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = ESP_focus_46 }
 		relative_position_id = ESP_focus_46 
-		mutually_exclusive = { focus = ESP_focus_49 }
-		x = -1
+		x = 0
 		y = 1  
 		cost = 45
 		completion_reward = {
-			swap_ideas = { 
-				add_idea = ESP_officers_central
-				remove_idea = ENC_officers
-			}
+				add_ideas = ESP_american_steel
 		}
 	}
 	
-	focus = {# ARMY REFORM COMMAND 2
+	focus = {
 		id = ESP_focus_48
-		icon = GFX_goal_enc_position_armies
+		icon = GFX_goal_ARM_robco_factory_reactivation
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = ESP_focus_47 }
 		relative_position_id = ESP_focus_47
-		x = 0
+		x = 2
 		y = 1
 		cost = 45
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ESP_officers_central
-				add_idea = ESP_officers_central_2
+		add_war_support = 0.1
+		add_offsite_building = {
+			type = arms_factory
+			level = 4
 			}
 		}
 	}
 	
-	focus = {# ARMY REFORM - FIGHTER
+	focus = {
 		id = ESP_focus_49
-		icon = GFX_goal_enc_fighter
+		icon = GFX_goal_generic_robots_focus
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = ESP_focus_46 }
+		prerequisite = { focus = ESP_focus_47 }
 		relative_position_id = ESP_focus_46
-		mutually_exclusive = { focus = ESP_focus_47 }
-		x = 1 
-		y = 1
+		x = 0
+		y = 2
 		cost = 45
 		completion_reward = {
-			air_experience = 50
-			add_ideas = ENC_air_supremacy
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = robotics_tech_category
+		}
 		}
 	}
 	
-	focus = {# ARMY REFORM - FIGHTER FOCUS 2
+	focus = {
 		id = ESP_focus_50
-		icon = GFX_goal_enc_advanced_fighter 
+		icon = GFX_goal_generic_bot_brain_head
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = ESP_focus_49 }
-		relative_position_id = ESP_focus_49
-		x = 0
+		prerequisite = { focus = ESP_focus_47 }
+		relative_position_id = ESP_focus_47
+		x = -2
 		y = 1
 		cost = 45
 		completion_reward = {
-			set_technology = { high_fighter_tech = 1}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_automated_warfare
+			}
+		}
+	}
+	
+	focus = {
+		id = ESP_American_Legions
+		icon = GFX_goal_ARM_mechanical_triumph
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = ESP_focus_48 }
+		prerequisite = { focus = ESP_focus_49 }
+		prerequisite = { focus = ESP_focus_50 }
+		relative_position_id = ESP_focus_47
+		x = 0
+		y = 2
+		cost = 45
+		completion_reward = {
+			swap_ideas = {
+				    remove_idea = ESP_american_steel
+					add_idea = ESP_american_steel_2
+				}
 		}
 	}
 	
@@ -1185,7 +1231,7 @@ focus = {#Expedition - to Mariposa
 		cost = 45
 		completion_reward = {
 			add_research_slot = 1
-			swap_ideas = {remove_idea = ENC_scientists add_idea = ENC_scientists_buffed}
+			#swap_ideas = {remove_idea = ENC_scientists add_idea = ENC_scientists_buffed}
 		}
 	}
 	
@@ -1436,7 +1482,6 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 		    1007 = { add_core_of = ESP }
 			717 = { add_core_of = ESP }
-			1049 = { add_core_of = ESP }
 			every_other_country = {
 				limit = {
 						has_full_control_of_state = 717 # Easton
@@ -1455,15 +1500,6 @@ focus = {#Expedition - to Mariposa
 						create_wargoal = { type = annex_everything target = PREV }
 				}
 			}
-			every_other_country = {
-				limit = {
-						has_full_control_of_state = 1049 # Easton
-						
-				}
-				ESP = {
-						create_wargoal = { type = annex_everything target = PREV }
-				}
-			}
 		}
 	}
 	
@@ -1476,7 +1512,6 @@ focus = {#Expedition - to Mariposa
 			981 = { is_controlled_by = ESP } 
 			1007 = { is_controlled_by = ESP } 
 			717 = { is_controlled_by = ESP } 
-			1049 = { is_controlled_by = ESP } 
 			1023 = { is_controlled_by = ESP }
             NUE = {
 			is_neighbor_of = ESP
@@ -1580,27 +1615,19 @@ focus = {#Expedition - to Mariposa
 			1022 = { is_controlled_by = ESP } # NAVARRO
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
+		
 		completion_reward = {
 			add_political_power = 120
-			add_manpower = 570
+			#add_manpower = 570
 		}
 	}
 	
 	focus = {
 		id = ESP_focus_61
-		icon = GFX_goal_enc_troop_call
+		icon = GFX_goal_ESP_Eden_Impurity
 		prerequisite = { focus = ESP_focus_60 }
 		relative_position_id = ESP_focus_60
 		x = 0
@@ -1931,15 +1958,15 @@ focus = {#Expedition - to Mariposa
 		x = 0
 		y = 5
 
-		cost = 60
+		cost = 45
 
 		ai_will_do = {
 			factor = 8
 		}
 
 		available = {
-		SBS = { exists = no }
-		USP = { exists = no }
+		has_full_control_of_state = 1070
+		SBS = {exists = no}
 		}
 
 		bypass = {

@@ -1347,6 +1347,10 @@ spriteTypes = {
 	
 	
 	
+	SpriteType = {
+	name = "GFX_goal_ESP_Eden_Impurity"
+	texturefile = "gfx/interface/goals/ESP/ESP_Eden_Impurity.dds"		
+	}
 	
 	SpriteType = {
 	name = "GFX_goal_ESP_Eden_Mutant"
