@@ -74,10 +74,9 @@ country_event = {
 
 	option = {
 		name = INS_event.3.a
-		    add_manpower = -250	
 			set_autonomy = { target = DIA autonomy_state = autonomy_puppet }
 			DIA = { 
-			      add_manpower = 250
+			      add_manpower = -1000
 		          set_popularities = {
 			          parties = {
 				          ruler = { popularity = 10 }
