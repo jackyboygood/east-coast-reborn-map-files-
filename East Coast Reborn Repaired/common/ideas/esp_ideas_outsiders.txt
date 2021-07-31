@@ -1,0 +1,54 @@
+ideas = {
+	outsider_recruitment_laws = {
+		law = yes
+		esp_outsider_law_none = {
+			picture = no_outsiders
+			available = {
+			}
+			allowed = {
+				original_tag = ESP
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+
+			modifier = {
+				non_core_manpower = -1.0
+				stability_factor = 0.1
+				war_support_factor = 0.15
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		esp_outsider_law_volunteers = {
+			picture = outsider_battalions
+			allowed = {
+				original_tag = ESP
+			}
+			visible = {
+				NOT = { has_completed_focus = ESP_focus_17 }
+			}
+			available = { has_completed_focus = ESP_focus_16 }
+
+			default = no
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				non_core_manpower = 0.1
+				stability_factor = -0.1
+				planning_speed = -0.02
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+			cancel_if_invalid = no
+		}
+	}
+}
