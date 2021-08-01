@@ -132,6 +132,8 @@ focus = {#Expedition - to Mariposa
 		completion_reward = {
 			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 600 producer = ESP }
 			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 400 producer = ESP }
+		    add_equipment_to_stockpile = { type = support_robot_handy_equipment amount = 600 producer = USA }
+			add_equipment_to_stockpile = { type = support_robot_protectron_equipment_2 amount = 450 producer = USA }	
 			add_resource = { type = metal amount = 10 state = 989 }
 			add_resource = { type = energy amount = 15 state = 989 }
 		}
@@ -380,6 +382,9 @@ focus = {#Expedition - to Mariposa
 			create_wargoal = {
 				type = annex_everything
 				target = RAR
+			}
+			hidden_effect = {
+			load_oob = ESP_robots
 			}
 		}
 	}
