@@ -1,6 +1,6 @@
 strategic_region={
 	id=151
-	name="East_Coast_River_3"
+	name="Susquehanna"
 	provinces={
 		6256 6255 6254 6252 6251 6253
 	}

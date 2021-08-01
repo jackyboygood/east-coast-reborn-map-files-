@@ -1,6 +1,6 @@
 strategic_region={
 	id=152
-	name="East_Coast_River_4"
+	name="Potomac"
 	provinces={
 		6248 6249 6250
 	}

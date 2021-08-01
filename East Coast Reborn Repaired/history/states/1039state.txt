@@ -1,6 +1,6 @@
 state={
 	id=1039
-	name="STATE_1039"
+	name="Bay Shore"
 	resources = {
 
 		

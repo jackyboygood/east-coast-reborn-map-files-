@@ -1,6 +1,6 @@
 state={
 	id=1038
-	name="STATE_1038"
+	name="Montauk"
 	resources = {
 
 		metal = 2

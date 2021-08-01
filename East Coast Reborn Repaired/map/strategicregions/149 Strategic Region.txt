@@ -1,6 +1,6 @@
 strategic_region={
 	id=149
-	name="East_Coast_River_1"
+	name="Hudson"
 	provinces={
 		6268 6267 6263 6262 6261 6264 6265 6266
 	}

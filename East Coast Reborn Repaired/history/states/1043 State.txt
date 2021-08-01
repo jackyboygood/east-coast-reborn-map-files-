@@ -1,6 +1,6 @@
 state={
 	id=1043
-	name="Northen New-York"
+	name="Northern New-York"
 	resources = {
 		metal = 20
 		water = 4

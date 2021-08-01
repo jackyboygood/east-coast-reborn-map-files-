@@ -1,6 +1,6 @@
 strategic_region={
 	id=150
-	name="East_Coast_River_2"
+	name="Delaware"
 	provinces={
 		6260 6259 6258 6257
 	}
