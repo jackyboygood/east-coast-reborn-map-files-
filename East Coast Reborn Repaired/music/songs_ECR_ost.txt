@@ -1,0 +1,18 @@
+music_station = "ambient"
+music = {
+	song = "maintheme"
+	chance = {
+    base = 1
+
+		modifier = {
+			factor = 1
+		}
+
+		modifier = {
+			factor = 0
+			has_country_flag = disable_ambient_music
+		}
+	}
+}
+
+# vim: set ft=pdx ts=2 sw=2 tw=79 :

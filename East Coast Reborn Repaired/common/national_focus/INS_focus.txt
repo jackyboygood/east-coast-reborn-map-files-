@@ -254,7 +254,7 @@ focus_tree = {
 		ai_will_do = { factor = 15 } 
 		cost = 45
 		available = {
-           1015 = { is_owned_and_controlled_by = DIA }
+           1014 = { is_owned_and_controlled_by = DIA }
 		}
 		prerequisite = {
 			focus = INS_focus_9

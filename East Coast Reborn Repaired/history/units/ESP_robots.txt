@@ -1,0 +1,69 @@
+﻿division_template = {
+	name = "Presidential Guard"
+	regiments = {
+		support_robot = { x = 0 y = 0 }
+		support_robot = { x = 0 y = 1 }
+		support_robot = { x = 0 y = 2 }
+		combat_robot = { x = 1 y = 0 }
+		combat_robot = { x = 1 y = 1 }
+		combat_robot = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Mister Gutsies Division"
+	regiments = {
+		support_robot = { x = 0 y = 0 }
+		support_robot = { x = 0 y = 1 }
+		support_robot = { x = 1 y = 0 }
+		support_robot = { x = 1 y = 1 }
+		support_robot = { x = 2 y = 0 }
+		support_robot = { x = 2 y = 1 }
+	}
+}
+
+
+units = {
+	
+	division {
+		name = "Presidential Guard"
+		location = 1148
+		division_template = "Presidential Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division {
+		name = "1st Steel Division"
+		location = 1148
+		division_template = "Mister Gutsies Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division {
+		name = "2nd Steel Division"
+		location = 1148
+		division_template = "Mister Gutsies Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division {
+		name = "3d Steel Division"
+		location = 1148
+		division_template = "Mister Gutsies Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division {
+		name = "4th Steel Division"
+		location = 1148
+		division_template = "Mister Gutsies Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	
+	
+}

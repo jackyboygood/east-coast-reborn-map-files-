@@ -1488,28 +1488,10 @@ focus_tree = {
 				type = annex_everything
 				target = KOV
 			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = MEN
-						tag = KOV
-					}
-				}
-				every_country = {
-					limit = {
-						NOT = { tag = PREV }
-						OR = {
-							tag = MEN
-							tag = KOV
-						}
-						NOT = { has_war_with = PREV }
-					}
-					declare_war_on = {
-						target = PREV
-						type = take_core_state
-				    }
-			    }
-		    }
+			
+			hidden_effect = {
+			load_oob = MEN_2275
+			}
 		}
 	}
 	
@@ -1669,6 +1651,7 @@ focus_tree = {
 				type = annex_everything
 				target = USD
 			}
+
 		}
 	}
 	

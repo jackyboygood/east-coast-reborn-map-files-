@@ -196,12 +196,9 @@ SBS = {add_opinion_modifier = { target = ESP modifier = bitterEnemies }}
 # IDEAS
 add_ideas = {
   ESP_infighting
-  enc_scientists
   ENC_officers
   closed_economy
   #ENC_special_forces
-  the_remnants
-  hidden_economy
   esp_outsider_law_none
   reorganized_remnants
  }

@@ -16,6 +16,7 @@ ideas = {
 				non_core_manpower = -1.0
 				stability_factor = 0.1
 				war_support_factor = 0.15
+				exodus_national_appeal = -1.0
 			}
 
 			ai_will_do = {
